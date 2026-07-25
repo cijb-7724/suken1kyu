@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>出典不明01 問4 – 数検1級 解説ノート</title>
+<title>第461回 1次 問4 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -157,8 +157,13 @@ window.Quarto = {
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
   <li><a href="#方針" id="toc-方針" class="nav-link" data-scroll-target="#方針">方針</a></li>
+  <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
-  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
+  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">(1)</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">(2)</a></li>
+  </ul></li>
   <li><a href="#検算" id="toc-検算" class="nav-link" data-scroll-target="#検算">検算</a></li>
   <li><a href="#コメント" id="toc-コメント" class="nav-link" data-scroll-target="#コメント">コメント</a></li>
   </ul>
@@ -169,7 +174,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">出典不明01 問4</h1>
+<h1 class="title">第461回 1次 問4</h1>
 </div>
 
 
@@ -188,38 +193,220 @@ window.Quarto = {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>次の行列式を求めよ。</p>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>]</p>
+<p>次の問いに答えなさい。</p>
+<ol type="1">
+<li>関数 <span class="math inline">\(\tan x\)</span> をマクローリン展開したときの <span class="math inline">\(x^5\)</span> の係数を求めなさい。</li>
+<li>関数 <span class="math display">\[
+\log_e\left(\cos^2\frac{x}{2}\right)
+\]</span> をマクローリン展開したときの <span class="math inline">\(x^6\)</span> の係数を求めなさい。ただし、<span class="math inline">\(e\)</span> は自然対数の底を表す。</li>
+</ol>
 </section>
 <section id="方針" class="level2">
 <h2 class="anchored" data-anchor-id="方針">方針</h2>
-<p>2次正方行列の行列式の定義を用いる。</p>
+<ol type="1">
+<li><p>は <span class="math inline">\((\tan x)'=1+\tan^2x\)</span> を利用し、未知係数を比較する。</p></li>
+<li><p>は直接対数を展開するより、微分すると</p></li>
+</ol>
+<p><span class="math display">\[
+\frac{d}{dx}
+\log\left(\cos^2\frac{x}{2}\right)
+=-\tan\frac{x}{2}
+\]</span></p>
+<p>となることを利用する。(1) の展開を <span class="math inline">\(x/2\)</span> に適用してから積分する。</p>
+</section>
+<section id="必要な知識" class="level2">
+<h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
+<ul>
+<li><a href="../../knowledge/primary/maclaurin-expansion.html">マクローリン展開</a></li>
+<li>係数比較</li>
+<li>項別微分・項別積分</li>
+</ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>特になし。</p>
+<p>2つの小問は独立ではない。</p>
+<ol type="1">
+<li>で得た <span class="math inline">\(\tan x\)</span> の展開を、(2) の導関数</li>
+</ol>
+<p><span class="math display">\[
+-\tan\frac{x}{2}
+\]</span></p>
+<p>へ再利用すると計算量を減らせる。</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>=1-2 =-2. ]</p>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">(1)</h3>
+<p><span class="math inline">\(\tan x\)</span> は奇関数なので、</p>
+<p><span class="math display">\[
+\tan x=x+ax^3+bx^5+O(x^7)
+\]</span></p>
+<p>とおく。</p>
+<p>両辺を微分すると、</p>
+<p><span class="math display">\[
+(\tan x)'
+=1+3ax^2+5bx^4+O(x^6)
+\]</span></p>
+<p>である。</p>
+<p>一方、</p>
+<p><span class="math display">\[
+(\tan x)'=1+\tan^2x
+\]</span></p>
+<p>だから、</p>
+<p><span class="math display">\[
+\begin{aligned}
+1+\tan^2x
+&amp;=1+\left(x+ax^3+bx^5+O(x^7)\right)^2\\
+&amp;=1+x^2+2ax^4+O(x^6).
+\end{aligned}
+\]</span></p>
+<p>係数を比較すると、</p>
+<p><span class="math display">\[
+3a=1
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+a=\frac13
+\]</span></p>
+<p>である。</p>
+<p>また、</p>
+<p><span class="math display">\[
+5b=2a=\frac23
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+b=\frac{2}{15}
+\]</span></p>
+<p>である。</p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\tan x
+=x+\frac{x^3}{3}+\frac{2x^5}{15}+O(x^7)
+\]</span></p>
+<p>であり、<span class="math inline">\(x^5\)</span> の係数は</p>
+<p><span class="math display">\[
+\boxed{\frac{2}{15}}
+\]</span></p>
+<p>である。</p>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">(2)</h3>
+<p><span class="math display">\[
+g(x)=\log\left(\cos^2\frac{x}{2}\right)
+\]</span></p>
+<p>とおく。</p>
+<p><span class="math inline">\(x=0\)</span> の近くでは <span class="math inline">\(\cos(x/2)&gt;0\)</span> なので、</p>
+<p><span class="math display">\[
+g(x)=2\log\left(\cos\frac{x}{2}\right)
+\]</span></p>
+<p>と書ける。</p>
+<p>微分すると、</p>
+<p><span class="math display">\[
+\begin{aligned}
+g'(x)
+&amp;=2\left(-\tan\frac{x}{2}\right)\frac12\\
+&amp;=-\tan\frac{x}{2}.
+\end{aligned}
+\]</span></p>
+<p>(1)の結果より、</p>
+<p><span class="math display">\[
+\tan z
+=z+\frac{z^3}{3}+\frac{2z^5}{15}+O(z^7)
+\]</span></p>
+<p>である。</p>
+<p><span class="math inline">\(z=x/2\)</span> を代入すると、</p>
+<p><span class="math display">\[
+\tan\frac{x}{2}
+=
+\frac{x}{2}
++\frac{x^3}{24}
++\frac{x^5}{240}
++O(x^7)
+\]</span></p>
+<p>だから、</p>
+<p><span class="math display">\[
+g'(x)
+=
+-\frac{x}{2}
+-\frac{x^3}{24}
+-\frac{x^5}{240}
++O(x^7)
+\]</span></p>
+<p>である。</p>
+<p>項別積分すると、</p>
+<p><span class="math display">\[
+g(x)
+=
+-\frac{x^2}{4}
+-\frac{x^4}{96}
+-\frac{x^6}{1440}
++C
++O(x^8)
+\]</span></p>
+<p>となる。</p>
+<p>ここで、</p>
+<p><span class="math display">\[
+g(0)=\log1=0
+\]</span></p>
+<p>だから <span class="math inline">\(C=0\)</span> である。</p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\log\left(\cos^2\frac{x}{2}\right)
+=
+-\frac{x^2}{4}
+-\frac{x^4}{96}
+-\frac{x^6}{1440}
++O(x^8)
+\]</span></p>
+<p>であり、<span class="math inline">\(x^6\)</span> の係数は</p>
+<p><span class="math display">\[
+\boxed{-\frac{1}{1440}}
+\]</span></p>
+<p>である。</p>
+</section>
 </section>
 <section id="検算" class="level2">
 <h2 class="anchored" data-anchor-id="検算">検算</h2>
-<p>行列式を直接再計算する。</p>
+<p>既知の展開</p>
+<p><span class="math display">\[
+\log(\cos z)
+=
+-\frac{z^2}{2}
+-\frac{z^4}{12}
+-\frac{z^6}{45}
++O(z^8)
+\]</span></p>
+<p>を用いると、</p>
+<p><span class="math display">\[
+\begin{aligned}
+2\log\left(\cos\frac{x}{2}\right)
+&amp;=
+2\left[
+-\frac12\left(\frac{x}{2}\right)^2
+-\frac1{12}\left(\frac{x}{2}\right)^4
+-\frac1{45}\left(\frac{x}{2}\right)^6
+\right]
++O(x^8)\\
+&amp;=
+-\frac{x^2}{4}
+-\frac{x^4}{96}
+-\frac{x^6}{1440}
++O(x^8).
+\end{aligned}
+\]</span></p>
+<p>解答と一致する。</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>一覧表では「行列式」と表示する。</p>
+<p>マクローリン展開では、高階導関数を何度も直接求める方法が常に最短とは限らない。</p>
+<p>微分方程式、既知の展開、関数間の関係を使って係数比較する方が計算ミスを減らしやすい。</p>
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page="">
+
+</div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>出典不明01 問3 – 数検1級 解説ノート</title>
+<title>第461回 1次 問3 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -157,6 +157,7 @@ window.Quarto = {
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
   <li><a href="#方針" id="toc-方針" class="nav-link" data-scroll-target="#方針">方針</a></li>
+  <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
   <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
   <li><a href="#検算" id="toc-検算" class="nav-link" data-scroll-target="#検算">検算</a></li>
@@ -169,7 +170,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">出典不明01 問3</h1>
+<h1 class="title">第461回 1次 問3</h1>
 </div>
 
 
@@ -188,38 +189,285 @@ window.Quarto = {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>次の行列式を求めよ。</p>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>]</p>
+<p>標準内積をもつ4次元実計量線形空間 <span class="math inline">\(\mathbb{R}^4\)</span> の4つのベクトル</p>
+<p><span class="math display">\[
+\boldsymbol{x}_0=
+\begin{pmatrix}
+-3\\
+0\\
+-3\\
+5
+\end{pmatrix},
+\qquad
+\boldsymbol{x}_1=
+\begin{pmatrix}
+2\\
+3\\
+a\\
+0
+\end{pmatrix},
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{x}_2=
+\begin{pmatrix}
+b\\
+0\\
+c\\
+12
+\end{pmatrix},
+\qquad
+\boldsymbol{x}_3=
+\begin{pmatrix}
+d\\
+4\\
+e\\
+f
+\end{pmatrix}
+\]</span></p>
+<p>が互いに直交するように、定数 <span class="math inline">\(a,b,c,d,e,f\)</span> の値を定めなさい。</p>
 </section>
 <section id="方針" class="level2">
 <h2 class="anchored" data-anchor-id="方針">方針</h2>
-<p>2次正方行列の行列式の定義を用いる。</p>
+<p>「互いに直交する」とは、異なる2本のベクトルの内積がすべて <span class="math inline">\(0\)</span> になることを意味する。</p>
+<p>6組の内積条件を立てるが、最初から6元連立方程式として解くのではなく、</p>
+<ol type="1">
+<li><span class="math inline">\(\boldsymbol{x}_0\cdot\boldsymbol{x}_1=0\)</span> から <span class="math inline">\(a\)</span></li>
+<li><span class="math inline">\(\boldsymbol{x}_0\cdot\boldsymbol{x}_2=0\)</span>、<span class="math inline">\(\boldsymbol{x}_1\cdot\boldsymbol{x}_2=0\)</span> から <span class="math inline">\(b,c\)</span></li>
+<li>残りの3式から <span class="math inline">\(d,e,f\)</span></li>
+</ol>
+<p>の順に求める。</p>
+</section>
+<section id="必要な知識" class="level2">
+<h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
+<ul>
+<li><a href="../../knowledge/primary/orthogonality.html">直交性</a></li>
+<li>標準内積</li>
+<li>連立一次方程式</li>
+</ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>特になし。</p>
+<p>条件をすべて同時に展開すると式が多く見えるが、未知数の現れ方には段階がある。</p>
+<p>先に <span class="math inline">\(a\)</span>、次に <span class="math inline">\(b,c\)</span> を決めると、最後は <span class="math inline">\(d,e,f\)</span> の3元連立方程式だけになる。</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>=1-2 =-2. ]</p>
+<p>まず、</p>
+<p><span class="math display">\[
+\boldsymbol{x}_0\cdot\boldsymbol{x}_1=0
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+(-3)\cdot2+0\cdot3+(-3)a+5\cdot0=0
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+-6-3a=0
+\]</span></p>
+<p>であるから、</p>
+<p><span class="math display">\[
+a=-2
+\]</span></p>
+<p>を得る。</p>
+<p>次に、</p>
+<p><span class="math display">\[
+\boldsymbol{x}_0\cdot\boldsymbol{x}_2=0
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+-3b-3c+60=0
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+b+c=20
+\tag{1}
+\]</span></p>
+<p>である。</p>
+<p>また、</p>
+<p><span class="math display">\[
+\boldsymbol{x}_1\cdot\boldsymbol{x}_2=0
+\]</span></p>
+<p>より、<span class="math inline">\(a=-2\)</span> を用いると、</p>
+<p><span class="math display">\[
+2b+ac=0
+\]</span></p>
+<p><span class="math display">\[
+2b-2c=0
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+b=c
+\tag{2}
+\]</span></p>
+<p>である。</p>
+<p>(1)、(2)より、</p>
+<p><span class="math display">\[
+b=c=10
+\]</span></p>
+<p>を得る。</p>
+<p>残りの未知数 <span class="math inline">\(d,e,f\)</span> を求める。</p>
+<p><span class="math display">\[
+\boldsymbol{x}_0\cdot\boldsymbol{x}_3=0
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+-3d-3e+5f=0
+\tag{3}
+\]</span></p>
+<p>である。</p>
+<p><span class="math display">\[
+\boldsymbol{x}_1\cdot\boldsymbol{x}_3=0
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+2d+12-2e=0
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+d-e=-6
+\tag{4}
+\]</span></p>
+<p>である。</p>
+<p>さらに、</p>
+<p><span class="math display">\[
+\boldsymbol{x}_2\cdot\boldsymbol{x}_3=0
+\]</span></p>
+<p>より、</p>
+<p><span class="math display">\[
+10d+10e+12f=0
+\tag{5}
+\]</span></p>
+<p>である。</p>
+<p>(4)から、</p>
+<p><span class="math display">\[
+d=e-6
+\]</span></p>
+<p>と表せる。</p>
+<p>これを (3) に代入すると、</p>
+<p><span class="math display">\[
+-3(e-6)-3e+5f=0
+\]</span></p>
+<p><span class="math display">\[
+-6e+18+5f=0
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+5f=6e-18
+\tag{6}
+\]</span></p>
+<p>である。</p>
+<p>また、(5) に <span class="math inline">\(d=e-6\)</span> を代入すると、</p>
+<p><span class="math display">\[
+10(e-6)+10e+12f=0
+\]</span></p>
+<p><span class="math display">\[
+20e-60+12f=0
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+6f=30-10e
+\tag{7}
+\]</span></p>
+<p>である。</p>
+<p>(6)、(7)から <span class="math inline">\(f\)</span> を消去すると、</p>
+<p><span class="math display">\[
+\frac{6e-18}{5}
+=
+\frac{30-10e}{6}
+\]</span></p>
+<p><span class="math display">\[
+36e-108=150-50e
+\]</span></p>
+<p><span class="math display">\[
+86e=258
+\]</span></p>
+<p>よって、</p>
+<p><span class="math display">\[
+e=3
+\]</span></p>
+<p>である。</p>
+<p>したがって、</p>
+<p><span class="math display">\[
+d=e-6=-3
+\]</span></p>
+<p>また、(6)より、</p>
+<p><span class="math display">\[
+5f=18-18=0
+\]</span></p>
+<p>なので、</p>
+<p><span class="math display">\[
+f=0
+\]</span></p>
+<p>である。</p>
+<p>以上より、</p>
+<p><span class="math display">\[
+\boxed{
+a=-2,\quad
+b=10,\quad
+c=10,\quad
+d=-3,\quad
+e=3,\quad
+f=0
+}
+\]</span></p>
+<p>となる。</p>
 </section>
 <section id="検算" class="level2">
 <h2 class="anchored" data-anchor-id="検算">検算</h2>
-<p>行列式を直接再計算する。</p>
+<p>得られたベクトルは</p>
+<p><span class="math display">\[
+\boldsymbol{x}_1=
+\begin{pmatrix}
+2\\3\\-2\\0
+\end{pmatrix},
+\quad
+\boldsymbol{x}_2=
+\begin{pmatrix}
+10\\0\\10\\12
+\end{pmatrix},
+\quad
+\boldsymbol{x}_3=
+\begin{pmatrix}
+-3\\4\\3\\0
+\end{pmatrix}
+\]</span></p>
+<p>である。</p>
+<p>6組の内積を確認すると、</p>
+<p><span class="math display">\[
+\boldsymbol{x}_0\cdot\boldsymbol{x}_1=-6+6=0,
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{x}_0\cdot\boldsymbol{x}_2=-30-30+60=0,
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{x}_0\cdot\boldsymbol{x}_3=9-9=0,
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{x}_1\cdot\boldsymbol{x}_2=20-20=0,
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{x}_1\cdot\boldsymbol{x}_3=-6+12-6=0,
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{x}_2\cdot\boldsymbol{x}_3=-30+30=0.
+\]</span></p>
+<p>したがって、4本のベクトルは確かに互いに直交する。</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>一覧表では「行列式」と表示する。</p>
+<p>「互いに直交」という条件からは、4本のベクトルについて</p>
+<p><span class="math display">\[
+\binom42=6
+\]</span></p>
+<p>本の内積条件が得られる。</p>
+<p>ただし、未知数が段階的に決まる構造を見れば、大きな連立方程式を一度に解く必要はない。</p>
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page="">
+
+</div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>出典不明01 問5 – 数検1級 解説ノート</title>
+<title>第461回 1次 問5 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -157,8 +157,13 @@ window.Quarto = {
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
   <li><a href="#方針" id="toc-方針" class="nav-link" data-scroll-target="#方針">方針</a></li>
+  <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
-  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
+  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a>
+  <ul class="collapse">
+  <li><a href="#k-の値" id="toc-k-の値" class="nav-link" data-scroll-target="#k-の値">(1) <span class="math inline">\(k\)</span> の値</a></li>
+  <li><a href="#ey" id="toc-ey" class="nav-link" data-scroll-target="#ey">(2) <span class="math inline">\(E(Y)\)</span></a></li>
+  </ul></li>
   <li><a href="#検算" id="toc-検算" class="nav-link" data-scroll-target="#検算">検算</a></li>
   <li><a href="#コメント" id="toc-コメント" class="nav-link" data-scroll-target="#コメント">コメント</a></li>
   </ul>
@@ -169,7 +174,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">出典不明01 問5</h1>
+<h1 class="title">第461回 1次 問5</h1>
 </div>
 
 
@@ -188,38 +193,196 @@ window.Quarto = {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>次の行列式を求めよ。</p>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>]</p>
+<p><span class="math inline">\(k\)</span> を定数とする。<span class="math inline">\(X,Y\)</span> はともに連続型の確率変数で、次の同時確率密度関数をもつとする。</p>
+<p><span class="math display">\[
+f(x,y)=
+\begin{cases}
+kxy
+&amp;
+(1\leq xy\leq2,\ 1\leq x\leq2),\\[4pt]
+0
+&amp;
+(\text{上記以外の }x,y).
+\end{cases}
+\]</span></p>
+<p>次の問いに答えなさい。</p>
+<ol type="1">
+<li><span class="math inline">\(k\)</span> の値を求めなさい。</li>
+<li><span class="math inline">\(Y\)</span> の平均 <span class="math inline">\(E(Y)\)</span> を求めなさい。</li>
+</ol>
 </section>
 <section id="方針" class="level2">
 <h2 class="anchored" data-anchor-id="方針">方針</h2>
-<p>2次正方行列の行列式の定義を用いる。</p>
+<p>条件</p>
+<p><span class="math display">\[
+1\leq xy\leq2,\qquad1\leq x\leq2
+\]</span></p>
+<p>を、<span class="math inline">\(x\)</span> を固定したときの <span class="math inline">\(y\)</span> の範囲へ直す。</p>
+<p><span class="math display">\[
+1\leq xy\leq2
+\quad\Longleftrightarrow\quad
+\frac1x\leq y\leq\frac2x
+\]</span></p>
+<p>である。</p>
+<p>この積分領域を用いて、</p>
+<ol type="1">
+<li>密度の全積分が <span class="math inline">\(1\)</span></li>
+<li><span class="math inline">\(E(Y)=\iint y f(x,y)\,dx\,dy\)</span></li>
+</ol>
+<p>を順に計算する。</p>
+</section>
+<section id="必要な知識" class="level2">
+<h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
+<ul>
+<li><a href="../../knowledge/primary/joint-probability-density-function.html">同時確率密度関数</a></li>
+<li><a href="../../knowledge/primary/expected-value.html">期待値</a></li>
+<li>重積分</li>
+<li>確率密度関数の正規化条件</li>
+</ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>特になし。</p>
+<p>積分領域を正しく読み替えることが中心である。</p>
+<p><span class="math display">\[
+1\leq xy\leq2
+\]</span></p>
+<p>をそのまま扱うのではなく、</p>
+<p><span class="math display">\[
+1\leq x\leq2,
+\qquad
+\frac1x\leq y\leq\frac2x
+\]</span></p>
+<p>と書けば、累次積分を直ちに立てられる。</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>=1-2 =-2. ]</p>
+<section id="k-の値" class="level3">
+<h3 class="anchored" data-anchor-id="k-の値">(1) <span class="math inline">\(k\)</span> の値</h3>
+<p>確率密度関数の全積分は <span class="math inline">\(1\)</span> だから、</p>
+<p><span class="math display">\[
+\int_1^2
+\int_{1/x}^{2/x}
+kxy\,dy\,dx
+=1
+\]</span></p>
+<p>である。</p>
+<p>内側を積分すると、</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{1/x}^{2/x}kxy\,dy
+&amp;=kx\left[\frac{y^2}{2}\right]_{1/x}^{2/x}\\
+&amp;=\frac{kx}{2}
+\left(
+\frac4{x^2}-\frac1{x^2}
+\right)\\
+&amp;=\frac{3k}{2x}.
+\end{aligned}
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\begin{aligned}
+1
+&amp;=\int_1^2\frac{3k}{2x}\,dx\\
+&amp;=\frac{3k}{2}\left[\log x\right]_1^2\\
+&amp;=\frac{3k}{2}\log2.
+\end{aligned}
+\]</span></p>
+<p>よって、</p>
+<p><span class="math display">\[
+\boxed{k=\frac{2}{3\log2}}
+\]</span></p>
+<p>である。</p>
+</section>
+<section id="ey" class="level3">
+<h3 class="anchored" data-anchor-id="ey">(2) <span class="math inline">\(E(Y)\)</span></h3>
+<p>期待値の定義より、</p>
+<p><span class="math display">\[
+E(Y)
+=
+\int_1^2
+\int_{1/x}^{2/x}
+y f(x,y)\,dy\,dx
+\]</span></p>
+<p>である。</p>
+<p><span class="math inline">\(f(x,y)=kxy\)</span> なので、</p>
+<p><span class="math display">\[
+E(Y)
+=
+\int_1^2
+\int_{1/x}^{2/x}
+kxy^2\,dy\,dx.
+\]</span></p>
+<p>内側を積分すると、</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_{1/x}^{2/x}kxy^2\,dy
+&amp;=kx\left[\frac{y^3}{3}\right]_{1/x}^{2/x}\\
+&amp;=\frac{kx}{3}
+\left(
+\frac8{x^3}-\frac1{x^3}
+\right)\\
+&amp;=\frac{7k}{3x^2}.
+\end{aligned}
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(Y)
+&amp;=\frac{7k}{3}\int_1^2\frac1{x^2}\,dx\\
+&amp;=\frac{7k}{3}
+\left[-\frac1x\right]_1^2\\
+&amp;=\frac{7k}{3}\left(1-\frac12\right)\\
+&amp;=\frac{7k}{6}.
+\end{aligned}
+\]</span></p>
+<p>ここに</p>
+<p><span class="math display">\[
+k=\frac{2}{3\log2}
+\]</span></p>
+<p>を代入すると、</p>
+<p><span class="math display">\[
+E(Y)
+=
+\frac76\cdot\frac{2}{3\log2}
+=
+\boxed{\frac{7}{9\log2}}
+\]</span></p>
+<p>である。</p>
+</section>
 </section>
 <section id="検算" class="level2">
 <h2 class="anchored" data-anchor-id="検算">検算</h2>
-<p>行列式を直接再計算する。</p>
+<p><span class="math inline">\(1\leq x\leq2\)</span> かつ <span class="math inline">\(1/x\leq y\leq2/x\)</span> より、</p>
+<p><span class="math display">\[
+\frac12\leq Y\leq2
+\]</span></p>
+<p>である。</p>
+<p>数値的に、</p>
+<p><span class="math display">\[
+E(Y)=\frac{7}{9\log2}\approx1.122
+\]</span></p>
+<p>であり、</p>
+<p><span class="math display">\[
+\frac12&lt;E(Y)&lt;2
+\]</span></p>
+<p>を満たしている。</p>
+<p>また、</p>
+<p><span class="math display">\[
+k=\frac{2}{3\log2}&gt;0
+\]</span></p>
+<p>なので、確率密度関数の非負性も満たす。</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>一覧表では「行列式」と表示する。</p>
+<p>確率の重積分では、計算よりも積分領域の設定が重要である。</p>
+<p>条件が積 <span class="math inline">\(xy\)</span> で与えられたときは、片方の変数を固定して、もう片方の上下限へ変換する。</p>
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page="">
+
+</div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->
 
 
 </section>

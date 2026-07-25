@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>出典不明01 問2 – 数検1級 解説ノート</title>
+<title>第461回 1次 問2 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -157,6 +157,7 @@ window.Quarto = {
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
   <li><a href="#方針" id="toc-方針" class="nav-link" data-scroll-target="#方針">方針</a></li>
+  <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
   <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
   <li><a href="#検算" id="toc-検算" class="nav-link" data-scroll-target="#検算">検算</a></li>
@@ -169,7 +170,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">出典不明01 問2</h1>
+<h1 class="title">第461回 1次 問2</h1>
 </div>
 
 
@@ -188,38 +189,142 @@ window.Quarto = {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>次の行列式を求めよ。</p>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>]</p>
+<p>次の等式を満たす <span class="math inline">\(x\)</span> の値を求めなさい。</p>
+<p>ただし、<span class="math inline">\(\operatorname{Arcsin}x\)</span>、<span class="math inline">\(\operatorname{Arccos}x\)</span> はそれぞれ <span class="math inline">\(\sin x\)</span>、<span class="math inline">\(\cos x\)</span> の逆関数で、</p>
+<p><span class="math display">\[
+-\frac{\pi}{2}\leq \operatorname{Arcsin}x\leq\frac{\pi}{2},
+\qquad
+0\leq \operatorname{Arccos}x\leq\pi
+\]</span></p>
+<p>を満たすものとする。</p>
+<p><span class="math display">\[
+\operatorname{Arccos}x-\operatorname{Arcsin}x
+=\frac{4\pi}{3}
+\]</span></p>
 </section>
 <section id="方針" class="level2">
 <h2 class="anchored" data-anchor-id="方針">方針</h2>
-<p>2次正方行列の行列式の定義を用いる。</p>
+<p>主値の範囲では、</p>
+<p><span class="math display">\[
+\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
+\]</span></p>
+<p>が成り立つ。</p>
+<p>この恒等式と問題の式を連立し、<span class="math inline">\(\operatorname{Arccos}x\)</span> を求めてから <span class="math inline">\(x\)</span> に戻す。</p>
+</section>
+<section id="必要な知識" class="level2">
+<h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
+<ul>
+<li><a href="../../knowledge/primary/inverse-trigonometric-function.html">逆三角関数</a></li>
+<li>加法定理</li>
+<li>逆三角関数の主値</li>
+</ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>特になし。</p>
+<p><span class="math inline">\(\operatorname{Arcsin}x\)</span> と <span class="math inline">\(\operatorname{Arccos}x\)</span> を別々に三角形で表すより、</p>
+<p><span class="math display">\[
+\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
+\]</span></p>
+<p>をもう1本の方程式として使うと、一度に角度が決まる。</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-[
-<span class="math display">\[\begin{pmatrix}
-1 &amp; 2\\
-3 &amp; 4
-\end{pmatrix}\]</span>
-<p>=1-2 =-2. ]</p>
+<p><span class="math display">\[
+\alpha=\operatorname{Arccos}x,
+\qquad
+\beta=\operatorname{Arcsin}x
+\]</span></p>
+<p>とおく。</p>
+<p>主値の範囲より、</p>
+<p><span class="math display">\[
+\alpha+\beta=\frac{\pi}{2}
+\]</span></p>
+<p>である。</p>
+<p>また、問題の条件から</p>
+<p><span class="math display">\[
+\alpha-\beta=\frac{4\pi}{3}
+\]</span></p>
+<p>である。</p>
+<p>2式を加えると、</p>
+<p><span class="math display">\[
+2\alpha
+=\frac{\pi}{2}+\frac{4\pi}{3}
+=\frac{11\pi}{6}
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\alpha=\frac{11\pi}{12}
+\]</span></p>
+<p>である。</p>
+<p>よって、</p>
+<p><span class="math display">\[
+x=\cos\alpha
+=\cos\frac{11\pi}{12}
+\]</span></p>
+<p>となる。</p>
+<p><span class="math display">\[
+\frac{11\pi}{12}
+=\frac{3\pi}{4}+\frac{\pi}{6}
+\]</span></p>
+<p>だから、加法定理より</p>
+<p><span class="math display">\[
+\begin{aligned}
+x
+&amp;=\cos\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)\\
+&amp;=\cos\frac{3\pi}{4}\cos\frac{\pi}{6}
+-\sin\frac{3\pi}{4}\sin\frac{\pi}{6}\\
+&amp;=-\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}
+-\frac{\sqrt2}{2}\cdot\frac12\\
+&amp;=-\frac{\sqrt6+\sqrt2}{4}.
+\end{aligned}
+\]</span></p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\boxed{x=-\frac{\sqrt6+\sqrt2}{4}}
+\]</span></p>
+<p>である。</p>
 </section>
 <section id="検算" class="level2">
 <h2 class="anchored" data-anchor-id="検算">検算</h2>
-<p>行列式を直接再計算する。</p>
+<p>求めた <span class="math inline">\(x\)</span> に対して、</p>
+<p><span class="math display">\[
+\operatorname{Arccos}x=\frac{11\pi}{12}
+\]</span></p>
+<p>である。</p>
+<p>また、</p>
+<p><span class="math display">\[
+\operatorname{Arcsin}x
+=\frac{\pi}{2}-\frac{11\pi}{12}
+=-\frac{5\pi}{12}
+\]</span></p>
+<p>であり、これは主値の範囲</p>
+<p><span class="math display">\[
+-\frac{\pi}{2}\leq-\frac{5\pi}{12}\leq\frac{\pi}{2}
+\]</span></p>
+<p>に入っている。</p>
+<p>したがって、</p>
+<p><span class="math display">\[
+\operatorname{Arccos}x-\operatorname{Arcsin}x
+=\frac{11\pi}{12}+\frac{5\pi}{12}
+=\frac{4\pi}{3}
+\]</span></p>
+<p>となり、元の式を満たす。</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>一覧表では「行列式」と表示する。</p>
+<p>逆三角関数では、単に三角関数を作用させるだけでは主値の情報を失いやすい。</p>
+<p>まず主値の範囲を確認し、</p>
+<p><span class="math display">\[
+\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
+\]</span></p>
+<p>を使うのが最短である。</p>
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page="">
+
+</div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->
 
 
 </section>

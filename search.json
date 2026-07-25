@@ -879,7 +879,7 @@
     "href": "knowledge/index.html",
     "title": "知識",
     "section": "",
-    "text": "1次試験の知識\n2次試験の知識"
+    "text": "過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。\n\n\n\n\n1次\n\n\n2次\n\n\n\n&lt;label class=\"catalog-search-wrap\"&gt;\n  &lt;span class=\"visually-hidden\"&gt;知識を検索&lt;/span&gt;\n  &lt;input id=\"catalog-search\" class=\"catalog-search\" type=\"search\" placeholder=\"知識名・タグID・上位分類から検索\" autocomplete=\"off\"&gt;\n&lt;/label&gt;\n\n\n\n\n知識データを読み込んでいます…\n\n\n\n\n\n\nこのページを表示するにはJavaScriptを有効にしてください。"
   },
   {
     "objectID": "index.html",
@@ -1045,198 +1045,226 @@
   {
     "objectID": "problems/primary/pri-problem-000004.html",
     "href": "problems/primary/pri-problem-000004.html",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の問いに答えなさい。\n\n関数 \\(\\tan x\\) をマクローリン展開したときの \\(x^5\\) の係数を求めなさい。\n関数 \\[\n\\log_e\\left(\\cos^2\\frac{x}{2}\\right)\n\\] をマクローリン展開したときの \\(x^6\\) の係数を求めなさい。ただし、\\(e\\) は自然対数の底を表す。"
   },
   {
     "objectID": "problems/primary/pri-problem-000004.html#問題",
     "href": "problems/primary/pri-problem-000004.html#問題",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の問いに答えなさい。\n\n関数 \\(\\tan x\\) をマクローリン展開したときの \\(x^5\\) の係数を求めなさい。\n関数 \\[\n\\log_e\\left(\\cos^2\\frac{x}{2}\\right)\n\\] をマクローリン展開したときの \\(x^6\\) の係数を求めなさい。ただし、\\(e\\) は自然対数の底を表す。"
   },
   {
     "objectID": "problems/primary/pri-problem-000004.html#方針",
     "href": "problems/primary/pri-problem-000004.html#方針",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n\nは \\((\\tan x)'=1+\\tan^2x\\) を利用し、未知係数を比較する。\nは直接対数を展開するより、微分すると\n\n\\[\n\\frac{d}{dx}\n\\log\\left(\\cos^2\\frac{x}{2}\\right)\n=-\\tan\\frac{x}{2}\n\\]\nとなることを利用する。(1) の展開を \\(x/2\\) に適用してから積分する。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html#必要な知識",
+    "href": "problems/primary/pri-problem-000004.html#必要な知識",
+    "title": "第461回 1次 問4",
+    "section": "必要な知識",
+    "text": "必要な知識\n\nマクローリン展開\n係数比較\n項別微分・項別積分"
   },
   {
     "objectID": "problems/primary/pri-problem-000004.html#必要な発想",
     "href": "problems/primary/pri-problem-000004.html#必要な発想",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n2つの小問は独立ではない。\n\nで得た \\(\\tan x\\) の展開を、(2) の導関数\n\n\\[\n-\\tan\\frac{x}{2}\n\\]\nへ再利用すると計算量を減らせる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000004.html#解答",
     "href": "problems/primary/pri-problem-000004.html#解答",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\n\n(1)\n\\(\\tan x\\) は奇関数なので、\n\\[\n\\tan x=x+ax^3+bx^5+O(x^7)\n\\]\nとおく。\n両辺を微分すると、\n\\[\n(\\tan x)'\n=1+3ax^2+5bx^4+O(x^6)\n\\]\nである。\n一方、\n\\[\n(\\tan x)'=1+\\tan^2x\n\\]\nだから、\n\\[\n\\begin{aligned}\n1+\\tan^2x\n&=1+\\left(x+ax^3+bx^5+O(x^7)\\right)^2\\\\\n&=1+x^2+2ax^4+O(x^6).\n\\end{aligned}\n\\]\n係数を比較すると、\n\\[\n3a=1\n\\]\nより、\n\\[\na=\\frac13\n\\]\nである。\nまた、\n\\[\n5b=2a=\\frac23\n\\]\nより、\n\\[\nb=\\frac{2}{15}\n\\]\nである。\nしたがって、\n\\[\n\\tan x\n=x+\\frac{x^3}{3}+\\frac{2x^5}{15}+O(x^7)\n\\]\nであり、\\(x^5\\) の係数は\n\\[\n\\boxed{\\frac{2}{15}}\n\\]\nである。\n\n\n(2)\n\\[\ng(x)=\\log\\left(\\cos^2\\frac{x}{2}\\right)\n\\]\nとおく。\n\\(x=0\\) の近くでは \\(\\cos(x/2)&gt;0\\) なので、\n\\[\ng(x)=2\\log\\left(\\cos\\frac{x}{2}\\right)\n\\]\nと書ける。\n微分すると、\n\\[\n\\begin{aligned}\ng'(x)\n&=2\\left(-\\tan\\frac{x}{2}\\right)\\frac12\\\\\n&=-\\tan\\frac{x}{2}.\n\\end{aligned}\n\\]\n(1)の結果より、\n\\[\n\\tan z\n=z+\\frac{z^3}{3}+\\frac{2z^5}{15}+O(z^7)\n\\]\nである。\n\\(z=x/2\\) を代入すると、\n\\[\n\\tan\\frac{x}{2}\n=\n\\frac{x}{2}\n+\\frac{x^3}{24}\n+\\frac{x^5}{240}\n+O(x^7)\n\\]\nだから、\n\\[\ng'(x)\n=\n-\\frac{x}{2}\n-\\frac{x^3}{24}\n-\\frac{x^5}{240}\n+O(x^7)\n\\]\nである。\n項別積分すると、\n\\[\ng(x)\n=\n-\\frac{x^2}{4}\n-\\frac{x^4}{96}\n-\\frac{x^6}{1440}\n+C\n+O(x^8)\n\\]\nとなる。\nここで、\n\\[\ng(0)=\\log1=0\n\\]\nだから \\(C=0\\) である。\nしたがって、\n\\[\n\\log\\left(\\cos^2\\frac{x}{2}\\right)\n=\n-\\frac{x^2}{4}\n-\\frac{x^4}{96}\n-\\frac{x^6}{1440}\n+O(x^8)\n\\]\nであり、\\(x^6\\) の係数は\n\\[\n\\boxed{-\\frac{1}{1440}}\n\\]\nである。"
   },
   {
     "objectID": "problems/primary/pri-problem-000004.html#検算",
     "href": "problems/primary/pri-problem-000004.html#検算",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n既知の展開\n\\[\n\\log(\\cos z)\n=\n-\\frac{z^2}{2}\n-\\frac{z^4}{12}\n-\\frac{z^6}{45}\n+O(z^8)\n\\]\nを用いると、\n\\[\n\\begin{aligned}\n2\\log\\left(\\cos\\frac{x}{2}\\right)\n&=\n2\\left[\n-\\frac12\\left(\\frac{x}{2}\\right)^2\n-\\frac1{12}\\left(\\frac{x}{2}\\right)^4\n-\\frac1{45}\\left(\\frac{x}{2}\\right)^6\n\\right]\n+O(x^8)\\\\\n&=\n-\\frac{x^2}{4}\n-\\frac{x^4}{96}\n-\\frac{x^6}{1440}\n+O(x^8).\n\\end{aligned}\n\\]\n解答と一致する。"
   },
   {
     "objectID": "problems/primary/pri-problem-000004.html#コメント",
     "href": "problems/primary/pri-problem-000004.html#コメント",
-    "title": "出典不明01 問4",
+    "title": "第461回 1次 問4",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\nマクローリン展開では、高階導関数を何度も直接求める方法が常に最短とは限らない。\n微分方程式、既知の展開、関数間の関係を使って係数比較する方が計算ミスを減らしやすい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html",
     "href": "problems/primary/pri-problem-000007.html",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の微分方程式の解のうち、\\(y(0)=1\\) を満たすものを求め、\\(y=y(x)\\) の形で表しなさい。\nただし、\\(e\\) は自然対数の底を表す。\n\\[\n\\frac{dy}{dx}-2y=xe^{2x}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html#問題",
     "href": "problems/primary/pri-problem-000007.html#問題",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の微分方程式の解のうち、\\(y(0)=1\\) を満たすものを求め、\\(y=y(x)\\) の形で表しなさい。\nただし、\\(e\\) は自然対数の底を表す。\n\\[\n\\frac{dy}{dx}-2y=xe^{2x}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html#方針",
     "href": "problems/primary/pri-problem-000007.html#方針",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n1階線形微分方程式\n\\[\ny'+P(x)y=Q(x)\n\\]\nとして扱う。\n積分因子 \\(e^{-2x}\\) を両辺に掛けると、左辺が積の微分\n\\[\n\\frac{d}{dx}\\left(e^{-2x}y\\right)\n\\]\nになる。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000007.html#必要な知識",
+    "href": "problems/primary/pri-problem-000007.html#必要な知識",
+    "title": "第461回 1次 問7",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n1階非斉次微分方程式\n積分因子法\n積の微分"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html#必要な発想",
     "href": "problems/primary/pri-problem-000007.html#必要な発想",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n右辺に \\(e^{2x}\\) が含まれていることから、\\(e^{-2x}\\) を掛けると指数関数が消える。\n左辺を積の微分へまとめれば、微分方程式が通常の積分へ変わる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html#解答",
     "href": "problems/primary/pri-problem-000007.html#解答",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\n与えられた方程式は\n\\[\ny'-2y=xe^{2x}\n\\]\nである。\n積分因子は\n\\[\n\\mu(x)\n=\ne^{\\int-2\\,dx}\n=\ne^{-2x}\n\\]\nである。\n両辺に \\(e^{-2x}\\) を掛けると、\n\\[\ne^{-2x}y'-2e^{-2x}y=x\n\\]\nとなる。\n左辺は積の微分であり、\n\\[\n\\frac{d}{dx}\\left(e^{-2x}y\\right)\n=\ne^{-2x}y'-2e^{-2x}y\n\\]\nだから、\n\\[\n\\frac{d}{dx}\\left(e^{-2x}y\\right)=x\n\\]\nである。\n両辺を積分すると、\n\\[\ne^{-2x}y=\\frac{x^2}{2}+C\n\\]\nとなる。\nしたがって、\n\\[\ny=e^{2x}\\left(\\frac{x^2}{2}+C\\right)\n\\]\nである。\n初期条件 \\(y(0)=1\\) を代入すると、\n\\[\n1=e^0(0+C)\n\\]\nだから、\n\\[\nC=1\n\\]\nである。\nよって、\n\\[\n\\boxed{\ny=e^{2x}\\left(\\frac{x^2}{2}+1\\right)\n}\n\\]\nとなる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html#検算",
     "href": "problems/primary/pri-problem-000007.html#検算",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n\\[\ny=e^{2x}\\left(\\frac{x^2}{2}+1\\right)\n\\]\nを微分すると、\n\\[\n\\begin{aligned}\ny'\n&=2e^{2x}\\left(\\frac{x^2}{2}+1\\right)\n+e^{2x}x\\\\\n&=e^{2x}(x^2+x+2).\n\\end{aligned}\n\\]\nしたがって、\n\\[\n\\begin{aligned}\ny'-2y\n&=e^{2x}(x^2+x+2)\n-2e^{2x}\\left(\\frac{x^2}{2}+1\\right)\\\\\n&=e^{2x}(x^2+x+2-x^2-2)\\\\\n&=xe^{2x}.\n\\end{aligned}\n\\]\n元の微分方程式を満たす。\nまた、\n\\[\ny(0)=e^0(0+1)=1\n\\]\nなので、初期条件も満たす。"
   },
   {
     "objectID": "problems/primary/pri-problem-000007.html#コメント",
     "href": "problems/primary/pri-problem-000007.html#コメント",
-    "title": "出典不明01 問7",
+    "title": "第461回 1次 問7",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\n積分因子法では、公式を暗記するだけでなく、\n\\[\n\\mu y'+\\mu P y=(\\mu y)'\n\\]\nとなるように \\(\\mu\\) を選んでいることを理解すると、符号の間違いを防げる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html",
     "href": "problems/primary/pri-problem-000002.html",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の等式を満たす \\(x\\) の値を求めなさい。\nただし、\\(\\operatorname{Arcsin}x\\)、\\(\\operatorname{Arccos}x\\) はそれぞれ \\(\\sin x\\)、\\(\\cos x\\) の逆関数で、\n\\[\n-\\frac{\\pi}{2}\\leq \\operatorname{Arcsin}x\\leq\\frac{\\pi}{2},\n\\qquad\n0\\leq \\operatorname{Arccos}x\\leq\\pi\n\\]\nを満たすものとする。\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{4\\pi}{3}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html#問題",
     "href": "problems/primary/pri-problem-000002.html#問題",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の等式を満たす \\(x\\) の値を求めなさい。\nただし、\\(\\operatorname{Arcsin}x\\)、\\(\\operatorname{Arccos}x\\) はそれぞれ \\(\\sin x\\)、\\(\\cos x\\) の逆関数で、\n\\[\n-\\frac{\\pi}{2}\\leq \\operatorname{Arcsin}x\\leq\\frac{\\pi}{2},\n\\qquad\n0\\leq \\operatorname{Arccos}x\\leq\\pi\n\\]\nを満たすものとする。\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{4\\pi}{3}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html#方針",
     "href": "problems/primary/pri-problem-000002.html#方針",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n主値の範囲では、\n\\[\n\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\frac{\\pi}{2}\n\\]\nが成り立つ。\nこの恒等式と問題の式を連立し、\\(\\operatorname{Arccos}x\\) を求めてから \\(x\\) に戻す。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html#必要な知識",
+    "href": "problems/primary/pri-problem-000002.html#必要な知識",
+    "title": "第461回 1次 問2",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n逆三角関数\n加法定理\n逆三角関数の主値"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html#必要な発想",
     "href": "problems/primary/pri-problem-000002.html#必要な発想",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n\\(\\operatorname{Arcsin}x\\) と \\(\\operatorname{Arccos}x\\) を別々に三角形で表すより、\n\\[\n\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\frac{\\pi}{2}\n\\]\nをもう1本の方程式として使うと、一度に角度が決まる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html#解答",
     "href": "problems/primary/pri-problem-000002.html#解答",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\n\\[\n\\alpha=\\operatorname{Arccos}x,\n\\qquad\n\\beta=\\operatorname{Arcsin}x\n\\]\nとおく。\n主値の範囲より、\n\\[\n\\alpha+\\beta=\\frac{\\pi}{2}\n\\]\nである。\nまた、問題の条件から\n\\[\n\\alpha-\\beta=\\frac{4\\pi}{3}\n\\]\nである。\n2式を加えると、\n\\[\n2\\alpha\n=\\frac{\\pi}{2}+\\frac{4\\pi}{3}\n=\\frac{11\\pi}{6}\n\\]\nしたがって、\n\\[\n\\alpha=\\frac{11\\pi}{12}\n\\]\nである。\nよって、\n\\[\nx=\\cos\\alpha\n=\\cos\\frac{11\\pi}{12}\n\\]\nとなる。\n\\[\n\\frac{11\\pi}{12}\n=\\frac{3\\pi}{4}+\\frac{\\pi}{6}\n\\]\nだから、加法定理より\n\\[\n\\begin{aligned}\nx\n&=\\cos\\left(\\frac{3\\pi}{4}+\\frac{\\pi}{6}\\right)\\\\\n&=\\cos\\frac{3\\pi}{4}\\cos\\frac{\\pi}{6}\n-\\sin\\frac{3\\pi}{4}\\sin\\frac{\\pi}{6}\\\\\n&=-\\frac{\\sqrt2}{2}\\cdot\\frac{\\sqrt3}{2}\n-\\frac{\\sqrt2}{2}\\cdot\\frac12\\\\\n&=-\\frac{\\sqrt6+\\sqrt2}{4}.\n\\end{aligned}\n\\]\nしたがって、\n\\[\n\\boxed{x=-\\frac{\\sqrt6+\\sqrt2}{4}}\n\\]\nである。"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html#検算",
     "href": "problems/primary/pri-problem-000002.html#検算",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n求めた \\(x\\) に対して、\n\\[\n\\operatorname{Arccos}x=\\frac{11\\pi}{12}\n\\]\nである。\nまた、\n\\[\n\\operatorname{Arcsin}x\n=\\frac{\\pi}{2}-\\frac{11\\pi}{12}\n=-\\frac{5\\pi}{12}\n\\]\nであり、これは主値の範囲\n\\[\n-\\frac{\\pi}{2}\\leq-\\frac{5\\pi}{12}\\leq\\frac{\\pi}{2}\n\\]\nに入っている。\nしたがって、\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{11\\pi}{12}+\\frac{5\\pi}{12}\n=\\frac{4\\pi}{3}\n\\]\nとなり、元の式を満たす。"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html#コメント",
     "href": "problems/primary/pri-problem-000002.html#コメント",
-    "title": "出典不明01 問2",
+    "title": "第461回 1次 問2",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\n逆三角関数では、単に三角関数を作用させるだけでは主値の情報を失いやすい。\nまず主値の範囲を確認し、\n\\[\n\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\frac{\\pi}{2}\n\\]\nを使うのが最短である。"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html",
     "href": "problems/primary/pri-problem-000001.html",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "\\[\n3^{17171717}\n\\]\nの下3桁の数を求めなさい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html#問題",
     "href": "problems/primary/pri-problem-000001.html#問題",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "\\[\n3^{17171717}\n\\]\nの下3桁の数を求めなさい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html#方針",
     "href": "problems/primary/pri-problem-000001.html#方針",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n下3桁を求めることは、\\(3^{17171717}\\) を \\(1000\\) で割った余りを求めることと同じである。\nまず \\(3^{100}\\equiv 1\\pmod{1000}\\) を示して指数を \\(100\\) で整理し、その後、繰り返し二乗法で \\(3^{17}\\pmod{1000}\\) を計算する。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#必要な知識",
+    "href": "problems/primary/pri-problem-000001.html#必要な知識",
+    "title": "第461回 1次 問1",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n合同式・剰余\nオイラーの定理\n互いに素な法に分けて合同式を確認する考え方"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html#必要な発想",
     "href": "problems/primary/pri-problem-000001.html#必要な発想",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n\\(1000=8\\cdot125\\) と分解すると、\\(3^{100}\\equiv1\\pmod{1000}\\) を確認しやすい。\n指数 \\(17171717\\) を直接扱うのではなく、周期を利用して小さな指数へ落とす。"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html#解答",
     "href": "problems/primary/pri-problem-000001.html#解答",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\nまず、法 \\(8\\) では\n\\[\n3^2=9\\equiv1\\pmod8\n\\]\nであるから、\n\\[\n3^{100}=(3^2)^{50}\\equiv1\\pmod8\n\\]\nとなる。\n一方、\\(\\gcd(3,125)=1\\) であり、\n\\[\n\\varphi(125)=125-25=100\n\\]\nだから、オイラーの定理より\n\\[\n3^{100}\\equiv1\\pmod{125}\n\\]\nである。\nしたがって、\\(3^{100}-1\\) は \\(8\\) と \\(125\\) の両方で割り切れる。\n\\(8\\) と \\(125\\) は互いに素なので、\n\\[\n3^{100}\\equiv1\\pmod{1000}\n\\]\nを得る。\nここで、\n\\[\n17171717=100\\cdot171717+17\n\\]\nだから、\n\\[\n3^{17171717}\n=(3^{100})^{171717}3^{17}\n\\equiv3^{17}\\pmod{1000}\n\\]\nである。\n繰り返し二乗法で \\(3^{17}\\) を計算する。\n\\[\n3^4=81\n\\]\n\\[\n3^8=81^2=6561\\equiv561\\pmod{1000}\n\\]\n\\[\n3^{16}\\equiv561^2=314721\\equiv721\\pmod{1000}\n\\]\nしたがって、\n\\[\n3^{17}\\equiv721\\cdot3=2163\\equiv163\\pmod{1000}\n\\]\nである。\nよって、求める下3桁は\n\\[\n\\boxed{163}\n\\]\nである。"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html#検算",
     "href": "problems/primary/pri-problem-000001.html#検算",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n法 \\(8\\) と法 \\(125\\) で答えを確認する。\n\\[\n163\\equiv3\\pmod8\n\\]\n一方、\n\\[\n3^{17171717}\\equiv3^{17}\\equiv3\\pmod8\n\\]\nなので一致する。\nまた、\n\\[\n163\\equiv38\\pmod{125}\n\\]\nであり、繰り返し二乗法で法 \\(125\\) を用いても\n\\[\n3^{17}\\equiv38\\pmod{125}\n\\]\nとなるため、法 \\(125\\) でも一致する。"
   },
   {
     "objectID": "problems/primary/pri-problem-000001.html#コメント",
     "href": "problems/primary/pri-problem-000001.html#コメント",
-    "title": "出典不明01 問1",
+    "title": "第461回 1次 問1",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\n巨大な指数を見たら、まず「指数そのものを計算しない」ことが重要である。\n今回は下3桁なので法 \\(1000\\) を考え、\\(1000=8\\cdot125\\) と分けることで周期を確認した。"
   },
   {
     "objectID": "problems/index.html",
@@ -1248,149 +1276,170 @@
   {
     "objectID": "problems/primary/pri-problem-000003.html",
     "href": "problems/primary/pri-problem-000003.html",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "標準内積をもつ4次元実計量線形空間 \\(\\mathbb{R}^4\\) の4つのベクトル\n\\[\n\\boldsymbol{x}_0=\n\\begin{pmatrix}\n-3\\\\\n0\\\\\n-3\\\\\n5\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\\n3\\\\\na\\\\\n0\n\\end{pmatrix},\n\\]\n\\[\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\nb\\\\\n0\\\\\nc\\\\\n12\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\nd\\\\\n4\\\\\ne\\\\\nf\n\\end{pmatrix}\n\\]\nが互いに直交するように、定数 \\(a,b,c,d,e,f\\) の値を定めなさい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html#問題",
     "href": "problems/primary/pri-problem-000003.html#問題",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "標準内積をもつ4次元実計量線形空間 \\(\\mathbb{R}^4\\) の4つのベクトル\n\\[\n\\boldsymbol{x}_0=\n\\begin{pmatrix}\n-3\\\\\n0\\\\\n-3\\\\\n5\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\\n3\\\\\na\\\\\n0\n\\end{pmatrix},\n\\]\n\\[\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\nb\\\\\n0\\\\\nc\\\\\n12\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\nd\\\\\n4\\\\\ne\\\\\nf\n\\end{pmatrix}\n\\]\nが互いに直交するように、定数 \\(a,b,c,d,e,f\\) の値を定めなさい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html#方針",
     "href": "problems/primary/pri-problem-000003.html#方針",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n「互いに直交する」とは、異なる2本のベクトルの内積がすべて \\(0\\) になることを意味する。\n6組の内積条件を立てるが、最初から6元連立方程式として解くのではなく、\n\n\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_1=0\\) から \\(a\\)\n\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_2=0\\)、\\(\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_2=0\\) から \\(b,c\\)\n残りの3式から \\(d,e,f\\)\n\nの順に求める。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html#必要な知識",
+    "href": "problems/primary/pri-problem-000003.html#必要な知識",
+    "title": "第461回 1次 問3",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n直交性\n標準内積\n連立一次方程式"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html#必要な発想",
     "href": "problems/primary/pri-problem-000003.html#必要な発想",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n条件をすべて同時に展開すると式が多く見えるが、未知数の現れ方には段階がある。\n先に \\(a\\)、次に \\(b,c\\) を決めると、最後は \\(d,e,f\\) の3元連立方程式だけになる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html#解答",
     "href": "problems/primary/pri-problem-000003.html#解答",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\nまず、\n\\[\n\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_1=0\n\\]\nより、\n\\[\n(-3)\\cdot2+0\\cdot3+(-3)a+5\\cdot0=0\n\\]\nしたがって、\n\\[\n-6-3a=0\n\\]\nであるから、\n\\[\na=-2\n\\]\nを得る。\n次に、\n\\[\n\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_2=0\n\\]\nより、\n\\[\n-3b-3c+60=0\n\\]\nしたがって、\n\\[\nb+c=20\n\\tag{1}\n\\]\nである。\nまた、\n\\[\n\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_2=0\n\\]\nより、\\(a=-2\\) を用いると、\n\\[\n2b+ac=0\n\\]\n\\[\n2b-2c=0\n\\]\nしたがって、\n\\[\nb=c\n\\tag{2}\n\\]\nである。\n(1)、(2)より、\n\\[\nb=c=10\n\\]\nを得る。\n残りの未知数 \\(d,e,f\\) を求める。\n\\[\n\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_3=0\n\\]\nより、\n\\[\n-3d-3e+5f=0\n\\tag{3}\n\\]\nである。\n\\[\n\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_3=0\n\\]\nより、\n\\[\n2d+12-2e=0\n\\]\nしたがって、\n\\[\nd-e=-6\n\\tag{4}\n\\]\nである。\nさらに、\n\\[\n\\boldsymbol{x}_2\\cdot\\boldsymbol{x}_3=0\n\\]\nより、\n\\[\n10d+10e+12f=0\n\\tag{5}\n\\]\nである。\n(4)から、\n\\[\nd=e-6\n\\]\nと表せる。\nこれを (3) に代入すると、\n\\[\n-3(e-6)-3e+5f=0\n\\]\n\\[\n-6e+18+5f=0\n\\]\nしたがって、\n\\[\n5f=6e-18\n\\tag{6}\n\\]\nである。\nまた、(5) に \\(d=e-6\\) を代入すると、\n\\[\n10(e-6)+10e+12f=0\n\\]\n\\[\n20e-60+12f=0\n\\]\nしたがって、\n\\[\n6f=30-10e\n\\tag{7}\n\\]\nである。\n(6)、(7)から \\(f\\) を消去すると、\n\\[\n\\frac{6e-18}{5}\n=\n\\frac{30-10e}{6}\n\\]\n\\[\n36e-108=150-50e\n\\]\n\\[\n86e=258\n\\]\nよって、\n\\[\ne=3\n\\]\nである。\nしたがって、\n\\[\nd=e-6=-3\n\\]\nまた、(6)より、\n\\[\n5f=18-18=0\n\\]\nなので、\n\\[\nf=0\n\\]\nである。\n以上より、\n\\[\n\\boxed{\na=-2,\\quad\nb=10,\\quad\nc=10,\\quad\nd=-3,\\quad\ne=3,\\quad\nf=0\n}\n\\]\nとなる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html#検算",
     "href": "problems/primary/pri-problem-000003.html#検算",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n得られたベクトルは\n\\[\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\3\\\\-2\\\\0\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\n10\\\\0\\\\10\\\\12\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\n-3\\\\4\\\\3\\\\0\n\\end{pmatrix}\n\\]\nである。\n6組の内積を確認すると、\n\\[\n\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_1=-6+6=0,\n\\]\n\\[\n\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_2=-30-30+60=0,\n\\]\n\\[\n\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_3=9-9=0,\n\\]\n\\[\n\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_2=20-20=0,\n\\]\n\\[\n\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_3=-6+12-6=0,\n\\]\n\\[\n\\boldsymbol{x}_2\\cdot\\boldsymbol{x}_3=-30+30=0.\n\\]\nしたがって、4本のベクトルは確かに互いに直交する。"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html#コメント",
     "href": "problems/primary/pri-problem-000003.html#コメント",
-    "title": "出典不明01 問3",
+    "title": "第461回 1次 問3",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\n「互いに直交」という条件からは、4本のベクトルについて\n\\[\n\\binom42=6\n\\]\n本の内積条件が得られる。\nただし、未知数が段階的に決まる構造を見れば、大きな連立方程式を一度に解く必要はない。"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html",
     "href": "problems/primary/pri-problem-000006.html",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の行列式を計算しなさい。\n\\[\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html#問題",
     "href": "problems/primary/pri-problem-000006.html#問題",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "次の行列式を計算しなさい。\n\\[\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html#方針",
     "href": "problems/primary/pri-problem-000006.html#方針",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n行と列を同じ順序で並べ替え、行列を\n\\[\n\\begin{pmatrix}\n2I_3&B\\\\\nB&2I_3\n\\end{pmatrix}\n\\]\nという対称なブロック行列へ変形する。\nその後、\n\\[\n\\det\n\\begin{pmatrix}\nC&D\\\\\nD&C\n\\end{pmatrix}\n=\n\\det(C+D)\\det(C-D)\n\\]\nを用いて、6次の行列式を2つの3次の行列式へ分解する。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html#必要な知識",
+    "href": "problems/primary/pri-problem-000006.html#必要な知識",
+    "title": "第461回 1次 問6",
+    "section": "必要な知識",
+    "text": "必要な知識\n\nブロック行列式\n行列式における行・列の同時置換\n対称ブロック行列の分解"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html#必要な発想",
     "href": "problems/primary/pri-problem-000006.html#必要な発想",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n元の行列をそのまま余因子展開するのではなく、非零成分のつながりを見る。\n添字を\n\\[\n(1,4,5,2,3,6)\n\\]\nの順に並べると、対角ブロックが \\(2I_3\\) になり、ブロック構造が現れる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html#解答",
     "href": "problems/primary/pri-problem-000006.html#解答",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\n与えられた行列を \\(A\\) とする。\n行と列をともに\n\\[\n(1,4,5,2,3,6)\n\\]\nの順に並べ替える。\n行と列に同じ置換を行う操作は\n\\[\nA\\longmapsto P^{\\mathsf T}AP\n\\]\nと表される。置換行列 \\(P\\) に対して\n\\[\n\\det(P^{\\mathsf T}AP)\n=\n\\det(P^{\\mathsf T})\\det(A)\\det(P)\n=\n(\\det P)^2\\det A\n=\n\\det A\n\\]\nなので、行列式の値は変わらない。\n並べ替え後の行列は\n\\[\n\\begin{pmatrix}\n2&0&0&1&1&0\\\\\n0&2&0&1&1&1\\\\\n0&0&2&0&1&1\\\\\n1&1&0&2&0&0\\\\\n1&1&1&0&2&0\\\\\n0&1&1&0&0&2\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2I_3&B\\\\\nB&2I_3\n\\end{pmatrix}\n\\]\nとなる。ただし、\n\\[\nB=\n\\begin{pmatrix}\n1&1&0\\\\\n1&1&1\\\\\n0&1&1\n\\end{pmatrix}\n\\]\nである。\n一般に、\n\\[\nS=\\frac1{\\sqrt2}\n\\begin{pmatrix}\nI_3&I_3\\\\\nI_3&-I_3\n\\end{pmatrix}\n\\]\nとおくと、\\(S\\) は直交行列であり、\n\\[\nS^{\\mathsf T}\n\\begin{pmatrix}\n2I_3&B\\\\\nB&2I_3\n\\end{pmatrix}\nS\n=\n\\begin{pmatrix}\n2I_3+B&0\\\\\n0&2I_3-B\n\\end{pmatrix}\n\\]\nとなる。\nしたがって、\n\\[\n\\det A\n=\n\\det(2I_3+B)\\det(2I_3-B).\n\\]\nまず、\n\\[\n2I_3+B\n=\n\\begin{pmatrix}\n3&1&0\\\\\n1&3&1\\\\\n0&1&3\n\\end{pmatrix}\n\\]\nだから、\n\\[\n\\begin{aligned}\n\\det(2I_3+B)\n&=\n3\n\\begin{vmatrix}\n3&1\\\\\n1&3\n\\end{vmatrix}\n-\n\\begin{vmatrix}\n1&1\\\\\n0&3\n\\end{vmatrix}\\\\\n&=3(9-1)-3\\\\\n&=21.\n\\end{aligned}\n\\]\n次に、\n\\[\n2I_3-B\n=\n\\begin{pmatrix}\n1&-1&0\\\\\n-1&1&-1\\\\\n0&-1&1\n\\end{pmatrix}\n\\]\nだから、\n\\[\n\\begin{aligned}\n\\det(2I_3-B)\n&=\n\\begin{vmatrix}\n1&-1\\\\\n-1&1\n\\end{vmatrix}\n+\n\\begin{vmatrix}\n-1&-1\\\\\n0&1\n\\end{vmatrix}\\\\\n&=(1-1)+(-1)\\\\\n&=-1.\n\\end{aligned}\n\\]\nよって、\n\\[\n\\det A\n=\n21\\cdot(-1)\n=\n\\boxed{-21}.\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html#検算",
     "href": "problems/primary/pri-problem-000006.html#検算",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n\\(B\\) の固有値は\n\\[\n1,\\qquad1+\\sqrt2,\\qquad1-\\sqrt2\n\\]\nである。\nしたがって、ブロック行列\n\\[\n\\begin{pmatrix}\n2I_3&B\\\\\nB&2I_3\n\\end{pmatrix}\n\\]\nの固有値は\n\\[\n2+\\lambda,\\qquad2-\\lambda\n\\]\nの形で得られる。\n行列式はそれらの積だから、\n\\[\n\\begin{aligned}\n\\det A\n&=(2+1)(2-1)\\\\\n&\\quad\\cdot(2+1+\\sqrt2)(2-1-\\sqrt2)\\\\\n&\\quad\\cdot(2+1-\\sqrt2)(2-1+\\sqrt2)\\\\\n&=3(3+\\sqrt2)(1-\\sqrt2)(3-\\sqrt2)(1+\\sqrt2)\\\\\n&=-21.\n\\end{aligned}\n\\]\n解答と一致する。"
   },
   {
     "objectID": "problems/primary/pri-problem-000006.html#コメント",
     "href": "problems/primary/pri-problem-000006.html#コメント",
-    "title": "出典不明01 問6",
+    "title": "第461回 1次 問6",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\n高次の行列式では、余因子展開や行基本変形を始める前に、\n\n同じ形の行や列\n添字のグループ分け\nブロック構造\n対称性\n\nを探す。\n今回は行と列を同時に並べ替えることで、6次の行列式が2つの3次の行列式へ分解された。"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html",
     "href": "problems/primary/pri-problem-000005.html",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "\\(k\\) を定数とする。\\(X,Y\\) はともに連続型の確率変数で、次の同時確率密度関数をもつとする。\n\\[\nf(x,y)=\n\\begin{cases}\nkxy\n&\n(1\\leq xy\\leq2,\\ 1\\leq x\\leq2),\\\\[4pt]\n0\n&\n(\\text{上記以外の }x,y).\n\\end{cases}\n\\]\n次の問いに答えなさい。\n\n\\(k\\) の値を求めなさい。\n\\(Y\\) の平均 \\(E(Y)\\) を求めなさい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html#問題",
     "href": "problems/primary/pri-problem-000005.html#問題",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "",
-    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+    "text": "\\(k\\) を定数とする。\\(X,Y\\) はともに連続型の確率変数で、次の同時確率密度関数をもつとする。\n\\[\nf(x,y)=\n\\begin{cases}\nkxy\n&\n(1\\leq xy\\leq2,\\ 1\\leq x\\leq2),\\\\[4pt]\n0\n&\n(\\text{上記以外の }x,y).\n\\end{cases}\n\\]\n次の問いに答えなさい。\n\n\\(k\\) の値を求めなさい。\n\\(Y\\) の平均 \\(E(Y)\\) を求めなさい。"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html#方針",
     "href": "problems/primary/pri-problem-000005.html#方針",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "方針",
-    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+    "text": "方針\n条件\n\\[\n1\\leq xy\\leq2,\\qquad1\\leq x\\leq2\n\\]\nを、\\(x\\) を固定したときの \\(y\\) の範囲へ直す。\n\\[\n1\\leq xy\\leq2\n\\quad\\Longleftrightarrow\\quad\n\\frac1x\\leq y\\leq\\frac2x\n\\]\nである。\nこの積分領域を用いて、\n\n密度の全積分が \\(1\\)\n\\(E(Y)=\\iint y f(x,y)\\,dx\\,dy\\)\n\nを順に計算する。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000005.html#必要な知識",
+    "href": "problems/primary/pri-problem-000005.html#必要な知識",
+    "title": "第461回 1次 問5",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n同時確率密度関数\n期待値\n重積分\n確率密度関数の正規化条件"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html#必要な発想",
     "href": "problems/primary/pri-problem-000005.html#必要な発想",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "必要な発想",
-    "text": "必要な発想\n特になし。"
+    "text": "必要な発想\n積分領域を正しく読み替えることが中心である。\n\\[\n1\\leq xy\\leq2\n\\]\nをそのまま扱うのではなく、\n\\[\n1\\leq x\\leq2,\n\\qquad\n\\frac1x\\leq y\\leq\\frac2x\n\\]\nと書けば、累次積分を直ちに立てられる。"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html#解答",
     "href": "problems/primary/pri-problem-000005.html#解答",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "解答",
-    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+    "text": "解答\n\n(1) \\(k\\) の値\n確率密度関数の全積分は \\(1\\) だから、\n\\[\n\\int_1^2\n\\int_{1/x}^{2/x}\nkxy\\,dy\\,dx\n=1\n\\]\nである。\n内側を積分すると、\n\\[\n\\begin{aligned}\n\\int_{1/x}^{2/x}kxy\\,dy\n&=kx\\left[\\frac{y^2}{2}\\right]_{1/x}^{2/x}\\\\\n&=\\frac{kx}{2}\n\\left(\n\\frac4{x^2}-\\frac1{x^2}\n\\right)\\\\\n&=\\frac{3k}{2x}.\n\\end{aligned}\n\\]\nしたがって、\n\\[\n\\begin{aligned}\n1\n&=\\int_1^2\\frac{3k}{2x}\\,dx\\\\\n&=\\frac{3k}{2}\\left[\\log x\\right]_1^2\\\\\n&=\\frac{3k}{2}\\log2.\n\\end{aligned}\n\\]\nよって、\n\\[\n\\boxed{k=\\frac{2}{3\\log2}}\n\\]\nである。\n\n\n(2) \\(E(Y)\\)\n期待値の定義より、\n\\[\nE(Y)\n=\n\\int_1^2\n\\int_{1/x}^{2/x}\ny f(x,y)\\,dy\\,dx\n\\]\nである。\n\\(f(x,y)=kxy\\) なので、\n\\[\nE(Y)\n=\n\\int_1^2\n\\int_{1/x}^{2/x}\nkxy^2\\,dy\\,dx.\n\\]\n内側を積分すると、\n\\[\n\\begin{aligned}\n\\int_{1/x}^{2/x}kxy^2\\,dy\n&=kx\\left[\\frac{y^3}{3}\\right]_{1/x}^{2/x}\\\\\n&=\\frac{kx}{3}\n\\left(\n\\frac8{x^3}-\\frac1{x^3}\n\\right)\\\\\n&=\\frac{7k}{3x^2}.\n\\end{aligned}\n\\]\nしたがって、\n\\[\n\\begin{aligned}\nE(Y)\n&=\\frac{7k}{3}\\int_1^2\\frac1{x^2}\\,dx\\\\\n&=\\frac{7k}{3}\n\\left[-\\frac1x\\right]_1^2\\\\\n&=\\frac{7k}{3}\\left(1-\\frac12\\right)\\\\\n&=\\frac{7k}{6}.\n\\end{aligned}\n\\]\nここに\n\\[\nk=\\frac{2}{3\\log2}\n\\]\nを代入すると、\n\\[\nE(Y)\n=\n\\frac76\\cdot\\frac{2}{3\\log2}\n=\n\\boxed{\\frac{7}{9\\log2}}\n\\]\nである。"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html#検算",
     "href": "problems/primary/pri-problem-000005.html#検算",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "検算",
-    "text": "検算\n行列式を直接再計算する。"
+    "text": "検算\n\\(1\\leq x\\leq2\\) かつ \\(1/x\\leq y\\leq2/x\\) より、\n\\[\n\\frac12\\leq Y\\leq2\n\\]\nである。\n数値的に、\n\\[\nE(Y)=\\frac{7}{9\\log2}\\approx1.122\n\\]\nであり、\n\\[\n\\frac12&lt;E(Y)&lt;2\n\\]\nを満たしている。\nまた、\n\\[\nk=\\frac{2}{3\\log2}&gt;0\n\\]\nなので、確率密度関数の非負性も満たす。"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html#コメント",
     "href": "problems/primary/pri-problem-000005.html#コメント",
-    "title": "出典不明01 問5",
+    "title": "第461回 1次 問5",
     "section": "コメント",
-    "text": "コメント\n一覧表では「行列式」と表示する。"
+    "text": "コメント\n確率の重積分では、計算よりも積分領域の設定が重要である。\n条件が積 \\(xy\\) で与えられたときは、片方の変数を固定して、もう片方の上下限へ変換する。"
   },
   {
     "objectID": "problems/secondary/sec-problem-000002.html",
@@ -1593,7 +1642,7 @@
     "href": "tags/index.html",
     "title": "タグ・索引",
     "section": "",
-    "text": "1次試験タグ\n2次試験タグ\n\nタグ一覧は後の段階で生成します。"
+    "text": "問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。\n\n\n\n\n1次\n\n\n2次\n\n\n\n&lt;label class=\"catalog-search-wrap\"&gt;\n  &lt;span class=\"visually-hidden\"&gt;タグを検索&lt;/span&gt;\n  &lt;input id=\"catalog-search\" class=\"catalog-search\" type=\"search\" placeholder=\"タグ名・タグID・上位分類から検索\" autocomplete=\"off\"&gt;\n&lt;/label&gt;\n&lt;div class=\"catalog-view-switch\" aria-label=\"表示方法\"&gt;\n  &lt;button class=\"catalog-view-button is-active\" type=\"button\" data-view=\"hierarchy\" aria-pressed=\"true\"&gt;階層&lt;/button&gt;\n  &lt;button class=\"catalog-view-button\" type=\"button\" data-view=\"list\" aria-pressed=\"false\"&gt;一覧&lt;/button&gt;\n&lt;/div&gt;\n\n\n\n\nタグデータを読み込んでいます…\n\n\n\n\n\n\nこのページを表示するにはJavaScriptを有効にしてください。"
   },
   {
     "objectID": "knowledge/primary/function.html",

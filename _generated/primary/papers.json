@@ -5,11 +5,11 @@
   "max_question_number": 7,
   "papers": [
     {
-      "id": "pri-paper-unknown-001",
-      "label": "出典不明 01",
-      "year": null,
-      "round": null,
-      "sort_order": 9001,
+      "id": "pri-paper-0461",
+      "label": "第461回（2026年7月25日）",
+      "year": 2026,
+      "round": 461,
+      "sort_order": 20260725,
       "problem_count": 7,
       "question_numbers": [
         1,
@@ -31,18 +31,18 @@
         },
         "2": {
           "problem_id": "pri-problem-000002",
-          "cell_label": "逆関数",
+          "cell_label": "逆三角関数",
           "path": "problems/primary/pri-problem-000002.html",
           "direct_tags": [
-            "inverse-function"
+            "inverse-trigonometric-function"
           ]
         },
         "3": {
           "problem_id": "pri-problem-000003",
-          "cell_label": "連立方程式",
+          "cell_label": "直交ベクトル",
           "path": "problems/primary/pri-problem-000003.html",
           "direct_tags": [
-            "system-of-equations"
+            "orthogonality"
           ]
         },
         "4": {
@@ -55,24 +55,24 @@
         },
         "5": {
           "problem_id": "pri-problem-000005",
-          "cell_label": "連続確率変数",
+          "cell_label": "同時確率密度",
           "path": "problems/primary/pri-problem-000005.html",
           "direct_tags": [
-            "continuous-random-variable",
+            "joint-probability-density-function",
             "expected-value"
           ]
         },
         "6": {
           "problem_id": "pri-problem-000006",
-          "cell_label": "行列式",
+          "cell_label": "ブロック行列式",
           "path": "problems/primary/pri-problem-000006.html",
           "direct_tags": [
-            "determinant"
+            "block-determinant"
           ]
         },
         "7": {
           "problem_id": "pri-problem-000007",
-          "cell_label": "微分方程式",
+          "cell_label": "1階線形微分方程式",
           "path": "problems/primary/pri-problem-000007.html",
           "direct_tags": [
             "first-order-nonhomogeneous-ode"
