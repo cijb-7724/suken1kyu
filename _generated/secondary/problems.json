@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "exam": "secondary",
+  "count": 7,
+  "problems": [
+    {
+      "id": "sec-problem-000001",
+      "title": "出典不明01 問1",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 1,
+      "cell_label": "整数",
+      "direct_tags": [
+        "integers"
+      ],
+      "all_tags": [
+        "number-theory",
+        "integers"
+      ],
+      "path": "problems/secondary/sec-problem-000001.html",
+      "source_path": "problems/secondary/sec-problem-000001.qmd"
+    },
+    {
+      "id": "sec-problem-000002",
+      "title": "出典不明01 問2",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 2,
+      "cell_label": "フーリエ変換",
+      "direct_tags": [
+        "fourier-transform",
+        "series"
+      ],
+      "all_tags": [
+        "analysis",
+        "series",
+        "fourier-analysis",
+        "fourier-transform"
+      ],
+      "path": "problems/secondary/sec-problem-000002.html",
+      "source_path": "problems/secondary/sec-problem-000002.qmd"
+    },
+    {
+      "id": "sec-problem-000003",
+      "title": "出典不明01 問3",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 3,
+      "cell_label": "幾何",
+      "direct_tags": [
+        "geometry"
+      ],
+      "all_tags": [
+        "geometry"
+      ],
+      "path": "problems/secondary/sec-problem-000003.html",
+      "source_path": "problems/secondary/sec-problem-000003.qmd"
+    },
+    {
+      "id": "sec-problem-000004",
+      "title": "出典不明01 問4",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 4,
+      "cell_label": "確率密度関数",
+      "direct_tags": [
+        "probability-density-function",
+        "maximum-likelihood"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "probability-density-function",
+        "statistical-inference",
+        "maximum-likelihood"
+      ],
+      "path": "problems/secondary/sec-problem-000004.html",
+      "source_path": "problems/secondary/sec-problem-000004.qmd"
+    },
+    {
+      "id": "sec-problem-000005",
+      "title": "出典不明01 問5",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 5,
+      "cell_label": "整理技能",
+      "direct_tags": [
+        "algebraic-manipulation",
+        "antichain"
+      ],
+      "all_tags": [
+        "combinatorics",
+        "partially-ordered-set",
+        "antichain",
+        "mathematical-techniques",
+        "algebraic-manipulation"
+      ],
+      "path": "problems/secondary/sec-problem-000005.html",
+      "source_path": "problems/secondary/sec-problem-000005.qmd"
+    },
+    {
+      "id": "sec-problem-000006",
+      "title": "出典不明01 問6",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 6,
+      "cell_label": "線形代数",
+      "direct_tags": [
+        "linear-algebra"
+      ],
+      "all_tags": [
+        "linear-algebra"
+      ],
+      "path": "problems/secondary/sec-problem-000006.html",
+      "source_path": "problems/secondary/sec-problem-000006.qmd"
+    },
+    {
+      "id": "sec-problem-000007",
+      "title": "出典不明01 問7",
+      "paper_id": "sec-paper-unknown-001",
+      "question_number": 7,
+      "cell_label": "微分方程式",
+      "direct_tags": [
+        "differential-equation"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation"
+      ],
+      "path": "problems/secondary/sec-problem-000007.html",
+      "source_path": "problems/secondary/sec-problem-000007.qmd"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "exam": "secondary",
+  "count": 1,
+  "max_question_number": 7,
+  "papers": [
+    {
+      "id": "sec-paper-unknown-001",
+      "label": "出典不明 01",
+      "year": null,
+      "round": null,
+      "sort_order": 9001,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000001",
+          "cell_label": "整数",
+          "path": "problems/secondary/sec-problem-000001.html",
+          "direct_tags": [
+            "integers"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000002",
+          "cell_label": "フーリエ変換",
+          "path": "problems/secondary/sec-problem-000002.html",
+          "direct_tags": [
+            "fourier-transform",
+            "series"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000003",
+          "cell_label": "幾何",
+          "path": "problems/secondary/sec-problem-000003.html",
+          "direct_tags": [
+            "geometry"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000004",
+          "cell_label": "確率密度関数",
+          "path": "problems/secondary/sec-problem-000004.html",
+          "direct_tags": [
+            "probability-density-function",
+            "maximum-likelihood"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000005",
+          "cell_label": "整理技能",
+          "path": "problems/secondary/sec-problem-000005.html",
+          "direct_tags": [
+            "algebraic-manipulation",
+            "antichain"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000006",
+          "cell_label": "線形代数",
+          "path": "problems/secondary/sec-problem-000006.html",
+          "direct_tags": [
+            "linear-algebra"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000007",
+          "cell_label": "微分方程式",
+          "path": "problems/secondary/sec-problem-000007.html",
+          "direct_tags": [
+            "differential-equation"
+          ]
+        }
+      }
+    }
+  ]
+}
