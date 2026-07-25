@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "knowledge/secondary/determinant.html",
+    "href": "knowledge/secondary/determinant.html",
+    "title": "行列式",
+    "section": "",
+    "text": "2次試験で必要となる行列式の知識をまとめる。\n\n\n定義、性質、計算法、証明への利用などを整理する。\n\n\n\n後で自動生成する。"
+  },
+  {
+    "objectID": "knowledge/secondary/determinant.html#基本事項",
+    "href": "knowledge/secondary/determinant.html#基本事項",
+    "title": "行列式",
+    "section": "",
+    "text": "定義、性質、計算法、証明への利用などを整理する。"
+  },
+  {
+    "objectID": "knowledge/secondary/determinant.html#関連問題",
+    "href": "knowledge/secondary/determinant.html#関連問題",
+    "title": "行列式",
+    "section": "",
+    "text": "後で自動生成する。"
+  },
+  {
+    "objectID": "knowledge/primary/determinant.html",
+    "href": "knowledge/primary/determinant.html",
+    "title": "行列式",
+    "section": "",
+    "text": "1次試験で必要となる行列式の知識をまとめる。\n\n\n[\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n=ad-bc ]\n\n\n\n後で自動生成する。"
+  },
+  {
+    "objectID": "knowledge/primary/determinant.html#基本事項",
+    "href": "knowledge/primary/determinant.html#基本事項",
+    "title": "行列式",
+    "section": "",
+    "text": "[\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n=ad-bc ]"
+  },
+  {
+    "objectID": "knowledge/primary/determinant.html#関連問題",
+    "href": "knowledge/primary/determinant.html#関連問題",
+    "title": "行列式",
+    "section": "",
+    "text": "後で自動生成する。"
+  },
+  {
+    "objectID": "knowledge/index.html",
+    "href": "knowledge/index.html",
+    "title": "知識",
+    "section": "",
+    "text": "1次試験の知識\n2次試験の知識"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "数検1級 解説ノート",
+    "section": "",
+    "text": "数検1級の過去問解説と、関連する数学知識を整理するためのサイトです。"
+  },
+  {
+    "objectID": "index.html#試験別",
+    "href": "index.html#試験別",
+    "title": "数検1級 解説ノート",
+    "section": "試験別",
+    "text": "試験別\n\n1次試験\n2次試験"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html",
+    "href": "problems/secondary/pri-problem-000001.html",
+    "title": "出典不明01 問6",
+    "section": "",
+    "text": "2次試験のサンプル問題。"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html#問題",
+    "href": "problems/secondary/pri-problem-000001.html#問題",
+    "title": "出典不明01 問6",
+    "section": "",
+    "text": "2次試験のサンプル問題。"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html#方針",
+    "href": "problems/secondary/pri-problem-000001.html#方針",
+    "title": "出典不明01 問6",
+    "section": "方針",
+    "text": "方針\nここに方針を書く。"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html#必要な発想",
+    "href": "problems/secondary/pri-problem-000001.html#必要な発想",
+    "title": "出典不明01 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\nここに必要な発想を書く。"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html#解答",
+    "href": "problems/secondary/pri-problem-000001.html#解答",
+    "title": "出典不明01 問6",
+    "section": "解答",
+    "text": "解答\nここに解答を書く。"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html#検算",
+    "href": "problems/secondary/pri-problem-000001.html#検算",
+    "title": "出典不明01 問6",
+    "section": "検算",
+    "text": "検算\nここに検算を書く。"
+  },
+  {
+    "objectID": "problems/secondary/pri-problem-000001.html#コメント",
+    "href": "problems/secondary/pri-problem-000001.html#コメント",
+    "title": "出典不明01 問6",
+    "section": "コメント",
+    "text": "コメント\nここにコメントを書く。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html",
+    "href": "problems/primary/pri-problem-000001.html",
+    "title": "出典不明01 問6",
+    "section": "",
+    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#問題",
+    "href": "problems/primary/pri-problem-000001.html#問題",
+    "title": "出典不明01 問6",
+    "section": "",
+    "text": "次の行列式を求めよ。\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#方針",
+    "href": "problems/primary/pri-problem-000001.html#方針",
+    "title": "出典不明01 問6",
+    "section": "方針",
+    "text": "方針\n2次正方行列の行列式の定義を用いる。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#必要な発想",
+    "href": "problems/primary/pri-problem-000001.html#必要な発想",
+    "title": "出典不明01 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\n特になし。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#解答",
+    "href": "problems/primary/pri-problem-000001.html#解答",
+    "title": "出典不明01 問6",
+    "section": "解答",
+    "text": "解答\n[\n\\[\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\\]\n=1-2 =-2. ]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#検算",
+    "href": "problems/primary/pri-problem-000001.html#検算",
+    "title": "出典不明01 問6",
+    "section": "検算",
+    "text": "検算\n行列式を直接再計算する。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#コメント",
+    "href": "problems/primary/pri-problem-000001.html#コメント",
+    "title": "出典不明01 問6",
+    "section": "コメント",
+    "text": "コメント\n一覧表では「行列式」と表示する。"
+  },
+  {
+    "objectID": "problems/index.html",
+    "href": "problems/index.html",
+    "title": "過去問",
+    "section": "",
+    "text": "1次試験\n2次試験"
+  },
+  {
+    "objectID": "tags/index.html",
+    "href": "tags/index.html",
+    "title": "タグ・索引",
+    "section": "",
+    "text": "1次試験タグ\n2次試験タグ\n\nタグ一覧は後の段階で生成します。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html",
+    "href": "problems/secondary/sec-problem-000001.html",
+    "title": "出典不明01 問6",
+    "section": "",
+    "text": "2次試験のサンプル問題。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html#問題",
+    "href": "problems/secondary/sec-problem-000001.html#問題",
+    "title": "出典不明01 問6",
+    "section": "",
+    "text": "2次試験のサンプル問題。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html#方針",
+    "href": "problems/secondary/sec-problem-000001.html#方針",
+    "title": "出典不明01 問6",
+    "section": "方針",
+    "text": "方針\nここに方針を書く。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000001.html#必要な発想",
+    "title": "出典不明01 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\nここに必要な発想を書く。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html#解答",
+    "href": "problems/secondary/sec-problem-000001.html#解答",
+    "title": "出典不明01 問6",
+    "section": "解答",
+    "text": "解答\nここに解答を書く。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html#検算",
+    "href": "problems/secondary/sec-problem-000001.html#検算",
+    "title": "出典不明01 問6",
+    "section": "検算",
+    "text": "検算\nここに検算を書く。"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000001.html#コメント",
+    "href": "problems/secondary/sec-problem-000001.html#コメント",
+    "title": "出典不明01 問6",
+    "section": "コメント",
+    "text": "コメント\nここにコメントを書く。"
+  }
+]

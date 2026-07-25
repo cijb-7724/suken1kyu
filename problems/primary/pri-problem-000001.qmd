@@ -1,0 +1,49 @@
+---
+title: "出典不明01 問6"
+id: pri-problem-000001
+paper_id: pri-paper-unknown-001
+question_number: 6
+cell_label: 行列式
+tags:
+  - determinant
+---
+
+## 問題
+
+次の行列式を求めよ。
+
+\[
+\det
+\begin{pmatrix}
+1 & 2\\
+3 & 4
+\end{pmatrix}
+\]
+
+## 方針
+
+2次正方行列の行列式の定義を用いる。
+
+## 必要な発想
+
+特になし。
+
+## 解答
+
+\[
+\det
+\begin{pmatrix}
+1 & 2\\
+3 & 4
+\end{pmatrix}
+=1\cdot4-2\cdot3
+=-2.
+\]
+
+## 検算
+
+行列式を直接再計算する。
+
+## コメント
+
+一覧表では「行列式」と表示する。

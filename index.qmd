@@ -1,0 +1,10 @@
+---
+title: "数検1級 解説ノート"
+---
+
+数検1級の過去問解説と、関連する数学知識を整理するためのサイトです。
+
+## 試験別
+
+- [1次試験](problems/primary/index.qmd)
+- [2次試験](problems/secondary/index.qmd)

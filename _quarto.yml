@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: ja
+
+website:
+  title: "数検1級 解説ノート"
+  navbar:
+    left:
+      - href: index.qmd
+        text: ホーム
+      - href: problems/index.qmd
+        text: 過去問
+      - href: knowledge/index.qmd
+        text: 知識
+      - href: tags/index.qmd
+        text: タグ・索引
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-title: 目次
+    html-math-method: mathjax

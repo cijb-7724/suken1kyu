@@ -1,0 +1,6 @@
+---
+title: "過去問"
+---
+
+- [1次試験](primary/index.qmd)
+- [2次試験](secondary/index.qmd)

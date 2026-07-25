@@ -1,0 +1,23 @@
+---
+title: "行列式"
+id: determinant
+---
+
+# 行列式
+
+1次試験で必要となる行列式の知識をまとめる。
+
+## 基本事項
+
+\[
+\det
+\begin{pmatrix}
+a&b\\
+c&d
+\end{pmatrix}
+=ad-bc
+\]
+
+## 関連問題
+
+後で自動生成する。
