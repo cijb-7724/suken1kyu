@@ -1,0 +1,11 @@
+---
+title: "2次試験 過去問"
+toc: false
+search: false
+---
+
+<script>
+window.location.replace("../?exam=secondary");
+</script>
+
+[2次試験の過去問一覧へ移動します。](../?exam=secondary)

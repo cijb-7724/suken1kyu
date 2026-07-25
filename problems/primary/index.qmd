@@ -1,0 +1,11 @@
+---
+title: "1次試験 過去問"
+toc: false
+search: false
+---
+
+<script>
+window.location.replace("../?exam=primary");
+</script>
+
+[1次試験の過去問一覧へ移動します。](../?exam=primary)
