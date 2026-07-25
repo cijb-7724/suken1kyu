@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-taxonomy.yml に登録されているタグについて、
-存在しない知識ページを knowledge/<exam>/ に自動生成する。
+taxonomy.yml と knowledge/*.qmd を同期する。
 
-既存の知識ページは上書きしない。
+- taxonomy にある全タグについて知識ページを保証する。
+- 既存本文は保持する。
+- taxonomy の label を front matter の title へ反映する。
+- 自動UIブロックだけを安全に追加・更新する。
+- 1次と2次は完全に別々に処理する。
 """
 
 from __future__ import annotations
@@ -18,167 +21,93 @@ from typing import Any
 
 import yaml
 
-
 EXAMS = ("primary", "secondary")
-TAG_ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+TAG_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+AUTO_START = "<!-- AUTO:KNOWLEDGE-UI:START -->"
+AUTO_END = "<!-- AUTO:KNOWLEDGE-UI:END -->"
 
 
-class SyncKnowledgeError(Exception):
-    """知識ページ同期処理の入力データに問題がある場合の例外。"""
+class SyncError(Exception):
+    pass
 
 
 @dataclass(frozen=True)
 class Tag:
-    """taxonomy.yml 内の1つのタグ。"""
-
     tag_id: str
     label: str
     parent_id: str | None
     depth: int
 
 
-def get_repository_root() -> Path:
-    """
-    このスクリプトの位置からリポジトリのルートを取得する。
-
-    想定:
-        <repository>/scripts/sync_knowledge.py
-    """
+def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
-def load_taxonomy(taxonomy_path: Path) -> dict[str, Any]:
-    """taxonomy.ymlを読み込む。"""
-    if not taxonomy_path.is_file():
-        raise SyncKnowledgeError(
-            f"taxonomy.yml が見つかりません: {taxonomy_path}"
-        )
-
+def load_yaml(path: Path) -> dict[str, Any]:
+    if not path.is_file():
+        raise SyncError(f"ファイルが見つかりません: {path}")
     try:
-        with taxonomy_path.open("r", encoding="utf-8") as file:
-            data = yaml.safe_load(file)
-    except yaml.YAMLError as exc:
-        raise SyncKnowledgeError(
-            f"YAMLの解析に失敗しました: {taxonomy_path}\n{exc}"
-        ) from exc
-
-    if data is None:
-        raise SyncKnowledgeError(
-            f"taxonomy.yml が空です: {taxonomy_path}"
-        )
-
+        data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError) as exc:
+        raise SyncError(f"YAMLを読み込めません: {path}\n{exc}") from exc
     if not isinstance(data, dict):
-        raise SyncKnowledgeError(
-            f"taxonomy.yml の最上位は辞書形式である必要があります: "
-            f"{taxonomy_path}"
-        )
-
-    if "tags" not in data:
-        raise SyncKnowledgeError(
-            f"'tags' がありません: {taxonomy_path}"
-        )
-
-    if not isinstance(data["tags"], list):
-        raise SyncKnowledgeError(
-            f"'tags' はリストである必要があります: {taxonomy_path}"
-        )
-
+        raise SyncError(f"YAMLの最上位は辞書形式にしてください: {path}")
     return data
 
 
-def flatten_tags(nodes: list[Any]) -> list[Tag]:
-    """
-    入れ子になったタグ階層を、親情報を持つ一次元リストへ変換する。
-    """
+def flatten_tags(nodes: Any) -> list[Tag]:
+    if not isinstance(nodes, list):
+        raise SyncError("taxonomy.yml の 'tags' はリストにしてください。")
+
     result: list[Tag] = []
-    seen_ids: set[str] = set()
+    seen: set[str] = set()
 
-    def visit(
-        current_nodes: list[Any],
-        parent_id: str | None,
-        depth: int,
-    ) -> None:
-        if not isinstance(current_nodes, list):
-            raise SyncKnowledgeError(
-                "'children' はリストである必要があります。"
-            )
-
-        for index, node in enumerate(current_nodes, start=1):
+    def visit(current: list[Any], parent_id: str | None, depth: int) -> None:
+        for node in current:
             if not isinstance(node, dict):
-                raise SyncKnowledgeError(
-                    f"タグは辞書形式である必要があります。"
-                    f"位置: depth={depth}, index={index}"
-                )
+                raise SyncError("taxonomy.yml のタグは辞書形式にしてください。")
 
             tag_id = node.get("id")
             label = node.get("label")
-
-            if not isinstance(tag_id, str) or not tag_id.strip():
-                raise SyncKnowledgeError(
-                    f"タグの 'id' が不正です: {node!r}"
-                )
-
-            if not TAG_ID_PATTERN.fullmatch(tag_id):
-                raise SyncKnowledgeError(
-                    f"タグIDは小文字英数字のケバブケースにしてください: "
-                    f"{tag_id}"
-                )
-
-            if tag_id in seen_ids:
-                raise SyncKnowledgeError(
-                    f"タグIDが重複しています: {tag_id}"
-                )
-
+            if not isinstance(tag_id, str) or not TAG_ID_RE.fullmatch(tag_id):
+                raise SyncError(f"不正なタグIDです: {tag_id!r}")
+            if tag_id in seen:
+                raise SyncError(f"タグIDが重複しています: {tag_id}")
             if not isinstance(label, str) or not label.strip():
-                raise SyncKnowledgeError(
-                    f"タグ '{tag_id}' の 'label' が不正です。"
-                )
+                raise SyncError(f"タグ '{tag_id}' の label が不正です。")
 
-            seen_ids.add(tag_id)
-
-            result.append(
-                Tag(
-                    tag_id=tag_id,
-                    label=label.strip(),
-                    parent_id=parent_id,
-                    depth=depth,
-                )
-            )
+            seen.add(tag_id)
+            result.append(Tag(tag_id, label.strip(), parent_id, depth))
 
             children = node.get("children", [])
-
             if children is None:
                 children = []
-
             if not isinstance(children, list):
-                raise SyncKnowledgeError(
-                    f"タグ '{tag_id}' の 'children' は"
-                    f"リストである必要があります。"
-                )
+                raise SyncError(f"タグ '{tag_id}' の children はリストにしてください。")
+            visit(children, tag_id, depth + 1)
 
-            visit(
-                current_nodes=children,
-                parent_id=tag_id,
-                depth=depth + 1,
-            )
-
-    visit(nodes, parent_id=None, depth=0)
+    visit(nodes, None, 0)
     return result
 
 
-def render_knowledge_page(tag: Tag, exam: str) -> str:
-    """新しい知識ページの初期内容を生成する。"""
-    exam_label = "1次試験" if exam == "primary" else "2次試験"
+def auto_block() -> str:
+    return "\n".join(
+        [
+            AUTO_START,
+            '<div class="knowledge-detail-app" data-knowledge-page></div>',
+            '<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">',
+            '<script type="module" src="../../assets/js/knowledge-page.js"></script>',
+            AUTO_END,
+        ]
+    )
 
-    # json.dumps により、日本語や引用符を安全な二重引用形式にする。
-    yaml_title = json.dumps(tag.label, ensure_ascii=False)
 
+def render_new_page(tag: Tag) -> str:
+    title = json.dumps(tag.label, ensure_ascii=False)
     return f"""---
-title: {yaml_title}
+title: {title}
 id: {tag.tag_id}
 ---
-
-{exam_label}における「{tag.label}」についてまとめます。
 
 ## 概要
 
@@ -192,138 +121,153 @@ id: {tag.tag_id}
 
 未記入。
 
-## 関連問題
-
-後で自動表示します。
+{auto_block()}
 """
 
 
-def sync_exam(
-    repository_root: Path,
-    exam: str,
-    dry_run: bool,
-) -> tuple[int, int]:
-    """
-    指定した試験区分の知識ページを同期する。
+def split_front_matter(text: str, path: Path) -> tuple[list[str], list[str]]:
+    lines = text.splitlines()
+    if not lines or lines[0].lstrip("\ufeff") != "---":
+        raise SyncError(f"front matter がありません: {path}")
+    try:
+        end = lines.index("---", 1)
+    except ValueError as exc:
+        raise SyncError(f"front matter の終了記号がありません: {path}") from exc
+    return lines[: end + 1], lines[end + 1 :]
 
-    Returns:
-        (作成対象数, 既存ページ数)
-    """
-    taxonomy_path = (
-        repository_root
-        / "database"
-        / exam
-        / "taxonomy.yml"
-    )
 
-    knowledge_directory = (
-        repository_root
-        / "knowledge"
-        / exam
-    )
+def update_title(front: list[str], label: str) -> list[str]:
+    title_line = f"title: {json.dumps(label, ensure_ascii=False)}"
+    updated = list(front)
+    for index in range(1, len(updated) - 1):
+        if re.match(r"^title\s*:", updated[index]):
+            updated[index] = title_line
+            return updated
+    updated.insert(len(updated) - 1, title_line)
+    return updated
 
-    taxonomy = load_taxonomy(taxonomy_path)
-    tags = flatten_tags(taxonomy["tags"])
 
-    if not dry_run:
-        knowledge_directory.mkdir(parents=True, exist_ok=True)
+def replace_auto_block(body_text: str) -> str:
+    block = auto_block()
+    start_count = body_text.count(AUTO_START)
+    end_count = body_text.count(AUTO_END)
 
-    created_count = 0
-    skipped_count = 0
+    if start_count != end_count:
+        raise SyncError("知識ページの自動UIマーカーの開始・終了数が一致しません。")
+    if start_count > 1:
+        raise SyncError("知識ページの自動UIブロックが複数あります。")
+
+    if start_count == 0:
+        return body_text.rstrip() + "\n\n" + block + "\n"
+
+    start = body_text.index(AUTO_START)
+    end = body_text.index(AUTO_END, start) + len(AUTO_END)
+    return body_text[:start].rstrip() + "\n\n" + block + body_text[end:].rstrip() + "\n"
+
+
+def normalized_existing_page(path: Path, tag: Tag) -> str:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise SyncError(f"ファイルを読み込めません: {path}\n{exc}") from exc
+
+    front, body_lines = split_front_matter(text, path)
+    front = update_title(front, tag.label)
+    body = "\n".join(body_lines)
+    body = replace_auto_block(body)
+    return "\n".join(front).rstrip() + "\n\n" + body.lstrip("\n").rstrip() + "\n"
+
+
+def process_exam(root: Path, exam: str, mode: str) -> tuple[int, int, int]:
+    taxonomy_path = root / "database" / exam / "taxonomy.yml"
+    knowledge_dir = root / "knowledge" / exam
+    tags = flatten_tags(load_yaml(taxonomy_path).get("tags"))
+
+    created = 0
+    updated = 0
+    unchanged = 0
+
+    if mode == "write":
+        knowledge_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"\n=== {exam} ===")
-    print(f"taxonomy: {taxonomy_path}")
     print(f"タグ数: {len(tags)}")
 
     for tag in tags:
-        page_path = knowledge_directory / f"{tag.tag_id}.qmd"
+        path = knowledge_dir / f"{tag.tag_id}.qmd"
+        relative = path.relative_to(root)
 
-        if page_path.exists():
-            print(f"[SKIP]   {page_path.relative_to(repository_root)}")
-            skipped_count += 1
-            continue
+        if not path.exists():
+            status = "CREATE"
+            content = render_new_page(tag)
+            created += 1
+        else:
+            content = normalized_existing_page(path, tag)
+            current = path.read_text(encoding="utf-8")
+            if current == content:
+                status = "SKIP"
+                unchanged += 1
+            else:
+                status = "UPDATE"
+                updated += 1
 
-        print(f"[CREATE] {page_path.relative_to(repository_root)}")
-        created_count += 1
+        print(f"[{status}] {relative}")
 
-        if dry_run:
-            continue
+        if mode == "write" and status in {"CREATE", "UPDATE"}:
+            path.write_text(content, encoding="utf-8")
 
-        page_content = render_knowledge_page(tag, exam)
-
-        try:
-            page_path.write_text(page_content, encoding="utf-8")
-        except OSError as exc:
-            raise SyncKnowledgeError(
-                f"ファイルの作成に失敗しました: {page_path}\n{exc}"
-            ) from exc
-
-    return created_count, skipped_count
+    return created, updated, unchanged
 
 
-def parse_arguments() -> argparse.Namespace:
-    """コマンドライン引数を解析する。"""
+def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description=(
-            "taxonomy.yml に登録されたタグについて、"
-            "存在しない知識ページを自動生成します。"
-        )
+        description="taxonomy と知識ページを同期し、自動UIブロックを更新します。"
     )
-
     parser.add_argument(
-        "--exam",
-        choices=("primary", "secondary", "all"),
-        default="all",
-        help=(
-            "処理対象。primary、secondary、all のいずれか。"
-            "既定値は all。"
-        ),
+        "--exam", choices=("primary", "secondary", "all"), default="all"
     )
-
-    parser.add_argument(
-        "--dry-run",
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("--dry-run", action="store_true", help="変更予定だけを表示します。")
+    group.add_argument(
+        "--check",
         action="store_true",
-        help="ファイルを作成せず、作成予定だけを表示します。",
+        help="同期が必要なら終了コード1を返し、ファイルは変更しません。",
     )
-
     return parser.parse_args()
 
 
 def main() -> int:
-    """エントリーポイント。"""
-    arguments = parse_arguments()
-    repository_root = get_repository_root()
+    args = parse_args()
+    root = repo_root()
+    exams = EXAMS if args.exam == "all" else (args.exam,)
+    mode = "check" if args.check else "dry-run" if args.dry_run else "write"
 
-    exams = (
-        EXAMS
-        if arguments.exam == "all"
-        else (arguments.exam,)
-    )
-
-    total_created = 0
-    total_skipped = 0
-
+    total_created = total_updated = total_unchanged = 0
     try:
         for exam in exams:
-            created, skipped = sync_exam(
-                repository_root=repository_root,
-                exam=exam,
-                dry_run=arguments.dry_run,
-            )
-
+            created, updated, unchanged = process_exam(root, exam, mode)
             total_created += created
-            total_skipped += skipped
-
-    except SyncKnowledgeError as exc:
+            total_updated += updated
+            total_unchanged += unchanged
+    except (SyncError, OSError) as exc:
         print(f"\nエラー: {exc}", file=sys.stderr)
         return 1
 
-    mode = "作成予定" if arguments.dry_run else "作成完了"
-
     print("\n=== 結果 ===")
-    print(f"{mode}: {total_created}件")
-    print(f"既存のためスキップ: {total_skipped}件")
+    print(f"新規: {total_created}件")
+    print(f"更新: {total_updated}件")
+    print(f"変更なし: {total_unchanged}件")
 
+    if args.check and (total_created or total_updated):
+        print("Knowledge page synchronization is required.")
+        return 1
+
+    if args.dry_run:
+        print("Dry run completed. Files were not changed.")
+    elif args.check:
+        print("Knowledge pages are up to date.")
+    else:
+        print("Knowledge pages synchronized.")
     return 0
 
 

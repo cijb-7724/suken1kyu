@@ -1,0 +1,11 @@
+---
+title: "1次試験の知識"
+toc: false
+search: false
+---
+
+<script>
+window.location.replace("../?exam=primary");
+</script>
+
+[1次試験の知識一覧へ移動します。](../?exam=primary)

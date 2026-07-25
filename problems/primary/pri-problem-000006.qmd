@@ -1,49 +1,305 @@
 ---
-title: "出典不明01 問6"
+title: "第461回 1次 問6"
 id: pri-problem-000006
-paper_id: pri-paper-unknown-001
+paper_id: pri-paper-0461
 question_number: 6
-cell_label: 行列式
+cell_label: ブロック行列式
 tags:
-  - determinant
+  - block-determinant
 ---
 
 ## 問題
 
-次の行列式を求めよ。
+次の行列式を計算しなさい。
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-\]
+$$
+\begin{vmatrix}
+2&1&1&0&0&0\\
+1&2&0&1&0&0\\
+1&0&2&1&1&0\\
+0&1&1&2&0&1\\
+0&0&1&0&2&1\\
+0&0&0&1&1&2
+\end{vmatrix}
+$$
+
 
 ## 方針
 
-2次正方行列の行列式の定義を用いる。
+行と列を同じ順序で並べ替え、行列を
+
+$$
+\begin{pmatrix}
+2I_3&B\\
+B&2I_3
+\end{pmatrix}
+$$
+
+という対称なブロック行列へ変形する。
+
+その後、
+
+$$
+\det
+\begin{pmatrix}
+C&D\\
+D&C
+\end{pmatrix}
+=
+\det(C+D)\det(C-D)
+$$
+
+を用いて、6次の行列式を2つの3次の行列式へ分解する。
+
+## 必要な知識
+
+- [ブロック行列式](../../knowledge/primary/block-determinant.qmd)
+- 行列式における行・列の同時置換
+- 対称ブロック行列の分解
 
 ## 必要な発想
 
-特になし。
+元の行列をそのまま余因子展開するのではなく、非零成分のつながりを見る。
+
+添字を
+
+$$
+(1,4,5,2,3,6)
+$$
+
+の順に並べると、対角ブロックが $2I_3$ になり、ブロック構造が現れる。
 
 ## 解答
 
-\[
-\det
+与えられた行列を $A$ とする。
+
+行と列をともに
+
+$$
+(1,4,5,2,3,6)
+$$
+
+の順に並べ替える。
+
+行と列に同じ置換を行う操作は
+
+$$
+A\longmapsto P^{\mathsf T}AP
+$$
+
+と表される。置換行列 $P$ に対して
+
+$$
+\det(P^{\mathsf T}AP)
+=
+\det(P^{\mathsf T})\det(A)\det(P)
+=
+(\det P)^2\det A
+=
+\det A
+$$
+
+なので、行列式の値は変わらない。
+
+並べ替え後の行列は
+
+$$
 \begin{pmatrix}
-1 & 2\\
-3 & 4
+2&0&0&1&1&0\\
+0&2&0&1&1&1\\
+0&0&2&0&1&1\\
+1&1&0&2&0&0\\
+1&1&1&0&2&0\\
+0&1&1&0&0&2
 \end{pmatrix}
-=1\cdot4-2\cdot3
-=-2.
-\]
+=
+\begin{pmatrix}
+2I_3&B\\
+B&2I_3
+\end{pmatrix}
+$$
+
+となる。ただし、
+
+$$
+B=
+\begin{pmatrix}
+1&1&0\\
+1&1&1\\
+0&1&1
+\end{pmatrix}
+$$
+
+である。
+
+一般に、
+
+$$
+S=\frac1{\sqrt2}
+\begin{pmatrix}
+I_3&I_3\\
+I_3&-I_3
+\end{pmatrix}
+$$
+
+とおくと、$S$ は直交行列であり、
+
+$$
+S^{\mathsf T}
+\begin{pmatrix}
+2I_3&B\\
+B&2I_3
+\end{pmatrix}
+S
+=
+\begin{pmatrix}
+2I_3+B&0\\
+0&2I_3-B
+\end{pmatrix}
+$$
+
+となる。
+
+したがって、
+
+$$
+\det A
+=
+\det(2I_3+B)\det(2I_3-B).
+$$
+
+まず、
+
+$$
+2I_3+B
+=
+\begin{pmatrix}
+3&1&0\\
+1&3&1\\
+0&1&3
+\end{pmatrix}
+$$
+
+だから、
+
+$$
+\begin{aligned}
+\det(2I_3+B)
+&=
+3
+\begin{vmatrix}
+3&1\\
+1&3
+\end{vmatrix}
+-
+\begin{vmatrix}
+1&1\\
+0&3
+\end{vmatrix}\\
+&=3(9-1)-3\\
+&=21.
+\end{aligned}
+$$
+
+次に、
+
+$$
+2I_3-B
+=
+\begin{pmatrix}
+1&-1&0\\
+-1&1&-1\\
+0&-1&1
+\end{pmatrix}
+$$
+
+だから、
+
+$$
+\begin{aligned}
+\det(2I_3-B)
+&=
+\begin{vmatrix}
+1&-1\\
+-1&1
+\end{vmatrix}
++
+\begin{vmatrix}
+-1&-1\\
+0&1
+\end{vmatrix}\\
+&=(1-1)+(-1)\\
+&=-1.
+\end{aligned}
+$$
+
+よって、
+
+$$
+\det A
+=
+21\cdot(-1)
+=
+\boxed{-21}.
+$$
 
 ## 検算
 
-行列式を直接再計算する。
+$B$ の固有値は
+
+$$
+1,\qquad1+\sqrt2,\qquad1-\sqrt2
+$$
+
+である。
+
+したがって、ブロック行列
+
+$$
+\begin{pmatrix}
+2I_3&B\\
+B&2I_3
+\end{pmatrix}
+$$
+
+の固有値は
+
+$$
+2+\lambda,\qquad2-\lambda
+$$
+
+の形で得られる。
+
+行列式はそれらの積だから、
+
+$$
+\begin{aligned}
+\det A
+&=(2+1)(2-1)\\
+&\quad\cdot(2+1+\sqrt2)(2-1-\sqrt2)\\
+&\quad\cdot(2+1-\sqrt2)(2-1+\sqrt2)\\
+&=3(3+\sqrt2)(1-\sqrt2)(3-\sqrt2)(1+\sqrt2)\\
+&=-21.
+\end{aligned}
+$$
+
+解答と一致する。
 
 ## コメント
 
-一覧表では「行列式」と表示する。
+高次の行列式では、余因子展開や行基本変形を始める前に、
+
+- 同じ形の行や列
+- 添字のグループ分け
+- ブロック構造
+- 対称性
+
+を探す。
+
+今回は行と列を同時に並べ替えることで、6次の行列式が2つの3次の行列式へ分解された。
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

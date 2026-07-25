@@ -1,6 +1,6 @@
 papers:
-  - id: pri-paper-unknown-001
-    label: "出典不明 01"
-    year:
-    round:
-    sort_order: 9001
+  - id: pri-paper-0461
+    label: "第461回（2026年7月25日）"
+    year: 2026
+    round: 461
+    sort_order: 20260725

@@ -206,11 +206,10 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000002",
-        "pri-problem-000003"
+        "pri-problem-000002"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/algebra.html"
     },
     "function": {
@@ -251,13 +250,11 @@
       "descendants": [
         "inverse-trigonometric-function"
       ],
-      "direct_problem_ids": [
-        "pri-problem-000002"
-      ],
+      "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000002"
       ],
-      "direct_problem_count": 1,
+      "direct_problem_count": 0,
       "problem_count": 1,
       "knowledge_path": "knowledge/primary/inverse-function.html"
     },
@@ -273,10 +270,14 @@
         "inverse-function"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "pri-problem-000002"
+      ],
+      "problem_ids": [
+        "pri-problem-000002"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/inverse-trigonometric-function.html"
     },
     "equation": {
@@ -294,11 +295,9 @@
         "system-of-equations"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [
-        "pri-problem-000003"
-      ],
+      "problem_ids": [],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 0,
       "knowledge_path": "knowledge/primary/equation.html"
     },
     "system-of-equations": {
@@ -312,14 +311,10 @@
         "equation"
       ],
       "descendants": [],
-      "direct_problem_ids": [
-        "pri-problem-000003"
-      ],
-      "problem_ids": [
-        "pri-problem-000003"
-      ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
       "knowledge_path": "knowledge/primary/system-of-equations.html"
     },
     "analysis": {
@@ -496,13 +491,11 @@
       "descendants": [
         "joint-probability-density-function"
       ],
-      "direct_problem_ids": [
-        "pri-problem-000005"
-      ],
+      "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000005"
       ],
-      "direct_problem_count": 1,
+      "direct_problem_count": 0,
       "problem_count": 1,
       "knowledge_path": "knowledge/primary/continuous-random-variable.html"
     },
@@ -518,10 +511,14 @@
         "continuous-random-variable"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "pri-problem-000005"
+      ],
+      "problem_ids": [
+        "pri-problem-000005"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/joint-probability-density-function.html"
     },
     "expected-value": {
@@ -564,10 +561,11 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
+        "pri-problem-000003",
         "pri-problem-000006"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/linear-algebra.html"
     },
     "vector": {
@@ -585,9 +583,11 @@
         "orthogonality"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000003"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/vector.html"
     },
     "orthogonality": {
@@ -601,10 +601,14 @@
         "vector"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "pri-problem-000003"
+      ],
+      "problem_ids": [
+        "pri-problem-000003"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/orthogonality.html"
     },
     "matrix": {
@@ -645,13 +649,11 @@
       "descendants": [
         "block-determinant"
       ],
-      "direct_problem_ids": [
-        "pri-problem-000006"
-      ],
+      "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000006"
       ],
-      "direct_problem_count": 1,
+      "direct_problem_count": 0,
       "problem_count": 1,
       "knowledge_path": "knowledge/primary/determinant.html"
     },
@@ -667,10 +669,14 @@
         "determinant"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "pri-problem-000006"
+      ],
+      "problem_ids": [
+        "pri-problem-000006"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/block-determinant.html"
     }
   }

@@ -1,49 +1,189 @@
 ---
-title: "出典不明01 問2"
+title: "第461回 1次 問2"
 id: pri-problem-000002
-paper_id: pri-paper-unknown-001
+paper_id: pri-paper-0461
 question_number: 2
-cell_label: 逆関数
+cell_label: 逆三角関数
 tags:
-  - inverse-function
+  - inverse-trigonometric-function
 ---
 
 ## 問題
 
-次の行列式を求めよ。
+次の等式を満たす $x$ の値を求めなさい。
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-\]
+ただし、$\operatorname{Arcsin}x$、$\operatorname{Arccos}x$ はそれぞれ $\sin x$、$\cos x$ の逆関数で、
+
+$$
+-\frac{\pi}{2}\leq \operatorname{Arcsin}x\leq\frac{\pi}{2},
+\qquad
+0\leq \operatorname{Arccos}x\leq\pi
+$$
+
+を満たすものとする。
+
+$$
+\operatorname{Arccos}x-\operatorname{Arcsin}x
+=\frac{4\pi}{3}
+$$
+
 
 ## 方針
 
-2次正方行列の行列式の定義を用いる。
+主値の範囲では、
+
+$$
+\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
+$$
+
+が成り立つ。
+
+この恒等式と問題の式を連立し、$\operatorname{Arccos}x$ を求めてから $x$ に戻す。
+
+## 必要な知識
+
+- [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
+- 加法定理
+- 逆三角関数の主値
 
 ## 必要な発想
 
-特になし。
+$\operatorname{Arcsin}x$ と $\operatorname{Arccos}x$ を別々に三角形で表すより、
+
+$$
+\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
+$$
+
+をもう1本の方程式として使うと、一度に角度が決まる。
 
 ## 解答
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-=1\cdot4-2\cdot3
-=-2.
-\]
+$$
+\alpha=\operatorname{Arccos}x,
+\qquad
+\beta=\operatorname{Arcsin}x
+$$
+
+とおく。
+
+主値の範囲より、
+
+$$
+\alpha+\beta=\frac{\pi}{2}
+$$
+
+である。
+
+また、問題の条件から
+
+$$
+\alpha-\beta=\frac{4\pi}{3}
+$$
+
+である。
+
+2式を加えると、
+
+$$
+2\alpha
+=\frac{\pi}{2}+\frac{4\pi}{3}
+=\frac{11\pi}{6}
+$$
+
+したがって、
+
+$$
+\alpha=\frac{11\pi}{12}
+$$
+
+である。
+
+よって、
+
+$$
+x=\cos\alpha
+=\cos\frac{11\pi}{12}
+$$
+
+となる。
+
+$$
+\frac{11\pi}{12}
+=\frac{3\pi}{4}+\frac{\pi}{6}
+$$
+
+だから、加法定理より
+
+$$
+\begin{aligned}
+x
+&=\cos\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)\\
+&=\cos\frac{3\pi}{4}\cos\frac{\pi}{6}
+-\sin\frac{3\pi}{4}\sin\frac{\pi}{6}\\
+&=-\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}
+-\frac{\sqrt2}{2}\cdot\frac12\\
+&=-\frac{\sqrt6+\sqrt2}{4}.
+\end{aligned}
+$$
+
+したがって、
+
+$$
+\boxed{x=-\frac{\sqrt6+\sqrt2}{4}}
+$$
+
+である。
 
 ## 検算
 
-行列式を直接再計算する。
+求めた $x$ に対して、
+
+$$
+\operatorname{Arccos}x=\frac{11\pi}{12}
+$$
+
+である。
+
+また、
+
+$$
+\operatorname{Arcsin}x
+=\frac{\pi}{2}-\frac{11\pi}{12}
+=-\frac{5\pi}{12}
+$$
+
+であり、これは主値の範囲
+
+$$
+-\frac{\pi}{2}\leq-\frac{5\pi}{12}\leq\frac{\pi}{2}
+$$
+
+に入っている。
+
+したがって、
+
+$$
+\operatorname{Arccos}x-\operatorname{Arcsin}x
+=\frac{11\pi}{12}+\frac{5\pi}{12}
+=\frac{4\pi}{3}
+$$
+
+となり、元の式を満たす。
 
 ## コメント
 
-一覧表では「行列式」と表示する。
+逆三角関数では、単に三角関数を作用させるだけでは主値の情報を失いやすい。
+
+まず主値の範囲を確認し、
+
+$$
+\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
+$$
+
+を使うのが最短である。
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

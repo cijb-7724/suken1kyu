@@ -1,49 +1,191 @@
 ---
-title: "出典不明01 問7"
+title: "第461回 1次 問7"
 id: pri-problem-000007
-paper_id: pri-paper-unknown-001
+paper_id: pri-paper-0461
 question_number: 7
-cell_label: 微分方程式
+cell_label: 1階線形微分方程式
 tags:
   - first-order-nonhomogeneous-ode
 ---
 
 ## 問題
 
-次の行列式を求めよ。
+次の微分方程式の解のうち、$y(0)=1$ を満たすものを求め、$y=y(x)$ の形で表しなさい。
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-\]
+ただし、$e$ は自然対数の底を表す。
+
+$$
+\frac{dy}{dx}-2y=xe^{2x}
+$$
+
 
 ## 方針
 
-2次正方行列の行列式の定義を用いる。
+1階線形微分方程式
+
+$$
+y'+P(x)y=Q(x)
+$$
+
+として扱う。
+
+積分因子 $e^{-2x}$ を両辺に掛けると、左辺が積の微分
+
+$$
+\frac{d}{dx}\left(e^{-2x}y\right)
+$$
+
+になる。
+
+## 必要な知識
+
+- [1階非斉次微分方程式](../../knowledge/primary/first-order-nonhomogeneous-ode.qmd)
+- 積分因子法
+- 積の微分
 
 ## 必要な発想
 
-特になし。
+右辺に $e^{2x}$ が含まれていることから、$e^{-2x}$ を掛けると指数関数が消える。
+
+左辺を積の微分へまとめれば、微分方程式が通常の積分へ変わる。
 
 ## 解答
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-=1\cdot4-2\cdot3
-=-2.
-\]
+与えられた方程式は
+
+$$
+y'-2y=xe^{2x}
+$$
+
+である。
+
+積分因子は
+
+$$
+\mu(x)
+=
+e^{\int-2\,dx}
+=
+e^{-2x}
+$$
+
+である。
+
+両辺に $e^{-2x}$ を掛けると、
+
+$$
+e^{-2x}y'-2e^{-2x}y=x
+$$
+
+となる。
+
+左辺は積の微分であり、
+
+$$
+\frac{d}{dx}\left(e^{-2x}y\right)
+=
+e^{-2x}y'-2e^{-2x}y
+$$
+
+だから、
+
+$$
+\frac{d}{dx}\left(e^{-2x}y\right)=x
+$$
+
+である。
+
+両辺を積分すると、
+
+$$
+e^{-2x}y=\frac{x^2}{2}+C
+$$
+
+となる。
+
+したがって、
+
+$$
+y=e^{2x}\left(\frac{x^2}{2}+C\right)
+$$
+
+である。
+
+初期条件 $y(0)=1$ を代入すると、
+
+$$
+1=e^0(0+C)
+$$
+
+だから、
+
+$$
+C=1
+$$
+
+である。
+
+よって、
+
+$$
+\boxed{
+y=e^{2x}\left(\frac{x^2}{2}+1\right)
+}
+$$
+
+となる。
 
 ## 検算
 
-行列式を直接再計算する。
+$$
+y=e^{2x}\left(\frac{x^2}{2}+1\right)
+$$
+
+を微分すると、
+
+$$
+\begin{aligned}
+y'
+&=2e^{2x}\left(\frac{x^2}{2}+1\right)
++e^{2x}x\\
+&=e^{2x}(x^2+x+2).
+\end{aligned}
+$$
+
+したがって、
+
+$$
+\begin{aligned}
+y'-2y
+&=e^{2x}(x^2+x+2)
+-2e^{2x}\left(\frac{x^2}{2}+1\right)\\
+&=e^{2x}(x^2+x+2-x^2-2)\\
+&=xe^{2x}.
+\end{aligned}
+$$
+
+元の微分方程式を満たす。
+
+また、
+
+$$
+y(0)=e^0(0+1)=1
+$$
+
+なので、初期条件も満たす。
 
 ## コメント
 
-一覧表では「行列式」と表示する。
+積分因子法では、公式を暗記するだけでなく、
+
+$$
+\mu y'+\mu P y=(\mu y)'
+$$
+
+となるように $\mu$ を選んでいることを理解すると、符号の間違いを防げる。
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

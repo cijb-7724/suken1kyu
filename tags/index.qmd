@@ -1,8 +1,38 @@
 ---
 title: "タグ・索引"
+toc: false
+page-layout: full
+format:
+  html:
+    css: ../assets/css/knowledge-catalog.css
 ---
 
-- 1次試験タグ
-- 2次試験タグ
+<p class="catalog-intro">
+問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。
+</p>
 
-タグ一覧は後の段階で生成します。
+<div id="catalog-app" class="catalog-app" data-catalog-mode="tags" data-default-exam="primary">
+  <nav class="catalog-tabs" role="tablist" aria-label="試験区分">
+    <button id="catalog-tab-primary" class="catalog-tab" type="button" role="tab" aria-selected="true" data-exam="primary">1次</button>
+    <button id="catalog-tab-secondary" class="catalog-tab" type="button" role="tab" aria-selected="false" data-exam="secondary">2次</button>
+  </nav>
+
+  <div class="catalog-toolbar">
+    <label class="catalog-search-wrap">
+      <span class="visually-hidden">タグを検索</span>
+      <input id="catalog-search" class="catalog-search" type="search" placeholder="タグ名・タグID・上位分類から検索" autocomplete="off">
+    </label>
+    <div class="catalog-view-switch" aria-label="表示方法">
+      <button class="catalog-view-button is-active" type="button" data-view="hierarchy" aria-pressed="true">階層</button>
+      <button class="catalog-view-button" type="button" data-view="list" aria-pressed="false">一覧</button>
+    </div>
+  </div>
+
+  <section id="catalog-summary" class="catalog-summary" aria-label="登録状況"></section>
+  <p id="catalog-status" class="catalog-status" role="status" aria-live="polite">タグデータを読み込んでいます…</p>
+  <div id="catalog-content"></div>
+
+  <noscript><p class="catalog-status is-error">このページを表示するにはJavaScriptを有効にしてください。</p></noscript>
+</div>
+
+<script type="module" src="../assets/js/catalog-index.js"></script>

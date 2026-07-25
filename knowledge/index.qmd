@@ -1,6 +1,34 @@
 ---
 title: "知識"
+toc: false
+page-layout: full
+format:
+  html:
+    css: ../assets/css/knowledge-catalog.css
 ---
 
-- [1次試験の知識](primary/index.qmd)
-- [2次試験の知識](secondary/index.qmd)
+<p class="catalog-intro">
+過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。
+</p>
+
+<div id="catalog-app" class="catalog-app" data-catalog-mode="knowledge" data-default-exam="primary">
+  <nav class="catalog-tabs" role="tablist" aria-label="試験区分">
+    <button id="catalog-tab-primary" class="catalog-tab" type="button" role="tab" aria-selected="true" data-exam="primary">1次</button>
+    <button id="catalog-tab-secondary" class="catalog-tab" type="button" role="tab" aria-selected="false" data-exam="secondary">2次</button>
+  </nav>
+
+  <div class="catalog-toolbar">
+    <label class="catalog-search-wrap">
+      <span class="visually-hidden">知識を検索</span>
+      <input id="catalog-search" class="catalog-search" type="search" placeholder="知識名・タグID・上位分類から検索" autocomplete="off">
+    </label>
+  </div>
+
+  <section id="catalog-summary" class="catalog-summary" aria-label="登録状況"></section>
+  <p id="catalog-status" class="catalog-status" role="status" aria-live="polite">知識データを読み込んでいます…</p>
+  <div id="catalog-content"></div>
+
+  <noscript><p class="catalog-status is-error">このページを表示するにはJavaScriptを有効にしてください。</p></noscript>
+</div>
+
+<script type="module" src="../assets/js/catalog-index.js"></script>

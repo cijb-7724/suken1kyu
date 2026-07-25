@@ -1,50 +1,243 @@
 ---
-title: "出典不明01 問5"
+title: "第461回 1次 問5"
 id: pri-problem-000005
-paper_id: pri-paper-unknown-001
+paper_id: pri-paper-0461
 question_number: 5
-cell_label: 連続確率変数
+cell_label: 同時確率密度
 tags:
-  - continuous-random-variable
+  - joint-probability-density-function
   - expected-value
 ---
 
 ## 問題
 
-次の行列式を求めよ。
+$k$ を定数とする。$X,Y$ はともに連続型の確率変数で、次の同時確率密度関数をもつとする。
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-\]
+$$
+f(x,y)=
+\begin{cases}
+kxy
+&
+(1\leq xy\leq2,\ 1\leq x\leq2),\\[4pt]
+0
+&
+(\text{上記以外の }x,y).
+\end{cases}
+$$
+
+次の問いに答えなさい。
+
+1. $k$ の値を求めなさい。
+2. $Y$ の平均 $E(Y)$ を求めなさい。
+
 
 ## 方針
 
-2次正方行列の行列式の定義を用いる。
+条件
+
+$$
+1\leq xy\leq2,\qquad1\leq x\leq2
+$$
+
+を、$x$ を固定したときの $y$ の範囲へ直す。
+
+$$
+1\leq xy\leq2
+\quad\Longleftrightarrow\quad
+\frac1x\leq y\leq\frac2x
+$$
+
+である。
+
+この積分領域を用いて、
+
+1. 密度の全積分が $1$
+2. $E(Y)=\iint y f(x,y)\,dx\,dy$
+
+を順に計算する。
+
+## 必要な知識
+
+- [同時確率密度関数](../../knowledge/primary/joint-probability-density-function.qmd)
+- [期待値](../../knowledge/primary/expected-value.qmd)
+- 重積分
+- 確率密度関数の正規化条件
 
 ## 必要な発想
 
-特になし。
+積分領域を正しく読み替えることが中心である。
+
+$$
+1\leq xy\leq2
+$$
+
+をそのまま扱うのではなく、
+
+$$
+1\leq x\leq2,
+\qquad
+\frac1x\leq y\leq\frac2x
+$$
+
+と書けば、累次積分を直ちに立てられる。
 
 ## 解答
 
-\[
-\det
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-=1\cdot4-2\cdot3
-=-2.
-\]
+### (1) $k$ の値
+
+確率密度関数の全積分は $1$ だから、
+
+$$
+\int_1^2
+\int_{1/x}^{2/x}
+kxy\,dy\,dx
+=1
+$$
+
+である。
+
+内側を積分すると、
+
+$$
+\begin{aligned}
+\int_{1/x}^{2/x}kxy\,dy
+&=kx\left[\frac{y^2}{2}\right]_{1/x}^{2/x}\\
+&=\frac{kx}{2}
+\left(
+\frac4{x^2}-\frac1{x^2}
+\right)\\
+&=\frac{3k}{2x}.
+\end{aligned}
+$$
+
+したがって、
+
+$$
+\begin{aligned}
+1
+&=\int_1^2\frac{3k}{2x}\,dx\\
+&=\frac{3k}{2}\left[\log x\right]_1^2\\
+&=\frac{3k}{2}\log2.
+\end{aligned}
+$$
+
+よって、
+
+$$
+\boxed{k=\frac{2}{3\log2}}
+$$
+
+である。
+
+### (2) $E(Y)$
+
+期待値の定義より、
+
+$$
+E(Y)
+=
+\int_1^2
+\int_{1/x}^{2/x}
+y f(x,y)\,dy\,dx
+$$
+
+である。
+
+$f(x,y)=kxy$ なので、
+
+$$
+E(Y)
+=
+\int_1^2
+\int_{1/x}^{2/x}
+kxy^2\,dy\,dx.
+$$
+
+内側を積分すると、
+
+$$
+\begin{aligned}
+\int_{1/x}^{2/x}kxy^2\,dy
+&=kx\left[\frac{y^3}{3}\right]_{1/x}^{2/x}\\
+&=\frac{kx}{3}
+\left(
+\frac8{x^3}-\frac1{x^3}
+\right)\\
+&=\frac{7k}{3x^2}.
+\end{aligned}
+$$
+
+したがって、
+
+$$
+\begin{aligned}
+E(Y)
+&=\frac{7k}{3}\int_1^2\frac1{x^2}\,dx\\
+&=\frac{7k}{3}
+\left[-\frac1x\right]_1^2\\
+&=\frac{7k}{3}\left(1-\frac12\right)\\
+&=\frac{7k}{6}.
+\end{aligned}
+$$
+
+ここに
+
+$$
+k=\frac{2}{3\log2}
+$$
+
+を代入すると、
+
+$$
+E(Y)
+=
+\frac76\cdot\frac{2}{3\log2}
+=
+\boxed{\frac{7}{9\log2}}
+$$
+
+である。
 
 ## 検算
 
-行列式を直接再計算する。
+$1\leq x\leq2$ かつ $1/x\leq y\leq2/x$ より、
+
+$$
+\frac12\leq Y\leq2
+$$
+
+である。
+
+数値的に、
+
+$$
+E(Y)=\frac{7}{9\log2}\approx1.122
+$$
+
+であり、
+
+$$
+\frac12<E(Y)<2
+$$
+
+を満たしている。
+
+また、
+
+$$
+k=\frac{2}{3\log2}>0
+$$
+
+なので、確率密度関数の非負性も満たす。
 
 ## コメント
 
-一覧表では「行列式」と表示する。
+確率の重積分では、計算よりも積分領域の設定が重要である。
+
+条件が積 $xy$ で与えられたときは、片方の変数を固定して、もう片方の上下限へ変換する。
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->
