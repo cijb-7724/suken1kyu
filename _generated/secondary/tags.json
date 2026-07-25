@@ -1,0 +1,707 @@
+{
+  "schema_version": 1,
+  "exam": "secondary",
+  "count": 26,
+  "root_ids": [
+    "number-theory",
+    "analysis",
+    "geometry",
+    "probability-statistics",
+    "combinatorics",
+    "linear-algebra",
+    "mathematical-techniques"
+  ],
+  "tree": [
+    {
+      "id": "number-theory",
+      "label": "整数論",
+      "children": [
+        {
+          "id": "integers",
+          "label": "整数",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "analysis",
+      "label": "解析",
+      "children": [
+        {
+          "id": "series",
+          "label": "級数",
+          "children": [
+            {
+              "id": "poisson-summation-formula",
+              "label": "ポアソンの和公式",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "fourier-analysis",
+          "label": "フーリエ解析",
+          "children": [
+            {
+              "id": "fourier-transform",
+              "label": "フーリエ変換",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "differential-equation",
+          "label": "微分方程式",
+          "children": [
+            {
+              "id": "exact-differential-equation",
+              "label": "完全微分方程式",
+              "children": []
+            },
+            {
+              "id": "integrating-factor",
+              "label": "積分因子",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "label": "幾何",
+      "children": []
+    },
+    {
+      "id": "probability-statistics",
+      "label": "確率・統計",
+      "children": [
+        {
+          "id": "probability-density-function",
+          "label": "確率密度関数",
+          "children": []
+        },
+        {
+          "id": "statistical-inference",
+          "label": "統計的推測",
+          "children": [
+            {
+              "id": "maximum-likelihood",
+              "label": "最尤法",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combinatorics",
+      "label": "組合せ論",
+      "children": [
+        {
+          "id": "partially-ordered-set",
+          "label": "半順序集合",
+          "children": [
+            {
+              "id": "antichain",
+              "label": "反鎖",
+              "children": [
+                {
+                  "id": "lym-inequality",
+                  "label": "LYM不等式",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "label": "線形代数",
+      "children": [
+        {
+          "id": "orthogonal-transformation",
+          "label": "直交変換",
+          "children": [
+            {
+              "id": "householder-transformation",
+              "label": "Householder変換",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "matrix-reduction",
+          "label": "行列の変換",
+          "children": [
+            {
+              "id": "symmetric-tridiagonalization",
+              "label": "対称行列の三重対角化",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathematical-techniques",
+      "label": "数学的技能",
+      "children": [
+        {
+          "id": "algebraic-manipulation",
+          "label": "整理技能",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "by_id": {
+    "number-theory": {
+      "id": "number-theory",
+      "label": "整数論",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "integers"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "integers"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000001"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/number-theory.html"
+    },
+    "integers": {
+      "id": "integers",
+      "label": "整数",
+      "parent_id": "number-theory",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "number-theory"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000001"
+      ],
+      "problem_ids": [
+        "sec-problem-000001"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/integers.html"
+    },
+    "analysis": {
+      "id": "analysis",
+      "label": "解析",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "series",
+        "fourier-analysis",
+        "differential-equation"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "series",
+        "poisson-summation-formula",
+        "fourier-analysis",
+        "fourier-transform",
+        "differential-equation",
+        "exact-differential-equation",
+        "integrating-factor"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000002",
+        "sec-problem-000007"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/analysis.html"
+    },
+    "series": {
+      "id": "series",
+      "label": "級数",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "poisson-summation-formula"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "poisson-summation-formula"
+      ],
+      "direct_problem_ids": [
+        "sec-problem-000002"
+      ],
+      "problem_ids": [
+        "sec-problem-000002"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/series.html"
+    },
+    "poisson-summation-formula": {
+      "id": "poisson-summation-formula",
+      "label": "ポアソンの和公式",
+      "parent_id": "series",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "series"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/poisson-summation-formula.html"
+    },
+    "fourier-analysis": {
+      "id": "fourier-analysis",
+      "label": "フーリエ解析",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "fourier-transform"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "fourier-transform"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000002"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/fourier-analysis.html"
+    },
+    "fourier-transform": {
+      "id": "fourier-transform",
+      "label": "フーリエ変換",
+      "parent_id": "fourier-analysis",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "fourier-analysis"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000002"
+      ],
+      "problem_ids": [
+        "sec-problem-000002"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/fourier-transform.html"
+    },
+    "differential-equation": {
+      "id": "differential-equation",
+      "label": "微分方程式",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "exact-differential-equation",
+        "integrating-factor"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "exact-differential-equation",
+        "integrating-factor"
+      ],
+      "direct_problem_ids": [
+        "sec-problem-000007"
+      ],
+      "problem_ids": [
+        "sec-problem-000007"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/differential-equation.html"
+    },
+    "exact-differential-equation": {
+      "id": "exact-differential-equation",
+      "label": "完全微分方程式",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/exact-differential-equation.html"
+    },
+    "integrating-factor": {
+      "id": "integrating-factor",
+      "label": "積分因子",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/integrating-factor.html"
+    },
+    "geometry": {
+      "id": "geometry",
+      "label": "幾何",
+      "parent_id": null,
+      "depth": 0,
+      "children": [],
+      "ancestors": [],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000003"
+      ],
+      "problem_ids": [
+        "sec-problem-000003"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/geometry.html"
+    },
+    "probability-statistics": {
+      "id": "probability-statistics",
+      "label": "確率・統計",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "probability-density-function",
+        "statistical-inference"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "probability-density-function",
+        "statistical-inference",
+        "maximum-likelihood"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000004"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/probability-statistics.html"
+    },
+    "probability-density-function": {
+      "id": "probability-density-function",
+      "label": "確率密度関数",
+      "parent_id": "probability-statistics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "probability-statistics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000004"
+      ],
+      "problem_ids": [
+        "sec-problem-000004"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/probability-density-function.html"
+    },
+    "statistical-inference": {
+      "id": "statistical-inference",
+      "label": "統計的推測",
+      "parent_id": "probability-statistics",
+      "depth": 1,
+      "children": [
+        "maximum-likelihood"
+      ],
+      "ancestors": [
+        "probability-statistics"
+      ],
+      "descendants": [
+        "maximum-likelihood"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000004"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/statistical-inference.html"
+    },
+    "maximum-likelihood": {
+      "id": "maximum-likelihood",
+      "label": "最尤法",
+      "parent_id": "statistical-inference",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "statistical-inference"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000004"
+      ],
+      "problem_ids": [
+        "sec-problem-000004"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/maximum-likelihood.html"
+    },
+    "combinatorics": {
+      "id": "combinatorics",
+      "label": "組合せ論",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "partially-ordered-set"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "partially-ordered-set",
+        "antichain",
+        "lym-inequality"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000005"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/combinatorics.html"
+    },
+    "partially-ordered-set": {
+      "id": "partially-ordered-set",
+      "label": "半順序集合",
+      "parent_id": "combinatorics",
+      "depth": 1,
+      "children": [
+        "antichain"
+      ],
+      "ancestors": [
+        "combinatorics"
+      ],
+      "descendants": [
+        "antichain",
+        "lym-inequality"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000005"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/partially-ordered-set.html"
+    },
+    "antichain": {
+      "id": "antichain",
+      "label": "反鎖",
+      "parent_id": "partially-ordered-set",
+      "depth": 2,
+      "children": [
+        "lym-inequality"
+      ],
+      "ancestors": [
+        "combinatorics",
+        "partially-ordered-set"
+      ],
+      "descendants": [
+        "lym-inequality"
+      ],
+      "direct_problem_ids": [
+        "sec-problem-000005"
+      ],
+      "problem_ids": [
+        "sec-problem-000005"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/antichain.html"
+    },
+    "lym-inequality": {
+      "id": "lym-inequality",
+      "label": "LYM不等式",
+      "parent_id": "antichain",
+      "depth": 3,
+      "children": [],
+      "ancestors": [
+        "combinatorics",
+        "partially-ordered-set",
+        "antichain"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/lym-inequality.html"
+    },
+    "linear-algebra": {
+      "id": "linear-algebra",
+      "label": "線形代数",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "orthogonal-transformation",
+        "matrix-reduction"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "orthogonal-transformation",
+        "householder-transformation",
+        "matrix-reduction",
+        "symmetric-tridiagonalization"
+      ],
+      "direct_problem_ids": [
+        "sec-problem-000006"
+      ],
+      "problem_ids": [
+        "sec-problem-000006"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/linear-algebra.html"
+    },
+    "orthogonal-transformation": {
+      "id": "orthogonal-transformation",
+      "label": "直交変換",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [
+        "householder-transformation"
+      ],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [
+        "householder-transformation"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/orthogonal-transformation.html"
+    },
+    "householder-transformation": {
+      "id": "householder-transformation",
+      "label": "Householder変換",
+      "parent_id": "orthogonal-transformation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "linear-algebra",
+        "orthogonal-transformation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/householder-transformation.html"
+    },
+    "matrix-reduction": {
+      "id": "matrix-reduction",
+      "label": "行列の変換",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [
+        "symmetric-tridiagonalization"
+      ],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [
+        "symmetric-tridiagonalization"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/matrix-reduction.html"
+    },
+    "symmetric-tridiagonalization": {
+      "id": "symmetric-tridiagonalization",
+      "label": "対称行列の三重対角化",
+      "parent_id": "matrix-reduction",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "linear-algebra",
+        "matrix-reduction"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/symmetric-tridiagonalization.html"
+    },
+    "mathematical-techniques": {
+      "id": "mathematical-techniques",
+      "label": "数学的技能",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "algebraic-manipulation"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "algebraic-manipulation"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000005"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/mathematical-techniques.html"
+    },
+    "algebraic-manipulation": {
+      "id": "algebraic-manipulation",
+      "label": "整理技能",
+      "parent_id": "mathematical-techniques",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "mathematical-techniques"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000005"
+      ],
+      "problem_ids": [
+        "sec-problem-000005"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/algebraic-manipulation.html"
+    }
+  }
+}

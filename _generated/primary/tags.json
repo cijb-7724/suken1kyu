@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "exam": "primary",
+  "count": 24,
+  "root_ids": [
+    "number-theory",
+    "algebra",
+    "analysis",
+    "probability-statistics",
+    "linear-algebra"
+  ],
+  "tree": [
+    {
+      "id": "number-theory",
+      "label": "整数論",
+      "children": [
+        {
+          "id": "modular-arithmetic",
+          "label": "合同式・剰余",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "algebra",
+      "label": "代数",
+      "children": [
+        {
+          "id": "function",
+          "label": "関数",
+          "children": [
+            {
+              "id": "inverse-function",
+              "label": "逆関数",
+              "children": [
+                {
+                  "id": "inverse-trigonometric-function",
+                  "label": "逆三角関数",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equation",
+          "label": "方程式",
+          "children": [
+            {
+              "id": "system-of-equations",
+              "label": "連立方程式",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis",
+      "label": "解析",
+      "children": [
+        {
+          "id": "power-series",
+          "label": "べき級数",
+          "children": [
+            {
+              "id": "maclaurin-expansion",
+              "label": "マクローリン展開",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "differential-equation",
+          "label": "微分方程式",
+          "children": [
+            {
+              "id": "first-order-nonhomogeneous-ode",
+              "label": "1階線形非斉次微分方程式",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "probability-statistics",
+      "label": "確率・統計",
+      "children": [
+        {
+          "id": "random-variable",
+          "label": "確率変数",
+          "children": [
+            {
+              "id": "continuous-random-variable",
+              "label": "連続確率変数",
+              "children": [
+                {
+                  "id": "joint-probability-density-function",
+                  "label": "同時確率密度関数",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "expected-value",
+              "label": "期待値",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "label": "線形代数",
+      "children": [
+        {
+          "id": "vector",
+          "label": "ベクトル",
+          "children": [
+            {
+              "id": "orthogonality",
+              "label": "直交性",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "matrix",
+          "label": "行列",
+          "children": [
+            {
+              "id": "determinant",
+              "label": "行列式",
+              "children": [
+                {
+                  "id": "block-determinant",
+                  "label": "ブロック行列式",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_id": {
+    "number-theory": {
+      "id": "number-theory",
+      "label": "整数論",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "modular-arithmetic"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "modular-arithmetic"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000001"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/number-theory.html"
+    },
+    "modular-arithmetic": {
+      "id": "modular-arithmetic",
+      "label": "合同式・剰余",
+      "parent_id": "number-theory",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "number-theory"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000001"
+      ],
+      "problem_ids": [
+        "pri-problem-000001"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/modular-arithmetic.html"
+    },
+    "algebra": {
+      "id": "algebra",
+      "label": "代数",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "function",
+        "equation"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "function",
+        "inverse-function",
+        "inverse-trigonometric-function",
+        "equation",
+        "system-of-equations"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000002",
+        "pri-problem-000003"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/primary/algebra.html"
+    },
+    "function": {
+      "id": "function",
+      "label": "関数",
+      "parent_id": "algebra",
+      "depth": 1,
+      "children": [
+        "inverse-function"
+      ],
+      "ancestors": [
+        "algebra"
+      ],
+      "descendants": [
+        "inverse-function",
+        "inverse-trigonometric-function"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000002"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/function.html"
+    },
+    "inverse-function": {
+      "id": "inverse-function",
+      "label": "逆関数",
+      "parent_id": "function",
+      "depth": 2,
+      "children": [
+        "inverse-trigonometric-function"
+      ],
+      "ancestors": [
+        "algebra",
+        "function"
+      ],
+      "descendants": [
+        "inverse-trigonometric-function"
+      ],
+      "direct_problem_ids": [
+        "pri-problem-000002"
+      ],
+      "problem_ids": [
+        "pri-problem-000002"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/inverse-function.html"
+    },
+    "inverse-trigonometric-function": {
+      "id": "inverse-trigonometric-function",
+      "label": "逆三角関数",
+      "parent_id": "inverse-function",
+      "depth": 3,
+      "children": [],
+      "ancestors": [
+        "algebra",
+        "function",
+        "inverse-function"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/primary/inverse-trigonometric-function.html"
+    },
+    "equation": {
+      "id": "equation",
+      "label": "方程式",
+      "parent_id": "algebra",
+      "depth": 1,
+      "children": [
+        "system-of-equations"
+      ],
+      "ancestors": [
+        "algebra"
+      ],
+      "descendants": [
+        "system-of-equations"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000003"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/equation.html"
+    },
+    "system-of-equations": {
+      "id": "system-of-equations",
+      "label": "連立方程式",
+      "parent_id": "equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "algebra",
+        "equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000003"
+      ],
+      "problem_ids": [
+        "pri-problem-000003"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/system-of-equations.html"
+    },
+    "analysis": {
+      "id": "analysis",
+      "label": "解析",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "power-series",
+        "differential-equation"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "power-series",
+        "maclaurin-expansion",
+        "differential-equation",
+        "first-order-nonhomogeneous-ode"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000004",
+        "pri-problem-000007"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/primary/analysis.html"
+    },
+    "power-series": {
+      "id": "power-series",
+      "label": "べき級数",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "maclaurin-expansion"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "maclaurin-expansion"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000004"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/power-series.html"
+    },
+    "maclaurin-expansion": {
+      "id": "maclaurin-expansion",
+      "label": "マクローリン展開",
+      "parent_id": "power-series",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "power-series"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000004"
+      ],
+      "problem_ids": [
+        "pri-problem-000004"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/maclaurin-expansion.html"
+    },
+    "differential-equation": {
+      "id": "differential-equation",
+      "label": "微分方程式",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "first-order-nonhomogeneous-ode"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "first-order-nonhomogeneous-ode"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000007"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/differential-equation.html"
+    },
+    "first-order-nonhomogeneous-ode": {
+      "id": "first-order-nonhomogeneous-ode",
+      "label": "1階線形非斉次微分方程式",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000007"
+      ],
+      "problem_ids": [
+        "pri-problem-000007"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/first-order-nonhomogeneous-ode.html"
+    },
+    "probability-statistics": {
+      "id": "probability-statistics",
+      "label": "確率・統計",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "random-variable"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "random-variable",
+        "continuous-random-variable",
+        "joint-probability-density-function",
+        "expected-value"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000005"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/probability-statistics.html"
+    },
+    "random-variable": {
+      "id": "random-variable",
+      "label": "確率変数",
+      "parent_id": "probability-statistics",
+      "depth": 1,
+      "children": [
+        "continuous-random-variable",
+        "expected-value"
+      ],
+      "ancestors": [
+        "probability-statistics"
+      ],
+      "descendants": [
+        "continuous-random-variable",
+        "joint-probability-density-function",
+        "expected-value"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000005"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/random-variable.html"
+    },
+    "continuous-random-variable": {
+      "id": "continuous-random-variable",
+      "label": "連続確率変数",
+      "parent_id": "random-variable",
+      "depth": 2,
+      "children": [
+        "joint-probability-density-function"
+      ],
+      "ancestors": [
+        "probability-statistics",
+        "random-variable"
+      ],
+      "descendants": [
+        "joint-probability-density-function"
+      ],
+      "direct_problem_ids": [
+        "pri-problem-000005"
+      ],
+      "problem_ids": [
+        "pri-problem-000005"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/continuous-random-variable.html"
+    },
+    "joint-probability-density-function": {
+      "id": "joint-probability-density-function",
+      "label": "同時確率密度関数",
+      "parent_id": "continuous-random-variable",
+      "depth": 3,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "random-variable",
+        "continuous-random-variable"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/primary/joint-probability-density-function.html"
+    },
+    "expected-value": {
+      "id": "expected-value",
+      "label": "期待値",
+      "parent_id": "random-variable",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "random-variable"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000005"
+      ],
+      "problem_ids": [
+        "pri-problem-000005"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/expected-value.html"
+    },
+    "linear-algebra": {
+      "id": "linear-algebra",
+      "label": "線形代数",
+      "parent_id": null,
+      "depth": 0,
+      "children": [
+        "vector",
+        "matrix"
+      ],
+      "ancestors": [],
+      "descendants": [
+        "vector",
+        "orthogonality",
+        "matrix",
+        "determinant",
+        "block-determinant"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000006"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/linear-algebra.html"
+    },
+    "vector": {
+      "id": "vector",
+      "label": "ベクトル",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [
+        "orthogonality"
+      ],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [
+        "orthogonality"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/primary/vector.html"
+    },
+    "orthogonality": {
+      "id": "orthogonality",
+      "label": "直交性",
+      "parent_id": "vector",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "linear-algebra",
+        "vector"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/primary/orthogonality.html"
+    },
+    "matrix": {
+      "id": "matrix",
+      "label": "行列",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [
+        "determinant"
+      ],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [
+        "determinant",
+        "block-determinant"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000006"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/matrix.html"
+    },
+    "determinant": {
+      "id": "determinant",
+      "label": "行列式",
+      "parent_id": "matrix",
+      "depth": 2,
+      "children": [
+        "block-determinant"
+      ],
+      "ancestors": [
+        "linear-algebra",
+        "matrix"
+      ],
+      "descendants": [
+        "block-determinant"
+      ],
+      "direct_problem_ids": [
+        "pri-problem-000006"
+      ],
+      "problem_ids": [
+        "pri-problem-000006"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/determinant.html"
+    },
+    "block-determinant": {
+      "id": "block-determinant",
+      "label": "ブロック行列式",
+      "parent_id": "determinant",
+      "depth": 3,
+      "children": [],
+      "ancestors": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/primary/block-determinant.html"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "exam": "primary",
+  "count": 7,
+  "problems": [
+    {
+      "id": "pri-problem-000001",
+      "title": "出典不明01 問1",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 1,
+      "cell_label": "下3桁",
+      "direct_tags": [
+        "modular-arithmetic"
+      ],
+      "all_tags": [
+        "number-theory",
+        "modular-arithmetic"
+      ],
+      "path": "problems/primary/pri-problem-000001.html",
+      "source_path": "problems/primary/pri-problem-000001.qmd"
+    },
+    {
+      "id": "pri-problem-000002",
+      "title": "出典不明01 問2",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 2,
+      "cell_label": "逆関数",
+      "direct_tags": [
+        "inverse-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "inverse-function"
+      ],
+      "path": "problems/primary/pri-problem-000002.html",
+      "source_path": "problems/primary/pri-problem-000002.qmd"
+    },
+    {
+      "id": "pri-problem-000003",
+      "title": "出典不明01 問3",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 3,
+      "cell_label": "連立方程式",
+      "direct_tags": [
+        "system-of-equations"
+      ],
+      "all_tags": [
+        "algebra",
+        "equation",
+        "system-of-equations"
+      ],
+      "path": "problems/primary/pri-problem-000003.html",
+      "source_path": "problems/primary/pri-problem-000003.qmd"
+    },
+    {
+      "id": "pri-problem-000004",
+      "title": "出典不明01 問4",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 4,
+      "cell_label": "マクローリン展開",
+      "direct_tags": [
+        "maclaurin-expansion"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "maclaurin-expansion"
+      ],
+      "path": "problems/primary/pri-problem-000004.html",
+      "source_path": "problems/primary/pri-problem-000004.qmd"
+    },
+    {
+      "id": "pri-problem-000005",
+      "title": "出典不明01 問5",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 5,
+      "cell_label": "連続確率変数",
+      "direct_tags": [
+        "continuous-random-variable",
+        "expected-value"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "continuous-random-variable",
+        "expected-value"
+      ],
+      "path": "problems/primary/pri-problem-000005.html",
+      "source_path": "problems/primary/pri-problem-000005.qmd"
+    },
+    {
+      "id": "pri-problem-000006",
+      "title": "出典不明01 問6",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 6,
+      "cell_label": "行列式",
+      "direct_tags": [
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000006.html",
+      "source_path": "problems/primary/pri-problem-000006.qmd"
+    },
+    {
+      "id": "pri-problem-000007",
+      "title": "出典不明01 問7",
+      "paper_id": "pri-paper-unknown-001",
+      "question_number": 7,
+      "cell_label": "微分方程式",
+      "direct_tags": [
+        "first-order-nonhomogeneous-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "first-order-nonhomogeneous-ode"
+      ],
+      "path": "problems/primary/pri-problem-000007.html",
+      "source_path": "problems/primary/pri-problem-000007.qmd"
+    }
+  ]
+}
