@@ -3,9 +3,9 @@ title: "出典不明01 問2"
 id: pri-problem-000002
 paper_id: pri-paper-unknown-001
 question_number: 2
-cell_label: 行列式い
+cell_label: 逆関数
 tags:
-  - determinant
+  - inverse-function
 ---
 
 ## 問題

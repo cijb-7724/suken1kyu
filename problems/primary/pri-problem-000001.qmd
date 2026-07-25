@@ -3,9 +3,9 @@ title: "出典不明01 問1"
 id: pri-problem-000001
 paper_id: pri-paper-unknown-001
 question_number: 1
-cell_label: 行列式
+cell_label: 下3桁
 tags:
-  - determinant
+  - modular-arithmetic
 ---
 
 ## 問題

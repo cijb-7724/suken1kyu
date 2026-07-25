@@ -3,9 +3,9 @@ title: "出典不明01 問7"
 id: pri-problem-000007
 paper_id: pri-paper-unknown-001
 question_number: 7
-cell_label: 行列式き
+cell_label: 微分方程式
 tags:
-  - determinant
+  - differential-equation
 ---
 
 ## 問題
