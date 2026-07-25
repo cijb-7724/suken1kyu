@@ -4,9 +4,3 @@ papers:
     year:
     round:
     sort_order: 9001
-
-  - id: pri-paper-2024-01
-    label: "2024年第1回"
-    year: 2024
-    round: 1
-    sort_order: 202401

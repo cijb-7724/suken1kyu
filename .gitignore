@@ -3,3 +3,5 @@
 /_site/
 .DS_Store
 .venv/
+__pycache__/
+*.py[cod]
