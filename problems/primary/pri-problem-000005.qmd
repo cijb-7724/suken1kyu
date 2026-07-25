@@ -3,10 +3,10 @@ title: "出典不明01 問5"
 id: pri-problem-000005
 paper_id: pri-paper-unknown-001
 question_number: 5
-cell_label: 整理技能
+cell_label: 連続確率変数
 tags:
-  - algebratic-manipulation
-  - antichain
+  - continuous-random-variable
+  - expected-value
 ---
 
 ## 問題

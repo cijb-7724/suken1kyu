@@ -3,11 +3,9 @@ title: "出典不明01 問7"
 id: sec-problem-000007
 paper_id: sec-paper-unknown-001
 question_number: 7
-cell_label: 剰余7
+cell_label: 微分方程式
 tags:
-  - determinant
-  - modular-arithmetic
-  - block-matrix
+  - differential-equation
 ---
 
 ## 問題

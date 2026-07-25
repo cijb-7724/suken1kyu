@@ -1,21 +1,42 @@
 tags:
-  - id: linear-algebra
-    label: 線形代数
+  - id: number-theory
+    label: 整数論
     children:
-      - id: matrix
-        label: 行列
+      - id: modular-arithmetic
+        label: 合同式・剰余
+
+  - id: algebra
+    label: 代数
+    children:
+      - id: function
+        label: 関数
         children:
-          - id: determinant
-            label: 行列式
+          - id: inverse-function
+            label: 逆関数
             children:
-              - id: determinant-row-operation
-                label: 行・列の基本変形
+              - id: inverse-trigonometric-function
+                label: 逆三角関数
 
-              - id: cofactor-expansion
-                label: 余因子展開
+      - id: equation
+        label: 方程式
+        children:
+          - id: system-of-equations
+            label: 連立方程式
 
-              - id: block-determinant
-                label: ブロック行列式
+  - id: analysis
+    label: 解析
+    children:
+      - id: power-series
+        label: べき級数
+        children:
+          - id: maclaurin-expansion
+            label: マクローリン展開
+
+      - id: differential-equation
+        label: 微分方程式
+        children:
+          - id: first-order-linear-nonhomogeneous-ode
+            label: 1階線形非斉次微分方程式
 
   - id: probability-statistics
     label: 確率・統計
@@ -23,5 +44,29 @@ tags:
       - id: random-variable
         label: 確率変数
         children:
-          - id: expectation
+          - id: continuous-random-variable
+            label: 連続確率変数
+            children:
+              - id: joint-probability-density-function
+                label: 同時確率密度関数
+
+          - id: expected-value
             label: 期待値
+
+  - id: linear-algebra
+    label: 線形代数
+    children:
+      - id: vector
+        label: ベクトル
+        children:
+          - id: orthogonality
+            label: 直交性
+
+      - id: matrix
+        label: 行列
+        children:
+          - id: determinant
+            label: 行列式
+            children:
+              - id: block-determinant
+                label: ブロック行列式

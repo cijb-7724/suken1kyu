@@ -3,9 +3,9 @@ title: "出典不明01 問6"
 id: sec-problem-000006
 paper_id: sec-paper-unknown-001
 question_number: 6
-cell_label: 剰余6
+cell_label: 線形代数
 tags:
-  - determinant
+  - linear-algebra
 ---
 
 ## 問題

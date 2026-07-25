@@ -5,7 +5,7 @@ paper_id: pri-paper-unknown-001
 question_number: 7
 cell_label: 微分方程式
 tags:
-  - differential-equation
+  - first-order-nonhomogeneous-ode
 ---
 
 ## 問題
