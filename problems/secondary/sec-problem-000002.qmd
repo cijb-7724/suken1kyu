@@ -1,9 +1,9 @@
 ---
-title: "出典不明01 問1"
-id: sec-problem-000001
+title: "出典不明01 問2"
+id: sec-problem-000002
 paper_id: sec-paper-unknown-001
-question_number: 1
-cell_label: 剰余
+question_number: 2
+cell_label: 剰余2
 tags:
   - determinant
 ---

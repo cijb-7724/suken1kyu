@@ -1,11 +1,13 @@
 ---
-title: "出典不明01 問1"
-id: sec-problem-000001
+title: "出典不明01 問7"
+id: sec-problem-000007
 paper_id: sec-paper-unknown-001
-question_number: 1
-cell_label: 剰余
+question_number: 7
+cell_label: 剰余7
 tags:
   - determinant
+  - modular-arithmetic
+  - block-matrix
 ---
 
 ## 問題

@@ -1,9 +1,9 @@
 ---
-title: "出典不明01 問1"
-id: pri-problem-000001
+title: "出典不明01 問5"
+id: pri-problem-000005
 paper_id: pri-paper-unknown-001
-question_number: 1
-cell_label: 行列式
+question_number: 5
+cell_label: 行列式お
 tags:
   - determinant
 ---
