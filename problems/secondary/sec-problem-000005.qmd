@@ -5,7 +5,7 @@ paper_id: sec-paper-unknown-001
 question_number: 5
 cell_label: 整理技能
 tags:
-  - algebratic-manipulation
+  - algebraic-manipulation
   - antichain
 ---
 

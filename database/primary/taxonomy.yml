@@ -35,7 +35,7 @@ tags:
       - id: differential-equation
         label: 微分方程式
         children:
-          - id: first-order-linear-nonhomogeneous-ode
+          - id: first-order-nonhomogeneous-ode
             label: 1階線形非斉次微分方程式
 
   - id: probability-statistics

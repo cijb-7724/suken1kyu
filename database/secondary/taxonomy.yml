@@ -70,3 +70,8 @@ tags:
         children:
           - id: symmetric-tridiagonalization
             label: 対称行列の三重対角化
+  - id: mathematical-techniques
+    label: 数学的技能
+    children:
+      - id: algebraic-manipulation
+        label: 整理技能
