@@ -10,11 +10,14 @@
       "question_number": 1,
       "cell_label": "下3桁",
       "direct_tags": [
-        "modular-arithmetic"
+        "euler-theorem",
+        "chinese-remainder-theorem"
       ],
       "all_tags": [
         "number-theory",
-        "modular-arithmetic"
+        "modular-arithmetic",
+        "euler-theorem",
+        "chinese-remainder-theorem"
       ],
       "path": "problems/primary/pri-problem-000001.html",
       "source_path": "problems/primary/pri-problem-000001.qmd"
@@ -76,7 +79,7 @@
       "title": "第461回 1次 問5",
       "paper_id": "pri-paper-0461",
       "question_number": 5,
-      "cell_label": "同時確率密度",
+      "cell_label": "連続確率変数",
       "direct_tags": [
         "joint-probability-density-function",
         "expected-value"

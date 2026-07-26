@@ -10,9 +10,9 @@ tags:
 
 ## 問題
 
-次の等式を満たす $x$ の値を求めなさい。
+次の等式を満たす $x$ の値を求めなさい．
 
-ただし、$\operatorname{Arcsin}x$、$\operatorname{Arccos}x$ はそれぞれ $\sin x$、$\cos x$ の逆関数で、
+ただし，$\operatorname{Arcsin}x$，$\operatorname{Arccos}x$ はそれぞれ $\sin x$，$\cos x$ の逆関数で，
 
 $$
 -\frac{\pi}{2}\leq \operatorname{Arcsin}x\leq\frac{\pi}{2},
@@ -20,7 +20,7 @@ $$
 0\leq \operatorname{Arccos}x\leq\pi
 $$
 
-を満たすものとする。
+を満たすものとする．
 
 $$
 \operatorname{Arccos}x-\operatorname{Arcsin}x
@@ -28,35 +28,30 @@ $$
 $$
 
 
-## 方針
-
-主値の範囲では、
-
-$$
-\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
-$$
-
-が成り立つ。
-
-この恒等式と問題の式を連立し、$\operatorname{Arccos}x$ を求めてから $x$ に戻す。
-
 ## 必要な知識
 
 - [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
-- 加法定理
-- 逆三角関数の主値
+- $\operatorname{Arcsin}x+\operatorname{Arccos}x=\dfrac{\pi}{2}$
 
 ## 必要な発想
 
-$\operatorname{Arcsin}x$ と $\operatorname{Arccos}x$ を別々に三角形で表すより、
+$a-b$を求めるときに，$a+b$を考える．逆もしかり．
+
+## 解答
+
+まず，$\theta=\operatorname{Arcsin}x$ とする．主値の範囲から $-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}$ なので，$0\leq\frac{\pi}{2}-\theta\leq\pi$ である．また，
+
+$$
+\cos\left(\frac{\pi}{2}-\theta\right)=\sin\theta=x
+$$
+
+だから，$\operatorname{Arccos}x$ の主値の定義より
 
 $$
 \operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
 $$
 
-をもう1本の方程式として使うと、一度に角度が決まる。
-
-## 解答
+が成り立つ．
 
 $$
 \alpha=\operatorname{Arccos}x,
@@ -64,25 +59,25 @@ $$
 \beta=\operatorname{Arcsin}x
 $$
 
-とおく。
+とおく．
 
-主値の範囲より、
+したがって，
 
 $$
 \alpha+\beta=\frac{\pi}{2}
 $$
 
-である。
+である．
 
-また、問題の条件から
+また，問題の条件から
 
 $$
 \alpha-\beta=\frac{4\pi}{3}
 $$
 
-である。
+である．
 
-2式を加えると、
+2式を加えると，
 
 $$
 2\alpha
@@ -90,97 +85,31 @@ $$
 =\frac{11\pi}{6}
 $$
 
-したがって、
+したがって，
 
 $$
 \alpha=\frac{11\pi}{12}
 $$
 
-である。
+である．
 
-よって、
+よって，
 
 $$
 x=\cos\alpha
 =\cos\frac{11\pi}{12}
+=-\frac{\sqrt6+\sqrt2}{4}
 $$
 
-となる。
-
-$$
-\frac{11\pi}{12}
-=\frac{3\pi}{4}+\frac{\pi}{6}
-$$
-
-だから、加法定理より
-
-$$
-\begin{aligned}
-x
-&=\cos\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)\\
-&=\cos\frac{3\pi}{4}\cos\frac{\pi}{6}
--\sin\frac{3\pi}{4}\sin\frac{\pi}{6}\\
-&=-\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}
--\frac{\sqrt2}{2}\cdot\frac12\\
-&=-\frac{\sqrt6+\sqrt2}{4}.
-\end{aligned}
-$$
-
-したがって、
+となる．
 
 $$
 \boxed{x=-\frac{\sqrt6+\sqrt2}{4}}
 $$
 
-である。
-
-## 検算
-
-求めた $x$ に対して、
-
-$$
-\operatorname{Arccos}x=\frac{11\pi}{12}
-$$
-
-である。
-
-また、
-
-$$
-\operatorname{Arcsin}x
-=\frac{\pi}{2}-\frac{11\pi}{12}
-=-\frac{5\pi}{12}
-$$
-
-であり、これは主値の範囲
-
-$$
--\frac{\pi}{2}\leq-\frac{5\pi}{12}\leq\frac{\pi}{2}
-$$
-
-に入っている。
-
-したがって、
-
-$$
-\operatorname{Arccos}x-\operatorname{Arcsin}x
-=\frac{11\pi}{12}+\frac{5\pi}{12}
-=\frac{4\pi}{3}
-$$
-
-となり、元の式を満たす。
-
 ## コメント
 
-逆三角関数では、単に三角関数を作用させるだけでは主値の情報を失いやすい。
-
-まず主値の範囲を確認し、
-
-$$
-\operatorname{Arcsin}x+\operatorname{Arccos}x=\frac{\pi}{2}
-$$
-
-を使うのが最短である。
+$\sin15°=\frac{\sqrt6-\sqrt2}{4}$，$\sin75°=\frac{\sqrt6+\sqrt2}{4}$は有名角ですね．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

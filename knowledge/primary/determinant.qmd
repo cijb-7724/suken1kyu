@@ -5,7 +5,7 @@ id: determinant
 
 # 行列式
 
-1次試験で必要となる行列式の知識をまとめる。
+1次試験で必要となる行列式の知識をまとめる．
 
 ## 基本事項
 
@@ -20,7 +20,7 @@ c&d
 
 ## 関連問題
 
-後で自動生成する。
+後で自動生成する．
 
 <!-- AUTO:KNOWLEDGE-UI:START -->
 <div class="knowledge-detail-app" data-knowledge-page></div>

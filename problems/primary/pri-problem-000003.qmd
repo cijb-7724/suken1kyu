@@ -28,9 +28,7 @@ $$
 a\\
 0
 \end{pmatrix},
-$$
-
-$$
+\qquad
 \boldsymbol{x}_2=
 \begin{pmatrix}
 b\\
@@ -48,255 +46,34 @@ f
 \end{pmatrix}
 $$
 
-が互いに直交するように、定数 $a,b,c,d,e,f$ の値を定めなさい。
+が互いに直交するように，定数 $a,b,c,d,e,f$ の値を定めなさい．
 
-
-## 方針
-
-「互いに直交する」とは、異なる2本のベクトルの内積がすべて $0$ になることを意味する。
-
-6組の内積条件を立てるが、最初から6元連立方程式として解くのではなく、
-
-1. $\boldsymbol{x}_0\cdot\boldsymbol{x}_1=0$ から $a$
-2. $\boldsymbol{x}_0\cdot\boldsymbol{x}_2=0$、$\boldsymbol{x}_1\cdot\boldsymbol{x}_2=0$ から $b,c$
-3. 残りの3式から $d,e,f$
-
-の順に求める。
 
 ## 必要な知識
 
-- [直交性](../../knowledge/primary/orthogonality.qmd)
-- 標準内積
-- 連立一次方程式
-
 ## 必要な発想
 
-条件をすべて同時に展開すると式が多く見えるが、未知数の現れ方には段階がある。
-
-先に $a$、次に $b,c$ を決めると、最後は $d,e,f$ の3元連立方程式だけになる。
+直交$\Leftrightarrow$内積が0．
 
 ## 解答
+$\boldsymbol{x}_0\cdot\boldsymbol{x}_1=0$より，$a=-2$を得る．
 
-まず、
+次に，$\boldsymbol{x}_0\cdot\boldsymbol{x}_2=0$より，$b+c=20$である．
 
-$$
-\boldsymbol{x}_0\cdot\boldsymbol{x}_1=0
-$$
+また，$\boldsymbol{x}_1\cdot\boldsymbol{x}_2=0$より，$a=-2$ を用いると，$b=c$を得る．
 
-より、
+以上より，$b=c=10$．
 
-$$
-(-3)\cdot2+0\cdot3+(-3)a+5\cdot0=0
-$$
 
-したがって、
 
-$$
--6-3a=0
-$$
 
-であるから、
+$\boldsymbol{x}_0\cdot\boldsymbol{x}_3=0$から，$-3d-3e+5f=0$．
 
-$$
-a=-2
-$$
+$\boldsymbol{x}_1\cdot\boldsymbol{x}_3=0$から，$2d+12-2e=0$．
 
-を得る。
+$\boldsymbol{x}_2\cdot\boldsymbol{x}_3=0$から，$10d+10e+12f=0$．
 
-次に、
-
-$$
-\boldsymbol{x}_0\cdot\boldsymbol{x}_2=0
-$$
-
-より、
-
-$$
--3b-3c+60=0
-$$
-
-したがって、
-
-$$
-b+c=20
-\tag{1}
-$$
-
-である。
-
-また、
-
-$$
-\boldsymbol{x}_1\cdot\boldsymbol{x}_2=0
-$$
-
-より、$a=-2$ を用いると、
-
-$$
-2b+ac=0
-$$
-
-$$
-2b-2c=0
-$$
-
-したがって、
-
-$$
-b=c
-\tag{2}
-$$
-
-である。
-
-(1)、(2)より、
-
-$$
-b=c=10
-$$
-
-を得る。
-
-残りの未知数 $d,e,f$ を求める。
-
-$$
-\boldsymbol{x}_0\cdot\boldsymbol{x}_3=0
-$$
-
-より、
-
-$$
--3d-3e+5f=0
-\tag{3}
-$$
-
-である。
-
-$$
-\boldsymbol{x}_1\cdot\boldsymbol{x}_3=0
-$$
-
-より、
-
-$$
-2d+12-2e=0
-$$
-
-したがって、
-
-$$
-d-e=-6
-\tag{4}
-$$
-
-である。
-
-さらに、
-
-$$
-\boldsymbol{x}_2\cdot\boldsymbol{x}_3=0
-$$
-
-より、
-
-$$
-10d+10e+12f=0
-\tag{5}
-$$
-
-である。
-
-(4)から、
-
-$$
-d=e-6
-$$
-
-と表せる。
-
-これを (3) に代入すると、
-
-$$
--3(e-6)-3e+5f=0
-$$
-
-$$
--6e+18+5f=0
-$$
-
-したがって、
-
-$$
-5f=6e-18
-\tag{6}
-$$
-
-である。
-
-また、(5) に $d=e-6$ を代入すると、
-
-$$
-10(e-6)+10e+12f=0
-$$
-
-$$
-20e-60+12f=0
-$$
-
-したがって、
-
-$$
-6f=30-10e
-\tag{7}
-$$
-
-である。
-
-(6)、(7)から $f$ を消去すると、
-
-$$
-\frac{6e-18}{5}
-=
-\frac{30-10e}{6}
-$$
-
-$$
-36e-108=150-50e
-$$
-
-$$
-86e=258
-$$
-
-よって、
-
-$$
-e=3
-$$
-
-である。
-
-したがって、
-
-$$
-d=e-6=-3
-$$
-
-また、(6)より、
-
-$$
-5f=18-18=0
-$$
-
-なので、
-
-$$
-f=0
-$$
-
-である。
-
-以上より、
+この3元連立方程式を解いて，
 
 $$
 \boxed{
@@ -309,70 +86,11 @@ f=0
 }
 $$
 
-となる。
-
-## 検算
-
-得られたベクトルは
-
-$$
-\boldsymbol{x}_1=
-\begin{pmatrix}
-2\\3\\-2\\0
-\end{pmatrix},
-\quad
-\boldsymbol{x}_2=
-\begin{pmatrix}
-10\\0\\10\\12
-\end{pmatrix},
-\quad
-\boldsymbol{x}_3=
-\begin{pmatrix}
--3\\4\\3\\0
-\end{pmatrix}
-$$
-
-である。
-
-6組の内積を確認すると、
-
-$$
-\boldsymbol{x}_0\cdot\boldsymbol{x}_1=-6+6=0,
-$$
-
-$$
-\boldsymbol{x}_0\cdot\boldsymbol{x}_2=-30-30+60=0,
-$$
-
-$$
-\boldsymbol{x}_0\cdot\boldsymbol{x}_3=9-9=0,
-$$
-
-$$
-\boldsymbol{x}_1\cdot\boldsymbol{x}_2=20-20=0,
-$$
-
-$$
-\boldsymbol{x}_1\cdot\boldsymbol{x}_3=-6+12-6=0,
-$$
-
-$$
-\boldsymbol{x}_2\cdot\boldsymbol{x}_3=-30+30=0.
-$$
-
-したがって、4本のベクトルは確かに互いに直交する。
+となる．
 
 ## コメント
 
-「互いに直交」という条件からは、4本のベクトルについて
-
-$$
-\binom42=6
-$$
-
-本の内積条件が得られる。
-
-ただし、未知数が段階的に決まる構造を見れば、大きな連立方程式を一度に解く必要はない。
+サービス問題ですね．計算ミスに気をつけたいところです．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

@@ -495,6 +495,21 @@
   text-decoration: none !important;
 }
 
+.circled-number {
+  display: inline-grid;
+  width: 1.35em;
+  height: 1.35em;
+  place-items: center;
+  border: 0.075em solid currentColor;
+  border-radius: 50%;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: 0.06em;
+  white-space: nowrap;
+}
+
 @media (max-width: 720px) {
   .catalog-toolbar {
     grid-template-columns: 1fr;

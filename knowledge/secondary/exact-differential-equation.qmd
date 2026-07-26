@@ -3,23 +3,23 @@ title: "完全微分方程式"
 id: exact-differential-equation
 ---
 
-2次試験における「完全微分方程式」についてまとめます。
+2次試験における「完全微分方程式」についてまとめます．
 
 ## 概要
 
-未記入。
+未記入．
 
 ## 基本事項
 
-未記入。
+未記入．
 
 ## 例題
 
-未記入。
+未記入．
 
 ## 関連問題
 
-後で自動表示します。
+後で自動表示します．
 
 <!-- AUTO:KNOWLEDGE-UI:START -->
 <div class="knowledge-detail-app" data-knowledge-page></div>

@@ -4,6 +4,12 @@ tags:
     children:
       - id: modular-arithmetic
         label: 合同式・剰余
+        children:
+          - id: euler-theorem
+            label: オイラーの定理
+
+          - id: chinese-remainder-theorem
+            label: 中国剰余定理
 
   - id: algebra
     label: 代数

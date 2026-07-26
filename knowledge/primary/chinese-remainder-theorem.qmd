@@ -1,0 +1,107 @@
+---
+title: "中国剰余定理"
+id: chinese-remainder-theorem
+---
+
+## 概要
+
+中国剰余定理は，互いに素な複数の法で得た余りを，一つの合同式へまとめるための定理である．大きな法を互いに素な因数へ分けて計算するときに用いる．
+
+## 基本事項
+
+$\gcd(m,n)=1$ のとき，連立合同式
+
+$$
+\begin{cases}
+x\equiv a\pmod m,\\
+x\equiv b\pmod n
+\end{cases}
+$$
+
+を満たす $x$ は存在し，法 $mn$ でただ一つに決まる．
+
+実際に値を求めるときは，$x=a+mk$ とおき，もう一方の合同式へ代入して $k$ を決める方法が基本である．
+
+特に，両方の余りが同じ $r$ なら，
+
+$$
+\begin{cases}
+x\equiv r\pmod m,\\
+x\equiv r\pmod n
+\end{cases}
+\quad\Longrightarrow\quad
+x\equiv r\pmod{mn}
+$$
+
+となる．
+
+法が互いに素でない場合はそのまま適用できない．少なくとも，二つの余りが $\gcd(m,n)$ を法として一致している必要がある．
+
+## 基本例
+
+### 余りが異なる場合
+
+$$
+\begin{cases}
+x\equiv2\pmod3,\\
+x\equiv3\pmod5
+\end{cases}
+$$
+
+を解く．$x=2+3k$ とおくと，
+
+$$
+2+3k\equiv3\pmod5
+$$
+
+だから，
+
+$$
+3k\equiv1\pmod5
+$$
+
+である．法 $5$ では $3\cdot2\equiv1$ なので，$3$ の逆元は $2$ である．両辺に $2$ を掛けると，
+
+$$
+k\equiv2\pmod5
+$$
+
+を得る．したがって，ある整数 $\ell$ を用いて
+
+$$
+k=2+5\ell
+$$
+
+と書ける．これを $x=2+3k$ に戻すと，
+
+$$
+x=2+3(2+5\ell)=8+15\ell
+$$
+
+となる．よって，
+
+$$
+x\equiv8\pmod{15}
+$$
+
+である．
+
+### 同じ余りをまとめる場合
+
+$$
+x\equiv2\pmod4,\qquad x\equiv2\pmod9
+$$
+
+とする．これは，$x-2$ が $4$ と $9$ の両方で割り切れることを意味する．$\gcd(4,9)=1$ なので，$x-2$ は $4\cdot9=36$ でも割り切れる．したがって，
+
+$$
+x\equiv2\pmod{36}
+$$
+
+である．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->
