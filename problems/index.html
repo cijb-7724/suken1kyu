@@ -146,28 +146,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div id="problem-table-app" class="problem-table-app" data-default-exam="primary">
-<nav class="exam-tabs" role="tablist" aria-label="試験区分">
-<button id="exam-tab-primary" class="exam-tab" type="button" role="tab" aria-selected="true" aria-controls="problem-table-panel" data-exam="primary">
-1次
-</button>
-<button id="exam-tab-secondary" class="exam-tab" type="button" role="tab" aria-selected="false" aria-controls="problem-table-panel" data-exam="secondary">
-2次
-</button>
-</nav>
-<section id="problem-table-panel" class="problem-table-panel" role="tabpanel" aria-labelledby="exam-tab-primary">
-<p id="problem-table-status" class="problem-table-status" role="status" aria-live="polite">
-過去問データを読み込んでいます…
-</p>
-<div id="problem-table-container">
+  <nav class="exam-tabs" role="tablist" aria-label="試験区分">
+    <button id="exam-tab-primary" class="exam-tab" type="button" role="tab" aria-selected="true" aria-controls="problem-table-panel" data-exam="primary">1次</button>
+    <button id="exam-tab-secondary" class="exam-tab" type="button" role="tab" aria-selected="false" aria-controls="problem-table-panel" data-exam="secondary">2次</button>
+  </nav>
 
+  <section id="problem-table-panel" class="problem-table-panel" role="tabpanel" aria-labelledby="exam-tab-primary">
+    <p id="problem-table-status" class="problem-table-status" role="status" aria-live="polite">
+      過去問データを読み込んでいます…
+    </p>
+    <div id="problem-table-container"></div>
+  </section>
+
+  <noscript>
+    <p class="problem-table-error">この一覧を表示するにはJavaScriptを有効にしてください。</p>
+  </noscript>
 </div>
-</section>
-<noscript>
-<p class="problem-table-error">
-この一覧を表示するにはJavaScriptを有効にしてください。
-</p>
-<p></p>
-</noscript></div>
+
 <script type="module" src="../assets/js/problems-table.js"></script>
 
 

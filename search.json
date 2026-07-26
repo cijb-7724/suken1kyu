@@ -879,7 +879,7 @@
     "href": "knowledge/index.html",
     "title": "知識",
     "section": "",
-    "text": "過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。\n\n\n\n\n1次\n\n\n2次\n\n\n\n&lt;label class=\"catalog-search-wrap\"&gt;\n  &lt;span class=\"visually-hidden\"&gt;知識を検索&lt;/span&gt;\n  &lt;input id=\"catalog-search\" class=\"catalog-search\" type=\"search\" placeholder=\"知識名・タグID・上位分類から検索\" autocomplete=\"off\"&gt;\n&lt;/label&gt;\n\n\n\n\n知識データを読み込んでいます…\n\n\n\n\n\n\nこのページを表示するにはJavaScriptを有効にしてください。"
+    "text": "過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。\n\n\n\n  \n    1次\n    2次\n  \n\n  \n    \n      知識を検索\n      \n    \n  \n\n  \n  知識データを読み込んでいます…\n  \n\n  このページを表示するにはJavaScriptを有効にしてください。"
   },
   {
     "objectID": "index.html",
@@ -1271,7 +1271,7 @@
     "href": "problems/index.html",
     "title": "過去問一覧",
     "section": "",
-    "text": "1次\n\n\n2次\n\n\n\n\n過去問データを読み込んでいます…\n\n\n\n\n\n\n\nこの一覧を表示するにはJavaScriptを有効にしてください。"
+    "text": "1次\n    2次\n  \n\n  \n    \n      過去問データを読み込んでいます…\n    \n    \n  \n\n  \n    この一覧を表示するにはJavaScriptを有効にしてください。"
   },
   {
     "objectID": "problems/primary/pri-problem-000003.html",
@@ -1642,7 +1642,7 @@
     "href": "tags/index.html",
     "title": "タグ・索引",
     "section": "",
-    "text": "問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。\n\n\n\n\n1次\n\n\n2次\n\n\n\n&lt;label class=\"catalog-search-wrap\"&gt;\n  &lt;span class=\"visually-hidden\"&gt;タグを検索&lt;/span&gt;\n  &lt;input id=\"catalog-search\" class=\"catalog-search\" type=\"search\" placeholder=\"タグ名・タグID・上位分類から検索\" autocomplete=\"off\"&gt;\n&lt;/label&gt;\n&lt;div class=\"catalog-view-switch\" aria-label=\"表示方法\"&gt;\n  &lt;button class=\"catalog-view-button is-active\" type=\"button\" data-view=\"hierarchy\" aria-pressed=\"true\"&gt;階層&lt;/button&gt;\n  &lt;button class=\"catalog-view-button\" type=\"button\" data-view=\"list\" aria-pressed=\"false\"&gt;一覧&lt;/button&gt;\n&lt;/div&gt;\n\n\n\n\nタグデータを読み込んでいます…\n\n\n\n\n\n\nこのページを表示するにはJavaScriptを有効にしてください。"
+    "text": "問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。\n\n\n\n  \n    1次\n    2次\n  \n\n  \n    \n      タグを検索\n      \n    \n    \n      階層\n      一覧\n    \n  \n\n  \n  タグデータを読み込んでいます…\n  \n\n  このページを表示するにはJavaScriptを有効にしてください。"
   },
   {
     "objectID": "knowledge/primary/function.html",
