@@ -7,6 +7,7 @@ format:
     css: ../assets/css/knowledge-catalog.css
 ---
 
+```{=html}
 <p class="catalog-intro">
 過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。
 </p>
@@ -32,3 +33,4 @@ format:
 </div>
 
 <script type="module" src="../assets/js/catalog-index.js"></script>
+```

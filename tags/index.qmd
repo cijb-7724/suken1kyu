@@ -7,6 +7,7 @@ format:
     css: ../assets/css/knowledge-catalog.css
 ---
 
+```{=html}
 <p class="catalog-intro">
 問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。
 </p>
@@ -36,3 +37,4 @@ format:
 </div>
 
 <script type="module" src="../assets/js/catalog-index.js"></script>
+```

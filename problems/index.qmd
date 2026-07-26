@@ -7,6 +7,7 @@ format:
     css: ../assets/css/problems-table.css
 ---
 
+```{=html}
 <div id="problem-table-app" class="problem-table-app" data-default-exam="primary">
   <nav class="exam-tabs" role="tablist" aria-label="試験区分">
     <button
@@ -47,3 +48,4 @@ format:
 </div>
 
 <script type="module" src="../assets/js/problems-table.js"></script>
+```
