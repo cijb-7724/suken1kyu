@@ -26,7 +26,8 @@
           "cell_label": "下3桁",
           "path": "problems/primary/pri-problem-000001.html",
           "direct_tags": [
-            "modular-arithmetic"
+            "euler-theorem",
+            "chinese-remainder-theorem"
           ]
         },
         "2": {
@@ -55,7 +56,7 @@
         },
         "5": {
           "problem_id": "pri-problem-000005",
-          "cell_label": "同時確率密度",
+          "cell_label": "連続確率変数",
           "path": "problems/primary/pri-problem-000005.html",
           "direct_tags": [
             "joint-probability-density-function",

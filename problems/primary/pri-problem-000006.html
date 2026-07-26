@@ -156,11 +156,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
-  <li><a href="#方針" id="toc-方針" class="nav-link" data-scroll-target="#方針">方針</a></li>
   <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
   <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
-  <li><a href="#検算" id="toc-検算" class="nav-link" data-scroll-target="#検算">検算</a></li>
   <li><a href="#コメント" id="toc-コメント" class="nav-link" data-scroll-target="#コメント">コメント</a></li>
   </ul>
 </nav>
@@ -189,7 +187,7 @@ window.Quarto = {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>次の行列式を計算しなさい。</p>
+<p>次の行列式を計算しなさい．</p>
 <p><span class="math display">\[
 \begin{vmatrix}
 2&amp;1&amp;1&amp;0&amp;0&amp;0\\
@@ -201,232 +199,88 @@ window.Quarto = {
 \end{vmatrix}
 \]</span></p>
 </section>
-<section id="方針" class="level2">
-<h2 class="anchored" data-anchor-id="方針">方針</h2>
-<p>行と列を同じ順序で並べ替え、行列を</p>
-<p><span class="math display">\[
-\begin{pmatrix}
-2I_3&amp;B\\
-B&amp;2I_3
-\end{pmatrix}
-\]</span></p>
-<p>という対称なブロック行列へ変形する。</p>
-<p>その後、</p>
-<p><span class="math display">\[
-\det
-\begin{pmatrix}
-C&amp;D\\
-D&amp;C
-\end{pmatrix}
-=
-\det(C+D)\det(C-D)
-\]</span></p>
-<p>を用いて、6次の行列式を2つの3次の行列式へ分解する。</p>
-</section>
 <section id="必要な知識" class="level2">
 <h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
 <ul>
-<li><a href="../../knowledge/primary/block-determinant.html">ブロック行列式</a></li>
-<li>行列式における行・列の同時置換</li>
-<li>対称ブロック行列の分解</li>
+<li><a href="../../knowledge/primary/block-determinant.html">対称ブロック行列の行列式</a></li>
 </ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>元の行列をそのまま余因子展開するのではなく、非零成分のつながりを見る。</p>
-<p>添字を</p>
-<p><span class="math display">\[
-(1,4,5,2,3,6)
+<p>偶数次の行列式を見た時に，以下の形に基本変形できないか試す． <span class="math display">\[
+\begin{vmatrix}
+A &amp; B\\
+B &amp; A
+\end{vmatrix}
+\qquad
+\begin{vmatrix}
+A &amp; -B\\
+B &amp; A
+\end{vmatrix}
 \]</span></p>
-<p>の順に並べると、対角ブロックが <span class="math inline">\(2I_3\)</span> になり、ブロック構造が現れる。</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-<p>与えられた行列を <span class="math inline">\(A\)</span> とする。</p>
-<p>行と列をともに</p>
-<p><span class="math display">\[
-(1,4,5,2,3,6)
-\]</span></p>
-<p>の順に並べ替える。</p>
-<p>行と列に同じ置換を行う操作は</p>
-<p><span class="math display">\[
-A\longmapsto P^{\mathsf T}AP
-\]</span></p>
-<p>と表される。置換行列 <span class="math inline">\(P\)</span> に対して</p>
-<p><span class="math display">\[
-\det(P^{\mathsf T}AP)
-=
-\det(P^{\mathsf T})\det(A)\det(P)
-=
-(\det P)^2\det A
-=
-\det A
-\]</span></p>
-<p>なので、行列式の値は変わらない。</p>
-<p>並べ替え後の行列は</p>
-<p><span class="math display">\[
-\begin{pmatrix}
-2&amp;0&amp;0&amp;1&amp;1&amp;0\\
-0&amp;2&amp;0&amp;1&amp;1&amp;1\\
-0&amp;0&amp;2&amp;0&amp;1&amp;1\\
-1&amp;1&amp;0&amp;2&amp;0&amp;0\\
-1&amp;1&amp;1&amp;0&amp;2&amp;0\\
-0&amp;1&amp;1&amp;0&amp;0&amp;2
-\end{pmatrix}
-=
-\begin{pmatrix}
-2I_3&amp;B\\
-B&amp;2I_3
-\end{pmatrix}
-\]</span></p>
-<p>となる。ただし、</p>
-<p><span class="math display">\[
-B=
-\begin{pmatrix}
-1&amp;1&amp;0\\
-1&amp;1&amp;1\\
-0&amp;1&amp;1
-\end{pmatrix}
-\]</span></p>
-<p>である。</p>
-<p>一般に、</p>
-<p><span class="math display">\[
-S=\frac1{\sqrt2}
-\begin{pmatrix}
-I_3&amp;I_3\\
-I_3&amp;-I_3
-\end{pmatrix}
-\]</span></p>
-<p>とおくと、<span class="math inline">\(S\)</span> は直交行列であり、</p>
-<p><span class="math display">\[
-S^{\mathsf T}
-\begin{pmatrix}
-2I_3&amp;B\\
-B&amp;2I_3
-\end{pmatrix}
-S
-=
-\begin{pmatrix}
-2I_3+B&amp;0\\
-0&amp;2I_3-B
-\end{pmatrix}
-\]</span></p>
-<p>となる。</p>
-<p>したがって、</p>
-<p><span class="math display">\[
-\det A
-=
-\det(2I_3+B)\det(2I_3-B).
-\]</span></p>
-<p>まず、</p>
-<p><span class="math display">\[
-2I_3+B
-=
-\begin{pmatrix}
-3&amp;1&amp;0\\
-1&amp;3&amp;1\\
-0&amp;1&amp;3
-\end{pmatrix}
-\]</span></p>
-<p>だから、</p>
 <p><span class="math display">\[
 \begin{aligned}
-\det(2I_3+B)
-&amp;=
-3
 \begin{vmatrix}
-3&amp;1\\
-1&amp;3
+2&amp;1&amp;1&amp;0&amp;0&amp;0\\
+1&amp;2&amp;0&amp;1&amp;0&amp;0\\
+1&amp;0&amp;2&amp;1&amp;1&amp;0\\
+0&amp;1&amp;1&amp;2&amp;0&amp;1\\
+0&amp;0&amp;1&amp;0&amp;2&amp;1\\
+0&amp;0&amp;0&amp;1&amp;1&amp;2
 \end{vmatrix}
--
+&amp;=
+-\begin{vmatrix}
+2&amp;1&amp;1&amp;0&amp;0&amp;0\\
+1&amp;2&amp;0&amp;1&amp;0&amp;0\\
+1&amp;0&amp;2&amp;1&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1&amp;1&amp;2\\
+0&amp;0&amp;1&amp;0&amp;2&amp;1\\
+0&amp;1&amp;1&amp;2&amp;0&amp;1
+\end{vmatrix}
+&amp;&amp;\text{第4行と第6行を入れ替える．}
+\\
+&amp;=
+(-1)^2\begin{vmatrix}
+1&amp;1&amp;2&amp;0&amp;0&amp;0\\
+0&amp;2&amp;1&amp;1&amp;0&amp;0\\
+2&amp;0&amp;1&amp;1&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1&amp;1&amp;2\\
+1&amp;0&amp;0&amp;0&amp;2&amp;1\\
+1&amp;1&amp;0&amp;2&amp;0&amp;1
+\end{vmatrix}
+&amp;&amp;\text{1列目と3列目を入れ替える．}
+\\
+&amp;=
 \begin{vmatrix}
-1&amp;1\\
-0&amp;3
-\end{vmatrix}\\
-&amp;=3(9-1)-3\\
-&amp;=21.
+1&amp;1&amp;2\\
+1&amp;2&amp;1\\
+3&amp;1&amp;1
+\end{vmatrix}
+\quad
+\begin{vmatrix}
+1&amp;1&amp;2\\
+-1&amp;2&amp;1\\
+1&amp;-1&amp;1
+\end{vmatrix}
+\\
+&amp;=
+(2+2+3-12-1-1)(2+2+1-4+1+1)
+\\
+&amp;=
+-7\times3
 \end{aligned}
 \]</span></p>
-<p>次に、</p>
 <p><span class="math display">\[
-2I_3-B
-=
-\begin{pmatrix}
-1&amp;-1&amp;0\\
--1&amp;1&amp;-1\\
-0&amp;-1&amp;1
-\end{pmatrix}
-\]</span></p>
-<p>だから、</p>
-<p><span class="math display">\[
-\begin{aligned}
-\det(2I_3-B)
-&amp;=
-\begin{vmatrix}
-1&amp;-1\\
--1&amp;1
-\end{vmatrix}
-+
-\begin{vmatrix}
--1&amp;-1\\
-0&amp;1
-\end{vmatrix}\\
-&amp;=(1-1)+(-1)\\
-&amp;=-1.
-\end{aligned}
-\]</span></p>
-<p>よって、</p>
-<p><span class="math display">\[
-\det A
-=
-21\cdot(-1)
-=
 \boxed{-21}.
 \]</span></p>
 </section>
-<section id="検算" class="level2">
-<h2 class="anchored" data-anchor-id="検算">検算</h2>
-<p><span class="math inline">\(B\)</span> の固有値は</p>
-<p><span class="math display">\[
-1,\qquad1+\sqrt2,\qquad1-\sqrt2
-\]</span></p>
-<p>である。</p>
-<p>したがって、ブロック行列</p>
-<p><span class="math display">\[
-\begin{pmatrix}
-2I_3&amp;B\\
-B&amp;2I_3
-\end{pmatrix}
-\]</span></p>
-<p>の固有値は</p>
-<p><span class="math display">\[
-2+\lambda,\qquad2-\lambda
-\]</span></p>
-<p>の形で得られる。</p>
-<p>行列式はそれらの積だから、</p>
-<p><span class="math display">\[
-\begin{aligned}
-\det A
-&amp;=(2+1)(2-1)\\
-&amp;\quad\cdot(2+1+\sqrt2)(2-1-\sqrt2)\\
-&amp;\quad\cdot(2+1-\sqrt2)(2-1+\sqrt2)\\
-&amp;=3(3+\sqrt2)(1-\sqrt2)(3-\sqrt2)(1+\sqrt2)\\
-&amp;=-21.
-\end{aligned}
-\]</span></p>
-<p>解答と一致する。</p>
-</section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>高次の行列式では、余因子展開や行基本変形を始める前に、</p>
-<ul>
-<li>同じ形の行や列</li>
-<li>添字のグループ分け</li>
-<li>ブロック構造</li>
-<li>対称性</li>
-</ul>
-<p>を探す。</p>
-<p>今回は行と列を同時に並べ替えることで、6次の行列式が2つの3次の行列式へ分解された。</p>
+<p>高次の行列式では，余因子展開や行基本変形を始める前に，対称ブロック行列に変形できないか考えたいですね．</p>
+<p>筆者は最後にサラスの公式で3次の行列式を計算するときに計算ミスしてしまいました．</p>
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page="">
 

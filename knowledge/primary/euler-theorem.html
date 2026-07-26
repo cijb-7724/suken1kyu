@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>行列の変換 – 数検1級 解説ノート</title>
+<title>オイラーの定理 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -128,8 +157,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
   <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
-  <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
-  <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
+  <li><a href="#オイラーのファイ関数の計算方法" id="toc-オイラーのファイ関数の計算方法" class="nav-link" data-scroll-target="#オイラーのファイ関数の計算方法">オイラーのファイ関数の計算方法</a>
+  <ul class="collapse">
+  <li><a href="#計算例1varphi20" id="toc-計算例1varphi20" class="nav-link" data-scroll-target="#計算例1varphi20">計算例1：<span class="math inline">\(\varphi(20)\)</span></a></li>
+  <li><a href="#計算例2varphi360" id="toc-計算例2varphi360" class="nav-link" data-scroll-target="#計算例2varphi360">計算例2：<span class="math inline">\(\varphi(360)\)</span></a></li>
+  </ul></li>
+  <li><a href="#基本例" id="toc-基本例" class="nav-link" data-scroll-target="#基本例">基本例</a>
+  <ul class="collapse">
+  <li><a href="#巨大な累乗の余り" id="toc-巨大な累乗の余り" class="nav-link" data-scroll-target="#巨大な累乗の余り">巨大な累乗の余り</a></li>
+  <li><a href="#整数が割り切れることを示す" id="toc-整数が割り切れることを示す" class="nav-link" data-scroll-target="#整数が割り切れることを示す">整数が割り切れることを示す</a></li>
+  <li><a href="#下数桁を求める" id="toc-下数桁を求める" class="nav-link" data-scroll-target="#下数桁を求める">下数桁を求める</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -138,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">行列の変換</h1>
+<h1 class="title">オイラーの定理</h1>
 </div>
 
 
@@ -155,22 +193,126 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「行列の変換」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>オイラーの定理は，法と互いに素な数の累乗について，指数を小さくするための定理である．巨大な指数の余りや，整数の下数桁を求める問題でよく用いる．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(\gcd(a,n)=1\)</span> のとき，</p>
+<p><span class="math display">\[
+a^{\varphi(n)}\equiv1\pmod n
+\]</span></p>
+<p>が成り立つ．<span class="math inline">\(\varphi(n)\)</span> は，<span class="math inline">\(1\)</span> 以上 <span class="math inline">\(n\)</span> 以下で <span class="math inline">\(n\)</span> と互いに素な整数の個数を表す．</p>
+<p>特に，素数 <span class="math inline">\(p\)</span> と正の整数 <span class="math inline">\(k\)</span> に対して</p>
+<p><span class="math display">\[
+\varphi(p)=p-1,\qquad
+\varphi(p^k)=p^k-p^{k-1}
+\]</span></p>
+<p>である．また，<span class="math inline">\(\gcd(m,n)=1\)</span> なら，</p>
+<p><span class="math display">\[
+\varphi(mn)=\varphi(m)\varphi(n)
+\]</span></p>
+<p>が成り立つ．</p>
+<p>指数を</p>
+<p><span class="math display">\[
+N=q\varphi(n)+r
+\]</span></p>
+<p>と表せば，</p>
+<p><span class="math display">\[
+a^N\equiv a^r\pmod n
+\]</span></p>
+<p>と小さくできる．ただし，使用前に必ず <span class="math inline">\(\gcd(a,n)=1\)</span> を確認する．<span class="math inline">\(\varphi(n)\)</span> は利用できる周期の候補であり，最小の周期とは限らない．</p>
 </section>
-<section id="例題" class="level2">
-<h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<section id="オイラーのファイ関数の計算方法" class="level2">
+<h2 class="anchored" data-anchor-id="オイラーのファイ関数の計算方法">オイラーのファイ関数の計算方法</h2>
+<p><span class="math inline">\(n\)</span> を素因数分解して</p>
+<p><span class="math display">\[
+n=p_1^{e_1}p_2^{e_2}\cdots p_k^{e_k}
+\]</span></p>
+<p>とする．このとき，</p>
+<p><span class="math display">\[
+\varphi(n)
+=n\left(1-\frac1{p_1}\right)
+\left(1-\frac1{p_2}\right)
+\cdots
+\left(1-\frac1{p_k}\right)
+\]</span></p>
+<p>で計算できる．積に現れるのは，<span class="math inline">\(n\)</span> の異なる素因数 <span class="math inline">\(p_1,p_2,\ldots,p_k\)</span> である．</p>
+<p>計算するときは，次の順に進める．</p>
+<ol type="1">
+<li><span class="math inline">\(n\)</span> を素因数分解する．</li>
+<li>異なる素因数をすべて取り出す．</li>
+<li>各素因数 <span class="math inline">\(p\)</span> について <span class="math inline">\(\left(1-\dfrac1p\right)\)</span> を掛ける．</li>
+</ol>
+<section id="計算例1varphi20" class="level3">
+<h3 class="anchored" data-anchor-id="計算例1varphi20">計算例1：<span class="math inline">\(\varphi(20)\)</span></h3>
+<p><span class="math display">\[
+20=2^2\cdot5
+\]</span></p>
+<p>なので，異なる素因数は <span class="math inline">\(2\)</span> と <span class="math inline">\(5\)</span> である．したがって，</p>
+<p><span class="math display">\[
+\begin{aligned}
+\varphi(20)
+&amp;=20\left(1-\frac12\right)\left(1-\frac15\right)\\
+&amp;=20\cdot\frac12\cdot\frac45\\
+&amp;=8
+\end{aligned}
+\]</span></p>
+<p>となる．実際，<span class="math inline">\(1\)</span> 以上 <span class="math inline">\(20\)</span> 以下で <span class="math inline">\(20\)</span> と互いに素な整数は</p>
+<p><span class="math display">\[
+1,3,7,9,11,13,17,19
+\]</span></p>
+<p>の <span class="math inline">\(8\)</span> 個である．</p>
 </section>
-<section id="関連問題" class="level2">
-<h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>
-<p>後で自動表示します．</p>
+<section id="計算例2varphi360" class="level3">
+<h3 class="anchored" data-anchor-id="計算例2varphi360">計算例2：<span class="math inline">\(\varphi(360)\)</span></h3>
+<p><span class="math display">\[
+360=2^3\cdot3^2\cdot5
+\]</span></p>
+<p>なので，異なる素因数は <span class="math inline">\(2,3,5\)</span> である．したがって，</p>
+<p><span class="math display">\[
+\begin{aligned}
+\varphi(360)
+&amp;=360\left(1-\frac12\right)
+\left(1-\frac13\right)
+\left(1-\frac15\right)\\
+&amp;=360\cdot\frac12\cdot\frac23\cdot\frac45\\
+&amp;=96
+\end{aligned}
+\]</span></p>
+<p>となる．数が大きい場合は，互いに素な整数を一つずつ数えるより，この公式を使う方が速い．</p>
+</section>
+</section>
+<section id="基本例" class="level2">
+<h2 class="anchored" data-anchor-id="基本例">基本例</h2>
+<section id="巨大な累乗の余り" class="level3">
+<h3 class="anchored" data-anchor-id="巨大な累乗の余り">巨大な累乗の余り</h3>
+<p><span class="math inline">\(7^{222}\)</span> を <span class="math inline">\(20\)</span> で割った余りを求める．<span class="math inline">\(\gcd(7,20)=1\)</span> であり，上で求めたように <span class="math inline">\(\varphi(20)=8\)</span> なので，</p>
+<p><span class="math display">\[
+7^{222}\equiv7^6\pmod{20}
+\]</span></p>
+<p>である．<span class="math inline">\(7^2\equiv9\pmod{20}\)</span>，<span class="math inline">\(7^4\equiv1\pmod{20}\)</span> より，</p>
+<p><span class="math display">\[
+7^6\equiv7^4\cdot7^2\equiv9\pmod{20}
+\]</span></p>
+<p>となる．</p>
+</section>
+<section id="整数が割り切れることを示す" class="level3">
+<h3 class="anchored" data-anchor-id="整数が割り切れることを示す">整数が割り切れることを示す</h3>
+<p><span class="math inline">\(\gcd(2,35)=1\)</span> であり，</p>
+<p><span class="math display">\[
+\varphi(35)=\varphi(5)\varphi(7)=4\cdot6=24
+\]</span></p>
+<p>だから，</p>
+<p><span class="math display">\[
+2^{24}\equiv1\pmod{35}
+\]</span></p>
+<p>である．したがって，<span class="math inline">\(2^{24}-1\)</span> は <span class="math inline">\(35\)</span> で割り切れる．</p>
+</section>
+<section id="下数桁を求める" class="level3">
+<h3 class="anchored" data-anchor-id="下数桁を求める">下数桁を求める</h3>
+<p>整数の下 <span class="math inline">\(k\)</span> 桁は，法 <span class="math inline">\(10^k\)</span> での余りである．底と <span class="math inline">\(10^k\)</span> が互いに素ならオイラーの定理を検討する．さらに <span class="math inline">\(10^k=2^k5^k\)</span> と分け，中国剰余定理と組み合わせると指数をより小さくできる場合がある．</p>
 <!-- AUTO:KNOWLEDGE-UI:START -->
 <div class="knowledge-detail-app" data-knowledge-page="">
 
@@ -180,6 +322,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- AUTO:KNOWLEDGE-UI:END -->
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

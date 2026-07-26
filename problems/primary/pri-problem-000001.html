@@ -156,11 +156,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
-  <li><a href="#方針" id="toc-方針" class="nav-link" data-scroll-target="#方針">方針</a></li>
   <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
   <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
-  <li><a href="#検算" id="toc-検算" class="nav-link" data-scroll-target="#検算">検算</a></li>
   <li><a href="#コメント" id="toc-コメント" class="nav-link" data-scroll-target="#コメント">コメント</a></li>
   </ul>
 </nav>
@@ -189,67 +187,57 @@ window.Quarto = {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p><span class="math display">\[
-3^{17171717}
-\]</span></p>
-<p>の下3桁の数を求めなさい。</p>
-</section>
-<section id="方針" class="level2">
-<h2 class="anchored" data-anchor-id="方針">方針</h2>
-<p>下3桁を求めることは、<span class="math inline">\(3^{17171717}\)</span> を <span class="math inline">\(1000\)</span> で割った余りを求めることと同じである。</p>
-<p>まず <span class="math inline">\(3^{100}\equiv 1\pmod{1000}\)</span> を示して指数を <span class="math inline">\(100\)</span> で整理し、その後、繰り返し二乗法で <span class="math inline">\(3^{17}\pmod{1000}\)</span> を計算する。</p>
+<p><span class="math inline">\(3^{17171717}\)</span>の下3桁の数を求めなさい．</p>
 </section>
 <section id="必要な知識" class="level2">
 <h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
 <ul>
 <li><a href="../../knowledge/primary/modular-arithmetic.html">合同式・剰余</a></li>
-<li>オイラーの定理</li>
-<li>互いに素な法に分けて合同式を確認する考え方</li>
+<li><a href="../../knowledge/primary/euler-theorem.html">オイラーの定理</a></li>
+<li><a href="../../knowledge/primary/chinese-remainder-theorem.html">中国剰余定理</a></li>
 </ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p><span class="math inline">\(1000=8\cdot125\)</span> と分解すると、<span class="math inline">\(3^{100}\equiv1\pmod{1000}\)</span> を確認しやすい。</p>
-<p>指数 <span class="math inline">\(17171717\)</span> を直接扱うのではなく、周期を利用して小さな指数へ落とす。</p>
+<p>下3桁を求めることは<span class="math inline">\(\mod 10^3\)</span>を求めることに等しい． 法 <span class="math inline">\(1000\)</span> にオイラーの定理を直接使うより，<span class="math inline">\(1000=8\cdot125\)</span> と分けて，それぞれの法で短い周期を探す． 両方に共通する周期を見つけ，中国剰余定理で法 <span class="math inline">\(1000\)</span> の合同式へ戻す．</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-<p>まず、法 <span class="math inline">\(8\)</span> では</p>
+<p>求めたいのは <span class="math inline">\(3^{17171717}\)</span> を <span class="math inline">\(1000\)</span> で割った余りである．<span class="math inline">\(\gcd(3,1000)=1\)</span> なので，オイラーの定理を法 <span class="math inline">\(1000\)</span> に直接使うこともできるが，<span class="math inline">\(\varphi(1000)=400\)</span> であり，指数は <span class="math inline">\(117\)</span> までしか小さくならない．</p>
+<p>そこで，より短い周期を得るために</p>
 <p><span class="math display">\[
-3^2=9\equiv1\pmod8
+1000=8\cdot125
 \]</span></p>
-<p>であるから、</p>
+<p>と分解する．<span class="math inline">\(\gcd(8,125)=1\)</span> なので，中国剰余定理により，法 <span class="math inline">\(8\)</span> と法 <span class="math inline">\(125\)</span> での余りが分かれば法 <span class="math inline">\(1000\)</span> での余りも決まる．</p>
+<p>法 <span class="math inline">\(8\)</span> では <span class="math inline">\(\varphi(8)=4\)</span> なので，オイラーの定理より</p>
 <p><span class="math display">\[
-3^{100}=(3^2)^{50}\equiv1\pmod8
+3^4\equiv1\pmod8
 \]</span></p>
-<p>となる。</p>
-<p>一方、<span class="math inline">\(\gcd(3,125)=1\)</span> であり、</p>
+<p>である．したがって，</p>
 <p><span class="math display">\[
-\varphi(125)=125-25=100
+3^{100}=(3^4)^{25}\equiv1\pmod8
 \]</span></p>
-<p>だから、オイラーの定理より</p>
+<p>となる．一方，<span class="math inline">\(\varphi(125)=100\)</span> なので，</p>
 <p><span class="math display">\[
 3^{100}\equiv1\pmod{125}
 \]</span></p>
-<p>である。</p>
-<p>したがって、<span class="math inline">\(3^{100}-1\)</span> は <span class="math inline">\(8\)</span> と <span class="math inline">\(125\)</span> の両方で割り切れる。<br>
-<span class="math inline">\(8\)</span> と <span class="math inline">\(125\)</span> は互いに素なので、</p>
+<p>である．</p>
+<p>したがって，<span class="math inline">\(3^{100}\)</span> は法 <span class="math inline">\(8\)</span> と法 <span class="math inline">\(125\)</span> のどちらでも余りが <span class="math inline">\(1\)</span> である．中国剰余定理より，</p>
 <p><span class="math display">\[
 3^{100}\equiv1\pmod{1000}
 \]</span></p>
-<p>を得る。</p>
-<p>ここで、</p>
+<p>である．また，</p>
 <p><span class="math display">\[
 17171717=100\cdot171717+17
 \]</span></p>
-<p>だから、</p>
+<p>だから，</p>
 <p><span class="math display">\[
 3^{17171717}
 =(3^{100})^{171717}3^{17}
 \equiv3^{17}\pmod{1000}
 \]</span></p>
-<p>である。</p>
-<p>繰り返し二乗法で <span class="math inline">\(3^{17}\)</span> を計算する。</p>
+<p>である．</p>
+<p>あとは，二乗を繰り返して <span class="math inline">\(3^{17}\)</span> を計算する．</p>
 <p><span class="math display">\[
 3^4=81
 \]</span></p>
@@ -259,42 +247,19 @@ window.Quarto = {
 <p><span class="math display">\[
 3^{16}\equiv561^2=314721\equiv721\pmod{1000}
 \]</span></p>
-<p>したがって、</p>
+<p><span class="math inline">\(17=16+1\)</span> なので，</p>
 <p><span class="math display">\[
 3^{17}\equiv721\cdot3=2163\equiv163\pmod{1000}
 \]</span></p>
-<p>である。</p>
-<p>よって、求める下3桁は</p>
+<p>となる．よって，求める下3桁は</p>
 <p><span class="math display">\[
 \boxed{163}
 \]</span></p>
-<p>である。</p>
-</section>
-<section id="検算" class="level2">
-<h2 class="anchored" data-anchor-id="検算">検算</h2>
-<p>法 <span class="math inline">\(8\)</span> と法 <span class="math inline">\(125\)</span> で答えを確認する。</p>
-<p><span class="math display">\[
-163\equiv3\pmod8
-\]</span></p>
-<p>一方、</p>
-<p><span class="math display">\[
-3^{17171717}\equiv3^{17}\equiv3\pmod8
-\]</span></p>
-<p>なので一致する。</p>
-<p>また、</p>
-<p><span class="math display">\[
-163\equiv38\pmod{125}
-\]</span></p>
-<p>であり、繰り返し二乗法で法 <span class="math inline">\(125\)</span> を用いても</p>
-<p><span class="math display">\[
-3^{17}\equiv38\pmod{125}
-\]</span></p>
-<p>となるため、法 <span class="math inline">\(125\)</span> でも一致する。</p>
+<p>である．</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>巨大な指数を見たら、まず「指数そのものを計算しない」ことが重要である。</p>
-<p>今回は下3桁なので法 <span class="math inline">\(1000\)</span> を考え、<span class="math inline">\(1000=8\cdot125\)</span> と分けることで周期を確認した。</p>
+<p>筆算でミスしたくないですね．</p>
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page="">
 

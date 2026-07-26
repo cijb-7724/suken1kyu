@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 24,
+  "count": 26,
   "root_ids": [
     "number-theory",
     "algebra",
@@ -17,7 +17,18 @@
         {
           "id": "modular-arithmetic",
           "label": "合同式・剰余",
-          "children": []
+          "children": [
+            {
+              "id": "euler-theorem",
+              "label": "オイラーの定理",
+              "children": []
+            },
+            {
+              "id": "chinese-remainder-theorem",
+              "label": "中国剰余定理",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -157,7 +168,9 @@
       ],
       "ancestors": [],
       "descendants": [
-        "modular-arithmetic"
+        "modular-arithmetic",
+        "euler-theorem",
+        "chinese-remainder-theorem"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
@@ -172,9 +185,34 @@
       "label": "合同式・剰余",
       "parent_id": "number-theory",
       "depth": 1,
-      "children": [],
+      "children": [
+        "euler-theorem",
+        "chinese-remainder-theorem"
+      ],
       "ancestors": [
         "number-theory"
+      ],
+      "descendants": [
+        "euler-theorem",
+        "chinese-remainder-theorem"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000001"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/modular-arithmetic.html"
+    },
+    "euler-theorem": {
+      "id": "euler-theorem",
+      "label": "オイラーの定理",
+      "parent_id": "modular-arithmetic",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "modular-arithmetic"
       ],
       "descendants": [],
       "direct_problem_ids": [
@@ -185,7 +223,28 @@
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/primary/modular-arithmetic.html"
+      "knowledge_path": "knowledge/primary/euler-theorem.html"
+    },
+    "chinese-remainder-theorem": {
+      "id": "chinese-remainder-theorem",
+      "label": "中国剰余定理",
+      "parent_id": "modular-arithmetic",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "modular-arithmetic"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000001"
+      ],
+      "problem_ids": [
+        "pri-problem-000001"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/chinese-remainder-theorem.html"
     },
     "algebra": {
       "id": "algebra",

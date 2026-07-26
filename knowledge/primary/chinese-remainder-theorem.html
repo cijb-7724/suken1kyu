@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>行列の変換 – 数検1級 解説ノート</title>
+<title>中国剰余定理 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -128,8 +157,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
   <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
-  <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
-  <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
+  <li><a href="#基本例" id="toc-基本例" class="nav-link" data-scroll-target="#基本例">基本例</a>
+  <ul class="collapse">
+  <li><a href="#余りが異なる場合" id="toc-余りが異なる場合" class="nav-link" data-scroll-target="#余りが異なる場合">余りが異なる場合</a></li>
+  <li><a href="#同じ余りをまとめる場合" id="toc-同じ余りをまとめる場合" class="nav-link" data-scroll-target="#同じ余りをまとめる場合">同じ余りをまとめる場合</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -138,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">行列の変換</h1>
+<h1 class="title">中国剰余定理</h1>
 </div>
 
 
@@ -155,22 +187,79 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「行列の変換」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>中国剰余定理は，互いに素な複数の法で得た余りを，一つの合同式へまとめるための定理である．大きな法を互いに素な因数へ分けて計算するときに用いる．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(\gcd(m,n)=1\)</span> のとき，連立合同式</p>
+<p><span class="math display">\[
+\begin{cases}
+x\equiv a\pmod m,\\
+x\equiv b\pmod n
+\end{cases}
+\]</span></p>
+<p>を満たす <span class="math inline">\(x\)</span> は存在し，法 <span class="math inline">\(mn\)</span> でただ一つに決まる．</p>
+<p>実際に値を求めるときは，<span class="math inline">\(x=a+mk\)</span> とおき，もう一方の合同式へ代入して <span class="math inline">\(k\)</span> を決める方法が基本である．</p>
+<p>特に，両方の余りが同じ <span class="math inline">\(r\)</span> なら，</p>
+<p><span class="math display">\[
+\begin{cases}
+x\equiv r\pmod m,\\
+x\equiv r\pmod n
+\end{cases}
+\quad\Longrightarrow\quad
+x\equiv r\pmod{mn}
+\]</span></p>
+<p>となる．</p>
+<p>法が互いに素でない場合はそのまま適用できない．少なくとも，二つの余りが <span class="math inline">\(\gcd(m,n)\)</span> を法として一致している必要がある．</p>
 </section>
-<section id="例題" class="level2">
-<h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<section id="基本例" class="level2">
+<h2 class="anchored" data-anchor-id="基本例">基本例</h2>
+<section id="余りが異なる場合" class="level3">
+<h3 class="anchored" data-anchor-id="余りが異なる場合">余りが異なる場合</h3>
+<p><span class="math display">\[
+\begin{cases}
+x\equiv2\pmod3,\\
+x\equiv3\pmod5
+\end{cases}
+\]</span></p>
+<p>を解く．<span class="math inline">\(x=2+3k\)</span> とおくと，</p>
+<p><span class="math display">\[
+2+3k\equiv3\pmod5
+\]</span></p>
+<p>だから，</p>
+<p><span class="math display">\[
+3k\equiv1\pmod5
+\]</span></p>
+<p>である．法 <span class="math inline">\(5\)</span> では <span class="math inline">\(3\cdot2\equiv1\)</span> なので，<span class="math inline">\(3\)</span> の逆元は <span class="math inline">\(2\)</span> である．両辺に <span class="math inline">\(2\)</span> を掛けると，</p>
+<p><span class="math display">\[
+k\equiv2\pmod5
+\]</span></p>
+<p>を得る．したがって，ある整数 <span class="math inline">\(\ell\)</span> を用いて</p>
+<p><span class="math display">\[
+k=2+5\ell
+\]</span></p>
+<p>と書ける．これを <span class="math inline">\(x=2+3k\)</span> に戻すと，</p>
+<p><span class="math display">\[
+x=2+3(2+5\ell)=8+15\ell
+\]</span></p>
+<p>となる．よって，</p>
+<p><span class="math display">\[
+x\equiv8\pmod{15}
+\]</span></p>
+<p>である．</p>
 </section>
-<section id="関連問題" class="level2">
-<h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>
-<p>後で自動表示します．</p>
+<section id="同じ余りをまとめる場合" class="level3">
+<h3 class="anchored" data-anchor-id="同じ余りをまとめる場合">同じ余りをまとめる場合</h3>
+<p><span class="math display">\[
+x\equiv2\pmod4,\qquad x\equiv2\pmod9
+\]</span></p>
+<p>とする．これは，<span class="math inline">\(x-2\)</span> が <span class="math inline">\(4\)</span> と <span class="math inline">\(9\)</span> の両方で割り切れることを意味する．<span class="math inline">\(\gcd(4,9)=1\)</span> なので，<span class="math inline">\(x-2\)</span> は <span class="math inline">\(4\cdot9=36\)</span> でも割り切れる．したがって，</p>
+<p><span class="math display">\[
+x\equiv2\pmod{36}
+\]</span></p>
+<p>である．</p>
 <!-- AUTO:KNOWLEDGE-UI:START -->
 <div class="knowledge-detail-app" data-knowledge-page="">
 
@@ -180,6 +269,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- AUTO:KNOWLEDGE-UI:END -->
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
