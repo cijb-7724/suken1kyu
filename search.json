@@ -455,37 +455,65 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/probability-statistics.html",
-    "href": "knowledge/primary/probability-statistics.html",
-    "title": "確率・統計",
+    "objectID": "knowledge/primary/reflection-across-plane.html",
+    "href": "knowledge/primary/reflection-across-plane.html",
+    "title": "平面に関する対称点",
     "section": "",
-    "text": "1次試験における「確率・統計」についてまとめます．"
+    "text": "空間内の平面と，平面に関する対称点の求め方をまとめます．"
   },
   {
-    "objectID": "knowledge/primary/probability-statistics.html#概要",
-    "href": "knowledge/primary/probability-statistics.html#概要",
-    "title": "確率・統計",
+    "objectID": "knowledge/primary/reflection-across-plane.html#基本事項",
+    "href": "knowledge/primary/reflection-across-plane.html#基本事項",
+    "title": "平面に関する対称点",
+    "section": "基本事項",
+    "text": "基本事項\n平面\n\\[\nax+by+cz+d=0\n\\]\nの法線ベクトルは \\(\\boldsymbol n=(a,b,c)\\) です．点\n\\[\nP=(x_0,y_0,z_0)\n\\]\nをこの平面に関して対称移動した点 \\(P'\\) は，\n\\[\nP'\n=P-\n\\frac{2(ax_0+by_0+cz_0+d)}\n{a^2+b^2+c^2}\n\\boldsymbol n\n\\]\nで求められます．"
+  },
+  {
+    "objectID": "knowledge/primary/reflection-across-plane.html#例題",
+    "href": "knowledge/primary/reflection-across-plane.html#例題",
+    "title": "平面に関する対称点",
+    "section": "例題",
+    "text": "例題\n点 \\((2,1,0)\\) を平面 \\(x=0\\) に関して対称移動します．\\(a=1\\)，\\(b=c=d=0\\) だから，\n\\[\n(2,1,0)-2\\cdot2(1,0,0)=(-2,1,0)\n\\]\nとなります．"
+  },
+  {
+    "objectID": "knowledge/primary/reflection-across-plane.html#関連問題",
+    "href": "knowledge/primary/reflection-across-plane.html#関連問題",
+    "title": "平面に関する対称点",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/random-variable.html",
+    "href": "knowledge/primary/random-variable.html",
+    "title": "確率変数",
+    "section": "",
+    "text": "1次試験における「確率変数」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/random-variable.html#概要",
+    "href": "knowledge/primary/random-variable.html#概要",
+    "title": "確率変数",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/probability-statistics.html#基本事項",
-    "href": "knowledge/primary/probability-statistics.html#基本事項",
-    "title": "確率・統計",
+    "objectID": "knowledge/primary/random-variable.html#基本事項",
+    "href": "knowledge/primary/random-variable.html#基本事項",
+    "title": "確率変数",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/probability-statistics.html#例題",
-    "href": "knowledge/primary/probability-statistics.html#例題",
-    "title": "確率・統計",
+    "objectID": "knowledge/primary/random-variable.html#例題",
+    "href": "knowledge/primary/random-variable.html#例題",
+    "title": "確率変数",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/probability-statistics.html#関連問題",
-    "href": "knowledge/primary/probability-statistics.html#関連問題",
-    "title": "確率・統計",
+    "objectID": "knowledge/primary/random-variable.html#関連問題",
+    "href": "knowledge/primary/random-variable.html#関連問題",
+    "title": "確率変数",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
@@ -525,95 +553,130 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/determinant.html",
-    "href": "knowledge/primary/determinant.html",
-    "title": "行列式",
+    "objectID": "knowledge/primary/integration.html",
+    "href": "knowledge/primary/integration.html",
+    "title": "積分",
     "section": "",
-    "text": "1次試験で必要となる行列式の知識をまとめる．\n\n\n[\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n=ad-bc ]\n\n\n\n後で自動生成する．"
+    "text": "積分は，関数の累積量や図形の面積を求める操作である．数検1級では，一変数の定積分に加えて，複数の変数を順に積分する重積分も扱う．"
   },
   {
-    "objectID": "knowledge/primary/determinant.html#基本事項",
-    "href": "knowledge/primary/determinant.html#基本事項",
-    "title": "行列式",
+    "objectID": "knowledge/primary/integration.html#概要",
+    "href": "knowledge/primary/integration.html#概要",
+    "title": "積分",
     "section": "",
-    "text": "[\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n=ad-bc ]"
+    "text": "積分は，関数の累積量や図形の面積を求める操作である．数検1級では，一変数の定積分に加えて，複数の変数を順に積分する重積分も扱う．"
   },
   {
-    "objectID": "knowledge/primary/determinant.html#関連問題",
-    "href": "knowledge/primary/determinant.html#関連問題",
-    "title": "行列式",
-    "section": "",
-    "text": "後で自動生成する．"
+    "objectID": "knowledge/primary/integration.html#基本事項",
+    "href": "knowledge/primary/integration.html#基本事項",
+    "title": "積分",
+    "section": "基本事項",
+    "text": "基本事項\n\\(F'(x)=f(x)\\) のとき，区間 \\([a,b]\\) における定積分は\n\\[\n\\int_a^b f(x)\\,dx=F(b)-F(a)\n\\]\nである．\n置換積分では，\\(u=g(x)\\) とおいて変数と積分区間をそろえて変換する．部分積分では，\n\\[\n\\int_a^b f(x)g'(x)\\,dx\n=\n\\left[f(x)g(x)\\right]_a^b\n-\\int_a^b f'(x)g(x)\\,dx\n\\]\nを用いる．\n積分を始める前に，対称性，置換，積の微分の形が使えないか確認すると計算を短くできる．"
   },
   {
-    "objectID": "knowledge/primary/inverse-trigonometric-function.html",
-    "href": "knowledge/primary/inverse-trigonometric-function.html",
-    "title": "逆三角関数",
-    "section": "",
-    "text": "1次試験における「逆三角関数」についてまとめます．"
+    "objectID": "knowledge/primary/integration.html#基本例",
+    "href": "knowledge/primary/integration.html#基本例",
+    "title": "積分",
+    "section": "基本例",
+    "text": "基本例\n\\[\n\\int_0^1x e^{x^2}\\,dx\n\\]\nでは，\\(u=x^2\\) とおくと \\(du=2x\\,dx\\) だから，\n\\[\n\\int_0^1x e^{x^2}\\,dx\n=\\frac12\\int_0^1e^u\\,du\n=\\frac{e-1}{2}\n\\]\nとなる．"
   },
   {
-    "objectID": "knowledge/primary/inverse-trigonometric-function.html#概要",
-    "href": "knowledge/primary/inverse-trigonometric-function.html#概要",
-    "title": "逆三角関数",
+    "objectID": "knowledge/primary/inverse-function.html",
+    "href": "knowledge/primary/inverse-function.html",
+    "title": "逆関数",
+    "section": "",
+    "text": "1次試験における「逆関数」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/inverse-function.html#概要",
+    "href": "knowledge/primary/inverse-function.html#概要",
+    "title": "逆関数",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/inverse-trigonometric-function.html#基本事項",
-    "href": "knowledge/primary/inverse-trigonometric-function.html#基本事項",
-    "title": "逆三角関数",
+    "objectID": "knowledge/primary/inverse-function.html#基本事項",
+    "href": "knowledge/primary/inverse-function.html#基本事項",
+    "title": "逆関数",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/inverse-trigonometric-function.html#例題",
-    "href": "knowledge/primary/inverse-trigonometric-function.html#例題",
-    "title": "逆三角関数",
+    "objectID": "knowledge/primary/inverse-function.html#例題",
+    "href": "knowledge/primary/inverse-function.html#例題",
+    "title": "逆関数",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/inverse-trigonometric-function.html#関連問題",
-    "href": "knowledge/primary/inverse-trigonometric-function.html#関連問題",
-    "title": "逆三角関数",
+    "objectID": "knowledge/primary/inverse-function.html#関連問題",
+    "href": "knowledge/primary/inverse-function.html#関連問題",
+    "title": "逆関数",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/euler-theorem.html",
-    "href": "knowledge/primary/euler-theorem.html",
-    "title": "オイラーの定理",
+    "objectID": "knowledge/primary/chinese-remainder-theorem.html",
+    "href": "knowledge/primary/chinese-remainder-theorem.html",
+    "title": "中国剰余定理",
     "section": "",
-    "text": "オイラーの定理は，法と互いに素な数の累乗について，指数を小さくするための定理である．巨大な指数の余りや，整数の下数桁を求める問題でよく用いる．"
+    "text": "中国剰余定理は，互いに素な複数の法で得た余りを，一つの合同式へまとめるための定理である．大きな法を互いに素な因数へ分けて計算するときに用いる．"
   },
   {
-    "objectID": "knowledge/primary/euler-theorem.html#概要",
-    "href": "knowledge/primary/euler-theorem.html#概要",
-    "title": "オイラーの定理",
+    "objectID": "knowledge/primary/chinese-remainder-theorem.html#概要",
+    "href": "knowledge/primary/chinese-remainder-theorem.html#概要",
+    "title": "中国剰余定理",
     "section": "",
-    "text": "オイラーの定理は，法と互いに素な数の累乗について，指数を小さくするための定理である．巨大な指数の余りや，整数の下数桁を求める問題でよく用いる．"
+    "text": "中国剰余定理は，互いに素な複数の法で得た余りを，一つの合同式へまとめるための定理である．大きな法を互いに素な因数へ分けて計算するときに用いる．"
   },
   {
-    "objectID": "knowledge/primary/euler-theorem.html#基本事項",
-    "href": "knowledge/primary/euler-theorem.html#基本事項",
-    "title": "オイラーの定理",
+    "objectID": "knowledge/primary/chinese-remainder-theorem.html#基本事項",
+    "href": "knowledge/primary/chinese-remainder-theorem.html#基本事項",
+    "title": "中国剰余定理",
     "section": "基本事項",
-    "text": "基本事項\n\\(\\gcd(a,n)=1\\) のとき，\n\\[\na^{\\varphi(n)}\\equiv1\\pmod n\n\\]\nが成り立つ．\\(\\varphi(n)\\) は，\\(1\\) 以上 \\(n\\) 以下で \\(n\\) と互いに素な整数の個数を表す．\n特に，素数 \\(p\\) と正の整数 \\(k\\) に対して\n\\[\n\\varphi(p)=p-1,\\qquad\n\\varphi(p^k)=p^k-p^{k-1}\n\\]\nである．また，\\(\\gcd(m,n)=1\\) なら，\n\\[\n\\varphi(mn)=\\varphi(m)\\varphi(n)\n\\]\nが成り立つ．\n指数を\n\\[\nN=q\\varphi(n)+r\n\\]\nと表せば，\n\\[\na^N\\equiv a^r\\pmod n\n\\]\nと小さくできる．ただし，使用前に必ず \\(\\gcd(a,n)=1\\) を確認する．\\(\\varphi(n)\\) は利用できる周期の候補であり，最小の周期とは限らない．"
+    "text": "基本事項\n\\(\\gcd(m,n)=1\\) のとき，連立合同式\n\\[\n\\begin{cases}\nx\\equiv a\\pmod m,\\\\\nx\\equiv b\\pmod n\n\\end{cases}\n\\]\nを満たす \\(x\\) は存在し，法 \\(mn\\) でただ一つに決まる．\n実際に値を求めるときは，\\(x=a+mk\\) とおき，もう一方の合同式へ代入して \\(k\\) を決める方法が基本である．\n特に，両方の余りが同じ \\(r\\) なら，\n\\[\n\\begin{cases}\nx\\equiv r\\pmod m,\\\\\nx\\equiv r\\pmod n\n\\end{cases}\n\\quad\\Longrightarrow\\quad\nx\\equiv r\\pmod{mn}\n\\]\nとなる．\n法が互いに素でない場合はそのまま適用できない．少なくとも，二つの余りが \\(\\gcd(m,n)\\) を法として一致している必要がある．"
   },
   {
-    "objectID": "knowledge/primary/euler-theorem.html#オイラーのファイ関数の計算方法",
-    "href": "knowledge/primary/euler-theorem.html#オイラーのファイ関数の計算方法",
-    "title": "オイラーの定理",
-    "section": "オイラーのファイ関数の計算方法",
-    "text": "オイラーのファイ関数の計算方法\n\\(n\\) を素因数分解して\n\\[\nn=p_1^{e_1}p_2^{e_2}\\cdots p_k^{e_k}\n\\]\nとする．このとき，\n\\[\n\\varphi(n)\n=n\\left(1-\\frac1{p_1}\\right)\n\\left(1-\\frac1{p_2}\\right)\n\\cdots\n\\left(1-\\frac1{p_k}\\right)\n\\]\nで計算できる．積に現れるのは，\\(n\\) の異なる素因数 \\(p_1,p_2,\\ldots,p_k\\) である．\n計算するときは，次の順に進める．\n\n\\(n\\) を素因数分解する．\n異なる素因数をすべて取り出す．\n各素因数 \\(p\\) について \\(\\left(1-\\dfrac1p\\right)\\) を掛ける．\n\n\n計算例1：\\(\\varphi(20)\\)\n\\[\n20=2^2\\cdot5\n\\]\nなので，異なる素因数は \\(2\\) と \\(5\\) である．したがって，\n\\[\n\\begin{aligned}\n\\varphi(20)\n&=20\\left(1-\\frac12\\right)\\left(1-\\frac15\\right)\\\\\n&=20\\cdot\\frac12\\cdot\\frac45\\\\\n&=8\n\\end{aligned}\n\\]\nとなる．実際，\\(1\\) 以上 \\(20\\) 以下で \\(20\\) と互いに素な整数は\n\\[\n1,3,7,9,11,13,17,19\n\\]\nの \\(8\\) 個である．\n\n\n計算例2：\\(\\varphi(360)\\)\n\\[\n360=2^3\\cdot3^2\\cdot5\n\\]\nなので，異なる素因数は \\(2,3,5\\) である．したがって，\n\\[\n\\begin{aligned}\n\\varphi(360)\n&=360\\left(1-\\frac12\\right)\n\\left(1-\\frac13\\right)\n\\left(1-\\frac15\\right)\\\\\n&=360\\cdot\\frac12\\cdot\\frac23\\cdot\\frac45\\\\\n&=96\n\\end{aligned}\n\\]\nとなる．数が大きい場合は，互いに素な整数を一つずつ数えるより，この公式を使う方が速い．"
-  },
-  {
-    "objectID": "knowledge/primary/euler-theorem.html#基本例",
-    "href": "knowledge/primary/euler-theorem.html#基本例",
-    "title": "オイラーの定理",
+    "objectID": "knowledge/primary/chinese-remainder-theorem.html#基本例",
+    "href": "knowledge/primary/chinese-remainder-theorem.html#基本例",
+    "title": "中国剰余定理",
     "section": "基本例",
-    "text": "基本例\n\n巨大な累乗の余り\n\\(7^{222}\\) を \\(20\\) で割った余りを求める．\\(\\gcd(7,20)=1\\) であり，上で求めたように \\(\\varphi(20)=8\\) なので，\n\\[\n7^{222}\\equiv7^6\\pmod{20}\n\\]\nである．\\(7^2\\equiv9\\pmod{20}\\)，\\(7^4\\equiv1\\pmod{20}\\) より，\n\\[\n7^6\\equiv7^4\\cdot7^2\\equiv9\\pmod{20}\n\\]\nとなる．\n\n\n整数が割り切れることを示す\n\\(\\gcd(2,35)=1\\) であり，\n\\[\n\\varphi(35)=\\varphi(5)\\varphi(7)=4\\cdot6=24\n\\]\nだから，\n\\[\n2^{24}\\equiv1\\pmod{35}\n\\]\nである．したがって，\\(2^{24}-1\\) は \\(35\\) で割り切れる．\n\n\n下数桁を求める\n整数の下 \\(k\\) 桁は，法 \\(10^k\\) での余りである．底と \\(10^k\\) が互いに素ならオイラーの定理を検討する．さらに \\(10^k=2^k5^k\\) と分け，中国剰余定理と組み合わせると指数をより小さくできる場合がある．"
+    "text": "基本例\n\n余りが異なる場合\n\\[\n\\begin{cases}\nx\\equiv2\\pmod3,\\\\\nx\\equiv3\\pmod5\n\\end{cases}\n\\]\nを解く．\\(x=2+3k\\) とおくと，\n\\[\n2+3k\\equiv3\\pmod5\n\\]\nだから，\n\\[\n3k\\equiv1\\pmod5\n\\]\nである．法 \\(5\\) では \\(3\\cdot2\\equiv1\\) なので，\\(3\\) の逆元は \\(2\\) である．両辺に \\(2\\) を掛けると，\n\\[\nk\\equiv2\\pmod5\n\\]\nを得る．したがって，ある整数 \\(\\ell\\) を用いて\n\\[\nk=2+5\\ell\n\\]\nと書ける．これを \\(x=2+3k\\) に戻すと，\n\\[\nx=2+3(2+5\\ell)=8+15\\ell\n\\]\nとなる．よって，\n\\[\nx\\equiv8\\pmod{15}\n\\]\nである．\n\n\n同じ余りをまとめる場合\n\\[\nx\\equiv2\\pmod4,\\qquad x\\equiv2\\pmod9\n\\]\nとする．これは，\\(x-2\\) が \\(4\\) と \\(9\\) の両方で割り切れることを意味する．\\(\\gcd(4,9)=1\\) なので，\\(x-2\\) は \\(4\\cdot9=36\\) でも割り切れる．したがって，\n\\[\nx\\equiv2\\pmod{36}\n\\]\nである．"
+  },
+  {
+    "objectID": "knowledge/primary/equation.html",
+    "href": "knowledge/primary/equation.html",
+    "title": "方程式",
+    "section": "",
+    "text": "1次試験における「方程式」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/equation.html#概要",
+    "href": "knowledge/primary/equation.html#概要",
+    "title": "方程式",
+    "section": "概要",
+    "text": "概要\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/equation.html#基本事項",
+    "href": "knowledge/primary/equation.html#基本事項",
+    "title": "方程式",
+    "section": "基本事項",
+    "text": "基本事項\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/equation.html#例題",
+    "href": "knowledge/primary/equation.html#例題",
+    "title": "方程式",
+    "section": "例題",
+    "text": "例題\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/equation.html#関連問題",
+    "href": "knowledge/primary/equation.html#関連問題",
+    "title": "方程式",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
   },
   {
     "objectID": "knowledge/primary/joint-probability-density-function.html",
@@ -651,6 +714,34 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
+    "objectID": "knowledge/primary/radical-expression.html",
+    "href": "knowledge/primary/radical-expression.html",
+    "title": "根号式",
+    "section": "",
+    "text": "高次の根号を含む式を，対称式を使って簡単にする方法をまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/radical-expression.html#基本事項",
+    "href": "knowledge/primary/radical-expression.html#基本事項",
+    "title": "根号式",
+    "section": "基本事項",
+    "text": "基本事項\n\\(u=a+b\\)，\\(ab=p\\) とおくと，\\(a^n+b^n\\) は \\(u\\) と \\(p\\) だけで表せます．たとえば，\n\\[\na^5+b^5=u^5-5pu^3+5p^2u\n\\]\nです．特に \\(ab=1\\) なら，\n\\[\na^5+b^5=u^5-5u^3+5u\n\\]\nとなります．"
+  },
+  {
+    "objectID": "knowledge/primary/radical-expression.html#例題",
+    "href": "knowledge/primary/radical-expression.html#例題",
+    "title": "根号式",
+    "section": "例題",
+    "text": "例題\n\\(a,b&gt;0\\)，\\(ab=1\\)，\\(a^5+b^5=2\\) とします．相加相乗平均より \\(a+b\\geq2\\) であり，\\(a=b=1\\) が条件を満たすので，\n\\[\na+b=2\n\\]\nです．根号の中を個別に変形するより，和と積を先に調べるのが基本です．"
+  },
+  {
+    "objectID": "knowledge/primary/radical-expression.html#関連問題",
+    "href": "knowledge/primary/radical-expression.html#関連問題",
+    "title": "根号式",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
     "objectID": "knowledge/primary/analysis.html",
     "href": "knowledge/primary/analysis.html",
     "title": "解析",
@@ -682,6 +773,69 @@
     "objectID": "knowledge/primary/analysis.html#関連問題",
     "href": "knowledge/primary/analysis.html#関連問題",
     "title": "解析",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/change-of-variables.html",
+    "href": "knowledge/primary/change-of-variables.html",
+    "title": "変数変換",
+    "section": "",
+    "text": "重積分における変数変換の基本事項をまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/change-of-variables.html#基本事項",
+    "href": "knowledge/primary/change-of-variables.html#基本事項",
+    "title": "変数変換",
+    "section": "基本事項",
+    "text": "基本事項\n\\(x=x(u,v)\\)，\\(y=y(u,v)\\) と変換するとき，\n\\[\ndx\\,dy=\n\\left|\n\\frac{\\partial(x,y)}{\\partial(u,v)}\n\\right|du\\,dv\n\\]\nです．領域と被積分関数だけでなく，ヤコビアンも変換します．\n楕円\n\\[\n\\frac{(x-a)^2}{A^2}+\\frac{(y-b)^2}{B^2}\\leq1\n\\]\nには\n\\[\nx=a+Ar\\cos\\theta,\\qquad\ny=b+Br\\sin\\theta\n\\]\nを使うと，ヤコビアンは \\(ABr\\) になります．"
+  },
+  {
+    "objectID": "knowledge/primary/change-of-variables.html#例題",
+    "href": "knowledge/primary/change-of-variables.html#例題",
+    "title": "変数変換",
+    "section": "例題",
+    "text": "例題\n第1象限の単位円の4分の1に対する積分では，\n\\[\nu=r\\cos\\theta,\\qquad v=r\\sin\\theta,\n\\qquad\n0\\leq r\\leq1,\\quad0\\leq\\theta\\leq\\frac{\\pi}{2}\n\\]\nと置き，\\(du\\,dv=r\\,dr\\,d\\theta\\) とします．"
+  },
+  {
+    "objectID": "knowledge/primary/change-of-variables.html#関連問題",
+    "href": "knowledge/primary/change-of-variables.html#関連問題",
+    "title": "変数変換",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/differential-equation.html",
+    "href": "knowledge/primary/differential-equation.html",
+    "title": "微分方程式",
+    "section": "",
+    "text": "1次試験における「微分方程式」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/differential-equation.html#概要",
+    "href": "knowledge/primary/differential-equation.html#概要",
+    "title": "微分方程式",
+    "section": "概要",
+    "text": "概要\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/differential-equation.html#基本事項",
+    "href": "knowledge/primary/differential-equation.html#基本事項",
+    "title": "微分方程式",
+    "section": "基本事項",
+    "text": "基本事項\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/differential-equation.html#例題",
+    "href": "knowledge/primary/differential-equation.html#例題",
+    "title": "微分方程式",
+    "section": "例題",
+    "text": "例題\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/differential-equation.html#関連問題",
+    "href": "knowledge/primary/differential-equation.html#関連問題",
+    "title": "微分方程式",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
@@ -749,333 +903,585 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html",
-    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html",
-    "title": "1階線形非斉次微分方程式",
+    "objectID": "knowledge/primary/system-of-equations.html",
+    "href": "knowledge/primary/system-of-equations.html",
+    "title": "連立方程式",
     "section": "",
-    "text": "1次試験における「1階線形非斉次微分方程式」についてまとめます．"
+    "text": "1次試験における「連立方程式」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#概要",
-    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#概要",
-    "title": "1階線形非斉次微分方程式",
+    "objectID": "knowledge/primary/system-of-equations.html#概要",
+    "href": "knowledge/primary/system-of-equations.html#概要",
+    "title": "連立方程式",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#基本事項",
-    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#基本事項",
-    "title": "1階線形非斉次微分方程式",
+    "objectID": "knowledge/primary/system-of-equations.html#基本事項",
+    "href": "knowledge/primary/system-of-equations.html#基本事項",
+    "title": "連立方程式",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#例題",
-    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#例題",
-    "title": "1階線形非斉次微分方程式",
+    "objectID": "knowledge/primary/system-of-equations.html#例題",
+    "href": "knowledge/primary/system-of-equations.html#例題",
+    "title": "連立方程式",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#関連問題",
-    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#関連問題",
-    "title": "1階線形非斉次微分方程式",
+    "objectID": "knowledge/primary/system-of-equations.html#関連問題",
+    "href": "knowledge/primary/system-of-equations.html#関連問題",
+    "title": "連立方程式",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/telescoping-series.html",
-    "href": "knowledge/primary/telescoping-series.html",
-    "title": "望遠和",
+    "objectID": "knowledge/primary/series.html",
+    "href": "knowledge/primary/series.html",
+    "title": "無限級数",
     "section": "",
-    "text": "望遠和は，一般項を隣り合う項の差に変形することで，中間の項が打ち消し合う和である．無限級数では，最初から無限個を扱わず，有限の部分和を作ってから極限を取る．"
+    "text": "無限級数は，数列の項を順に加えた\n\\[\n\\sum_{n=1}^{\\infty}a_n\n\\]\nの形の式である．有限個までの和である部分和を調べ，その極限によって級数の和を定める．"
   },
   {
-    "objectID": "knowledge/primary/telescoping-series.html#概要",
-    "href": "knowledge/primary/telescoping-series.html#概要",
-    "title": "望遠和",
+    "objectID": "knowledge/primary/series.html#概要",
+    "href": "knowledge/primary/series.html#概要",
+    "title": "無限級数",
     "section": "",
-    "text": "望遠和は，一般項を隣り合う項の差に変形することで，中間の項が打ち消し合う和である．無限級数では，最初から無限個を扱わず，有限の部分和を作ってから極限を取る．"
+    "text": "無限級数は，数列の項を順に加えた\n\\[\n\\sum_{n=1}^{\\infty}a_n\n\\]\nの形の式である．有限個までの和である部分和を調べ，その極限によって級数の和を定める．"
   },
   {
-    "objectID": "knowledge/primary/telescoping-series.html#基本事項",
-    "href": "knowledge/primary/telescoping-series.html#基本事項",
-    "title": "望遠和",
+    "objectID": "knowledge/primary/series.html#基本事項",
+    "href": "knowledge/primary/series.html#基本事項",
+    "title": "無限級数",
     "section": "基本事項",
-    "text": "基本事項\n一般項が\n\\[\na_n=b_n-b_{n-1}\n\\]\nと表せるとき，第 \\(N\\) 項までの和は\n\\[\n\\begin{aligned}\n\\sum_{n=1}^{N}a_n\n&=(b_1-b_0)+(b_2-b_1)+\\cdots+(b_N-b_{N-1})\\\\\n&=b_N-b_0\n\\end{aligned}\n\\]\nとなる．途中の \\(b_1,b_2,\\ldots,b_{N-1}\\) がすべて打ち消し合う．\n分数では部分分数分解，三角関数では加法定理を逆向きに使うと，差の形が現れることがある．"
+    "text": "基本事項\n第 \\(N\\) 項までの部分和を\n\\[\nS_N=\\sum_{n=1}^{N}a_n\n\\]\nとする．極限\n\\[\n\\lim_{N\\to\\infty}S_N=S\n\\]\nが有限な値として存在するとき，級数は収束し，その和を \\(S\\) とする．極限が存在しないときは発散する．\n特に，等比級数は \\(|r|&lt;1\\) のとき，\n\\[\n\\sum_{n=0}^{\\infty}ar^n=\\frac{a}{1-r}\n\\]\nとなる．また，一般項を隣り合う項の差に直せる級数は，望遠和として計算できる．"
   },
   {
-    "objectID": "knowledge/primary/telescoping-series.html#基本例",
-    "href": "knowledge/primary/telescoping-series.html#基本例",
-    "title": "望遠和",
+    "objectID": "knowledge/primary/series.html#基本例",
+    "href": "knowledge/primary/series.html#基本例",
+    "title": "無限級数",
     "section": "基本例",
-    "text": "基本例\n\\[\n\\sum_{n=1}^{\\infty}\\frac{1}{n(n+1)}\n\\]\nを考える．\n\\[\n\\frac{1}{n(n+1)}=\\frac1n-\\frac1{n+1}\n\\]\nだから，\n\\[\n\\begin{aligned}\nS_N\n&=\\sum_{n=1}^{N}\\left(\\frac1n-\\frac1{n+1}\\right)\\\\\n&=1-\\frac1{N+1}\n\\end{aligned}\n\\]\nである．\\(N\\to\\infty\\) とすれば，\n\\[\n\\sum_{n=1}^{\\infty}\\frac{1}{n(n+1)}=1\n\\]\nとなる．"
+    "text": "基本例\n\\[\n\\sum_{n=1}^{\\infty}\\frac{1}{2^n}\n\\]\nでは，第 \\(N\\) 項までの和は\n\\[\nS_N=1-\\frac1{2^N}\n\\]\nである．したがって，\n\\[\n\\lim_{N\\to\\infty}S_N=1\n\\]\nより，級数の和は \\(1\\) となる．"
   },
   {
-    "objectID": "knowledge/primary/algebra.html",
-    "href": "knowledge/primary/algebra.html",
-    "title": "代数",
+    "objectID": "knowledge/primary/double-integral.html",
+    "href": "knowledge/primary/double-integral.html",
+    "title": "重積分",
     "section": "",
-    "text": "1次試験における「代数」についてまとめます．"
+    "text": "重積分は，平面上の領域で二変数関数を積分する操作である．領域を一方の変数の範囲と，その値に応じたもう一方の変数の範囲で表し，累次積分として計算する．"
   },
   {
-    "objectID": "knowledge/primary/algebra.html#概要",
-    "href": "knowledge/primary/algebra.html#概要",
-    "title": "代数",
+    "objectID": "knowledge/primary/double-integral.html#概要",
+    "href": "knowledge/primary/double-integral.html#概要",
+    "title": "重積分",
+    "section": "",
+    "text": "重積分は，平面上の領域で二変数関数を積分する操作である．領域を一方の変数の範囲と，その値に応じたもう一方の変数の範囲で表し，累次積分として計算する．"
+  },
+  {
+    "objectID": "knowledge/primary/double-integral.html#基本事項",
+    "href": "knowledge/primary/double-integral.html#基本事項",
+    "title": "重積分",
+    "section": "基本事項",
+    "text": "基本事項\n領域 \\(D\\) が\n\\[\nD=\\{(x,y)\\mid a\\leq y\\leq b,\\ g(y)\\leq x\\leq h(y)\\}\n\\]\nと表されるとき，\n\\[\n\\iint_D f(x,y)\\,dx\\,dy\n=\n\\int_a^b\\int_{g(y)}^{h(y)}f(x,y)\\,dx\\,dy\n\\]\nである．内側の積分では \\(y\\) を定数として \\(x\\) について積分する．\n積分順序を逆にすると計算が簡単になる場合もある．そのときは領域を図示し，新しい順序に合わせて積分区間を書き直す．"
+  },
+  {
+    "objectID": "knowledge/primary/double-integral.html#基本例",
+    "href": "knowledge/primary/double-integral.html#基本例",
+    "title": "重積分",
+    "section": "基本例",
+    "text": "基本例\n\\[\nD=\\{(x,y)\\mid0\\leq x\\leq1,\\ 0\\leq y\\leq x\\}\n\\]\n上で \\(x+y\\) を積分する．\n\\[\n\\begin{aligned}\n\\iint_D(x+y)\\,dy\\,dx\n&=\\int_0^1\\int_0^x(x+y)\\,dy\\,dx\\\\\n&=\\int_0^1\\left(x^2+\\frac{x^2}{2}\\right)\\,dx\\\\\n&=\\frac12\n\\end{aligned}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "knowledge/primary/matrix.html",
+    "href": "knowledge/primary/matrix.html",
+    "title": "行列",
+    "section": "",
+    "text": "1次試験における「行列」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/matrix.html#概要",
+    "href": "knowledge/primary/matrix.html#概要",
+    "title": "行列",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/algebra.html#基本事項",
-    "href": "knowledge/primary/algebra.html#基本事項",
-    "title": "代数",
+    "objectID": "knowledge/primary/matrix.html#基本事項",
+    "href": "knowledge/primary/matrix.html#基本事項",
+    "title": "行列",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/algebra.html#例題",
-    "href": "knowledge/primary/algebra.html#例題",
-    "title": "代数",
+    "objectID": "knowledge/primary/matrix.html#例題",
+    "href": "knowledge/primary/matrix.html#例題",
+    "title": "行列",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/algebra.html#関連問題",
-    "href": "knowledge/primary/algebra.html#関連問題",
-    "title": "代数",
+    "objectID": "knowledge/primary/matrix.html#関連問題",
+    "href": "knowledge/primary/matrix.html#関連問題",
+    "title": "行列",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/continuous-random-variable.html",
-    "href": "knowledge/primary/continuous-random-variable.html",
-    "title": "連続確率変数",
+    "objectID": "knowledge/primary/maclaurin-expansion.html",
+    "href": "knowledge/primary/maclaurin-expansion.html",
+    "title": "マクローリン展開",
     "section": "",
-    "text": "1次試験における「連続確率変数」についてまとめます．"
+    "text": "1次試験における「マクローリン展開」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/continuous-random-variable.html#概要",
-    "href": "knowledge/primary/continuous-random-variable.html#概要",
-    "title": "連続確率変数",
+    "objectID": "knowledge/primary/maclaurin-expansion.html#概要",
+    "href": "knowledge/primary/maclaurin-expansion.html#概要",
+    "title": "マクローリン展開",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/continuous-random-variable.html#基本事項",
-    "href": "knowledge/primary/continuous-random-variable.html#基本事項",
-    "title": "連続確率変数",
+    "objectID": "knowledge/primary/maclaurin-expansion.html#基本事項",
+    "href": "knowledge/primary/maclaurin-expansion.html#基本事項",
+    "title": "マクローリン展開",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/continuous-random-variable.html#例題",
-    "href": "knowledge/primary/continuous-random-variable.html#例題",
-    "title": "連続確率変数",
+    "objectID": "knowledge/primary/maclaurin-expansion.html#例題",
+    "href": "knowledge/primary/maclaurin-expansion.html#例題",
+    "title": "マクローリン展開",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/continuous-random-variable.html#関連問題",
-    "href": "knowledge/primary/continuous-random-variable.html#関連問題",
-    "title": "連続確率変数",
+    "objectID": "knowledge/primary/maclaurin-expansion.html#関連問題",
+    "href": "knowledge/primary/maclaurin-expansion.html#関連問題",
+    "title": "マクローリン展開",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/modular-arithmetic.html",
-    "href": "knowledge/primary/modular-arithmetic.html",
-    "title": "合同式・剰余",
+    "objectID": "knowledge/primary/prime-factorization.html",
+    "href": "knowledge/primary/prime-factorization.html",
+    "title": "素因数分解",
     "section": "",
-    "text": "1次試験における「合同式・剰余」についてまとめます．"
+    "text": "素因数分解とは，\\(2\\) 以上の整数を素数の積で表すことである．大きな整数を直接割り続けるだけでなく，式の形に応じて因数分解の公式を先に使うと計算しやすい．"
   },
   {
-    "objectID": "knowledge/primary/modular-arithmetic.html#概要",
-    "href": "knowledge/primary/modular-arithmetic.html#概要",
-    "title": "合同式・剰余",
+    "objectID": "knowledge/primary/prime-factorization.html#概要",
+    "href": "knowledge/primary/prime-factorization.html#概要",
+    "title": "素因数分解",
+    "section": "",
+    "text": "素因数分解とは，\\(2\\) 以上の整数を素数の積で表すことである．大きな整数を直接割り続けるだけでなく，式の形に応じて因数分解の公式を先に使うと計算しやすい．"
+  },
+  {
+    "objectID": "knowledge/primary/prime-factorization.html#基本事項",
+    "href": "knowledge/primary/prime-factorization.html#基本事項",
+    "title": "素因数分解",
+    "section": "基本事項",
+    "text": "基本事項\n\\(2\\) 以上の整数は，因数の順序を除いて一意に素因数分解できる．素因数を探すときは，まず次の基本を確認する．\n\n偶数なら \\(2\\) で割れる．\n各桁の和が \\(3\\) の倍数なら \\(3\\) で割れる．\n一の位が \\(0\\) または \\(5\\) なら \\(5\\) で割れる．\n合成数 \\(N\\) には \\(\\sqrt N\\) 以下の素因数がある．\n\n数が特別な形をしている場合は，\n\\[\na^2-b^2=(a-b)(a+b)\n\\]\n\\[\na^3+b^3=(a+b)(a^2-ab+b^2)\n\\]\n\\[\na^3-b^3=(a-b)(a^2+ab+b^2)\n\\]\nなどの公式を先に検討する．"
+  },
+  {
+    "objectID": "knowledge/primary/prime-factorization.html#基本例",
+    "href": "knowledge/primary/prime-factorization.html#基本例",
+    "title": "素因数分解",
+    "section": "基本例",
+    "text": "基本例\n\n小さい素数から調べる\n\\(1386\\) を素因数分解する．偶数なので \\(2\\) で割り，各桁の和が \\(18\\) なのでさらに \\(3\\) で割れる．\n\\[\n1386=2\\cdot693=2\\cdot3^2\\cdot77\n=2\\cdot3^2\\cdot7\\cdot11\n\\]\nとなる．\n\n\n式の形を利用する\n\\(1001\\) は\n\\[\n1001=10^3+1\n\\]\nと見られるので，\n\\[\n\\begin{aligned}\n1001\n&=(10+1)(10^2-10+1)\\\\\n&=11\\cdot91\\\\\n&=7\\cdot11\\cdot13\n\\end{aligned}\n\\]\nとなる．大きな数ほど，割り算を始める前に和・差・累乗の形を探すことが重要である．"
+  },
+  {
+    "objectID": "knowledge/primary/function.html",
+    "href": "knowledge/primary/function.html",
+    "title": "関数",
+    "section": "",
+    "text": "1次試験における「関数」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/function.html#概要",
+    "href": "knowledge/primary/function.html#概要",
+    "title": "関数",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/modular-arithmetic.html#基本事項",
-    "href": "knowledge/primary/modular-arithmetic.html#基本事項",
-    "title": "合同式・剰余",
+    "objectID": "knowledge/primary/function.html#基本事項",
+    "href": "knowledge/primary/function.html#基本事項",
+    "title": "関数",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/modular-arithmetic.html#例題",
-    "href": "knowledge/primary/modular-arithmetic.html#例題",
-    "title": "合同式・剰余",
+    "objectID": "knowledge/primary/function.html#例題",
+    "href": "knowledge/primary/function.html#例題",
+    "title": "関数",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/modular-arithmetic.html#関連問題",
-    "href": "knowledge/primary/modular-arithmetic.html#関連問題",
-    "title": "合同式・剰余",
+    "objectID": "knowledge/primary/function.html#関連問題",
+    "href": "knowledge/primary/function.html#関連問題",
+    "title": "関数",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/vector.html",
-    "href": "knowledge/primary/vector.html",
-    "title": "ベクトル",
+    "objectID": "tags/index.html",
+    "href": "tags/index.html",
+    "title": "タグ・索引",
     "section": "",
-    "text": "1次試験における「ベクトル」についてまとめます．"
+    "text": "問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。\n\n\n\n  \n    1次\n    2次\n  \n\n  \n    \n      タグを検索\n      \n    \n    \n      階層\n      一覧\n    \n  \n\n  \n  タグデータを読み込んでいます…\n  \n\n  このページを表示するにはJavaScriptを有効にしてください。"
   },
   {
-    "objectID": "knowledge/primary/vector.html#概要",
-    "href": "knowledge/primary/vector.html#概要",
-    "title": "ベクトル",
-    "section": "概要",
-    "text": "概要\n未記入．"
-  },
-  {
-    "objectID": "knowledge/primary/vector.html#基本事項",
-    "href": "knowledge/primary/vector.html#基本事項",
-    "title": "ベクトル",
-    "section": "基本事項",
-    "text": "基本事項\n未記入．"
-  },
-  {
-    "objectID": "knowledge/primary/vector.html#例題",
-    "href": "knowledge/primary/vector.html#例題",
-    "title": "ベクトル",
-    "section": "例題",
-    "text": "例題\n未記入．"
-  },
-  {
-    "objectID": "knowledge/primary/vector.html#関連問題",
-    "href": "knowledge/primary/vector.html#関連問題",
-    "title": "ベクトル",
-    "section": "関連問題",
-    "text": "関連問題\n後で自動表示します．"
-  },
-  {
-    "objectID": "knowledge/index.html",
-    "href": "knowledge/index.html",
-    "title": "知識",
-    "section": "",
-    "text": "過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。\n\n\n\n  \n    1次\n    2次\n  \n\n  \n    \n      知識を検索\n      \n    \n  \n\n  \n  知識データを読み込んでいます…\n  \n\n  このページを表示するにはJavaScriptを有効にしてください。"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "数検1級 解説ノート",
-    "section": "",
-    "text": "数検1級の過去問解説と、関連する数学知識を整理するためのサイトです。"
-  },
-  {
-    "objectID": "index.html#試験別",
-    "href": "index.html#試験別",
-    "title": "数検1級 解説ノート",
-    "section": "試験別",
-    "text": "試験別\n\n1次試験\n2次試験"
-  },
-  {
-    "objectID": "problems/secondary/sec-problem-000004.html",
-    "href": "problems/secondary/sec-problem-000004.html",
-    "title": "出典不明01 問4",
+    "objectID": "problems/secondary/sec-problem-000007.html",
+    "href": "problems/secondary/sec-problem-000007.html",
+    "title": "出典不明01 問7",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000004.html#問題",
-    "href": "problems/secondary/sec-problem-000004.html#問題",
-    "title": "出典不明01 問4",
+    "objectID": "problems/secondary/sec-problem-000007.html#問題",
+    "href": "problems/secondary/sec-problem-000007.html#問題",
+    "title": "出典不明01 問7",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000004.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000004.html#必要な発想",
-    "title": "出典不明01 問4",
+    "objectID": "problems/secondary/sec-problem-000007.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000007.html#必要な発想",
+    "title": "出典不明01 問7",
     "section": "必要な発想",
     "text": "必要な発想\nここに必要な発想を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000004.html#解答",
-    "href": "problems/secondary/sec-problem-000004.html#解答",
-    "title": "出典不明01 問4",
+    "objectID": "problems/secondary/sec-problem-000007.html#解答",
+    "href": "problems/secondary/sec-problem-000007.html#解答",
+    "title": "出典不明01 問7",
     "section": "解答",
     "text": "解答\nここに解答を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000004.html#コメント",
-    "href": "problems/secondary/sec-problem-000004.html#コメント",
-    "title": "出典不明01 問4",
+    "objectID": "problems/secondary/sec-problem-000007.html#コメント",
+    "href": "problems/secondary/sec-problem-000007.html#コメント",
+    "title": "出典不明01 問7",
     "section": "コメント",
     "text": "コメント\nここにコメントを書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000001.html",
-    "href": "problems/secondary/sec-problem-000001.html",
-    "title": "出典不明01 問1",
+    "objectID": "problems/secondary/sec-problem-000006.html",
+    "href": "problems/secondary/sec-problem-000006.html",
+    "title": "出典不明01 問6",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000001.html#問題",
-    "href": "problems/secondary/sec-problem-000001.html#問題",
-    "title": "出典不明01 問1",
+    "objectID": "problems/secondary/sec-problem-000006.html#問題",
+    "href": "problems/secondary/sec-problem-000006.html#問題",
+    "title": "出典不明01 問6",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000001.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000001.html#必要な発想",
-    "title": "出典不明01 問1",
+    "objectID": "problems/secondary/sec-problem-000006.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000006.html#必要な発想",
+    "title": "出典不明01 問6",
     "section": "必要な発想",
     "text": "必要な発想\nここに必要な発想を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000001.html#解答",
-    "href": "problems/secondary/sec-problem-000001.html#解答",
-    "title": "出典不明01 問1",
+    "objectID": "problems/secondary/sec-problem-000006.html#解答",
+    "href": "problems/secondary/sec-problem-000006.html#解答",
+    "title": "出典不明01 問6",
     "section": "解答",
     "text": "解答\nここに解答を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000001.html#コメント",
-    "href": "problems/secondary/sec-problem-000001.html#コメント",
-    "title": "出典不明01 問1",
+    "objectID": "problems/secondary/sec-problem-000006.html#コメント",
+    "href": "problems/secondary/sec-problem-000006.html#コメント",
+    "title": "出典不明01 問6",
     "section": "コメント",
     "text": "コメント\nここにコメントを書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000003.html",
-    "href": "problems/secondary/sec-problem-000003.html",
-    "title": "出典不明01 問3",
+    "objectID": "problems/secondary/sec-problem-000005.html",
+    "href": "problems/secondary/sec-problem-000005.html",
+    "title": "出典不明01 問5",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000003.html#問題",
-    "href": "problems/secondary/sec-problem-000003.html#問題",
-    "title": "出典不明01 問3",
+    "objectID": "problems/secondary/sec-problem-000005.html#問題",
+    "href": "problems/secondary/sec-problem-000005.html#問題",
+    "title": "出典不明01 問5",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000003.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000003.html#必要な発想",
-    "title": "出典不明01 問3",
+    "objectID": "problems/secondary/sec-problem-000005.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000005.html#必要な発想",
+    "title": "出典不明01 問5",
     "section": "必要な発想",
     "text": "必要な発想\nここに必要な発想を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000003.html#解答",
-    "href": "problems/secondary/sec-problem-000003.html#解答",
-    "title": "出典不明01 問3",
+    "objectID": "problems/secondary/sec-problem-000005.html#解答",
+    "href": "problems/secondary/sec-problem-000005.html#解答",
+    "title": "出典不明01 問5",
     "section": "解答",
     "text": "解答\nここに解答を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000003.html#コメント",
-    "href": "problems/secondary/sec-problem-000003.html#コメント",
-    "title": "出典不明01 問3",
+    "objectID": "problems/secondary/sec-problem-000005.html#コメント",
+    "href": "problems/secondary/sec-problem-000005.html#コメント",
+    "title": "出典不明01 問5",
     "section": "コメント",
     "text": "コメント\nここにコメントを書く．"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000002.html",
+    "href": "problems/secondary/sec-problem-000002.html",
+    "title": "出典不明01 問2",
+    "section": "",
+    "text": "2次試験のサンプル問題．"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000002.html#問題",
+    "href": "problems/secondary/sec-problem-000002.html#問題",
+    "title": "出典不明01 問2",
+    "section": "",
+    "text": "2次試験のサンプル問題．"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000002.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000002.html#必要な発想",
+    "title": "出典不明01 問2",
+    "section": "必要な発想",
+    "text": "必要な発想\nここに必要な発想を書く．"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000002.html#解答",
+    "href": "problems/secondary/sec-problem-000002.html#解答",
+    "title": "出典不明01 問2",
+    "section": "解答",
+    "text": "解答\nここに解答を書く．"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000002.html#コメント",
+    "href": "problems/secondary/sec-problem-000002.html#コメント",
+    "title": "出典不明01 問2",
+    "section": "コメント",
+    "text": "コメント\nここにコメントを書く．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000019.html",
+    "href": "problems/primary/pri-problem-000019.html",
+    "title": "第431回 1次 問5",
+    "section": "",
+    "text": "\\(xyz\\) 空間内の3点\n\\[\nA(-1,-5,0),\\qquad B(4,1,-1),\\qquad C(0,-2,1)\n\\]\nを通る平面を \\(\\alpha\\) とするとき，次の問いに答えなさい．\n1 平面 \\(\\alpha\\) の方程式を求めなさい．\n2 平面 \\(\\alpha\\) に関して，点 \\((3,8,-5)\\) と対称な点の座標を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000019.html#問題",
+    "href": "problems/primary/pri-problem-000019.html#問題",
+    "title": "第431回 1次 問5",
+    "section": "",
+    "text": "\\(xyz\\) 空間内の3点\n\\[\nA(-1,-5,0),\\qquad B(4,1,-1),\\qquad C(0,-2,1)\n\\]\nを通る平面を \\(\\alpha\\) とするとき，次の問いに答えなさい．\n1 平面 \\(\\alpha\\) の方程式を求めなさい．\n2 平面 \\(\\alpha\\) に関して，点 \\((3,8,-5)\\) と対称な点の座標を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000019.html#必要な知識",
+    "href": "problems/primary/pri-problem-000019.html#必要な知識",
+    "title": "第431回 1次 問5",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n外積・スカラー三重積\n平面に関する対称点"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000019.html#必要な発想",
+    "href": "problems/primary/pri-problem-000019.html#必要な発想",
+    "title": "第431回 1次 問5",
+    "section": "必要な発想",
+    "text": "必要な発想\n\\(\\overrightarrow{AB}\\) と \\(\\overrightarrow{AC}\\) の外積から平面の法線ベクトルを得る． 対称点は，元の点を法線方向へ平面までの移動量の2倍だけ動かす．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000019.html#解答",
+    "href": "problems/primary/pri-problem-000019.html#解答",
+    "title": "第431回 1次 問5",
+    "section": "解答",
+    "text": "解答\n\n1\n\\[\n\\overrightarrow{AB}=(5,6,-1),\\qquad\n\\overrightarrow{AC}=(1,3,1)\n\\]\nだから，\n\\[\n\\overrightarrow{AB}\\times\\overrightarrow{AC}\n=(9,-6,9)\n=3(3,-2,3)\n\\]\nである．したがって，平面 \\(\\alpha\\) の法線ベクトルとして \\((3,-2,3)\\) を取れる．点 \\(A\\) を通るので，\n\\[\n3(x+1)-2(y+5)+3z=0\n\\]\nとなる．よって，\n\\[\n\\boxed{3x-2y+3z-7=0}\n\\]\nである．\n\n\n2\n\\(P=(3,8,-5)\\) とし，平面の法線ベクトルを\n\\[\n\\boldsymbol n=(3,-2,3)\n\\]\nとする．平面の左辺へ \\(P\\) を代入すると，\n\\[\n3\\cdot3-2\\cdot8+3(-5)-7=-29\n\\]\nであり，\n\\[\n\\|\\boldsymbol n\\|^2=3^2+(-2)^2+3^2=22\n\\]\nである．したがって，対称点 \\(P'\\) は\n\\[\n\\begin{aligned}\nP'\n&=P-\\frac{2(-29)}{22}\\boldsymbol n\\\\\n&=(3,8,-5)+\\frac{29}{11}(3,-2,3)\\\\\n&=\\left(\\frac{120}{11},\\frac{30}{11},\\frac{32}{11}\\right)\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{\\left(\\frac{120}{11},\\frac{30}{11},\\frac{32}{11}\\right)}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000019.html#コメント",
+    "href": "problems/primary/pri-problem-000019.html#コメント",
+    "title": "第431回 1次 問5",
+    "section": "コメント",
+    "text": "コメント\n平面の方程式と対称移動は，どちらも法線ベクトルが中心です．外積の定数倍は同じ法線方向を表すので，成分を約分してから使うと計算が軽くなります．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000024.html",
+    "href": "problems/primary/pri-problem-000024.html",
+    "title": "第440回 1次 問3",
+    "section": "",
+    "text": "3つの空間ベクトル\n\\[\n\\boldsymbol a=\n\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix},\n\\qquad\n\\boldsymbol b=\n\\begin{pmatrix}-5\\\\8\\\\-4\\end{pmatrix},\n\\qquad\n\\boldsymbol c=\n\\begin{pmatrix}3\\\\-3\\\\1\\end{pmatrix}\n\\]\nについて，\n\\[\n\\begin{aligned}\n&\\boldsymbol a\\cdot(\\boldsymbol b\\times\\boldsymbol c)\n+\\boldsymbol b\\cdot(\\boldsymbol c\\times\\boldsymbol a)\n+\\boldsymbol c\\cdot(\\boldsymbol a\\times\\boldsymbol b)\\\\\n&\\quad\n-\\boldsymbol a\\cdot(\\boldsymbol c\\times\\boldsymbol b)\n-\\boldsymbol b\\cdot(\\boldsymbol a\\times\\boldsymbol c)\n-\\boldsymbol c\\cdot(\\boldsymbol b\\times\\boldsymbol a)\n\\end{aligned}\n\\]\nを求めなさい．ただし，ベクトル \\(\\boldsymbol p,\\boldsymbol q\\) に対し，\\(\\boldsymbol p\\cdot\\boldsymbol q\\)，\\(\\boldsymbol p\\times\\boldsymbol q\\) はそれぞれ内積，外積を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000024.html#問題",
+    "href": "problems/primary/pri-problem-000024.html#問題",
+    "title": "第440回 1次 問3",
+    "section": "",
+    "text": "3つの空間ベクトル\n\\[\n\\boldsymbol a=\n\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix},\n\\qquad\n\\boldsymbol b=\n\\begin{pmatrix}-5\\\\8\\\\-4\\end{pmatrix},\n\\qquad\n\\boldsymbol c=\n\\begin{pmatrix}3\\\\-3\\\\1\\end{pmatrix}\n\\]\nについて，\n\\[\n\\begin{aligned}\n&\\boldsymbol a\\cdot(\\boldsymbol b\\times\\boldsymbol c)\n+\\boldsymbol b\\cdot(\\boldsymbol c\\times\\boldsymbol a)\n+\\boldsymbol c\\cdot(\\boldsymbol a\\times\\boldsymbol b)\\\\\n&\\quad\n-\\boldsymbol a\\cdot(\\boldsymbol c\\times\\boldsymbol b)\n-\\boldsymbol b\\cdot(\\boldsymbol a\\times\\boldsymbol c)\n-\\boldsymbol c\\cdot(\\boldsymbol b\\times\\boldsymbol a)\n\\end{aligned}\n\\]\nを求めなさい．ただし，ベクトル \\(\\boldsymbol p,\\boldsymbol q\\) に対し，\\(\\boldsymbol p\\cdot\\boldsymbol q\\)，\\(\\boldsymbol p\\times\\boldsymbol q\\) はそれぞれ内積，外積を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000024.html#必要な知識",
+    "href": "problems/primary/pri-problem-000024.html#必要な知識",
+    "title": "第440回 1次 問3",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n外積・スカラー三重積"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000024.html#必要な発想",
+    "href": "problems/primary/pri-problem-000024.html#必要な発想",
+    "title": "第440回 1次 問3",
+    "section": "必要な発想",
+    "text": "必要な発想\nスカラー三重積は巡回させても同じ値で，2本を入れ替えると符号が反転する． 6項を一つの三重積へまとめてから，外積を一度だけ計算する．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000024.html#解答",
+    "href": "problems/primary/pri-problem-000024.html#解答",
+    "title": "第440回 1次 問3",
+    "section": "解答",
+    "text": "解答\n\\[\nT=\\boldsymbol a\\cdot(\\boldsymbol b\\times\\boldsymbol c)\n\\]\nとおく．スカラー三重積の巡回性と交代性より，最初の3項はすべて \\(T\\) であり，後ろの3つの内積はすべて \\(-T\\) である．式全体ではそれらを引いているので，求める値は \\(6T\\) となる．\nここで，\n\\[\n\\begin{aligned}\n\\boldsymbol b\\times\\boldsymbol c\n&=\n\\begin{pmatrix}\n8\\cdot1-(-4)(-3)\\\\\n(-4)\\cdot3-(-5)\\cdot1\\\\\n(-5)(-3)-8\\cdot3\n\\end{pmatrix}\\\\\n&=\n\\begin{pmatrix}-4\\\\-7\\\\-9\\end{pmatrix}\n\\end{aligned}\n\\]\nだから，\n\\[\n\\begin{aligned}\nT\n&=(1,2,3)\\cdot(-4,-7,-9)\\\\\n&=-4-14-27\\\\\n&=-45\n\\end{aligned}\n\\]\nである．したがって，\n\\[\n\\boxed{6T=-270}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000024.html#コメント",
+    "href": "problems/primary/pri-problem-000024.html#コメント",
+    "title": "第440回 1次 問3",
+    "section": "コメント",
+    "text": "コメント\n6個の外積を個別に計算する問題ではありません．巡回置換と2本の交換による符号変化を先に使うと，計算は1回で済みます．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000026.html",
+    "href": "problems/primary/pri-problem-000026.html",
+    "title": "第440回 1次 問5",
+    "section": "",
+    "text": "2つの確率変数 \\(X,Y\\) の同時確率分布が次の表で与えられるとき，問いに答えなさい．\n\n\n\n\\(X\\backslash Y\\)\n\\(-20\\)\n\\(30\\)\n\\(50\\)\n\n\n\n\n\\(0\\)\n\\(0.1\\)\n\\(0\\)\n\\(0.2\\)\n\n\n\\(10\\)\n\\(0.2\\)\n\\(0.1\\)\n\\(0.1\\)\n\n\n\\(20\\)\n\\(0.1\\)\n\\(0.2\\)\n\\(0\\)\n\n\n\n1 \\(X\\) の分散を求めなさい．\n2 \\(X\\) と \\(Y\\) の共分散を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000026.html#問題",
+    "href": "problems/primary/pri-problem-000026.html#問題",
+    "title": "第440回 1次 問5",
+    "section": "",
+    "text": "2つの確率変数 \\(X,Y\\) の同時確率分布が次の表で与えられるとき，問いに答えなさい．\n\n\n\n\\(X\\backslash Y\\)\n\\(-20\\)\n\\(30\\)\n\\(50\\)\n\n\n\n\n\\(0\\)\n\\(0.1\\)\n\\(0\\)\n\\(0.2\\)\n\n\n\\(10\\)\n\\(0.2\\)\n\\(0.1\\)\n\\(0.1\\)\n\n\n\\(20\\)\n\\(0.1\\)\n\\(0.2\\)\n\\(0\\)\n\n\n\n1 \\(X\\) の分散を求めなさい．\n2 \\(X\\) と \\(Y\\) の共分散を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000026.html#必要な知識",
+    "href": "problems/primary/pri-problem-000026.html#必要な知識",
+    "title": "第440回 1次 問5",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n分散\n共分散"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000026.html#必要な発想",
+    "href": "problems/primary/pri-problem-000026.html#必要な発想",
+    "title": "第440回 1次 問5",
+    "section": "必要な発想",
+    "text": "必要な発想\nまず，表の行和と列和から \\(X,Y\\) の周辺分布を作る． 分散には \\(E(X),E(X^2)\\)，共分散にはさらに \\(E(Y),E(XY)\\) を使う．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000026.html#解答",
+    "href": "problems/primary/pri-problem-000026.html#解答",
+    "title": "第440回 1次 問5",
+    "section": "解答",
+    "text": "解答\n表の行和から，\\(X=0,10,20\\) の確率はそれぞれ \\(0.3,0.4,0.3\\) である．また，列和から，\\(Y=-20,30,50\\) の確率はそれぞれ \\(0.4,0.3,0.3\\) である．\n\n1\n\\[\n\\begin{aligned}\nE(X)\n&=0\\cdot0.3+10\\cdot0.4+20\\cdot0.3\\\\\n&=10,\\\\\nE(X^2)\n&=0^2\\cdot0.3+10^2\\cdot0.4+20^2\\cdot0.3\\\\\n&=160\n\\end{aligned}\n\\]\nだから，\n\\[\n\\begin{aligned}\nV(X)\n&=E(X^2)-\\{E(X)\\}^2\\\\\n&=160-10^2\\\\\n&=60\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{V(X)=60}\n\\]\nである．\n\n\n2\nまず，\n\\[\n\\begin{aligned}\nE(Y)\n&=(-20)\\cdot0.4+30\\cdot0.3+50\\cdot0.3\\\\\n&=16\n\\end{aligned}\n\\]\nである．また，表の各成分について \\(xy\\) を掛けて足すと，\n\\[\n\\begin{aligned}\nE(XY)\n&=10(-20)\\cdot0.2+10\\cdot30\\cdot0.1+10\\cdot50\\cdot0.1\\\\\n&\\quad+20(-20)\\cdot0.1+20\\cdot30\\cdot0.2\\\\\n&=120\n\\end{aligned}\n\\]\nとなる．したがって，\n\\[\n\\begin{aligned}\n\\operatorname{Cov}(X,Y)\n&=E(XY)-E(X)E(Y)\\\\\n&=120-10\\cdot16\\\\\n&=-40\n\\end{aligned}\n\\]\nである．よって，\n\\[\n\\boxed{\\operatorname{Cov}(X,Y)=-40}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000026.html#コメント",
+    "href": "problems/primary/pri-problem-000026.html#コメント",
+    "title": "第440回 1次 問5",
+    "section": "コメント",
+    "text": "コメント\n共分散は周辺分布だけでは決まりません．\\(E(XY)\\) だけは元の同時分布表を使って計算し，\\(E(X)\\) と \\(E(Y)\\) は行和・列和から求めます．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000023.html",
+    "href": "problems/primary/pri-problem-000023.html",
+    "title": "第440回 1次 問2",
+    "section": "",
+    "text": "次の値を求めなさい．ただし，\\(\\tanh z\\) は複素数 \\(z\\) に関する双曲線正接関数で，\\(i\\) は虚数単位を表します．\n\\[\ni\\tanh\\frac{13\\pi i}{12}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000023.html#問題",
+    "href": "problems/primary/pri-problem-000023.html#問題",
+    "title": "第440回 1次 問2",
+    "section": "",
+    "text": "次の値を求めなさい．ただし，\\(\\tanh z\\) は複素数 \\(z\\) に関する双曲線正接関数で，\\(i\\) は虚数単位を表します．\n\\[\ni\\tanh\\frac{13\\pi i}{12}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000023.html#必要な知識",
+    "href": "problems/primary/pri-problem-000023.html#必要な知識",
+    "title": "第440回 1次 問2",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n双曲線関数"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000023.html#必要な発想",
+    "href": "problems/primary/pri-problem-000023.html#必要な発想",
+    "title": "第440回 1次 問2",
+    "section": "必要な発想",
+    "text": "必要な発想\n純虚数を引数に持つ双曲線正接は，\\(\\tanh(i\\theta)=i\\tan\\theta\\) で三角関数へ直す． その後，正接の周期と \\(\\tan15^\\circ\\) の値を使う．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000023.html#解答",
+    "href": "problems/primary/pri-problem-000023.html#解答",
+    "title": "第440回 1次 問2",
+    "section": "解答",
+    "text": "解答\n実数 \\(\\theta\\) に対して，\n\\[\n\\tanh(i\\theta)\n=\\frac{\\sinh(i\\theta)}{\\cosh(i\\theta)}\n=i\\tan\\theta\n\\]\nである．したがって，\n\\[\n\\begin{aligned}\ni\\tanh\\frac{13\\pi i}{12}\n&=i^2\\tan\\frac{13\\pi}{12}\\\\\n&=-\\tan\\left(\\pi+\\frac{\\pi}{12}\\right)\\\\\n&=-\\tan\\frac{\\pi}{12}\n\\end{aligned}\n\\]\nとなる．ここで，\n\\[\n\\tan\\frac{\\pi}{12}=2-\\sqrt3\n\\]\nだから，\n\\[\n\\boxed{\\sqrt3-2}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000023.html#コメント",
+    "href": "problems/primary/pri-problem-000023.html#コメント",
+    "title": "第440回 1次 問2",
+    "section": "コメント",
+    "text": "コメント\n\\(\\tanh\\) と \\(\\tan\\) は文字が似ていますが，別の関数です．引数に \\(i\\) があるときに指数関数の定義から両者を結ぶのが要点です．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000020.html",
+    "href": "problems/primary/pri-problem-000020.html",
+    "title": "第431回 1次 問6",
+    "section": "",
+    "text": "次の等式を満たす複素数 \\(x\\) の値をすべて求めなさい．ただし，虚数単位は \\(i\\) を用いるものとします．\n\\[\n\\begin{vmatrix}\nx+1&x^2+2&x^3+3\\\\\nx+2&x^2+3&x^3+1\\\\\nx+3&x^2+1&x^3+2\n\\end{vmatrix}\n=0\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000020.html#問題",
+    "href": "problems/primary/pri-problem-000020.html#問題",
+    "title": "第431回 1次 問6",
+    "section": "",
+    "text": "次の等式を満たす複素数 \\(x\\) の値をすべて求めなさい．ただし，虚数単位は \\(i\\) を用いるものとします．\n\\[\n\\begin{vmatrix}\nx+1&x^2+2&x^3+3\\\\\nx+2&x^2+3&x^3+1\\\\\nx+3&x^2+1&x^3+2\n\\end{vmatrix}\n=0\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000020.html#必要な知識",
+    "href": "problems/primary/pri-problem-000020.html#必要な知識",
+    "title": "第431回 1次 問6",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n行列式\n方程式"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000020.html#必要な発想",
+    "href": "problems/primary/pri-problem-000020.html#必要な発想",
+    "title": "第431回 1次 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\n第2行と第3行から第1行を引くと，\\(x\\) を含む項が消える． その後に第1行で展開すれば，行列式を3次式へ簡単にできる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000020.html#解答",
+    "href": "problems/primary/pri-problem-000020.html#解答",
+    "title": "第431回 1次 問6",
+    "section": "解答",
+    "text": "解答\n第2行から第1行を，第3行から第1行を引くと，\n\\[\n\\begin{aligned}\n&\\begin{vmatrix}\nx+1&x^2+2&x^3+3\\\\\nx+2&x^2+3&x^3+1\\\\\nx+3&x^2+1&x^3+2\n\\end{vmatrix}\\\\\n&\\qquad=\n\\begin{vmatrix}\nx+1&x^2+2&x^3+3\\\\\n1&1&-2\\\\\n2&-1&-1\n\\end{vmatrix}\n\\end{aligned}\n\\]\nとなる．第1行で展開すると，\n\\[\n\\begin{aligned}\n&-3(x+1)-3(x^2+2)-3(x^3+3)\\\\\n&\\qquad=-3(x^3+x^2+x+6)\n\\end{aligned}\n\\]\nである．したがって，\n\\[\nx^3+x^2+x+6=0\n\\]\nを解けばよい．\\(x=-2\\) が解なので，\n\\[\nx^3+x^2+x+6\n=(x+2)(x^2-x+3)\n\\]\nと因数分解できる．よって，\n\\[\n\\boxed{\nx=-2,\\quad\nx=\\frac{1+i\\sqrt{11}}2,\\quad\nx=\\frac{1-i\\sqrt{11}}2\n}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000020.html#コメント",
+    "href": "problems/primary/pri-problem-000020.html#コメント",
+    "title": "第431回 1次 問6",
+    "section": "コメント",
+    "text": "コメント\n各行に共通する \\(x,x^2,x^3\\) を行基本変形で消すのが要点です．行列式を最初から展開するより，規則性を利用した方が計算量と符号ミスを減らせます．"
   },
   {
     "objectID": "problems/primary/pri-problem-000009.html",
@@ -1120,431 +1526,46 @@
     "text": "コメント\n逆正接の差を扱うときは，正接を取った後に角度の範囲を確認する必要があります．公式だけでなく主値の範囲まで確認して，初めて逆正接の等式が確定します．"
   },
   {
-    "objectID": "problems/primary/pri-problem-000004.html",
-    "href": "problems/primary/pri-problem-000004.html",
-    "title": "第461回 1次 問4",
+    "objectID": "problems/primary/pri-problem-000010.html",
+    "href": "problems/primary/pri-problem-000010.html",
+    "title": "第444回 1次 問3",
     "section": "",
-    "text": "次の問いに答えなさい．\n1 関数 \\(\\tan x\\) をマクローリン展開したときの \\(x^5\\) の係数を求めなさい．\n2 関数 \\(\\log_e\\left(\\cos^2\\frac{x}{2}\\right)\\) をマクローリン展開したときの \\(x^6\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
+    "text": "5つのベクトル\n\\[\n\\boldsymbol{y}=\n\\begin{pmatrix}\n1\\\\-9\\\\12\\\\16\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n0\\\\1\\\\2\\\\4\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\n-1\\\\0\\\\-5\\\\-2\n\\end{pmatrix},\n\\]\n\\[\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\n2\\\\5\\\\0\\\\-1\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_4=\n\\begin{pmatrix}\n4\\\\-2\\\\1\\\\0\n\\end{pmatrix}\n\\]\nに対して，\n\\[\n\\boldsymbol{y}\n=a_1\\boldsymbol{x}_1+a_2\\boldsymbol{x}_2\n+a_3\\boldsymbol{x}_3+a_4\\boldsymbol{x}_4\n\\]\nを満たすように，定数 \\(a_1,a_2,a_3,a_4\\) の値を定めなさい．"
   },
   {
-    "objectID": "problems/primary/pri-problem-000004.html#問題",
-    "href": "problems/primary/pri-problem-000004.html#問題",
-    "title": "第461回 1次 問4",
+    "objectID": "problems/primary/pri-problem-000010.html#問題",
+    "href": "problems/primary/pri-problem-000010.html#問題",
+    "title": "第444回 1次 問3",
     "section": "",
-    "text": "次の問いに答えなさい．\n1 関数 \\(\\tan x\\) をマクローリン展開したときの \\(x^5\\) の係数を求めなさい．\n2 関数 \\(\\log_e\\left(\\cos^2\\frac{x}{2}\\right)\\) をマクローリン展開したときの \\(x^6\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
+    "text": "5つのベクトル\n\\[\n\\boldsymbol{y}=\n\\begin{pmatrix}\n1\\\\-9\\\\12\\\\16\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n0\\\\1\\\\2\\\\4\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\n-1\\\\0\\\\-5\\\\-2\n\\end{pmatrix},\n\\]\n\\[\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\n2\\\\5\\\\0\\\\-1\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_4=\n\\begin{pmatrix}\n4\\\\-2\\\\1\\\\0\n\\end{pmatrix}\n\\]\nに対して，\n\\[\n\\boldsymbol{y}\n=a_1\\boldsymbol{x}_1+a_2\\boldsymbol{x}_2\n+a_3\\boldsymbol{x}_3+a_4\\boldsymbol{x}_4\n\\]\nを満たすように，定数 \\(a_1,a_2,a_3,a_4\\) の値を定めなさい．"
   },
   {
-    "objectID": "problems/primary/pri-problem-000004.html#必要な知識",
-    "href": "problems/primary/pri-problem-000004.html#必要な知識",
-    "title": "第461回 1次 問4",
+    "objectID": "problems/primary/pri-problem-000010.html#必要な知識",
+    "href": "problems/primary/pri-problem-000010.html#必要な知識",
+    "title": "第444回 1次 問3",
     "section": "必要な知識",
-    "text": "必要な知識\n\nマクローリン展開\n項別微分・項別積分"
+    "text": "必要な知識\n\n連立方程式\nベクトルの相等"
   },
   {
-    "objectID": "problems/primary/pri-problem-000004.html#必要な発想",
-    "href": "problems/primary/pri-problem-000004.html#必要な発想",
-    "title": "第461回 1次 問4",
+    "objectID": "problems/primary/pri-problem-000010.html#必要な発想",
+    "href": "problems/primary/pri-problem-000010.html#必要な発想",
+    "title": "第444回 1次 問3",
     "section": "必要な発想",
-    "text": "必要な発想\n関数 \\(f(x)\\) のマクローリン展開の \\(x^n\\) の係数は \\(\\frac{f^{(n)}(0)}{n!}\\)だから， \\(f^{(n)}(x)\\) を求める．"
+    "text": "必要な発想\nベクトルの等式は，各成分がそれぞれ等しいことと同値である． 4本のベクトルを一度に眺めず，成分ごとの4元連立方程式へ直す．"
   },
   {
-    "objectID": "problems/primary/pri-problem-000004.html#解答",
-    "href": "problems/primary/pri-problem-000004.html#解答",
-    "title": "第461回 1次 問4",
+    "objectID": "problems/primary/pri-problem-000010.html#解答",
+    "href": "problems/primary/pri-problem-000010.html#解答",
+    "title": "第444回 1次 問3",
     "section": "解答",
-    "text": "解答\n\n1\n\\(f(x):=\\tan x = t\\)．\\(\\tan x\\) と書くと長いので \\(t\\) と書かせてもらいます．\n\\[\nf^{(1)}(x)=1+\\tan ^2 x=1+t^2\n\\]\n\\[\nf^{(2)}(x)=2t(1+t^2)=2t+2t^3\n\\]\n\\[\nf^{(3)}(x)=2(1+t^2)+6t^2(1+t^2)=2+8t^2+6t^4\n\\]\n\\[\nf^{(4)}(x)=16t(1+t^2)+24t^3(1+t^2)=16t+40t^3+24t^5\n\\]\n\\[\nf^{(5)}(x)=16 + \\tan x(*)\n\\]\nだから，\\(x^5\\) の係数は\n\\[\n\\frac{f^{(5)}(0)}{5!}=\\frac{16}{5!}=\\frac{2}{15}\n\\] である．\n\\[\n\\boxed{\\frac{2}{15}}\n\\]\n\n\n2\n\\[\ng(x):=\\log\\left(\\cos^2\\frac{x}{2}\\right)\n\\]\n\\(x=0\\) の近くでは \\(\\cos(x/2)&gt;0\\) なので，\n\\[\ng(x)=2\\log\\left(\\cos\\frac{x}{2}\\right).\n\\]\n\\[\ng'(x)= -\\tan\\frac{x}{2}\n\\]\n1の結果より，\n\\[\n\\tan z\n= \\sim +\\frac{2z^5}{15}+ \\sim\n\\]\nである．\\(z=x/2\\) を代入すると，\n\\[\n\\tan\\frac{x}{2}\n=\n\\sim+\\frac{2}{15}\\left(\\frac{x}{2}\\right)^5+\\sim\n=\n\\sim\n+\\frac{x^5}{240}\n+\\sim\n\\]\nだから，\n\\[\ng'(x)\n=\n\\sim\n-\\frac{x^5}{240}\n+\\sim\n\\]\nである．\n項別積分すると，\n\\[\ng(x)\n=\n\\sim\n-\\frac{x^6}{1440}\n+\\sim\n\\]\nとなる．\n\\[\n\\boxed{-\\frac{1}{1440}}\n\\]"
+    "text": "解答\n各成分を比較すると，\n\\[\n\\begin{cases}\n-a_2+2a_3+4a_4=1,\\\\\na_1+5a_3-2a_4=-9,\\\\\n2a_1-5a_2+a_4=12,\\\\\n4a_1-2a_2-a_3=16\n\\end{cases}\n\\]\nを得る．第1式と第2式から，\n\\[\na_2=2a_3+4a_4-1,\n\\qquad\na_1=-9-5a_3+2a_4\n\\]\nである．これらを第3式と第4式へ代入すると，\n\\[\n4a_3+3a_4=-5,\n\\qquad\n-25a_3=50\n\\]\nとなる．したがって，\n\\[\na_3=-2,\\qquad a_4=1\n\\]\nである．これを前の式へ戻すと，\n\\[\na_1=3,\\qquad a_2=-1\n\\]\nを得る．よって，\n\\[\n\\boxed{\na_1=3,\\quad\na_2=-1,\\quad\na_3=-2,\\quad\na_4=1\n}\n\\]\nとなる．"
   },
   {
-    "objectID": "problems/primary/pri-problem-000004.html#コメント",
-    "href": "problems/primary/pri-problem-000004.html#コメント",
-    "title": "第461回 1次 問4",
+    "objectID": "problems/primary/pri-problem-000010.html#コメント",
+    "href": "problems/primary/pri-problem-000010.html#コメント",
+    "title": "第444回 1次 問3",
     "section": "コメント",
-    "text": "コメント\nマクローリン展開では，直接高階導関数を求めるのが難しいとき，その1~2階微積分の中に展開しやすい形がないか探すと良い場合がある．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000011.html",
-    "href": "problems/primary/pri-problem-000011.html",
-    "title": "第444回 1次 問4",
-    "section": "",
-    "text": "関数 \\(e^x\\cos^2x\\) をマクローリン展開したときの \\(x^4\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000011.html#問題",
-    "href": "problems/primary/pri-problem-000011.html#問題",
-    "title": "第444回 1次 問4",
-    "section": "",
-    "text": "関数 \\(e^x\\cos^2x\\) をマクローリン展開したときの \\(x^4\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000011.html#必要な知識",
-    "href": "problems/primary/pri-problem-000011.html#必要な知識",
-    "title": "第444回 1次 問4",
-    "section": "必要な知識",
-    "text": "必要な知識\n\nマクローリン展開\n半角の公式"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000011.html#必要な発想",
-    "href": "problems/primary/pri-problem-000011.html#必要な発想",
-    "title": "第444回 1次 問4",
-    "section": "必要な発想",
-    "text": "必要な発想\n\\(\\cos^2x\\) は半角の公式で \\(\\frac{1+\\cos2x}{2}\\) に直す． \\(x^4\\) を作る項だけが分かるように，二つの関数を必要な次数まで展開する．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000011.html#解答",
-    "href": "problems/primary/pri-problem-000011.html#解答",
-    "title": "第444回 1次 問4",
-    "section": "解答",
-    "text": "解答\n半角の公式より，\n\\[\n\\begin{aligned}\n\\cos^2x\n&=\\frac{1+\\cos2x}{2}\\\\\n&=1-x^2+\\frac{x^4}{3}+O(x^6)\n\\end{aligned}\n\\]\nである．また，\n\\[\ne^x\n=1+x+\\frac{x^2}{2}+\\frac{x^3}{6}\n+\\frac{x^4}{24}+O(x^5)\n\\]\nである．したがって，積から \\(x^4\\) が生じる組合せだけを集めると，その係数は\n\\[\n\\begin{aligned}\n\\frac13-\\frac12+\\frac1{24}\n&=\\frac{8-12+1}{24}\\\\\n&=-\\frac18\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{-\\frac18}\n\\]\nである．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000011.html#コメント",
-    "href": "problems/primary/pri-problem-000011.html#コメント",
-    "title": "第444回 1次 問4",
-    "section": "コメント",
-    "text": "コメント\n積の展開では，すべての項を計算する必要はありません．求める次数を作る項の組合せを先に確認すると，計算量とミスを減らせます．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000013.html",
-    "href": "problems/primary/pri-problem-000013.html",
-    "title": "第444回 1次 問6",
-    "section": "",
-    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n-1&-2&2&2&-1\n\\end{vmatrix}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000013.html#問題",
-    "href": "problems/primary/pri-problem-000013.html#問題",
-    "title": "第444回 1次 問6",
-    "section": "",
-    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n-1&-2&2&2&-1\n\\end{vmatrix}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000013.html#必要な知識",
-    "href": "problems/primary/pri-problem-000013.html#必要な知識",
-    "title": "第444回 1次 問6",
-    "section": "必要な知識",
-    "text": "必要な知識\n\n行列式\n行列式の行基本変形と余因子展開"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000013.html#必要な発想",
-    "href": "problems/primary/pri-problem-000013.html#必要な発想",
-    "title": "第444回 1次 問6",
-    "section": "必要な発想",
-    "text": "必要な発想\n第4列には非零成分が二つしかない． 一方を行基本変形で \\(0\\) にしてから余因子展開し，行列式の次数を下げる．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000013.html#解答",
-    "href": "problems/primary/pri-problem-000013.html#解答",
-    "title": "第444回 1次 問6",
-    "section": "解答",
-    "text": "解答\nもとの行列式を \\(D\\) とする．第5行から第1行の2倍を引くと，\n\\[\nD=\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n1&-2&2&0&-1\n\\end{vmatrix}\n\\]\nとなる．第4列で余因子展開すると，\n\\[\nD=\n-\n\\begin{vmatrix}\n2&0&-1&0\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n1&-2&2&-1\n\\end{vmatrix}\n\\]\nである．この4次行列式の第1行と第4行を入れ替えると，外側のマイナスと入れ替えによるマイナスが打ち消し合うので，\n\\[\nD=\n\\begin{vmatrix}\n1&-2&2&-1\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n2&0&-1&0\n\\end{vmatrix}\n\\]\nとなる．ここで，第2行，第3行，第4行にそれぞれ第1行の \\(2\\) 倍，\\(2\\) 倍，\\(-2\\) 倍を加えると，\n\\[\nD=\n\\begin{vmatrix}\n1&-2&2&-1\\\\\n0&-6&2&-4\\\\\n0&-2&2&0\\\\\n0&4&-5&2\n\\end{vmatrix}\n=\n\\begin{vmatrix}\n-6&2&-4\\\\\n-2&2&0\\\\\n4&-5&2\n\\end{vmatrix}\n\\]\nである．最後に第1行で余因子展開すると，\n\\[\n\\begin{aligned}\nD\n&=-6(2\\cdot2-0\\cdot(-5))\n-2((-2)\\cdot2-0\\cdot4)\\\\\n&\\qquad\n+(-4)((-2)(-5)-2\\cdot4)\\\\\n&=-24+8-8\\\\\n&=-24\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{-24}\n\\]\nである．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000013.html#コメント",
-    "href": "problems/primary/pri-problem-000013.html#コメント",
-    "title": "第444回 1次 問6",
-    "section": "コメント",
-    "text": "コメント\n高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探すのが基本です．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000006.html",
-    "href": "problems/primary/pri-problem-000006.html",
-    "title": "第461回 1次 問6",
-    "section": "",
-    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000006.html#問題",
-    "href": "problems/primary/pri-problem-000006.html#問題",
-    "title": "第461回 1次 問6",
-    "section": "",
-    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000006.html#必要な知識",
-    "href": "problems/primary/pri-problem-000006.html#必要な知識",
-    "title": "第461回 1次 問6",
-    "section": "必要な知識",
-    "text": "必要な知識\n\n対称ブロック行列の行列式"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000006.html#必要な発想",
-    "href": "problems/primary/pri-problem-000006.html#必要な発想",
-    "title": "第461回 1次 問6",
-    "section": "必要な発想",
-    "text": "必要な発想\n偶数次の行列式を見た時に，以下の形に基本変形できないか試す． \\[\n\\begin{vmatrix}\nA & B\\\\\nB & A\n\\end{vmatrix}\n\\qquad\n\\begin{vmatrix}\nA & -B\\\\\nB & A\n\\end{vmatrix}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000006.html#解答",
-    "href": "problems/primary/pri-problem-000006.html#解答",
-    "title": "第461回 1次 問6",
-    "section": "解答",
-    "text": "解答\n\\[\n\\begin{aligned}\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n&=\n-\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&0&0&1&1&2\\\\\n0&0&1&0&2&1\\\\\n0&1&1&2&0&1\n\\end{vmatrix}\n&&\\text{第4行と第6行を入れ替える．}\n\\\\\n&=\n(-1)^2\\begin{vmatrix}\n1&1&2&0&0&0\\\\\n0&2&1&1&0&0\\\\\n2&0&1&1&1&0\\\\\n0&0&0&1&1&2\\\\\n1&0&0&0&2&1\\\\\n1&1&0&2&0&1\n\\end{vmatrix}\n&&\\text{1列目と3列目を入れ替える．}\n\\\\\n&=\n\\begin{vmatrix}\n1&1&2\\\\\n1&2&1\\\\\n3&1&1\n\\end{vmatrix}\n\\quad\n\\begin{vmatrix}\n1&1&2\\\\\n-1&2&1\\\\\n1&-1&1\n\\end{vmatrix}\n\\\\\n&=\n(2+2+3-12-1-1)(2+2+1-4+1+1)\n\\\\\n&=\n-7\\times3\n\\end{aligned}\n\\]\n\\[\n\\boxed{-21}.\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000006.html#コメント",
-    "href": "problems/primary/pri-problem-000006.html#コメント",
-    "title": "第461回 1次 問6",
-    "section": "コメント",
-    "text": "コメント\n高次の行列式では，余因子展開や行基本変形を始める前に，対称ブロック行列に変形できないか考えたいですね．\n筆者は最後にサラスの公式で3次の行列式を計算するときに計算ミスしてしまいました．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000002.html",
-    "href": "problems/primary/pri-problem-000002.html",
-    "title": "第461回 1次 問2",
-    "section": "",
-    "text": "次の等式を満たす \\(x\\) の値を求めなさい．\nただし，\\(\\operatorname{Arcsin}x\\)，\\(\\operatorname{Arccos}x\\) はそれぞれ \\(\\sin x\\)，\\(\\cos x\\) の逆関数で，\n\\[\n-\\frac{\\pi}{2}\\leq \\operatorname{Arcsin}x\\leq\\frac{\\pi}{2},\n\\qquad\n0\\leq \\operatorname{Arccos}x\\leq\\pi\n\\]\nを満たすものとする．\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{4\\pi}{3}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000002.html#問題",
-    "href": "problems/primary/pri-problem-000002.html#問題",
-    "title": "第461回 1次 問2",
-    "section": "",
-    "text": "次の等式を満たす \\(x\\) の値を求めなさい．\nただし，\\(\\operatorname{Arcsin}x\\)，\\(\\operatorname{Arccos}x\\) はそれぞれ \\(\\sin x\\)，\\(\\cos x\\) の逆関数で，\n\\[\n-\\frac{\\pi}{2}\\leq \\operatorname{Arcsin}x\\leq\\frac{\\pi}{2},\n\\qquad\n0\\leq \\operatorname{Arccos}x\\leq\\pi\n\\]\nを満たすものとする．\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{4\\pi}{3}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000002.html#必要な知識",
-    "href": "problems/primary/pri-problem-000002.html#必要な知識",
-    "title": "第461回 1次 問2",
-    "section": "必要な知識",
-    "text": "必要な知識\n\n逆三角関数\n\\(\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\dfrac{\\pi}{2}\\)"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000002.html#必要な発想",
-    "href": "problems/primary/pri-problem-000002.html#必要な発想",
-    "title": "第461回 1次 問2",
-    "section": "必要な発想",
-    "text": "必要な発想\n\\(a-b\\)を求めるときに，\\(a+b\\)を考える．逆もしかり．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000002.html#解答",
-    "href": "problems/primary/pri-problem-000002.html#解答",
-    "title": "第461回 1次 問2",
-    "section": "解答",
-    "text": "解答\nまず，\\(\\theta=\\operatorname{Arcsin}x\\) とする．主値の範囲から \\(-\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2}\\) なので，\\(0\\leq\\frac{\\pi}{2}-\\theta\\leq\\pi\\) である．また，\n\\[\n\\cos\\left(\\frac{\\pi}{2}-\\theta\\right)=\\sin\\theta=x\n\\]\nだから，\\(\\operatorname{Arccos}x\\) の主値の定義より\n\\[\n\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\frac{\\pi}{2}\n\\]\nが成り立つ．\n\\[\n\\alpha=\\operatorname{Arccos}x,\n\\qquad\n\\beta=\\operatorname{Arcsin}x\n\\]\nとおく．\nしたがって，\n\\[\n\\alpha+\\beta=\\frac{\\pi}{2}\n\\]\nである．\nまた，問題の条件から\n\\[\n\\alpha-\\beta=\\frac{4\\pi}{3}\n\\]\nである．\n2式を加えると，\n\\[\n2\\alpha\n=\\frac{\\pi}{2}+\\frac{4\\pi}{3}\n=\\frac{11\\pi}{6}\n\\]\nしたがって，\n\\[\n\\alpha=\\frac{11\\pi}{12}\n\\]\nである．\nよって，\n\\[\nx=\\cos\\alpha\n=\\cos\\frac{11\\pi}{12}\n=-\\frac{\\sqrt6+\\sqrt2}{4}\n\\]\nとなる．\n\\[\n\\boxed{x=-\\frac{\\sqrt6+\\sqrt2}{4}}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000002.html#コメント",
-    "href": "problems/primary/pri-problem-000002.html#コメント",
-    "title": "第461回 1次 問2",
-    "section": "コメント",
-    "text": "コメント\n\\(\\sin15°=\\frac{\\sqrt6-\\sqrt2}{4}\\)，\\(\\sin75°=\\frac{\\sqrt6+\\sqrt2}{4}\\)は有名角ですね．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000001.html",
-    "href": "problems/primary/pri-problem-000001.html",
-    "title": "第461回 1次 問1",
-    "section": "",
-    "text": "\\(3^{17171717}\\)の下3桁の数を求めなさい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000001.html#問題",
-    "href": "problems/primary/pri-problem-000001.html#問題",
-    "title": "第461回 1次 問1",
-    "section": "",
-    "text": "\\(3^{17171717}\\)の下3桁の数を求めなさい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000001.html#必要な知識",
-    "href": "problems/primary/pri-problem-000001.html#必要な知識",
-    "title": "第461回 1次 問1",
-    "section": "必要な知識",
-    "text": "必要な知識\n\n合同式・剰余\nオイラーの定理\n中国剰余定理"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000001.html#必要な発想",
-    "href": "problems/primary/pri-problem-000001.html#必要な発想",
-    "title": "第461回 1次 問1",
-    "section": "必要な発想",
-    "text": "必要な発想\n下3桁を求めることは\\(\\mod 10^3\\)を求めることに等しい． 法 \\(1000\\) にオイラーの定理を直接使うより，\\(1000=8\\cdot125\\) と分けて，それぞれの法で短い周期を探す． 両方に共通する周期を見つけ，中国剰余定理で法 \\(1000\\) の合同式へ戻す．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000001.html#解答",
-    "href": "problems/primary/pri-problem-000001.html#解答",
-    "title": "第461回 1次 問1",
-    "section": "解答",
-    "text": "解答\n求めたいのは \\(3^{17171717}\\) を \\(1000\\) で割った余りである．\\(\\gcd(3,1000)=1\\) なので，オイラーの定理を法 \\(1000\\) に直接使うこともできるが，\\(\\varphi(1000)=400\\) であり，指数は \\(117\\) までしか小さくならない．\nそこで，より短い周期を得るために\n\\[\n1000=8\\cdot125\n\\]\nと分解する．\\(\\gcd(8,125)=1\\) なので，中国剰余定理により，法 \\(8\\) と法 \\(125\\) での余りが分かれば法 \\(1000\\) での余りも決まる．\n法 \\(8\\) では \\(\\varphi(8)=4\\) なので，オイラーの定理より\n\\[\n3^4\\equiv1\\pmod8\n\\]\nである．したがって，\n\\[\n3^{100}=(3^4)^{25}\\equiv1\\pmod8\n\\]\nとなる．一方，\\(\\varphi(125)=100\\) なので，\n\\[\n3^{100}\\equiv1\\pmod{125}\n\\]\nである．\nしたがって，\\(3^{100}\\) は法 \\(8\\) と法 \\(125\\) のどちらでも余りが \\(1\\) である．中国剰余定理より，\n\\[\n3^{100}\\equiv1\\pmod{1000}\n\\]\nである．また，\n\\[\n17171717=100\\cdot171717+17\n\\]\nだから，\n\\[\n3^{17171717}\n=(3^{100})^{171717}3^{17}\n\\equiv3^{17}\\pmod{1000}\n\\]\nである．\nあとは，二乗を繰り返して \\(3^{17}\\) を計算する．\n\\[\n3^4=81\n\\]\n\\[\n3^8=81^2=6561\\equiv561\\pmod{1000}\n\\]\n\\[\n3^{16}\\equiv561^2=314721\\equiv721\\pmod{1000}\n\\]\n\\(17=16+1\\) なので，\n\\[\n3^{17}\\equiv721\\cdot3=2163\\equiv163\\pmod{1000}\n\\]\nとなる．よって，求める下3桁は\n\\[\n\\boxed{163}\n\\]\nである．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000001.html#コメント",
-    "href": "problems/primary/pri-problem-000001.html#コメント",
-    "title": "第461回 1次 問1",
-    "section": "コメント",
-    "text": "コメント\n筆算でミスしたくないですね．"
-  },
-  {
-    "objectID": "problems/index.html",
-    "href": "problems/index.html",
-    "title": "過去問一覧",
-    "section": "",
-    "text": "1次\n    2次\n  \n\n  \n    \n      過去問データを読み込んでいます…\n    \n    \n  \n\n  \n    この一覧を表示するにはJavaScriptを有効にしてください。"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000014.html",
-    "href": "problems/primary/pri-problem-000014.html",
-    "title": "第444回 1次 問7",
-    "section": "",
-    "text": "\\(xy\\) 平面内の領域\n\\[\nD=\\{(x,y)\\mid0\\leq x\\leq\\sqrt{y},\\ 0\\leq y\\leq3\\}\n\\]\nについて，次の重積分を計算しなさい．\n\\[\n\\iint_D x^3y\\,dx\\,dy\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000014.html#問題",
-    "href": "problems/primary/pri-problem-000014.html#問題",
-    "title": "第444回 1次 問7",
-    "section": "",
-    "text": "\\(xy\\) 平面内の領域\n\\[\nD=\\{(x,y)\\mid0\\leq x\\leq\\sqrt{y},\\ 0\\leq y\\leq3\\}\n\\]\nについて，次の重積分を計算しなさい．\n\\[\n\\iint_D x^3y\\,dx\\,dy\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000014.html#必要な知識",
-    "href": "problems/primary/pri-problem-000014.html#必要な知識",
-    "title": "第444回 1次 問7",
-    "section": "必要な知識",
-    "text": "必要な知識\n\n重積分"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000014.html#必要な発想",
-    "href": "problems/primary/pri-problem-000014.html#必要な発想",
-    "title": "第444回 1次 問7",
-    "section": "必要な発想",
-    "text": "必要な発想\n領域の条件が \\(0\\leq y\\leq3\\)，\\(0\\leq x\\leq\\sqrt y\\) と積分順序に合わせて与えられている． そのまま \\(x\\) を先に，\\(y\\) を後に積分する．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000014.html#解答",
-    "href": "problems/primary/pri-problem-000014.html#解答",
-    "title": "第444回 1次 問7",
-    "section": "解答",
-    "text": "解答\n領域の条件から，重積分を累次積分で表すと，\n\\[\n\\iint_Dx^3y\\,dx\\,dy\n=\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\n\\]\nとなる．まず \\(x\\) について積分すると，\n\\[\n\\begin{aligned}\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\n&=\\int_0^3\ny\\left[\\frac{x^4}{4}\\right]_{0}^{\\sqrt y}\n\\,dy\\\\\n&=\\frac14\\int_0^3y^3\\,dy\\\\\n&=\\frac14\\left[\\frac{y^4}{4}\\right]_0^3\\\\\n&=\\frac{81}{16}\n\\end{aligned}\n\\]\nである．よって，\n\\[\n\\boxed{\\frac{81}{16}}\n\\]\nとなる．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000014.html#コメント",
-    "href": "problems/primary/pri-problem-000014.html#コメント",
-    "title": "第444回 1次 問7",
-    "section": "コメント",
-    "text": "コメント\n積分領域を書き換える必要がない問題です．上端に \\(\\sqrt y\\) を代入するとき，\\((\\sqrt y)^4=y^2\\) となる点だけ丁寧に処理しましょう．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000003.html",
-    "href": "problems/primary/pri-problem-000003.html",
-    "title": "第461回 1次 問3",
-    "section": "",
-    "text": "標準内積をもつ4次元実計量線形空間 \\(\\mathbb{R}^4\\) の4つのベクトル\n\\[\n\\boldsymbol{x}_0=\n\\begin{pmatrix}\n-3\\\\\n0\\\\\n-3\\\\\n5\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\\n3\\\\\na\\\\\n0\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\nb\\\\\n0\\\\\nc\\\\\n12\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\nd\\\\\n4\\\\\ne\\\\\nf\n\\end{pmatrix}\n\\]\nが互いに直交するように，定数 \\(a,b,c,d,e,f\\) の値を定めなさい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000003.html#問題",
-    "href": "problems/primary/pri-problem-000003.html#問題",
-    "title": "第461回 1次 問3",
-    "section": "",
-    "text": "標準内積をもつ4次元実計量線形空間 \\(\\mathbb{R}^4\\) の4つのベクトル\n\\[\n\\boldsymbol{x}_0=\n\\begin{pmatrix}\n-3\\\\\n0\\\\\n-3\\\\\n5\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\\n3\\\\\na\\\\\n0\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\nb\\\\\n0\\\\\nc\\\\\n12\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\nd\\\\\n4\\\\\ne\\\\\nf\n\\end{pmatrix}\n\\]\nが互いに直交するように，定数 \\(a,b,c,d,e,f\\) の値を定めなさい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000003.html#必要な知識",
-    "href": "problems/primary/pri-problem-000003.html#必要な知識",
-    "title": "第461回 1次 問3",
-    "section": "必要な知識",
-    "text": "必要な知識"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000003.html#必要な発想",
-    "href": "problems/primary/pri-problem-000003.html#必要な発想",
-    "title": "第461回 1次 問3",
-    "section": "必要な発想",
-    "text": "必要な発想\n直交\\(\\Leftrightarrow\\)内積が0．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000003.html#解答",
-    "href": "problems/primary/pri-problem-000003.html#解答",
-    "title": "第461回 1次 問3",
-    "section": "解答",
-    "text": "解答\n\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_1=0\\)より，\\(a=-2\\)を得る．\n次に，\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_2=0\\)より，\\(b+c=20\\)である．\nまた，\\(\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_2=0\\)より，\\(a=-2\\) を用いると，\\(b=c\\)を得る．\n以上より，\\(b=c=10\\)．\n\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_3=0\\)から，\\(-3d-3e+5f=0\\)．\n\\(\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_3=0\\)から，\\(2d+12-2e=0\\)．\n\\(\\boldsymbol{x}_2\\cdot\\boldsymbol{x}_3=0\\)から，\\(10d+10e+12f=0\\)．\nこの3元連立方程式を解いて，\n\\[\n\\boxed{\na=-2,\\quad\nb=10,\\quad\nc=10,\\quad\nd=-3,\\quad\ne=3,\\quad\nf=0\n}\n\\]\nとなる．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000003.html#コメント",
-    "href": "problems/primary/pri-problem-000003.html#コメント",
-    "title": "第461回 1次 問3",
-    "section": "コメント",
-    "text": "コメント\nサービス問題ですね．計算ミスに気をつけたいところです．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000012.html",
-    "href": "problems/primary/pri-problem-000012.html",
-    "title": "第444回 1次 問5",
-    "section": "",
-    "text": "確率変数 \\(X\\) の確率密度関数 \\(f(x)\\) が\n\\[\nf(x)=\n\\begin{cases}\n\\dfrac34(1-x^2) & (-1\\leq x\\leq1),\\\\[4pt]\n0 & (x&lt;-1,\\ 1&lt;x)\n\\end{cases}\n\\]\nであるとき，次の問いに答えなさい．\n1 \\(X^2\\) の平均 \\(E(X^2)\\) を求めなさい．\n2 \\(X^2\\) の分散 \\(V(X^2)\\) を求めなさい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000012.html#問題",
-    "href": "problems/primary/pri-problem-000012.html#問題",
-    "title": "第444回 1次 問5",
-    "section": "",
-    "text": "確率変数 \\(X\\) の確率密度関数 \\(f(x)\\) が\n\\[\nf(x)=\n\\begin{cases}\n\\dfrac34(1-x^2) & (-1\\leq x\\leq1),\\\\[4pt]\n0 & (x&lt;-1,\\ 1&lt;x)\n\\end{cases}\n\\]\nであるとき，次の問いに答えなさい．\n1 \\(X^2\\) の平均 \\(E(X^2)\\) を求めなさい．\n2 \\(X^2\\) の分散 \\(V(X^2)\\) を求めなさい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000012.html#必要な知識",
-    "href": "problems/primary/pri-problem-000012.html#必要な知識",
-    "title": "第444回 1次 問5",
-    "section": "必要な知識",
-    "text": "必要な知識\n\n連続確率変数\n期待値\n分散"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000012.html#必要な発想",
-    "href": "problems/primary/pri-problem-000012.html#必要な発想",
-    "title": "第444回 1次 問5",
-    "section": "必要な発想",
-    "text": "必要な発想\n\\(Y=X^2\\) と考え，\\(V(Y)=E(Y^2)-\\{E(Y)\\}^2\\) を使う． したがって，2では \\(E(X^4)\\) を追加で求めればよい．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000012.html#解答",
-    "href": "problems/primary/pri-problem-000012.html#解答",
-    "title": "第444回 1次 問5",
-    "section": "解答",
-    "text": "解答\n\n1\n期待値の定義と被積分関数の対称性より，\n\\[\n\\begin{aligned}\nE(X^2)\n&=\\int_{-1}^{1}x^2\\frac34(1-x^2)\\,dx\\\\\n&=\\frac32\\int_0^1(x^2-x^4)\\,dx\\\\\n&=\\frac32\\left(\\frac13-\\frac15\\right)\\\\\n&=\\frac15\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{E(X^2)=\\frac15}\n\\]\nである．\n\n\n2\nまず，\n\\[\n\\begin{aligned}\nE(X^4)\n&=\\int_{-1}^{1}x^4\\frac34(1-x^2)\\,dx\\\\\n&=\\frac32\\int_0^1(x^4-x^6)\\,dx\\\\\n&=\\frac32\\left(\\frac15-\\frac17\\right)\\\\\n&=\\frac3{35}\n\\end{aligned}\n\\]\nである．したがって，\n\\[\n\\begin{aligned}\nV(X^2)\n&=E(X^4)-\\{E(X^2)\\}^2\\\\\n&=\\frac3{35}-\\left(\\frac15\\right)^2\\\\\n&=\\frac8{175}\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{V(X^2)=\\frac8{175}}\n\\]\nである．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000012.html#コメント",
-    "href": "problems/primary/pri-problem-000012.html#コメント",
-    "title": "第444回 1次 問5",
-    "section": "コメント",
-    "text": "コメント\n\\(V(X^2)\\) と \\(\\{V(X)\\}^2\\) は別物です．「どの確率変数の分散か」を最初に確認すると，必要な期待値を取り違えません．"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000007.html",
-    "href": "problems/primary/pri-problem-000007.html",
-    "title": "第461回 1次 問7",
-    "section": "",
-    "text": "次の微分方程式の解のうち，\\(y(0)=1\\) を満たすものを求め，\\(y=y(x)\\) の形で表しなさい．\nただし，\\(e\\) は自然対数の底を表す．\n\\[\n\\frac{dy}{dx}-2y=xe^{2x}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000007.html#問題",
-    "href": "problems/primary/pri-problem-000007.html#問題",
-    "title": "第461回 1次 問7",
-    "section": "",
-    "text": "次の微分方程式の解のうち，\\(y(0)=1\\) を満たすものを求め，\\(y=y(x)\\) の形で表しなさい．\nただし，\\(e\\) は自然対数の底を表す．\n\\[\n\\frac{dy}{dx}-2y=xe^{2x}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000007.html#必要な知識",
-    "href": "problems/primary/pri-problem-000007.html#必要な知識",
-    "title": "第461回 1次 問7",
-    "section": "必要な知識",
-    "text": "必要な知識"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000007.html#必要な発想",
-    "href": "problems/primary/pri-problem-000007.html#必要な発想",
-    "title": "第461回 1次 問7",
-    "section": "必要な発想",
-    "text": "必要な発想"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000007.html#解答",
-    "href": "problems/primary/pri-problem-000007.html#解答",
-    "title": "第461回 1次 問7",
-    "section": "解答",
-    "text": "解答\n\\[\n\\begin{aligned}\ny'-2y &= xe^{2x}\\\\\ne^{-2x}y'-2e^{-2x}y &= xe^{2x}e^{-2x}\\\\\n\\frac{d}{dx}\\left(e^{-2x}y\\right) &= x\\\\\ne^{-2x}y &= \\frac12 x^2 + C \\quad ,\\forall C \\in \\mathbb{R}\n\\end{aligned}\n\\] \\(y(0)=1\\)を代入して，\\(e^{0}1 = \\frac12 0^2 + C\\)より\\(C=1\\)． \\[\n\\begin{aligned}\ne^{-2x}y &= \\frac12 x^2 + 1\\\\\ny &= e^{2x}\\left(\\frac12 x^2 + 1\\right)\n\\end{aligned}\n\\]\n\\[\n\\boxed{\ny=e^{2x}\\left(\\frac{x^2}{2}+1\\right)\n}\n\\]"
-  },
-  {
-    "objectID": "problems/primary/pri-problem-000007.html#コメント",
-    "href": "problems/primary/pri-problem-000007.html#コメント",
-    "title": "第461回 1次 問7",
-    "section": "コメント",
-    "text": "コメント\n微分方程式は解を代入することで，検算ができるので筆者は毎回するようにしています．"
+    "text": "コメント\n行列の逆行列を求める方法もありますが，この問題では成分比較から消去法で解く方が短く済みます．"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html",
@@ -1589,46 +1610,641 @@
     "text": "コメント\nこちらもサービス問題でしたね．"
   },
   {
-    "objectID": "problems/primary/pri-problem-000010.html",
-    "href": "problems/primary/pri-problem-000010.html",
-    "title": "第444回 1次 問3",
+    "objectID": "problems/primary/pri-problem-000007.html",
+    "href": "problems/primary/pri-problem-000007.html",
+    "title": "第461回 1次 問7",
     "section": "",
-    "text": "5つのベクトル\n\\[\n\\boldsymbol{y}=\n\\begin{pmatrix}\n1\\\\-9\\\\12\\\\16\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n0\\\\1\\\\2\\\\4\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\n-1\\\\0\\\\-5\\\\-2\n\\end{pmatrix},\n\\]\n\\[\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\n2\\\\5\\\\0\\\\-1\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_4=\n\\begin{pmatrix}\n4\\\\-2\\\\1\\\\0\n\\end{pmatrix}\n\\]\nに対して，\n\\[\n\\boldsymbol{y}\n=a_1\\boldsymbol{x}_1+a_2\\boldsymbol{x}_2\n+a_3\\boldsymbol{x}_3+a_4\\boldsymbol{x}_4\n\\]\nを満たすように，定数 \\(a_1,a_2,a_3,a_4\\) の値を定めなさい．"
+    "text": "次の微分方程式の解のうち，\\(y(0)=1\\) を満たすものを求め，\\(y=y(x)\\) の形で表しなさい．\nただし，\\(e\\) は自然対数の底を表す．\n\\[\n\\frac{dy}{dx}-2y=xe^{2x}\n\\]"
   },
   {
-    "objectID": "problems/primary/pri-problem-000010.html#問題",
-    "href": "problems/primary/pri-problem-000010.html#問題",
-    "title": "第444回 1次 問3",
+    "objectID": "problems/primary/pri-problem-000007.html#問題",
+    "href": "problems/primary/pri-problem-000007.html#問題",
+    "title": "第461回 1次 問7",
     "section": "",
-    "text": "5つのベクトル\n\\[\n\\boldsymbol{y}=\n\\begin{pmatrix}\n1\\\\-9\\\\12\\\\16\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n0\\\\1\\\\2\\\\4\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\n-1\\\\0\\\\-5\\\\-2\n\\end{pmatrix},\n\\]\n\\[\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\n2\\\\5\\\\0\\\\-1\n\\end{pmatrix},\n\\quad\n\\boldsymbol{x}_4=\n\\begin{pmatrix}\n4\\\\-2\\\\1\\\\0\n\\end{pmatrix}\n\\]\nに対して，\n\\[\n\\boldsymbol{y}\n=a_1\\boldsymbol{x}_1+a_2\\boldsymbol{x}_2\n+a_3\\boldsymbol{x}_3+a_4\\boldsymbol{x}_4\n\\]\nを満たすように，定数 \\(a_1,a_2,a_3,a_4\\) の値を定めなさい．"
+    "text": "次の微分方程式の解のうち，\\(y(0)=1\\) を満たすものを求め，\\(y=y(x)\\) の形で表しなさい．\nただし，\\(e\\) は自然対数の底を表す．\n\\[\n\\frac{dy}{dx}-2y=xe^{2x}\n\\]"
   },
   {
-    "objectID": "problems/primary/pri-problem-000010.html#必要な知識",
-    "href": "problems/primary/pri-problem-000010.html#必要な知識",
-    "title": "第444回 1次 問3",
+    "objectID": "problems/primary/pri-problem-000007.html#必要な知識",
+    "href": "problems/primary/pri-problem-000007.html#必要な知識",
+    "title": "第461回 1次 問7",
     "section": "必要な知識",
-    "text": "必要な知識\n\n連立方程式\nベクトルの相等"
+    "text": "必要な知識"
   },
   {
-    "objectID": "problems/primary/pri-problem-000010.html#必要な発想",
-    "href": "problems/primary/pri-problem-000010.html#必要な発想",
-    "title": "第444回 1次 問3",
+    "objectID": "problems/primary/pri-problem-000007.html#必要な発想",
+    "href": "problems/primary/pri-problem-000007.html#必要な発想",
+    "title": "第461回 1次 問7",
     "section": "必要な発想",
-    "text": "必要な発想\nベクトルの等式は，各成分がそれぞれ等しいことと同値である． 4本のベクトルを一度に眺めず，成分ごとの4元連立方程式へ直す．"
+    "text": "必要な発想"
   },
   {
-    "objectID": "problems/primary/pri-problem-000010.html#解答",
-    "href": "problems/primary/pri-problem-000010.html#解答",
-    "title": "第444回 1次 問3",
+    "objectID": "problems/primary/pri-problem-000007.html#解答",
+    "href": "problems/primary/pri-problem-000007.html#解答",
+    "title": "第461回 1次 問7",
     "section": "解答",
-    "text": "解答\n各成分を比較すると，\n\\[\n\\begin{cases}\n-a_2+2a_3+4a_4=1,\\\\\na_1+5a_3-2a_4=-9,\\\\\n2a_1-5a_2+a_4=12,\\\\\n4a_1-2a_2-a_3=16\n\\end{cases}\n\\]\nを得る．第1式と第2式から，\n\\[\na_2=2a_3+4a_4-1,\n\\qquad\na_1=-9-5a_3+2a_4\n\\]\nである．これらを第3式と第4式へ代入すると，\n\\[\n4a_3+3a_4=-5,\n\\qquad\n-25a_3=50\n\\]\nとなる．したがって，\n\\[\na_3=-2,\\qquad a_4=1\n\\]\nである．これを前の式へ戻すと，\n\\[\na_1=3,\\qquad a_2=-1\n\\]\nを得る．よって，\n\\[\n\\boxed{\na_1=3,\\quad\na_2=-1,\\quad\na_3=-2,\\quad\na_4=1\n}\n\\]\nとなる．"
+    "text": "解答\n\\[\n\\begin{aligned}\ny'-2y &= xe^{2x}\\\\\ne^{-2x}y'-2e^{-2x}y &= xe^{2x}e^{-2x}\\\\\n\\frac{d}{dx}\\left(e^{-2x}y\\right) &= x\\\\\ne^{-2x}y &= \\frac12 x^2 + C \\quad ,\\forall C \\in \\mathbb{R}\n\\end{aligned}\n\\] \\(y(0)=1\\)を代入して，\\(e^{0}1 = \\frac12 0^2 + C\\)より\\(C=1\\)． \\[\n\\begin{aligned}\ne^{-2x}y &= \\frac12 x^2 + 1\\\\\ny &= e^{2x}\\left(\\frac12 x^2 + 1\\right)\n\\end{aligned}\n\\]\n\\[\n\\boxed{\ny=e^{2x}\\left(\\frac{x^2}{2}+1\\right)\n}\n\\]"
   },
   {
-    "objectID": "problems/primary/pri-problem-000010.html#コメント",
-    "href": "problems/primary/pri-problem-000010.html#コメント",
-    "title": "第444回 1次 問3",
+    "objectID": "problems/primary/pri-problem-000007.html#コメント",
+    "href": "problems/primary/pri-problem-000007.html#コメント",
+    "title": "第461回 1次 問7",
     "section": "コメント",
-    "text": "コメント\n行列の逆行列を求める方法もありますが，この問題では成分比較から消去法で解く方が短く済みます．"
+    "text": "コメント\n微分方程式は解を代入することで，検算ができるので筆者は毎回するようにしています．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000012.html",
+    "href": "problems/primary/pri-problem-000012.html",
+    "title": "第444回 1次 問5",
+    "section": "",
+    "text": "確率変数 \\(X\\) の確率密度関数 \\(f(x)\\) が\n\\[\nf(x)=\n\\begin{cases}\n\\dfrac34(1-x^2) & (-1\\leq x\\leq1),\\\\[4pt]\n0 & (x&lt;-1,\\ 1&lt;x)\n\\end{cases}\n\\]\nであるとき，次の問いに答えなさい．\n1 \\(X^2\\) の平均 \\(E(X^2)\\) を求めなさい．\n2 \\(X^2\\) の分散 \\(V(X^2)\\) を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000012.html#問題",
+    "href": "problems/primary/pri-problem-000012.html#問題",
+    "title": "第444回 1次 問5",
+    "section": "",
+    "text": "確率変数 \\(X\\) の確率密度関数 \\(f(x)\\) が\n\\[\nf(x)=\n\\begin{cases}\n\\dfrac34(1-x^2) & (-1\\leq x\\leq1),\\\\[4pt]\n0 & (x&lt;-1,\\ 1&lt;x)\n\\end{cases}\n\\]\nであるとき，次の問いに答えなさい．\n1 \\(X^2\\) の平均 \\(E(X^2)\\) を求めなさい．\n2 \\(X^2\\) の分散 \\(V(X^2)\\) を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000012.html#必要な知識",
+    "href": "problems/primary/pri-problem-000012.html#必要な知識",
+    "title": "第444回 1次 問5",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n連続確率変数\n期待値\n分散"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000012.html#必要な発想",
+    "href": "problems/primary/pri-problem-000012.html#必要な発想",
+    "title": "第444回 1次 問5",
+    "section": "必要な発想",
+    "text": "必要な発想\n\\(Y=X^2\\) と考え，\\(V(Y)=E(Y^2)-\\{E(Y)\\}^2\\) を使う． したがって，2では \\(E(X^4)\\) を追加で求めればよい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000012.html#解答",
+    "href": "problems/primary/pri-problem-000012.html#解答",
+    "title": "第444回 1次 問5",
+    "section": "解答",
+    "text": "解答\n\n1\n期待値の定義と被積分関数の対称性より，\n\\[\n\\begin{aligned}\nE(X^2)\n&=\\int_{-1}^{1}x^2\\frac34(1-x^2)\\,dx\\\\\n&=\\frac32\\int_0^1(x^2-x^4)\\,dx\\\\\n&=\\frac32\\left(\\frac13-\\frac15\\right)\\\\\n&=\\frac15\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{E(X^2)=\\frac15}\n\\]\nである．\n\n\n2\nまず，\n\\[\n\\begin{aligned}\nE(X^4)\n&=\\int_{-1}^{1}x^4\\frac34(1-x^2)\\,dx\\\\\n&=\\frac32\\int_0^1(x^4-x^6)\\,dx\\\\\n&=\\frac32\\left(\\frac15-\\frac17\\right)\\\\\n&=\\frac3{35}\n\\end{aligned}\n\\]\nである．したがって，\n\\[\n\\begin{aligned}\nV(X^2)\n&=E(X^4)-\\{E(X^2)\\}^2\\\\\n&=\\frac3{35}-\\left(\\frac15\\right)^2\\\\\n&=\\frac8{175}\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{V(X^2)=\\frac8{175}}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000012.html#コメント",
+    "href": "problems/primary/pri-problem-000012.html#コメント",
+    "title": "第444回 1次 問5",
+    "section": "コメント",
+    "text": "コメント\n\\(V(X^2)\\) と \\(\\{V(X)\\}^2\\) は別物です．「どの確率変数の分散か」を最初に確認すると，必要な期待値を取り違えません．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html",
+    "href": "problems/primary/pri-problem-000002.html",
+    "title": "第461回 1次 問2",
+    "section": "",
+    "text": "次の等式を満たす \\(x\\) の値を求めなさい．\nただし，\\(\\operatorname{Arcsin}x\\)，\\(\\operatorname{Arccos}x\\) はそれぞれ \\(\\sin x\\)，\\(\\cos x\\) の逆関数で，\n\\[\n-\\frac{\\pi}{2}\\leq \\operatorname{Arcsin}x\\leq\\frac{\\pi}{2},\n\\qquad\n0\\leq \\operatorname{Arccos}x\\leq\\pi\n\\]\nを満たすものとする．\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{4\\pi}{3}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html#問題",
+    "href": "problems/primary/pri-problem-000002.html#問題",
+    "title": "第461回 1次 問2",
+    "section": "",
+    "text": "次の等式を満たす \\(x\\) の値を求めなさい．\nただし，\\(\\operatorname{Arcsin}x\\)，\\(\\operatorname{Arccos}x\\) はそれぞれ \\(\\sin x\\)，\\(\\cos x\\) の逆関数で，\n\\[\n-\\frac{\\pi}{2}\\leq \\operatorname{Arcsin}x\\leq\\frac{\\pi}{2},\n\\qquad\n0\\leq \\operatorname{Arccos}x\\leq\\pi\n\\]\nを満たすものとする．\n\\[\n\\operatorname{Arccos}x-\\operatorname{Arcsin}x\n=\\frac{4\\pi}{3}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html#必要な知識",
+    "href": "problems/primary/pri-problem-000002.html#必要な知識",
+    "title": "第461回 1次 問2",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n逆三角関数\n\\(\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\dfrac{\\pi}{2}\\)"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html#必要な発想",
+    "href": "problems/primary/pri-problem-000002.html#必要な発想",
+    "title": "第461回 1次 問2",
+    "section": "必要な発想",
+    "text": "必要な発想\n\\(a-b\\)を求めるときに，\\(a+b\\)を考える．逆もしかり．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html#解答",
+    "href": "problems/primary/pri-problem-000002.html#解答",
+    "title": "第461回 1次 問2",
+    "section": "解答",
+    "text": "解答\nまず，\\(\\theta=\\operatorname{Arcsin}x\\) とする．主値の範囲から \\(-\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2}\\) なので，\\(0\\leq\\frac{\\pi}{2}-\\theta\\leq\\pi\\) である．また，\n\\[\n\\cos\\left(\\frac{\\pi}{2}-\\theta\\right)=\\sin\\theta=x\n\\]\nだから，\\(\\operatorname{Arccos}x\\) の主値の定義より\n\\[\n\\operatorname{Arcsin}x+\\operatorname{Arccos}x=\\frac{\\pi}{2}\n\\]\nが成り立つ．\n\\[\n\\alpha=\\operatorname{Arccos}x,\n\\qquad\n\\beta=\\operatorname{Arcsin}x\n\\]\nとおく．\nしたがって，\n\\[\n\\alpha+\\beta=\\frac{\\pi}{2}\n\\]\nである．\nまた，問題の条件から\n\\[\n\\alpha-\\beta=\\frac{4\\pi}{3}\n\\]\nである．\n2式を加えると，\n\\[\n2\\alpha\n=\\frac{\\pi}{2}+\\frac{4\\pi}{3}\n=\\frac{11\\pi}{6}\n\\]\nしたがって，\n\\[\n\\alpha=\\frac{11\\pi}{12}\n\\]\nである．\nよって，\n\\[\nx=\\cos\\alpha\n=\\cos\\frac{11\\pi}{12}\n=-\\frac{\\sqrt6+\\sqrt2}{4}\n\\]\nとなる．\n\\[\n\\boxed{x=-\\frac{\\sqrt6+\\sqrt2}{4}}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000002.html#コメント",
+    "href": "problems/primary/pri-problem-000002.html#コメント",
+    "title": "第461回 1次 問2",
+    "section": "コメント",
+    "text": "コメント\n\\(\\sin15°=\\frac{\\sqrt6-\\sqrt2}{4}\\)，\\(\\sin75°=\\frac{\\sqrt6+\\sqrt2}{4}\\)は有名角ですね．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000017.html",
+    "href": "problems/primary/pri-problem-000017.html",
+    "title": "第431回 1次 問3",
+    "section": "",
+    "text": "次の級数の収束半径を求めなさい．\n\\[\n\\sum_{n=0}^{\\infty}\n\\frac{(3n)!}{(n!)^3(2^n+n)}x^n\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000017.html#問題",
+    "href": "problems/primary/pri-problem-000017.html#問題",
+    "title": "第431回 1次 問3",
+    "section": "",
+    "text": "次の級数の収束半径を求めなさい．\n\\[\n\\sum_{n=0}^{\\infty}\n\\frac{(3n)!}{(n!)^3(2^n+n)}x^n\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000017.html#必要な知識",
+    "href": "problems/primary/pri-problem-000017.html#必要な知識",
+    "title": "第431回 1次 問3",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n収束半径"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000017.html#必要な発想",
+    "href": "problems/primary/pri-problem-000017.html#必要な発想",
+    "title": "第431回 1次 問3",
+    "section": "必要な発想",
+    "text": "必要な発想\n係数には階乗が含まれているので，隣り合う係数の比を取る． \\(2^n+n\\) では，\\(n\\to\\infty\\) のとき指数関数 \\(2^n\\) が支配的になる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000017.html#解答",
+    "href": "problems/primary/pri-problem-000017.html#解答",
+    "title": "第431回 1次 問3",
+    "section": "解答",
+    "text": "解答\n\\[\na_n=\\frac{(3n)!}{(n!)^3(2^n+n)}\n\\]\nとおく．すると，\n\\[\n\\begin{aligned}\n\\frac{a_n}{a_{n+1}}\n&=\n\\frac{(3n)!}{(n!)^3(2^n+n)}\n\\frac{((n+1)!)^3(2^{n+1}+n+1)}{(3n+3)!}\\\\\n&=\n\\frac{(n+1)^3(2^{n+1}+n+1)}\n{(3n+1)(3n+2)(3n+3)(2^n+n)}\n\\end{aligned}\n\\]\nである．したがって，\n\\[\n\\begin{aligned}\n\\lim_{n\\to\\infty}\\frac{a_n}{a_{n+1}}\n&=\n\\frac1{27}\n\\lim_{n\\to\\infty}\n\\frac{2^{n+1}+n+1}{2^n+n}\\\\\n&=\\frac1{27}\\cdot2\\\\\n&=\\frac2{27}\n\\end{aligned}\n\\]\nとなる．よって，収束半径は\n\\[\n\\boxed{\\frac2{27}}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000017.html#コメント",
+    "href": "problems/primary/pri-problem-000017.html#コメント",
+    "title": "第431回 1次 問3",
+    "section": "コメント",
+    "text": "コメント\n階乗部分と \\(2^n+n\\) の部分を分けて極限を見ると整理しやすくなります．\\(2^n+n\\) を単に \\(2^n\\) に置き換えず，比の極限として根拠を示すのが安全です．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000015.html",
+    "href": "problems/primary/pri-problem-000015.html",
+    "title": "第431回 1次 問1",
+    "section": "",
+    "text": "次の値を求めなさい．\n\\[\n\\sum_{k=0}^{98}\n\\frac1{k+2}{98\\choose k}(-1)^{k+2}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000015.html#問題",
+    "href": "problems/primary/pri-problem-000015.html#問題",
+    "title": "第431回 1次 問1",
+    "section": "",
+    "text": "次の値を求めなさい．\n\\[\n\\sum_{k=0}^{98}\n\\frac1{k+2}{98\\choose k}(-1)^{k+2}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000015.html#必要な知識",
+    "href": "problems/primary/pri-problem-000015.html#必要な知識",
+    "title": "第431回 1次 問1",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n二項係数を含む和"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000015.html#必要な発想",
+    "href": "problems/primary/pri-problem-000015.html#必要な発想",
+    "title": "第431回 1次 問1",
+    "section": "必要な発想",
+    "text": "必要な発想\n\\(\\dfrac1{k+2}\\) を \\(\\displaystyle\\int_0^1x^{k+1}\\,dx\\) に置き換える． すると，残りの和を二項定理で \\((1-x)^{98}\\) にまとめられる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000015.html#解答",
+    "href": "problems/primary/pri-problem-000015.html#解答",
+    "title": "第431回 1次 問1",
+    "section": "解答",
+    "text": "解答\n\\((-1)^{k+2}=(-1)^k\\) であり，\n\\[\n\\frac1{k+2}=\\int_0^1x^{k+1}\\,dx\n\\]\nだから，\n\\[\n\\begin{aligned}\n\\sum_{k=0}^{98}\n\\frac1{k+2}{98\\choose k}(-1)^{k+2}\n&=\n\\int_0^1\nx\\sum_{k=0}^{98}{98\\choose k}(-x)^k\\,dx\\\\\n&=\\int_0^1x(1-x)^{98}\\,dx\n\\end{aligned}\n\\]\nとなる．ここで，\\(u=1-x\\) とおくと，\n\\[\n\\begin{aligned}\n\\int_0^1x(1-x)^{98}\\,dx\n&=\\int_0^1(1-u)u^{98}\\,du\\\\\n&=\\left[\\frac{u^{99}}{99}-\\frac{u^{100}}{100}\\right]_0^1\\\\\n&=\\frac1{9900}\n\\end{aligned}\n\\]\nである．よって，\n\\[\n\\boxed{\\frac1{9900}}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000015.html#コメント",
+    "href": "problems/primary/pri-problem-000015.html#コメント",
+    "title": "第431回 1次 問1",
+    "section": "コメント",
+    "text": "コメント\n二項係数の和に \\(\\dfrac1{k+m}\\) が付いているときは，定積分による表示を検討します．和を先に計算できる形へ変えるのが要点です．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000014.html",
+    "href": "problems/primary/pri-problem-000014.html",
+    "title": "第444回 1次 問7",
+    "section": "",
+    "text": "\\(xy\\) 平面内の領域\n\\[\nD=\\{(x,y)\\mid0\\leq x\\leq\\sqrt{y},\\ 0\\leq y\\leq3\\}\n\\]\nについて，次の重積分を計算しなさい．\n\\[\n\\iint_D x^3y\\,dx\\,dy\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000014.html#問題",
+    "href": "problems/primary/pri-problem-000014.html#問題",
+    "title": "第444回 1次 問7",
+    "section": "",
+    "text": "\\(xy\\) 平面内の領域\n\\[\nD=\\{(x,y)\\mid0\\leq x\\leq\\sqrt{y},\\ 0\\leq y\\leq3\\}\n\\]\nについて，次の重積分を計算しなさい．\n\\[\n\\iint_D x^3y\\,dx\\,dy\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000014.html#必要な知識",
+    "href": "problems/primary/pri-problem-000014.html#必要な知識",
+    "title": "第444回 1次 問7",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n重積分"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000014.html#必要な発想",
+    "href": "problems/primary/pri-problem-000014.html#必要な発想",
+    "title": "第444回 1次 問7",
+    "section": "必要な発想",
+    "text": "必要な発想\n領域の条件が \\(0\\leq y\\leq3\\)，\\(0\\leq x\\leq\\sqrt y\\) と積分順序に合わせて与えられている． そのまま \\(x\\) を先に，\\(y\\) を後に積分する．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000014.html#解答",
+    "href": "problems/primary/pri-problem-000014.html#解答",
+    "title": "第444回 1次 問7",
+    "section": "解答",
+    "text": "解答\n領域の条件から，重積分を累次積分で表すと，\n\\[\n\\iint_Dx^3y\\,dx\\,dy\n=\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\n\\]\nとなる．まず \\(x\\) について積分すると，\n\\[\n\\begin{aligned}\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\n&=\\int_0^3\ny\\left[\\frac{x^4}{4}\\right]_{0}^{\\sqrt y}\n\\,dy\\\\\n&=\\frac14\\int_0^3y^3\\,dy\\\\\n&=\\frac14\\left[\\frac{y^4}{4}\\right]_0^3\\\\\n&=\\frac{81}{16}\n\\end{aligned}\n\\]\nである．よって，\n\\[\n\\boxed{\\frac{81}{16}}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000014.html#コメント",
+    "href": "problems/primary/pri-problem-000014.html#コメント",
+    "title": "第444回 1次 問7",
+    "section": "コメント",
+    "text": "コメント\n積分領域を書き換える必要がない問題です．上端に \\(\\sqrt y\\) を代入するとき，\\((\\sqrt y)^4=y^2\\) となる点だけ丁寧に処理しましょう．"
+  },
+  {
+    "objectID": "problems/index.html",
+    "href": "problems/index.html",
+    "title": "過去問一覧",
+    "section": "",
+    "text": "1次\n    2次\n  \n\n  \n    \n      過去問データを読み込んでいます…\n    \n    \n  \n\n  \n    この一覧を表示するにはJavaScriptを有効にしてください。"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000028.html",
+    "href": "problems/primary/pri-problem-000028.html",
+    "title": "第440回 1次 問7",
+    "section": "",
+    "text": "\\(xy\\) 平面における領域\n\\[\nD=\n\\{(x,y)\\mid0\\leq x\\leq2,\\ y\\geq0,\\ x+y\\leq4\\leq x^2+y^2\\}\n\\]\nに対して，次の重積分を求めなさい．\n\\[\n\\iint_Dx^2y\\,dx\\,dy\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000028.html#問題",
+    "href": "problems/primary/pri-problem-000028.html#問題",
+    "title": "第440回 1次 問7",
+    "section": "",
+    "text": "\\(xy\\) 平面における領域\n\\[\nD=\n\\{(x,y)\\mid0\\leq x\\leq2,\\ y\\geq0,\\ x+y\\leq4\\leq x^2+y^2\\}\n\\]\nに対して，次の重積分を求めなさい．\n\\[\n\\iint_Dx^2y\\,dx\\,dy\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000028.html#必要な知識",
+    "href": "problems/primary/pri-problem-000028.html#必要な知識",
+    "title": "第440回 1次 問7",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n重積分"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000028.html#必要な発想",
+    "href": "problems/primary/pri-problem-000028.html#必要な発想",
+    "title": "第440回 1次 問7",
+    "section": "必要な発想",
+    "text": "必要な発想\n領域は直線 \\(y=4-x\\) の下側かつ円 \\(x^2+y^2=4\\) の外側にある． \\(0\\leq x\\leq2\\) では，\\(\\sqrt{4-x^2}\\leq y\\leq4-x\\) と表せる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000028.html#解答",
+    "href": "problems/primary/pri-problem-000028.html#解答",
+    "title": "第440回 1次 問7",
+    "section": "解答",
+    "text": "解答\n\\(y\\geq0\\) のもとで，\n\\[\n4\\leq x^2+y^2\n\\]\nは\n\\[\ny\\geq\\sqrt{4-x^2}\n\\]\nを意味する．また，\\(x+y\\leq4\\) より \\(y\\leq4-x\\) である．したがって，\n\\[\n\\iint_Dx^2y\\,dx\\,dy\n=\n\\int_0^2\\int_{\\sqrt{4-x^2}}^{4-x}x^2y\\,dy\\,dx\n\\]\nとなる．よって，\n\\[\n\\begin{aligned}\n\\iint_Dx^2y\\,dx\\,dy\n&=\n\\frac12\\int_0^2x^2\n\\left\\{(4-x)^2-(4-x^2)\\right\\}\\,dx\\\\\n&=\\int_0^2(6x^2-4x^3+x^4)\\,dx\\\\\n&=\\left[2x^3-x^4+\\frac{x^5}{5}\\right]_0^2\\\\\n&=\\frac{32}{5}\n\\end{aligned}\n\\]\nである．したがって，\n\\[\n\\boxed{\\frac{32}{5}}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000028.html#コメント",
+    "href": "problems/primary/pri-problem-000028.html#コメント",
+    "title": "第440回 1次 問7",
+    "section": "コメント",
+    "text": "コメント\n\\(4\\leq x^2+y^2\\) は円の外側を表します．不等号の向きから積分の上端・下端を決め，\\(0\\leq x\\leq2\\) で二つの境界の上下関係も確認しましょう．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html",
+    "href": "problems/primary/pri-problem-000001.html",
+    "title": "第461回 1次 問1",
+    "section": "",
+    "text": "\\(3^{17171717}\\)の下3桁の数を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#問題",
+    "href": "problems/primary/pri-problem-000001.html#問題",
+    "title": "第461回 1次 問1",
+    "section": "",
+    "text": "\\(3^{17171717}\\)の下3桁の数を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#必要な知識",
+    "href": "problems/primary/pri-problem-000001.html#必要な知識",
+    "title": "第461回 1次 問1",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n合同式・剰余\nオイラーの定理\n中国剰余定理"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#必要な発想",
+    "href": "problems/primary/pri-problem-000001.html#必要な発想",
+    "title": "第461回 1次 問1",
+    "section": "必要な発想",
+    "text": "必要な発想\n下3桁を求めることは\\(\\mod 10^3\\)を求めることに等しい． 法 \\(1000\\) にオイラーの定理を直接使うより，\\(1000=8\\cdot125\\) と分けて，それぞれの法で短い周期を探す． 両方に共通する周期を見つけ，中国剰余定理で法 \\(1000\\) の合同式へ戻す．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#解答",
+    "href": "problems/primary/pri-problem-000001.html#解答",
+    "title": "第461回 1次 問1",
+    "section": "解答",
+    "text": "解答\n求めたいのは \\(3^{17171717}\\) を \\(1000\\) で割った余りである．\\(\\gcd(3,1000)=1\\) なので，オイラーの定理を法 \\(1000\\) に直接使うこともできるが，\\(\\varphi(1000)=400\\) であり，指数は \\(117\\) までしか小さくならない．\nそこで，より短い周期を得るために\n\\[\n1000=8\\cdot125\n\\]\nと分解する．\\(\\gcd(8,125)=1\\) なので，中国剰余定理により，法 \\(8\\) と法 \\(125\\) での余りが分かれば法 \\(1000\\) での余りも決まる．\n法 \\(8\\) では \\(\\varphi(8)=4\\) なので，オイラーの定理より\n\\[\n3^4\\equiv1\\pmod8\n\\]\nである．したがって，\n\\[\n3^{100}=(3^4)^{25}\\equiv1\\pmod8\n\\]\nとなる．一方，\\(\\varphi(125)=100\\) なので，\n\\[\n3^{100}\\equiv1\\pmod{125}\n\\]\nである．\nしたがって，\\(3^{100}\\) は法 \\(8\\) と法 \\(125\\) のどちらでも余りが \\(1\\) である．中国剰余定理より，\n\\[\n3^{100}\\equiv1\\pmod{1000}\n\\]\nである．また，\n\\[\n17171717=100\\cdot171717+17\n\\]\nだから，\n\\[\n3^{17171717}\n=(3^{100})^{171717}3^{17}\n\\equiv3^{17}\\pmod{1000}\n\\]\nである．\nあとは，二乗を繰り返して \\(3^{17}\\) を計算する．\n\\[\n3^4=81\n\\]\n\\[\n3^8=81^2=6561\\equiv561\\pmod{1000}\n\\]\n\\[\n3^{16}\\equiv561^2=314721\\equiv721\\pmod{1000}\n\\]\n\\(17=16+1\\) なので，\n\\[\n3^{17}\\equiv721\\cdot3=2163\\equiv163\\pmod{1000}\n\\]\nとなる．よって，求める下3桁は\n\\[\n\\boxed{163}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000001.html#コメント",
+    "href": "problems/primary/pri-problem-000001.html#コメント",
+    "title": "第461回 1次 問1",
+    "section": "コメント",
+    "text": "コメント\n筆算でミスしたくないですね．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html",
+    "href": "problems/primary/pri-problem-000003.html",
+    "title": "第461回 1次 問3",
+    "section": "",
+    "text": "標準内積をもつ4次元実計量線形空間 \\(\\mathbb{R}^4\\) の4つのベクトル\n\\[\n\\boldsymbol{x}_0=\n\\begin{pmatrix}\n-3\\\\\n0\\\\\n-3\\\\\n5\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\\n3\\\\\na\\\\\n0\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\nb\\\\\n0\\\\\nc\\\\\n12\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\nd\\\\\n4\\\\\ne\\\\\nf\n\\end{pmatrix}\n\\]\nが互いに直交するように，定数 \\(a,b,c,d,e,f\\) の値を定めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html#問題",
+    "href": "problems/primary/pri-problem-000003.html#問題",
+    "title": "第461回 1次 問3",
+    "section": "",
+    "text": "標準内積をもつ4次元実計量線形空間 \\(\\mathbb{R}^4\\) の4つのベクトル\n\\[\n\\boldsymbol{x}_0=\n\\begin{pmatrix}\n-3\\\\\n0\\\\\n-3\\\\\n5\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_1=\n\\begin{pmatrix}\n2\\\\\n3\\\\\na\\\\\n0\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_2=\n\\begin{pmatrix}\nb\\\\\n0\\\\\nc\\\\\n12\n\\end{pmatrix},\n\\qquad\n\\boldsymbol{x}_3=\n\\begin{pmatrix}\nd\\\\\n4\\\\\ne\\\\\nf\n\\end{pmatrix}\n\\]\nが互いに直交するように，定数 \\(a,b,c,d,e,f\\) の値を定めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html#必要な知識",
+    "href": "problems/primary/pri-problem-000003.html#必要な知識",
+    "title": "第461回 1次 問3",
+    "section": "必要な知識",
+    "text": "必要な知識"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html#必要な発想",
+    "href": "problems/primary/pri-problem-000003.html#必要な発想",
+    "title": "第461回 1次 問3",
+    "section": "必要な発想",
+    "text": "必要な発想\n直交\\(\\Leftrightarrow\\)内積が0．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html#解答",
+    "href": "problems/primary/pri-problem-000003.html#解答",
+    "title": "第461回 1次 問3",
+    "section": "解答",
+    "text": "解答\n\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_1=0\\)より，\\(a=-2\\)を得る．\n次に，\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_2=0\\)より，\\(b+c=20\\)である．\nまた，\\(\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_2=0\\)より，\\(a=-2\\) を用いると，\\(b=c\\)を得る．\n以上より，\\(b=c=10\\)．\n\\(\\boldsymbol{x}_0\\cdot\\boldsymbol{x}_3=0\\)から，\\(-3d-3e+5f=0\\)．\n\\(\\boldsymbol{x}_1\\cdot\\boldsymbol{x}_3=0\\)から，\\(2d+12-2e=0\\)．\n\\(\\boldsymbol{x}_2\\cdot\\boldsymbol{x}_3=0\\)から，\\(10d+10e+12f=0\\)．\nこの3元連立方程式を解いて，\n\\[\n\\boxed{\na=-2,\\quad\nb=10,\\quad\nc=10,\\quad\nd=-3,\\quad\ne=3,\\quad\nf=0\n}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000003.html#コメント",
+    "href": "problems/primary/pri-problem-000003.html#コメント",
+    "title": "第461回 1次 問3",
+    "section": "コメント",
+    "text": "コメント\nサービス問題ですね．計算ミスに気をつけたいところです．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000016.html",
+    "href": "problems/primary/pri-problem-000016.html",
+    "title": "第431回 1次 問2",
+    "section": "",
+    "text": "5次方程式\n\\[\nx^5+x^4-3x^3+7x^2+1=0\n\\]\nの5つの解を \\(\\alpha,\\beta,\\gamma,\\delta,\\varepsilon\\) とするとき，次の値を求めなさい．\n\\[\n(\\alpha+2)(\\beta+2)(\\gamma+2)(\\delta+2)(\\varepsilon+2)\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000016.html#問題",
+    "href": "problems/primary/pri-problem-000016.html#問題",
+    "title": "第431回 1次 問2",
+    "section": "",
+    "text": "5次方程式\n\\[\nx^5+x^4-3x^3+7x^2+1=0\n\\]\nの5つの解を \\(\\alpha,\\beta,\\gamma,\\delta,\\varepsilon\\) とするとき，次の値を求めなさい．\n\\[\n(\\alpha+2)(\\beta+2)(\\gamma+2)(\\delta+2)(\\varepsilon+2)\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000016.html#必要な知識",
+    "href": "problems/primary/pri-problem-000016.html#必要な知識",
+    "title": "第431回 1次 問2",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n多項式の値と根"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000016.html#必要な発想",
+    "href": "problems/primary/pri-problem-000016.html#必要な発想",
+    "title": "第431回 1次 問2",
+    "section": "必要な発想",
+    "text": "必要な発想\n5つの解を求める必要はない． 左辺を \\(P(x)\\) とし，\\(P(-2)\\) が求める積と符号だけ異なることを使う．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000016.html#解答",
+    "href": "problems/primary/pri-problem-000016.html#解答",
+    "title": "第431回 1次 問2",
+    "section": "解答",
+    "text": "解答\n\\[\nP(x)=x^5+x^4-3x^3+7x^2+1\n\\]\nとおく．最高次係数が \\(1\\) だから，\n\\[\nP(x)\n=(x-\\alpha)(x-\\beta)(x-\\gamma)(x-\\delta)(x-\\varepsilon)\n\\]\nである．\\(x=-2\\) を代入すると，\n\\[\n\\begin{aligned}\nP(-2)\n&=(-2)^5+(-2)^4-3(-2)^3+7(-2)^2+1\\\\\n&=-32+16+24+28+1\\\\\n&=37\n\\end{aligned}\n\\]\nとなる．一方，\n\\[\n\\begin{aligned}\nP(-2)\n&=(-2-\\alpha)(-2-\\beta)(-2-\\gamma)(-2-\\delta)(-2-\\varepsilon)\\\\\n&=-(\\alpha+2)(\\beta+2)(\\gamma+2)(\\delta+2)(\\varepsilon+2)\n\\end{aligned}\n\\]\nだから，\n\\[\n\\boxed{-37}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000016.html#コメント",
+    "href": "problems/primary/pri-problem-000016.html#コメント",
+    "title": "第431回 1次 問2",
+    "section": "コメント",
+    "text": "コメント\n「すべての根に同じ数を足した積」は，多項式へその数の符号を変えて代入すると得られます．次数が奇数なので，最後の符号に注意しましょう．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html",
+    "href": "problems/primary/pri-problem-000006.html",
+    "title": "第461回 1次 問6",
+    "section": "",
+    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html#問題",
+    "href": "problems/primary/pri-problem-000006.html#問題",
+    "title": "第461回 1次 問6",
+    "section": "",
+    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html#必要な知識",
+    "href": "problems/primary/pri-problem-000006.html#必要な知識",
+    "title": "第461回 1次 問6",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n対称ブロック行列の行列式"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html#必要な発想",
+    "href": "problems/primary/pri-problem-000006.html#必要な発想",
+    "title": "第461回 1次 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\n偶数次の行列式を見た時に，以下の形に基本変形できないか試す． \\[\n\\begin{vmatrix}\nA & B\\\\\nB & A\n\\end{vmatrix}\n\\qquad\n\\begin{vmatrix}\nA & -B\\\\\nB & A\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html#解答",
+    "href": "problems/primary/pri-problem-000006.html#解答",
+    "title": "第461回 1次 問6",
+    "section": "解答",
+    "text": "解答\n\\[\n\\begin{aligned}\n\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&1&1&2&0&1\\\\\n0&0&1&0&2&1\\\\\n0&0&0&1&1&2\n\\end{vmatrix}\n&=\n-\\begin{vmatrix}\n2&1&1&0&0&0\\\\\n1&2&0&1&0&0\\\\\n1&0&2&1&1&0\\\\\n0&0&0&1&1&2\\\\\n0&0&1&0&2&1\\\\\n0&1&1&2&0&1\n\\end{vmatrix}\n&&\\text{第4行と第6行を入れ替える．}\n\\\\\n&=\n(-1)^2\\begin{vmatrix}\n1&1&2&0&0&0\\\\\n0&2&1&1&0&0\\\\\n2&0&1&1&1&0\\\\\n0&0&0&1&1&2\\\\\n1&0&0&0&2&1\\\\\n1&1&0&2&0&1\n\\end{vmatrix}\n&&\\text{1列目と3列目を入れ替える．}\n\\\\\n&=\n\\begin{vmatrix}\n1&1&2\\\\\n1&2&1\\\\\n3&1&1\n\\end{vmatrix}\n\\quad\n\\begin{vmatrix}\n1&1&2\\\\\n-1&2&1\\\\\n1&-1&1\n\\end{vmatrix}\n\\\\\n&=\n(2+2+3-12-1-1)(2+2+1-4+1+1)\n\\\\\n&=\n-7\\times3\n\\end{aligned}\n\\]\n\\[\n\\boxed{-21}.\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000006.html#コメント",
+    "href": "problems/primary/pri-problem-000006.html#コメント",
+    "title": "第461回 1次 問6",
+    "section": "コメント",
+    "text": "コメント\n高次の行列式では，余因子展開や行基本変形を始める前に，対称ブロック行列に変形できないか考えたいですね．\n筆者は最後にサラスの公式で3次の行列式を計算するときに計算ミスしてしまいました．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000013.html",
+    "href": "problems/primary/pri-problem-000013.html",
+    "title": "第444回 1次 問6",
+    "section": "",
+    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n-1&-2&2&2&-1\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000013.html#問題",
+    "href": "problems/primary/pri-problem-000013.html#問題",
+    "title": "第444回 1次 問6",
+    "section": "",
+    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n-1&-2&2&2&-1\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000013.html#必要な知識",
+    "href": "problems/primary/pri-problem-000013.html#必要な知識",
+    "title": "第444回 1次 問6",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n行列式\n行列式の行基本変形と余因子展開"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000013.html#必要な発想",
+    "href": "problems/primary/pri-problem-000013.html#必要な発想",
+    "title": "第444回 1次 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\n第4列には非零成分が二つしかない． 一方を行基本変形で \\(0\\) にしてから余因子展開し，行列式の次数を下げる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000013.html#解答",
+    "href": "problems/primary/pri-problem-000013.html#解答",
+    "title": "第444回 1次 問6",
+    "section": "解答",
+    "text": "解答\nもとの行列式を \\(D\\) とする．第5行から第1行の2倍を引くと，\n\\[\nD=\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n1&-2&2&0&-1\n\\end{vmatrix}\n\\]\nとなる．第4列で余因子展開すると，\n\\[\nD=\n-\n\\begin{vmatrix}\n2&0&-1&0\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n1&-2&2&-1\n\\end{vmatrix}\n\\]\nである．この4次行列式の第1行と第4行を入れ替えると，外側のマイナスと入れ替えによるマイナスが打ち消し合うので，\n\\[\nD=\n\\begin{vmatrix}\n1&-2&2&-1\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n2&0&-1&0\n\\end{vmatrix}\n\\]\nとなる．ここで，第2行，第3行，第4行にそれぞれ第1行の \\(2\\) 倍，\\(2\\) 倍，\\(-2\\) 倍を加えると，\n\\[\nD=\n\\begin{vmatrix}\n1&-2&2&-1\\\\\n0&-6&2&-4\\\\\n0&-2&2&0\\\\\n0&4&-5&2\n\\end{vmatrix}\n=\n\\begin{vmatrix}\n-6&2&-4\\\\\n-2&2&0\\\\\n4&-5&2\n\\end{vmatrix}\n\\]\nである．最後に第1行で余因子展開すると，\n\\[\n\\begin{aligned}\nD\n&=-6(2\\cdot2-0\\cdot(-5))\n-2((-2)\\cdot2-0\\cdot4)\\\\\n&\\qquad\n+(-4)((-2)(-5)-2\\cdot4)\\\\\n&=-24+8-8\\\\\n&=-24\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{-24}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000013.html#コメント",
+    "href": "problems/primary/pri-problem-000013.html#コメント",
+    "title": "第444回 1次 問6",
+    "section": "コメント",
+    "text": "コメント\n高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探すのが基本です．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000011.html",
+    "href": "problems/primary/pri-problem-000011.html",
+    "title": "第444回 1次 問4",
+    "section": "",
+    "text": "関数 \\(e^x\\cos^2x\\) をマクローリン展開したときの \\(x^4\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000011.html#問題",
+    "href": "problems/primary/pri-problem-000011.html#問題",
+    "title": "第444回 1次 問4",
+    "section": "",
+    "text": "関数 \\(e^x\\cos^2x\\) をマクローリン展開したときの \\(x^4\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000011.html#必要な知識",
+    "href": "problems/primary/pri-problem-000011.html#必要な知識",
+    "title": "第444回 1次 問4",
+    "section": "必要な知識",
+    "text": "必要な知識\n\nマクローリン展開\n半角の公式"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000011.html#必要な発想",
+    "href": "problems/primary/pri-problem-000011.html#必要な発想",
+    "title": "第444回 1次 問4",
+    "section": "必要な発想",
+    "text": "必要な発想\n\\(\\cos^2x\\) は半角の公式で \\(\\frac{1+\\cos2x}{2}\\) に直す． \\(x^4\\) を作る項だけが分かるように，二つの関数を必要な次数まで展開する．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000011.html#解答",
+    "href": "problems/primary/pri-problem-000011.html#解答",
+    "title": "第444回 1次 問4",
+    "section": "解答",
+    "text": "解答\n半角の公式より，\n\\[\n\\begin{aligned}\n\\cos^2x\n&=\\frac{1+\\cos2x}{2}\\\\\n&=1-x^2+\\frac{x^4}{3}+O(x^6)\n\\end{aligned}\n\\]\nである．また，\n\\[\ne^x\n=1+x+\\frac{x^2}{2}+\\frac{x^3}{6}\n+\\frac{x^4}{24}+O(x^5)\n\\]\nである．したがって，積から \\(x^4\\) が生じる組合せだけを集めると，その係数は\n\\[\n\\begin{aligned}\n\\frac13-\\frac12+\\frac1{24}\n&=\\frac{8-12+1}{24}\\\\\n&=-\\frac18\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{-\\frac18}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000011.html#コメント",
+    "href": "problems/primary/pri-problem-000011.html#コメント",
+    "title": "第444回 1次 問4",
+    "section": "コメント",
+    "text": "コメント\n積の展開では，すべての項を計算する必要はありません．求める次数を作る項の組合せを先に確認すると，計算量とミスを減らせます．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html",
+    "href": "problems/primary/pri-problem-000004.html",
+    "title": "第461回 1次 問4",
+    "section": "",
+    "text": "次の問いに答えなさい．\n1 関数 \\(\\tan x\\) をマクローリン展開したときの \\(x^5\\) の係数を求めなさい．\n2 関数 \\(\\log_e\\left(\\cos^2\\frac{x}{2}\\right)\\) をマクローリン展開したときの \\(x^6\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html#問題",
+    "href": "problems/primary/pri-problem-000004.html#問題",
+    "title": "第461回 1次 問4",
+    "section": "",
+    "text": "次の問いに答えなさい．\n1 関数 \\(\\tan x\\) をマクローリン展開したときの \\(x^5\\) の係数を求めなさい．\n2 関数 \\(\\log_e\\left(\\cos^2\\frac{x}{2}\\right)\\) をマクローリン展開したときの \\(x^6\\) の係数を求めなさい．\nただし，\\(e\\) は自然対数の底を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html#必要な知識",
+    "href": "problems/primary/pri-problem-000004.html#必要な知識",
+    "title": "第461回 1次 問4",
+    "section": "必要な知識",
+    "text": "必要な知識\n\nマクローリン展開\n項別微分・項別積分"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html#必要な発想",
+    "href": "problems/primary/pri-problem-000004.html#必要な発想",
+    "title": "第461回 1次 問4",
+    "section": "必要な発想",
+    "text": "必要な発想\n関数 \\(f(x)\\) のマクローリン展開の \\(x^n\\) の係数は \\(\\frac{f^{(n)}(0)}{n!}\\)だから， \\(f^{(n)}(x)\\) を求める．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html#解答",
+    "href": "problems/primary/pri-problem-000004.html#解答",
+    "title": "第461回 1次 問4",
+    "section": "解答",
+    "text": "解答\n\n1\n\\(f(x):=\\tan x = t\\)．\\(\\tan x\\) と書くと長いので \\(t\\) と書かせてもらいます．\n\\[\nf^{(1)}(x)=1+\\tan ^2 x=1+t^2\n\\]\n\\[\nf^{(2)}(x)=2t(1+t^2)=2t+2t^3\n\\]\n\\[\nf^{(3)}(x)=2(1+t^2)+6t^2(1+t^2)=2+8t^2+6t^4\n\\]\n\\[\nf^{(4)}(x)=16t(1+t^2)+24t^3(1+t^2)=16t+40t^3+24t^5\n\\]\n\\[\nf^{(5)}(x)=16 + \\tan x(*)\n\\]\nだから，\\(x^5\\) の係数は\n\\[\n\\frac{f^{(5)}(0)}{5!}=\\frac{16}{5!}=\\frac{2}{15}\n\\] である．\n\\[\n\\boxed{\\frac{2}{15}}\n\\]\n\n\n2\n\\[\ng(x):=\\log\\left(\\cos^2\\frac{x}{2}\\right)\n\\]\n\\(x=0\\) の近くでは \\(\\cos(x/2)&gt;0\\) なので，\n\\[\ng(x)=2\\log\\left(\\cos\\frac{x}{2}\\right).\n\\]\n\\[\ng'(x)= -\\tan\\frac{x}{2}\n\\]\n1の結果より，\n\\[\n\\tan z\n= \\sim +\\frac{2z^5}{15}+ \\sim\n\\]\nである．\\(z=x/2\\) を代入すると，\n\\[\n\\tan\\frac{x}{2}\n=\n\\sim+\\frac{2}{15}\\left(\\frac{x}{2}\\right)^5+\\sim\n=\n\\sim\n+\\frac{x^5}{240}\n+\\sim\n\\]\nだから，\n\\[\ng'(x)\n=\n\\sim\n-\\frac{x^5}{240}\n+\\sim\n\\]\nである．\n項別積分すると，\n\\[\ng(x)\n=\n\\sim\n-\\frac{x^6}{1440}\n+\\sim\n\\]\nとなる．\n\\[\n\\boxed{-\\frac{1}{1440}}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000004.html#コメント",
+    "href": "problems/primary/pri-problem-000004.html#コメント",
+    "title": "第461回 1次 問4",
+    "section": "コメント",
+    "text": "コメント\nマクローリン展開では，直接高階導関数を求めるのが難しいとき，その1~2階微積分の中に展開しやすい形がないか探すと良い場合がある．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000021.html",
+    "href": "problems/primary/pri-problem-000021.html",
+    "title": "第431回 1次 問7",
+    "section": "",
+    "text": "\\(xy\\) 平面内の領域\n\\[\nD=\n\\left\\{\n(x,y)\\mathrel{}\\middle|\\mathrel{}\n4x^2+9y^2+8x-36y+4\\leq0,\\quad\nx\\geq-1,\\ y\\geq2\n\\right\\}\n\\]\nに対して，次の重積分を求めなさい．\n\\[\n\\iint_D(x+1)^3y\\,dx\\,dy\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000021.html#問題",
+    "href": "problems/primary/pri-problem-000021.html#問題",
+    "title": "第431回 1次 問7",
+    "section": "",
+    "text": "\\(xy\\) 平面内の領域\n\\[\nD=\n\\left\\{\n(x,y)\\mathrel{}\\middle|\\mathrel{}\n4x^2+9y^2+8x-36y+4\\leq0,\\quad\nx\\geq-1,\\ y\\geq2\n\\right\\}\n\\]\nに対して，次の重積分を求めなさい．\n\\[\n\\iint_D(x+1)^3y\\,dx\\,dy\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000021.html#必要な知識",
+    "href": "problems/primary/pri-problem-000021.html#必要な知識",
+    "title": "第431回 1次 問7",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n重積分\n変数変換"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000021.html#必要な発想",
+    "href": "problems/primary/pri-problem-000021.html#必要な発想",
+    "title": "第431回 1次 問7",
+    "section": "必要な発想",
+    "text": "必要な発想\n平方完成すると，領域は楕円の右上4分の1になる． 楕円を単位円へ移す変数変換を行い，さらに極座標で積分する．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000021.html#解答",
+    "href": "problems/primary/pri-problem-000021.html#解答",
+    "title": "第431回 1次 問7",
+    "section": "解答",
+    "text": "解答\n領域を表す不等式を平方完成すると，\n\\[\n4(x+1)^2+9(y-2)^2\\leq36\n\\]\nとなる．そこで，\n\\[\nx+1=3u,\\qquad y-2=2v\n\\]\nとおく．条件 \\(x\\geq-1\\)，\\(y\\geq2\\) も考えると，変換後の領域は\n\\[\nu^2+v^2\\leq1,\\qquad u\\geq0,\\quad v\\geq0\n\\]\nであり，ヤコビアンは\n\\[\n\\left|\\frac{\\partial(x,y)}{\\partial(u,v)}\\right|=6\n\\]\nである．さらに，\n\\[\nu=r\\cos\\theta,\\qquad v=r\\sin\\theta\n\\]\nとおくと，\n\\[\n0\\leq r\\leq1,\\qquad0\\leq\\theta\\leq\\frac{\\pi}{2}\n\\]\nである．したがって，\n\\[\n\\begin{aligned}\n\\iint_D(x+1)^3y\\,dx\\,dy\n&=\n324\\int_0^{\\pi/2}\\int_0^1\nr^4\\cos^3\\theta(1+r\\sin\\theta)\n\\,dr\\,d\\theta\\\\\n&=324\\left\\{\n\\frac15\\int_0^{\\pi/2}\\cos^3\\theta\\,d\\theta\n+\\frac16\\int_0^{\\pi/2}\\cos^3\\theta\\sin\\theta\\,d\\theta\n\\right\\}\\\\\n&=324\\left(\\frac15\\cdot\\frac23+\\frac16\\cdot\\frac14\\right)\\\\\n&=\\frac{567}{10}\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{\\frac{567}{10}}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000021.html#コメント",
+    "href": "problems/primary/pri-problem-000021.html#コメント",
+    "title": "第431回 1次 問7",
+    "section": "コメント",
+    "text": "コメント\n平方完成による平行移動，楕円から円への拡大縮小，極座標変換の3段階です．各段階のヤコビアンを落とさないように，変数と面積要素を同時に書き換えましょう．"
   },
   {
     "objectID": "problems/primary/pri-problem-000008.html",
@@ -1673,373 +2289,527 @@
     "text": "コメント\n問題文の \\(1728=12^3\\) は，最初の因数分解に気づくための明確な手掛かりです．3桁と4桁の素因数があるという条件は，途中で得た因数分解が十分かを判断する助けになります．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000002.html",
-    "href": "problems/secondary/sec-problem-000002.html",
-    "title": "出典不明01 問2",
+    "objectID": "problems/primary/pri-problem-000022.html",
+    "href": "problems/primary/pri-problem-000022.html",
+    "title": "第440回 1次 問1",
+    "section": "",
+    "text": "次の式の二重根号をはずして簡単にしなさい．\n\\[\n\\sqrt[5]{\\frac{5\\sqrt5+11}{2}}\n+\n\\sqrt[5]{\\frac{5\\sqrt5-11}{2}}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000022.html#問題",
+    "href": "problems/primary/pri-problem-000022.html#問題",
+    "title": "第440回 1次 問1",
+    "section": "",
+    "text": "次の式の二重根号をはずして簡単にしなさい．\n\\[\n\\sqrt[5]{\\frac{5\\sqrt5+11}{2}}\n+\n\\sqrt[5]{\\frac{5\\sqrt5-11}{2}}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000022.html#必要な知識",
+    "href": "problems/primary/pri-problem-000022.html#必要な知識",
+    "title": "第440回 1次 問1",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n根号式"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000022.html#必要な発想",
+    "href": "problems/primary/pri-problem-000022.html#必要な発想",
+    "title": "第440回 1次 問1",
+    "section": "必要な発想",
+    "text": "必要な発想\n二つの五乗根を \\(a,b\\) とおくと，根号内の積から \\(ab=1\\) が得られる． \\(a^5+b^5\\) を \\(a+b\\) で表し，正の解を特定する．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000022.html#解答",
+    "href": "problems/primary/pri-problem-000022.html#解答",
+    "title": "第440回 1次 問1",
+    "section": "解答",
+    "text": "解答\n\\[\na=\\sqrt[5]{\\frac{5\\sqrt5+11}{2}},\n\\qquad\nb=\\sqrt[5]{\\frac{5\\sqrt5-11}{2}}\n\\]\nとおく．根号内はいずれも正であり，\n\\[\n\\begin{aligned}\n(ab)^5\n&=\\frac{(5\\sqrt5+11)(5\\sqrt5-11)}4\\\\\n&=\\frac{125-121}{4}\\\\\n&=1\n\\end{aligned}\n\\]\nだから，\\(ab=1\\) である．\\(u=a+b\\) とおくと，\n\\[\na^5+b^5=u^5-5u^3+5u\n\\]\nである．一方，\n\\[\na^5+b^5=5\\sqrt5\n\\]\nだから，\n\\[\nu^5-5u^3+5u=5\\sqrt5\n\\]\nとなる．\\(u=\\sqrt5\\) はこの等式を満たす．また，\\(a,b&gt;0\\)，\\(ab=1\\) より \\(u\\geq2\\) であり，この範囲では\n\\[\n\\frac{d}{du}(u^5-5u^3+5u)\n=5(u^4-3u^2+1)&gt;0\n\\]\nだから解は一意である．したがって，\n\\[\n\\boxed{\\sqrt5}\n\\]\nとなる．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000022.html#コメント",
+    "href": "problems/primary/pri-problem-000022.html#コメント",
+    "title": "第440回 1次 問1",
+    "section": "コメント",
+    "text": "コメント\n個々の五乗根を直接見抜く必要はありません．二つの項の積が \\(1\\) になることに気づけば，和を一つの未知数として扱えます．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000027.html",
+    "href": "problems/primary/pri-problem-000027.html",
+    "title": "第440回 1次 問6",
+    "section": "",
+    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n3&1&4&1&7&2\\\\\n1&0&5&2&0&8\\\\\n9&2&6&8&1&8\\\\\n2&7&1&4&1&3\\\\\n8&0&2&5&0&1\\\\\n8&1&8&6&2&9\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000027.html#問題",
+    "href": "problems/primary/pri-problem-000027.html#問題",
+    "title": "第440回 1次 問6",
+    "section": "",
+    "text": "次の行列式を計算しなさい．\n\\[\n\\begin{vmatrix}\n3&1&4&1&7&2\\\\\n1&0&5&2&0&8\\\\\n9&2&6&8&1&8\\\\\n2&7&1&4&1&3\\\\\n8&0&2&5&0&1\\\\\n8&1&8&6&2&9\n\\end{vmatrix}\n\\]"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000027.html#必要な知識",
+    "href": "problems/primary/pri-problem-000027.html#必要な知識",
+    "title": "第440回 1次 問6",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n行列式"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000027.html#必要な発想",
+    "href": "problems/primary/pri-problem-000027.html#必要な発想",
+    "title": "第440回 1次 問6",
+    "section": "必要な発想",
+    "text": "必要な発想\nサラスの公式は使えないので，行の定数倍を別の行へ加える基本変形で上三角化する． この種類の基本変形では行列式の値が変わらないことを使う．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000027.html#解答",
+    "href": "problems/primary/pri-problem-000027.html#解答",
+    "title": "第440回 1次 問6",
+    "section": "解答",
+    "text": "解答\n行の定数倍を別の行へ加える基本変形を順に行って，第1列から下の成分を消していく．この操作だけで上三角化すると，\n\\[\n\\begin{vmatrix}\n3&1&4&1&7&2\\\\\n0&-\\frac13&\\frac{11}3&\\frac53&-\\frac73&\\frac{22}3\\\\\n0&0&-17&0&-13&-20\\\\\n0&0&0&35&-100&61\\\\\n0&0&0&0&-\\frac{282}{119}&\\frac{522}{595}\\\\\n0&0&0&0&0&-\\frac{182}{235}\n\\end{vmatrix}\n\\]\nを得る．行の交換や行そのものの定数倍は行っていないので，行列式の値は変わっていない．したがって，対角成分の積を取ると，\n\\[\n\\begin{aligned}\n&3\\left(-\\frac13\\right)(-17)\\cdot35\n\\left(-\\frac{282}{119}\\right)\n\\left(-\\frac{182}{235}\\right)\\\\\n&\\qquad=1092\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{1092}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000027.html#コメント",
+    "href": "problems/primary/pri-problem-000027.html#コメント",
+    "title": "第440回 1次 問6",
+    "section": "コメント",
+    "text": "コメント\n高次の行列式は，余因子展開より上三角化が基本です．分数が現れても，行列式を変えない操作だけを続ければ，最後は対角成分の積で計算できます．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000018.html",
+    "href": "problems/primary/pri-problem-000018.html",
+    "title": "第431回 1次 問4",
+    "section": "",
+    "text": "\\(a\\) を実数とします．確率変数 \\(X\\) の確率密度関数 \\(f(x)\\) が\n\\[\nf(x)=\n\\begin{cases}\n0 & (x&lt;0),\\\\\na(e^{-2x}+e^{-x}) & (x\\geq0)\n\\end{cases}\n\\]\nであるとき，次の問いに答えなさい．ただし，\\(e\\) は自然対数の底を表します．\n1 \\(a\\) の値を求めなさい．\n2 \\(X\\) の期待値 \\(E(X)\\) を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000018.html#問題",
+    "href": "problems/primary/pri-problem-000018.html#問題",
+    "title": "第431回 1次 問4",
+    "section": "",
+    "text": "\\(a\\) を実数とします．確率変数 \\(X\\) の確率密度関数 \\(f(x)\\) が\n\\[\nf(x)=\n\\begin{cases}\n0 & (x&lt;0),\\\\\na(e^{-2x}+e^{-x}) & (x\\geq0)\n\\end{cases}\n\\]\nであるとき，次の問いに答えなさい．ただし，\\(e\\) は自然対数の底を表します．\n1 \\(a\\) の値を求めなさい．\n2 \\(X\\) の期待値 \\(E(X)\\) を求めなさい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000018.html#必要な知識",
+    "href": "problems/primary/pri-problem-000018.html#必要な知識",
+    "title": "第431回 1次 問4",
+    "section": "必要な知識",
+    "text": "必要な知識\n\n連続確率変数\n期待値"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000018.html#必要な発想",
+    "href": "problems/primary/pri-problem-000018.html#必要な発想",
+    "title": "第431回 1次 問4",
+    "section": "必要な発想",
+    "text": "必要な発想\nまず，確率密度関数の全積分が \\(1\\) になる条件から \\(a\\) を決める． 期待値は，得られた \\(a\\) を使って \\(\\displaystyle\\int_0^\\infty xf(x)\\,dx\\) を計算する．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000018.html#解答",
+    "href": "problems/primary/pri-problem-000018.html#解答",
+    "title": "第431回 1次 問4",
+    "section": "解答",
+    "text": "解答\n\n1\n確率密度関数の全積分は \\(1\\) だから，\n\\[\n\\begin{aligned}\n1\n&=\\int_0^\\infty a(e^{-2x}+e^{-x})\\,dx\\\\\n&=a\\left(\\frac12+1\\right)\\\\\n&=\\frac32a\n\\end{aligned}\n\\]\nである．したがって，\n\\[\n\\boxed{a=\\frac23}\n\\]\nとなる．\n\n\n2\n\\(\\lambda&gt;0\\) に対して\n\\[\n\\int_0^\\infty xe^{-\\lambda x}\\,dx=\\frac1{\\lambda^2}\n\\]\nであるから，\n\\[\n\\begin{aligned}\nE(X)\n&=\\int_0^\\infty x\\frac23(e^{-2x}+e^{-x})\\,dx\\\\\n&=\\frac23\\left(\\frac1{2^2}+1\\right)\\\\\n&=\\frac23\\cdot\\frac54\\\\\n&=\\frac56\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{E(X)=\\frac56}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000018.html#コメント",
+    "href": "problems/primary/pri-problem-000018.html#コメント",
+    "title": "第431回 1次 問4",
+    "section": "コメント",
+    "text": "コメント\n\\(a\\) は確率密度関数の正規化定数です．期待値の計算へ進む前に，必ず全確率が \\(1\\) になる条件を使います．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000025.html",
+    "href": "problems/primary/pri-problem-000025.html",
+    "title": "第440回 1次 問4",
+    "section": "",
+    "text": "次の問いに答えなさい．\n1 \\(\\dfrac1{1+2x}\\) をマクローリン展開したときの \\(x^3\\) の係数を求めなさい．\n2 \\(\\dfrac{\\log_e(1+3x)}{1+2x}\\) をマクローリン展開したときの \\(x^3\\) の係数を求めなさい．ただし，\\(e\\) は自然対数の底を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000025.html#問題",
+    "href": "problems/primary/pri-problem-000025.html#問題",
+    "title": "第440回 1次 問4",
+    "section": "",
+    "text": "次の問いに答えなさい．\n1 \\(\\dfrac1{1+2x}\\) をマクローリン展開したときの \\(x^3\\) の係数を求めなさい．\n2 \\(\\dfrac{\\log_e(1+3x)}{1+2x}\\) をマクローリン展開したときの \\(x^3\\) の係数を求めなさい．ただし，\\(e\\) は自然対数の底を表します．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000025.html#必要な知識",
+    "href": "problems/primary/pri-problem-000025.html#必要な知識",
+    "title": "第440回 1次 問4",
+    "section": "必要な知識",
+    "text": "必要な知識\n\nマクローリン展開"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000025.html#必要な発想",
+    "href": "problems/primary/pri-problem-000025.html#必要な発想",
+    "title": "第440回 1次 問4",
+    "section": "必要な発想",
+    "text": "必要な発想\n1は等比級数，2は対数の展開と等比級数の積を使う． \\(x^3\\) を作る項だけを拾えば，必要以上に高い次数まで展開しなくてよい．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000025.html#解答",
+    "href": "problems/primary/pri-problem-000025.html#解答",
+    "title": "第440回 1次 問4",
+    "section": "解答",
+    "text": "解答\n\n1\n等比級数より，\n\\[\n\\frac1{1+2x}\n=1-2x+4x^2-8x^3+\\cdots\n\\]\nだから，\\(x^3\\) の係数は\n\\[\n\\boxed{-8}\n\\]\nである．\n\n\n2\n\\[\n\\log_e(1+3x)\n=3x-\\frac92x^2+9x^3+\\cdots\n\\]\nであるから，\n\\[\n\\begin{aligned}\n\\frac{\\log_e(1+3x)}{1+2x}\n&=\n\\left(3x-\\frac92x^2+9x^3+\\cdots\\right)\n\\left(1-2x+4x^2-8x^3+\\cdots\\right)\n\\end{aligned}\n\\]\nとなる．\\(x^3\\) の係数は，\n\\[\n3\\cdot4+\\left(-\\frac92\\right)(-2)+9\\cdot1\n=12+9+9\n=30\n\\]\nだから，\n\\[\n\\boxed{30}\n\\]\nである．"
+  },
+  {
+    "objectID": "problems/primary/pri-problem-000025.html#コメント",
+    "href": "problems/primary/pri-problem-000025.html#コメント",
+    "title": "第440回 1次 問4",
+    "section": "コメント",
+    "text": "コメント\n積の \\(x^3\\) の係数は，次数の和が \\(3\\) になる組合せから生じます．各級数を並べて，必要な組だけを拾うと計算が明確になります．"
+  },
+  {
+    "objectID": "problems/secondary/sec-problem-000003.html",
+    "href": "problems/secondary/sec-problem-000003.html",
+    "title": "出典不明01 問3",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000002.html#問題",
-    "href": "problems/secondary/sec-problem-000002.html#問題",
-    "title": "出典不明01 問2",
+    "objectID": "problems/secondary/sec-problem-000003.html#問題",
+    "href": "problems/secondary/sec-problem-000003.html#問題",
+    "title": "出典不明01 問3",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000002.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000002.html#必要な発想",
-    "title": "出典不明01 問2",
+    "objectID": "problems/secondary/sec-problem-000003.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000003.html#必要な発想",
+    "title": "出典不明01 問3",
     "section": "必要な発想",
     "text": "必要な発想\nここに必要な発想を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000002.html#解答",
-    "href": "problems/secondary/sec-problem-000002.html#解答",
-    "title": "出典不明01 問2",
+    "objectID": "problems/secondary/sec-problem-000003.html#解答",
+    "href": "problems/secondary/sec-problem-000003.html#解答",
+    "title": "出典不明01 問3",
     "section": "解答",
     "text": "解答\nここに解答を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000002.html#コメント",
-    "href": "problems/secondary/sec-problem-000002.html#コメント",
-    "title": "出典不明01 問2",
+    "objectID": "problems/secondary/sec-problem-000003.html#コメント",
+    "href": "problems/secondary/sec-problem-000003.html#コメント",
+    "title": "出典不明01 問3",
     "section": "コメント",
     "text": "コメント\nここにコメントを書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000005.html",
-    "href": "problems/secondary/sec-problem-000005.html",
-    "title": "出典不明01 問5",
+    "objectID": "problems/secondary/sec-problem-000001.html",
+    "href": "problems/secondary/sec-problem-000001.html",
+    "title": "出典不明01 問1",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000005.html#問題",
-    "href": "problems/secondary/sec-problem-000005.html#問題",
-    "title": "出典不明01 問5",
+    "objectID": "problems/secondary/sec-problem-000001.html#問題",
+    "href": "problems/secondary/sec-problem-000001.html#問題",
+    "title": "出典不明01 問1",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000005.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000005.html#必要な発想",
-    "title": "出典不明01 問5",
+    "objectID": "problems/secondary/sec-problem-000001.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000001.html#必要な発想",
+    "title": "出典不明01 問1",
     "section": "必要な発想",
     "text": "必要な発想\nここに必要な発想を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000005.html#解答",
-    "href": "problems/secondary/sec-problem-000005.html#解答",
-    "title": "出典不明01 問5",
+    "objectID": "problems/secondary/sec-problem-000001.html#解答",
+    "href": "problems/secondary/sec-problem-000001.html#解答",
+    "title": "出典不明01 問1",
     "section": "解答",
     "text": "解答\nここに解答を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000005.html#コメント",
-    "href": "problems/secondary/sec-problem-000005.html#コメント",
-    "title": "出典不明01 問5",
+    "objectID": "problems/secondary/sec-problem-000001.html#コメント",
+    "href": "problems/secondary/sec-problem-000001.html#コメント",
+    "title": "出典不明01 問1",
     "section": "コメント",
     "text": "コメント\nここにコメントを書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000006.html",
-    "href": "problems/secondary/sec-problem-000006.html",
-    "title": "出典不明01 問6",
+    "objectID": "problems/secondary/sec-problem-000004.html",
+    "href": "problems/secondary/sec-problem-000004.html",
+    "title": "出典不明01 問4",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000006.html#問題",
-    "href": "problems/secondary/sec-problem-000006.html#問題",
-    "title": "出典不明01 問6",
+    "objectID": "problems/secondary/sec-problem-000004.html#問題",
+    "href": "problems/secondary/sec-problem-000004.html#問題",
+    "title": "出典不明01 問4",
     "section": "",
     "text": "2次試験のサンプル問題．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000006.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000006.html#必要な発想",
-    "title": "出典不明01 問6",
+    "objectID": "problems/secondary/sec-problem-000004.html#必要な発想",
+    "href": "problems/secondary/sec-problem-000004.html#必要な発想",
+    "title": "出典不明01 問4",
     "section": "必要な発想",
     "text": "必要な発想\nここに必要な発想を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000006.html#解答",
-    "href": "problems/secondary/sec-problem-000006.html#解答",
-    "title": "出典不明01 問6",
+    "objectID": "problems/secondary/sec-problem-000004.html#解答",
+    "href": "problems/secondary/sec-problem-000004.html#解答",
+    "title": "出典不明01 問4",
     "section": "解答",
     "text": "解答\nここに解答を書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000006.html#コメント",
-    "href": "problems/secondary/sec-problem-000006.html#コメント",
-    "title": "出典不明01 問6",
+    "objectID": "problems/secondary/sec-problem-000004.html#コメント",
+    "href": "problems/secondary/sec-problem-000004.html#コメント",
+    "title": "出典不明01 問4",
     "section": "コメント",
     "text": "コメント\nここにコメントを書く．"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000007.html",
-    "href": "problems/secondary/sec-problem-000007.html",
-    "title": "出典不明01 問7",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "数検1級 解説ノート",
     "section": "",
-    "text": "2次試験のサンプル問題．"
+    "text": "数検1級の過去問解説と、関連する数学知識を整理するためのサイトです。"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000007.html#問題",
-    "href": "problems/secondary/sec-problem-000007.html#問題",
-    "title": "出典不明01 問7",
+    "objectID": "index.html#試験別",
+    "href": "index.html#試験別",
+    "title": "数検1級 解説ノート",
+    "section": "試験別",
+    "text": "試験別\n\n1次試験\n2次試験"
+  },
+  {
+    "objectID": "knowledge/index.html",
+    "href": "knowledge/index.html",
+    "title": "知識",
     "section": "",
-    "text": "2次試験のサンプル問題．"
+    "text": "過去問で使う知識を、1次試験と2次試験に分けて体系的に整理しています。分類名を選ぶと、解説・下位概念・関連問題を確認できます。\n\n\n\n  \n    1次\n    2次\n  \n\n  \n    \n      知識を検索\n      \n    \n  \n\n  \n  知識データを読み込んでいます…\n  \n\n  このページを表示するにはJavaScriptを有効にしてください。"
   },
   {
-    "objectID": "problems/secondary/sec-problem-000007.html#必要な発想",
-    "href": "problems/secondary/sec-problem-000007.html#必要な発想",
-    "title": "出典不明01 問7",
-    "section": "必要な発想",
-    "text": "必要な発想\nここに必要な発想を書く．"
-  },
-  {
-    "objectID": "problems/secondary/sec-problem-000007.html#解答",
-    "href": "problems/secondary/sec-problem-000007.html#解答",
-    "title": "出典不明01 問7",
-    "section": "解答",
-    "text": "解答\nここに解答を書く．"
-  },
-  {
-    "objectID": "problems/secondary/sec-problem-000007.html#コメント",
-    "href": "problems/secondary/sec-problem-000007.html#コメント",
-    "title": "出典不明01 問7",
-    "section": "コメント",
-    "text": "コメント\nここにコメントを書く．"
-  },
-  {
-    "objectID": "tags/index.html",
-    "href": "tags/index.html",
-    "title": "タグ・索引",
+    "objectID": "knowledge/primary/vector.html",
+    "href": "knowledge/primary/vector.html",
+    "title": "ベクトル",
     "section": "",
-    "text": "問題に付けられたタグを、階層または一覧で確認できます。タグを選ぶと対応する知識ページへ移動します。\n\n\n\n  \n    1次\n    2次\n  \n\n  \n    \n      タグを検索\n      \n    \n    \n      階層\n      一覧\n    \n  \n\n  \n  タグデータを読み込んでいます…\n  \n\n  このページを表示するにはJavaScriptを有効にしてください。"
+    "text": "1次試験における「ベクトル」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/function.html",
-    "href": "knowledge/primary/function.html",
-    "title": "関数",
-    "section": "",
-    "text": "1次試験における「関数」についてまとめます．"
-  },
-  {
-    "objectID": "knowledge/primary/function.html#概要",
-    "href": "knowledge/primary/function.html#概要",
-    "title": "関数",
+    "objectID": "knowledge/primary/vector.html#概要",
+    "href": "knowledge/primary/vector.html#概要",
+    "title": "ベクトル",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/function.html#基本事項",
-    "href": "knowledge/primary/function.html#基本事項",
-    "title": "関数",
+    "objectID": "knowledge/primary/vector.html#基本事項",
+    "href": "knowledge/primary/vector.html#基本事項",
+    "title": "ベクトル",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/function.html#例題",
-    "href": "knowledge/primary/function.html#例題",
-    "title": "関数",
+    "objectID": "knowledge/primary/vector.html#例題",
+    "href": "knowledge/primary/vector.html#例題",
+    "title": "ベクトル",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/function.html#関連問題",
-    "href": "knowledge/primary/function.html#関連問題",
-    "title": "関数",
+    "objectID": "knowledge/primary/vector.html#関連問題",
+    "href": "knowledge/primary/vector.html#関連問題",
+    "title": "ベクトル",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/prime-factorization.html",
-    "href": "knowledge/primary/prime-factorization.html",
-    "title": "素因数分解",
+    "objectID": "knowledge/primary/modular-arithmetic.html",
+    "href": "knowledge/primary/modular-arithmetic.html",
+    "title": "合同式・剰余",
     "section": "",
-    "text": "素因数分解とは，\\(2\\) 以上の整数を素数の積で表すことである．大きな整数を直接割り続けるだけでなく，式の形に応じて因数分解の公式を先に使うと計算しやすい．"
+    "text": "1次試験における「合同式・剰余」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/prime-factorization.html#概要",
-    "href": "knowledge/primary/prime-factorization.html#概要",
-    "title": "素因数分解",
-    "section": "",
-    "text": "素因数分解とは，\\(2\\) 以上の整数を素数の積で表すことである．大きな整数を直接割り続けるだけでなく，式の形に応じて因数分解の公式を先に使うと計算しやすい．"
-  },
-  {
-    "objectID": "knowledge/primary/prime-factorization.html#基本事項",
-    "href": "knowledge/primary/prime-factorization.html#基本事項",
-    "title": "素因数分解",
-    "section": "基本事項",
-    "text": "基本事項\n\\(2\\) 以上の整数は，因数の順序を除いて一意に素因数分解できる．素因数を探すときは，まず次の基本を確認する．\n\n偶数なら \\(2\\) で割れる．\n各桁の和が \\(3\\) の倍数なら \\(3\\) で割れる．\n一の位が \\(0\\) または \\(5\\) なら \\(5\\) で割れる．\n合成数 \\(N\\) には \\(\\sqrt N\\) 以下の素因数がある．\n\n数が特別な形をしている場合は，\n\\[\na^2-b^2=(a-b)(a+b)\n\\]\n\\[\na^3+b^3=(a+b)(a^2-ab+b^2)\n\\]\n\\[\na^3-b^3=(a-b)(a^2+ab+b^2)\n\\]\nなどの公式を先に検討する．"
-  },
-  {
-    "objectID": "knowledge/primary/prime-factorization.html#基本例",
-    "href": "knowledge/primary/prime-factorization.html#基本例",
-    "title": "素因数分解",
-    "section": "基本例",
-    "text": "基本例\n\n小さい素数から調べる\n\\(1386\\) を素因数分解する．偶数なので \\(2\\) で割り，各桁の和が \\(18\\) なのでさらに \\(3\\) で割れる．\n\\[\n1386=2\\cdot693=2\\cdot3^2\\cdot77\n=2\\cdot3^2\\cdot7\\cdot11\n\\]\nとなる．\n\n\n式の形を利用する\n\\(1001\\) は\n\\[\n1001=10^3+1\n\\]\nと見られるので，\n\\[\n\\begin{aligned}\n1001\n&=(10+1)(10^2-10+1)\\\\\n&=11\\cdot91\\\\\n&=7\\cdot11\\cdot13\n\\end{aligned}\n\\]\nとなる．大きな数ほど，割り算を始める前に和・差・累乗の形を探すことが重要である．"
-  },
-  {
-    "objectID": "knowledge/primary/maclaurin-expansion.html",
-    "href": "knowledge/primary/maclaurin-expansion.html",
-    "title": "マクローリン展開",
-    "section": "",
-    "text": "1次試験における「マクローリン展開」についてまとめます．"
-  },
-  {
-    "objectID": "knowledge/primary/maclaurin-expansion.html#概要",
-    "href": "knowledge/primary/maclaurin-expansion.html#概要",
-    "title": "マクローリン展開",
+    "objectID": "knowledge/primary/modular-arithmetic.html#概要",
+    "href": "knowledge/primary/modular-arithmetic.html#概要",
+    "title": "合同式・剰余",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/maclaurin-expansion.html#基本事項",
-    "href": "knowledge/primary/maclaurin-expansion.html#基本事項",
-    "title": "マクローリン展開",
+    "objectID": "knowledge/primary/modular-arithmetic.html#基本事項",
+    "href": "knowledge/primary/modular-arithmetic.html#基本事項",
+    "title": "合同式・剰余",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/maclaurin-expansion.html#例題",
-    "href": "knowledge/primary/maclaurin-expansion.html#例題",
-    "title": "マクローリン展開",
+    "objectID": "knowledge/primary/modular-arithmetic.html#例題",
+    "href": "knowledge/primary/modular-arithmetic.html#例題",
+    "title": "合同式・剰余",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/maclaurin-expansion.html#関連問題",
-    "href": "knowledge/primary/maclaurin-expansion.html#関連問題",
-    "title": "マクローリン展開",
+    "objectID": "knowledge/primary/modular-arithmetic.html#関連問題",
+    "href": "knowledge/primary/modular-arithmetic.html#関連問題",
+    "title": "合同式・剰余",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/matrix.html",
-    "href": "knowledge/primary/matrix.html",
-    "title": "行列",
+    "objectID": "knowledge/primary/continuous-random-variable.html",
+    "href": "knowledge/primary/continuous-random-variable.html",
+    "title": "連続確率変数",
     "section": "",
-    "text": "1次試験における「行列」についてまとめます．"
+    "text": "1次試験における「連続確率変数」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/matrix.html#概要",
-    "href": "knowledge/primary/matrix.html#概要",
-    "title": "行列",
+    "objectID": "knowledge/primary/continuous-random-variable.html#概要",
+    "href": "knowledge/primary/continuous-random-variable.html#概要",
+    "title": "連続確率変数",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/matrix.html#基本事項",
-    "href": "knowledge/primary/matrix.html#基本事項",
-    "title": "行列",
+    "objectID": "knowledge/primary/continuous-random-variable.html#基本事項",
+    "href": "knowledge/primary/continuous-random-variable.html#基本事項",
+    "title": "連続確率変数",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/matrix.html#例題",
-    "href": "knowledge/primary/matrix.html#例題",
-    "title": "行列",
+    "objectID": "knowledge/primary/continuous-random-variable.html#例題",
+    "href": "knowledge/primary/continuous-random-variable.html#例題",
+    "title": "連続確率変数",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/matrix.html#関連問題",
-    "href": "knowledge/primary/matrix.html#関連問題",
-    "title": "行列",
+    "objectID": "knowledge/primary/continuous-random-variable.html#関連問題",
+    "href": "knowledge/primary/continuous-random-variable.html#関連問題",
+    "title": "連続確率変数",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/double-integral.html",
-    "href": "knowledge/primary/double-integral.html",
-    "title": "重積分",
+    "objectID": "knowledge/primary/algebra.html",
+    "href": "knowledge/primary/algebra.html",
+    "title": "代数",
     "section": "",
-    "text": "重積分は，平面上の領域で二変数関数を積分する操作である．領域を一方の変数の範囲と，その値に応じたもう一方の変数の範囲で表し，累次積分として計算する．"
+    "text": "1次試験における「代数」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/double-integral.html#概要",
-    "href": "knowledge/primary/double-integral.html#概要",
-    "title": "重積分",
-    "section": "",
-    "text": "重積分は，平面上の領域で二変数関数を積分する操作である．領域を一方の変数の範囲と，その値に応じたもう一方の変数の範囲で表し，累次積分として計算する．"
-  },
-  {
-    "objectID": "knowledge/primary/double-integral.html#基本事項",
-    "href": "knowledge/primary/double-integral.html#基本事項",
-    "title": "重積分",
-    "section": "基本事項",
-    "text": "基本事項\n領域 \\(D\\) が\n\\[\nD=\\{(x,y)\\mid a\\leq y\\leq b,\\ g(y)\\leq x\\leq h(y)\\}\n\\]\nと表されるとき，\n\\[\n\\iint_D f(x,y)\\,dx\\,dy\n=\n\\int_a^b\\int_{g(y)}^{h(y)}f(x,y)\\,dx\\,dy\n\\]\nである．内側の積分では \\(y\\) を定数として \\(x\\) について積分する．\n積分順序を逆にすると計算が簡単になる場合もある．そのときは領域を図示し，新しい順序に合わせて積分区間を書き直す．"
-  },
-  {
-    "objectID": "knowledge/primary/double-integral.html#基本例",
-    "href": "knowledge/primary/double-integral.html#基本例",
-    "title": "重積分",
-    "section": "基本例",
-    "text": "基本例\n\\[\nD=\\{(x,y)\\mid0\\leq x\\leq1,\\ 0\\leq y\\leq x\\}\n\\]\n上で \\(x+y\\) を積分する．\n\\[\n\\begin{aligned}\n\\iint_D(x+y)\\,dy\\,dx\n&=\\int_0^1\\int_0^x(x+y)\\,dy\\,dx\\\\\n&=\\int_0^1\\left(x^2+\\frac{x^2}{2}\\right)\\,dx\\\\\n&=\\frac12\n\\end{aligned}\n\\]\nとなる．"
-  },
-  {
-    "objectID": "knowledge/primary/series.html",
-    "href": "knowledge/primary/series.html",
-    "title": "無限級数",
-    "section": "",
-    "text": "無限級数は，数列の項を順に加えた\n\\[\n\\sum_{n=1}^{\\infty}a_n\n\\]\nの形の式である．有限個までの和である部分和を調べ，その極限によって級数の和を定める．"
-  },
-  {
-    "objectID": "knowledge/primary/series.html#概要",
-    "href": "knowledge/primary/series.html#概要",
-    "title": "無限級数",
-    "section": "",
-    "text": "無限級数は，数列の項を順に加えた\n\\[\n\\sum_{n=1}^{\\infty}a_n\n\\]\nの形の式である．有限個までの和である部分和を調べ，その極限によって級数の和を定める．"
-  },
-  {
-    "objectID": "knowledge/primary/series.html#基本事項",
-    "href": "knowledge/primary/series.html#基本事項",
-    "title": "無限級数",
-    "section": "基本事項",
-    "text": "基本事項\n第 \\(N\\) 項までの部分和を\n\\[\nS_N=\\sum_{n=1}^{N}a_n\n\\]\nとする．極限\n\\[\n\\lim_{N\\to\\infty}S_N=S\n\\]\nが有限な値として存在するとき，級数は収束し，その和を \\(S\\) とする．極限が存在しないときは発散する．\n特に，等比級数は \\(|r|&lt;1\\) のとき，\n\\[\n\\sum_{n=0}^{\\infty}ar^n=\\frac{a}{1-r}\n\\]\nとなる．また，一般項を隣り合う項の差に直せる級数は，望遠和として計算できる．"
-  },
-  {
-    "objectID": "knowledge/primary/series.html#基本例",
-    "href": "knowledge/primary/series.html#基本例",
-    "title": "無限級数",
-    "section": "基本例",
-    "text": "基本例\n\\[\n\\sum_{n=1}^{\\infty}\\frac{1}{2^n}\n\\]\nでは，第 \\(N\\) 項までの和は\n\\[\nS_N=1-\\frac1{2^N}\n\\]\nである．したがって，\n\\[\n\\lim_{N\\to\\infty}S_N=1\n\\]\nより，級数の和は \\(1\\) となる．"
-  },
-  {
-    "objectID": "knowledge/primary/system-of-equations.html",
-    "href": "knowledge/primary/system-of-equations.html",
-    "title": "連立方程式",
-    "section": "",
-    "text": "1次試験における「連立方程式」についてまとめます．"
-  },
-  {
-    "objectID": "knowledge/primary/system-of-equations.html#概要",
-    "href": "knowledge/primary/system-of-equations.html#概要",
-    "title": "連立方程式",
+    "objectID": "knowledge/primary/algebra.html#概要",
+    "href": "knowledge/primary/algebra.html#概要",
+    "title": "代数",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/system-of-equations.html#基本事項",
-    "href": "knowledge/primary/system-of-equations.html#基本事項",
-    "title": "連立方程式",
+    "objectID": "knowledge/primary/algebra.html#基本事項",
+    "href": "knowledge/primary/algebra.html#基本事項",
+    "title": "代数",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/system-of-equations.html#例題",
-    "href": "knowledge/primary/system-of-equations.html#例題",
-    "title": "連立方程式",
+    "objectID": "knowledge/primary/algebra.html#例題",
+    "href": "knowledge/primary/algebra.html#例題",
+    "title": "代数",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/system-of-equations.html#関連問題",
-    "href": "knowledge/primary/system-of-equations.html#関連問題",
-    "title": "連立方程式",
+    "objectID": "knowledge/primary/algebra.html#関連問題",
+    "href": "knowledge/primary/algebra.html#関連問題",
+    "title": "代数",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/telescoping-series.html",
+    "href": "knowledge/primary/telescoping-series.html",
+    "title": "望遠和",
+    "section": "",
+    "text": "望遠和は，一般項を隣り合う項の差に変形することで，中間の項が打ち消し合う和である．無限級数では，最初から無限個を扱わず，有限の部分和を作ってから極限を取る．"
+  },
+  {
+    "objectID": "knowledge/primary/telescoping-series.html#概要",
+    "href": "knowledge/primary/telescoping-series.html#概要",
+    "title": "望遠和",
+    "section": "",
+    "text": "望遠和は，一般項を隣り合う項の差に変形することで，中間の項が打ち消し合う和である．無限級数では，最初から無限個を扱わず，有限の部分和を作ってから極限を取る．"
+  },
+  {
+    "objectID": "knowledge/primary/telescoping-series.html#基本事項",
+    "href": "knowledge/primary/telescoping-series.html#基本事項",
+    "title": "望遠和",
+    "section": "基本事項",
+    "text": "基本事項\n一般項が\n\\[\na_n=b_n-b_{n-1}\n\\]\nと表せるとき，第 \\(N\\) 項までの和は\n\\[\n\\begin{aligned}\n\\sum_{n=1}^{N}a_n\n&=(b_1-b_0)+(b_2-b_1)+\\cdots+(b_N-b_{N-1})\\\\\n&=b_N-b_0\n\\end{aligned}\n\\]\nとなる．途中の \\(b_1,b_2,\\ldots,b_{N-1}\\) がすべて打ち消し合う．\n分数では部分分数分解，三角関数では加法定理を逆向きに使うと，差の形が現れることがある．"
+  },
+  {
+    "objectID": "knowledge/primary/telescoping-series.html#基本例",
+    "href": "knowledge/primary/telescoping-series.html#基本例",
+    "title": "望遠和",
+    "section": "基本例",
+    "text": "基本例\n\\[\n\\sum_{n=1}^{\\infty}\\frac{1}{n(n+1)}\n\\]\nを考える．\n\\[\n\\frac{1}{n(n+1)}=\\frac1n-\\frac1{n+1}\n\\]\nだから，\n\\[\n\\begin{aligned}\nS_N\n&=\\sum_{n=1}^{N}\\left(\\frac1n-\\frac1{n+1}\\right)\\\\\n&=1-\\frac1{N+1}\n\\end{aligned}\n\\]\nである．\\(N\\to\\infty\\) とすれば，\n\\[\n\\sum_{n=1}^{\\infty}\\frac{1}{n(n+1)}=1\n\\]\nとなる．"
+  },
+  {
+    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html",
+    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html",
+    "title": "1階線形非斉次微分方程式",
+    "section": "",
+    "text": "1次試験における「1階線形非斉次微分方程式」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#概要",
+    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#概要",
+    "title": "1階線形非斉次微分方程式",
+    "section": "概要",
+    "text": "概要\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#基本事項",
+    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#基本事項",
+    "title": "1階線形非斉次微分方程式",
+    "section": "基本事項",
+    "text": "基本事項\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#例題",
+    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#例題",
+    "title": "1階線形非斉次微分方程式",
+    "section": "例題",
+    "text": "例題\n未記入．"
+  },
+  {
+    "objectID": "knowledge/primary/first-order-nonhomogeneous-ode.html#関連問題",
+    "href": "knowledge/primary/first-order-nonhomogeneous-ode.html#関連問題",
+    "title": "1階線形非斉次微分方程式",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/binomial-sum.html",
+    "href": "knowledge/primary/binomial-sum.html",
+    "title": "二項係数を含む和",
+    "section": "",
+    "text": "二項係数を含む有限和の基本的な処理をまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/binomial-sum.html#基本事項",
+    "href": "knowledge/primary/binomial-sum.html#基本事項",
+    "title": "二項係数を含む和",
+    "section": "基本事項",
+    "text": "基本事項\n二項定理\n\\[\n(1+x)^n=\\sum_{k=0}^n {n\\choose k}x^k\n\\]\nを使うと，\\({n\\choose k}\\) を含む和をまとめて扱えます．係数に \\(k\\) や \\(k(k-1)\\) が付く場合は，両辺を微分します．\n一方，\\(\\dfrac1{k+m}\\) が付く場合は\n\\[\n\\frac1{k+m}=\\int_0^1t^{k+m-1}\\,dt\n\\]\nと表すと，積分の内側で二項定理を使えます．"
+  },
+  {
+    "objectID": "knowledge/primary/binomial-sum.html#例題",
+    "href": "knowledge/primary/binomial-sum.html#例題",
+    "title": "二項係数を含む和",
+    "section": "例題",
+    "text": "例題\n\\[\n\\sum_{k=0}^n\\frac{(-1)^k}{k+1}{n\\choose k}\n\\]\nを求めます．積分表示を使うと，\n\\[\n\\begin{aligned}\n\\sum_{k=0}^n\\frac{(-1)^k}{k+1}{n\\choose k}\n&=\\int_0^1\\sum_{k=0}^n{n\\choose k}(-t)^k\\,dt\\\\\n&=\\int_0^1(1-t)^n\\,dt\\\\\n&=\\frac1{n+1}\n\\end{aligned}\n\\]\nとなります．"
+  },
+  {
+    "objectID": "knowledge/primary/binomial-sum.html#関連問題",
+    "href": "knowledge/primary/binomial-sum.html#関連問題",
+    "title": "二項係数を含む和",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
@@ -2079,37 +2849,30 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/differential-equation.html",
-    "href": "knowledge/primary/differential-equation.html",
-    "title": "微分方程式",
+    "objectID": "knowledge/primary/radius-of-convergence.html",
+    "href": "knowledge/primary/radius-of-convergence.html",
+    "title": "収束半径",
     "section": "",
-    "text": "1次試験における「微分方程式」についてまとめます．"
+    "text": "べき級数の収束半径を求める基本的な方法をまとめます．"
   },
   {
-    "objectID": "knowledge/primary/differential-equation.html#概要",
-    "href": "knowledge/primary/differential-equation.html#概要",
-    "title": "微分方程式",
-    "section": "概要",
-    "text": "概要\n未記入．"
-  },
-  {
-    "objectID": "knowledge/primary/differential-equation.html#基本事項",
-    "href": "knowledge/primary/differential-equation.html#基本事項",
-    "title": "微分方程式",
+    "objectID": "knowledge/primary/radius-of-convergence.html#基本事項",
+    "href": "knowledge/primary/radius-of-convergence.html#基本事項",
+    "title": "収束半径",
     "section": "基本事項",
-    "text": "基本事項\n未記入．"
+    "text": "基本事項\nべき級数\n\\[\n\\sum_{n=0}^{\\infty}a_nx^n\n\\]\nについて，極限\n\\[\n\\lim_{n\\to\\infty}\\left|\\frac{a_n}{a_{n+1}}\\right|=R\n\\]\nが存在するとき，収束半径は \\(R\\) です．階乗を含む係数では，隣り合う項の比を取ると多くの因子が消えます．\nまた，\n\\[\n\\limsup_{n\\to\\infty}\\sqrt[n]{|a_n|}=L\n\\]\nなら，収束半径は \\(R=1/L\\) です．"
   },
   {
-    "objectID": "knowledge/primary/differential-equation.html#例題",
-    "href": "knowledge/primary/differential-equation.html#例題",
-    "title": "微分方程式",
+    "objectID": "knowledge/primary/radius-of-convergence.html#例題",
+    "href": "knowledge/primary/radius-of-convergence.html#例題",
+    "title": "収束半径",
     "section": "例題",
-    "text": "例題\n未記入．"
+    "text": "例題\n\\[\n\\sum_{n=0}^{\\infty}\\frac{(2n)!}{(n!)^2}x^n\n\\]\nでは，\n\\[\n\\frac{a_n}{a_{n+1}}\n=\\frac{(n+1)^2}{(2n+1)(2n+2)}\n\\longrightarrow\\frac14\n\\]\nだから，収束半径は \\(\\dfrac14\\) です．"
   },
   {
-    "objectID": "knowledge/primary/differential-equation.html#関連問題",
-    "href": "knowledge/primary/differential-equation.html#関連問題",
-    "title": "微分方程式",
+    "objectID": "knowledge/primary/radius-of-convergence.html#関連問題",
+    "href": "knowledge/primary/radius-of-convergence.html#関連問題",
+    "title": "収束半径",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
@@ -2149,6 +2912,34 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
+    "objectID": "knowledge/primary/cross-product.html",
+    "href": "knowledge/primary/cross-product.html",
+    "title": "外積・スカラー三重積",
+    "section": "",
+    "text": "空間ベクトルの外積とスカラー三重積についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/cross-product.html#基本事項",
+    "href": "knowledge/primary/cross-product.html#基本事項",
+    "title": "外積・スカラー三重積",
+    "section": "基本事項",
+    "text": "基本事項\n\\(\\boldsymbol a=(a_1,a_2,a_3)\\)，\\(\\boldsymbol b=(b_1,b_2,b_3)\\) の外積は\n\\[\n\\boldsymbol a\\times\\boldsymbol b\n=\n\\begin{pmatrix}\na_2b_3-a_3b_2\\\\\na_3b_1-a_1b_3\\\\\na_1b_2-a_2b_1\n\\end{pmatrix}\n\\]\nで，\\(\\boldsymbol a\\) と \\(\\boldsymbol b\\) の両方に垂直です．順序を逆にすると，\n\\[\n\\boldsymbol b\\times\\boldsymbol a\n=-\\boldsymbol a\\times\\boldsymbol b\n\\]\nとなります．\nスカラー三重積には\n\\[\n\\boldsymbol a\\cdot(\\boldsymbol b\\times\\boldsymbol c)\n=\\boldsymbol b\\cdot(\\boldsymbol c\\times\\boldsymbol a)\n=\\boldsymbol c\\cdot(\\boldsymbol a\\times\\boldsymbol b)\n\\]\nという巡回性があります．二つを入れ替えると符号が反転します．"
+  },
+  {
+    "objectID": "knowledge/primary/cross-product.html#例題",
+    "href": "knowledge/primary/cross-product.html#例題",
+    "title": "外積・スカラー三重積",
+    "section": "例題",
+    "text": "例題\n\\(\\boldsymbol a=(1,0,0)\\)，\\(\\boldsymbol b=(0,1,0)\\)，\\(\\boldsymbol c=(0,0,2)\\) なら，\n\\[\n\\boldsymbol a\\cdot(\\boldsymbol b\\times\\boldsymbol c)=2\n\\]\nです．これは3本のベクトルが作る平行六面体の符号付き体積でもあります．"
+  },
+  {
+    "objectID": "knowledge/primary/cross-product.html#関連問題",
+    "href": "knowledge/primary/cross-product.html#関連問題",
+    "title": "外積・スカラー三重積",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
     "objectID": "knowledge/primary/number-theory.html",
     "href": "knowledge/primary/number-theory.html",
     "title": "整数論",
@@ -2184,163 +2975,212 @@
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/equation.html",
-    "href": "knowledge/primary/equation.html",
-    "title": "方程式",
+    "objectID": "knowledge/primary/polynomial-value-and-roots.html",
+    "href": "knowledge/primary/polynomial-value-and-roots.html",
+    "title": "多項式の値と根",
     "section": "",
-    "text": "1次試験における「方程式」についてまとめます．"
+    "text": "多項式の根を一つずつ求めずに，根から作られた積を計算する方法をまとめます．"
   },
   {
-    "objectID": "knowledge/primary/equation.html#概要",
-    "href": "knowledge/primary/equation.html#概要",
-    "title": "方程式",
-    "section": "概要",
-    "text": "概要\n未記入．"
-  },
-  {
-    "objectID": "knowledge/primary/equation.html#基本事項",
-    "href": "knowledge/primary/equation.html#基本事項",
-    "title": "方程式",
+    "objectID": "knowledge/primary/polynomial-value-and-roots.html#基本事項",
+    "href": "knowledge/primary/polynomial-value-and-roots.html#基本事項",
+    "title": "多項式の値と根",
     "section": "基本事項",
-    "text": "基本事項\n未記入．"
+    "text": "基本事項\n最高次係数が \\(1\\) の \\(n\\) 次多項式 \\(P(x)\\) の根を \\(\\alpha_1,\\ldots,\\alpha_n\\) とすると，\n\\[\nP(x)=\\prod_{j=1}^n(x-\\alpha_j)\n\\]\nです．したがって，任意の数 \\(a\\) に対して\n\\[\nP(a)=\\prod_{j=1}^n(a-\\alpha_j)\n\\]\nとなります．求める積が \\(\\prod(\\alpha_j-a)\\) なら，因子ごとに符号を変えて\n\\[\n\\prod_{j=1}^n(\\alpha_j-a)=(-1)^nP(a)\n\\]\nとします．"
   },
   {
-    "objectID": "knowledge/primary/equation.html#例題",
-    "href": "knowledge/primary/equation.html#例題",
-    "title": "方程式",
+    "objectID": "knowledge/primary/polynomial-value-and-roots.html#例題",
+    "href": "knowledge/primary/polynomial-value-and-roots.html#例題",
+    "title": "多項式の値と根",
     "section": "例題",
-    "text": "例題\n未記入．"
+    "text": "例題\n\\(P(x)=x^3-2x+5\\) の根を \\(\\alpha,\\beta,\\gamma\\) とします．このとき，\n\\[\n(\\alpha-1)(\\beta-1)(\\gamma-1)\n=-P(1)=-4\n\\]\nです．根そのものを求める必要はありません．"
   },
   {
-    "objectID": "knowledge/primary/equation.html#関連問題",
-    "href": "knowledge/primary/equation.html#関連問題",
-    "title": "方程式",
+    "objectID": "knowledge/primary/polynomial-value-and-roots.html#関連問題",
+    "href": "knowledge/primary/polynomial-value-and-roots.html#関連問題",
+    "title": "多項式の値と根",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/chinese-remainder-theorem.html",
-    "href": "knowledge/primary/chinese-remainder-theorem.html",
-    "title": "中国剰余定理",
+    "objectID": "knowledge/primary/euler-theorem.html",
+    "href": "knowledge/primary/euler-theorem.html",
+    "title": "オイラーの定理",
     "section": "",
-    "text": "中国剰余定理は，互いに素な複数の法で得た余りを，一つの合同式へまとめるための定理である．大きな法を互いに素な因数へ分けて計算するときに用いる．"
+    "text": "オイラーの定理は，法と互いに素な数の累乗について，指数を小さくするための定理である．巨大な指数の余りや，整数の下数桁を求める問題でよく用いる．"
   },
   {
-    "objectID": "knowledge/primary/chinese-remainder-theorem.html#概要",
-    "href": "knowledge/primary/chinese-remainder-theorem.html#概要",
-    "title": "中国剰余定理",
+    "objectID": "knowledge/primary/euler-theorem.html#概要",
+    "href": "knowledge/primary/euler-theorem.html#概要",
+    "title": "オイラーの定理",
     "section": "",
-    "text": "中国剰余定理は，互いに素な複数の法で得た余りを，一つの合同式へまとめるための定理である．大きな法を互いに素な因数へ分けて計算するときに用いる．"
+    "text": "オイラーの定理は，法と互いに素な数の累乗について，指数を小さくするための定理である．巨大な指数の余りや，整数の下数桁を求める問題でよく用いる．"
   },
   {
-    "objectID": "knowledge/primary/chinese-remainder-theorem.html#基本事項",
-    "href": "knowledge/primary/chinese-remainder-theorem.html#基本事項",
-    "title": "中国剰余定理",
+    "objectID": "knowledge/primary/euler-theorem.html#基本事項",
+    "href": "knowledge/primary/euler-theorem.html#基本事項",
+    "title": "オイラーの定理",
     "section": "基本事項",
-    "text": "基本事項\n\\(\\gcd(m,n)=1\\) のとき，連立合同式\n\\[\n\\begin{cases}\nx\\equiv a\\pmod m,\\\\\nx\\equiv b\\pmod n\n\\end{cases}\n\\]\nを満たす \\(x\\) は存在し，法 \\(mn\\) でただ一つに決まる．\n実際に値を求めるときは，\\(x=a+mk\\) とおき，もう一方の合同式へ代入して \\(k\\) を決める方法が基本である．\n特に，両方の余りが同じ \\(r\\) なら，\n\\[\n\\begin{cases}\nx\\equiv r\\pmod m,\\\\\nx\\equiv r\\pmod n\n\\end{cases}\n\\quad\\Longrightarrow\\quad\nx\\equiv r\\pmod{mn}\n\\]\nとなる．\n法が互いに素でない場合はそのまま適用できない．少なくとも，二つの余りが \\(\\gcd(m,n)\\) を法として一致している必要がある．"
+    "text": "基本事項\n\\(\\gcd(a,n)=1\\) のとき，\n\\[\na^{\\varphi(n)}\\equiv1\\pmod n\n\\]\nが成り立つ．\\(\\varphi(n)\\) は，\\(1\\) 以上 \\(n\\) 以下で \\(n\\) と互いに素な整数の個数を表す．\n特に，素数 \\(p\\) と正の整数 \\(k\\) に対して\n\\[\n\\varphi(p)=p-1,\\qquad\n\\varphi(p^k)=p^k-p^{k-1}\n\\]\nである．また，\\(\\gcd(m,n)=1\\) なら，\n\\[\n\\varphi(mn)=\\varphi(m)\\varphi(n)\n\\]\nが成り立つ．\n指数を\n\\[\nN=q\\varphi(n)+r\n\\]\nと表せば，\n\\[\na^N\\equiv a^r\\pmod n\n\\]\nと小さくできる．ただし，使用前に必ず \\(\\gcd(a,n)=1\\) を確認する．\\(\\varphi(n)\\) は利用できる周期の候補であり，最小の周期とは限らない．"
   },
   {
-    "objectID": "knowledge/primary/chinese-remainder-theorem.html#基本例",
-    "href": "knowledge/primary/chinese-remainder-theorem.html#基本例",
-    "title": "中国剰余定理",
+    "objectID": "knowledge/primary/euler-theorem.html#オイラーのファイ関数の計算方法",
+    "href": "knowledge/primary/euler-theorem.html#オイラーのファイ関数の計算方法",
+    "title": "オイラーの定理",
+    "section": "オイラーのファイ関数の計算方法",
+    "text": "オイラーのファイ関数の計算方法\n\\(n\\) を素因数分解して\n\\[\nn=p_1^{e_1}p_2^{e_2}\\cdots p_k^{e_k}\n\\]\nとする．このとき，\n\\[\n\\varphi(n)\n=n\\left(1-\\frac1{p_1}\\right)\n\\left(1-\\frac1{p_2}\\right)\n\\cdots\n\\left(1-\\frac1{p_k}\\right)\n\\]\nで計算できる．積に現れるのは，\\(n\\) の異なる素因数 \\(p_1,p_2,\\ldots,p_k\\) である．\n計算するときは，次の順に進める．\n\n\\(n\\) を素因数分解する．\n異なる素因数をすべて取り出す．\n各素因数 \\(p\\) について \\(\\left(1-\\dfrac1p\\right)\\) を掛ける．\n\n\n計算例1：\\(\\varphi(20)\\)\n\\[\n20=2^2\\cdot5\n\\]\nなので，異なる素因数は \\(2\\) と \\(5\\) である．したがって，\n\\[\n\\begin{aligned}\n\\varphi(20)\n&=20\\left(1-\\frac12\\right)\\left(1-\\frac15\\right)\\\\\n&=20\\cdot\\frac12\\cdot\\frac45\\\\\n&=8\n\\end{aligned}\n\\]\nとなる．実際，\\(1\\) 以上 \\(20\\) 以下で \\(20\\) と互いに素な整数は\n\\[\n1,3,7,9,11,13,17,19\n\\]\nの \\(8\\) 個である．\n\n\n計算例2：\\(\\varphi(360)\\)\n\\[\n360=2^3\\cdot3^2\\cdot5\n\\]\nなので，異なる素因数は \\(2,3,5\\) である．したがって，\n\\[\n\\begin{aligned}\n\\varphi(360)\n&=360\\left(1-\\frac12\\right)\n\\left(1-\\frac13\\right)\n\\left(1-\\frac15\\right)\\\\\n&=360\\cdot\\frac12\\cdot\\frac23\\cdot\\frac45\\\\\n&=96\n\\end{aligned}\n\\]\nとなる．数が大きい場合は，互いに素な整数を一つずつ数えるより，この公式を使う方が速い．"
+  },
+  {
+    "objectID": "knowledge/primary/euler-theorem.html#基本例",
+    "href": "knowledge/primary/euler-theorem.html#基本例",
+    "title": "オイラーの定理",
     "section": "基本例",
-    "text": "基本例\n\n余りが異なる場合\n\\[\n\\begin{cases}\nx\\equiv2\\pmod3,\\\\\nx\\equiv3\\pmod5\n\\end{cases}\n\\]\nを解く．\\(x=2+3k\\) とおくと，\n\\[\n2+3k\\equiv3\\pmod5\n\\]\nだから，\n\\[\n3k\\equiv1\\pmod5\n\\]\nである．法 \\(5\\) では \\(3\\cdot2\\equiv1\\) なので，\\(3\\) の逆元は \\(2\\) である．両辺に \\(2\\) を掛けると，\n\\[\nk\\equiv2\\pmod5\n\\]\nを得る．したがって，ある整数 \\(\\ell\\) を用いて\n\\[\nk=2+5\\ell\n\\]\nと書ける．これを \\(x=2+3k\\) に戻すと，\n\\[\nx=2+3(2+5\\ell)=8+15\\ell\n\\]\nとなる．よって，\n\\[\nx\\equiv8\\pmod{15}\n\\]\nである．\n\n\n同じ余りをまとめる場合\n\\[\nx\\equiv2\\pmod4,\\qquad x\\equiv2\\pmod9\n\\]\nとする．これは，\\(x-2\\) が \\(4\\) と \\(9\\) の両方で割り切れることを意味する．\\(\\gcd(4,9)=1\\) なので，\\(x-2\\) は \\(4\\cdot9=36\\) でも割り切れる．したがって，\n\\[\nx\\equiv2\\pmod{36}\n\\]\nである．"
+    "text": "基本例\n\n巨大な累乗の余り\n\\(7^{222}\\) を \\(20\\) で割った余りを求める．\\(\\gcd(7,20)=1\\) であり，上で求めたように \\(\\varphi(20)=8\\) なので，\n\\[\n7^{222}\\equiv7^6\\pmod{20}\n\\]\nである．\\(7^2\\equiv9\\pmod{20}\\)，\\(7^4\\equiv1\\pmod{20}\\) より，\n\\[\n7^6\\equiv7^4\\cdot7^2\\equiv9\\pmod{20}\n\\]\nとなる．\n\n\n整数が割り切れることを示す\n\\(\\gcd(2,35)=1\\) であり，\n\\[\n\\varphi(35)=\\varphi(5)\\varphi(7)=4\\cdot6=24\n\\]\nだから，\n\\[\n2^{24}\\equiv1\\pmod{35}\n\\]\nである．したがって，\\(2^{24}-1\\) は \\(35\\) で割り切れる．\n\n\n下数桁を求める\n整数の下 \\(k\\) 桁は，法 \\(10^k\\) での余りである．底と \\(10^k\\) が互いに素ならオイラーの定理を検討する．さらに \\(10^k=2^k5^k\\) と分け，中国剰余定理と組み合わせると指数をより小さくできる場合がある．"
   },
   {
-    "objectID": "knowledge/primary/inverse-function.html",
-    "href": "knowledge/primary/inverse-function.html",
-    "title": "逆関数",
+    "objectID": "knowledge/primary/inverse-trigonometric-function.html",
+    "href": "knowledge/primary/inverse-trigonometric-function.html",
+    "title": "逆三角関数",
     "section": "",
-    "text": "1次試験における「逆関数」についてまとめます．"
+    "text": "1次試験における「逆三角関数」についてまとめます．"
   },
   {
-    "objectID": "knowledge/primary/inverse-function.html#概要",
-    "href": "knowledge/primary/inverse-function.html#概要",
-    "title": "逆関数",
+    "objectID": "knowledge/primary/inverse-trigonometric-function.html#概要",
+    "href": "knowledge/primary/inverse-trigonometric-function.html#概要",
+    "title": "逆三角関数",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/inverse-function.html#基本事項",
-    "href": "knowledge/primary/inverse-function.html#基本事項",
-    "title": "逆関数",
+    "objectID": "knowledge/primary/inverse-trigonometric-function.html#基本事項",
+    "href": "knowledge/primary/inverse-trigonometric-function.html#基本事項",
+    "title": "逆三角関数",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/inverse-function.html#例題",
-    "href": "knowledge/primary/inverse-function.html#例題",
-    "title": "逆関数",
+    "objectID": "knowledge/primary/inverse-trigonometric-function.html#例題",
+    "href": "knowledge/primary/inverse-trigonometric-function.html#例題",
+    "title": "逆三角関数",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/inverse-function.html#関連問題",
-    "href": "knowledge/primary/inverse-function.html#関連問題",
-    "title": "逆関数",
+    "objectID": "knowledge/primary/inverse-trigonometric-function.html#関連問題",
+    "href": "knowledge/primary/inverse-trigonometric-function.html#関連問題",
+    "title": "逆三角関数",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },
   {
-    "objectID": "knowledge/primary/integration.html",
-    "href": "knowledge/primary/integration.html",
-    "title": "積分",
+    "objectID": "knowledge/primary/determinant.html",
+    "href": "knowledge/primary/determinant.html",
+    "title": "行列式",
     "section": "",
-    "text": "積分は，関数の累積量や図形の面積を求める操作である．数検1級では，一変数の定積分に加えて，複数の変数を順に積分する重積分も扱う．"
+    "text": "1次試験で必要となる行列式の知識をまとめる．\n\n\n[\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n=ad-bc ]\n\n\n\n後で自動生成する．"
   },
   {
-    "objectID": "knowledge/primary/integration.html#概要",
-    "href": "knowledge/primary/integration.html#概要",
-    "title": "積分",
+    "objectID": "knowledge/primary/determinant.html#基本事項",
+    "href": "knowledge/primary/determinant.html#基本事項",
+    "title": "行列式",
     "section": "",
-    "text": "積分は，関数の累積量や図形の面積を求める操作である．数検1級では，一変数の定積分に加えて，複数の変数を順に積分する重積分も扱う．"
+    "text": "[\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n=ad-bc ]"
   },
   {
-    "objectID": "knowledge/primary/integration.html#基本事項",
-    "href": "knowledge/primary/integration.html#基本事項",
-    "title": "積分",
+    "objectID": "knowledge/primary/determinant.html#関連問題",
+    "href": "knowledge/primary/determinant.html#関連問題",
+    "title": "行列式",
+    "section": "",
+    "text": "後で自動生成する．"
+  },
+  {
+    "objectID": "knowledge/primary/covariance.html",
+    "href": "knowledge/primary/covariance.html",
+    "title": "共分散",
+    "section": "",
+    "text": "二つの確率変数の関係を表す共分散についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/covariance.html#基本事項",
+    "href": "knowledge/primary/covariance.html#基本事項",
+    "title": "共分散",
     "section": "基本事項",
-    "text": "基本事項\n\\(F'(x)=f(x)\\) のとき，区間 \\([a,b]\\) における定積分は\n\\[\n\\int_a^b f(x)\\,dx=F(b)-F(a)\n\\]\nである．\n置換積分では，\\(u=g(x)\\) とおいて変数と積分区間をそろえて変換する．部分積分では，\n\\[\n\\int_a^b f(x)g'(x)\\,dx\n=\n\\left[f(x)g(x)\\right]_a^b\n-\\int_a^b f'(x)g(x)\\,dx\n\\]\nを用いる．\n積分を始める前に，対称性，置換，積の微分の形が使えないか確認すると計算を短くできる．"
+    "text": "基本事項\n確率変数 \\(X,Y\\) の共分散は\n\\[\n\\operatorname{Cov}(X,Y)\n=E\\bigl[(X-E(X))(Y-E(Y))\\bigr]\n\\]\nで定義されます．計算には\n\\[\n\\operatorname{Cov}(X,Y)\n=E(XY)-E(X)E(Y)\n\\]\nを使うのが便利です．離散型の同時確率を \\(p_{ij}\\) とすると，\n\\[\nE(XY)=\\sum_i\\sum_jx_iy_jp_{ij}\n\\]\nです．"
   },
   {
-    "objectID": "knowledge/primary/integration.html#基本例",
-    "href": "knowledge/primary/integration.html#基本例",
-    "title": "積分",
-    "section": "基本例",
-    "text": "基本例\n\\[\n\\int_0^1x e^{x^2}\\,dx\n\\]\nでは，\\(u=x^2\\) とおくと \\(du=2x\\,dx\\) だから，\n\\[\n\\int_0^1x e^{x^2}\\,dx\n=\\frac12\\int_0^1e^u\\,du\n=\\frac{e-1}{2}\n\\]\nとなる．"
+    "objectID": "knowledge/primary/covariance.html#例題",
+    "href": "knowledge/primary/covariance.html#例題",
+    "title": "共分散",
+    "section": "例題",
+    "text": "例題\n\\(X,Y\\) がそれぞれ \\(0,1\\) を取り，\n\\[\nP(X=1,Y=1)=\\frac12,\\qquad\nP(X=0,Y=0)=\\frac12\n\\]\nとします．このとき \\(E(X)=E(Y)=E(XY)=\\dfrac12\\) なので，\n\\[\n\\operatorname{Cov}(X,Y)\n=\\frac12-\\frac14\n=\\frac14\n\\]\nです．"
   },
   {
-    "objectID": "knowledge/primary/random-variable.html",
-    "href": "knowledge/primary/random-variable.html",
-    "title": "確率変数",
+    "objectID": "knowledge/primary/covariance.html#関連問題",
+    "href": "knowledge/primary/covariance.html#関連問題",
+    "title": "共分散",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/hyperbolic-function.html",
+    "href": "knowledge/primary/hyperbolic-function.html",
+    "title": "双曲線関数",
     "section": "",
-    "text": "1次試験における「確率変数」についてまとめます．"
+    "text": "指数関数で定義される双曲線関数の基本事項をまとめます．"
   },
   {
-    "objectID": "knowledge/primary/random-variable.html#概要",
-    "href": "knowledge/primary/random-variable.html#概要",
-    "title": "確率変数",
+    "objectID": "knowledge/primary/hyperbolic-function.html#基本事項",
+    "href": "knowledge/primary/hyperbolic-function.html#基本事項",
+    "title": "双曲線関数",
+    "section": "基本事項",
+    "text": "基本事項\n複素数 \\(z\\) に対して，\n\\[\n\\sinh z=\\frac{e^z-e^{-z}}2,\\qquad\n\\cosh z=\\frac{e^z+e^{-z}}2,\\qquad\n\\tanh z=\\frac{\\sinh z}{\\cosh z}\n\\]\nと定義します．オイラーの公式を使うと，実数 \\(\\theta\\) に対して\n\\[\n\\sinh(i\\theta)=i\\sin\\theta,\\qquad\n\\cosh(i\\theta)=\\cos\\theta\n\\]\nだから，\n\\[\n\\tanh(i\\theta)=i\\tan\\theta\n\\]\nとなります．"
+  },
+  {
+    "objectID": "knowledge/primary/hyperbolic-function.html#例題",
+    "href": "knowledge/primary/hyperbolic-function.html#例題",
+    "title": "双曲線関数",
+    "section": "例題",
+    "text": "例題\n\\[\n\\tanh\\left(\\frac{\\pi i}{4}\\right)\n=i\\tan\\frac{\\pi}{4}\n=i\n\\]\nです．引数が純虚数なら，三角関数へ直すと計算しやすくなります．"
+  },
+  {
+    "objectID": "knowledge/primary/hyperbolic-function.html#関連問題",
+    "href": "knowledge/primary/hyperbolic-function.html#関連問題",
+    "title": "双曲線関数",
+    "section": "関連問題",
+    "text": "関連問題\n後で自動表示します．"
+  },
+  {
+    "objectID": "knowledge/primary/probability-statistics.html",
+    "href": "knowledge/primary/probability-statistics.html",
+    "title": "確率・統計",
+    "section": "",
+    "text": "1次試験における「確率・統計」についてまとめます．"
+  },
+  {
+    "objectID": "knowledge/primary/probability-statistics.html#概要",
+    "href": "knowledge/primary/probability-statistics.html#概要",
+    "title": "確率・統計",
     "section": "概要",
     "text": "概要\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/random-variable.html#基本事項",
-    "href": "knowledge/primary/random-variable.html#基本事項",
-    "title": "確率変数",
+    "objectID": "knowledge/primary/probability-statistics.html#基本事項",
+    "href": "knowledge/primary/probability-statistics.html#基本事項",
+    "title": "確率・統計",
     "section": "基本事項",
     "text": "基本事項\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/random-variable.html#例題",
-    "href": "knowledge/primary/random-variable.html#例題",
-    "title": "確率変数",
+    "objectID": "knowledge/primary/probability-statistics.html#例題",
+    "href": "knowledge/primary/probability-statistics.html#例題",
+    "title": "確率・統計",
     "section": "例題",
     "text": "例題\n未記入．"
   },
   {
-    "objectID": "knowledge/primary/random-variable.html#関連問題",
-    "href": "knowledge/primary/random-variable.html#関連問題",
-    "title": "確率変数",
+    "objectID": "knowledge/primary/probability-statistics.html#関連問題",
+    "href": "knowledge/primary/probability-statistics.html#関連問題",
+    "title": "確率・統計",
     "section": "関連問題",
     "text": "関連問題\n後で自動表示します．"
   },

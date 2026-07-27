@@ -1,8 +1,253 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 14,
+  "count": 28,
   "problems": [
+    {
+      "id": "pri-problem-000015",
+      "title": "第431回 1次 問1",
+      "paper_id": "pri-paper-0431",
+      "question_number": 1,
+      "cell_label": "二項係数の和",
+      "direct_tags": [
+        "binomial-sum"
+      ],
+      "all_tags": [
+        "algebra",
+        "binomial-sum"
+      ],
+      "path": "problems/primary/pri-problem-000015.html",
+      "source_path": "problems/primary/pri-problem-000015.qmd"
+    },
+    {
+      "id": "pri-problem-000016",
+      "title": "第431回 1次 問2",
+      "paper_id": "pri-paper-0431",
+      "question_number": 2,
+      "cell_label": "根から作る積",
+      "direct_tags": [
+        "polynomial-value-and-roots"
+      ],
+      "all_tags": [
+        "algebra",
+        "polynomial-value-and-roots"
+      ],
+      "path": "problems/primary/pri-problem-000016.html",
+      "source_path": "problems/primary/pri-problem-000016.qmd"
+    },
+    {
+      "id": "pri-problem-000017",
+      "title": "第431回 1次 問3",
+      "paper_id": "pri-paper-0431",
+      "question_number": 3,
+      "cell_label": "収束半径",
+      "direct_tags": [
+        "radius-of-convergence"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "radius-of-convergence"
+      ],
+      "path": "problems/primary/pri-problem-000017.html",
+      "source_path": "problems/primary/pri-problem-000017.qmd"
+    },
+    {
+      "id": "pri-problem-000018",
+      "title": "第431回 1次 問4",
+      "paper_id": "pri-paper-0431",
+      "question_number": 4,
+      "cell_label": "確率密度・期待値",
+      "direct_tags": [
+        "continuous-random-variable",
+        "expected-value"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "continuous-random-variable",
+        "expected-value"
+      ],
+      "path": "problems/primary/pri-problem-000018.html",
+      "source_path": "problems/primary/pri-problem-000018.qmd"
+    },
+    {
+      "id": "pri-problem-000019",
+      "title": "第431回 1次 問5",
+      "paper_id": "pri-paper-0431",
+      "question_number": 5,
+      "cell_label": "平面の対称点",
+      "direct_tags": [
+        "cross-product",
+        "reflection-across-plane"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "vector",
+        "cross-product",
+        "reflection-across-plane"
+      ],
+      "path": "problems/primary/pri-problem-000019.html",
+      "source_path": "problems/primary/pri-problem-000019.qmd"
+    },
+    {
+      "id": "pri-problem-000020",
+      "title": "第431回 1次 問6",
+      "paper_id": "pri-paper-0431",
+      "question_number": 6,
+      "cell_label": "行列式方程式",
+      "direct_tags": [
+        "determinant",
+        "equation"
+      ],
+      "all_tags": [
+        "algebra",
+        "equation",
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000020.html",
+      "source_path": "problems/primary/pri-problem-000020.qmd"
+    },
+    {
+      "id": "pri-problem-000021",
+      "title": "第431回 1次 問7",
+      "paper_id": "pri-paper-0431",
+      "question_number": 7,
+      "cell_label": "楕円領域の重積分",
+      "direct_tags": [
+        "change-of-variables"
+      ],
+      "all_tags": [
+        "analysis",
+        "integration",
+        "double-integral",
+        "change-of-variables"
+      ],
+      "path": "problems/primary/pri-problem-000021.html",
+      "source_path": "problems/primary/pri-problem-000021.qmd"
+    },
+    {
+      "id": "pri-problem-000022",
+      "title": "第440回 1次 問1",
+      "paper_id": "pri-paper-0440",
+      "question_number": 1,
+      "cell_label": "五乗根の和",
+      "direct_tags": [
+        "radical-expression"
+      ],
+      "all_tags": [
+        "algebra",
+        "radical-expression"
+      ],
+      "path": "problems/primary/pri-problem-000022.html",
+      "source_path": "problems/primary/pri-problem-000022.qmd"
+    },
+    {
+      "id": "pri-problem-000023",
+      "title": "第440回 1次 問2",
+      "paper_id": "pri-paper-0440",
+      "question_number": 2,
+      "cell_label": "双曲線正接",
+      "direct_tags": [
+        "hyperbolic-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "hyperbolic-function"
+      ],
+      "path": "problems/primary/pri-problem-000023.html",
+      "source_path": "problems/primary/pri-problem-000023.qmd"
+    },
+    {
+      "id": "pri-problem-000024",
+      "title": "第440回 1次 問3",
+      "paper_id": "pri-paper-0440",
+      "question_number": 3,
+      "cell_label": "スカラー三重積",
+      "direct_tags": [
+        "cross-product"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "vector",
+        "cross-product"
+      ],
+      "path": "problems/primary/pri-problem-000024.html",
+      "source_path": "problems/primary/pri-problem-000024.qmd"
+    },
+    {
+      "id": "pri-problem-000025",
+      "title": "第440回 1次 問4",
+      "paper_id": "pri-paper-0440",
+      "question_number": 4,
+      "cell_label": "マクローリン係数",
+      "direct_tags": [
+        "maclaurin-expansion"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "maclaurin-expansion"
+      ],
+      "path": "problems/primary/pri-problem-000025.html",
+      "source_path": "problems/primary/pri-problem-000025.qmd"
+    },
+    {
+      "id": "pri-problem-000026",
+      "title": "第440回 1次 問5",
+      "paper_id": "pri-paper-0440",
+      "question_number": 5,
+      "cell_label": "分散・共分散",
+      "direct_tags": [
+        "variance",
+        "covariance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "variance",
+        "covariance"
+      ],
+      "path": "problems/primary/pri-problem-000026.html",
+      "source_path": "problems/primary/pri-problem-000026.qmd"
+    },
+    {
+      "id": "pri-problem-000027",
+      "title": "第440回 1次 問6",
+      "paper_id": "pri-paper-0440",
+      "question_number": 6,
+      "cell_label": "6次行列式",
+      "direct_tags": [
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000027.html",
+      "source_path": "problems/primary/pri-problem-000027.qmd"
+    },
+    {
+      "id": "pri-problem-000028",
+      "title": "第440回 1次 問7",
+      "paper_id": "pri-paper-0440",
+      "question_number": 7,
+      "cell_label": "領域を読む重積分",
+      "direct_tags": [
+        "double-integral"
+      ],
+      "all_tags": [
+        "analysis",
+        "integration",
+        "double-integral"
+      ],
+      "path": "problems/primary/pri-problem-000028.html",
+      "source_path": "problems/primary/pri-problem-000028.qmd"
+    },
     {
       "id": "pri-problem-000008",
       "title": "第444回 1次 問1",
