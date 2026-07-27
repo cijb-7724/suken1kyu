@@ -1,0 +1,129 @@
+---
+title: "第444回 1次 問2"
+id: pri-problem-000009
+paper_id: pri-paper-0444
+question_number: 2
+cell_label: 逆正接の級数
+tags:
+  - inverse-trigonometric-function
+  - telescoping-series
+---
+
+## 問題
+
+次の問いに答えなさい．ただし，$\operatorname{Arctan}x$ は $\tan x$ の逆関数で
+
+$$
+-\frac{\pi}{2}<\operatorname{Arctan}x<\frac{\pi}{2}
+$$
+
+を満たすものとします．
+
+[1]{.circled-number}
+$\alpha=\operatorname{Arctan}9$，$\beta=\operatorname{Arctan}3$ とします．$\tan(\alpha-\beta)$ の値を求めなさい．
+
+[2]{.circled-number}
+次の級数の和を求めなさい．
+
+$$
+\sum_{n=1}^{\infty}
+\operatorname{Arctan}
+\frac{2\cdot3^{n-1}}{1+3^{2n-1}}
+$$
+
+## 必要な知識
+
+- [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
+- [望遠和](../../knowledge/primary/telescoping-series.qmd)
+- 正接の差の公式
+
+## 必要な発想
+
+一般項の分子を $3^n-3^{n-1}$，分母を $1+3^n3^{n-1}$ と見る．
+正接の差の公式を逆向きに使うと，隣り合う2項の差になり，級数が望遠和になる．
+
+## 解答
+
+### [1]{.circled-number}
+
+正接の差の公式より，
+
+$$
+\begin{aligned}
+\tan(\alpha-\beta)
+&=\frac{\tan\alpha-\tan\beta}
+{1+\tan\alpha\tan\beta}\\
+&=\frac{9-3}{1+9\cdot3}\\
+&=\frac{3}{14}
+\end{aligned}
+$$
+
+である．したがって，
+
+$$
+\boxed{\frac{3}{14}}
+$$
+
+となる．
+
+### [2]{.circled-number}
+
+正接の差の公式から，
+
+$$
+\tan\left(
+\operatorname{Arctan}3^n-\operatorname{Arctan}3^{n-1}
+\right)
+=
+\frac{3^n-3^{n-1}}{1+3^n3^{n-1}}
+=
+\frac{2\cdot3^{n-1}}{1+3^{2n-1}}
+$$
+
+である．二つの逆正接の差は $0$ と $\frac{\pi}{2}$ の間にあるので，
+
+$$
+\operatorname{Arctan}
+\frac{2\cdot3^{n-1}}{1+3^{2n-1}}
+=
+\operatorname{Arctan}3^n-\operatorname{Arctan}3^{n-1}
+$$
+
+となる．したがって，第 $N$ 項までの和は
+
+$$
+\begin{aligned}
+S_N
+&=\sum_{n=1}^{N}
+\left(
+\operatorname{Arctan}3^n-\operatorname{Arctan}3^{n-1}
+\right)\\
+&=\operatorname{Arctan}3^N-\operatorname{Arctan}1
+\end{aligned}
+$$
+
+である．$N\to\infty$ のとき，
+
+$$
+\operatorname{Arctan}3^N\to\frac{\pi}{2},
+\qquad
+\operatorname{Arctan}1=\frac{\pi}{4}
+$$
+
+だから，
+
+$$
+\boxed{\frac{\pi}{4}}
+$$
+
+となる．
+
+## コメント
+
+逆正接の差を扱うときは，正接を取った後に角度の範囲を確認する必要があります．公式だけでなく主値の範囲まで確認して，初めて逆正接の等式が確定します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

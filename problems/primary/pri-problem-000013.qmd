@@ -1,0 +1,123 @@
+---
+title: "第444回 1次 問6"
+id: pri-problem-000013
+paper_id: pri-paper-0444
+question_number: 6
+cell_label: 5次行列式
+tags:
+  - determinant
+---
+
+## 問題
+
+次の行列式を計算しなさい．
+
+$$
+\begin{vmatrix}
+-1&0&0&1&0\\
+2&0&-1&0&0\\
+-2&-2&-2&0&-2\\
+-2&2&-2&0&2\\
+-1&-2&2&2&-1
+\end{vmatrix}
+$$
+
+## 必要な知識
+
+- [行列式](../../knowledge/primary/determinant.qmd)
+- 行列式の行基本変形と余因子展開
+
+## 必要な発想
+
+第4列には非零成分が二つしかない．
+一方を行基本変形で $0$ にしてから余因子展開し，行列式の次数を下げる．
+
+## 解答
+
+もとの行列式を $D$ とする．第5行から第1行の2倍を引くと，
+
+$$
+D=
+\begin{vmatrix}
+-1&0&0&1&0\\
+2&0&-1&0&0\\
+-2&-2&-2&0&-2\\
+-2&2&-2&0&2\\
+1&-2&2&0&-1
+\end{vmatrix}
+$$
+
+となる．第4列で余因子展開すると，
+
+$$
+D=
+-
+\begin{vmatrix}
+2&0&-1&0\\
+-2&-2&-2&-2\\
+-2&2&-2&2\\
+1&-2&2&-1
+\end{vmatrix}
+$$
+
+である．この4次行列式の第1行と第4行を入れ替えると，外側のマイナスと入れ替えによるマイナスが打ち消し合うので，
+
+$$
+D=
+\begin{vmatrix}
+1&-2&2&-1\\
+-2&-2&-2&-2\\
+-2&2&-2&2\\
+2&0&-1&0
+\end{vmatrix}
+$$
+
+となる．ここで，第2行，第3行，第4行にそれぞれ第1行の $2$ 倍，$2$ 倍，$-2$ 倍を加えると，
+
+$$
+D=
+\begin{vmatrix}
+1&-2&2&-1\\
+0&-6&2&-4\\
+0&-2&2&0\\
+0&4&-5&2
+\end{vmatrix}
+=
+\begin{vmatrix}
+-6&2&-4\\
+-2&2&0\\
+4&-5&2
+\end{vmatrix}
+$$
+
+である．最後に第1行で余因子展開すると，
+
+$$
+\begin{aligned}
+D
+&=-6(2\cdot2-0\cdot(-5))
+-2((-2)\cdot2-0\cdot4)\\
+&\qquad
++(-4)((-2)(-5)-2\cdot4)\\
+&=-24+8-8\\
+&=-24
+\end{aligned}
+$$
+
+となる．よって，
+
+$$
+\boxed{-24}
+$$
+
+である．
+
+## コメント
+
+高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探すのが基本です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

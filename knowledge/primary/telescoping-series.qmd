@@ -1,0 +1,66 @@
+---
+title: "望遠和"
+id: telescoping-series
+---
+
+## 概要
+
+望遠和は，一般項を隣り合う項の差に変形することで，中間の項が打ち消し合う和である．無限級数では，最初から無限個を扱わず，有限の部分和を作ってから極限を取る．
+
+## 基本事項
+
+一般項が
+
+$$
+a_n=b_n-b_{n-1}
+$$
+
+と表せるとき，第 $N$ 項までの和は
+
+$$
+\begin{aligned}
+\sum_{n=1}^{N}a_n
+&=(b_1-b_0)+(b_2-b_1)+\cdots+(b_N-b_{N-1})\\
+&=b_N-b_0
+\end{aligned}
+$$
+
+となる．途中の $b_1,b_2,\ldots,b_{N-1}$ がすべて打ち消し合う．
+
+分数では部分分数分解，三角関数では加法定理を逆向きに使うと，差の形が現れることがある．
+
+## 基本例
+
+$$
+\sum_{n=1}^{\infty}\frac{1}{n(n+1)}
+$$
+
+を考える．
+
+$$
+\frac{1}{n(n+1)}=\frac1n-\frac1{n+1}
+$$
+
+だから，
+
+$$
+\begin{aligned}
+S_N
+&=\sum_{n=1}^{N}\left(\frac1n-\frac1{n+1}\right)\\
+&=1-\frac1{N+1}
+\end{aligned}
+$$
+
+である．$N\to\infty$ とすれば，
+
+$$
+\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=1
+$$
+
+となる．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

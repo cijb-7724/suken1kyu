@@ -1,9 +1,86 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 1,
+  "count": 2,
   "max_question_number": 7,
   "papers": [
+    {
+      "id": "pri-paper-0444",
+      "label": "第444回（2025年7月27日）",
+      "year": 2025,
+      "round": 444,
+      "sort_order": 20250727,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000008",
+          "cell_label": "素因数分解",
+          "path": "problems/primary/pri-problem-000008.html",
+          "direct_tags": [
+            "prime-factorization"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000009",
+          "cell_label": "逆正接の級数",
+          "path": "problems/primary/pri-problem-000009.html",
+          "direct_tags": [
+            "inverse-trigonometric-function",
+            "telescoping-series"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000010",
+          "cell_label": "ベクトルの一次結合",
+          "path": "problems/primary/pri-problem-000010.html",
+          "direct_tags": [
+            "system-of-equations"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000011",
+          "cell_label": "マクローリン展開",
+          "path": "problems/primary/pri-problem-000011.html",
+          "direct_tags": [
+            "maclaurin-expansion"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000012",
+          "cell_label": "平均・分散",
+          "path": "problems/primary/pri-problem-000012.html",
+          "direct_tags": [
+            "expected-value",
+            "variance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000013",
+          "cell_label": "5次行列式",
+          "path": "problems/primary/pri-problem-000013.html",
+          "direct_tags": [
+            "determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000014",
+          "cell_label": "重積分",
+          "path": "problems/primary/pri-problem-000014.html",
+          "direct_tags": [
+            "double-integral"
+          ]
+        }
+      }
+    },
     {
       "id": "pri-paper-0461",
       "label": "第461回（2026年7月25日）",

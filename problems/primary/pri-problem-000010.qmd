@@ -1,0 +1,126 @@
+---
+title: "第444回 1次 問3"
+id: pri-problem-000010
+paper_id: pri-paper-0444
+question_number: 3
+cell_label: ベクトルの一次結合
+tags:
+  - system-of-equations
+---
+
+## 問題
+
+5つのベクトル
+
+$$
+\boldsymbol{y}=
+\begin{pmatrix}
+1\\-9\\12\\16
+\end{pmatrix},
+\quad
+\boldsymbol{x}_1=
+\begin{pmatrix}
+0\\1\\2\\4
+\end{pmatrix},
+\quad
+\boldsymbol{x}_2=
+\begin{pmatrix}
+-1\\0\\-5\\-2
+\end{pmatrix},
+$$
+
+$$
+\boldsymbol{x}_3=
+\begin{pmatrix}
+2\\5\\0\\-1
+\end{pmatrix},
+\quad
+\boldsymbol{x}_4=
+\begin{pmatrix}
+4\\-2\\1\\0
+\end{pmatrix}
+$$
+
+に対して，
+
+$$
+\boldsymbol{y}
+=a_1\boldsymbol{x}_1+a_2\boldsymbol{x}_2
++a_3\boldsymbol{x}_3+a_4\boldsymbol{x}_4
+$$
+
+を満たすように，定数 $a_1,a_2,a_3,a_4$ の値を定めなさい．
+
+## 必要な知識
+
+- [連立方程式](../../knowledge/primary/system-of-equations.qmd)
+- ベクトルの相等
+
+## 必要な発想
+
+ベクトルの等式は，各成分がそれぞれ等しいことと同値である．
+4本のベクトルを一度に眺めず，成分ごとの4元連立方程式へ直す．
+
+## 解答
+
+各成分を比較すると，
+
+$$
+\begin{cases}
+-a_2+2a_3+4a_4=1,\\
+a_1+5a_3-2a_4=-9,\\
+2a_1-5a_2+a_4=12,\\
+4a_1-2a_2-a_3=16
+\end{cases}
+$$
+
+を得る．第1式と第2式から，
+
+$$
+a_2=2a_3+4a_4-1,
+\qquad
+a_1=-9-5a_3+2a_4
+$$
+
+である．これらを第3式と第4式へ代入すると，
+
+$$
+4a_3+3a_4=-5,
+\qquad
+-25a_3=50
+$$
+
+となる．したがって，
+
+$$
+a_3=-2,\qquad a_4=1
+$$
+
+である．これを前の式へ戻すと，
+
+$$
+a_1=3,\qquad a_2=-1
+$$
+
+を得る．よって，
+
+$$
+\boxed{
+a_1=3,\quad
+a_2=-1,\quad
+a_3=-2,\quad
+a_4=1
+}
+$$
+
+となる．
+
+## コメント
+
+行列の逆行列を求める方法もありますが，この問題では成分比較から消去法で解く方が短く済みます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

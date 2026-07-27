@@ -1,0 +1,64 @@
+---
+title: "無限級数"
+id: series
+---
+
+## 概要
+
+無限級数は，数列の項を順に加えた
+
+$$
+\sum_{n=1}^{\infty}a_n
+$$
+
+の形の式である．有限個までの和である部分和を調べ，その極限によって級数の和を定める．
+
+## 基本事項
+
+第 $N$ 項までの部分和を
+
+$$
+S_N=\sum_{n=1}^{N}a_n
+$$
+
+とする．極限
+
+$$
+\lim_{N\to\infty}S_N=S
+$$
+
+が有限な値として存在するとき，級数は収束し，その和を $S$ とする．極限が存在しないときは発散する．
+
+特に，等比級数は $|r|<1$ のとき，
+
+$$
+\sum_{n=0}^{\infty}ar^n=\frac{a}{1-r}
+$$
+
+となる．また，一般項を隣り合う項の差に直せる級数は，望遠和として計算できる．
+
+## 基本例
+
+$$
+\sum_{n=1}^{\infty}\frac{1}{2^n}
+$$
+
+では，第 $N$ 項までの和は
+
+$$
+S_N=1-\frac1{2^N}
+$$
+
+である．したがって，
+
+$$
+\lim_{N\to\infty}S_N=1
+$$
+
+より，級数の和は $1$ となる．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

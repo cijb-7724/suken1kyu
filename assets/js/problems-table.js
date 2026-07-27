@@ -17,6 +17,7 @@ const EXAMS = Object.freeze({
 const QUESTION_COUNT = 7;
 const VALID_EXAMS = new Set(Object.keys(EXAMS));
 const dataCache = new Map();
+let paperLabelResizeObserver = null;
 
 const app = document.querySelector("#problem-table-app");
 const tabs = Array.from(document.querySelectorAll(".exam-tab[data-exam]"));
@@ -217,17 +218,128 @@ function buildColumnGroup() {
   return colgroup;
 }
 
+function paperLabelParts(label) {
+  const match = String(label).match(/^(第\d+回)（(\d{4}年)(.+)）$/);
+  if (!match) {
+    return null;
+  }
+
+  return {
+    round: match[1],
+    year: `（${match[2]}`,
+    dateRest: `${match[3]}）`,
+  };
+}
+
+function buildPaperLabel(paper) {
+  const paperCell = makeElement("th", {
+    className: "paper-label",
+    attributes: {
+      scope: "row",
+      "aria-label": paper.label,
+    },
+  });
+  const parts = paperLabelParts(paper.label);
+
+  if (!parts) {
+    paperCell.textContent = paper.label;
+    return paperCell;
+  }
+
+  const content = makeElement("span", {
+    className: "paper-label-content is-one-line",
+    attributes: {
+      "data-full-label": paper.label,
+      "data-date-label": `${parts.year}${parts.dateRest}`,
+    },
+  });
+  const round = makeElement("span", {
+    className: "paper-label-round",
+    text: parts.round,
+  });
+  const date = makeElement("span", { className: "paper-label-date" });
+  const year = makeElement("span", {
+    className: "paper-label-year",
+    text: parts.year,
+  });
+  const dateRest = makeElement("span", {
+    className: "paper-label-date-rest",
+    text: parts.dateRest,
+  });
+
+  date.append(year, dateRest);
+  content.append(round, date);
+  paperCell.append(content);
+  return paperCell;
+}
+
+function measurePaperLabel(cell, text) {
+  const probe = makeElement("span", {
+    className: "paper-label-measure",
+    text,
+  });
+  cell.append(probe);
+  const width = probe.getBoundingClientRect().width;
+  probe.remove();
+  return width;
+}
+
+function updatePaperLabelLayouts(root) {
+  const cells = root.querySelectorAll(".paper-label");
+
+  for (const cell of cells) {
+    const content = cell.querySelector(".paper-label-content");
+    if (!content) {
+      continue;
+    }
+
+    const style = window.getComputedStyle(cell);
+    const availableWidth =
+      cell.clientWidth -
+      Number.parseFloat(style.paddingLeft) -
+      Number.parseFloat(style.paddingRight);
+    const fullWidth = measurePaperLabel(cell, content.dataset.fullLabel);
+    const dateWidth = measurePaperLabel(cell, content.dataset.dateLabel);
+
+    content.classList.remove("is-one-line", "is-two-lines", "is-three-lines");
+
+    if (fullWidth <= availableWidth + 0.5) {
+      content.classList.add("is-one-line");
+    } else if (dateWidth <= availableWidth + 0.5) {
+      content.classList.add("is-two-lines");
+    } else {
+      content.classList.add("is-three-lines");
+    }
+  }
+}
+
+function observePaperLabelLayouts(scrollArea) {
+  paperLabelResizeObserver?.disconnect();
+
+  let frame = 0;
+  const update = () => {
+    window.cancelAnimationFrame(frame);
+    frame = window.requestAnimationFrame(() => {
+      updatePaperLabelLayouts(scrollArea);
+    });
+  };
+
+  update();
+
+  if ("ResizeObserver" in window) {
+    paperLabelResizeObserver = new ResizeObserver(update);
+    paperLabelResizeObserver.observe(scrollArea);
+  } else {
+    window.addEventListener("resize", update, { passive: true });
+  }
+}
+
 function buildTableBody(exam, papers) {
   const tbody = document.createElement("tbody");
 
   for (const paper of papers) {
     const row = document.createElement("tr");
-
-    const paperCell = makeElement("th", {
-      className: "paper-label",
-      text: paper.label,
-      attributes: { scope: "row" },
-    });
+    const paperCell = buildPaperLabel(paper);
     row.append(paperCell);
 
     for (let questionNumber = 1; questionNumber <= QUESTION_COUNT; questionNumber += 1) {
@@ -291,6 +403,7 @@ function renderTable(exam, payload) {
   table.append(caption, buildColumnGroup(), buildTableHead(exam), buildTableBody(exam, papers));
   scrollArea.append(table);
   container.append(scrollArea);
+  observePaperLabelLayouts(scrollArea);
   hideStatus();
 }
 

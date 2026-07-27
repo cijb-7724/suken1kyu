@@ -1,0 +1,76 @@
+---
+title: "第444回 1次 問1"
+id: pri-problem-000008
+paper_id: pri-paper-0444
+question_number: 1
+cell_label: 素因数分解
+tags:
+  - prime-factorization
+---
+
+## 問題
+
+$1728=12^3$ です．$1728000001$ を素因数分解しなさい．
+
+ただし，$1728000001$ を素因数分解したとき，3桁と4桁の素因数がそれぞれ1個含まれます．
+
+## 必要な知識
+
+- [素因数分解](../../knowledge/primary/prime-factorization.qmd)
+- 和の立方の因数分解
+
+## 必要な発想
+
+$1728=12^3$ という情報から，$1728000001=1200^3+1$ と見る．
+まず和の立方を因数分解し，残った整数を小さい素数から調べる．
+
+## 解答
+
+$$
+1728000001=1200^3+1
+$$
+
+である．和の立方の公式
+
+$$
+a^3+1=(a+1)(a^2-a+1)
+$$
+
+を使うと，
+
+$$
+\begin{aligned}
+1728000001
+&=(1200+1)(1200^2-1200+1)\\
+&=1201\cdot1438801
+\end{aligned}
+$$
+
+となる．次に，
+
+$$
+\begin{aligned}
+1438801
+&=7\cdot205543\\
+&=7\cdot13\cdot15811\\
+&=7\cdot13\cdot97\cdot163
+\end{aligned}
+$$
+
+である．$7,13,97,163,1201$ はいずれも素数だから，
+
+$$
+\boxed{1728000001=7\cdot13\cdot97\cdot163\cdot1201}
+$$
+
+となる．
+
+## コメント
+
+問題文の $1728=12^3$ は，最初の因数分解に気づくための明確な手掛かりです．3桁と4桁の素因数があるという条件は，途中で得た因数分解が十分かを判断する助けになります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

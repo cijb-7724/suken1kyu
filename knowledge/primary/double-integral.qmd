@@ -1,0 +1,53 @@
+---
+title: "重積分"
+id: double-integral
+---
+
+## 概要
+
+重積分は，平面上の領域で二変数関数を積分する操作である．領域を一方の変数の範囲と，その値に応じたもう一方の変数の範囲で表し，累次積分として計算する．
+
+## 基本事項
+
+領域 $D$ が
+
+$$
+D=\{(x,y)\mid a\leq y\leq b,\ g(y)\leq x\leq h(y)\}
+$$
+
+と表されるとき，
+
+$$
+\iint_D f(x,y)\,dx\,dy
+=
+\int_a^b\int_{g(y)}^{h(y)}f(x,y)\,dx\,dy
+$$
+
+である．内側の積分では $y$ を定数として $x$ について積分する．
+
+積分順序を逆にすると計算が簡単になる場合もある．そのときは領域を図示し，新しい順序に合わせて積分区間を書き直す．
+
+## 基本例
+
+$$
+D=\{(x,y)\mid0\leq x\leq1,\ 0\leq y\leq x\}
+$$
+
+上で $x+y$ を積分する．
+
+$$
+\begin{aligned}
+\iint_D(x+y)\,dy\,dx
+&=\int_0^1\int_0^x(x+y)\,dy\,dx\\
+&=\int_0^1\left(x^2+\frac{x^2}{2}\right)\,dx\\
+&=\frac12
+\end{aligned}
+$$
+
+となる．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

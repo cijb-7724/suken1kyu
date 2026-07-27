@@ -2,6 +2,9 @@ tags:
   - id: number-theory
     label: 整数論
     children:
+      - id: prime-factorization
+        label: 素因数分解
+
       - id: modular-arithmetic
         label: 合同式・剰余
         children:
@@ -32,11 +35,23 @@ tags:
   - id: analysis
     label: 解析
     children:
+      - id: series
+        label: 無限級数
+        children:
+          - id: telescoping-series
+            label: 望遠和
+
       - id: power-series
         label: べき級数
         children:
           - id: maclaurin-expansion
             label: マクローリン展開
+
+      - id: integration
+        label: 積分
+        children:
+          - id: double-integral
+            label: 重積分
 
       - id: differential-equation
         label: 微分方程式
@@ -58,6 +73,9 @@ tags:
 
           - id: expected-value
             label: 期待値
+
+          - id: variance
+            label: 分散
 
   - id: linear-algebra
     label: 線形代数

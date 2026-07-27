@@ -1,0 +1,53 @@
+---
+title: "積分"
+id: integration
+---
+
+## 概要
+
+積分は，関数の累積量や図形の面積を求める操作である．数検1級では，一変数の定積分に加えて，複数の変数を順に積分する重積分も扱う．
+
+## 基本事項
+
+$F'(x)=f(x)$ のとき，区間 $[a,b]$ における定積分は
+
+$$
+\int_a^b f(x)\,dx=F(b)-F(a)
+$$
+
+である．
+
+置換積分では，$u=g(x)$ とおいて変数と積分区間をそろえて変換する．部分積分では，
+
+$$
+\int_a^b f(x)g'(x)\,dx
+=
+\left[f(x)g(x)\right]_a^b
+-\int_a^b f'(x)g(x)\,dx
+$$
+
+を用いる．
+
+積分を始める前に，対称性，置換，積の微分の形が使えないか確認すると計算を短くできる．
+
+## 基本例
+
+$$
+\int_0^1x e^{x^2}\,dx
+$$
+
+では，$u=x^2$ とおくと $du=2x\,dx$ だから，
+
+$$
+\int_0^1x e^{x^2}\,dx
+=\frac12\int_0^1e^u\,du
+=\frac{e-1}{2}
+$$
+
+となる．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

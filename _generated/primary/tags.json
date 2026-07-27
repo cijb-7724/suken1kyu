@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 26,
+  "count": 32,
   "root_ids": [
     "number-theory",
     "algebra",
@@ -14,6 +14,11 @@
       "id": "number-theory",
       "label": "整数論",
       "children": [
+        {
+          "id": "prime-factorization",
+          "label": "素因数分解",
+          "children": []
+        },
         {
           "id": "modular-arithmetic",
           "label": "合同式・剰余",
@@ -71,12 +76,34 @@
       "label": "解析",
       "children": [
         {
+          "id": "series",
+          "label": "無限級数",
+          "children": [
+            {
+              "id": "telescoping-series",
+              "label": "望遠和",
+              "children": []
+            }
+          ]
+        },
+        {
           "id": "power-series",
           "label": "べき級数",
           "children": [
             {
               "id": "maclaurin-expansion",
               "label": "マクローリン展開",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "integration",
+          "label": "積分",
+          "children": [
+            {
+              "id": "double-integral",
+              "label": "重積分",
               "children": []
             }
           ]
@@ -116,6 +143,11 @@
             {
               "id": "expected-value",
               "label": "期待値",
+              "children": []
+            },
+            {
+              "id": "variance",
+              "label": "分散",
               "children": []
             }
           ]
@@ -164,21 +196,44 @@
       "parent_id": null,
       "depth": 0,
       "children": [
+        "prime-factorization",
         "modular-arithmetic"
       ],
       "ancestors": [],
       "descendants": [
+        "prime-factorization",
         "modular-arithmetic",
         "euler-theorem",
         "chinese-remainder-theorem"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000001"
+        "pri-problem-000001",
+        "pri-problem-000008"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/number-theory.html"
+    },
+    "prime-factorization": {
+      "id": "prime-factorization",
+      "label": "素因数分解",
+      "parent_id": "number-theory",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "number-theory"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000008"
+      ],
+      "problem_ids": [
+        "pri-problem-000008"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/prime-factorization.html"
     },
     "modular-arithmetic": {
       "id": "modular-arithmetic",
@@ -265,10 +320,12 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000002"
+        "pri-problem-000002",
+        "pri-problem-000009",
+        "pri-problem-000010"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/algebra.html"
     },
     "function": {
@@ -288,10 +345,11 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000002"
+        "pri-problem-000002",
+        "pri-problem-000009"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/function.html"
     },
     "inverse-function": {
@@ -311,10 +369,11 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000002"
+        "pri-problem-000002",
+        "pri-problem-000009"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/inverse-function.html"
     },
     "inverse-trigonometric-function": {
@@ -330,13 +389,15 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "pri-problem-000002"
+        "pri-problem-000002",
+        "pri-problem-000009"
       ],
       "problem_ids": [
-        "pri-problem-000002"
+        "pri-problem-000002",
+        "pri-problem-000009"
       ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_count": 2,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/inverse-trigonometric-function.html"
     },
     "equation": {
@@ -354,9 +415,11 @@
         "system-of-equations"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000010"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/equation.html"
     },
     "system-of-equations": {
@@ -370,10 +433,14 @@
         "equation"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "pri-problem-000010"
+      ],
+      "problem_ids": [
+        "pri-problem-000010"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/primary/system-of-equations.html"
     },
     "analysis": {
@@ -382,24 +449,76 @@
       "parent_id": null,
       "depth": 0,
       "children": [
+        "series",
         "power-series",
+        "integration",
         "differential-equation"
       ],
       "ancestors": [],
       "descendants": [
+        "series",
+        "telescoping-series",
         "power-series",
         "maclaurin-expansion",
+        "integration",
+        "double-integral",
         "differential-equation",
         "first-order-nonhomogeneous-ode"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000004",
-        "pri-problem-000007"
+        "pri-problem-000007",
+        "pri-problem-000009",
+        "pri-problem-000011",
+        "pri-problem-000014"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 5,
       "knowledge_path": "knowledge/primary/analysis.html"
+    },
+    "series": {
+      "id": "series",
+      "label": "無限級数",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "telescoping-series"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "telescoping-series"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000009"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/series.html"
+    },
+    "telescoping-series": {
+      "id": "telescoping-series",
+      "label": "望遠和",
+      "parent_id": "series",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "series"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000009"
+      ],
+      "problem_ids": [
+        "pri-problem-000009"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/telescoping-series.html"
     },
     "power-series": {
       "id": "power-series",
@@ -417,10 +536,11 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000004"
+        "pri-problem-000004",
+        "pri-problem-000011"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/power-series.html"
     },
     "maclaurin-expansion": {
@@ -435,14 +555,59 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "pri-problem-000004"
+        "pri-problem-000004",
+        "pri-problem-000011"
       ],
       "problem_ids": [
-        "pri-problem-000004"
+        "pri-problem-000004",
+        "pri-problem-000011"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/primary/maclaurin-expansion.html"
+    },
+    "integration": {
+      "id": "integration",
+      "label": "積分",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "double-integral"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "double-integral"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "pri-problem-000014"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/integration.html"
+    },
+    "double-integral": {
+      "id": "double-integral",
+      "label": "重積分",
+      "parent_id": "integration",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "integration"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000014"
+      ],
+      "problem_ids": [
+        "pri-problem-000014"
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/primary/maclaurin-expansion.html"
+      "knowledge_path": "knowledge/primary/double-integral.html"
     },
     "differential-equation": {
       "id": "differential-equation",
@@ -500,14 +665,16 @@
         "random-variable",
         "continuous-random-variable",
         "joint-probability-density-function",
-        "expected-value"
+        "expected-value",
+        "variance"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000005"
+        "pri-problem-000005",
+        "pri-problem-000012"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/probability-statistics.html"
     },
     "random-variable": {
@@ -517,7 +684,8 @@
       "depth": 1,
       "children": [
         "continuous-random-variable",
-        "expected-value"
+        "expected-value",
+        "variance"
       ],
       "ancestors": [
         "probability-statistics"
@@ -525,14 +693,16 @@
       "descendants": [
         "continuous-random-variable",
         "joint-probability-density-function",
-        "expected-value"
+        "expected-value",
+        "variance"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000005"
+        "pri-problem-000005",
+        "pri-problem-000012"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/random-variable.html"
     },
     "continuous-random-variable": {
@@ -592,14 +762,37 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "pri-problem-000005"
+        "pri-problem-000005",
+        "pri-problem-000012"
       ],
       "problem_ids": [
-        "pri-problem-000005"
+        "pri-problem-000005",
+        "pri-problem-000012"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/primary/expected-value.html"
+    },
+    "variance": {
+      "id": "variance",
+      "label": "分散",
+      "parent_id": "random-variable",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "random-variable"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000012"
+      ],
+      "problem_ids": [
+        "pri-problem-000012"
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/primary/expected-value.html"
+      "knowledge_path": "knowledge/primary/variance.html"
     },
     "linear-algebra": {
       "id": "linear-algebra",
@@ -621,10 +814,11 @@
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000003",
-        "pri-problem-000006"
+        "pri-problem-000006",
+        "pri-problem-000013"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/linear-algebra.html"
     },
     "vector": {
@@ -687,10 +881,11 @@
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000006"
+        "pri-problem-000006",
+        "pri-problem-000013"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/matrix.html"
     },
     "determinant": {
@@ -708,12 +903,15 @@
       "descendants": [
         "block-determinant"
       ],
-      "direct_problem_ids": [],
-      "problem_ids": [
-        "pri-problem-000006"
+      "direct_problem_ids": [
+        "pri-problem-000013"
       ],
-      "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_ids": [
+        "pri-problem-000006",
+        "pri-problem-000013"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/determinant.html"
     },
     "block-determinant": {

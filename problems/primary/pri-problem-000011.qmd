@@ -1,0 +1,73 @@
+---
+title: "第444回 1次 問4"
+id: pri-problem-000011
+paper_id: pri-paper-0444
+question_number: 4
+cell_label: マクローリン展開
+tags:
+  - maclaurin-expansion
+---
+
+## 問題
+
+関数 $e^x\cos^2x$ をマクローリン展開したときの $x^4$ の係数を求めなさい．
+
+ただし，$e$ は自然対数の底を表します．
+
+## 必要な知識
+
+- [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
+- 半角の公式
+
+## 必要な発想
+
+$\cos^2x$ は半角の公式で $\frac{1+\cos2x}{2}$ に直す．
+$x^4$ を作る項だけが分かるように，二つの関数を必要な次数まで展開する．
+
+## 解答
+
+半角の公式より，
+
+$$
+\begin{aligned}
+\cos^2x
+&=\frac{1+\cos2x}{2}\\
+&=1-x^2+\frac{x^4}{3}+O(x^6)
+\end{aligned}
+$$
+
+である．また，
+
+$$
+e^x
+=1+x+\frac{x^2}{2}+\frac{x^3}{6}
++\frac{x^4}{24}+O(x^5)
+$$
+
+である．したがって，積から $x^4$ が生じる組合せだけを集めると，その係数は
+
+$$
+\begin{aligned}
+\frac13-\frac12+\frac1{24}
+&=\frac{8-12+1}{24}\\
+&=-\frac18
+\end{aligned}
+$$
+
+となる．よって，
+
+$$
+\boxed{-\frac18}
+$$
+
+である．
+
+## コメント
+
+積の展開では，すべての項を計算する必要はありません．求める次数を作る項の組合せを先に確認すると，計算量とミスを減らせます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -4,3 +4,9 @@ papers:
     year: 2026
     round: 461
     sort_order: 20260725
+
+  - id: pri-paper-0444
+    label: "第444回（2025年7月27日）"
+    year: 2025
+    round: 444
+    sort_order: 20250727
