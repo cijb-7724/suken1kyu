@@ -18,7 +18,7 @@
   --problem-error-text: #8a2020;
   --problem-group-header-height: 2.55rem;
   --problem-question-header-height: 2.55rem;
-  --problem-paper-column-width: clamp(9.5rem, 18%, 13rem);
+  --problem-paper-column-width: 18%;
   --problem-table-min-width: 48rem;
   --problem-page-gutter: clamp(1rem, 2.5vw, 3rem);
   --problem-page-max-width: 100rem;
@@ -240,8 +240,42 @@
   background: var(--problem-surface);
   font-weight: 700;
   text-align: center;
-  white-space: normal;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+.paper-label-content {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  line-height: 1.35;
+}
+
+.paper-label-content.is-one-line {
+  display: inline-flex;
+}
+
+.paper-label-content.is-two-lines,
+.paper-label-content.is-three-lines {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.paper-label-date {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.paper-label-content.is-three-lines .paper-label-date {
+  flex-direction: column;
+}
+
+.paper-label-measure {
+  position: absolute;
+  width: max-content;
+  visibility: hidden;
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 .problem-cell {
@@ -305,7 +339,7 @@
 
 @media (max-width: 700px) {
   :root {
-    --problem-paper-column-width: 8.75rem;
+    --problem-paper-column-width: 20%;
     --problem-table-min-width: 44rem;
   }
 
@@ -326,7 +360,7 @@
 
 @media (min-width: 1200px) {
   :root {
-    --problem-paper-column-width: clamp(13rem, 19%, 18rem);
+    --problem-paper-column-width: 19%;
     --problem-table-min-width: 62rem;
   }
 

@@ -1,8 +1,133 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 7,
+  "count": 14,
   "problems": [
+    {
+      "id": "pri-problem-000008",
+      "title": "第444回 1次 問1",
+      "paper_id": "pri-paper-0444",
+      "question_number": 1,
+      "cell_label": "素因数分解",
+      "direct_tags": [
+        "prime-factorization"
+      ],
+      "all_tags": [
+        "number-theory",
+        "prime-factorization"
+      ],
+      "path": "problems/primary/pri-problem-000008.html",
+      "source_path": "problems/primary/pri-problem-000008.qmd"
+    },
+    {
+      "id": "pri-problem-000009",
+      "title": "第444回 1次 問2",
+      "paper_id": "pri-paper-0444",
+      "question_number": 2,
+      "cell_label": "逆正接の級数",
+      "direct_tags": [
+        "inverse-trigonometric-function",
+        "telescoping-series"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "inverse-function",
+        "inverse-trigonometric-function",
+        "analysis",
+        "series",
+        "telescoping-series"
+      ],
+      "path": "problems/primary/pri-problem-000009.html",
+      "source_path": "problems/primary/pri-problem-000009.qmd"
+    },
+    {
+      "id": "pri-problem-000010",
+      "title": "第444回 1次 問3",
+      "paper_id": "pri-paper-0444",
+      "question_number": 3,
+      "cell_label": "ベクトルの一次結合",
+      "direct_tags": [
+        "system-of-equations"
+      ],
+      "all_tags": [
+        "algebra",
+        "equation",
+        "system-of-equations"
+      ],
+      "path": "problems/primary/pri-problem-000010.html",
+      "source_path": "problems/primary/pri-problem-000010.qmd"
+    },
+    {
+      "id": "pri-problem-000011",
+      "title": "第444回 1次 問4",
+      "paper_id": "pri-paper-0444",
+      "question_number": 4,
+      "cell_label": "マクローリン展開",
+      "direct_tags": [
+        "maclaurin-expansion"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "maclaurin-expansion"
+      ],
+      "path": "problems/primary/pri-problem-000011.html",
+      "source_path": "problems/primary/pri-problem-000011.qmd"
+    },
+    {
+      "id": "pri-problem-000012",
+      "title": "第444回 1次 問5",
+      "paper_id": "pri-paper-0444",
+      "question_number": 5,
+      "cell_label": "平均・分散",
+      "direct_tags": [
+        "expected-value",
+        "variance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "expected-value",
+        "variance"
+      ],
+      "path": "problems/primary/pri-problem-000012.html",
+      "source_path": "problems/primary/pri-problem-000012.qmd"
+    },
+    {
+      "id": "pri-problem-000013",
+      "title": "第444回 1次 問6",
+      "paper_id": "pri-paper-0444",
+      "question_number": 6,
+      "cell_label": "5次行列式",
+      "direct_tags": [
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000013.html",
+      "source_path": "problems/primary/pri-problem-000013.qmd"
+    },
+    {
+      "id": "pri-problem-000014",
+      "title": "第444回 1次 問7",
+      "paper_id": "pri-paper-0444",
+      "question_number": 7,
+      "cell_label": "重積分",
+      "direct_tags": [
+        "double-integral"
+      ],
+      "all_tags": [
+        "analysis",
+        "integration",
+        "double-integral"
+      ],
+      "path": "problems/primary/pri-problem-000014.html",
+      "source_path": "problems/primary/pri-problem-000014.qmd"
+    },
     {
       "id": "pri-problem-000001",
       "title": "第461回 1次 問1",
