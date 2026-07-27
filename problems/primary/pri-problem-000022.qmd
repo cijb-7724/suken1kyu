@@ -1,0 +1,90 @@
+---
+title: "第440回 1次 問1"
+id: pri-problem-000022
+paper_id: pri-paper-0440
+question_number: 1
+cell_label: 五乗根の和
+tags:
+  - radical-expression
+---
+
+## 問題
+
+次の式の二重根号をはずして簡単にしなさい．
+
+$$
+\sqrt[5]{\frac{5\sqrt5+11}{2}}
++
+\sqrt[5]{\frac{5\sqrt5-11}{2}}
+$$
+
+## 必要な知識
+
+- [根号式](../../knowledge/primary/radical-expression.qmd)
+
+## 必要な発想
+
+二つの五乗根を $a,b$ とおくと，根号内の積から $ab=1$ が得られる．
+$a^5+b^5$ を $a+b$ で表し，正の解を特定する．
+
+## 解答
+
+$$
+a=\sqrt[5]{\frac{5\sqrt5+11}{2}},
+\qquad
+b=\sqrt[5]{\frac{5\sqrt5-11}{2}}
+$$
+
+とおく．根号内はいずれも正であり，
+
+$$
+\begin{aligned}
+(ab)^5
+&=\frac{(5\sqrt5+11)(5\sqrt5-11)}4\\
+&=\frac{125-121}{4}\\
+&=1
+\end{aligned}
+$$
+
+だから，$ab=1$ である．$u=a+b$ とおくと，
+
+$$
+a^5+b^5=u^5-5u^3+5u
+$$
+
+である．一方，
+
+$$
+a^5+b^5=5\sqrt5
+$$
+
+だから，
+
+$$
+u^5-5u^3+5u=5\sqrt5
+$$
+
+となる．$u=\sqrt5$ はこの等式を満たす．また，$a,b>0$，$ab=1$ より $u\geq2$ であり，この範囲では
+
+$$
+\frac{d}{du}(u^5-5u^3+5u)
+=5(u^4-3u^2+1)>0
+$$
+
+だから解は一意である．したがって，
+
+$$
+\boxed{\sqrt5}
+$$
+
+となる．
+
+## コメント
+
+個々の五乗根を直接見抜く必要はありません．二つの項の積が $1$ になることに気づけば，和を一つの未知数として扱えます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

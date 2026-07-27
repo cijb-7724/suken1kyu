@@ -1,9 +1,163 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 2,
+  "count": 4,
   "max_question_number": 7,
   "papers": [
+    {
+      "id": "pri-paper-0431",
+      "label": "第431回（2024年10月27日）",
+      "year": 2024,
+      "round": 431,
+      "sort_order": 20241027,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000015",
+          "cell_label": "二項係数の和",
+          "path": "problems/primary/pri-problem-000015.html",
+          "direct_tags": [
+            "binomial-sum"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000016",
+          "cell_label": "根から作る積",
+          "path": "problems/primary/pri-problem-000016.html",
+          "direct_tags": [
+            "polynomial-value-and-roots"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000017",
+          "cell_label": "収束半径",
+          "path": "problems/primary/pri-problem-000017.html",
+          "direct_tags": [
+            "radius-of-convergence"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000018",
+          "cell_label": "確率密度・期待値",
+          "path": "problems/primary/pri-problem-000018.html",
+          "direct_tags": [
+            "continuous-random-variable",
+            "expected-value"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000019",
+          "cell_label": "平面の対称点",
+          "path": "problems/primary/pri-problem-000019.html",
+          "direct_tags": [
+            "cross-product",
+            "reflection-across-plane"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000020",
+          "cell_label": "行列式方程式",
+          "path": "problems/primary/pri-problem-000020.html",
+          "direct_tags": [
+            "determinant",
+            "equation"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000021",
+          "cell_label": "楕円領域の重積分",
+          "path": "problems/primary/pri-problem-000021.html",
+          "direct_tags": [
+            "change-of-variables"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0440",
+      "label": "第440回（2025年4月13日）",
+      "year": 2025,
+      "round": 440,
+      "sort_order": 20250413,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000022",
+          "cell_label": "五乗根の和",
+          "path": "problems/primary/pri-problem-000022.html",
+          "direct_tags": [
+            "radical-expression"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000023",
+          "cell_label": "双曲線正接",
+          "path": "problems/primary/pri-problem-000023.html",
+          "direct_tags": [
+            "hyperbolic-function"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000024",
+          "cell_label": "スカラー三重積",
+          "path": "problems/primary/pri-problem-000024.html",
+          "direct_tags": [
+            "cross-product"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000025",
+          "cell_label": "マクローリン係数",
+          "path": "problems/primary/pri-problem-000025.html",
+          "direct_tags": [
+            "maclaurin-expansion"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000026",
+          "cell_label": "分散・共分散",
+          "path": "problems/primary/pri-problem-000026.html",
+          "direct_tags": [
+            "variance",
+            "covariance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000027",
+          "cell_label": "6次行列式",
+          "path": "problems/primary/pri-problem-000027.html",
+          "direct_tags": [
+            "determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000028",
+          "cell_label": "領域を読む重積分",
+          "path": "problems/primary/pri-problem-000028.html",
+          "direct_tags": [
+            "double-integral"
+          ]
+        }
+      }
+    },
     {
       "id": "pri-paper-0444",
       "label": "第444回（2025年7月27日）",

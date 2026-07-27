@@ -1,0 +1,42 @@
+---
+title: "根号式"
+id: radical-expression
+---
+
+高次の根号を含む式を，対称式を使って簡単にする方法をまとめます．
+
+## 基本事項
+
+$u=a+b$，$ab=p$ とおくと，$a^n+b^n$ は $u$ と $p$ だけで表せます．たとえば，
+
+$$
+a^5+b^5=u^5-5pu^3+5p^2u
+$$
+
+です．特に $ab=1$ なら，
+
+$$
+a^5+b^5=u^5-5u^3+5u
+$$
+
+となります．
+
+## 例題
+
+$a,b>0$，$ab=1$，$a^5+b^5=2$ とします．相加相乗平均より $a+b\geq2$ であり，$a=b=1$ が条件を満たすので，
+
+$$
+a+b=2
+$$
+
+です．根号の中を個別に変形するより，和と積を先に調べるのが基本です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

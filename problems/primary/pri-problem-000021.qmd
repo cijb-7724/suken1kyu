@@ -1,0 +1,112 @@
+---
+title: "第431回 1次 問7"
+id: pri-problem-000021
+paper_id: pri-paper-0431
+question_number: 7
+cell_label: 楕円領域の重積分
+tags:
+  - change-of-variables
+---
+
+## 問題
+
+$xy$ 平面内の領域
+
+$$
+D=
+\left\{
+(x,y)\mathrel{}\middle|\mathrel{}
+4x^2+9y^2+8x-36y+4\leq0,\quad
+x\geq-1,\ y\geq2
+\right\}
+$$
+
+に対して，次の重積分を求めなさい．
+
+$$
+\iint_D(x+1)^3y\,dx\,dy
+$$
+
+## 必要な知識
+
+- [重積分](../../knowledge/primary/double-integral.qmd)
+- [変数変換](../../knowledge/primary/change-of-variables.qmd)
+
+## 必要な発想
+
+平方完成すると，領域は楕円の右上4分の1になる．
+楕円を単位円へ移す変数変換を行い，さらに極座標で積分する．
+
+## 解答
+
+領域を表す不等式を平方完成すると，
+
+$$
+4(x+1)^2+9(y-2)^2\leq36
+$$
+
+となる．そこで，
+
+$$
+x+1=3u,\qquad y-2=2v
+$$
+
+とおく．条件 $x\geq-1$，$y\geq2$ も考えると，変換後の領域は
+
+$$
+u^2+v^2\leq1,\qquad u\geq0,\quad v\geq0
+$$
+
+であり，ヤコビアンは
+
+$$
+\left|\frac{\partial(x,y)}{\partial(u,v)}\right|=6
+$$
+
+である．さらに，
+
+$$
+u=r\cos\theta,\qquad v=r\sin\theta
+$$
+
+とおくと，
+
+$$
+0\leq r\leq1,\qquad0\leq\theta\leq\frac{\pi}{2}
+$$
+
+である．したがって，
+
+$$
+\begin{aligned}
+\iint_D(x+1)^3y\,dx\,dy
+&=
+324\int_0^{\pi/2}\int_0^1
+r^4\cos^3\theta(1+r\sin\theta)
+\,dr\,d\theta\\
+&=324\left\{
+\frac15\int_0^{\pi/2}\cos^3\theta\,d\theta
++\frac16\int_0^{\pi/2}\cos^3\theta\sin\theta\,d\theta
+\right\}\\
+&=324\left(\frac15\cdot\frac23+\frac16\cdot\frac14\right)\\
+&=\frac{567}{10}
+\end{aligned}
+$$
+
+となる．よって，
+
+$$
+\boxed{\frac{567}{10}}
+$$
+
+である．
+
+## コメント
+
+平方完成による平行移動，楕円から円への拡大縮小，極座標変換の3段階です．各段階のヤコビアンを落とさないように，変数と面積要素を同時に書き換えましょう．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

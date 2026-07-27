@@ -10,3 +10,15 @@ papers:
     year: 2025
     round: 444
     sort_order: 20250727
+
+  - id: pri-paper-0440
+    label: "第440回（2025年4月13日）"
+    year: 2025
+    round: 440
+    sort_order: 20250413
+
+  - id: pri-paper-0431
+    label: "第431回（2024年10月27日）"
+    year: 2024
+    round: 431
+    sort_order: 20241027

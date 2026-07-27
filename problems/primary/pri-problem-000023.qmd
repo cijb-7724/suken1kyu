@@ -1,0 +1,71 @@
+---
+title: "第440回 1次 問2"
+id: pri-problem-000023
+paper_id: pri-paper-0440
+question_number: 2
+cell_label: 双曲線正接
+tags:
+  - hyperbolic-function
+---
+
+## 問題
+
+次の値を求めなさい．ただし，$\tanh z$ は複素数 $z$ に関する双曲線正接関数で，$i$ は虚数単位を表します．
+
+$$
+i\tanh\frac{13\pi i}{12}
+$$
+
+## 必要な知識
+
+- [双曲線関数](../../knowledge/primary/hyperbolic-function.qmd)
+
+## 必要な発想
+
+純虚数を引数に持つ双曲線正接は，$\tanh(i\theta)=i\tan\theta$ で三角関数へ直す．
+その後，正接の周期と $\tan15^\circ$ の値を使う．
+
+## 解答
+
+実数 $\theta$ に対して，
+
+$$
+\tanh(i\theta)
+=\frac{\sinh(i\theta)}{\cosh(i\theta)}
+=i\tan\theta
+$$
+
+である．したがって，
+
+$$
+\begin{aligned}
+i\tanh\frac{13\pi i}{12}
+&=i^2\tan\frac{13\pi}{12}\\
+&=-\tan\left(\pi+\frac{\pi}{12}\right)\\
+&=-\tan\frac{\pi}{12}
+\end{aligned}
+$$
+
+となる．ここで，
+
+$$
+\tan\frac{\pi}{12}=2-\sqrt3
+$$
+
+だから，
+
+$$
+\boxed{\sqrt3-2}
+$$
+
+である．
+
+## コメント
+
+$\tanh$ と $\tan$ は文字が似ていますが，別の関数です．引数に $i$ があるときに指数関数の定義から両者を結ぶのが要点です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

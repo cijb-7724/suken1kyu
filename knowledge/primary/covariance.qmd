@@ -1,0 +1,59 @@
+---
+title: "共分散"
+id: covariance
+---
+
+二つの確率変数の関係を表す共分散についてまとめます．
+
+## 基本事項
+
+確率変数 $X,Y$ の共分散は
+
+$$
+\operatorname{Cov}(X,Y)
+=E\bigl[(X-E(X))(Y-E(Y))\bigr]
+$$
+
+で定義されます．計算には
+
+$$
+\operatorname{Cov}(X,Y)
+=E(XY)-E(X)E(Y)
+$$
+
+を使うのが便利です．離散型の同時確率を $p_{ij}$ とすると，
+
+$$
+E(XY)=\sum_i\sum_jx_iy_jp_{ij}
+$$
+
+です．
+
+## 例題
+
+$X,Y$ がそれぞれ $0,1$ を取り，
+
+$$
+P(X=1,Y=1)=\frac12,\qquad
+P(X=0,Y=0)=\frac12
+$$
+
+とします．このとき $E(X)=E(Y)=E(XY)=\dfrac12$ なので，
+
+$$
+\operatorname{Cov}(X,Y)
+=\frac12-\frac14
+=\frac14
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

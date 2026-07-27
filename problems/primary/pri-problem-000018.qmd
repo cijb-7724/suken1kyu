@@ -1,0 +1,101 @@
+---
+title: "第431回 1次 問4"
+id: pri-problem-000018
+paper_id: pri-paper-0431
+question_number: 4
+cell_label: 確率密度・期待値
+tags:
+  - continuous-random-variable
+  - expected-value
+---
+
+## 問題
+
+$a$ を実数とします．確率変数 $X$ の確率密度関数 $f(x)$ が
+
+$$
+f(x)=
+\begin{cases}
+0 & (x<0),\\
+a(e^{-2x}+e^{-x}) & (x\geq0)
+\end{cases}
+$$
+
+であるとき，次の問いに答えなさい．ただし，$e$ は自然対数の底を表します．
+
+[1]{.circled-number}
+$a$ の値を求めなさい．
+
+[2]{.circled-number}
+$X$ の期待値 $E(X)$ を求めなさい．
+
+## 必要な知識
+
+- [連続確率変数](../../knowledge/primary/continuous-random-variable.qmd)
+- [期待値](../../knowledge/primary/expected-value.qmd)
+
+## 必要な発想
+
+まず，確率密度関数の全積分が $1$ になる条件から $a$ を決める．
+期待値は，得られた $a$ を使って $\displaystyle\int_0^\infty xf(x)\,dx$ を計算する．
+
+## 解答
+
+### [1]{.circled-number}
+
+確率密度関数の全積分は $1$ だから，
+
+$$
+\begin{aligned}
+1
+&=\int_0^\infty a(e^{-2x}+e^{-x})\,dx\\
+&=a\left(\frac12+1\right)\\
+&=\frac32a
+\end{aligned}
+$$
+
+である．したがって，
+
+$$
+\boxed{a=\frac23}
+$$
+
+となる．
+
+### [2]{.circled-number}
+
+$\lambda>0$ に対して
+
+$$
+\int_0^\infty xe^{-\lambda x}\,dx=\frac1{\lambda^2}
+$$
+
+であるから，
+
+$$
+\begin{aligned}
+E(X)
+&=\int_0^\infty x\frac23(e^{-2x}+e^{-x})\,dx\\
+&=\frac23\left(\frac1{2^2}+1\right)\\
+&=\frac23\cdot\frac54\\
+&=\frac56
+\end{aligned}
+$$
+
+となる．よって，
+
+$$
+\boxed{E(X)=\frac56}
+$$
+
+である．
+
+## コメント
+
+$a$ は確率密度関数の正規化定数です．期待値の計算へ進む前に，必ず全確率が $1$ になる条件を使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,116 @@
+---
+title: "第431回 1次 問5"
+id: pri-problem-000019
+paper_id: pri-paper-0431
+question_number: 5
+cell_label: 平面の対称点
+tags:
+  - cross-product
+  - reflection-across-plane
+---
+
+## 問題
+
+$xyz$ 空間内の3点
+
+$$
+A(-1,-5,0),\qquad B(4,1,-1),\qquad C(0,-2,1)
+$$
+
+を通る平面を $\alpha$ とするとき，次の問いに答えなさい．
+
+[1]{.circled-number}
+平面 $\alpha$ の方程式を求めなさい．
+
+[2]{.circled-number}
+平面 $\alpha$ に関して，点 $(3,8,-5)$ と対称な点の座標を求めなさい．
+
+## 必要な知識
+
+- [外積・スカラー三重積](../../knowledge/primary/cross-product.qmd)
+- [平面に関する対称点](../../knowledge/primary/reflection-across-plane.qmd)
+
+## 必要な発想
+
+$\overrightarrow{AB}$ と $\overrightarrow{AC}$ の外積から平面の法線ベクトルを得る．
+対称点は，元の点を法線方向へ平面までの移動量の2倍だけ動かす．
+
+## 解答
+
+### [1]{.circled-number}
+
+$$
+\overrightarrow{AB}=(5,6,-1),\qquad
+\overrightarrow{AC}=(1,3,1)
+$$
+
+だから，
+
+$$
+\overrightarrow{AB}\times\overrightarrow{AC}
+=(9,-6,9)
+=3(3,-2,3)
+$$
+
+である．したがって，平面 $\alpha$ の法線ベクトルとして $(3,-2,3)$ を取れる．点 $A$ を通るので，
+
+$$
+3(x+1)-2(y+5)+3z=0
+$$
+
+となる．よって，
+
+$$
+\boxed{3x-2y+3z-7=0}
+$$
+
+である．
+
+### [2]{.circled-number}
+
+$P=(3,8,-5)$ とし，平面の法線ベクトルを
+
+$$
+\boldsymbol n=(3,-2,3)
+$$
+
+とする．平面の左辺へ $P$ を代入すると，
+
+$$
+3\cdot3-2\cdot8+3(-5)-7=-29
+$$
+
+であり，
+
+$$
+\|\boldsymbol n\|^2=3^2+(-2)^2+3^2=22
+$$
+
+である．したがって，対称点 $P'$ は
+
+$$
+\begin{aligned}
+P'
+&=P-\frac{2(-29)}{22}\boldsymbol n\\
+&=(3,8,-5)+\frac{29}{11}(3,-2,3)\\
+&=\left(\frac{120}{11},\frac{30}{11},\frac{32}{11}\right)
+\end{aligned}
+$$
+
+となる．よって，
+
+$$
+\boxed{\left(\frac{120}{11},\frac{30}{11},\frac{32}{11}\right)}
+$$
+
+である．
+
+## コメント
+
+平面の方程式と対称移動は，どちらも法線ベクトルが中心です．外積の定数倍は同じ法線方向を表すので，成分を約分してから使うと計算が軽くなります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

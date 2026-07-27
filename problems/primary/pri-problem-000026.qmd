@@ -1,0 +1,124 @@
+---
+title: "第440回 1次 問5"
+id: pri-problem-000026
+paper_id: pri-paper-0440
+question_number: 5
+cell_label: 分散・共分散
+tags:
+  - variance
+  - covariance
+---
+
+## 問題
+
+2つの確率変数 $X,Y$ の同時確率分布が次の表で与えられるとき，問いに答えなさい．
+
+| $X\backslash Y$ | $-20$ | $30$ | $50$ |
+|---:|---:|---:|---:|
+| $0$  | $0.1$ | $0$   | $0.2$ |
+| $10$ | $0.2$ | $0.1$ | $0.1$ |
+| $20$ | $0.1$ | $0.2$ | $0$   |
+
+[1]{.circled-number}
+$X$ の分散を求めなさい．
+
+[2]{.circled-number}
+$X$ と $Y$ の共分散を求めなさい．
+
+## 必要な知識
+
+- [分散](../../knowledge/primary/variance.qmd)
+- [共分散](../../knowledge/primary/covariance.qmd)
+
+## 必要な発想
+
+まず，表の行和と列和から $X,Y$ の周辺分布を作る．
+分散には $E(X),E(X^2)$，共分散にはさらに $E(Y),E(XY)$ を使う．
+
+## 解答
+
+表の行和から，$X=0,10,20$ の確率はそれぞれ $0.3,0.4,0.3$ である．また，列和から，$Y=-20,30,50$ の確率はそれぞれ $0.4,0.3,0.3$ である．
+
+### [1]{.circled-number}
+
+$$
+\begin{aligned}
+E(X)
+&=0\cdot0.3+10\cdot0.4+20\cdot0.3\\
+&=10,\\
+E(X^2)
+&=0^2\cdot0.3+10^2\cdot0.4+20^2\cdot0.3\\
+&=160
+\end{aligned}
+$$
+
+だから，
+
+$$
+\begin{aligned}
+V(X)
+&=E(X^2)-\{E(X)\}^2\\
+&=160-10^2\\
+&=60
+\end{aligned}
+$$
+
+となる．よって，
+
+$$
+\boxed{V(X)=60}
+$$
+
+である．
+
+### [2]{.circled-number}
+
+まず，
+
+$$
+\begin{aligned}
+E(Y)
+&=(-20)\cdot0.4+30\cdot0.3+50\cdot0.3\\
+&=16
+\end{aligned}
+$$
+
+である．また，表の各成分について $xy$ を掛けて足すと，
+
+$$
+\begin{aligned}
+E(XY)
+&=10(-20)\cdot0.2+10\cdot30\cdot0.1+10\cdot50\cdot0.1\\
+&\quad+20(-20)\cdot0.1+20\cdot30\cdot0.2\\
+&=120
+\end{aligned}
+$$
+
+となる．したがって，
+
+$$
+\begin{aligned}
+\operatorname{Cov}(X,Y)
+&=E(XY)-E(X)E(Y)\\
+&=120-10\cdot16\\
+&=-40
+\end{aligned}
+$$
+
+である．よって，
+
+$$
+\boxed{\operatorname{Cov}(X,Y)=-40}
+$$
+
+となる．
+
+## コメント
+
+共分散は周辺分布だけでは決まりません．$E(XY)$ だけは元の同時分布表を使って計算し，$E(X)$ と $E(Y)$ は行和・列和から求めます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,84 @@
+---
+title: "第431回 1次 問2"
+id: pri-problem-000016
+paper_id: pri-paper-0431
+question_number: 2
+cell_label: 根から作る積
+tags:
+  - polynomial-value-and-roots
+---
+
+## 問題
+
+5次方程式
+
+$$
+x^5+x^4-3x^3+7x^2+1=0
+$$
+
+の5つの解を $\alpha,\beta,\gamma,\delta,\varepsilon$ とするとき，次の値を求めなさい．
+
+$$
+(\alpha+2)(\beta+2)(\gamma+2)(\delta+2)(\varepsilon+2)
+$$
+
+## 必要な知識
+
+- [多項式の値と根](../../knowledge/primary/polynomial-value-and-roots.qmd)
+
+## 必要な発想
+
+5つの解を求める必要はない．
+左辺を $P(x)$ とし，$P(-2)$ が求める積と符号だけ異なることを使う．
+
+## 解答
+
+$$
+P(x)=x^5+x^4-3x^3+7x^2+1
+$$
+
+とおく．最高次係数が $1$ だから，
+
+$$
+P(x)
+=(x-\alpha)(x-\beta)(x-\gamma)(x-\delta)(x-\varepsilon)
+$$
+
+である．$x=-2$ を代入すると，
+
+$$
+\begin{aligned}
+P(-2)
+&=(-2)^5+(-2)^4-3(-2)^3+7(-2)^2+1\\
+&=-32+16+24+28+1\\
+&=37
+\end{aligned}
+$$
+
+となる．一方，
+
+$$
+\begin{aligned}
+P(-2)
+&=(-2-\alpha)(-2-\beta)(-2-\gamma)(-2-\delta)(-2-\varepsilon)\\
+&=-(\alpha+2)(\beta+2)(\gamma+2)(\delta+2)(\varepsilon+2)
+\end{aligned}
+$$
+
+だから，
+
+$$
+\boxed{-37}
+$$
+
+となる．
+
+## コメント
+
+「すべての根に同じ数を足した積」は，多項式へその数の符号を変えて代入すると得られます．次数が奇数なので，最後の符号に注意しましょう．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

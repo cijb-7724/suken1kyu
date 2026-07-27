@@ -1,0 +1,59 @@
+---
+title: "外積・スカラー三重積"
+id: cross-product
+---
+
+空間ベクトルの外積とスカラー三重積についてまとめます．
+
+## 基本事項
+
+$\boldsymbol a=(a_1,a_2,a_3)$，$\boldsymbol b=(b_1,b_2,b_3)$ の外積は
+
+$$
+\boldsymbol a\times\boldsymbol b
+=
+\begin{pmatrix}
+a_2b_3-a_3b_2\\
+a_3b_1-a_1b_3\\
+a_1b_2-a_2b_1
+\end{pmatrix}
+$$
+
+で，$\boldsymbol a$ と $\boldsymbol b$ の両方に垂直です．順序を逆にすると，
+
+$$
+\boldsymbol b\times\boldsymbol a
+=-\boldsymbol a\times\boldsymbol b
+$$
+
+となります．
+
+スカラー三重積には
+
+$$
+\boldsymbol a\cdot(\boldsymbol b\times\boldsymbol c)
+=\boldsymbol b\cdot(\boldsymbol c\times\boldsymbol a)
+=\boldsymbol c\cdot(\boldsymbol a\times\boldsymbol b)
+$$
+
+という巡回性があります．二つを入れ替えると符号が反転します．
+
+## 例題
+
+$\boldsymbol a=(1,0,0)$，$\boldsymbol b=(0,1,0)$，$\boldsymbol c=(0,0,2)$ なら，
+
+$$
+\boldsymbol a\cdot(\boldsymbol b\times\boldsymbol c)=2
+$$
+
+です．これは3本のベクトルが作る平行六面体の符号付き体積でもあります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

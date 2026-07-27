@@ -1,0 +1,97 @@
+---
+title: "第431回 1次 問6"
+id: pri-problem-000020
+paper_id: pri-paper-0431
+question_number: 6
+cell_label: 行列式方程式
+tags:
+  - determinant
+  - equation
+---
+
+## 問題
+
+次の等式を満たす複素数 $x$ の値をすべて求めなさい．ただし，虚数単位は $i$ を用いるものとします．
+
+$$
+\begin{vmatrix}
+x+1&x^2+2&x^3+3\\
+x+2&x^2+3&x^3+1\\
+x+3&x^2+1&x^3+2
+\end{vmatrix}
+=0
+$$
+
+## 必要な知識
+
+- [行列式](../../knowledge/primary/determinant.qmd)
+- [方程式](../../knowledge/primary/equation.qmd)
+
+## 必要な発想
+
+第2行と第3行から第1行を引くと，$x$ を含む項が消える．
+その後に第1行で展開すれば，行列式を3次式へ簡単にできる．
+
+## 解答
+
+第2行から第1行を，第3行から第1行を引くと，
+
+$$
+\begin{aligned}
+&\begin{vmatrix}
+x+1&x^2+2&x^3+3\\
+x+2&x^2+3&x^3+1\\
+x+3&x^2+1&x^3+2
+\end{vmatrix}\\
+&\qquad=
+\begin{vmatrix}
+x+1&x^2+2&x^3+3\\
+1&1&-2\\
+2&-1&-1
+\end{vmatrix}
+\end{aligned}
+$$
+
+となる．第1行で展開すると，
+
+$$
+\begin{aligned}
+&-3(x+1)-3(x^2+2)-3(x^3+3)\\
+&\qquad=-3(x^3+x^2+x+6)
+\end{aligned}
+$$
+
+である．したがって，
+
+$$
+x^3+x^2+x+6=0
+$$
+
+を解けばよい．$x=-2$ が解なので，
+
+$$
+x^3+x^2+x+6
+=(x+2)(x^2-x+3)
+$$
+
+と因数分解できる．よって，
+
+$$
+\boxed{
+x=-2,\quad
+x=\frac{1+i\sqrt{11}}2,\quad
+x=\frac{1-i\sqrt{11}}2
+}
+$$
+
+となる．
+
+## コメント
+
+各行に共通する $x,x^2,x^3$ を行基本変形で消すのが要点です．行列式を最初から展開するより，規則性を利用した方が計算量と符号ミスを減らせます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

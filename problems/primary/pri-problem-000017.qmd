@@ -1,0 +1,79 @@
+---
+title: "第431回 1次 問3"
+id: pri-problem-000017
+paper_id: pri-paper-0431
+question_number: 3
+cell_label: 収束半径
+tags:
+  - radius-of-convergence
+---
+
+## 問題
+
+次の級数の収束半径を求めなさい．
+
+$$
+\sum_{n=0}^{\infty}
+\frac{(3n)!}{(n!)^3(2^n+n)}x^n
+$$
+
+## 必要な知識
+
+- [収束半径](../../knowledge/primary/radius-of-convergence.qmd)
+
+## 必要な発想
+
+係数には階乗が含まれているので，隣り合う係数の比を取る．
+$2^n+n$ では，$n\to\infty$ のとき指数関数 $2^n$ が支配的になる．
+
+## 解答
+
+$$
+a_n=\frac{(3n)!}{(n!)^3(2^n+n)}
+$$
+
+とおく．すると，
+
+$$
+\begin{aligned}
+\frac{a_n}{a_{n+1}}
+&=
+\frac{(3n)!}{(n!)^3(2^n+n)}
+\frac{((n+1)!)^3(2^{n+1}+n+1)}{(3n+3)!}\\
+&=
+\frac{(n+1)^3(2^{n+1}+n+1)}
+{(3n+1)(3n+2)(3n+3)(2^n+n)}
+\end{aligned}
+$$
+
+である．したがって，
+
+$$
+\begin{aligned}
+\lim_{n\to\infty}\frac{a_n}{a_{n+1}}
+&=
+\frac1{27}
+\lim_{n\to\infty}
+\frac{2^{n+1}+n+1}{2^n+n}\\
+&=\frac1{27}\cdot2\\
+&=\frac2{27}
+\end{aligned}
+$$
+
+となる．よって，収束半径は
+
+$$
+\boxed{\frac2{27}}
+$$
+
+である．
+
+## コメント
+
+階乗部分と $2^n+n$ の部分を分けて極限を見ると整理しやすくなります．$2^n+n$ を単に $2^n$ に置き換えず，比の極限として根拠を示すのが安全です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

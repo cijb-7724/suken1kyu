@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 32,
+  "count": 41,
   "root_ids": [
     "number-theory",
     "algebra",
@@ -42,9 +42,29 @@
       "label": "代数",
       "children": [
         {
+          "id": "binomial-sum",
+          "label": "二項係数を含む和",
+          "children": []
+        },
+        {
+          "id": "polynomial-value-and-roots",
+          "label": "多項式の値と根",
+          "children": []
+        },
+        {
+          "id": "radical-expression",
+          "label": "根号式",
+          "children": []
+        },
+        {
           "id": "function",
           "label": "関数",
           "children": [
+            {
+              "id": "hyperbolic-function",
+              "label": "双曲線関数",
+              "children": []
+            },
             {
               "id": "inverse-function",
               "label": "逆関数",
@@ -94,6 +114,11 @@
               "id": "maclaurin-expansion",
               "label": "マクローリン展開",
               "children": []
+            },
+            {
+              "id": "radius-of-convergence",
+              "label": "収束半径",
+              "children": []
             }
           ]
         },
@@ -104,7 +129,13 @@
             {
               "id": "double-integral",
               "label": "重積分",
-              "children": []
+              "children": [
+                {
+                  "id": "change-of-variables",
+                  "label": "変数変換",
+                  "children": []
+                }
+              ]
             }
           ]
         },
@@ -149,6 +180,11 @@
               "id": "variance",
               "label": "分散",
               "children": []
+            },
+            {
+              "id": "covariance",
+              "label": "共分散",
+              "children": []
             }
           ]
         }
@@ -163,8 +199,18 @@
           "label": "ベクトル",
           "children": [
             {
+              "id": "cross-product",
+              "label": "外積・スカラー三重積",
+              "children": []
+            },
+            {
               "id": "orthogonality",
               "label": "直交性",
+              "children": []
+            },
+            {
+              "id": "reflection-across-plane",
+              "label": "平面に関する対称点",
               "children": []
             }
           ]
@@ -307,12 +353,19 @@
       "parent_id": null,
       "depth": 0,
       "children": [
+        "binomial-sum",
+        "polynomial-value-and-roots",
+        "radical-expression",
         "function",
         "equation"
       ],
       "ancestors": [],
       "descendants": [
+        "binomial-sum",
+        "polynomial-value-and-roots",
+        "radical-expression",
         "function",
+        "hyperbolic-function",
         "inverse-function",
         "inverse-trigonometric-function",
         "equation",
@@ -322,11 +375,76 @@
       "problem_ids": [
         "pri-problem-000002",
         "pri-problem-000009",
-        "pri-problem-000010"
+        "pri-problem-000010",
+        "pri-problem-000015",
+        "pri-problem-000016",
+        "pri-problem-000020",
+        "pri-problem-000022",
+        "pri-problem-000023"
       ],
       "direct_problem_count": 0,
-      "problem_count": 3,
+      "problem_count": 8,
       "knowledge_path": "knowledge/primary/algebra.html"
+    },
+    "binomial-sum": {
+      "id": "binomial-sum",
+      "label": "二項係数を含む和",
+      "parent_id": "algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000015"
+      ],
+      "problem_ids": [
+        "pri-problem-000015"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/binomial-sum.html"
+    },
+    "polynomial-value-and-roots": {
+      "id": "polynomial-value-and-roots",
+      "label": "多項式の値と根",
+      "parent_id": "algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000016"
+      ],
+      "problem_ids": [
+        "pri-problem-000016"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/polynomial-value-and-roots.html"
+    },
+    "radical-expression": {
+      "id": "radical-expression",
+      "label": "根号式",
+      "parent_id": "algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000022"
+      ],
+      "problem_ids": [
+        "pri-problem-000022"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/radical-expression.html"
     },
     "function": {
       "id": "function",
@@ -334,23 +452,47 @@
       "parent_id": "algebra",
       "depth": 1,
       "children": [
+        "hyperbolic-function",
         "inverse-function"
       ],
       "ancestors": [
         "algebra"
       ],
       "descendants": [
+        "hyperbolic-function",
         "inverse-function",
         "inverse-trigonometric-function"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000002",
-        "pri-problem-000009"
+        "pri-problem-000009",
+        "pri-problem-000023"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/function.html"
+    },
+    "hyperbolic-function": {
+      "id": "hyperbolic-function",
+      "label": "双曲線関数",
+      "parent_id": "function",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "algebra",
+        "function"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000023"
+      ],
+      "problem_ids": [
+        "pri-problem-000023"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/hyperbolic-function.html"
     },
     "inverse-function": {
       "id": "inverse-function",
@@ -414,12 +556,15 @@
       "descendants": [
         "system-of-equations"
       ],
-      "direct_problem_ids": [],
-      "problem_ids": [
-        "pri-problem-000010"
+      "direct_problem_ids": [
+        "pri-problem-000020"
       ],
-      "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_ids": [
+        "pri-problem-000010",
+        "pri-problem-000020"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/equation.html"
     },
     "system-of-equations": {
@@ -460,8 +605,10 @@
         "telescoping-series",
         "power-series",
         "maclaurin-expansion",
+        "radius-of-convergence",
         "integration",
         "double-integral",
+        "change-of-variables",
         "differential-equation",
         "first-order-nonhomogeneous-ode"
       ],
@@ -471,10 +618,14 @@
         "pri-problem-000007",
         "pri-problem-000009",
         "pri-problem-000011",
-        "pri-problem-000014"
+        "pri-problem-000014",
+        "pri-problem-000017",
+        "pri-problem-000021",
+        "pri-problem-000025",
+        "pri-problem-000028"
       ],
       "direct_problem_count": 0,
-      "problem_count": 5,
+      "problem_count": 9,
       "knowledge_path": "knowledge/primary/analysis.html"
     },
     "series": {
@@ -526,21 +677,25 @@
       "parent_id": "analysis",
       "depth": 1,
       "children": [
-        "maclaurin-expansion"
+        "maclaurin-expansion",
+        "radius-of-convergence"
       ],
       "ancestors": [
         "analysis"
       ],
       "descendants": [
-        "maclaurin-expansion"
+        "maclaurin-expansion",
+        "radius-of-convergence"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000004",
-        "pri-problem-000011"
+        "pri-problem-000011",
+        "pri-problem-000017",
+        "pri-problem-000025"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 4,
       "knowledge_path": "knowledge/primary/power-series.html"
     },
     "maclaurin-expansion": {
@@ -556,15 +711,38 @@
       "descendants": [],
       "direct_problem_ids": [
         "pri-problem-000004",
-        "pri-problem-000011"
+        "pri-problem-000011",
+        "pri-problem-000025"
       ],
       "problem_ids": [
         "pri-problem-000004",
-        "pri-problem-000011"
+        "pri-problem-000011",
+        "pri-problem-000025"
       ],
-      "direct_problem_count": 2,
-      "problem_count": 2,
+      "direct_problem_count": 3,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/maclaurin-expansion.html"
+    },
+    "radius-of-convergence": {
+      "id": "radius-of-convergence",
+      "label": "収束半径",
+      "parent_id": "power-series",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "power-series"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000017"
+      ],
+      "problem_ids": [
+        "pri-problem-000017"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/radius-of-convergence.html"
     },
     "integration": {
       "id": "integration",
@@ -578,14 +756,17 @@
         "analysis"
       ],
       "descendants": [
-        "double-integral"
+        "double-integral",
+        "change-of-variables"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000014"
+        "pri-problem-000014",
+        "pri-problem-000021",
+        "pri-problem-000028"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/integration.html"
     },
     "double-integral": {
@@ -593,21 +774,50 @@
       "label": "重積分",
       "parent_id": "integration",
       "depth": 2,
-      "children": [],
+      "children": [
+        "change-of-variables"
+      ],
       "ancestors": [
         "analysis",
         "integration"
       ],
-      "descendants": [],
+      "descendants": [
+        "change-of-variables"
+      ],
       "direct_problem_ids": [
-        "pri-problem-000014"
+        "pri-problem-000014",
+        "pri-problem-000028"
       ],
       "problem_ids": [
-        "pri-problem-000014"
+        "pri-problem-000014",
+        "pri-problem-000021",
+        "pri-problem-000028"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 3,
+      "knowledge_path": "knowledge/primary/double-integral.html"
+    },
+    "change-of-variables": {
+      "id": "change-of-variables",
+      "label": "変数変換",
+      "parent_id": "double-integral",
+      "depth": 3,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "integration",
+        "double-integral"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000021"
+      ],
+      "problem_ids": [
+        "pri-problem-000021"
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/primary/double-integral.html"
+      "knowledge_path": "knowledge/primary/change-of-variables.html"
     },
     "differential-equation": {
       "id": "differential-equation",
@@ -666,15 +876,18 @@
         "continuous-random-variable",
         "joint-probability-density-function",
         "expected-value",
-        "variance"
+        "variance",
+        "covariance"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000005",
-        "pri-problem-000012"
+        "pri-problem-000012",
+        "pri-problem-000018",
+        "pri-problem-000026"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 4,
       "knowledge_path": "knowledge/primary/probability-statistics.html"
     },
     "random-variable": {
@@ -685,7 +898,8 @@
       "children": [
         "continuous-random-variable",
         "expected-value",
-        "variance"
+        "variance",
+        "covariance"
       ],
       "ancestors": [
         "probability-statistics"
@@ -694,15 +908,18 @@
         "continuous-random-variable",
         "joint-probability-density-function",
         "expected-value",
-        "variance"
+        "variance",
+        "covariance"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000005",
-        "pri-problem-000012"
+        "pri-problem-000012",
+        "pri-problem-000018",
+        "pri-problem-000026"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 4,
       "knowledge_path": "knowledge/primary/random-variable.html"
     },
     "continuous-random-variable": {
@@ -720,12 +937,15 @@
       "descendants": [
         "joint-probability-density-function"
       ],
-      "direct_problem_ids": [],
-      "problem_ids": [
-        "pri-problem-000005"
+      "direct_problem_ids": [
+        "pri-problem-000018"
       ],
-      "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_ids": [
+        "pri-problem-000005",
+        "pri-problem-000018"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/primary/continuous-random-variable.html"
     },
     "joint-probability-density-function": {
@@ -763,14 +983,16 @@
       "descendants": [],
       "direct_problem_ids": [
         "pri-problem-000005",
-        "pri-problem-000012"
+        "pri-problem-000012",
+        "pri-problem-000018"
       ],
       "problem_ids": [
         "pri-problem-000005",
-        "pri-problem-000012"
+        "pri-problem-000012",
+        "pri-problem-000018"
       ],
-      "direct_problem_count": 2,
-      "problem_count": 2,
+      "direct_problem_count": 3,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/expected-value.html"
     },
     "variance": {
@@ -785,14 +1007,37 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "pri-problem-000012"
+        "pri-problem-000012",
+        "pri-problem-000026"
       ],
       "problem_ids": [
-        "pri-problem-000012"
+        "pri-problem-000012",
+        "pri-problem-000026"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/primary/variance.html"
+    },
+    "covariance": {
+      "id": "covariance",
+      "label": "共分散",
+      "parent_id": "random-variable",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "random-variable"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000026"
+      ],
+      "problem_ids": [
+        "pri-problem-000026"
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/primary/variance.html"
+      "knowledge_path": "knowledge/primary/covariance.html"
     },
     "linear-algebra": {
       "id": "linear-algebra",
@@ -806,7 +1051,9 @@
       "ancestors": [],
       "descendants": [
         "vector",
+        "cross-product",
         "orthogonality",
+        "reflection-across-plane",
         "matrix",
         "determinant",
         "block-determinant"
@@ -815,10 +1062,14 @@
       "problem_ids": [
         "pri-problem-000003",
         "pri-problem-000006",
-        "pri-problem-000013"
+        "pri-problem-000013",
+        "pri-problem-000019",
+        "pri-problem-000020",
+        "pri-problem-000024",
+        "pri-problem-000027"
       ],
       "direct_problem_count": 0,
-      "problem_count": 3,
+      "problem_count": 7,
       "knowledge_path": "knowledge/primary/linear-algebra.html"
     },
     "vector": {
@@ -827,21 +1078,50 @@
       "parent_id": "linear-algebra",
       "depth": 1,
       "children": [
-        "orthogonality"
+        "cross-product",
+        "orthogonality",
+        "reflection-across-plane"
       ],
       "ancestors": [
         "linear-algebra"
       ],
       "descendants": [
-        "orthogonality"
+        "cross-product",
+        "orthogonality",
+        "reflection-across-plane"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "pri-problem-000003"
+        "pri-problem-000003",
+        "pri-problem-000019",
+        "pri-problem-000024"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 3,
       "knowledge_path": "knowledge/primary/vector.html"
+    },
+    "cross-product": {
+      "id": "cross-product",
+      "label": "外積・スカラー三重積",
+      "parent_id": "vector",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "linear-algebra",
+        "vector"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000019",
+        "pri-problem-000024"
+      ],
+      "problem_ids": [
+        "pri-problem-000019",
+        "pri-problem-000024"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/primary/cross-product.html"
     },
     "orthogonality": {
       "id": "orthogonality",
@@ -864,6 +1144,27 @@
       "problem_count": 1,
       "knowledge_path": "knowledge/primary/orthogonality.html"
     },
+    "reflection-across-plane": {
+      "id": "reflection-across-plane",
+      "label": "平面に関する対称点",
+      "parent_id": "vector",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "linear-algebra",
+        "vector"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "pri-problem-000019"
+      ],
+      "problem_ids": [
+        "pri-problem-000019"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/primary/reflection-across-plane.html"
+    },
     "matrix": {
       "id": "matrix",
       "label": "行列",
@@ -882,10 +1183,12 @@
       "direct_problem_ids": [],
       "problem_ids": [
         "pri-problem-000006",
-        "pri-problem-000013"
+        "pri-problem-000013",
+        "pri-problem-000020",
+        "pri-problem-000027"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 4,
       "knowledge_path": "knowledge/primary/matrix.html"
     },
     "determinant": {
@@ -904,14 +1207,18 @@
         "block-determinant"
       ],
       "direct_problem_ids": [
-        "pri-problem-000013"
+        "pri-problem-000013",
+        "pri-problem-000020",
+        "pri-problem-000027"
       ],
       "problem_ids": [
         "pri-problem-000006",
-        "pri-problem-000013"
+        "pri-problem-000013",
+        "pri-problem-000020",
+        "pri-problem-000027"
       ],
-      "direct_problem_count": 1,
-      "problem_count": 2,
+      "direct_problem_count": 3,
+      "problem_count": 4,
       "knowledge_path": "knowledge/primary/determinant.html"
     },
     "block-determinant": {

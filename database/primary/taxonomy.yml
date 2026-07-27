@@ -17,9 +17,21 @@ tags:
   - id: algebra
     label: 代数
     children:
+      - id: binomial-sum
+        label: 二項係数を含む和
+
+      - id: polynomial-value-and-roots
+        label: 多項式の値と根
+
+      - id: radical-expression
+        label: 根号式
+
       - id: function
         label: 関数
         children:
+          - id: hyperbolic-function
+            label: 双曲線関数
+
           - id: inverse-function
             label: 逆関数
             children:
@@ -47,11 +59,17 @@ tags:
           - id: maclaurin-expansion
             label: マクローリン展開
 
+          - id: radius-of-convergence
+            label: 収束半径
+
       - id: integration
         label: 積分
         children:
           - id: double-integral
             label: 重積分
+            children:
+              - id: change-of-variables
+                label: 変数変換
 
       - id: differential-equation
         label: 微分方程式
@@ -77,14 +95,23 @@ tags:
           - id: variance
             label: 分散
 
+          - id: covariance
+            label: 共分散
+
   - id: linear-algebra
     label: 線形代数
     children:
       - id: vector
         label: ベクトル
         children:
+          - id: cross-product
+            label: 外積・スカラー三重積
+
           - id: orthogonality
             label: 直交性
+
+          - id: reflection-across-plane
+            label: 平面に関する対称点
 
       - id: matrix
         label: 行列

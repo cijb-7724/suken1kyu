@@ -1,0 +1,102 @@
+---
+title: "第440回 1次 問3"
+id: pri-problem-000024
+paper_id: pri-paper-0440
+question_number: 3
+cell_label: スカラー三重積
+tags:
+  - cross-product
+---
+
+## 問題
+
+3つの空間ベクトル
+
+$$
+\boldsymbol a=
+\begin{pmatrix}1\\2\\3\end{pmatrix},
+\qquad
+\boldsymbol b=
+\begin{pmatrix}-5\\8\\-4\end{pmatrix},
+\qquad
+\boldsymbol c=
+\begin{pmatrix}3\\-3\\1\end{pmatrix}
+$$
+
+について，
+
+$$
+\begin{aligned}
+&\boldsymbol a\cdot(\boldsymbol b\times\boldsymbol c)
++\boldsymbol b\cdot(\boldsymbol c\times\boldsymbol a)
++\boldsymbol c\cdot(\boldsymbol a\times\boldsymbol b)\\
+&\quad
+-\boldsymbol a\cdot(\boldsymbol c\times\boldsymbol b)
+-\boldsymbol b\cdot(\boldsymbol a\times\boldsymbol c)
+-\boldsymbol c\cdot(\boldsymbol b\times\boldsymbol a)
+\end{aligned}
+$$
+
+を求めなさい．ただし，ベクトル $\boldsymbol p,\boldsymbol q$ に対し，$\boldsymbol p\cdot\boldsymbol q$，$\boldsymbol p\times\boldsymbol q$ はそれぞれ内積，外積を表します．
+
+## 必要な知識
+
+- [外積・スカラー三重積](../../knowledge/primary/cross-product.qmd)
+
+## 必要な発想
+
+スカラー三重積は巡回させても同じ値で，2本を入れ替えると符号が反転する．
+6項を一つの三重積へまとめてから，外積を一度だけ計算する．
+
+## 解答
+
+$$
+T=\boldsymbol a\cdot(\boldsymbol b\times\boldsymbol c)
+$$
+
+とおく．スカラー三重積の巡回性と交代性より，最初の3項はすべて $T$ であり，後ろの3つの内積はすべて $-T$ である．式全体ではそれらを引いているので，求める値は $6T$ となる．
+
+ここで，
+
+$$
+\begin{aligned}
+\boldsymbol b\times\boldsymbol c
+&=
+\begin{pmatrix}
+8\cdot1-(-4)(-3)\\
+(-4)\cdot3-(-5)\cdot1\\
+(-5)(-3)-8\cdot3
+\end{pmatrix}\\
+&=
+\begin{pmatrix}-4\\-7\\-9\end{pmatrix}
+\end{aligned}
+$$
+
+だから，
+
+$$
+\begin{aligned}
+T
+&=(1,2,3)\cdot(-4,-7,-9)\\
+&=-4-14-27\\
+&=-45
+\end{aligned}
+$$
+
+である．したがって，
+
+$$
+\boxed{6T=-270}
+$$
+
+となる．
+
+## コメント
+
+6個の外積を個別に計算する問題ではありません．巡回置換と2本の交換による符号変化を先に使うと，計算は1回で済みます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,56 @@
+---
+title: "変数変換"
+id: change-of-variables
+---
+
+重積分における変数変換の基本事項をまとめます．
+
+## 基本事項
+
+$x=x(u,v)$，$y=y(u,v)$ と変換するとき，
+
+$$
+dx\,dy=
+\left|
+\frac{\partial(x,y)}{\partial(u,v)}
+\right|du\,dv
+$$
+
+です．領域と被積分関数だけでなく，ヤコビアンも変換します．
+
+楕円
+
+$$
+\frac{(x-a)^2}{A^2}+\frac{(y-b)^2}{B^2}\leq1
+$$
+
+には
+
+$$
+x=a+Ar\cos\theta,\qquad
+y=b+Br\sin\theta
+$$
+
+を使うと，ヤコビアンは $ABr$ になります．
+
+## 例題
+
+第1象限の単位円の4分の1に対する積分では，
+
+$$
+u=r\cos\theta,\qquad v=r\sin\theta,
+\qquad
+0\leq r\leq1,\quad0\leq\theta\leq\frac{\pi}{2}
+$$
+
+と置き，$du\,dv=r\,dr\,d\theta$ とします．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

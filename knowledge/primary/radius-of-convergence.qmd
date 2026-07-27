@@ -1,0 +1,56 @@
+---
+title: "収束半径"
+id: radius-of-convergence
+---
+
+べき級数の収束半径を求める基本的な方法をまとめます．
+
+## 基本事項
+
+べき級数
+
+$$
+\sum_{n=0}^{\infty}a_nx^n
+$$
+
+について，極限
+
+$$
+\lim_{n\to\infty}\left|\frac{a_n}{a_{n+1}}\right|=R
+$$
+
+が存在するとき，収束半径は $R$ です．階乗を含む係数では，隣り合う項の比を取ると多くの因子が消えます．
+
+また，
+
+$$
+\limsup_{n\to\infty}\sqrt[n]{|a_n|}=L
+$$
+
+なら，収束半径は $R=1/L$ です．
+
+## 例題
+
+$$
+\sum_{n=0}^{\infty}\frac{(2n)!}{(n!)^2}x^n
+$$
+
+では，
+
+$$
+\frac{a_n}{a_{n+1}}
+=\frac{(n+1)^2}{(2n+1)(2n+2)}
+\longrightarrow\frac14
+$$
+
+だから，収束半径は $\dfrac14$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

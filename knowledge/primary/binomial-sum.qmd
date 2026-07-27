@@ -1,0 +1,53 @@
+---
+title: "二項係数を含む和"
+id: binomial-sum
+---
+
+二項係数を含む有限和の基本的な処理をまとめます．
+
+## 基本事項
+
+二項定理
+
+$$
+(1+x)^n=\sum_{k=0}^n {n\choose k}x^k
+$$
+
+を使うと，${n\choose k}$ を含む和をまとめて扱えます．係数に $k$ や $k(k-1)$ が付く場合は，両辺を微分します．
+
+一方，$\dfrac1{k+m}$ が付く場合は
+
+$$
+\frac1{k+m}=\int_0^1t^{k+m-1}\,dt
+$$
+
+と表すと，積分の内側で二項定理を使えます．
+
+## 例題
+
+$$
+\sum_{k=0}^n\frac{(-1)^k}{k+1}{n\choose k}
+$$
+
+を求めます．積分表示を使うと，
+
+$$
+\begin{aligned}
+\sum_{k=0}^n\frac{(-1)^k}{k+1}{n\choose k}
+&=\int_0^1\sum_{k=0}^n{n\choose k}(-t)^k\,dt\\
+&=\int_0^1(1-t)^n\,dt\\
+&=\frac1{n+1}
+\end{aligned}
+$$
+
+となります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -1,0 +1,49 @@
+---
+title: "多項式の値と根"
+id: polynomial-value-and-roots
+---
+
+多項式の根を一つずつ求めずに，根から作られた積を計算する方法をまとめます．
+
+## 基本事項
+
+最高次係数が $1$ の $n$ 次多項式 $P(x)$ の根を $\alpha_1,\ldots,\alpha_n$ とすると，
+
+$$
+P(x)=\prod_{j=1}^n(x-\alpha_j)
+$$
+
+です．したがって，任意の数 $a$ に対して
+
+$$
+P(a)=\prod_{j=1}^n(a-\alpha_j)
+$$
+
+となります．求める積が $\prod(\alpha_j-a)$ なら，因子ごとに符号を変えて
+
+$$
+\prod_{j=1}^n(\alpha_j-a)=(-1)^nP(a)
+$$
+
+とします．
+
+## 例題
+
+$P(x)=x^3-2x+5$ の根を $\alpha,\beta,\gamma$ とします．このとき，
+
+$$
+(\alpha-1)(\beta-1)(\gamma-1)
+=-P(1)=-4
+$$
+
+です．根そのものを求める必要はありません．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

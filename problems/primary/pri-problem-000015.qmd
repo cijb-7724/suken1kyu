@@ -1,0 +1,77 @@
+---
+title: "第431回 1次 問1"
+id: pri-problem-000015
+paper_id: pri-paper-0431
+question_number: 1
+cell_label: 二項係数の和
+tags:
+  - binomial-sum
+---
+
+## 問題
+
+次の値を求めなさい．
+
+$$
+\sum_{k=0}^{98}
+\frac1{k+2}{98\choose k}(-1)^{k+2}
+$$
+
+## 必要な知識
+
+- [二項係数を含む和](../../knowledge/primary/binomial-sum.qmd)
+
+## 必要な発想
+
+$\dfrac1{k+2}$ を $\displaystyle\int_0^1x^{k+1}\,dx$ に置き換える．
+すると，残りの和を二項定理で $(1-x)^{98}$ にまとめられる．
+
+## 解答
+
+$(-1)^{k+2}=(-1)^k$ であり，
+
+$$
+\frac1{k+2}=\int_0^1x^{k+1}\,dx
+$$
+
+だから，
+
+$$
+\begin{aligned}
+\sum_{k=0}^{98}
+\frac1{k+2}{98\choose k}(-1)^{k+2}
+&=
+\int_0^1
+x\sum_{k=0}^{98}{98\choose k}(-x)^k\,dx\\
+&=\int_0^1x(1-x)^{98}\,dx
+\end{aligned}
+$$
+
+となる．ここで，$u=1-x$ とおくと，
+
+$$
+\begin{aligned}
+\int_0^1x(1-x)^{98}\,dx
+&=\int_0^1(1-u)u^{98}\,du\\
+&=\left[\frac{u^{99}}{99}-\frac{u^{100}}{100}\right]_0^1\\
+&=\frac1{9900}
+\end{aligned}
+$$
+
+である．よって，
+
+$$
+\boxed{\frac1{9900}}
+$$
+
+となる．
+
+## コメント
+
+二項係数の和に $\dfrac1{k+m}$ が付いているときは，定積分による表示を検討します．和を先に計算できる形へ変えるのが要点です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

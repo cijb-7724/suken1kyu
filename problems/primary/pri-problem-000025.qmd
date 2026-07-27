@@ -1,0 +1,91 @@
+---
+title: "第440回 1次 問4"
+id: pri-problem-000025
+paper_id: pri-paper-0440
+question_number: 4
+cell_label: マクローリン係数
+tags:
+  - maclaurin-expansion
+---
+
+## 問題
+
+次の問いに答えなさい．
+
+[1]{.circled-number}
+$\dfrac1{1+2x}$ をマクローリン展開したときの $x^3$ の係数を求めなさい．
+
+[2]{.circled-number}
+$\dfrac{\log_e(1+3x)}{1+2x}$ をマクローリン展開したときの $x^3$ の係数を求めなさい．ただし，$e$ は自然対数の底を表します．
+
+## 必要な知識
+
+- [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
+
+## 必要な発想
+
+[1]{.circled-number}は等比級数，[2]{.circled-number}は対数の展開と等比級数の積を使う．
+$x^3$ を作る項だけを拾えば，必要以上に高い次数まで展開しなくてよい．
+
+## 解答
+
+### [1]{.circled-number}
+
+等比級数より，
+
+$$
+\frac1{1+2x}
+=1-2x+4x^2-8x^3+\cdots
+$$
+
+だから，$x^3$ の係数は
+
+$$
+\boxed{-8}
+$$
+
+である．
+
+### [2]{.circled-number}
+
+$$
+\log_e(1+3x)
+=3x-\frac92x^2+9x^3+\cdots
+$$
+
+であるから，
+
+$$
+\begin{aligned}
+\frac{\log_e(1+3x)}{1+2x}
+&=
+\left(3x-\frac92x^2+9x^3+\cdots\right)
+\left(1-2x+4x^2-8x^3+\cdots\right)
+\end{aligned}
+$$
+
+となる．$x^3$ の係数は，
+
+$$
+3\cdot4+\left(-\frac92\right)(-2)+9\cdot1
+=12+9+9
+=30
+$$
+
+だから，
+
+$$
+\boxed{30}
+$$
+
+である．
+
+## コメント
+
+積の $x^3$ の係数は，次数の和が $3$ になる組合せから生じます．各級数を並べて，必要な組だけを拾うと計算が明確になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

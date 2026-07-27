@@ -1,0 +1,52 @@
+---
+title: "平面に関する対称点"
+id: reflection-across-plane
+---
+
+空間内の平面と，平面に関する対称点の求め方をまとめます．
+
+## 基本事項
+
+平面
+
+$$
+ax+by+cz+d=0
+$$
+
+の法線ベクトルは $\boldsymbol n=(a,b,c)$ です．点
+
+$$
+P=(x_0,y_0,z_0)
+$$
+
+をこの平面に関して対称移動した点 $P'$ は，
+
+$$
+P'
+=P-
+\frac{2(ax_0+by_0+cz_0+d)}
+{a^2+b^2+c^2}
+\boldsymbol n
+$$
+
+で求められます．
+
+## 例題
+
+点 $(2,1,0)$ を平面 $x=0$ に関して対称移動します．$a=1$，$b=c=d=0$ だから，
+
+$$
+(2,1,0)-2\cdot2(1,0,0)=(-2,1,0)
+$$
+
+となります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

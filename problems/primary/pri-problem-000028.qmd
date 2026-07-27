@@ -1,0 +1,87 @@
+---
+title: "第440回 1次 問7"
+id: pri-problem-000028
+paper_id: pri-paper-0440
+question_number: 7
+cell_label: 領域を読む重積分
+tags:
+  - double-integral
+---
+
+## 問題
+
+$xy$ 平面における領域
+
+$$
+D=
+\{(x,y)\mid0\leq x\leq2,\ y\geq0,\ x+y\leq4\leq x^2+y^2\}
+$$
+
+に対して，次の重積分を求めなさい．
+
+$$
+\iint_Dx^2y\,dx\,dy
+$$
+
+## 必要な知識
+
+- [重積分](../../knowledge/primary/double-integral.qmd)
+
+## 必要な発想
+
+領域は直線 $y=4-x$ の下側かつ円 $x^2+y^2=4$ の外側にある．
+$0\leq x\leq2$ では，$\sqrt{4-x^2}\leq y\leq4-x$ と表せる．
+
+## 解答
+
+$y\geq0$ のもとで，
+
+$$
+4\leq x^2+y^2
+$$
+
+は
+
+$$
+y\geq\sqrt{4-x^2}
+$$
+
+を意味する．また，$x+y\leq4$ より $y\leq4-x$ である．したがって，
+
+$$
+\iint_Dx^2y\,dx\,dy
+=
+\int_0^2\int_{\sqrt{4-x^2}}^{4-x}x^2y\,dy\,dx
+$$
+
+となる．よって，
+
+$$
+\begin{aligned}
+\iint_Dx^2y\,dx\,dy
+&=
+\frac12\int_0^2x^2
+\left\{(4-x)^2-(4-x^2)\right\}\,dx\\
+&=\int_0^2(6x^2-4x^3+x^4)\,dx\\
+&=\left[2x^3-x^4+\frac{x^5}{5}\right]_0^2\\
+&=\frac{32}{5}
+\end{aligned}
+$$
+
+である．したがって，
+
+$$
+\boxed{\frac{32}{5}}
+$$
+
+となる．
+
+## コメント
+
+$4\leq x^2+y^2$ は円の外側を表します．不等号の向きから積分の上端・下端を決め，$0\leq x\leq2$ で二つの境界の上下関係も確認しましょう．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,51 @@
+---
+title: "双曲線関数"
+id: hyperbolic-function
+---
+
+指数関数で定義される双曲線関数の基本事項をまとめます．
+
+## 基本事項
+
+複素数 $z$ に対して，
+
+$$
+\sinh z=\frac{e^z-e^{-z}}2,\qquad
+\cosh z=\frac{e^z+e^{-z}}2,\qquad
+\tanh z=\frac{\sinh z}{\cosh z}
+$$
+
+と定義します．オイラーの公式を使うと，実数 $\theta$ に対して
+
+$$
+\sinh(i\theta)=i\sin\theta,\qquad
+\cosh(i\theta)=\cos\theta
+$$
+
+だから，
+
+$$
+\tanh(i\theta)=i\tan\theta
+$$
+
+となります．
+
+## 例題
+
+$$
+\tanh\left(\frac{\pi i}{4}\right)
+=i\tan\frac{\pi}{4}
+=i
+$$
+
+です．引数が純虚数なら，三角関数へ直すと計算しやすくなります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->
