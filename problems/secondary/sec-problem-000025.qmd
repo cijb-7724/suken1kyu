@@ -1,0 +1,105 @@
+---
+title: "第414回 2次 問4"
+id: sec-problem-000025
+paper_id: sec-paper-0414
+question_number: 4
+cell_label: χ²とPoisson
+tags:
+  - chi-square-goodness-of-fit
+  - poisson-distribution
+---
+
+## 問題
+
+1. さいころを150回振った結果，1から6の度数が順に $20,14,34,24,33,25$ であった．正しいさいころといえるか，有意水準 $0.05$ で検定しなさい．
+2. 与えられたPoisson分布と $\chi^2$ 分布の関係を用い，
+
+$$
+\sum_{k=0}^{m}\frac{2^ke^{-2}}{k!}\ge0.975
+$$
+
+を満たす最小の正整数 $m$ を求めなさい．
+
+## 必要な知識
+
+- [適合度検定](../../knowledge/secondary/chi-square-goodness-of-fit.qmd)
+- [ポアソン分布](../../knowledge/secondary/poisson-distribution.qmd)
+
+### この問題で使う一般形
+
+$r$ 個のカテゴリーの確率が帰無仮説で指定され，期待度数を $E_i$，観測度数を $O_i$ とすると，
+
+$$
+X^2=\sum_{i=1}^r\frac{(O_i-E_i)^2}{E_i}
+$$
+
+は近似的に自由度 $r-1$ の $\chi^2$ 分布に従います．また，$N\sim\operatorname{Poisson}(\lambda)$ と $Y\sim\chi^2_{2(m+1)}$ の間には
+
+$$
+P(N\leq m)=P(Y\geq2\lambda)
+$$
+
+という関係があります．
+
+## 必要な発想
+
+第1問は各目の期待度数が $25$ の適合度検定である．
+第2問は左辺を自由度 $2(m+1)$ の $\chi^2$ 分布の上側確率へ読み替え，表で隣り合う $m$ を比較する．
+
+## 解答
+
+### 1
+
+帰無仮説は各目の確率が $1/6$ であることとする．各期待度数は
+
+$$
+E_i=150\cdot\frac16=25
+$$
+
+である．検定統計量は
+
+$$
+X^2=\sum_{i=1}^{6}\frac{(O_i-25)^2}{25}
+$$
+
+$$
+=\frac{(-5)^2+(-11)^2+9^2+(-1)^2+8^2+0^2}{25}
+=\frac{292}{25}=11.68
+$$
+
+となる．自由度は $6-1=5$ で，上側 $5\%$ 点は $11.070$ である．
+
+$$
+11.68>11.070
+$$
+
+だから帰無仮説を棄却する．有意水準 $0.05$ では，正しく作られているとはいえない．
+
+### 2
+
+問題文の関係で $\lambda=2$ とすると，
+
+$$
+\sum_{k=0}^{m}\frac{2^ke^{-2}}{k!}
+=P\!\left(\chi^2_{2(m+1)}\ge4\right)
+$$
+
+である．$m=4$ では自由度 $10$ で，上側確率 $0.975$ の点は $3.2470$ である．$4>3.2470$ なので，上側確率は $0.975$ より小さい．
+
+$m=5$ では自由度 $12$ で，同じ点は $4.4038$ である．$4<4.4038$ なので，上側確率は $0.975$ より大きい．したがって最小値は
+
+$$
+\boxed{m=5}
+$$
+
+である．
+
+## コメント
+
+自由度が増えると分布が右へ移るため，固定点 $4$ より上の確率が増えます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

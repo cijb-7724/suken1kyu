@@ -1,0 +1,78 @@
+---
+title: "フーリエ級数"
+id: fourier-series
+---
+
+## 概要
+
+Fourier級数は，周期関数を正弦関数と余弦関数の無限和で表す．係数計算だけでなく，特定の $x$ を代入して数値級数の和を求める用途がある．
+
+## 基本事項
+
+$[-\pi,\pi]$ 上で
+
+$$
+f(x)\sim\frac{a_0}{2}+\sum_{n=1}^{\infty}
+\{a_n\cos nx+b_n\sin nx\}
+$$
+
+とし，
+
+$$
+a_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos nx\,dx,\qquad
+b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin nx\,dx
+$$
+
+である．偶関数なら $b_n=0$，奇関数なら $a_n=0$ である．
+
+区分的に滑らかな関数では，連続点で級数は $f(x)$ へ，不連続点で左右極限の平均へ収束する．端点への代入では周期延長後の左右極限を考える．
+
+積和公式
+
+$$
+\sin ax\cos bx=\frac12\{\sin(a+b)x+\sin(a-b)x\}
+$$
+
+などにより係数積分を計算する．
+
+## 例題
+
+$f(x)=x$（$-\pi<x<\pi$）は奇関数なので余弦係数は $0$ である．部分積分により
+
+$$
+b_n=\frac2\pi\int_0^\pi x\sin nx\,dx
+=\frac{2(-1)^{n+1}}n
+$$
+
+となり，
+
+$$
+x=2\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}n\sin nx
+$$
+
+を得る．
+
+$x=\pi/2$ は連続点なので代入できる．$\sin(n\pi/2)$ は偶数 $n$ で $0$，奇数 $n=2k+1$ で $(-1)^k$ だから，
+
+$$
+\frac{\pi}{2}
+=2\sum_{k=0}^{\infty}\frac{(-1)^k}{2k+1}.
+$$
+
+よって，
+
+$$
+\boxed{\sum_{k=0}^{\infty}\frac{(-1)^k}{2k+1}=\frac{\pi}{4}}
+$$
+
+を得る．数値級数へ使うときは，代入点でFourier級数がどの値へ収束するかを先に確認する．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

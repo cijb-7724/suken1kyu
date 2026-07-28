@@ -1,29 +1,128 @@
 ---
-title: "出典不明01 問2"
+title: "第358回 2次 問2"
 id: sec-problem-000002
-paper_id: sec-paper-unknown-001
+paper_id: sec-paper-0358
 question_number: 2
-cell_label: フーリエ変換
+cell_label: 離散Fourier
 tags:
   - fourier-transform
-  - series
 ---
 
 ## 問題
 
-2次試験のサンプル問題．
+$\zeta=\cos(2\pi/N)+i\sin(2\pi/N)$ とし，
+
+$$
+X_k=\sum_{n=0}^{N-1}x_n\zeta^{-nk}
+$$
+
+とする．
+
+1. $k=0,\ldots,N-1$ に対して $X_{N-k}=X_{-k}$ を示しなさい．
+2. 周期 $T=8$，標本数 $N=4$ とし，$t=0,2,4,6$ での標本値が順に $0,0,1,1$ であるとき，問題文で与えられた実三角関数表示を求めなさい．
+
+## 必要な知識
+
+- [フーリエ変換](../../knowledge/secondary/fourier-transform.qmd)
+
+### この問題で使う一般形
+
+$N$ 点離散Fourier変換では，$\zeta=e^{2\pi i/N}$ として
+
+$$
+X_k=\sum_{n=0}^{N-1}x_n\zeta^{-nk}
+$$
+
+と定めます．$\zeta^N=1$ なので $X_{k+N}=X_k$ です．さらに $x_n$ が実数なら
+
+$$
+X_{N-k}=X_{-k}=\overline{X_k}
+$$
+
+となり，正負の周波数を組にして実数の余弦・正弦表示へ直せます．
 
 ## 必要な発想
 
-ここに必要な発想を書く．
+$\zeta^N=1$ により，周波数の添字は法 $N$ で扱える．
+第2問は，まず4個の $X_k$ を定義どおり計算し，その後で $a_j,b_j$ に変換する．
 
 ## 解答
 
-ここに解答を書く．
+### 1
+
+$\zeta^N=1$ であるから，
+
+$$
+\zeta^{-n(N-k)}
+=\zeta^{-nN}\zeta^{nk}
+=(\zeta^N)^{-n}\zeta^{nk}
+=\zeta^{nk}
+$$
+
+である．したがって，
+
+$$
+X_{N-k}
+=\sum_{n=0}^{N-1}x_n\zeta^{-n(N-k)}
+=\sum_{n=0}^{N-1}x_n\zeta^{nk}
+=X_{-k}
+$$
+
+となる．
+
+### 2
+
+$N=4$ なので $\zeta=i$ であり，$(x_0,x_1,x_2,x_3)=(0,0,1,1)$ である．
+
+定義へ代入すると，$x_0=x_1=0$ なので各和には $n=2,3$ の項だけが残る．
+
+$$
+X_0=0+0+1+1=2
+$$
+
+$$
+X_1=i^{-2}+i^{-3}=-1+i
+$$
+
+$$
+X_2=i^{-4}+i^{-6}=1-1=0
+$$
+
+$$
+X_3=i^{-6}+i^{-9}=-1-i
+$$
+
+を得る．よって，
+
+$$
+a_0=\frac{X_0+X_0}{4}=1
+$$
+
+$$
+a_1=\frac{X_1+X_{-1}}4
+=\frac{(-1+i)+(-1-i)}4=-\frac12
+$$
+
+$$
+b_1=\frac{i(X_1-X_{-1})}{4}
+=\frac{i\{(-1+i)-(-1-i)\}}4=-\frac12
+$$
+
+であり，$a_2=0$ である．$2\pi t/T=\pi t/4$ を代入すると，
+
+$$
+\boxed{
+w(t)\simeq
+\frac12-\frac12\cos\frac{\pi t}{4}
+-\frac12\sin\frac{\pi t}{4}
+}
+$$
+
+となる．
 
 ## コメント
 
-ここにコメントを書く．
+$X_1$ と $X_3$ が共役になっていることは，計算ミスを見つける確認にもなります．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

@@ -1,0 +1,98 @@
+---
+title: "第414回 2次 問7"
+id: sec-problem-000028
+paper_id: sec-paper-0414
+question_number: 7
+cell_label: 3変数極値
+tags:
+  - multivariable-extrema
+---
+
+## 問題
+
+$$
+f(x,y,z)=x^3+y^3+z^3+3xz-6y
+$$
+
+の極値と，それを与える $(x,y,z)$ を求めなさい．
+
+## 必要な知識
+
+- [多変数関数の極値](../../knowledge/secondary/multivariable-extrema.qmd)
+
+### この問題で使う一般形
+
+$C^2$ 級関数の内点における局所的な極値の必要条件は $\nabla f=0$ です．停留点でHessianが正定値なら狭義極小，負定値なら狭義極大，不定値なら鞍点です．
+
+## 必要な発想
+
+勾配から4個の停留点を列挙し，Hessianの $x,z$ ブロックと $y$ 方向の符号を別々に見る．
+
+## 解答
+
+偏微分は
+
+$$
+f_x=3x^2+3z,\qquad
+f_y=3y^2-6,\qquad
+f_z=3z^2+3x
+$$
+
+なので，停留条件は
+
+$$
+z=-x^2,\qquad y=\pm\sqrt2,\qquad x=-z^2
+$$
+
+である．初めと終わりの式から $x=-x^4$ なので，
+
+$$
+(x,z)=(0,0),\ (-1,-1)
+$$
+
+を得る．したがって停留点は $(0,\pm\sqrt2,0)$，$(-1,\pm\sqrt2,-1)$ である．
+
+Hessianは
+
+$$
+\begin{pmatrix}6x&0&3\\0&6y&0\\3&0&6z\end{pmatrix}
+$$
+
+である．$(0,\pm\sqrt2,0)$ では $x,z$ 部分が
+
+$$
+\begin{pmatrix}0&3\\3&0\end{pmatrix}
+$$
+
+で，固有値は $3,-3$ だからHessianは不定である．よって2点とも鞍点である．
+
+$(-1,\sqrt2,-1)$ では $x,z$ 部分
+
+$$
+\begin{pmatrix}-6&3\\3&-6\end{pmatrix}
+$$
+
+の固有値は $-3,-9$ だが，$y$ 方向の固有値は $6\sqrt2>0$ である．したがってHessianは不定で，この点も鞍点である．
+
+$(-1,-\sqrt2,-1)$ では，同じ $x,z$ 部分の2固有値に加え，$y$ 方向も $-6\sqrt2<0$ である．Hessianは負定値なので，この点は狭義極大点である．その値は
+
+$$
+\begin{aligned}
+f(-1,-\sqrt2,-1)
+&=(-1)^3+(-\sqrt2)^3+(-1)^3\\
+&\quad+3(-1)(-1)-6(-\sqrt2)\\
+&=1+4\sqrt2
+\end{aligned}
+$$
+
+となる．したがって極大値は $\boxed{1+4\sqrt2}$ である．停留点をすべて分類した結果，極小点はないので極小値は存在しない．
+
+## コメント
+
+停留点を漏れなく列挙した後にHessianを調べることで，極値候補をすべて分類できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

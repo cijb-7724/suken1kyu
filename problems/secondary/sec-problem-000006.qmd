@@ -1,28 +1,133 @@
 ---
-title: "出典不明01 問6"
+title: "第358回 2次 問6"
 id: sec-problem-000006
-paper_id: sec-paper-unknown-001
+paper_id: sec-paper-0358
 question_number: 6
-cell_label: 線形代数
+cell_label: Jordan形
 tags:
-  - linear-algebra
+  - jordan-normal-form
 ---
 
 ## 問題
 
-2次試験のサンプル問題．
+$$
+A=
+\begin{pmatrix}
+1&-1&1\\
+1&0&1\\
+1&-1&2
+\end{pmatrix}
+$$
+
+について，Jordan標準形 $J$ と，$P^{-1}AP=J$ を満たす正則行列 $P$ の一例を求めなさい．
+
+## 必要な知識
+
+- [Jordan標準形](../../knowledge/secondary/jordan-normal-form.qmd)
+
+### この問題で使う一般形
+
+固有値 $\lambda$ に対し $N=A-\lambda I$ とおき，
+
+$$
+Nv_1=0,\qquad Nv_2=v_1,\qquad\ldots,\qquad Nv_k=v_{k-1}
+$$
+
+を満たす列をJordan鎖といいます．この順で $P=(v_1\ \cdots\ v_k)$ と並べると，対応するブロックは対角に $\lambda$，その直上に $1$ をもつ $J_k(\lambda)$ になります．
 
 ## 必要な発想
 
-ここに必要な発想を書く．
+固有値を求めた後，固有ベクトルが足りなければ一般固有ベクトルを連鎖させる．
+$N=A-I$ とおき，$Nv_1=0,Nv_2=v_1,Nv_3=v_2$ を順に解く．
 
 ## 解答
 
-ここに解答を書く．
+特性多項式を第1行で展開して整理すると
+
+$$
+\begin{aligned}
+\det(\lambda I-A)
+&=
+\begin{vmatrix}
+\lambda-1&1&-1\\
+-1&\lambda&-1\\
+-1&1&\lambda-2
+\end{vmatrix}\\
+&=(\lambda-1)^3
+\end{aligned}
+$$
+
+であり，固有値は $1$ のみである．$N=A-I$ とおくと，
+
+$$
+N=
+\begin{pmatrix}
+0&-1&1\\
+1&-1&1\\
+1&-1&1
+\end{pmatrix}
+$$
+
+である．$Nv_1=0$ を解くと，たとえば
+
+$$
+v_1=\begin{pmatrix}0\\1\\1\end{pmatrix}
+$$
+
+を得る．固有空間は1次元なので，$3\times3$ のJordan細胞が1個必要である．
+
+次に $Nv_2=v_1$ を解く．
+
+$$
+v_2=\begin{pmatrix}1\\0\\0\end{pmatrix}
+$$
+
+なら実際に $Nv_2=v_1$ である．さらに $Nv_3=v_2$ を解くと，
+
+$$
+v_3=\begin{pmatrix}-1\\0\\1\end{pmatrix}
+$$
+
+を選べる．
+
+これらを列に並べて
+
+$$
+P=(v_1\ v_2\ v_3)
+=
+\begin{pmatrix}
+0&1&-1\\
+1&0&0\\
+1&0&1
+\end{pmatrix}
+$$
+
+とする．連鎖の式から
+
+$$
+Av_1=v_1,\qquad
+Av_2=v_1+v_2,\qquad
+Av_3=v_2+v_3
+$$
+
+なので，
+
+$$
+\boxed{
+P^{-1}AP=
+J=
+\begin{pmatrix}
+1&1&0\\
+0&1&1\\
+0&0&1
+\end{pmatrix}}
+$$
+
+となる．
 
 ## コメント
 
-ここにコメントを書く．
+$P$ の列順とJordan細胞の上側の $1$ は対応しています．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

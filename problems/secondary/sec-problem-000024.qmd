@@ -1,0 +1,91 @@
+---
+title: "第414回 2次 問3"
+id: sec-problem-000024
+paper_id: sec-paper-0414
+question_number: 3
+cell_label: 反転不等式
+tags:
+  - geometric-inversion
+---
+
+## 問題
+
+平面上の相異なる4点 $P,A,B,C$ があり，どの3点も同一直線上にない．$a=BC,b=CA,c=AB$ とするとき，
+
+$$
+a\,PB\cdot PC+b\,PC\cdot PA+c\,PA\cdot PB\ge abc
+$$
+
+を証明しなさい．ただし，三角形 $LMN$ と点 $Q$ について
+
+$$
+MN\cdot QL^2+NL\cdot QM^2+LM\cdot QN^2
+\ge MN\cdot NL\cdot LM
+$$
+
+を用いてよい．
+
+## 必要な知識
+
+- [反転](../../knowledge/secondary/geometric-inversion.qmd)
+
+### この問題で使う一般形
+
+中心 $P$，半径 $\rho$ の反転で点 $X$ の像を $X'$ とすると，$PX\cdot PX'=\rho^2$ です．2点 $X,Y$ とその像については
+
+$$
+X'Y'=\frac{\rho^2\,XY}{PX\cdot PY}
+$$
+
+が成り立ちます．本問では $\rho=1$ とすれば，目標式にある距離の積が分母へ現れます．
+
+## 必要な発想
+
+与えられた補題は「辺長×距離の二乗」の形で，目標は距離の積である．
+$P$ を中心に反転すると，辺長が $AB/(PA\cdot PB)$ へ変わり，補題を掛け戻した式がちょうど目標になる．
+
+## 解答
+
+$x=PA,y=PB,z=PC$ とする．中心 $P$，半径 $1$ の反転による $A,B,C$ の像を $A',B',C'$ とする．すると
+
+$$
+PA'=\frac1x,\qquad PB'=\frac1y,\qquad PC'=\frac1z
+$$
+
+である．反転による距離公式から，
+
+$$
+B'C'=\frac{a}{yz},\qquad
+C'A'=\frac{b}{zx},\qquad
+A'B'=\frac{c}{xy}
+$$
+
+を得る．
+
+問題文で与えられた不等式を，三角形 $A'B'C'$ と点 $P$ に適用する．
+
+$$
+\frac{a}{yz}\left(\frac1x\right)^2
++\frac{b}{zx}\left(\frac1y\right)^2
++\frac{c}{xy}\left(\frac1z\right)^2
+\ge
+\frac{abc}{x^2y^2z^2}
+$$
+
+である．両辺へ正数 $x^2y^2z^2$ を掛けると，
+
+$$
+ayz+bzx+cxy\ge abc
+$$
+
+となる．$x=PA,y=PB,z=PC$ を戻せば，求める不等式が得られる．
+
+## コメント
+
+反転は，距離の積を距離の二乗へ変換するために選ばれています．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,93 @@
+---
+title: "第406回 2次 問1"
+id: sec-problem-000015
+paper_id: sec-paper-0406
+question_number: 1
+cell_label: 合同式の構成
+tags:
+  - modular-construction
+---
+
+## 問題
+
+1. $\gcd(a_j,p_j)=1$（$j=1,2$），$\gcd(p_1,p_2)=1$ とする．各合同式 $a_jx\equiv b_j\pmod{p_j}$ が解をもつとき，2式を同時に満たす整数が存在することを示しなさい．
+2. $a\ge3$ を奇数とする．方程式 $2ax^2+(a+2)x+1=0$ は整数解をもたないが，任意の $m\ge2$ に対し，同じ左辺を法 $m$ で $0$ とする整数 $x$ が存在することを示しなさい．
+
+## 必要な知識
+
+- [合同式の構成](../../knowledge/secondary/modular-construction.qmd)
+
+### この問題で使う一般形
+
+中国剰余定理によれば，$m_1,\ldots,m_r$ がどの2つも互いに素なら，
+
+$$
+x\equiv c_i\pmod{m_i}\qquad(i=1,\ldots,r)
+$$
+
+は法 $m_1\cdots m_r$ でただ1つの解をもちます．また，$\gcd(a,m)=1$ ならBezoutの等式から $a$ は法 $m$ で逆元をもち，$ax\equiv b\pmod m$ は $x\equiv a^{-1}b\pmod m$ と同値です．
+
+## 必要な発想
+
+第2問の左辺は $(2x+1)(ax+1)$ と因数分解できる．
+法を素数冪へ分け，各素数が $a$ を割るかどうかで0にする因子を選び，中国剰余定理で統合する．
+
+## 解答
+
+### 1
+
+$\gcd(a_j,p_j)=1$ なので $a_j$ は法 $p_j$ で逆元をもつ．したがって各式は
+
+$$
+x\equiv c_j\pmod{p_j},\qquad c_j\equiv a_j^{-1}b_j\pmod{p_j}
+$$
+
+と書ける．$\gcd(p_1,p_2)=1$ だから，中国剰余定理により2式を同時に満たす $x$ が法 $p_1p_2$ で一意に存在する．
+
+### 2
+
+$$
+2ax^2+(a+2)x+1=(2x+1)(ax+1)
+$$
+
+である．実数方程式の解は $-1/2,-1/a$ で，$a\ge3$ なので整数解はない．
+
+一方，
+
+$$
+m=\prod_{i=1}^{r}p_i^{e_i}
+$$
+
+と素因数分解する．各 $p_i^{e_i}$ に対して解を作る．
+
+$p_i\nmid a$ なら $a$ は法 $p_i^{e_i}$ で逆元をもつので，
+
+$$
+ax+1\equiv0\pmod{p_i^{e_i}}
+$$
+
+を解ける．$p_i\mid a$ なら，$a$ は奇数なので $p_i$ も奇数であり，$2$ が逆元をもつ．したがって
+
+$$
+2x+1\equiv0\pmod{p_i^{e_i}}
+$$
+
+を解ける．どちらの場合も積 $(2x+1)(ax+1)$ は法 $p_i^{e_i}$ で $0$ になる．
+
+これらの素数冪は互いに素なので，中国剰余定理により各法で選んだ解を同時に満たす整数 $x$ が存在する．その $x$ は
+
+$$
+2ax^2+(a+2)x+1\equiv0\pmod m
+$$
+
+を満たす．
+
+## コメント
+
+整数方程式に解がないことと，すべての法で合同式が解けることは両立します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

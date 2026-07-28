@@ -1,0 +1,75 @@
+---
+title: "第363回 2次 問6"
+id: sec-problem-000013
+paper_id: sec-paper-0363
+question_number: 6
+cell_label: 反転行列
+tags:
+  - structured-determinant
+---
+
+## 問題
+
+対角成分がすべて $a$，反対角成分がすべて $b$，その他が $0$ である $2n$ 次正方行列 $A_{2n}$ の行列式を求めなさい．
+
+## 必要な知識
+
+- [構造をもつ行列式](../../knowledge/secondary/structured-determinant.qmd)
+
+### この問題で使う一般形
+
+正則行列 $P$ による相似変換では
+
+$$
+\det(P^{-1}AP)=\det A
+$$
+
+です．特に，行と列へ同じ置換を施すことは置換行列による相似変換です．また，ブロック対角行列 $\operatorname{diag}(B_1,\ldots,B_r)$ の行列式は $\prod_j\det B_j$ です．
+
+## 必要な発想
+
+行と列を対称な添字の組に並べ替えると，同じ $2\times2$ 行列が $n$ 個現れる．
+
+## 解答
+
+添字を
+
+$$
+1,2n,2,2n-1,\ldots,n,n+1
+$$
+
+の順に並べ替える．行と列へ同じ置換を施すので，行列式の符号は変わらない．すると行列は
+
+$$
+\begin{pmatrix}
+a&b&&&\\
+b&a&&&\\
+&&a&b&\\
+&&b&a&\\
+&&&&\ddots
+\end{pmatrix}
+$$
+
+という $n$ 個のブロック対角行列になる．各ブロックの行列式は
+
+$$
+\begin{vmatrix}a&b\\b&a\end{vmatrix}=a^2-b^2
+$$
+
+である．したがって，
+
+$$
+\boxed{\det A_{2n}=(a^2-b^2)^n}
+$$
+
+となる．
+
+## コメント
+
+$aI+bR$ と見て，反転行列 $R$ の固有値 $\pm1$ を使っても同じ結果になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

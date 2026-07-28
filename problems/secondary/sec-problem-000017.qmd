@@ -1,0 +1,114 @@
+---
+title: "第406回 2次 問3"
+id: sec-problem-000017
+paper_id: sec-paper-0406
+question_number: 3
+cell_label: 単位円上の点
+tags:
+  - complex-plane-geometry
+---
+
+## 問題
+
+単位円上の相異なる点を表す複素数を考える．
+
+1. $a+b+c=0$ なら，$A,B,C$ が正三角形を作ることを示しなさい．
+2. 円周上の順に $A,B,C,D$ が並び，$a+b+c+d=0$ なら，四角形 $ABCD$ が長方形であることを示しなさい．
+
+## 必要な知識
+
+- [複素平面の幾何](../../knowledge/secondary/complex-plane-geometry.qmd)
+
+### この問題で使う一般形
+
+単位円上の複素数 $z$ は $|z|=1$ なので
+
+$$
+\overline z=\frac1z
+$$
+
+を満たします．また，$u,v$ を位置ベクトルとみた内積は $u\cdot v=\operatorname{Re}(u\overline v)$ です．円に内接する四角形では，1本の対角線が直径なら，その対角線を見込む2つの円周角はともに直角です．
+
+## 必要な発想
+
+和が0という条件を位置ベクトルの重心として読む．
+単位ベクトルの和の長さを二乗し，内積，すなわち中心角を求める．
+
+## 解答
+
+### 1
+
+$a+b=-c$ なので，絶対値を二乗して
+
+$$
+1=|c|^2=|a+b|^2
+=|a|^2+|b|^2+2\operatorname{Re}(a\overline b)
+=2+2\operatorname{Re}(a\overline b)
+$$
+
+を得る．よって
+
+$$
+\operatorname{Re}(a\overline b)=-\frac12
+$$
+
+であり，$\overrightarrow{OA}$ と $\overrightarrow{OB}$ のなす角は $120^\circ$ である．$b+c=-a$，$c+a=-b$ にも同じ絶対値の二乗の計算を施すと，
+
+$$
+\operatorname{Re}(b\overline c)
+=\operatorname{Re}(c\overline a)=-\frac12
+$$
+
+を得る．よって3組の中心角がすべて $120^\circ$ で，3本の弦の長さは等しい．したがって $ABC$ は正三角形である．
+
+### 2
+
+$a,b,c,d$ を根にもつ多項式を
+
+$$
+g(z)=(z-a)(z-b)(z-c)(z-d)
+$$
+
+とする．仮定から1次の基本対称式は
+
+$$
+a+b+c+d=0
+$$
+
+である．一方，$|a|=|b|=|c|=|d|=1$ なので $\overline a=1/a$ などが成り立つ．仮定の共役を取ると
+
+$$
+\frac1a+\frac1b+\frac1c+\frac1d=0
+$$
+
+である．両辺へ $abcd$ を掛ければ
+
+$$
+abc+abd+acd+bcd=0
+$$
+
+となり，3次の基本対称式も $0$ である．したがって，ある $\alpha,\beta$ を用いて
+
+$$
+g(z)=z^4+\alpha z^2+\beta
+$$
+
+と書ける．これは偶関数だから，$z$ が根なら $-z$ も根である．よって4点は2組の対蹠点からなる．
+
+4点は円周上の順に $A,B,C,D$ と並び，相異なるので，向かい合う点が対蹠点となる．したがって
+
+$$
+c=-a,\qquad d=-b
+$$
+
+である．よって対角線 $AC$ と $BD$ はいずれも単位円の直径である．直径に対する円周角は直角だから，四角形の4角はすべて直角である．したがって $ABCD$ は長方形である．
+
+## コメント
+
+第2問では「円周上の順に並ぶ」という条件が，どの点どうしが対蹠点かを決めます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

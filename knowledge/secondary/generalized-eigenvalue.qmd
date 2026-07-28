@@ -1,0 +1,140 @@
+---
+title: "一般化固有値問題"
+id: generalized-eigenvalue
+---
+
+## 概要
+
+一般化固有値問題は
+
+$$
+A\boldsymbol u=\lambda B\boldsymbol u
+$$
+
+を満たす $\lambda$ と非零ベクトル $\boldsymbol u$ を求める問題です．振動，最適化，二次形式の同時対角化に現れます．
+
+## 基本事項
+
+非零解が存在するための必要十分条件は
+
+$$
+\det(A-\lambda B)=0
+$$
+
+です．$B$ が可逆なら $B^{-1}A$ の通常の固有値問題へ変換できますが，$B^{-1}A$ は対称とは限らないため，むやみに逆行列を計算しない方が安全です．
+
+$A,B$ が実対称で，$B$ が正定値なら，
+
+$$
+\langle x,y\rangle_B=x^{\mathsf T}By
+$$
+
+は内積です．異なる固有値 $\lambda,\mu$ に属する固有ベクトル $u,v$ について，
+
+$$
+u^{\mathsf T}Av=\mu u^{\mathsf T}Bv
+$$
+
+である一方，対称性から
+
+$$
+u^{\mathsf T}Av=(Au)^{\mathsf T}v
+=\lambda u^{\mathsf T}Bv
+$$
+
+なので，$(\lambda-\mu)u^{\mathsf T}Bv=0$，したがって $u^{\mathsf T}Bv=0$ です．各ベクトルは $\sqrt{u^{\mathsf T}Bu}$ で割って正規化します．
+
+### 解法の手順
+
+1. $B$ が正定値であることを，Sylvesterの判定法などで確認する．
+2. $\det(A-\lambda B)$ を計算し，一般化固有値を求める．
+3. 各 $\lambda$ について連立方程式 $(A-\lambda B)v=0$ を解く．
+4. 異なる固有値のベクトルが $v_i^{\mathsf T}Bv_j=0$ を満たすことを確認する．
+5. 各 $v_i$ を $\sqrt{v_i^{\mathsf T}Bv_i}$ で割る．
+
+$B^{-1}A$ を先に作る方法も理論上は可能ですが，分数が増え，対称性も見えにくくなります．試験では $\det(A-\lambda B)$ を直接計算する方が安全です．
+
+## 例題
+
+対角でない2つの行列
+
+$$
+A=\begin{pmatrix}2&1\\1&2\end{pmatrix},\qquad
+B=\begin{pmatrix}2&0\\0&1\end{pmatrix}
+$$
+
+について，$Au=\lambda Bu$ を解き，$B$ 内積で正規化します．$B$ の主座小行列式は $2,2$ で正なので，$B$ は正定値です．
+
+$$
+\begin{aligned}
+\det(A-\lambda B)
+&=
+\begin{vmatrix}
+2-2\lambda&1\\
+1&2-\lambda
+\end{vmatrix}\\
+&=(2-2\lambda)(2-\lambda)-1\\
+&=2\lambda^2-6\lambda+3
+\end{aligned}
+$$
+
+より，
+
+$$
+\lambda_\pm=\frac{3\pm\sqrt3}{2}.
+$$
+
+第1行から
+
+$$
+(2-2\lambda)x+y=0
+$$
+
+なので，$x=1$ と選ぶと
+
+$$
+y=2(\lambda-1)=1\pm\sqrt3.
+$$
+
+したがって，
+
+$$
+v_\pm=
+\begin{pmatrix}1\\1\pm\sqrt3\end{pmatrix}.
+$$
+
+実際に，異なる固有値に対応する2本は
+
+$$
+v_+^{\mathsf T}Bv_-
+=2+(1+\sqrt3)(1-\sqrt3)
+=2+(1-3)=0
+$$
+
+で，$B$ 内積に関して直交します．長さは
+
+$$
+v_\pm^{\mathsf T}Bv_\pm
+=2+(1\pm\sqrt3)^2
+=6\pm2\sqrt3
+$$
+
+です．よって
+
+$$
+u_\pm=
+\frac1{\sqrt{6\pm2\sqrt3}}
+\begin{pmatrix}1\\1\pm\sqrt3\end{pmatrix}
+$$
+
+とすれば，$u_i^{\mathsf T}Bu_j=\delta_{ij}$ となります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

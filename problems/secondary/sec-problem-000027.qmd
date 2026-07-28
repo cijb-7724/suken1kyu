@@ -1,0 +1,67 @@
+---
+title: "第414回 2次 問6"
+id: sec-problem-000027
+paper_id: sec-paper-0414
+question_number: 6
+cell_label: 反転行列
+tags:
+  - structured-determinant
+---
+
+## 問題
+
+対角成分がすべて $a$，反対角成分がすべて $b$，その他が $0$ である $2n$ 次正方行列 $A_{2n}$ の行列式を求めなさい．
+
+## 必要な知識
+
+- [構造をもつ行列式](../../knowledge/secondary/structured-determinant.qmd)
+
+### この問題で使う一般形
+
+置換行列 $P$ で行と列を同じ順序へ並べ替えた行列は $P^{-1}AP$ であり，
+
+$$
+\det(P^{-1}AP)=\det A
+$$
+
+です．ブロック対角行列の行列式は各対角ブロックの行列式の積です．
+
+## 必要な発想
+
+対称な添字を隣に並べ，$2\times2$ ブロックへ分解する．
+
+## 解答
+
+行と列をともに
+
+$$
+1,2n,2,2n-1,\ldots,n,n+1
+$$
+
+の順へ並べ替える．同じ置換を行と列に行うので，行列式は変わらない．変換後は
+
+$$
+\begin{pmatrix}a&b\\b&a\end{pmatrix}
+$$
+
+が $n$ 個並ぶブロック対角行列である．したがって，
+
+$$
+\det A_{2n}
+=\left(
+\begin{vmatrix}a&b\\b&a\end{vmatrix}
+\right)^n
+=\boxed{(a^2-b^2)^n}
+$$
+
+となる．
+
+## コメント
+
+第363回問6と同じ構造であり，構造を見抜けば次数に関係なく同じ計算です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

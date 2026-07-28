@@ -1,0 +1,104 @@
+---
+title: "第427回 2次 問3"
+id: sec-problem-000031
+paper_id: sec-paper-0427
+question_number: 3
+cell_label: 共線定理
+tags:
+  - projective-collinearity
+---
+
+## 問題
+
+向かい合う辺が平行でない凸四角形 $ABCD$ を，辺 $AB,CD$ とそれぞれ $E,F$ で交わる直線で2個の四角形に分ける．元の四角形の対角線の交点と，2個の四角形それぞれの対角線の交点が一直線上にあることを証明しなさい．
+
+## 必要な知識
+
+- [射影幾何と共線性](../../knowledge/secondary/projective-collinearity.qmd)
+
+### この問題で使う一般形
+
+射影変換は点を点へ，直線を直線へ移し，交点と共線性を保ちます．したがって，距離や角度を含まない共線性の命題では，1本の直線を無限遠直線 $z=0$ へ移して構いません．同次座標で点 $P,Q$ を通る直線は外積 $P\times Q$，2直線 $\ell,m$ の交点は $\ell\times m$ で求められます．
+
+## 必要な発想
+
+結論は共線性だけなので，切断線 $EF$ を無限遠直線へ移す射影変換を使える．
+同次座標で3個の交点を書き，最後は1本の一次式を満たすことを確認する．
+
+## 解答
+
+射影変換は直線と交点，共線性を保つ．そこで $EF$ を無限遠直線 $z=0$ へ移し，
+
+$$
+E=(1:0:0),\qquad F=(0:1:0)
+$$
+
+とする．$A,E,B$ は一直線上，$D,F,C$ も一直線上なので，適当に座標を規格化して
+
+$$
+A=(a:1:1),\quad B=(b:1:1),
+$$
+
+$$
+D=(1:d:1),\quad C=(1:c:1)
+$$
+
+と書ける．
+
+四角形 $AEFD$ の対角線 $AF,DE$ の交点を $Q$ とする．$AF$ は $x=az$，$DE$ は $y=dz$ だから，
+
+$$
+Q=(a:d:1)
+$$
+
+である．四角形 $EBCF$ では，対角線 $EC$ の方程式は $y=cz$，$BF$ の方程式は $x=bz$ なので，その交点 $R$ は
+
+$$
+R=(b:c:1)
+$$
+
+となる．したがって直線 $QR$ の方程式は
+
+$$
+(d-c)x+(b-a)y+(ac-bd)z=0
+$$
+
+である．
+
+元の四角形の対角線の交点を $P=AC\cap BD$ とする．$AC$ と $BD$ の方程式はそれぞれ
+
+$$
+(1-c)x+(1-a)y+(ac-1)z=0,
+$$
+
+$$
+(1-d)x+(1-b)y+(bd-1)z=0
+$$
+
+である．第1式から第2式を引くと，
+
+$$
+\begin{aligned}
+&\{(1-c)-(1-d)\}x
++\{(1-a)-(1-b)\}y\\
+&\qquad+\{(ac-1)-(bd-1)\}z=0,
+\end{aligned}
+$$
+
+すなわち
+
+$$
+(d-c)x+(b-a)y+(ac-bd)z=0
+$$
+
+を得る．よって $P$ も直線 $QR$ 上にある．射影変換を元へ戻しても共線性は保たれるので，3交点は一直線上にある．
+
+## コメント
+
+これは長さや角度ではなく接続関係だけの定理なので，射影座標が自然に働きます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

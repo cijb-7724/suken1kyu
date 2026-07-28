@@ -1,0 +1,82 @@
+---
+title: "最小二乗法"
+id: least-squares-regression
+---
+
+## 概要
+
+最小二乗法は，観測値とモデルの差の二乗和を最小にする係数を求める方法である．指数モデルは対数変換して直線回帰へ帰着する．
+
+## 基本事項
+
+点 $(x_i,y_i)$ に直線 $y=A+Bx$ を当てはめる．
+
+$$
+S(A,B)=\sum_{i=1}^{n}(y_i-A-Bx_i)^2
+$$
+
+を $A,B$ で偏微分して $0$ とおくと正規方程式を得る．解は
+
+$$
+B=\frac{\sum(x_i-\overline x)(y_i-\overline y)}
+{\sum(x_i-\overline x)^2},\qquad
+A=\overline y-B\overline x
+$$
+
+である．
+
+$y=D10^{Cx}$ なら
+
+$$
+Y=\log_{10}y=\log_{10}D+Cx
+$$
+
+とし，$Y$ に対して回帰する．これは元の $y$ の誤差平方和ではなく，対数値の誤差平方和を最小化している．
+
+## 例題
+
+4点
+
+$$
+(0,1),\ (1,2),\ (2,2),\ (3,5)
+$$
+
+へ回帰直線を当てはめる．$\overline x=1.5,\ \overline y=2.5$ であり，
+
+$$
+\sum(x_i-\overline x)^2
+=2.25+0.25+0.25+2.25=5,
+$$
+
+$$
+\begin{aligned}
+\sum(x_i-\overline x)(y_i-\overline y)
+&=2.25+0.25-0.25+3.75\\
+&=6.
+\end{aligned}
+$$
+
+したがって，
+
+$$
+B=\frac65=1.2,\qquad
+A=2.5-1.2(1.5)=0.7.
+$$
+
+回帰直線は
+
+$$
+\boxed{y=0.7+1.2x}
+$$
+
+である．残差は $(0.3,0.1,-1.1,0.7)$ で，その和が0になることは，切片を含む最小二乗回帰の正規方程式から得られる確認事項である．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

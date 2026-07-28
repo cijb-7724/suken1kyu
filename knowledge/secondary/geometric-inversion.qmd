@@ -1,0 +1,86 @@
+---
+title: "反転"
+id: geometric-inversion
+---
+
+## 概要
+
+反転は，中心からの距離 $r$ を $R^2/r$ へ移す幾何変換である．距離の積を距離の二乗へ変える不等式や，円と直線の交換に用いる．
+
+## 基本事項
+
+中心 $P$，半径 $R$ の反転で，$A\ne P$ の像 $A'$ は半直線 $PA$ 上にあり，
+
+$$
+PA\cdot PA'=R^2
+$$
+
+を満たす．半径 $1$ なら $PA'=1/PA$ である．
+
+2点 $A,B$ の像について，
+
+$$
+A'B'=\frac{R^2\,AB}{PA\cdot PB}
+$$
+
+が成り立つ．半径 $1$ の場合，余弦定理で
+
+$$
+A'B'^2
+=\frac1{PA^2}+\frac1{PB^2}
+-\frac{2\cos\angle APB}{PA\cdot PB}
+=\frac{AB^2}{PA^2PB^2}
+$$
+
+と示せる．
+
+反転は中心を通らない円を円へ，中心を通る円を直線へ移し，角度の大きさを保つ．
+
+座標で単位反転を表すと，
+
+$$
+(x,y)\longmapsto
+(X,Y)=\left(\frac{x}{x^2+y^2},\frac{y}{x^2+y^2}\right).
+$$
+
+逆変換も同じ形である．円や直線の方程式へ代入すれば，像の方程式を計算できる．
+
+## 例題
+
+原点を通る円
+
+$$
+x^2+y^2-4x=0
+$$
+
+を単位反転した像を求める．逆変換
+
+$$
+x=\frac{X}{X^2+Y^2},\qquad
+y=\frac{Y}{X^2+Y^2}
+$$
+
+を代入すると，
+
+$$
+\frac1{X^2+Y^2}
+-\frac{4X}{X^2+Y^2}=0.
+$$
+
+像では $(X,Y)\neq(0,0)$ なので分母を払えて，
+
+$$
+\boxed{X=\frac14}
+$$
+
+となる．原点を通る円が，原点を通らない直線へ移った．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

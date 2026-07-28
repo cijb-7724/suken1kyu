@@ -1,28 +1,134 @@
 ---
-title: "出典不明01 問3"
+title: "第358回 2次 問3"
 id: sec-problem-000003
-paper_id: sec-paper-unknown-001
+paper_id: sec-paper-0358
 question_number: 3
-cell_label: 幾何
+cell_label: 正単体
 tags:
-  - geometry
+  - vector-geometry
 ---
 
 ## 問題
 
-2次試験のサンプル問題．
+$n$ 次元Euclid空間の点 $A_0,A_1,\ldots,A_n$ を考え，$G$ を $A_1,\ldots,A_n$ の重心とする．
+
+1. 次の等式を証明しなさい．
+
+$$
+\sum_{i=1}^{n}A_0A_i^2-nA_0G^2
+=\frac1n\sum_{1\le i<j\le n}A_iA_j^2
+$$
+
+2. 一辺の長さが $1$ の正 $n$ 単体について，重心から頂点までの距離を求めなさい．
+
+## 必要な知識
+
+- [ベクトル幾何](../../knowledge/secondary/vector-geometry.qmd)
+
+### この問題で使う一般形
+
+点 $P_1,\ldots,P_n$ の位置ベクトルを $p_i$，重心を $g=\frac1n\sum_{i=1}^np_i$ とすると，任意の点 $x$ に対するLeibnizの定理
+
+$$
+\sum_{i=1}^n\|x-p_i\|^2
+=n\|x-g\|^2+\frac1n\sum_{i<j}\|p_i-p_j\|^2
+$$
+
+が成り立ちます．本問(1)は，$x$ を $A_0$ の位置ベクトルとしたこの公式そのものです．
 
 ## 必要な発想
 
-ここに必要な発想を書く．
+重心を原点にすると，頂点ベクトルの和が $0$ になる．
+距離の二乗を内積で展開し，交差項をベクトル和の二乗へまとめる．
 
 ## 解答
 
-ここに解答を書く．
+### 1
+
+原点を $A_0$ とし，$A_i$ の位置ベクトルを $\boldsymbol a_i$ とする．重心の位置ベクトルは
+
+$$
+\boldsymbol g=\frac1n\sum_{i=1}^{n}\boldsymbol a_i
+$$
+
+である．左辺は
+
+$$
+\sum_{i=1}^{n}\|\boldsymbol a_i\|^2
+-n\left\|\frac1n\sum_{i=1}^{n}\boldsymbol a_i\right\|^2
+=\sum_i\|\boldsymbol a_i\|^2
+-\frac1n\left\|\sum_i\boldsymbol a_i\right\|^2
+$$
+
+となる．
+
+一方，
+
+$$
+\sum_{i<j}\|\boldsymbol a_i-\boldsymbol a_j\|^2
+$$
+
+を展開する．各 $\|\boldsymbol a_i\|^2$ は他の $n-1$ 個の頂点との組で現れるので，
+
+$$
+\sum_{i<j}\|\boldsymbol a_i-\boldsymbol a_j\|^2
+=(n-1)\sum_i\|\boldsymbol a_i\|^2
+-2\sum_{i<j}\boldsymbol a_i\cdot\boldsymbol a_j
+$$
+
+である．また，
+
+$$
+\left\|\sum_i\boldsymbol a_i\right\|^2
+=\sum_i\|\boldsymbol a_i\|^2
++2\sum_{i<j}\boldsymbol a_i\cdot\boldsymbol a_j
+$$
+
+だから，交差項を消去すると
+
+$$
+\sum_{i<j}A_iA_j^2
+=n\sum_i\|\boldsymbol a_i\|^2
+-\left\|\sum_i\boldsymbol a_i\right\|^2
+$$
+
+となる．両辺を $n$ で割れば求める等式を得る．
+
+### 2
+
+正 $n$ 単体の頂点を $A_0,\ldots,A_n$ とし，$A_1,\ldots,A_n$ の重心を $G$ とする．(1)で $A_0A_i=1$，$A_iA_j=1$ を代入する．
+
+$$
+n-nA_0G^2
+=\frac1n\binom n2
+=\frac{n-1}{2}
+$$
+
+より，
+
+$$
+A_0G^2
+=1-\frac{n-1}{2n}
+=\frac{n+1}{2n}
+$$
+
+である．これは面 $A_1\cdots A_n$ の重心までの距離である．単体全体の重心 $O$ は中線 $A_0G$ を $n:1$ に内分するので，
+
+$$
+A_0O=\frac{n}{n+1}A_0G
+$$
+
+である．したがって，
+
+$$
+\boxed{A_0O=\sqrt{\frac{n}{2(n+1)}}}
+$$
+
+となる．
 
 ## コメント
 
-ここにコメントを書く．
+「どの重心か」を区別することが第2問の要点です．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

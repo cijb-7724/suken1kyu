@@ -1,28 +1,93 @@
 ---
-title: "出典不明01 問1"
+title: "第358回 2次 問1"
 id: sec-problem-000001
-paper_id: sec-paper-unknown-001
+paper_id: sec-paper-0358
 question_number: 1
-cell_label: 整数
+cell_label: 二次剰余
 tags:
-  - integers
+  - quadratic-residue
 ---
 
 ## 問題
 
-2次試験のサンプル問題．
+$271$ は素数である．Legendre記号と二次互除法を用いて，合同式
+
+$$
+x^2\equiv15\pmod{271}
+$$
+
+が解をもつか判定しなさい．解をもつ場合はすべて求め，もたない場合はそのことを証明しなさい．
+
+## 必要な知識
+
+- [二次剰余](../../knowledge/secondary/quadratic-residue.qmd)
+
+### この問題で使う一般形
+
+奇素数 $p$ と $p\nmid a$ に対し，Eulerの規準
+
+$$
+a^{(p-1)/2}\equiv\left(\frac ap\right)\pmod p
+$$
+
+が成り立ちます．したがって $x^2\equiv a\pmod p$ が解をもつことと $\left(\frac ap\right)=1$ は同値です．また，相異なる奇素数 $p,q$ に対する二次互除法は
+
+$$
+\left(\frac pq\right)\left(\frac qp\right)
+=(-1)^{\frac{p-1}{2}\frac{q-1}{2}}
+$$
+
+です．本問では $271$ が奇素数で，$271\nmid15$ なので，この判定をそのまま適用できます．
 
 ## 必要な発想
 
-ここに必要な発想を書く．
+解を探し始める前に，$15$ が法 $271$ の二次剰余かをLegendre記号で判定する．
+$15=3\cdot5$ と分け，二次互除法で小さい法へ移す．
 
 ## 解答
 
-ここに解答を書く．
+合同式が解をもつための必要十分条件は
+
+$$
+\left(\frac{15}{271}\right)=1
+$$
+
+である．乗法性より，
+
+$$
+\left(\frac{15}{271}\right)
+=\left(\frac3{271}\right)\left(\frac5{271}\right)
+$$
+
+と分ける．
+
+$3\equiv3\pmod4$，$271\equiv3\pmod4$ なので，二次互除法では符号が1回反転する．
+
+$$
+\left(\frac3{271}\right)
+=-\left(\frac{271}{3}\right)
+=-\left(\frac1{3}\right)=-1
+$$
+
+である．一方，$5\equiv1\pmod4$ なので符号は変わらず，
+
+$$
+\left(\frac5{271}\right)
+=\left(\frac{271}{5}\right)
+=\left(\frac1{5}\right)=1
+$$
+
+となる．したがって，
+
+$$
+\left(\frac{15}{271}\right)=(-1)\cdot1=-1
+$$
+
+である．よって $15$ は法 $271$ の二次非剰余であり，与えられた合同式を満たす整数 $x$ は存在しない．
 
 ## コメント
 
-ここにコメントを書く．
+「解をすべて求める」前に，そもそも解が存在するかを判定するのがLegendre記号の役割です．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

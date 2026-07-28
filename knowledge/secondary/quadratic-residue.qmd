@@ -1,0 +1,98 @@
+---
+title: "二次剰余"
+id: quadratic-residue
+---
+
+## 概要
+
+二次剰余は，合同式 $x^2\equiv a\pmod p$ の可解性を判定する考え方である．大きな素数を法とする平方根を総当たりせず，Legendre記号と二次互除法で小さい法へ移して判定する．
+
+## 基本事項
+
+奇素数 $p$ と $p\nmid a$ に対してLegendre記号を
+
+$$
+\left(\frac ap\right)=
+\begin{cases}
+1&x^2\equiv a\pmod p\text{ が解をもつ},\\
+-1&x^2\equiv a\pmod p\text{ が解をもたない}
+\end{cases}
+$$
+
+と定める．次を用いる．
+
+$$
+\left(\frac{ab}{p}\right)=\left(\frac ap\right)\left(\frac bp\right)
+$$
+
+相異なる奇素数 $p,q$ について，二次互除法は
+
+$$
+\left(\frac pq\right)\left(\frac qp\right)
+=(-1)^{\frac{p-1}{2}\frac{q-1}{2}}
+$$
+
+である．つまり $p,q$ がともに $3\pmod4$ のときだけ符号が反転する．補充法則は
+
+$$
+\left(\frac{-1}{p}\right)=(-1)^{(p-1)/2},\qquad
+\left(\frac2p\right)=(-1)^{(p^2-1)/8}
+$$
+
+である．Eulerの規準
+
+$$
+a^{(p-1)/2}\equiv\left(\frac ap\right)\pmod p
+$$
+
+も可解性の判定に使える．
+
+### 判定と解の計算は別
+
+Legendre記号が $1$ であることは，解が存在することを示すだけで，平方根そのものを直ちに与えるわけではない．問題が可解性だけを尋ねるなら記号の計算で終了する．解も求めるなら，小さい法では試行し，大きい法では法の性質に応じた平方根計算法を用いる．
+
+計算は，分子の素因数分解，$(-1/p),(2/p)$ の補充法則，二次互除法，分子を分母で割った余りへの簡約，という順に進めると符号を誤りにくい．
+
+## 例題
+
+$x^2\equiv6\pmod{19}$ の可解性を判定する．
+
+$$
+\left(\frac6{19}\right)
+=\left(\frac2{19}\right)\left(\frac3{19}\right)
+$$
+
+である．$19\equiv3\pmod8$ なので $(2/19)=-1$ である．また $3,19$ はともに $3\pmod4$ だから，
+
+$$
+\left(\frac3{19}\right)
+=-\left(\frac{19}{3}\right)
+=-\left(\frac13\right)=-1
+$$
+
+である．積は $1$ なので解をもつ．実際，$5^2=25\equiv6\pmod{19}$ である．
+
+奇素数を法とするとき，解が1つ $x\equiv r$ と見つかれば，もう1つは $x\equiv-r$ である．実際，
+
+$$
+x^2\equiv r^2\pmod p
+\iff p\mid(x-r)(x+r)
+$$
+
+であり，Euclidの補題から $x\equiv\pm r\pmod p$ となる．したがって本例の解は
+
+$$
+\boxed{x\equiv5,\ 14\pmod{19}}
+$$
+
+である．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

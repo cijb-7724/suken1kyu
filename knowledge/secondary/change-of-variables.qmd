@@ -1,0 +1,97 @@
+---
+title: "変数変換と重積分"
+id: change-of-variables
+---
+
+## 概要
+
+重積分の変数変換は，複雑な領域や被積分関数を新しい座標で簡単にする方法である．領域，逆変換，Jacobianの3点を順に確認する．
+
+## 基本事項
+
+$(x,y)=\Phi(u,v)$ が領域内で1対1かつ微分可能なら，
+
+$$
+\iint_D f(x,y)\,dx\,dy
+=\iint_{D'}f(\Phi(u,v))
+\left|\frac{\partial(x,y)}{\partial(u,v)}\right|du\,dv
+$$
+
+である．
+
+$$
+u=x+y,\qquad v=x-y
+$$
+
+なら
+
+$$
+x=\frac{u+v}{2},\qquad y=\frac{u-v}{2}
+$$
+
+であり，
+
+$$
+\left|\frac{\partial(x,y)}{\partial(u,v)}\right|
+=\left|
+\begin{vmatrix}
+1/2&1/2\\
+1/2&-1/2
+\end{vmatrix}
+\right|=\frac12
+$$
+
+となる．三変数でもJacobian行列の行列式を用いる．
+
+### 実際の確認順序
+
+1. 被積分関数と境界式から新変数を選ぶ．
+2. 逆変換を求め，元の領域で1対1か確認する．
+3. 各境界を新変数で書き，積分範囲を決める．
+4. Jacobianの絶対値を計算する．
+5. 被積分関数と面積要素の両方を置き換える．
+
+Jacobianだけを計算して領域を元のままにすることはできない．
+
+## 例題
+
+領域
+
+$$
+D=\{(x,y)\mid0\leq x+y\leq1,\ 0\leq x-y\leq2\}
+$$
+
+上で
+
+$$
+\iint_D(x+y)(x-y)\,dx\,dy
+$$
+
+を求める．$u=x+y,\ v=x-y$ とおくと，$D'$ は長方形
+
+$$
+0\leq u\leq1,\qquad0\leq v\leq2
+$$
+
+で，$dx\,dy=\frac12du\,dv$ である．よって
+
+$$
+\begin{aligned}
+\iint_D(x+y)(x-y)\,dx\,dy
+&=\frac12\int_0^1\int_0^2uv\,dv\,du\\
+&=\frac12\left(\int_0^1u\,du\right)
+\left(\int_0^2v\,dv\right)\\
+&=\frac12\cdot\frac12\cdot2
+=\boxed{\frac12}.
+\end{aligned}
+$$
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

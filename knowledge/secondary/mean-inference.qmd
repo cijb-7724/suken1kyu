@@ -1,0 +1,85 @@
+---
+title: "平均の推測"
+id: mean-inference
+---
+
+## 概要
+
+母平均の検定・区間推定では，母分散が既知か未知か，標本が独立か対応しているかを最初に判断する．
+
+## 基本事項
+
+母分散 $\sigma^2$ が既知なら
+
+$$
+Z=\frac{\overline X-\mu_0}{\sigma/\sqrt n}
+$$
+
+を使う．正規母集団で母分散未知なら
+
+$$
+t=\frac{\overline X-\mu_0}{s/\sqrt n}\sim t_{n-1}
+$$
+
+である．
+
+対応する2標本では差
+
+$$
+d_i=X_i-Y_i
+$$
+
+を作り，$\overline d$ の1標本 $t$ 検定へ帰着する．差の標準偏差を使うので，元の2列を独立標本として扱ってはいけない．
+
+対立仮説が $\mu>\mu_0$ なら上側，$\mu<\mu_0$ なら下側，$\mu\ne\mu_0$ なら両側検定である．
+
+## 例題
+
+対応のある5組のデータから差
+
+$$
+d=(3,1,4,2,5)
+$$
+
+を得たとする．$\mu_d>0$ を有意水準 $5\%$ で検定し，$95\%$ 信頼区間も求める．
+
+$$
+\overline d=3,\qquad
+s_d^2=\frac{0^2+(-2)^2+1^2+(-1)^2+2^2}{4}
+=2.5.
+$$
+
+検定統計量は
+
+$$
+t=\frac3{\sqrt{2.5}/\sqrt5}
+=\frac3{\sqrt{0.5}}
+=4.243\ldots
+$$
+
+である．自由度4の上側 $5\%$ 点 $2.132$ より大きいため，差の母平均は正といえる．
+
+両側 $95\%$ 信頼区間では $t_{4,0.025}=2.776$ を用いて，
+
+$$
+3\pm2.776\sqrt{0.5}
+=3\pm1.963\ldots
+$$
+
+より，
+
+$$
+\boxed{1.037\leq\mu_d\leq4.963}
+$$
+
+となる．対応のあるデータでは，元の2群ではなく差のばらつきを使う．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -1,0 +1,101 @@
+---
+title: "第406回 2次 問6"
+id: sec-problem-000020
+paper_id: sec-paper-0406
+question_number: 6
+cell_label: 線形写像
+tags:
+  - linear-map-matrix
+---
+
+## 問題
+
+3次以下の実係数多項式空間 $V$ から2次以下の実係数多項式空間 $W$ への写像
+
+$$
+F(f(x))=f'(x-1)+x^2f(-1)
+$$
+
+について，標準基底に関する表現行列と $\ker F$ の基底を求めなさい．
+
+## 必要な知識
+
+- [線形写像の表現行列](../../knowledge/secondary/linear-map-matrix.qmd)
+
+### この問題で使う一般形
+
+定義域の基底を $(v_1,\ldots,v_n)$，値域の基底を $(w_1,\ldots,w_m)$ とし，
+
+$$
+F(v_j)=\sum_{i=1}^ma_{ij}w_i
+$$
+
+と書いたとき，係数 $(a_{1j},\ldots,a_{mj})^{\mathsf T}$ が表現行列の第 $j$ 列です．さらに，表現行列を $M$ とすれば，$f$ の座標ベクトル $c$ に対して $f\in\ker F$ と $Mc=0$ は同値です．
+
+## 必要な発想
+
+定義域の基底 $1,x,x^2,x^3$ を1個ずつ写し，値域の基底 $1,x,x^2$ の係数を列にする．核はその行列の連立方程式を解く．
+
+## 解答
+
+各基底の像は
+
+$$
+F(1)=x^2,
+$$
+
+$$
+F(x)=1-x^2,
+$$
+
+$$
+F(x^2)=2(x-1)+x^2=x^2+2x-2,
+$$
+
+$$
+F(x^3)=3(x-1)^2-x^2=2x^2-6x+3
+$$
+
+である．したがって表現行列は
+
+$$
+\boxed{
+M=
+\begin{pmatrix}
+0&1&-2&3\\
+0&0&2&-6\\
+1&-1&1&2
+\end{pmatrix}}
+$$
+
+となる．
+
+$f=a+bx+cx^2+dx^3$ が核に入る条件は
+
+$$
+M\begin{pmatrix}a\\b\\c\\d\end{pmatrix}=0
+$$
+
+である．第2行から $c=3d$，第1行から $b=3d$，第3行から $a=-2d$ を得る．よって
+
+$$
+f=d(x^3+3x^2+3x-2)
+$$
+
+であり，
+
+$$
+\boxed{\ker F=\operatorname{span}\{x^3+3x^2+3x-2\}}
+$$
+
+となる．
+
+## コメント
+
+$f'(x-1)$ は「$f'$ に $x-1$ を代入する」意味です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,90 @@
+---
+title: "第427回 2次 問1"
+id: sec-problem-000029
+paper_id: sec-paper-0427
+question_number: 1
+cell_label: 平方剰余
+tags:
+  - quadratic-residue
+---
+
+## 問題
+
+$p$ を $p\equiv-1\pmod4$ を満たす素数とする．正の整数 $x,y$ はそれぞれ $p$ と互いに素であるとする．
+
+$$
+p\nmid x^2+y^2
+$$
+
+を証明しなさい．
+
+## 必要な知識
+
+- [二次剰余](../../knowledge/secondary/quadratic-residue.qmd)
+
+### この問題で使う一般形
+
+Eulerの規準により，奇素数 $p$ と $p\nmid a$ に対し
+
+$$
+a^{(p-1)/2}\equiv\left(\frac ap\right)\pmod p
+$$
+
+です．$a=-1$ とすれば
+
+$$
+\left(\frac{-1}{p}\right)=(-1)^{(p-1)/2}
+$$
+
+なので，$-1$ が法 $p$ の平方になるための必要十分条件は $p\equiv1\pmod4$ です．
+
+## 必要な発想
+
+$p\mid x^2+y^2$ と仮定し，$y$ の逆元で割ると $-1$ が平方になる．
+$p\equiv3\pmod4$ では $-1$ が二次非剰余であることに反する．
+
+## 解答
+
+反対に
+
+$$
+x^2+y^2\equiv0\pmod p
+$$
+
+と仮定する．$\gcd(y,p)=1$ なので，$y$ は法 $p$ で逆元をもつ．両辺を $y^2$ で割れば，
+
+$$
+(xy^{-1})^2\equiv-1\pmod p
+$$
+
+となる．つまり $-1$ が法 $p$ の二次剰余である．
+
+しかしEulerの規準より
+
+$$
+\left(\frac{-1}{p}\right)=(-1)^{(p-1)/2}
+$$
+
+である．$p\equiv-1\equiv3\pmod4$ なので $(p-1)/2$ は奇数であり，
+
+$$
+\left(\frac{-1}{p}\right)=-1
+$$
+
+となる．これは $-1$ が二次剰余であることに反する．よって
+
+$$
+\boxed{p\nmid x^2+y^2}
+$$
+
+である．
+
+## コメント
+
+$y^{-1}$ を使える根拠が $\gcd(y,p)=1$ です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

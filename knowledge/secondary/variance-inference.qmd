@@ -1,0 +1,62 @@
+---
+title: "分散の推測"
+id: variance-inference
+---
+
+## 概要
+
+正規母集団の母分散は，標本不偏分散を $\chi^2$ 分布へ標準化して検定・区間推定する．
+
+## 基本事項
+
+正規母集団からの大きさ $n$ の標本について，不偏分散を
+
+$$
+s^2=\frac1{n-1}\sum_{i=1}^{n}(X_i-\overline X)^2
+$$
+
+とすると，
+
+$$
+\frac{(n-1)s^2}{\sigma^2}\sim\chi^2_{n-1}
+$$
+
+である．正規性が仮定されていることが重要である．
+
+$\chi^2_{\nu,\alpha}$ を上側確率 $\alpha$ の点とすると，母分散の $100(1-\alpha)\%$ 信頼区間は
+
+$$
+\frac{(n-1)s^2}{\chi^2_{\nu,\alpha/2}}
+\le\sigma^2\le
+\frac{(n-1)s^2}{\chi^2_{\nu,1-\alpha/2}}
+$$
+
+である．対立仮説 $\sigma^2<\sigma_0^2$ なら下側棄却域を使う．
+
+## 例題
+
+$n=11,s^2=4$ とし，$\chi^2_{10,0.025}=20.483$，$\chi^2_{10,0.975}=3.247$ とする．$95\%$ 信頼区間は
+
+$$
+\frac{40}{20.483}\le\sigma^2\le\frac{40}{3.247}
+$$
+
+すなわち約 $1.95\le\sigma^2\le12.32$ である．
+
+同じ標本で $H_0:\sigma^2=1$，$H_1:\sigma^2>1$ を検定するなら，
+
+$$
+X^2=\frac{10\cdot4}{1}=40.
+$$
+
+自由度10の上側 $5\%$ 点 $18.307$ より大きいので，$H_0$ を棄却する．信頼区間の下端も1より大きく，両側 $5\%$ 検定なら棄却されることと整合する．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

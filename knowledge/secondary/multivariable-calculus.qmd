@@ -1,0 +1,60 @@
+---
+title: "多変数解析"
+id: multivariable-calculus
+---
+
+## 概要
+
+多変数解析は，多変数関数の偏微分，極値，重積分を扱う．一変数と異なり，近づく方向が複数あるため，勾配やHessian，領域の幾何が重要になる．
+
+## 基本事項
+
+微分可能な $f:\mathbb R^n\to\mathbb R$ の勾配は
+
+$$
+\nabla f=(f_{x_1},\ldots,f_{x_n})
+$$
+
+である．内部の極値点では $\nabla f=0$ が必要である．二階偏微分を並べたHessianで停留点を分類する．
+
+重積分の変数変換では，領域を写すだけでなくJacobianの絶対値を掛ける．
+
+多変数の極限では，ある1本の経路で同じ値へ進むことは極限の存在を示さない．極限が存在しないことは，2本の経路で異なる極限を得れば示せる．微分可能性は偏微分の存在より強い条件である．
+
+## 例題
+
+関数
+
+$$
+f(x,y)=x^2+xy+y^2-4x-2y
+$$
+
+の極値を求める．停留条件は
+
+$$
+2x+y-4=0,\qquad x+2y-2=0
+$$
+
+であり，これを解くと $(x,y)=(2,0)$ となる．Hessianは
+
+$$
+H=\begin{pmatrix}2&1\\1&2\end{pmatrix}
+$$
+
+で，左上主座小行列式は $2>0$，$\det H=3>0$ だから正定値である．したがって $(2,0)$ は狭義極小点で，
+
+$$
+\boxed{f(2,0)=-4}
+$$
+
+である．二次関数でHessianが全域で正定値なので，これは局所最小であるだけでなく大域的最小でもある．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

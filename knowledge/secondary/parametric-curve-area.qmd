@@ -1,0 +1,75 @@
+---
+title: "媒介変数表示と面積"
+id: parametric-curve-area
+---
+
+## 概要
+
+媒介変数表示は，陰関数で与えられた曲線を $(x(t),y(t))$ と表し，曲線の向きや囲む面積を積分する方法である．
+
+## 基本事項
+
+曲線が $t=\alpha$ から $\beta$ まで進むとき，
+
+$$
+\int y\,dx=\int_\alpha^\beta y(t)x'(t)\,dt
+$$
+
+である．単純閉曲線を反時計回りに1周するならGreenの定理から
+
+$$
+S=\oint x\,dy
+=\frac12\oint(x\,dy-y\,dx)
+$$
+
+である．向きが逆なら符号が変わる．
+
+同次式では $t=y/x$ と置くと，$x,y$ を有理式で表せることがある．得た媒介変数が曲線をどの区間で何回たどるかを確認する．
+
+## 例題
+
+アステロイド
+
+$$
+x=a\cos^3t,\qquad y=a\sin^3t
+$$
+
+が囲む面積を求める．対称性から第1象限の面積を4倍する．$0\leq t\leq\pi/2$ で曲線は $(a,0)$ から $(0,a)$ へ反時計回りに進み，
+
+$$
+y'(t)=3a\sin^2t\cos t.
+$$
+
+よって，
+
+$$
+\begin{aligned}
+S
+&=4\int_0^{\pi/2}x(t)y'(t)\,dt\\
+&=12a^2\int_0^{\pi/2}\sin^2t\cos^4t\,dt.
+\end{aligned}
+$$
+
+半角公式，またはBeta積分から
+
+$$
+\int_0^{\pi/2}\sin^2t\cos^4t\,dt=\frac{\pi}{32}
+$$
+
+なので，
+
+$$
+\boxed{S=\frac{3\pi a^2}{8}}
+$$
+
+となる．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

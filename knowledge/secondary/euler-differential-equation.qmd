@@ -1,0 +1,89 @@
+---
+title: "オイラー型微分方程式"
+id: euler-differential-equation
+---
+
+## 概要
+
+Euler型微分方程式は，導関数の階数に合わせて $x$ の冪が付く方程式である．$x=e^t$ により定数係数方程式へ変換できる．
+
+## 基本事項
+
+$x>0$ で
+
+$$
+x=e^t,\qquad Y(t)=y(e^t)
+$$
+
+とおく．連鎖律から
+
+$$
+\frac{dt}{dx}=\frac1x,\qquad
+y'=\frac{Y'}x
+$$
+
+である．さらに
+
+$$
+y''=\frac{d}{dx}\left(\frac{Y'}x\right)
+=\frac1x\frac{d}{dt}(Y'e^{-t})
+=\frac{Y''-Y'}{x^2}
+$$
+
+となる．したがって
+
+$$
+x^2y''+\alpha xy'+\beta y=g(x)
+$$
+
+は
+
+$$
+Y''+(\alpha-1)Y'+\beta Y=g(e^t)
+$$
+
+へ変わる．特性根 $r$ が重根なら，$Y_h=(C_1+C_2t)e^{rt}$ であり，元へ戻すと $y_h=x^r(C_1+C_2\log x)$ となる．
+
+## 例題
+
+非同次方程式
+
+$$
+x^2y''-3xy'+4y=x^3\qquad(x>0)
+$$
+
+を解く．$x=e^t$ とすると，
+
+$$
+Y''-4Y'+4Y=e^{3t}.
+$$
+
+特性方程式は $(r-2)^2=0$ なので，
+
+$$
+Y_h=(C_1+C_2t)e^{2t}.
+$$
+
+特解を $Y_p=Ae^{3t}$ とおくと，
+
+$$
+(9-12+4)Ae^{3t}=e^{3t}
+$$
+
+より $A=1$ である．$t=\log x$ を戻して，
+
+$$
+\boxed{y=x^2(C_1+C_2\log x)+x^3}
+$$
+
+を得る．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -4,6 +4,13 @@ tags:
     children:
       - id: integers
         label: 整数
+        children:
+          - id: quadratic-residue
+            label: 二次剰余
+          - id: modular-construction
+            label: 合同式の構成
+          - id: descent-parity
+            label: 降下法と偶奇
 
   - id: analysis
     label: 解析
@@ -11,6 +18,8 @@ tags:
       - id: series
         label: 級数
         children:
+          - id: series-convergence
+            label: 級数の収束判定
           - id: poisson-summation-formula
             label: ポアソンの和公式
 
@@ -19,34 +28,79 @@ tags:
         children:
           - id: fourier-transform
             label: フーリエ変換
+          - id: fourier-series
+            label: フーリエ級数
 
       - id: differential-equation
         label: 微分方程式
         children:
           - id: exact-differential-equation
             label: 完全微分方程式
-
           - id: integrating-factor
             label: 積分因子
+          - id: euler-differential-equation
+            label: オイラー型微分方程式
+
+      - id: multivariable-calculus
+        label: 多変数解析
+        children:
+          - id: change-of-variables
+            label: 変数変換と重積分
+          - id: multivariable-extrema
+            label: 多変数関数の極値
+
+      - id: special-functions
+        label: 特殊関数
+        children:
+          - id: lambert-w-function
+            label: Lambert W関数
 
   - id: geometry
     label: 幾何
+    children:
+      - id: vector-geometry
+        label: ベクトル幾何
+      - id: simplex-gram-matrix
+        label: 単体とGram行列
+      - id: parametric-curve-area
+        label: 媒介変数表示と面積
+      - id: complex-plane-geometry
+        label: 複素平面の幾何
+      - id: geometric-inversion
+        label: 反転
+      - id: projective-collinearity
+        label: 射影幾何と共線性
 
   - id: probability-statistics
     label: 確率・統計
     children:
       - id: probability-density-function
         label: 確率密度関数
-
       - id: statistical-inference
         label: 統計的推測
         children:
           - id: maximum-likelihood
             label: 最尤法
+          - id: variance-inference
+            label: 分散の推測
+          - id: mean-inference
+            label: 平均の推測
+          - id: chi-square-goodness-of-fit
+            label: 適合度検定
+      - id: poisson-distribution
+        label: ポアソン分布
+      - id: least-squares-regression
+        label: 最小二乗法
 
   - id: combinatorics
     label: 組合せ論
     children:
+      - id: counting-maps
+        label: 写像の個数
+      - id: tiling-invariant
+        label: 敷き詰めと不変量
+      - id: combinatorial-construction
+        label: 組合せ的構成
       - id: partially-ordered-set
         label: 半順序集合
         children:
@@ -59,17 +113,25 @@ tags:
   - id: linear-algebra
     label: 線形代数
     children:
+      - id: jordan-normal-form
+        label: Jordan標準形
+      - id: linear-map-matrix
+        label: 線形写像の表現行列
+      - id: structured-determinant
+        label: 構造をもつ行列式
+      - id: generalized-eigenvalue
+        label: 一般化固有値問題
       - id: orthogonal-transformation
         label: 直交変換
         children:
           - id: householder-transformation
             label: Householder変換
-
       - id: matrix-reduction
         label: 行列の変換
         children:
           - id: symmetric-tridiagonalization
             label: 対称行列の三重対角化
+
   - id: mathematical-techniques
     label: 数学的技能
     children:

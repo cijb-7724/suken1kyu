@@ -1,0 +1,110 @@
+---
+title: "第406回 2次 問7"
+id: sec-problem-000021
+paper_id: sec-paper-0406
+question_number: 7
+cell_label: Euler型方程式
+tags:
+  - euler-differential-equation
+---
+
+## 問題
+
+$x=e^t$ と変数変換して，微分方程式
+
+$$
+x^2y''-7xy'+16y=x^5\qquad(x>0)
+$$
+
+の一般解を求めなさい．
+
+## 必要な知識
+
+- [オイラー型微分方程式](../../knowledge/secondary/euler-differential-equation.qmd)
+
+### この問題で使う一般形
+
+Euler型方程式では $x=e^t$，$Y(t)=y(e^t)$ とおくと，連鎖律から
+
+$$
+x\frac{dy}{dx}=\frac{dY}{dt},\qquad
+x^2\frac{d^2y}{dx^2}=\frac{d^2Y}{dt^2}-\frac{dY}{dt}
+$$
+
+となり，定数係数方程式へ変換できます．特性方程式が重解 $r$ をもつとき，同次解は $(C_1+C_2t)e^{rt}$ です．
+
+## 必要な発想
+
+$Y(t)=y(e^t)$ とおき，$xy'=Y'$，$x^2y''=Y''-Y'$ を使う．定数係数方程式へ変えた後，重解に対応する $t$ を忘れずに戻す．
+
+## 解答
+
+$x=e^t$，$Y(t)=y(e^t)$ とおく．連鎖律より
+
+$$
+y'=\frac{Y'}x
+$$
+
+である．さらに
+
+$$
+y''=\frac{d}{dx}\left(\frac{Y'}x\right)
+=\frac1x\frac{d}{dt}\left(\frac{Y'}x\right)
+=\frac{Y''-Y'}{x^2}
+$$
+
+となる．したがって元の方程式は
+
+$$
+Y''-Y'-7Y'+16Y=e^{5t}
+$$
+
+すなわち
+
+$$
+Y''-8Y'+16Y=e^{5t}
+$$
+
+へ変わる．
+
+同次方程式の特性方程式は
+
+$$
+r^2-8r+16=(r-4)^2=0
+$$
+
+なので，
+
+$$
+Y_h=(C_1+C_2t)e^{4t}
+$$
+
+である．特解を $Y_p=Ae^{5t}$ とおくと，
+
+$$
+(25-40+16)Ae^{5t}=e^{5t}
+$$
+
+より $A=1$ である．したがって，
+
+$$
+Y=(C_1+C_2t)e^{4t}+e^{5t}
+$$
+
+である．$t=\log x$，$e^t=x$ を戻して，
+
+$$
+\boxed{y=x^4(C_1+C_2\log x)+x^5}
+$$
+
+を得る．
+
+## コメント
+
+$x^2y''$ は $Y''$ ではなく $Y''-Y'$ になる点が最も起こりやすい計算ミスです．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

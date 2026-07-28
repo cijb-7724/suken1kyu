@@ -1,0 +1,88 @@
+---
+title: "射影幾何と共線性"
+id: projective-collinearity
+---
+
+## 概要
+
+射影幾何では，長さや角度ではなく，点が直線上にあること，直線どうしの交点といった接続関係を扱う．共線性の証明では同次座標が有効である．
+
+## 基本事項
+
+点を同次座標 $(x:y:z)$ で表す．$z\ne0$ なら通常の点 $(x/z,y/z)$，$z=0$ なら無限遠点である．同じ非零定数倍は同じ点を表す．
+
+点 $\boldsymbol p,\boldsymbol q$ を通る直線の係数は外積
+
+$$
+\boldsymbol \ell=\boldsymbol p\times\boldsymbol q
+$$
+
+であり，2直線の交点も外積で求める．3点 $\boldsymbol p,\boldsymbol q,\boldsymbol r$ が共線であることは
+
+$$
+\det(\boldsymbol p,\boldsymbol q,\boldsymbol r)=0
+$$
+
+と同値である．
+
+正則な $3$ 次行列による射影変換は直線，交点，共線性を保つ．したがって，注目する直線を $z=0$ へ移してよい．ただし長さや角度は保たれない．
+
+### 計算の手順
+
+1. 点は列ベクトル，直線は係数ベクトルとして書く．
+2. 2点を通る直線，または2直線の交点を外積で求める．
+3. 共線性は1本の直線方程式への代入，または3点の行列式で確認する．
+4. 座標の非零定数倍は同じ点・直線なので，途中で公約数を除いてよい．
+
+## 例題
+
+2直線
+
+$$
+\ell_1:x+y-z=0,\qquad
+\ell_2:2x-y=0
+$$
+
+の交点を求める．係数ベクトルは
+
+$$
+\ell_1=(1,1,-1),\qquad \ell_2=(2,-1,0)
+$$
+
+なので，
+
+$$
+\ell_1\times\ell_2=(-1,-2,-3).
+$$
+
+非零定数倍は同じ点を表すから，交点は
+
+$$
+P=(1:2:3)
+$$
+
+である．実際に $1+2-3=0$，$2\cdot1-2=0$ を満たす．
+
+さらに $Q=(2:1:1)$，$R=(7:2:1)$ とすると，
+
+$$
+\det
+\begin{pmatrix}
+1&2&3\\
+2&1&1\\
+7&2&1
+\end{pmatrix}
+=0
+$$
+
+なので3点は共線である．実際，$P\times Q=(-1,5,-3)$ より，3点は直線 $-x+5y-3z=0$ 上にある．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

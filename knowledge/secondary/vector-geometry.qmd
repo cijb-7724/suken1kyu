@@ -1,0 +1,68 @@
+---
+title: "ベクトル幾何"
+id: vector-geometry
+---
+
+## 概要
+
+ベクトル幾何は，点を位置ベクトルで表し，距離の二乗，重心，体積を内積と行列式で計算する．
+
+## 基本事項
+
+$A_i$ の位置ベクトルを $\boldsymbol a_i$ とすると，
+
+$$
+A_iA_j^2=\|\boldsymbol a_i-\boldsymbol a_j\|^2
+$$
+
+である．$n$ 点の重心 $G$ は
+
+$$
+\boldsymbol g=\frac1n\sum_{i=1}^{n}\boldsymbol a_i
+$$
+
+である．原点を重心へ移すと $\sum\boldsymbol a_i=\boldsymbol0$ となり，交差項を消去しやすい．
+
+三次元で同じ始点をもつ3辺を列とする行列を $P$ とすると，平行六面体の体積は $|\det P|$，四面体の体積は $|\det P|/6$ である．
+
+一般に，点 $P_1,\ldots,P_n$ の重心を $G$ とすると，
+
+$$
+\sum_{i=1}^nXP_i^2
+=nXG^2+\frac1n\sum_{i<j}P_iP_j^2
+$$
+
+が成り立つ．これはLeibnizの定理と呼ばれ，距離の二乗和を重心からの距離と点どうしの距離へ分離する．
+
+## 例題
+
+$A,B,C$ の重心を $G$ とすると，
+
+$$
+PA^2+PB^2+PC^2
+=3PG^2+\frac13(AB^2+BC^2+CA^2)
+$$
+
+である．$P$ を原点とし，$A,B,C$ の位置ベクトルを $a,b,c$ とすると，
+
+$$
+\begin{aligned}
+3PG^2
+&=\frac13\|a+b+c\|^2,\\
+AB^2+BC^2+CA^2
+&=3(\|a\|^2+\|b\|^2+\|c\|^2)
+-\|a+b+c\|^2.
+\end{aligned}
+$$
+
+第2式を3で割って第1式と足すと，右辺が $\|a\|^2+\|b\|^2+\|c\|^2$ となり，左辺の距離平方和に一致する．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

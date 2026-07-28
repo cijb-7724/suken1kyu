@@ -3,19 +3,69 @@ title: "フーリエ解析"
 id: fourier-analysis
 ---
 
-2次試験における「フーリエ解析」についてまとめます．
-
 ## 概要
 
-未記入．
+Fourier解析は，関数や有限列を正弦波・余弦波，または複素指数関数の重ね合わせとして表す方法である．
 
 ## 基本事項
 
-未記入．
+Eulerの公式
+
+$$
+e^{i\theta}=\cos\theta+i\sin\theta
+$$
+
+により，複素指数関数と三角関数を相互変換できる．直交性
+
+$$
+\int_{-\pi}^{\pi}e^{i(m-n)x}\,dx=
+\begin{cases}
+2\pi&m=n,\\
+0&m\ne n
+\end{cases}
+$$
+
+が係数を抽出する根拠である．有限列では積分が有限和へ，複素指数関数が1の冪根へ置き換わる．
+
+### 直交射影としての係数
+
+関数の内積を
+
+$$
+\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)\overline{g(x)}\,dx
+$$
+
+と定めると，Fourier係数は $f$ を各基底関数へ正射影した係数である．有限次元のベクトルを正規直交基底へ分解する操作と本質的に同じである．
 
 ## 例題
 
-未記入．
+$f(x)=x^2$ を $\operatorname{span}\{1,\cos x\}$ へ直交射影する．$1$ と $\cos x$ は直交し，$\|1\|^2=2\pi$，$\|\cos x\|^2=\pi$ である．定数成分は
+
+$$
+\frac{\langle x^2,1\rangle}{\|1\|^2}
+=\frac{\int_{-\pi}^{\pi}x^2\,dx}{2\pi}
+=\frac{\pi^2}{3}.
+$$
+
+余弦成分は
+
+$$
+\begin{aligned}
+\frac{\langle x^2,\cos x\rangle}{\|\cos x\|^2}
+&=\frac2\pi\int_0^\pi x^2\cos x\,dx\\
+&=\frac2\pi
+\left[x^2\sin x+2x\cos x-2\sin x\right]_0^\pi\\
+&=-4.
+\end{aligned}
+$$
+
+したがって射影は
+
+$$
+\boxed{\frac{\pi^2}{3}-4\cos x}
+$$
+
+である．
 
 ## 関連問題
 

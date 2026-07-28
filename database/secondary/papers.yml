@@ -1,6 +1,35 @@
 papers:
-  - id: sec-paper-unknown-001
-    label: "出典不明 01"
-    year:
-    round:
-    sort_order: 9001
+  - id: sec-paper-0358
+    label: "第358回"
+    year: 2020
+    round: 358
+    date: "2020-07-18"
+    sort_order: 358
+
+  - id: sec-paper-0363
+    label: "第363回"
+    year: 2020
+    round: 363
+    date: "2020-10-25"
+    sort_order: 363
+
+  - id: sec-paper-0406
+    label: "第406回"
+    year: 2023
+    round: 406
+    date: "2023-04-16"
+    sort_order: 406
+
+  - id: sec-paper-0414
+    label: "第414回"
+    year: 2023
+    round: 414
+    date: "2023-10-29"
+    sort_order: 414
+
+  - id: sec-paper-0427
+    label: "第427回"
+    year: 2024
+    round: 427
+    date: "2024-07-21"
+    sort_order: 427

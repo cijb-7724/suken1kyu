@@ -3,19 +3,73 @@ title: "ポアソンの和公式"
 id: poisson-summation-formula
 ---
 
-2次試験における「ポアソンの和公式」についてまとめます．
-
 ## 概要
 
-未記入．
+ポアソンの和公式は，整数点上の関数値の和をFourier変換の整数点上の和へ結び付ける公式である．周期化とFourier級数の関係を表す．
 
 ## 基本事項
 
-未記入．
+Fourier変換を
+
+$$
+\widehat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx
+$$
+
+と定める．$f$ と $\widehat f$ が十分速く減衰するなどの条件のもとで，
+
+$$
+\sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\widehat f(k)
+$$
+
+が成り立つ．適用時には，変換の $2\pi$ の規約と収束条件を確認する．
+
+### 公式が現れる仕組み
+
+$f$ を整数周期で重ね合わせた
+
+$$
+F(x)=\sum_{n\in\mathbb Z}f(x+n)
+$$
+
+は周期1である．その第 $k$ Fourier係数は，
+
+$$
+\begin{aligned}
+\int_0^1F(x)e^{-2\pi ikx}\,dx
+&=\sum_{n\in\mathbb Z}
+\int_0^1f(x+n)e^{-2\pi ikx}\,dx\\
+&=\int_{-\infty}^{\infty}f(u)e^{-2\pi iku}\,du\\
+&=\widehat f(k)
+\end{aligned}
+$$
+
+となる．したがって $F(x)=\sum_k\widehat f(k)e^{2\pi ikx}$ であり，$x=0$ を代入すると公式を得る．この導出では和と積分の交換，Fourier級数の収束が正当化できるだけの減衰性が必要である．
 
 ## 例題
 
-未記入．
+$f(x)=e^{-\pi t x^2}$（$t>0$）では
+
+$$
+\widehat f(\xi)=t^{-1/2}e^{-\pi\xi^2/t}
+$$
+
+だから，
+
+$$
+\sum_{n\in\mathbb Z}e^{-\pi t n^2}
+=t^{-1/2}\sum_{k\in\mathbb Z}e^{-\pi k^2/t}
+$$
+
+を得る．これはtheta関数の変換公式である．
+
+$t=4$ とすれば
+
+$$
+\sum_{n\in\mathbb Z}e^{-4\pi n^2}
+=\frac12\sum_{k\in\mathbb Z}e^{-\pi k^2/4}
+$$
+
+となる．急速に減衰する側の級数を用いて，もう一方の格子和を評価できることがこの公式の実用上の利点である．
 
 ## 関連問題
 

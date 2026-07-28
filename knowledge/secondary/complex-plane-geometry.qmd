@@ -1,0 +1,78 @@
+---
+title: "複素平面の幾何"
+id: complex-plane-geometry
+---
+
+## 概要
+
+複素平面では，複素数を位置ベクトルとして扱い，回転，単位円，重心を代数式で表す．
+
+## 基本事項
+
+$z=x+iy$ の絶対値は点と原点の距離である．単位円上では
+
+$$
+|z|=1\iff z\overline z=1\iff\overline z=\frac1z
+$$
+
+が成り立つ．
+
+$$
+z_1+\cdots+z_n=0
+$$
+
+は，対応する点の重心が原点にあることを意味する．また
+
+$$
+|a-b|^2=(a-b)(\overline a-\overline b)
+$$
+
+で弦長を計算できる．
+
+単位円上の根をもつ多項式では，共役を逆数へ置き換えると基本対称式の関係が得られる．
+
+2点 $a=e^{i\alpha},b=e^{i\beta}$ の弦長は
+
+$$
+|a-b|
+=\left|e^{i(\alpha+\beta)/2}
+\left(e^{i(\alpha-\beta)/2}-e^{-i(\alpha-\beta)/2}\right)\right|
+=2\left|\sin\frac{\alpha-\beta}{2}\right|
+$$
+
+である．中心角が分かれば弦長を直ちに求められる．
+
+## 例題
+
+方程式 $z^4=1$ の4根が複素平面上で正方形を作ることを示す．根は
+
+$$
+1,\ i,\ -1,\ -i
+$$
+
+であり，すべて単位円上にある．隣り合う根の差は，例えば
+
+$$
+|1-i|=\sqrt{(1-i)(1+i)}=\sqrt2
+$$
+
+で，回転対称性から4辺はすべて $\sqrt2$ である．向かい合う根は互いに符号が反対なので対蹠点であり，2本の対角線はともに直径で長さ2である．
+
+また，隣接する辺に対応するベクトル $i-1$ と $-1-i$ の内積は
+
+$$
+\operatorname{Re}\{(i-1)\overline{(-1-i)}\}
+=\operatorname{Re}\{(i-1)(-1+i)\}=0
+$$
+
+なので，各角は直角である．よって4根は正方形を作る．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

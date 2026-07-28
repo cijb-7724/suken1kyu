@@ -1,0 +1,107 @@
+---
+title: "第363回 2次 問7"
+id: sec-problem-000014
+paper_id: sec-paper-0363
+question_number: 7
+cell_label: 3変数極値
+tags:
+  - multivariable-extrema
+---
+
+## 問題
+
+$$
+f(x,y,z)=x^3+y^3+z^3+3xz-6y
+$$
+
+の極値と，それを与える $(x,y,z)$ を求めなさい．
+
+## 必要な知識
+
+- [多変数関数の極値](../../knowledge/secondary/multivariable-extrema.qmd)
+
+### この問題で使う一般形
+
+$C^2$ 級関数の内点 $(a,b,c)$ が局所的な極値をとるなら
+
+$$
+\nabla f(a,b,c)=0
+$$
+
+です．停留点でHessian $H$ が正定値なら狭義の極小，負定値なら狭義の極大，不定値なら鞍点です．対称行列の正負定値性は，固有値の符号，またはSylvesterの判定法で調べられます．
+
+## 必要な発想
+
+まず勾配が0となる点をすべて求める．
+$x,z$ の連立は代入で解き，各停留点ではHessianの符号をブロックごとに判定する．
+
+## 解答
+
+偏微分は
+
+$$
+f_x=3x^2+3z,\qquad
+f_y=3y^2-6,\qquad
+f_z=3z^2+3x
+$$
+
+である．停留点では
+
+$$
+z=-x^2,\qquad y=\pm\sqrt2,\qquad x=-z^2
+$$
+
+を満たす．$z=-x^2$ を最後の式へ代入すると
+
+$$
+x=-x^4\iff x(x^3+1)=0
+$$
+
+だから，$(x,z)=(0,0),(-1,-1)$ である．よって停留点は4個ある．
+
+Hessianは
+
+$$
+H=
+\begin{pmatrix}
+6x&0&3\\
+0&6y&0\\
+3&0&6z
+\end{pmatrix}
+$$
+
+である．$(0,\pm\sqrt2,0)$ では $x,z$ 部分が
+
+$$
+\begin{pmatrix}0&3\\3&0\end{pmatrix}
+$$
+
+となり，固有値は $3,-3$ なので鞍点である．
+
+$(-1,\sqrt2,-1)$ では $x,z$ 部分は負定値だが $y$ 方向は正なので鞍点である．
+
+$(-1,-\sqrt2,-1)$ では $x,z$ 部分
+
+$$
+\begin{pmatrix}-6&3\\3&-6\end{pmatrix}
+$$
+
+の固有値は $-3,-9$，$y$ 方向も $-6\sqrt2<0$ である．Hessianは負定値だから，ここで極大値をとる．
+
+$$
+f(-1,-\sqrt2,-1)
+=-1-2\sqrt2-1+3+6\sqrt2
+=\boxed{1+4\sqrt2}
+$$
+
+である．極小値は存在しない．
+
+## コメント
+
+停留点が見つかっただけでは極値とは限らず，鞍点の除外が必要です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

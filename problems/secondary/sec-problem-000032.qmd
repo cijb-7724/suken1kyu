@@ -1,0 +1,123 @@
+---
+title: "第427回 2次 問4"
+id: sec-problem-000032
+paper_id: sec-paper-0427
+question_number: 4
+cell_label: 指数回帰
+tags:
+  - least-squares-regression
+---
+
+## 問題
+
+時刻 $t=0,1,2,3,4$ における値がそれぞれ
+
+$$
+15,\ 50,\ 162,\ 540,\ 1600
+$$
+
+である．モデル $y=D\,10^{Cx}$ を最小二乗法で当てはめ，$C$ と $\log_{10}D$ を小数第3位まで求めなさい．ただし $\log_{10}2=0.3010$，$\log_{10}3=0.4771$ を用いなさい．
+
+## 必要な知識
+
+- [最小二乗法](../../knowledge/secondary/least-squares-regression.qmd)
+
+### この問題で使う一般形
+
+点 $(x_i,Y_i)$ に直線 $Y=A+Cx$ を最小二乗法で当てはめると，正規方程式から
+
+$$
+C=\frac{\sum_i(x_i-\overline x)(Y_i-\overline Y)}
+{\sum_i(x_i-\overline x)^2},\qquad
+A=\overline Y-C\overline x
+$$
+
+を得ます．指数モデル $y=D10^{Cx}$ は，$Y=\log_{10}y$ とおけば $Y=\log_{10}D+Cx$ となるため，$A=\log_{10}D$ です．
+
+## 必要な発想
+
+常用対数を取って $Y=\log_{10}y=A+Ct$ という直線回帰に直す．
+切片 $A$ を求めた後，最後に $D=10^A$ と戻す．
+
+## 解答
+
+各値の常用対数は
+
+$$
+\begin{array}{c|ccccc}
+t&0&1&2&3&4\\ \hline
+Y&1.4771&1.6990&2.2094&2.7323&3.2040
+\end{array}
+$$
+
+である．たとえば
+
+$$
+\log_{10}162=\log_{10}(2\cdot3^4)
+=0.3010+4\cdot0.4771=2.2094
+$$
+
+と計算する．
+
+$\overline t=2$ であり，
+
+$$
+\overline Y=\frac{1.4771+1.6990+2.2094+2.7323+3.2040}{5}
+=2.26436
+$$
+
+である．傾きの分母と分子をそれぞれ計算する．
+
+$$
+\sum(t_i-2)^2=4+1+0+1+4=10
+$$
+
+また，$\sum(t_i-\overline t)=0$ なので分子の $\overline Y$ を含む項は消え，
+
+$$
+\begin{aligned}
+\sum(t_i-2)(Y_i-\overline Y)
+&=\sum(t_i-2)Y_i\\
+&=(-2)(1.4771)+(-1)(1.6990)\\
+&\quad+0(2.2094)+1(2.7323)+2(3.2040)\\
+&=4.4871
+\end{aligned}
+$$
+
+となる．したがって，
+
+$$
+C=\frac{4.4871}{10}=0.44871
+$$
+
+となる．切片は
+
+$$
+A=\overline Y-C\overline t
+=2.26436-2(0.44871)
+=1.36694
+$$
+
+である．よって
+
+$$
+D=10^A=10^{1.36694}=23.2777\ldots
+$$
+
+となる．指定された桁で丸めれば，
+
+$$
+\boxed{C=0.449,\qquad \log_{10}D=1.367}
+$$
+
+である．
+
+## コメント
+
+元の $y$ の誤差ではなく，$\log_{10}y$ の誤差平方和を最小にしている点に注意します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

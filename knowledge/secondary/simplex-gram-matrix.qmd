@@ -1,0 +1,87 @@
+---
+title: "単体とGram行列"
+id: simplex-gram-matrix
+---
+
+## 概要
+
+Gram行列は，複数のベクトルの長さと相互の角度を一つの対称行列へまとめる．単体の辺長，体積，不等式の等号条件を同時に扱える．
+
+## 基本事項
+
+$P=(\boldsymbol v_1\ \cdots\ \boldsymbol v_n)$ とすると，
+
+$$
+G=P^{\mathsf T}P,\qquad
+G_{ij}=\boldsymbol v_i\cdot\boldsymbol v_j
+$$
+
+をGram行列という．
+
+$$
+\boldsymbol x^{\mathsf T}G\boldsymbol x
+=\|P\boldsymbol x\|^2\ge0
+$$
+
+だから $G$ は半正定値で，列ベクトルが一次独立なら正定値である．また
+
+$$
+\det G=(\det P)^2
+$$
+
+であり，体積の二乗を表す．
+
+正定値 $n$ 次行列 $Q$ の固有値 $\lambda_i>0$ に相加相乗平均を使うと，
+
+$$
+\operatorname{tr}Q=\sum\lambda_i
+\ge n(\lambda_1\cdots\lambda_n)^{1/n}
+=n(\det Q)^{1/n}
+$$
+
+となる．等号は $Q=cI$ のときに限る．
+
+## 例題
+
+3本のベクトル
+
+$$
+v_1=(1,1,0)^{\mathsf T},\quad
+v_2=(1,0,1)^{\mathsf T},\quad
+v_3=(0,1,1)^{\mathsf T}
+$$
+
+が作る四面体の体積を求める．Gram行列は
+
+$$
+G=
+\begin{pmatrix}
+2&1&1\\
+1&2&1\\
+1&1&2
+\end{pmatrix}.
+$$
+
+この行列は，$(1,1,1)^{\mathsf T}$ に対する固有値が $4$，成分和0の平面上での固有値が $1$ なので，
+
+$$
+\det G=4.
+$$
+
+したがって平行六面体の体積は $\sqrt{\det G}=2$，同じ3辺をもつ四面体の体積は
+
+$$
+\boxed{V=\frac{\sqrt{\det G}}{6}=\frac13}
+$$
+
+である．座標行列の行列式を直接展開せず，内積だけから体積を求められる．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

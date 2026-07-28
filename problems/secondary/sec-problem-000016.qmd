@@ -1,0 +1,117 @@
+---
+title: "第406回 2次 問2"
+id: sec-problem-000016
+paper_id: sec-paper-0406
+question_number: 2
+cell_label: 葉線の面積
+tags:
+  - parametric-curve-area
+---
+
+## 問題
+
+曲線
+
+$$
+x^3+y^3-12xy=0
+$$
+
+が第1象限に作るループの面積を求めなさい．
+
+## 必要な知識
+
+- [媒介変数表示と面積](../../knowledge/secondary/parametric-curve-area.qmd)
+
+### この問題で使う一般形
+
+正の向きに1周する単純閉曲線 $C$ に対し，Greenの定理から
+
+$$
+S=\oint_C x\,dy=-\oint_C y\,dx
+=\frac12\oint_C(x\,dy-y\,dx)
+$$
+
+です．媒介変数表示 $(x(t),y(t))$ を用いれば $\oint_Cx\,dy=\int x(t)y'(t)\,dt$ となります．本問の $t=y/x$ は第1象限のループを原点から原点まで正の向きに1度たどります．
+
+## 必要な発想
+
+同次に近い形なので $t=y/x$ とおき，$x,y$ を $t$ で表す．
+ループが $t=0$ から $\infty$ までで1周することを確認し，$S=\int x\,dy$ を使う．
+
+## 解答
+
+原点以外で $t=y/x$ とおく．$y=tx$ を代入すると
+
+$$
+x^3(1+t^3)=12tx^2
+$$
+
+なので，
+
+$$
+x=\frac{12t}{1+t^3},\qquad
+y=\frac{12t^2}{1+t^3}
+$$
+
+となる．$t=0$ で原点を出発し，$t\to\infty$ で再び原点へ戻る．
+
+面積は
+
+$$
+S=\int_0^\infty x(t)y'(t)\,dt
+$$
+
+である．
+
+$$
+y'(t)=\frac{24t(1+t^3)-36t^4}{(1+t^3)^2}
+=\frac{12t(2-t^3)}{(1+t^3)^2}
+$$
+
+だから，
+
+$$
+S=144\int_0^\infty
+\frac{t^2(2-t^3)}{(1+t^3)^3}\,dt
+$$
+
+である．$u=t^3$，$du=3t^2dt$ とおくと，
+
+$$
+S=48\int_0^\infty\frac{2-u}{(1+u)^3}\,du
+$$
+
+となる．被積分関数を
+
+$$
+\frac{2-u}{(1+u)^3}
+=-\frac1{(1+u)^2}+\frac3{(1+u)^3}
+$$
+
+と分けると，
+
+$$
+\begin{aligned}
+\int_0^\infty\frac{2-u}{(1+u)^3}\,du
+&=\left[\frac1{1+u}-\frac{3}{2(1+u)^2}\right]_0^\infty\\
+&=\frac12
+\end{aligned}
+$$
+
+なので，
+
+$$
+\boxed{S=24}
+$$
+
+である．
+
+## コメント
+
+$y'(t)$ は途中で負になりますが，曲線の向きと $x\,dy$ を合わせれば符号込みで面積が得られます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

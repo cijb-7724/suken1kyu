@@ -1,0 +1,112 @@
+---
+title: "第427回 2次 問2"
+id: sec-problem-000030
+paper_id: sec-paper-0427
+question_number: 2
+cell_label: Fourier級数
+tags:
+  - fourier-series
+---
+
+## 問題
+
+$-\pi\le x\le\pi$ で $f(x)=|\sin x|$ とする．
+
+1. $f$ のFourier級数を求めなさい．
+2. その結果を用いて
+
+$$
+\sum_{n=1}^{\infty}\frac{(-1)^n}{4n^2-1}
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [フーリエ級数](../../knowledge/secondary/fourier-series.qmd)
+
+### この問題で使う一般形
+
+$[-\pi,\pi]$ 上の区分的に滑らかな関数のFourier係数は
+
+$$
+a_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos nx\,dx,\qquad
+b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin nx\,dx
+$$
+
+です．Fourier級数は連続点で $f(x)$ へ収束します．偶関数では $b_n=0$ であり，$a_n=\frac2\pi\int_0^\pi f(x)\cos nx\,dx$ と半区間へ縮められます．
+
+## 必要な発想
+
+$f$ は偶関数なので余弦係数だけを計算する．
+第2問の $(-1)^n$ は $\cos(n\pi)$ ではなく，展開の添字が $2n$ なので $x=\pi/2$ を代入すると現れる．
+
+## 解答
+
+$f$ は偶関数なので $b_n=0$ である．
+
+$$
+a_0=\frac2\pi\int_0^\pi\sin x\,dx=\frac4\pi
+$$
+
+である．$n\ge1$ について，積和公式を用いると
+
+$$
+a_n=\frac2\pi\int_0^\pi\sin x\cos nx\,dx
+$$
+
+である．$n$ が奇数なら積分は $0$ になる．$n=2m$ のとき，
+
+$$
+\begin{aligned}
+\int_0^\pi\sin x\cos2mx\,dx
+&=\frac12\int_0^\pi
+\{\sin((2m+1)x)-\sin((2m-1)x)\}\,dx\\
+&=\frac1{2m+1}-\frac1{2m-1}\\
+&=-\frac{2}{4m^2-1}
+\end{aligned}
+$$
+
+なので，
+
+$$
+a_{2m}=-\frac4{\pi(4m^2-1)}
+$$
+
+を得る．したがって，
+
+$$
+\boxed{
+|\sin x|
+=\frac2\pi-\frac4\pi\sum_{m=1}^{\infty}
+\frac{\cos2mx}{4m^2-1}}
+$$
+
+である．
+
+$x=\pi/2$ を代入すると，左辺は $1$，$\cos(m\pi)=(-1)^m$ だから，
+
+$$
+1=\frac2\pi-\frac4\pi\sum_{m=1}^{\infty}
+\frac{(-1)^m}{4m^2-1}
+$$
+
+となる．よって，
+
+$$
+\boxed{
+\sum_{m=1}^{\infty}\frac{(-1)^m}{4m^2-1}
+=\frac12-\frac\pi4}
+$$
+
+である．
+
+## コメント
+
+偶奇性を先に使うと，係数計算は半分以下になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

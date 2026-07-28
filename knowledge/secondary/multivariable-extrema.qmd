@@ -1,0 +1,60 @@
+---
+title: "多変数関数の極値"
+id: multivariable-extrema
+---
+
+## 概要
+
+多変数関数の極値問題では，停留点を漏れなく求めた後，各方向での増減をHessianにより判定する．
+
+## 基本事項
+
+停留点 $\boldsymbol a$ におけるHessianを $H$ とする．
+
+- $H$ が正定値なら $\boldsymbol a$ は狭義極小点である．
+- $H$ が負定値なら狭義極大点である．
+- $H$ が不定なら鞍点であり，極値点ではない．
+
+実対称行列の正定値性は，全固有値が正であることと同値である．Sylvesterの判定法では，左上からの主座小行列式がすべて正なら正定値である．負定値では符号が $-,+,-,\ldots$ と交互になる．
+
+Hessianが半正定値の場合は判定不能であり，高次項や経路ごとの符号を調べる．制約付き極値では，境界を別に調べるかLagrangeの未定乗数法を用いる．
+
+## 例題
+
+関数
+
+$$
+f(x,y)=x^3+y^3-3xy
+$$
+
+の停留点を分類する．
+
+$$
+f_x=3x^2-3y,\qquad f_y=3y^2-3x
+$$
+
+より $y=x^2,\ x=y^2$ である．代入すると $x=x^4$ なので $x=0,1$，停留点は $(0,0),(1,1)$ である．
+
+Hessianは
+
+$$
+H=\begin{pmatrix}6x&-3\\-3&6y\end{pmatrix}.
+$$
+
+$(0,0)$ では $\det H=-9<0$ なので不定であり，鞍点である．$(1,1)$ では左上成分が $6>0$，行列式が $36-9=27>0$ なので正定値である．よって $(1,1)$ は狭義極小点で，
+
+$$
+\boxed{f(1,1)=-1}
+$$
+
+となる．ただし $f(x,0)=x^3\to-\infty$ なので，大域的最小値ではない．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

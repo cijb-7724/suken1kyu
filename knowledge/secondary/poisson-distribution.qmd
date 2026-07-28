@@ -1,0 +1,77 @@
+---
+title: "ポアソン分布"
+id: poisson-distribution
+---
+
+## 概要
+
+Poisson分布は，一定時間・領域内にまれな事象が何回起こるかを表す離散分布である．
+
+## 基本事項
+
+$X\sim\operatorname{Poisson}(\lambda)$ なら
+
+$$
+P(X=k)=e^{-\lambda}\frac{\lambda^k}{k!}
+\qquad(k=0,1,\ldots)
+$$
+
+であり，
+
+$$
+E[X]=\lambda,\qquad\operatorname{Var}(X)=\lambda
+$$
+
+である．累積確率は
+
+$$
+P(X\le m)=\sum_{k=0}^{m}e^{-\lambda}\frac{\lambda^k}{k!}
+$$
+
+である．整数 $m\ge0$ に対して
+
+$$
+P(X\le m)
+=P\left(\chi^2_{2(m+1)}\ge2\lambda\right)
+$$
+
+という関係がある．$\chi^2$ 表を使うときは上側確率であることを確認する．
+
+## 例題
+
+$X\sim\operatorname{Poisson}(3)$ とする．少なくとも2回事象が起こる確率は，余事象を用いて
+
+$$
+P(X\geq2)
+=1-P(X=0)-P(X=1)
+=1-e^{-3}-3e^{-3}
+=\boxed{1-4e^{-3}}.
+$$
+
+各確率を毎回階乗から計算する代わりに，
+
+$$
+\frac{P(X=k+1)}{P(X=k)}=\frac{\lambda}{k+1}
+$$
+
+という漸化式を使える．例えば
+
+$$
+P(X=2)=\frac32P(X=1)=\frac92e^{-3},
+$$
+
+$$
+P(X=3)=P(X=2)=\frac92e^{-3}
+$$
+
+である．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

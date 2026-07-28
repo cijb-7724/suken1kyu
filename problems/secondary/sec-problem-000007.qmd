@@ -1,28 +1,117 @@
 ---
-title: "出典不明01 問7"
+title: "第358回 2次 問7"
 id: sec-problem-000007
-paper_id: sec-paper-unknown-001
+paper_id: sec-paper-0358
 question_number: 7
-cell_label: 微分方程式
+cell_label: 重積分
 tags:
-  - differential-equation
+  - change-of-variables
 ---
 
 ## 問題
 
-2次試験のサンプル問題．
+$$
+x^{2/3}+y^{2/3}+z^{2/3}\le1
+$$
+
+で表される立体の体積を求めなさい．
+
+## 必要な知識
+
+- [変数変換と重積分](../../knowledge/secondary/change-of-variables.qmd)
+
+### この問題で使う一般形
+
+$C^1$ 級の1対1変換 $(u,v,w)\mapsto(x,y,z)$ に対する重積分の変数変換公式は
+
+$$
+\iiint_D f(x,y,z)\,dx\,dy\,dz
+=\iiint_{D'}f(x(u,v,w),y(u,v,w),z(u,v,w))
+\left|\frac{\partial(x,y,z)}{\partial(u,v,w)}\right|
+du\,dv\,dw
+$$
+
+です．本問では各象限内で $x=u^3,y=v^3,z=w^3$ が1対1であり，境界は体積に影響しないため適用できます．
 
 ## 必要な発想
 
-ここに必要な発想を書く．
+8個の象限で対称なので第1象限だけを積分する．
+$x=u^3,y=v^3,z=w^3$ とおけば境界は単位球になり，Jacobianの冪だけを積分すればよい．
 
 ## 解答
 
-ここに解答を書く．
+領域は座標平面について対称である．第1象限で
+
+$$
+x=u^3,\qquad y=v^3,\qquad z=w^3
+$$
+
+とおく．このとき $u,v,w\ge0$ で，
+
+$$
+u^2+v^2+w^2\le1
+$$
+
+となる．Jacobianは
+
+$$
+dx\,dy\,dz=27u^2v^2w^2\,du\,dv\,dw
+$$
+
+である．球座標
+
+$$
+u=r\sin\theta\cos\phi,\quad
+v=r\sin\theta\sin\phi,\quad
+w=r\cos\theta
+$$
+
+を用いる．第1象限では
+
+$$
+0\le r\le1,\qquad
+0\le\theta\le\frac\pi2,\qquad
+0\le\phi\le\frac\pi2
+$$
+
+であり，球座標のJacobianは $r^2\sin\theta$ である．したがって全体積 $V$ は
+
+$$
+V=8\cdot27
+\int_0^1r^8\,dr
+\int_0^{\pi/2}\sin^5\theta\cos^2\theta\,d\theta
+\int_0^{\pi/2}\cos^2\phi\sin^2\phi\,d\phi
+$$
+
+となる．各積分は
+
+$$
+\int_0^1r^8\,dr=\frac19,
+$$
+
+$$
+\int_0^{\pi/2}\sin^5\theta\cos^2\theta\,d\theta
+=\int_0^1(1-t^2)^2t^2\,dt
+=\frac13-\frac25+\frac17=\frac8{105},
+$$
+
+$$
+\int_0^{\pi/2}\cos^2\phi\sin^2\phi\,d\phi
+=\frac\pi{16}
+$$
+
+である．よって，
+
+$$
+V=216\cdot\frac19\cdot\frac8{105}\cdot\frac\pi{16}
+=\boxed{\frac{4\pi}{35}}
+$$
+
+となる．
 
 ## コメント
 
-ここにコメントを書く．
+指数 $2/3$ は，三乗で置換すると二次式になる合図です．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

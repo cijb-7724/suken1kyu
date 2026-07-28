@@ -1,0 +1,104 @@
+---
+title: "第414回 2次 問2"
+id: sec-problem-000023
+paper_id: sec-paper-0414
+question_number: 2
+cell_label: 級数判定
+tags:
+  - series-convergence
+---
+
+## 問題
+
+$p,q,r$ を実数とする．
+
+1. $p\ne\pm1$ とする．級数
+
+$$
+\sum_{k=1}^{\infty}
+\frac{p^{3^{k-1}}+p^{2\cdot3^{k-1}}}{1-p^{3^k}}
+$$
+
+が収束することを示し，その値を求めなさい．
+2. $q>0,r>0$ とする．級数 $\sum_{k=1}^{\infty}q^{k^2}r^k$ の収束・発散を判定しなさい．
+
+## 必要な知識
+
+- [級数の収束判定](../../knowledge/secondary/series-convergence.qmd)
+
+### この問題で使う一般形
+
+$a_k\geq0$ に対するCauchyの根判定法は
+
+$$
+L=\limsup_{k\to\infty}\sqrt[k]{a_k}
+$$
+
+として，$L<1$ なら収束，$L>1$ なら発散と判定します．また，$u_k-u_{k+1}$ 型の級数では $\sum_{k=1}^{N}(u_k-u_{k+1})=u_1-u_{N+1}$ と中間項が相殺します．
+
+## 必要な発想
+
+第1問は $t=p^{3^{k-1}}$ と見て，隣り合う項の差へ分解する．
+第2問は $k$ 乗根を取れば $q^kr$ となり，$q=1$ だけ別扱いになる．
+
+## 解答
+
+### 1
+
+恒等式
+
+$$
+\frac{t+t^2}{1-t^3}
+=\frac1{1-t}-\frac1{1-t^3}
+$$
+
+を用いる．$t=p^{3^{k-1}}$ とすれば，第 $k$ 項は
+
+$$
+\frac1{1-p^{3^{k-1}}}
+-\frac1{1-p^{3^k}}
+$$
+
+である．したがって第 $N$ 部分和は
+
+$$
+S_N=\frac1{1-p}-\frac1{1-p^{3^N}}
+$$
+
+となる．
+
+$|p|<1$ なら $p^{3^N}\to0$ なので
+
+$$
+S=\frac1{1-p}-1=\boxed{\frac p{1-p}}
+$$
+
+である．$|p|>1$ なら $|p^{3^N}|\to\infty$ なので第2項は $0$ へ進み，
+
+$$
+S=\boxed{\frac1{1-p}}
+$$
+
+である．$p\ne\pm1$ の条件のもとで全場合を尽くした．
+
+### 2
+
+$a_k=q^{k^2}r^k$ とおくと，
+
+$$
+\sqrt[k]{a_k}=q^kr
+$$
+
+である．$0<q<1$ ならこれは $0$ へ進むので根判定により収束する．$q>1$ なら無限大へ進み，特に一般項も $0$ へ進まないので発散する．
+
+$q=1$ なら級数は $\sum r^k$ であるから，$0<r<1$ のとき収束し，$r\ge1$ のとき発散する．
+
+## コメント
+
+第1問は有限部分和を書いてから極限を取ると，望遠鏡和の端を取り違えません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,51 @@
+---
+title: "特殊関数"
+id: special-functions
+---
+
+## 概要
+
+特殊関数は，初等関数では表せない逆関数，積分，微分方程式の解に名前を付けたものである．定義域，枝，満たす方程式を確認して使う．
+
+## 基本事項
+
+特殊関数は「新しい公式」ではなく，特定の方程式の解を表す記法である．たとえばLambert $W$ 関数は $w e^w=z$ の逆関数である．複素数上では多価になることがあるため，実数主値を扱うのかを明示する．
+
+代表例には，階乗を連続化するGamma関数，正規分布の積分に現れる誤差関数，円柱座標の微分方程式に現れるBessel関数がある．定義式，満たす漸化式，定義域を使って計算する．
+
+## 例題
+
+Gamma関数
+
+$$
+\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\,dt\qquad(s>0)
+$$
+
+について $\Gamma(5/2)$ を求める．部分積分により
+
+$$
+\Gamma(s+1)=s\Gamma(s)
+$$
+
+である．また，Gaussian積分から $\Gamma(1/2)=\sqrt\pi$ が知られている．したがって，
+
+$$
+\begin{aligned}
+\Gamma\left(\frac52\right)
+&=\frac32\Gamma\left(\frac32\right)\\
+&=\frac32\cdot\frac12\Gamma\left(\frac12\right)\\
+&=\boxed{\frac{3\sqrt\pi}{4}}.
+\end{aligned}
+$$
+
+特殊関数の値を定義積分から毎回計算するのではなく，漸化式と既知の基準値へ帰着する．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

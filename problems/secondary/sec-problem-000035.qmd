@@ -1,0 +1,137 @@
+---
+title: "第427回 2次 問7"
+id: sec-problem-000035
+paper_id: sec-paper-0427
+question_number: 7
+cell_label: ひし形上の積分
+tags:
+  - change-of-variables
+---
+
+## 問題
+
+$$
+f(x,y)=\cos\frac{\pi(x+y)}2,\qquad
+D=\{(x,y)\mid |x|+|y|\le1\}
+$$
+
+とする．
+
+$$
+\iint_D\frac{(x-y)^2f(x,y)}{3+f(x,y)^2}\,dx\,dy
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [変数変換と重積分](../../knowledge/secondary/change-of-variables.qmd)
+
+### この問題で使う一般形
+
+1対1な $C^1$ 級変換 $(u,v)\mapsto(x,y)$ では，
+
+$$
+\iint_D f(x,y)\,dx\,dy
+=\iint_{D'}f(x(u,v),y(u,v))
+\left|\frac{\partial(x,y)}{\partial(u,v)}\right|du\,dv
+$$
+
+です．さらに，長方形領域で被積分関数が $g(u)h(v)$ に分離すれば，Fubiniの定理により二重積分は2個の1変数積分の積になります．
+
+## 必要な発想
+
+被積分関数に $x+y$ と $x-y$ が分かれて現れるので，それらを新変数にする．
+ひし形が正方形へ移り，積分が $u$ と $v$ の積へ分離する．
+
+## 解答
+
+$$
+u=x+y,\qquad v=x-y
+$$
+
+とおく．逆変換は
+
+$$
+x=\frac{u+v}{2},\qquad y=\frac{u-v}{2}
+$$
+
+であり，Jacobianは
+
+$$
+\frac{\partial(x,y)}{\partial(u,v)}
+=
+\begin{vmatrix}
+1/2&1/2\\
+1/2&-1/2
+\end{vmatrix}
+=-\frac12
+$$
+
+だから，絶対値を取って
+
+$$
+dx\,dy=\frac12\,du\,dv
+$$
+
+である．また，
+
+$$
+|x|+|y|
+=\frac{|u+v|+|u-v|}{2}
+=\max(|u|,|v|)
+$$
+
+だから，領域 $D$ は
+
+$$
+-1\le u\le1,\qquad-1\le v\le1
+$$
+
+という正方形へ移る．さらに $f=\cos(\pi u/2)$，$x-y=v$ なので，積分を $I$ とすると
+
+$$
+I=\frac12
+\int_{-1}^{1}v^2\,dv
+\int_{-1}^{1}
+\frac{\cos(\pi u/2)}{3+\cos^2(\pi u/2)}\,du
+$$
+
+である．第1積分は $2/3$ である．第2積分を $J$ とおくと，偶関数なので
+
+$$
+J=2\int_0^1
+\frac{\cos(\pi u/2)}{3+\cos^2(\pi u/2)}\,du
+$$
+
+となる．$t=\sin(\pi u/2)$ とおけば $dt=(\pi/2)\cos(\pi u/2)du$ であり，
+
+$$
+J=\frac4\pi\int_0^1\frac{dt}{4-t^2}
+$$
+
+$$
+=\frac4\pi\left[
+\frac14\log\frac{2+t}{2-t}
+\right]_0^1
+=\frac{\log3}{\pi}
+$$
+
+である．したがって，
+
+$$
+I=\frac12\cdot\frac23\cdot\frac{\log3}{\pi}
+=\boxed{\frac{\log3}{3\pi}}
+$$
+
+となる．
+
+## コメント
+
+$|x|+|y|=\max(|u|,|v|)$ が，ひし形を正方形へ変える鍵です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

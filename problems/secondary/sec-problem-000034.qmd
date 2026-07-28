@@ -1,0 +1,129 @@
+---
+title: "第427回 2次 問6"
+id: sec-problem-000034
+paper_id: sec-paper-0427
+question_number: 6
+cell_label: 一般化固有値
+tags:
+  - generalized-eigenvalue
+---
+
+## 問題
+
+$$
+A=\begin{pmatrix}0&1&1\\1&0&0\\1&0&0\end{pmatrix},
+\qquad
+B=\begin{pmatrix}2&1&0\\1&2&1\\0&1&2\end{pmatrix}
+$$
+
+とする．
+
+1. $A\boldsymbol u=\lambda B\boldsymbol u$ の一般化固有値を求めなさい．
+2. 列ベクトルが対応する一般化固有ベクトルで，$P^{\mathsf T}BP=I$ を満たす行列 $P$ を1つ求めなさい．
+
+## 必要な知識
+
+- [一般化固有値問題](../../knowledge/secondary/generalized-eigenvalue.qmd)
+
+### この問題で使う一般形
+
+$A\boldsymbol u=\lambda B\boldsymbol u$ に非零解があるための必要十分条件は
+
+$$
+\det(A-\lambda B)=0
+$$
+
+です．$A,B$ が対称で $B$ が正定値なら，異なる一般化固有値に属する固有ベクトルは
+
+$$
+\langle u,v\rangle_B=u^{\mathsf T}Bv
+$$
+
+に関して直交します．$v$ の正規化は $v/\sqrt{v^{\mathsf T}Bv}$ で行います．
+
+## 必要な発想
+
+$\det(A-\lambda B)=0$ で固有値を出し，各連立方程式を解く．
+通常の長さではなく $\boldsymbol v^{\mathsf T}B\boldsymbol v$ で正規化する．
+
+## 解答
+
+まず，$B$ の左上主座小行列式は
+
+$$
+2,\qquad
+\begin{vmatrix}2&1\\1&2\end{vmatrix}=3,\qquad
+\det B=4
+$$
+
+ですべて正なので，Sylvesterの判定法により $B$ は正定値である．次に，
+
+$$
+\begin{aligned}
+\det(A-\lambda B)
+&=
+\begin{vmatrix}
+-2\lambda&1-\lambda&1\\
+1-\lambda&-2\lambda&-\lambda\\
+1&-\lambda&-2\lambda
+\end{vmatrix}\\
+&=-6\lambda^3-(1-\lambda)(2\lambda^2-\lambda)
++(\lambda^2+\lambda)\\
+&=-4\lambda^3-2\lambda^2+2\lambda\\
+&=-2\lambda(\lambda+1)(2\lambda-1)
+\end{aligned}
+$$
+
+となる．したがって一般化固有値は
+
+$$
+\boxed{\lambda=-1,\ 0,\ \frac12}
+$$
+
+である．
+
+それぞれについて $(A-\lambda B)\boldsymbol v=0$ を解くと，
+
+$$
+v_{-1}=\begin{pmatrix}-1\\1\\0\end{pmatrix},\qquad
+v_0=\begin{pmatrix}0\\-1\\1\end{pmatrix},\qquad
+v_{1/2}=\begin{pmatrix}1\\0\\1\end{pmatrix}
+$$
+
+を選べる．これらを各 $(A-\lambda B)v_\lambda$ へ代入すると零ベクトルになる．$B$ による長さは
+
+$$
+v_{-1}^{\mathsf T}Bv_{-1}=2,\qquad
+v_0^{\mathsf T}Bv_0=2,\qquad
+v_{1/2}^{\mathsf T}Bv_{1/2}=4
+$$
+
+である．異なる固有値の固有ベクトルは $B$ 内積で直交するので，正規化して列に並べればよい．たとえば固有値の小さい順に
+
+$$
+\boxed{
+P=
+\begin{pmatrix}
+-1/\sqrt2&0&1/2\\
+1/\sqrt2&-1/\sqrt2&0\\
+0&1/\sqrt2&1/2
+\end{pmatrix}}
+$$
+
+とすれば，
+
+$$
+P^{\mathsf T}BP=I
+$$
+
+を満たす．
+
+## コメント
+
+$B$ が正定値なので，$B$ 内積は通常の内積と同じように正規化へ使えます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

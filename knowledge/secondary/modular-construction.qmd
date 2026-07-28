@@ -1,0 +1,108 @@
+---
+title: "合同式の構成"
+id: modular-construction
+---
+
+## 概要
+
+合同式の構成では，解が存在することを抽象的に述べるだけでなく，各素数冪を法として解を作り，中国剰余定理で一つの整数へまとめる．
+
+## 基本事項
+
+$\gcd(a,m)=1$ なら一次合同式
+
+$$
+ax\equiv b\pmod m
+$$
+
+は
+
+$$
+x\equiv a^{-1}b\pmod m
+$$
+
+と解ける．
+
+中国剰余定理の一般形は，$m_1,\ldots,m_r$ が2つずつ互いに素なら，任意の $c_i$ に対し
+
+$$
+x\equiv c_i\pmod{m_i}\qquad(i=1,\ldots,r)
+$$
+
+を同時に満たす $x$ が存在し，法 $m_1\cdots m_r$ で一意に定まる，というものである．
+
+一般の法 $m$ は
+
+$$
+m=p_1^{e_1}\cdots p_r^{e_r}
+$$
+
+と素数冪へ分解する．因数分解された合同式 $F(x)G(x)\equiv0\pmod{p_i^{e_i}}$ では，係数のどれが逆元をもつかを確認し，片方の因子を $0$ にする解を選ぶ．
+
+### 中国剰余定理で実際に統合する
+
+$M=m_1\cdots m_r$，$M_i=M/m_i$ とし，$M_iN_i\equiv1\pmod{m_i}$ となる $N_i$ を選ぶと，
+
+$$
+x=\sum_{i=1}^r c_iM_iN_i
+$$
+
+は $x\equiv c_i\pmod{m_i}$ を同時に満たす．小さい法が2，3個なら，$x=c_1+m_1k$ と置いて次の合同式へ代入する方法の方が計算しやすい．
+
+## 例題
+
+$m=360$ に対し
+
+$$
+(3x+1)(4x+1)\equiv0\pmod m
+$$
+
+の解を実際に1つ構成する．$360=8\cdot9\cdot5$ と分ける．
+
+法 $8$ では $3^{-1}\equiv3$ なので，
+
+$$
+3x+1\equiv0\pmod8
+\iff x\equiv-3\equiv5\pmod8.
+$$
+
+法 $9$ では $4^{-1}\equiv7$ なので，
+
+$$
+4x+1\equiv0\pmod9
+\iff x\equiv-7\equiv2\pmod9.
+$$
+
+法 $5$ では $3^{-1}\equiv2$ なので，$x\equiv-2\equiv3\pmod5$ とする．
+
+まず $x=5+8k$ を法 $9$ の式へ代入すると，
+
+$$
+5-k\equiv2\pmod9
+\iff k\equiv3\pmod9
+$$
+
+なので $x\equiv29\pmod{72}$ である．次に $x=29+72t$ を法 $5$ の式へ代入すると，
+
+$$
+4+2t\equiv3\pmod5
+\iff t\equiv2\pmod5.
+$$
+
+よって $x=173$ を選べる．実際，
+
+$$
+3x+1=520,\qquad4x+1=693
+$$
+
+で，積は $8,9,5$ のすべてで割り切れるから $360$ で割り切れる．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

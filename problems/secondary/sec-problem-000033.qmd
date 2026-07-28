@@ -1,0 +1,108 @@
+---
+title: "第427回 2次 問5"
+id: sec-problem-000033
+paper_id: sec-paper-0427
+question_number: 5
+cell_label: Lambert W
+tags:
+  - lambert-w-function
+---
+
+## 問題
+
+$W(a)e^{W(a)}=a$ を満たすLambert $W$ 関数を用いて，次の方程式を解きなさい．
+
+1. $e^{-3x+1/2}=6x+5$
+2. $e^{-3x^2}=2x$
+
+## 必要な知識
+
+- [Lambert W関数](../../knowledge/secondary/lambert-w-function.qmd)
+
+### この問題で使う一般形
+
+Lambert $W$ 関数は
+
+$$
+w e^w=z\iff w=W(z)
+$$
+
+によって定義されます．実数範囲では $z>0$ に対して実数解は主枝 $W_0(z)$ の1個だけです．変形の目標は，未知量をまとめた $u$ を用いて $ue^u=$ 定数という形を作ることです．
+
+## 必要な発想
+
+未知量を含む一次式または二次式を $u$ と置き，$ue^u=A$ の形まで変形する．
+第2問では左辺が正なので，まず $x>0$ を確定する．
+
+## 解答
+
+### 1
+
+$$
+u=3x+\frac52
+$$
+
+とおく．すると $6x+5=2u$ であり，
+
+$$
+-3x+\frac12=3-u
+$$
+
+だから，
+
+$$
+e^{3-u}=2u
+$$
+
+となる．両辺へ $e^u/2$ を掛ければ，
+
+$$
+ue^u=\frac{e^3}{2}
+$$
+
+である．よって
+
+$$
+u=W\!\left(\frac{e^3}{2}\right)
+$$
+
+であり，
+
+$$
+\boxed{x=\frac13\left\{W\!\left(\frac{e^3}{2}\right)-\frac52\right\}}
+$$
+
+となる．
+
+### 2
+
+左辺は正なので $2x>0$，すなわち $x>0$ である．両辺を二乗すると，
+
+$$
+e^{-6x^2}=4x^2
+$$
+
+である．$u=6x^2$ とおけば，
+
+$$
+e^{-u}=\frac{2u}{3}
+\iff ue^u=\frac32
+$$
+
+となる．したがって $u=W(3/2)$ であり，$x>0$ を使って
+
+$$
+\boxed{x=\sqrt{\frac16W\!\left(\frac32\right)}}
+$$
+
+を得る．この値は正なので，二乗前の式にも実際に適合する．
+
+## コメント
+
+二乗した後は余分な負の解を入れないよう，最初の符号条件へ戻ります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

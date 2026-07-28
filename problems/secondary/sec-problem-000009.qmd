@@ -1,0 +1,102 @@
+---
+title: "第363回 2次 問2"
+id: sec-problem-000009
+paper_id: sec-paper-0363
+question_number: 2
+cell_label: 級数
+tags:
+  - series-convergence
+---
+
+## 問題
+
+級数
+
+$$
+\sum_{n=0}^{\infty}\left(\frac1{3n+1}-\frac1{3n+2}\right)
+$$
+
+の収束を調べ，収束する場合はその和を求めなさい．
+
+## 必要な知識
+
+- [級数の収束判定](../../knowledge/secondary/series-convergence.qmd)
+
+### この問題で使う一般形
+
+非負関数列 $f_n$ にはTonelliの定理，または単調収束定理を適用でき，
+
+$$
+\int\sum_{n=0}^{\infty}f_n
+=\sum_{n=0}^{\infty}\int f_n
+$$
+
+と和と積分を交換できます．本問では $f_n(x)=x^{3n}(1-x)\geq0$ なので条件を満たします．また，$0\leq x<1$ では $\sum_{n=0}^{\infty}x^{3n}=1/(1-x^3)$ です．
+
+## 必要な発想
+
+各項をまとめれば $1/n^2$ 型なので収束する．
+和の計算では $1/k=\int_0^1x^{k-1}\,dx$ を用い，等比級数を積分する．
+
+## 解答
+
+各項は
+
+$$
+\frac1{3n+1}-\frac1{3n+2}
+=\frac1{(3n+1)(3n+2)}
+$$
+
+である．これは正で，$n\ge1$ では $1/(9n^2)$ 以下だから，比較判定により級数は収束する．
+
+また，
+
+$$
+\frac1{3n+1}-\frac1{3n+2}
+=\int_0^1(x^{3n}-x^{3n+1})\,dx
+$$
+
+である．被積分関数は非負なので和と積分を交換でき，
+
+$$
+\sum_{n=0}^{\infty}\left(\frac1{3n+1}-\frac1{3n+2}\right)
+=\int_0^1(1-x)\sum_{n=0}^{\infty}x^{3n}\,dx
+$$
+
+$$
+=\int_0^1\frac{1-x}{1-x^3}\,dx
+=\int_0^1\frac{dx}{x^2+x+1}
+$$
+
+となる．平方完成して
+
+$$
+x^2+x+1=\left(x+\frac12\right)^2+\frac34
+$$
+
+だから，
+
+$$
+\int_0^1\frac{dx}{x^2+x+1}
+=\frac2{\sqrt3}
+\left[\arctan\frac{2x+1}{\sqrt3}\right]_0^1
+=\frac2{\sqrt3}\left(\frac\pi3-\frac\pi6\right)
+$$
+
+より，
+
+$$
+\boxed{\frac{\pi}{3\sqrt3}}
+$$
+
+である．
+
+## コメント
+
+調和級数を項別に分けると両方とも発散するため，差を一つの項として扱います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

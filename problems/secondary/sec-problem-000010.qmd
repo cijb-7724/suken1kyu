@@ -1,0 +1,120 @@
+---
+title: "第363回 2次 問3"
+id: sec-problem-000010
+paper_id: sec-paper-0363
+question_number: 3
+cell_label: 四面体不等式
+tags:
+  - simplex-gram-matrix
+---
+
+## 問題
+
+四面体 $ABCD$ の体積を $V$ とするとき，
+
+$$
+AB^2+AC^2+AD^2+BC^2+BD^2+CD^2
+\ge12(3V)^{2/3}
+$$
+
+を証明し，等号成立条件を求めなさい．
+
+## 必要な知識
+
+- [単体とGram行列](../../knowledge/secondary/simplex-gram-matrix.qmd)
+
+### この問題で使う一般形
+
+列ベクトル $v_1,v_2,v_3$ をもつ行列を $X$ とすると，Gram行列 $G=X^{\mathsf T}X$ は
+
+$$
+G_{ij}=v_i\cdot v_j,\qquad \det G=(\det X)^2
+$$
+
+を満たします．また，正定値行列 $Q$ の固有値を $\lambda_i>0$ とすれば，
+
+$$
+\operatorname{tr}Q=\sum_{i=1}^3\lambda_i
+\geq3(\lambda_1\lambda_2\lambda_3)^{1/3}
+=3(\det Q)^{1/3}
+$$
+
+です．等号は3固有値がすべて等しいときに限ります．
+
+## 必要な発想
+
+$A$ を原点として3本の辺を列に並べる．6辺の二乗和を行列の跡，体積を行列式にまとめ，正定値行列の固有値へ相加相乗平均を使う．
+
+## 解答
+
+$\boldsymbol b=\overrightarrow{AB}$，$\boldsymbol c=\overrightarrow{AC}$，$\boldsymbol d=\overrightarrow{AD}$ とし，$X=(\boldsymbol b\ \boldsymbol c\ \boldsymbol d)$ とする．6辺の二乗和を $S$ とおくと，展開により
+
+$$
+S=3(\|\boldsymbol b\|^2+\|\boldsymbol c\|^2+\|\boldsymbol d\|^2)
+-2(\boldsymbol b\cdot\boldsymbol c+\boldsymbol b\cdot\boldsymbol d+\boldsymbol c\cdot\boldsymbol d)
+$$
+
+である．
+
+$$
+K=
+\begin{pmatrix}
+3&-1&-1\\
+-1&3&-1\\
+-1&-1&3
+\end{pmatrix}
+$$
+
+とおけば $S=\operatorname{tr}(X^{\mathsf T}XK)$ である．$K(1,1,1)^{\mathsf T}=(1,1,1)^{\mathsf T}$ であり，成分和が $0$ のベクトル $v$ には $Kv=4v$ である．したがって $K$ の固有値は $1,4,4$ で，$K$ は正定値，$\det K=16$ である．$K^{1/2}$ を正定値平方根とし，
+
+$$
+Q=K^{1/2}X^{\mathsf T}XK^{1/2}
+$$
+
+とおく．すると $\operatorname{tr}Q=S$ であり，
+
+$$
+\det Q=\det K(\det X)^2
+=16(6V)^2=576V^2
+$$
+
+である．正定値行列の固有値に相加相乗平均を用いると，
+
+$$
+S=\operatorname{tr}Q
+\ge3(\det Q)^{1/3}
+=3(576V^2)^{1/3}
+=12(3V)^{2/3}
+$$
+
+を得る．
+
+等号は $Q$ が単位行列の定数倍のときに限る．これは
+
+$$
+X^{\mathsf T}X\propto K^{-1}
+=\frac14
+\begin{pmatrix}
+2&1&1\\1&2&1\\1&1&2
+\end{pmatrix}
+$$
+
+と同値である．よって3本の辺の長さが等しく，互いの内積はその長さの二乗の半分になる．例えば
+
+$$
+BC^2=\|\boldsymbol c-\boldsymbol b\|^2
+=\|\boldsymbol b\|^2+\|\boldsymbol c\|^2
+-2\boldsymbol b\cdot\boldsymbol c
+$$
+
+も $AB^2$ と等しくなり，$CD,DB$ についても同じ計算が成り立つ．したがって6辺が等しく，四面体は正四面体である．逆に正四面体なら上のGram行列の比例条件を満たすので，等号は正四面体のときに限る．
+
+## コメント
+
+距離の式を直接いじるより，Gram行列へ集約すると等号条件まで同時に読めます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

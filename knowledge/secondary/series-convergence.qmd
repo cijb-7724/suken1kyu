@@ -1,0 +1,75 @@
+---
+title: "級数の収束判定"
+id: series-convergence
+---
+
+## 概要
+
+級数の収束判定では，項の形に合わせて比較判定，比判定，根判定，積分表示，望遠鏡和を選ぶ．判定法の仮定と，境界値で判定不能になる場合を明示する．
+
+## 基本事項
+
+正項級数について，根判定法は
+
+$$
+L=\limsup_{n\to\infty}\sqrt[n]{a_n}
+$$
+
+とおき，$L<1$ なら収束，$L>1$ なら発散とする．$L=1$ では判定できない．
+
+比判定法は
+
+$$
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=L
+$$
+
+が存在するとき，同じ結論を与える．
+
+分母が一次式なら
+
+$$
+\frac1{kn+r}=\int_0^1x^{kn+r-1}\,dx
+$$
+
+と表し，等比級数を積分する方法がある．非負関数ならTonelliの定理により和と積分を交換できる．初等的には部分和で計算して単調収束を用いてもよい．
+
+### 判定法の選び方
+
+階乗や指数の積があるときは比判定，$n^2$ などが指数にあるときは根判定，有理式は $1/n^p$ との比較を最初に考える．$L=1$ になったら，その判定法では結論が出ないので，別の判定へ切り替える．
+
+## 例題
+
+級数
+
+$$
+\sum_{n=1}^{\infty}\frac{n!}{n^n}
+$$
+
+の収束を判定する．$a_n=n!/n^n$ とおくと，
+
+$$
+\begin{aligned}
+\frac{a_{n+1}}{a_n}
+&=\frac{(n+1)!}{(n+1)^{n+1}}\frac{n^n}{n!}\\
+&=\left(\frac{n}{n+1}\right)^n
+=\left(1+\frac1n\right)^{-n}.
+\end{aligned}
+$$
+
+したがって，
+
+$$
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=e^{-1}<1.
+$$
+
+比判定法により級数は収束する．$(n+1)!=(n+1)n!$ を約分し，標準極限 $(1+1/n)^n\to e$ へ合わせることが要点である．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

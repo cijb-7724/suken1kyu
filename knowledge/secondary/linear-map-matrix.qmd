@@ -1,0 +1,106 @@
+---
+title: "線形写像の表現行列"
+id: linear-map-matrix
+---
+
+## 概要
+
+抽象的な線形写像も，定義域と値域の基底を選べば行列で表せます．多項式の微分や値の代入など，入力が数ベクトルでない場合も手順は同じです．
+
+## 基本事項
+
+定義域 $V$ の基底を $(v_1,\ldots,v_n)$，値域 $W$ の基底を $(w_1,\ldots,w_m)$ とします．
+
+$$
+T(v_j)=a_{1j}w_1+\cdots+a_{mj}w_m
+$$
+
+と展開した係数を第 $j$ 列へ並べた行列
+
+$$
+[T]=
+\begin{pmatrix}
+a_{11}&\cdots&a_{1n}\\
+\vdots&&\vdots\\
+a_{m1}&\cdots&a_{mn}
+\end{pmatrix}
+$$
+
+が表現行列です．入力の座標を $\boldsymbol x$，出力の座標を $\boldsymbol y$ とすると $\boldsymbol y=[T]\boldsymbol x$ です．
+
+核は $[T]\boldsymbol x=\boldsymbol0$ を解いて求めます．また，
+
+$$
+\dim\ker T+\operatorname{rank}[T]=\dim V
+$$
+
+により次元を確認できます．
+
+### 基底が変わる場合
+
+表現行列は写像だけでなく，選んだ基底にも依存します．定義域の基底を変換する行列を $P$，値域の基底を変換する行列を $Q$ とすると，新しい表現行列は
+
+$$
+[T]_{\mathrm{new}}=Q^{-1}[T]_{\mathrm{old}}P
+$$
+
+です．定義域と値域が同じ空間で，同じ基底変更を行う場合に限って相似変換 $P^{-1}[T]P$ になります．
+
+## 例題
+
+$P_3$ を次数3以下，$P_2$ を次数2以下の実多項式全体とし，
+
+$$
+T(f)=f'(x+1)-f(1)x^2
+$$
+
+とします．定義域の基底を $(1,x,x^2,x^3)$，値域の基底を $(1,x,x^2)$ とします．
+
+$$
+\begin{aligned}
+T(1)&=-x^2,\\
+T(x)&=1-x^2,\\
+T(x^2)&=2(x+1)-x^2=2+2x-x^2,\\
+T(x^3)&=3(x+1)^2-x^2=3+6x+2x^2
+\end{aligned}
+$$
+
+なので，各像の係数を列へ並べると，
+
+$$
+[T]=
+\begin{pmatrix}
+0&1&2&3\\
+0&0&2&6\\
+-1&-1&-1&2
+\end{pmatrix}.
+$$
+
+$f=a+bx+cx^2+dx^3$ が核に入る条件は
+
+$$
+\begin{cases}
+b+2c+3d=0,\\
+2c+6d=0,\\
+-a-b-c+2d=0
+\end{cases}
+$$
+
+です．第2式から $c=-3d$，第1式から $b=3d$，第3式から $a=2d$ を得ます．よって
+
+$$
+\boxed{\ker T
+=\operatorname{span}\{2+3x-3x^2+x^3\}}.
+$$
+
+核は1次元なので，次元定理から $\operatorname{rank}T=4-1=3$ です．値域 $P_2$ も3次元であるため，$T$ は全射だと分かります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->
