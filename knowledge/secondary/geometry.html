@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#表現の選び方" id="toc-表現の選び方" class="nav-link" data-scroll-target="#表現の選び方">表現の選び方</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「幾何」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>幾何では，図形の距離，角度，面積，体積，交点関係を調べる．2次試験では，ベクトル，複素数，行列，反転，射影座標など，図形に合う表現を選ぶ．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>計量的な問題では内積</p>
+<p><span class="math display">\[
+\boldsymbol a\cdot\boldsymbol b
+=\|\boldsymbol a\|\,\|\boldsymbol b\|\cos\theta
+\]</span></p>
+<p>を使う．共線性や交点だけの問題では射影変換が有効である．変換を使うときは，何が保存されるかを明示する．相似変換は角と長さの比，反転は角と特定の距離積，射影変換は直線と交点を保つ．</p>
+<section id="表現の選び方" class="level3">
+<h3 class="anchored" data-anchor-id="表現の選び方">表現の選び方</h3>
+<ul>
+<li>距離の二乗和や重心ならベクトル．</li>
+<li>円周上の回転・対蹠点なら複素数．</li>
+<li>距離の積や円と直線の交換なら反転．</li>
+<li>共線性・共点性だけなら射影座標．</li>
+</ul>
+<p>図形を変換した後は，結論に必要な性質がその変換で保存されるかを必ず確認する．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>三角形 <span class="math inline">\(ABC\)</span> の重心を <span class="math inline">\(G\)</span>，任意の点を <span class="math inline">\(P\)</span> とする．</p>
+<p><span class="math display">\[
+PA^2+PB^2+PC^2
+=3PG^2+GA^2+GB^2+GC^2
+\]</span></p>
+<p>を示す．<span class="math inline">\(G\)</span> を原点とし，<span class="math inline">\(A,B,C,P\)</span> の位置ベクトルを <span class="math inline">\(a,b,c,p\)</span> とする．重心の定義から <span class="math inline">\(a+b+c=0\)</span> である．したがって，</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum_{\mathrm{cyc}}PA^2
+&amp;=\sum_{\mathrm{cyc}}\|p-a\|^2\\
+&amp;=3\|p\|^2+\sum_{\mathrm{cyc}}\|a\|^2
+-2p\cdot(a+b+c)\\
+&amp;=3PG^2+GA^2+GB^2+GC^2.
+\end{aligned}
+\]</span></p>
+<p>原点を重心へ移すことで交差項が消えるのが要点である．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

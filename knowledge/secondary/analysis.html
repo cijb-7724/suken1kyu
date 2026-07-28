@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#極限と積分の交換" id="toc-極限と積分の交換" class="nav-link" data-scroll-target="#極限と積分の交換">極限と積分の交換</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「解析」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>解析は，極限，級数，微分，積分，微分方程式を通して連続的な変化を調べる分野である．2次試験では，公式を適用するだけでなく，収束条件や変数変換の定義域まで説明する必要がある．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>極限操作では，和・積分・微分との交換が正当かを確認する．級数では一般項が <span class="math inline">\(0\)</span> へ進むことは必要条件にすぎず，十分条件ではない．積分では領域とJacobianを，微分方程式では一般解が必要な任意定数の個数をもつかを確認する．</p>
+<section id="極限と積分の交換" class="level3">
+<h3 class="anchored" data-anchor-id="極限と積分の交換">極限と積分の交換</h3>
+<p>各点で <span class="math inline">\(f_n(x)\to f(x)\)</span> だけでは，</p>
+<p><span class="math display">\[
+\lim_{n\to\infty}\int f_n
+=\int\lim_{n\to\infty}f_n
+\]</span></p>
+<p>と交換できるとは限らない．優収束定理では，<span class="math inline">\(|f_n(x)|\leq g(x)\)</span> を満たす可積分関数 <span class="math inline">\(g\)</span> が存在することが十分条件になる．非負関数が単調に増加する場合は単調収束定理を使える．定理名だけでなく，本問が仮定を満たす理由を書く．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>極限</p>
+<p><span class="math display">\[
+\lim_{n\to\infty}
+\int_0^1\frac{x^n}{1+x}\,dx
+\]</span></p>
+<p>を求める．<span class="math inline">\(0\leq x&lt;1\)</span> では <span class="math inline">\(x^n\to0\)</span> であり，</p>
+<p><span class="math display">\[
+0\leq\frac{x^n}{1+x}\leq1
+\qquad(0\leq x\leq1).
+\]</span></p>
+<p>右辺は可積分なので，優収束定理から</p>
+<p><span class="math display">\[
+\lim_{n\to\infty}
+\int_0^1\frac{x^n}{1+x}\,dx
+=\int_0^1
+\lim_{n\to\infty}\frac{x^n}{1+x}\,dx
+=0
+\]</span></p>
+<p>となる．<span class="math inline">\(x=1\)</span> の1点だけでは極限が <span class="math inline">\(1/2\)</span> だが，1点の値は積分へ影響しない．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

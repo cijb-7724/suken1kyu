@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「対称行列の三重対角化」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>実対称行列は，Householder変換を繰り返すことで，対称性と固有値を保ったまま三重対角行列へ変換できます．固有値計算の前処理として重要です．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(n\)</span> 次対称行列 <span class="math inline">\(A\)</span> の第1列で，対角成分より下のベクトルを</p>
+<p><span class="math display">\[
+x=(a_{21},a_{31},\ldots,a_{n1})^{\mathsf T}
+\]</span></p>
+<p>とします．<span class="math inline">\(x\)</span> を <span class="math inline">\(\alpha e_1\)</span> へ移す <span class="math inline">\((n-1)\)</span> 次Householder行列 <span class="math inline">\(H_1\)</span> を作り，</p>
+<p><span class="math display">\[
+Q_1=\begin{pmatrix}1&amp;0\\0&amp;H_1\end{pmatrix}
+\]</span></p>
+<p>とおきます．</p>
+<p><span class="math display">\[
+A_1=Q_1^{\mathsf T}AQ_1
+\]</span></p>
+<p>では第1列の第3成分以下と，対称性により第1行の第3成分以降が <span class="math inline">\(0\)</span> になります．次は右下の <span class="math inline">\((n-1)\)</span> 次部分行列に同じ操作を行います．</p>
+<p>各 <span class="math inline">\(Q_k\)</span> は直交行列なので，最終行列 <span class="math inline">\(T=Q^{\mathsf T}AQ\)</span> は <span class="math inline">\(A\)</span> と相似です．また，</p>
+<p><span class="math display">\[
+T^{\mathsf T}=Q^{\mathsf T}A^{\mathsf T}Q=T
+\]</span></p>
+<p>により対称性も保たれます．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>次の対称行列を三重対角化します．</p>
+<p><span class="math display">\[
+A=
+\begin{pmatrix}
+4&amp;1&amp;1\\
+1&amp;3&amp;0\\
+1&amp;0&amp;2
+\end{pmatrix}.
+\]</span></p>
+<p>第1列の対角成分より下は <span class="math inline">\(x=(1,1)^{\mathsf T}\)</span> です．</p>
+<p><span class="math display">\[
+H=\frac1{\sqrt2}
+\begin{pmatrix}
+1&amp;1\\
+1&amp;-1
+\end{pmatrix}
+\]</span></p>
+<p>とすると，</p>
+<p><span class="math display">\[
+Hx=\begin{pmatrix}\sqrt2\\0\end{pmatrix}.
+\]</span></p>
+<p>そこで</p>
+<p><span class="math display">\[
+Q=
+\begin{pmatrix}
+1&amp;0&amp;0\\
+0&amp;1/\sqrt2&amp;1/\sqrt2\\
+0&amp;1/\sqrt2&amp;-1/\sqrt2
+\end{pmatrix}
+\]</span></p>
+<p>とします．<span class="math inline">\(Q\)</span> は直交行列であり，実際に左右から掛けると，</p>
+<p><span class="math display">\[
+\begin{aligned}
+Q^{\mathsf T}AQ
+&amp;=
+\begin{pmatrix}
+4&amp;\sqrt2&amp;0\\
+\sqrt2&amp;5/2&amp;1/2\\
+0&amp;1/2&amp;5/2
+\end{pmatrix}.
+\end{aligned}
+\]</span></p>
+<p>右下の <span class="math inline">\(2\times2\)</span> 部分はそのまま残っていますが，第1列の第3成分と，対称な位置にある第1行の第3成分が <span class="math inline">\(0\)</span> になっています．3次行列ではこれで三重対角化が完了です．4次以上では，右下部分行列に同じ操作を繰り返します．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

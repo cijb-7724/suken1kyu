@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>出典不明01 問1 – 数検1級 解説ノート</title>
+<title>第358回 2次 問1 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,6 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
+  <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a>
+  <ul class="collapse">
+  <li><a href="#この問題で使う一般形" id="toc-この問題で使う一般形" class="nav-link" data-scroll-target="#この問題で使う一般形">この問題で使う一般形</a></li>
+  </ul></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
   <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
   <li><a href="#コメント" id="toc-コメント" class="nav-link" data-scroll-target="#コメント">コメント</a></li>
@@ -138,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">出典不明01 問1</h1>
+<h1 class="title">第358回 2次 問1</h1>
 </div>
 
 
@@ -157,19 +190,68 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>2次試験のサンプル問題．</p>
+<p><span class="math inline">\(271\)</span> は素数である．Legendre記号と二次互除法を用いて，合同式</p>
+<p><span class="math display">\[
+x^2\equiv15\pmod{271}
+\]</span></p>
+<p>が解をもつか判定しなさい．解をもつ場合はすべて求め，もたない場合はそのことを証明しなさい．</p>
+</section>
+<section id="必要な知識" class="level2">
+<h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
+<ul>
+<li><a href="../../knowledge/secondary/quadratic-residue.html">二次剰余</a></li>
+</ul>
+<section id="この問題で使う一般形" class="level3">
+<h3 class="anchored" data-anchor-id="この問題で使う一般形">この問題で使う一般形</h3>
+<p>奇素数 <span class="math inline">\(p\)</span> と <span class="math inline">\(p\nmid a\)</span> に対し，Eulerの規準</p>
+<p><span class="math display">\[
+a^{(p-1)/2}\equiv\left(\frac ap\right)\pmod p
+\]</span></p>
+<p>が成り立ちます．したがって <span class="math inline">\(x^2\equiv a\pmod p\)</span> が解をもつことと <span class="math inline">\(\left(\frac ap\right)=1\)</span> は同値です．また，相異なる奇素数 <span class="math inline">\(p,q\)</span> に対する二次互除法は</p>
+<p><span class="math display">\[
+\left(\frac pq\right)\left(\frac qp\right)
+=(-1)^{\frac{p-1}{2}\frac{q-1}{2}}
+\]</span></p>
+<p>です．本問では <span class="math inline">\(271\)</span> が奇素数で，<span class="math inline">\(271\nmid15\)</span> なので，この判定をそのまま適用できます．</p>
+</section>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>ここに必要な発想を書く．</p>
+<p>解を探し始める前に，<span class="math inline">\(15\)</span> が法 <span class="math inline">\(271\)</span> の二次剰余かをLegendre記号で判定する． <span class="math inline">\(15=3\cdot5\)</span> と分け，二次互除法で小さい法へ移す．</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-<p>ここに解答を書く．</p>
+<p>合同式が解をもつための必要十分条件は</p>
+<p><span class="math display">\[
+\left(\frac{15}{271}\right)=1
+\]</span></p>
+<p>である．乗法性より，</p>
+<p><span class="math display">\[
+\left(\frac{15}{271}\right)
+=\left(\frac3{271}\right)\left(\frac5{271}\right)
+\]</span></p>
+<p>と分ける．</p>
+<p><span class="math inline">\(3\equiv3\pmod4\)</span>，<span class="math inline">\(271\equiv3\pmod4\)</span> なので，二次互除法では符号が1回反転する．</p>
+<p><span class="math display">\[
+\left(\frac3{271}\right)
+=-\left(\frac{271}{3}\right)
+=-\left(\frac1{3}\right)=-1
+\]</span></p>
+<p>である．一方，<span class="math inline">\(5\equiv1\pmod4\)</span> なので符号は変わらず，</p>
+<p><span class="math display">\[
+\left(\frac5{271}\right)
+=\left(\frac{271}{5}\right)
+=\left(\frac1{5}\right)=1
+\]</span></p>
+<p>となる．したがって，</p>
+<p><span class="math display">\[
+\left(\frac{15}{271}\right)=(-1)\cdot1=-1
+\]</span></p>
+<p>である．よって <span class="math inline">\(15\)</span> は法 <span class="math inline">\(271\)</span> の二次非剰余であり，与えられた合同式を満たす整数 <span class="math inline">\(x\)</span> は存在しない．</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>ここにコメントを書く．</p>
+<p>「解をすべて求める」前に，そもそも解が存在するかを判定するのがLegendre記号の役割です．</p>
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page="">
 

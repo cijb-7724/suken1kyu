@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「級数」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>無限級数 <span class="math inline">\(\sum_{n=1}^{\infty}a_n\)</span> は，部分和 <span class="math inline">\(S_N=\sum_{n=1}^{N}a_n\)</span> の極限として定義する．収束の証明と和の計算は別の作業である．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(\sum a_n\)</span> が収束するなら <span class="math inline">\(a_n\to0\)</span> である．正項級数では比較判定，比判定，根判定を使える．符号が変わる級数では絶対収束を確認すると扱いやすい．</p>
+<p>望遠鏡和</p>
+<p><span class="math display">\[
+a_n=b_n-b_{n+1}
+\]</span></p>
+<p>なら</p>
+<p><span class="math display">\[
+S_N=b_1-b_{N+1}
+\]</span></p>
+<p>である．無限和は有限部分和を求めてから <span class="math inline">\(N\to\infty\)</span> とする．</p>
+<p>絶対収束 <span class="math inline">\(\sum|a_n|&lt;\infty\)</span> なら <span class="math inline">\(\sum a_n\)</span> は収束し，項を並べ替えても和は変わらない．条件収束級数では並べ替えが和を変えることがあるため，正項級数と同じ感覚で項を組み替えてはいけない．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>級数</p>
+<p><span class="math display">\[
+\sum_{n=1}^{\infty}\frac1{n(n+1)(n+2)}
+\]</span></p>
+<p>の和を求める．</p>
+<p><span class="math display">\[
+\frac1{n(n+1)(n+2)}
+=\frac12\left\{
+\frac1{n(n+1)}-\frac1{(n+1)(n+2)}
+\right\}
+\]</span></p>
+<p>なので，</p>
+<p><span class="math display">\[
+\begin{aligned}
+S_N
+&amp;=\frac12\sum_{n=1}^N
+\left\{\frac1{n(n+1)}-\frac1{(n+1)(n+2)}\right\}\\
+&amp;=\frac12\left\{\frac12-\frac1{(N+1)(N+2)}\right\}.
+\end{aligned}
+\]</span></p>
+<p>よって</p>
+<p><span class="math display">\[
+\boxed{\sum_{n=1}^{\infty}\frac1{n(n+1)(n+2)}=\frac14}.
+\]</span></p>
+<p>無限和の段階で形式的に相殺せず，有限部分和の両端を確認してから極限を取る．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

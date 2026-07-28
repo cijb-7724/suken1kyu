@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「数学的技能」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>数学的技能とは，問題固有の定理とは別に，仮定の読み替え，必要条件と十分条件の区別，場合分け，逆算などを組み合わせて論証を組み立てる力です．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>証明では，まず結論の論理形式を確認します．</p>
+<ul>
+<li>「すべての <span class="math inline">\(x\)</span> で成り立つ」は，任意の <span class="math inline">\(x\)</span> を固定して示します．</li>
+<li>「ある <span class="math inline">\(x\)</span> が存在する」は，具体的に構成するか，連続性・単調性などの存在定理を使います．</li>
+<li>「存在しない」は，存在すると仮定して矛盾を導きます．</li>
+<li>「必要十分」は，必要性と十分性を別々に示します．</li>
+</ul>
+<p>等号成立条件や定理の仮定も結論の一部です．例えば相加相乗平均</p>
+<p><span class="math display">\[
+\frac{x_1+\cdots+x_n}{n}\geq(x_1\cdots x_n)^{1/n}
+\]</span></p>
+<p>は <span class="math inline">\(x_i\geq0\)</span> を仮定し，等号は <span class="math inline">\(x_1=\cdots=x_n\)</span> のときに限ります．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>正数 <span class="math inline">\(x,y\)</span> について</p>
+<p><span class="math display">\[
+x+y+\frac4{xy}
+\]</span></p>
+<p>の最小値を求めます．3項はすべて正なので相加相乗平均を適用でき，</p>
+<p><span class="math display">\[
+x+y+\frac4{xy}
+\geq3\sqrt[3]{x\cdot y\cdot\frac4{xy}}
+=3\sqrt[3]{4}.
+\]</span></p>
+<p>等号条件は3項が等しいこと，すなわち</p>
+<p><span class="math display">\[
+x=y=\frac4{xy}
+\]</span></p>
+<p>です．<span class="math inline">\(x=y=t\)</span> とおけば <span class="math inline">\(t=4/t^2\)</span>，したがって <span class="math inline">\(t=\sqrt[3]4\)</span> です．この値で等号が実現するので，</p>
+<p><span class="math display">\[
+\boxed{\min\left(x+y+\frac4{xy}\right)=3\sqrt[3]4}
+\]</span></p>
+<p>となります．不等式で下界を出しただけでは最小値とはいえず，等号条件を満たす点が定義域内に存在することまで確認します．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

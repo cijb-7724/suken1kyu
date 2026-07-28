@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#一次不定方程式" id="toc-一次不定方程式" class="nav-link" data-scroll-target="#一次不定方程式">一次不定方程式</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「整数」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>整数問題では，素因数分解，最大公約数，合同式，偶奇を使って，実数の計算には現れない離散的な制約を取り出す．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>Bézoutの等式より，<span class="math inline">\(d=\gcd(a,b)\)</span> なら</p>
+<p><span class="math display">\[
+ax+by=d
+\]</span></p>
+<p>を満たす整数 <span class="math inline">\(x,y\)</span> が存在する．特に <span class="math inline">\(\gcd(a,m)=1\)</span> なら <span class="math inline">\(ax\equiv1\pmod m\)</span> を満たす <span class="math inline">\(x\)</span> が存在するので，<span class="math inline">\(a\)</span> は法 <span class="math inline">\(m\)</span> で逆元をもつ．</p>
+<p>素数 <span class="math inline">\(p\)</span> が積 <span class="math inline">\(ab\)</span> を割るなら，Euclidの補題により <span class="math inline">\(p\mid a\)</span> または <span class="math inline">\(p\mid b\)</span> である．ただし，合成数を法としたときに同じ結論を使ってはいけない．</p>
+<p>平方数の余りは強い制約を与える．たとえば法 <span class="math inline">\(4\)</span> では <span class="math inline">\(0,1\)</span>，法 <span class="math inline">\(8\)</span> では <span class="math inline">\(0,1,4\)</span> しか取らない．</p>
+<section id="一次不定方程式" class="level3">
+<h3 class="anchored" data-anchor-id="一次不定方程式">一次不定方程式</h3>
+<p>方程式</p>
+<p><span class="math display">\[
+ax+by=c
+\]</span></p>
+<p>が整数解をもつための必要十分条件は <span class="math inline">\(\gcd(a,b)\mid c\)</span> である．1組の解 <span class="math inline">\((x_0,y_0)\)</span> が見つかれば，<span class="math inline">\(d=\gcd(a,b)\)</span> として一般解は</p>
+<p><span class="math display">\[
+x=x_0+\frac bd t,\qquad
+y=y_0-\frac ad t\qquad(t\in\mathbb Z)
+\]</span></p>
+<p>となる．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>一次不定方程式</p>
+<p><span class="math display">\[
+84x+30y=18
+\]</span></p>
+<p>の整数解をすべて求める．Euclidの互除法を逆にたどると，</p>
+<p><span class="math display">\[
+84=2\cdot30+24,\qquad
+30=1\cdot24+6
+\]</span></p>
+<p>なので <span class="math inline">\(\gcd(84,30)=6\)</span> である．<span class="math inline">\(6\mid18\)</span> だから解は存在する．また，</p>
+<p><span class="math display">\[
+6=30-24=30-(84-2\cdot30)=3\cdot30-84
+\]</span></p>
+<p>より，</p>
+<p><span class="math display">\[
+18=-3\cdot84+9\cdot30
+\]</span></p>
+<p>である．したがって1組の解は <span class="math inline">\((x_0,y_0)=(-3,9)\)</span> で，一般解は</p>
+<p><span class="math display">\[
+\boxed{x=-3+5t,\qquad y=9-14t\quad(t\in\mathbb Z)}
+\]</span></p>
+<p>となる．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

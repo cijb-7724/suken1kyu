@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "exam": "secondary",
-  "count": 1,
+  "count": 5,
   "max_question_number": 7,
   "papers": [
     {
-      "id": "sec-paper-unknown-001",
-      "label": "出典不明 01",
-      "year": null,
-      "round": null,
-      "sort_order": 9001,
+      "id": "sec-paper-0358",
+      "label": "第358回",
+      "year": 2020,
+      "round": 358,
+      "sort_order": 358,
       "problem_count": 7,
       "question_numbers": [
         1,
@@ -23,61 +23,359 @@
       "questions": {
         "1": {
           "problem_id": "sec-problem-000001",
-          "cell_label": "整数",
+          "cell_label": "二次剰余",
           "path": "problems/secondary/sec-problem-000001.html",
           "direct_tags": [
-            "integers"
+            "quadratic-residue"
           ]
         },
         "2": {
           "problem_id": "sec-problem-000002",
-          "cell_label": "フーリエ変換",
+          "cell_label": "離散Fourier",
           "path": "problems/secondary/sec-problem-000002.html",
           "direct_tags": [
-            "fourier-transform",
-            "series"
+            "fourier-transform"
           ]
         },
         "3": {
           "problem_id": "sec-problem-000003",
-          "cell_label": "幾何",
+          "cell_label": "正単体",
           "path": "problems/secondary/sec-problem-000003.html",
           "direct_tags": [
-            "geometry"
+            "vector-geometry"
           ]
         },
         "4": {
           "problem_id": "sec-problem-000004",
-          "cell_label": "確率密度関数",
+          "cell_label": "母分散",
           "path": "problems/secondary/sec-problem-000004.html",
           "direct_tags": [
-            "probability-density-function",
-            "maximum-likelihood"
+            "variance-inference"
           ]
         },
         "5": {
           "problem_id": "sec-problem-000005",
-          "cell_label": "整理技能",
+          "cell_label": "写像",
           "path": "problems/secondary/sec-problem-000005.html",
           "direct_tags": [
-            "algebraic-manipulation",
-            "antichain"
+            "counting-maps"
           ]
         },
         "6": {
           "problem_id": "sec-problem-000006",
-          "cell_label": "線形代数",
+          "cell_label": "Jordan形",
           "path": "problems/secondary/sec-problem-000006.html",
           "direct_tags": [
-            "linear-algebra"
+            "jordan-normal-form"
           ]
         },
         "7": {
           "problem_id": "sec-problem-000007",
-          "cell_label": "微分方程式",
+          "cell_label": "重積分",
           "path": "problems/secondary/sec-problem-000007.html",
           "direct_tags": [
-            "differential-equation"
+            "change-of-variables"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0363",
+      "label": "第363回",
+      "year": 2020,
+      "round": 363,
+      "sort_order": 363,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000008",
+          "cell_label": "三平方",
+          "path": "problems/secondary/sec-problem-000008.html",
+          "direct_tags": [
+            "descent-parity"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000009",
+          "cell_label": "級数",
+          "path": "problems/secondary/sec-problem-000009.html",
+          "direct_tags": [
+            "series-convergence"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000010",
+          "cell_label": "四面体不等式",
+          "path": "problems/secondary/sec-problem-000010.html",
+          "direct_tags": [
+            "simplex-gram-matrix"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000011",
+          "cell_label": "平均検定",
+          "path": "problems/secondary/sec-problem-000011.html",
+          "direct_tags": [
+            "mean-inference"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000012",
+          "cell_label": "棒の敷き詰め",
+          "path": "problems/secondary/sec-problem-000012.html",
+          "direct_tags": [
+            "tiling-invariant"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000013",
+          "cell_label": "反転行列",
+          "path": "problems/secondary/sec-problem-000013.html",
+          "direct_tags": [
+            "structured-determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000014",
+          "cell_label": "3変数極値",
+          "path": "problems/secondary/sec-problem-000014.html",
+          "direct_tags": [
+            "multivariable-extrema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0406",
+      "label": "第406回",
+      "year": 2023,
+      "round": 406,
+      "sort_order": 406,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000015",
+          "cell_label": "合同式の構成",
+          "path": "problems/secondary/sec-problem-000015.html",
+          "direct_tags": [
+            "modular-construction"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000016",
+          "cell_label": "葉線の面積",
+          "path": "problems/secondary/sec-problem-000016.html",
+          "direct_tags": [
+            "parametric-curve-area"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000017",
+          "cell_label": "単位円上の点",
+          "path": "problems/secondary/sec-problem-000017.html",
+          "direct_tags": [
+            "complex-plane-geometry"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000018",
+          "cell_label": "対応のあるt検定",
+          "path": "problems/secondary/sec-problem-000018.html",
+          "direct_tags": [
+            "mean-inference"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000019",
+          "cell_label": "無限降下",
+          "path": "problems/secondary/sec-problem-000019.html",
+          "direct_tags": [
+            "descent-parity"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000020",
+          "cell_label": "線形写像",
+          "path": "problems/secondary/sec-problem-000020.html",
+          "direct_tags": [
+            "linear-map-matrix"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000021",
+          "cell_label": "Euler型方程式",
+          "path": "problems/secondary/sec-problem-000021.html",
+          "direct_tags": [
+            "euler-differential-equation"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0414",
+      "label": "第414回",
+      "year": 2023,
+      "round": 414,
+      "sort_order": 414,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000022",
+          "cell_label": "平方和",
+          "path": "problems/secondary/sec-problem-000022.html",
+          "direct_tags": [
+            "quadratic-residue"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000023",
+          "cell_label": "級数判定",
+          "path": "problems/secondary/sec-problem-000023.html",
+          "direct_tags": [
+            "series-convergence"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000024",
+          "cell_label": "反転不等式",
+          "path": "problems/secondary/sec-problem-000024.html",
+          "direct_tags": [
+            "geometric-inversion"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000025",
+          "cell_label": "χ²とPoisson",
+          "path": "problems/secondary/sec-problem-000025.html",
+          "direct_tags": [
+            "chi-square-goodness-of-fit",
+            "poisson-distribution"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000026",
+          "cell_label": "銀行列",
+          "path": "problems/secondary/sec-problem-000026.html",
+          "direct_tags": [
+            "combinatorial-construction"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000027",
+          "cell_label": "反転行列",
+          "path": "problems/secondary/sec-problem-000027.html",
+          "direct_tags": [
+            "structured-determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000028",
+          "cell_label": "3変数極値",
+          "path": "problems/secondary/sec-problem-000028.html",
+          "direct_tags": [
+            "multivariable-extrema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0427",
+      "label": "第427回",
+      "year": 2024,
+      "round": 427,
+      "sort_order": 427,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000029",
+          "cell_label": "平方剰余",
+          "path": "problems/secondary/sec-problem-000029.html",
+          "direct_tags": [
+            "quadratic-residue"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000030",
+          "cell_label": "Fourier級数",
+          "path": "problems/secondary/sec-problem-000030.html",
+          "direct_tags": [
+            "fourier-series"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000031",
+          "cell_label": "共線定理",
+          "path": "problems/secondary/sec-problem-000031.html",
+          "direct_tags": [
+            "projective-collinearity"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000032",
+          "cell_label": "指数回帰",
+          "path": "problems/secondary/sec-problem-000032.html",
+          "direct_tags": [
+            "least-squares-regression"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000033",
+          "cell_label": "Lambert W",
+          "path": "problems/secondary/sec-problem-000033.html",
+          "direct_tags": [
+            "lambert-w-function"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000034",
+          "cell_label": "一般化固有値",
+          "path": "problems/secondary/sec-problem-000034.html",
+          "direct_tags": [
+            "generalized-eigenvalue"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000035",
+          "cell_label": "ひし形上の積分",
+          "path": "problems/secondary/sec-problem-000035.html",
+          "direct_tags": [
+            "change-of-variables"
           ]
         }
       }

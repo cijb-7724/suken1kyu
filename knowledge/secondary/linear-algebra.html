@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#固有値問題を解く順序" id="toc-固有値問題を解く順序" class="nav-link" data-scroll-target="#固有値問題を解く順序">固有値問題を解く順序</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,86 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「線形代数」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>線形代数では，ベクトル空間と線形写像を，基底を選んで行列として扱います．連立方程式，固有値，二次形式，座標変換に共通する土台です．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>ベクトル <span class="math inline">\(v_1,\ldots,v_r\)</span> が一次独立で，空間 <span class="math inline">\(V\)</span> のすべての元を一次結合で表せるとき，これらを基底といいます．線形写像 <span class="math inline">\(T:V\to W\)</span> には，</p>
+<p><span class="math display">\[
+\ker T=\{v\in V\mid T(v)=0\},\qquad
+\operatorname{Im}T=\{T(v)\mid v\in V\}
+\]</span></p>
+<p>が対応し，有限次元なら次元定理</p>
+<p><span class="math display">\[
+\dim\ker T+\dim\operatorname{Im}T=\dim V
+\]</span></p>
+<p>が成り立ちます．</p>
+<p>正方行列 <span class="math inline">\(A\)</span> の固有値は <span class="math inline">\(\det(A-\lambda I)=0\)</span> の解です．固有値ごとに十分な本数の一次独立な固有ベクトルが得られれば，それらを列にもつ行列 <span class="math inline">\(P\)</span> により <span class="math inline">\(P^{-1}AP\)</span> を対角化できます．</p>
+<section id="固有値問題を解く順序" class="level3">
+<h3 class="anchored" data-anchor-id="固有値問題を解く順序">固有値問題を解く順序</h3>
+<ol type="1">
+<li>特性多項式 <span class="math inline">\(\det(\lambda I-A)\)</span> を因数分解する．</li>
+<li>各固有値 <span class="math inline">\(\lambda\)</span> について <span class="math inline">\((A-\lambda I)v=0\)</span> を解く．</li>
+<li>得られた固有ベクトルを列に並べた <span class="math inline">\(P\)</span> が正則か確認する．</li>
+<li><span class="math inline">\(AP=PD\)</span> を確認する．これが成り立てば <span class="math inline">\(P^{-1}AP=D\)</span> である．</li>
+</ol>
+<p>固有値が重複したときは，重複度と同じ本数の一次独立な固有ベクトルが得られるとは限りません．不足する場合は対角化できず，Jordan標準形を考えます．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>3次行列</p>
+<p><span class="math display">\[
+A=
+\begin{pmatrix}
+1&amp;1&amp;0\\
+1&amp;1&amp;0\\
+0&amp;0&amp;3
+\end{pmatrix}
+\]</span></p>
+<p>を対角化します．特性方程式は</p>
+<p><span class="math display">\[
+\begin{aligned}
+\det(\lambda I-A)
+&amp;=(\lambda-3)
+\begin{vmatrix}
+\lambda-1&amp;-1\\
+-1&amp;\lambda-1
+\end{vmatrix}\\
+&amp;=(\lambda-3)\{(\lambda-1)^2-1\}\\
+&amp;=\lambda(\lambda-2)(\lambda-3)
+\end{aligned}
+\]</span></p>
+<p>です．各連立方程式を解くと，</p>
+<p><span class="math display">\[
+\lambda=0:\ v_0=(1,-1,0)^{\mathsf T},
+\]</span></p>
+<p><span class="math display">\[
+\lambda=2:\ v_2=(1,1,0)^{\mathsf T},
+\qquad
+\lambda=3:\ v_3=(0,0,1)^{\mathsf T}
+\]</span></p>
+<p>を選べます．3本は一次独立なので，</p>
+<p><span class="math display">\[
+P=(v_0\ v_2\ v_3)
+=
+\begin{pmatrix}
+1&amp;1&amp;0\\
+-1&amp;1&amp;0\\
+0&amp;0&amp;1
+\end{pmatrix}
+\]</span></p>
+<p>は正則です．列ごとに <span class="math inline">\(Av_0=0v_0,\ Av_2=2v_2,\ Av_3=3v_3\)</span> であるため，</p>
+<p><span class="math display">\[
+AP=P\operatorname{diag}(0,2,3)
+\]</span></p>
+<p>です．したがって，</p>
+<p><span class="math display">\[
+\boxed{P^{-1}AP=\operatorname{diag}(0,2,3)}
+\]</span></p>
+<p>となります．対角成分の順序は，<span class="math inline">\(P\)</span> の列に並べた固有ベクトルの順序と一致させます．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

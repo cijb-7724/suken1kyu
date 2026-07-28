@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「完全微分方程式」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>完全微分方程式は，二変数関数 <span class="math inline">\(F(x,y)\)</span> の全微分 <span class="math inline">\(dF\)</span> として書ける一階方程式である．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math display">\[
+M(x,y)\,dx+N(x,y)\,dy=0
+\]</span></p>
+<p>が単連結領域で</p>
+<p><span class="math display">\[
+\frac{\partial M}{\partial y}
+=\frac{\partial N}{\partial x}
+\]</span></p>
+<p>を満たせば完全であり，</p>
+<p><span class="math display">\[
+F_x=M,\qquad F_y=N
+\]</span></p>
+<p>となる <span class="math inline">\(F\)</span> が存在する．解は <span class="math inline">\(F(x,y)=C\)</span> である．</p>
+<p><span class="math inline">\(M\)</span> を <span class="math inline">\(x\)</span> で積分した後，「積分定数」を <span class="math inline">\(y\)</span> の関数 <span class="math inline">\(g(y)\)</span> として残し，<span class="math inline">\(F_y=N\)</span> と比較して決める．</p>
+<p>条件 <span class="math inline">\(M_y=N_x\)</span> は <span class="math inline">\(F_{xy}=F_{yx}\)</span> から必要になる．単連結領域では十分でもある．領域に穴がある場合は大域的なポテンシャルが存在しないことがあるため，定義域も確認する．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>方程式</p>
+<p><span class="math display">\[
+(2xy+e^x)\,dx+(x^2+2y)\,dy=0
+\]</span></p>
+<p>を解く．<span class="math inline">\(M_y=2x=N_x\)</span> なので完全である．<span class="math inline">\(M\)</span> を <span class="math inline">\(x\)</span> で積分すると，</p>
+<p><span class="math display">\[
+F=x^2y+e^x+g(y).
+\]</span></p>
+<p>したがって</p>
+<p><span class="math display">\[
+F_y=x^2+g'(y)=x^2+2y
+\]</span></p>
+<p>より <span class="math inline">\(g'(y)=2y\)</span>，<span class="math inline">\(g(y)=y^2\)</span> と取れる．解は</p>
+<p><span class="math display">\[
+\boxed{x^2y+e^x+y^2=C}
+\]</span></p>
+<p>である．全微分を取れば元の方程式が戻る．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

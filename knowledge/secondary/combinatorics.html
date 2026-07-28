@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「組合せ論」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>組合せ論では，有限個の対象について「何通りあるか」「条件を満たす配置が存在するか」「最大でいくつ選べるか」を扱います．2次試験では，答えだけでなく，重複も漏れもなく数えた理由を説明することが重要です．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>互いに重ならない場合分けの個数は足し，順に独立な選択を行うときの個数は掛けます．これを加法原理，乗法原理といいます．</p>
+<p>全体集合を <span class="math inline">\(U\)</span>，条件に反する集合を <span class="math inline">\(A_1,\ldots,A_r\)</span> とすると，包除原理は</p>
+<p><span class="math display">\[
+\left|U\setminus\bigcup_{i=1}^r A_i\right|
+=\sum_{J\subseteq\{1,\ldots,r\}}(-1)^{|J|}
+\left|\bigcap_{j\in J}A_j\right|
+\]</span></p>
+<p>と表されます．最初に違反例をすべて引くと，複数の条件に違反するものを引き過ぎるため，交わりを足し戻します．</p>
+<p>また，<span class="math inline">\(N\)</span> 個の対象を <span class="math inline">\(r\)</span> 個の箱へ入れるとき，<span class="math inline">\(N&gt;r(k-1)\)</span> なら，少なくとも1箱には <span class="math inline">\(k\)</span> 個以上入ります．これが鳩の巣原理です．</p>
+<p>漸化式も基本的な数え上げです．大きさ <span class="math inline">\(n\)</span> の対象を，最後の要素の状態で重複なく場合分けし，小さい <span class="math inline">\(n\)</span> の個数へ帰着します．漸化式だけでなく初期値も必要です．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(A,B,C\)</span> の3文字をすべて少なくとも1回使う長さ5の文字列の個数を求めます．</p>
+<p>全体は <span class="math inline">\(3^5\)</span> 個です．文字 <span class="math inline">\(A\)</span> を使わない文字列は <span class="math inline">\(2^5\)</span> 個であり，どの1文字を使わないかは3通りなので，まず <span class="math inline">\(3\cdot2^5\)</span> を引きます．ただし，1種類の文字だけからなる文字列は，2つの「使わない」という条件に重複して数えられています．その3個を足し戻して，</p>
+<p><span class="math display">\[
+3^5-3\cdot2^5+3=243-96+3=150
+\]</span></p>
+<p>個です．</p>
+<p>別の基本例として，任意の13個の整数から，差が12の倍数になる2個を必ず選べることを示します．各整数を12で割った余りは <span class="math inline">\(0,1,\ldots,11\)</span> の12種類です．13個の整数を12個の余りの箱へ入れるので，鳩の巣原理により同じ余りをもつ2個があります．その差は12で割り切れます．</p>
+<p>ここで箱に入れる対象は整数そのものではなく「12で割った余り」です．何を箱とみなすかを設計することが，鳩の巣原理を使う中心的な発想です．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「整理技能」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>式の整理は，単に展開することではなく，目的に合う形を選ぶ操作です．因数分解，平方完成，部分分数分解，対称式への置換を使い分けます．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>等式変形では，各行が同値か，一方向の含意だけかを区別します．方程式の両辺を未知数を含む式で割る場合，その式が <span class="math inline">\(0\)</span> となる場合を先に分けます．平方すると余分な解が入る可能性があるため，最後に元の式へ代入します．</p>
+<p>代表的な整理には，</p>
+<p><span class="math display">\[
+x^2+bx=\left(x+\frac b2\right)^2-\frac{b^2}{4},
+\]</span></p>
+<p><span class="math display">\[
+\frac1{(x-a)(x-b)}
+=\frac1{a-b}\left(\frac1{x-a}-\frac1{x-b}\right)
+\]</span></p>
+<p>があります．前者は二次式の符号や極値，後者は和や積分の計算に適します．</p>
+<p>対称式では</p>
+<p><span class="math display">\[
+s=x+y,\qquad p=xy
+\]</span></p>
+<p>と置くと，</p>
+<p><span class="math display">\[
+x^2+y^2=s^2-2p,\qquad
+x^3+y^3=s^3-3ps
+\]</span></p>
+<p>へ整理できます．<span class="math inline">\(x,y\)</span> 自体は二次方程式 <span class="math inline">\(t^2-st+p=0\)</span> の2根として復元します．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>方程式</p>
+<p><span class="math display">\[
+\sqrt{x+3}=x-1
+\]</span></p>
+<p>を解きます．左辺は非負なので，まず <span class="math inline">\(x-1\geq0\)</span>，すなわち <span class="math inline">\(x\geq1\)</span> が必要です．この条件のもとで両辺を平方すると，</p>
+<p><span class="math display">\[
+x+3=(x-1)^2=x^2-2x+1
+\]</span></p>
+<p>より，</p>
+<p><span class="math display">\[
+x^2-3x-2=0.
+\]</span></p>
+<p>したがって候補は</p>
+<p><span class="math display">\[
+x=\frac{3\pm\sqrt{17}}2
+\]</span></p>
+<p>です．このうち <span class="math inline">\(x\geq1\)</span> を満たすのは <span class="math inline">\((3+\sqrt{17})/2\)</span> だけであり，元の式にも代入できるので，これが解です．</p>
+<p>別の例として，</p>
+<p><span class="math display">\[
+x+y=5,\qquad x^3+y^3=35
+\]</span></p>
+<p>を解きます．<span class="math inline">\(s=5\)</span> として</p>
+<p><span class="math display">\[
+35=s^3-3ps=125-15p
+\]</span></p>
+<p>より <span class="math inline">\(p=6\)</span> です．したがって <span class="math inline">\(x,y\)</span> は</p>
+<p><span class="math display">\[
+t^2-5t+6=0
+\]</span></p>
+<p>の2根であり，<span class="math inline">\(t=2,3\)</span> です．よって</p>
+<p><span class="math display">\[
+\boxed{(x,y)=(2,3),(3,2)}
+\]</span></p>
+<p>となります．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

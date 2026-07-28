@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「統計的推測」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>統計的推測は，標本から母平均，母分散，分布の形などを推定・検定する．標本の対応関係と，既知・未知の母数により用いる分布が変わる．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>仮説検定の手順は次のとおりである．</p>
+<ol type="1">
+<li><span class="math inline">\(H_0,H_1\)</span> を定める．</li>
+<li><span class="math inline">\(H_0\)</span> のもとで分布が分かる統計量を作る．</li>
+<li>有意水準 <span class="math inline">\(\alpha\)</span> に対応する棄却域を決める．</li>
+<li>観測値が棄却域に入るか判定する．</li>
+<li>問題の言葉へ戻して結論を書く．</li>
+</ol>
+<p><span class="math inline">\(p\)</span> 値は，<span class="math inline">\(H_0\)</span> のもとで観測値以上に極端な値を得る確率である．<span class="math inline">\(p\le\alpha\)</span> なら棄却する．</p>
+<p>「棄却しない」は帰無仮説を証明したという意味ではない．標本から棄却するだけの証拠が得られなかった，という結論である．片側・両側はデータを見た後ではなく，対立仮説を立てる段階で決める．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>母標準偏差 <span class="math inline">\(\sigma=2.4\)</span> が既知で，<span class="math inline">\(n=64\)</span>，<span class="math inline">\(\overline x=10.6\)</span> とする．<span class="math inline">\(H_0:\mu=10\)</span>，<span class="math inline">\(H_1:\mu\neq10\)</span> を検定する．</p>
+<p><span class="math display">\[
+z=\frac{10.6-10}{2.4/\sqrt{64}}=2.00.
+\]</span></p>
+<p>両側 <span class="math inline">\(p\)</span> 値は</p>
+<p><span class="math display">\[
+p=2P(Z\geq2.00)\approx0.0455
+\]</span></p>
+<p>なので，<span class="math inline">\(5\%\)</span> では棄却し，<span class="math inline">\(1\%\)</span> では棄却しない．<span class="math inline">\(95\%\)</span> 信頼区間は</p>
+<p><span class="math display">\[
+10.6\pm1.96\frac{2.4}{8}
+=10.6\pm0.588
+\]</span></p>
+<p>より，</p>
+<p><span class="math display">\[
+\boxed{10.012\leq\mu\leq11.188}.
+\]</span></p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

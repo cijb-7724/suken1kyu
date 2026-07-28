@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#目的から変換を選ぶ" id="toc-目的から変換を選ぶ" class="nav-link" data-scroll-target="#目的から変換を選ぶ">目的から変換を選ぶ</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「行列の変換」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>行列を扱いやすい形へ変換するときは，どの量を保つ変換かを区別します．行基本変形，相似変換，合同変換は見た目が似ていますが，保存する対象が異なります．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<ul>
+<li>行基本変形 <span class="math inline">\(A\mapsto EA\)</span> は，連立方程式の解集合を保つよう右辺にも同じ変形を施します．階数の計算に使います．</li>
+<li>相似変換 <span class="math inline">\(A\mapsto P^{-1}AP\)</span> は，同じ線形写像を別の基底で表します．固有値，特性多項式，行列式，跡を保ちます．</li>
+<li>合同変換 <span class="math inline">\(A\mapsto P^{\mathsf T}AP\)</span> は，二次形式を変数変換します．正・負・零の符号数を保ちますが，一般には固有値を保ちません．</li>
+<li>直交相似変換 <span class="math inline">\(A\mapsto Q^{\mathsf T}AQ\)</span> は，相似変換と合同変換を兼ねます．</li>
+</ul>
+<p>行列式を計算するとき，2行の交換は符号を反転し，1行を <span class="math inline">\(c\)</span> 倍すると行列式も <span class="math inline">\(c\)</span> 倍になり，他の行の倍を加えても行列式は変わりません．</p>
+<section id="目的から変換を選ぶ" class="level3">
+<h3 class="anchored" data-anchor-id="目的から変換を選ぶ">目的から変換を選ぶ</h3>
+<p>連立方程式や階数を調べたいなら行基本変形，線形写像の固有値を調べたいなら相似変換，二次形式の符号を調べたいなら合同変換を選びます．</p>
+<p>例えば</p>
+<p><span class="math display">\[
+A=\begin{pmatrix}1&amp;0\\0&amp;2\end{pmatrix},
+\qquad
+P=\begin{pmatrix}2&amp;0\\0&amp;1\end{pmatrix}
+\]</span></p>
+<p>とすると，</p>
+<p><span class="math display">\[
+P^{-1}AP=A
+\]</span></p>
+<p>ですが，</p>
+<p><span class="math display">\[
+P^{\mathsf T}AP=
+\begin{pmatrix}4&amp;0\\0&amp;2\end{pmatrix}
+\]</span></p>
+<p>です．合同変換では固有値が <span class="math inline">\((1,2)\)</span> から <span class="math inline">\((4,2)\)</span> へ変わっています．「左右から行列を掛けているから固有値が保たれる」と考えてはいけません．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>行列</p>
+<p><span class="math display">\[
+A=
+\begin{pmatrix}
+1&amp;2&amp;1\\
+2&amp;4&amp;0\\
+1&amp;0&amp;3
+\end{pmatrix}
+\]</span></p>
+<p>の階数と行列式を同時に調べます．</p>
+<p><span class="math display">\[
+\begin{aligned}
+A
+&amp;\xrightarrow{R_2\leftarrow R_2-2R_1}
+\begin{pmatrix}
+1&amp;2&amp;1\\
+0&amp;0&amp;-2\\
+1&amp;0&amp;3
+\end{pmatrix}\\
+&amp;\xrightarrow{R_3\leftarrow R_3-R_1}
+\begin{pmatrix}
+1&amp;2&amp;1\\
+0&amp;0&amp;-2\\
+0&amp;-2&amp;2
+\end{pmatrix}
+\end{aligned}
+\]</span></p>
+<p>となります．3本の非零行があるので <span class="math inline">\(\operatorname{rank}A=3\)</span> です．この2回の操作は他の行の倍を加えただけなので，行列式は変わりません．第1行で展開するより，第2行，第3行の非零成分を用いて</p>
+<p><span class="math display">\[
+\det A
+=
+\begin{vmatrix}
+1&amp;2&amp;1\\
+0&amp;0&amp;-2\\
+0&amp;-2&amp;2
+\end{vmatrix}
+=-4
+\]</span></p>
+<p>と求まります．もし途中で第2行と第3行を交換して上三角化するなら，交換1回分の負号を最後に戻す必要があります．操作の横に，行列式への影響を記録しておくと安全です．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

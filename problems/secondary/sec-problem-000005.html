@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>出典不明01 問5 – 数検1級 解説ノート</title>
+<title>第358回 2次 問5 – 数検1級 解説ノート</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,8 +156,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#問題" id="toc-問題" class="nav-link active" data-scroll-target="#問題">問題</a></li>
+  <li><a href="#必要な知識" id="toc-必要な知識" class="nav-link" data-scroll-target="#必要な知識">必要な知識</a>
+  <ul class="collapse">
+  <li><a href="#この問題で使う一般形" id="toc-この問題で使う一般形" class="nav-link" data-scroll-target="#この問題で使う一般形">この問題で使う一般形</a></li>
+  </ul></li>
   <li><a href="#必要な発想" id="toc-必要な発想" class="nav-link" data-scroll-target="#必要な発想">必要な発想</a></li>
-  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
+  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">1</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2</a></li>
+  </ul></li>
   <li><a href="#コメント" id="toc-コメント" class="nav-link" data-scroll-target="#コメント">コメント</a></li>
   </ul>
 </nav>
@@ -138,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">出典不明01 問5</h1>
+<h1 class="title">第358回 2次 問5</h1>
 </div>
 
 
@@ -157,19 +194,66 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="問題" class="level2">
 <h2 class="anchored" data-anchor-id="問題">問題</h2>
-<p>2次試験のサンプル問題．</p>
+<p><span class="math inline">\(X=\{1,\ldots,n\}\)</span>，<span class="math inline">\(Y=\{y_1,y_2,y_3\}\)</span> とする．</p>
+<ol type="1">
+<li><span class="math inline">\(Y\)</span> から <span class="math inline">\(X\)</span> への写像と単射の個数を求めなさい．</li>
+<li><span class="math inline">\(X\)</span> から <span class="math inline">\(Y\)</span> への写像と全射の個数を求めなさい．</li>
+</ol>
+</section>
+<section id="必要な知識" class="level2">
+<h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
+<ul>
+<li><a href="../../knowledge/secondary/counting-maps.html">写像の個数</a></li>
+</ul>
+<section id="この問題で使う一般形" class="level3">
+<h3 class="anchored" data-anchor-id="この問題で使う一般形">この問題で使う一般形</h3>
+<p><span class="math inline">\(m\)</span> 元集合から <span class="math inline">\(r\)</span> 元集合への写像は <span class="math inline">\(r^m\)</span> 個，単射は</p>
+<p><span class="math display">\[
+r(r-1)\cdots(r-m+1)
+\]</span></p>
+<p>個です．全射の個数は，包除原理により</p>
+<p><span class="math display">\[
+\sum_{j=0}^{r}(-1)^j\binom rj(r-j)^m
+\]</span></p>
+<p>となります．本問では，写像の向きに応じて <span class="math inline">\((m,r)=(3,n)\)</span> または <span class="math inline">\((n,3)\)</span> を代入します．</p>
+</section>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p>ここに必要な発想を書く．</p>
+<p>単射は像を重複なく順に選ぶ． 全射は全写像から「使われない値がある写像」を包除原理で除く．</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-<p>ここに解答を書く．</p>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">1</h3>
+<p><span class="math inline">\(y_1,y_2,y_3\)</span> の像は，それぞれ <span class="math inline">\(X\)</span> の <span class="math inline">\(n\)</span> 個の元から独立に選べる．したがって写像は</p>
+<p><span class="math display">\[
+\boxed{n^3}
+\]</span></p>
+<p>個である．</p>
+<p>単射では3個の像がすべて異なる．<span class="math inline">\(y_1\)</span> の像は <span class="math inline">\(n\)</span> 通り，<span class="math inline">\(y_2\)</span> は残り <span class="math inline">\(n-1\)</span> 通り，<span class="math inline">\(y_3\)</span> は残り <span class="math inline">\(n-2\)</span> 通りなので，</p>
+<p><span class="math display">\[
+\boxed{n(n-1)(n-2)}
+\]</span></p>
+<p>個である．<span class="math inline">\(n&lt;3\)</span> の場合もこの式は <span class="math inline">\(0\)</span> を与える．</p>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">2</h3>
+<p><span class="math inline">\(X\)</span> の各元には3通りの像があるので，全写像は</p>
+<p><span class="math display">\[
+\boxed{3^n}
+\]</span></p>
+<p>個である．</p>
+<p>全射でない写像を包除原理で数える．特定の1値を使わない写像は <span class="math inline">\(2^n\)</span> 個で，除く値の選び方が3通りある．ただし，2値を使わない定値写像を二重に引いているので，<span class="math inline">\(\binom32=3\)</span> 個を足し戻す．よって全射は</p>
+<p><span class="math display">\[
+\boxed{3^n-3\cdot2^n+3}
+\]</span></p>
+<p>個である．</p>
+</section>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>ここにコメントを書く．</p>
+<p>全射では，最後の <span class="math inline">\(+3\)</span> を忘れないことが包除原理の要点です．</p>
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page="">
 

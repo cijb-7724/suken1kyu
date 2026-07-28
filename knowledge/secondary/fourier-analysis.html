@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#直交射影としての係数" id="toc-直交射影としての係数" class="nav-link" data-scroll-target="#直交射影としての係数">直交射影としての係数</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「フーリエ解析」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>Fourier解析は，関数や有限列を正弦波・余弦波，または複素指数関数の重ね合わせとして表す方法である．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>Eulerの公式</p>
+<p><span class="math display">\[
+e^{i\theta}=\cos\theta+i\sin\theta
+\]</span></p>
+<p>により，複素指数関数と三角関数を相互変換できる．直交性</p>
+<p><span class="math display">\[
+\int_{-\pi}^{\pi}e^{i(m-n)x}\,dx=
+\begin{cases}
+2\pi&amp;m=n,\\
+0&amp;m\ne n
+\end{cases}
+\]</span></p>
+<p>が係数を抽出する根拠である．有限列では積分が有限和へ，複素指数関数が1の冪根へ置き換わる．</p>
+<section id="直交射影としての係数" class="level3">
+<h3 class="anchored" data-anchor-id="直交射影としての係数">直交射影としての係数</h3>
+<p>関数の内積を</p>
+<p><span class="math display">\[
+\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)\overline{g(x)}\,dx
+\]</span></p>
+<p>と定めると，Fourier係数は <span class="math inline">\(f\)</span> を各基底関数へ正射影した係数である．有限次元のベクトルを正規直交基底へ分解する操作と本質的に同じである．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(f(x)=x^2\)</span> を <span class="math inline">\(\operatorname{span}\{1,\cos x\}\)</span> へ直交射影する．<span class="math inline">\(1\)</span> と <span class="math inline">\(\cos x\)</span> は直交し，<span class="math inline">\(\|1\|^2=2\pi\)</span>，<span class="math inline">\(\|\cos x\|^2=\pi\)</span> である．定数成分は</p>
+<p><span class="math display">\[
+\frac{\langle x^2,1\rangle}{\|1\|^2}
+=\frac{\int_{-\pi}^{\pi}x^2\,dx}{2\pi}
+=\frac{\pi^2}{3}.
+\]</span></p>
+<p>余弦成分は</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{\langle x^2,\cos x\rangle}{\|\cos x\|^2}
+&amp;=\frac2\pi\int_0^\pi x^2\cos x\,dx\\
+&amp;=\frac2\pi
+\left[x^2\sin x+2x\cos x-2\sin x\right]_0^\pi\\
+&amp;=-4.
+\end{aligned}
+\]</span></p>
+<p>したがって射影は</p>
+<p><span class="math display">\[
+\boxed{\frac{\pi^2}{3}-4\cos x}
+\]</span></p>
+<p>である．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

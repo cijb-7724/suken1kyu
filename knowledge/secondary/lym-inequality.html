@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「LYM不等式」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>LYM不等式は，包含関係に関する反鎖を，各層の大きさで重み付けして評価する不等式です．Spernerの定理を直ちに導けるだけでなく，異なる大きさの集合が混在する反鎖にも使えます．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math inline">\([n]\)</span> の部分集合からなる反鎖 <span class="math inline">\(\mathcal A\)</span> に対し，</p>
+<p><span class="math display">\[
+\sum_{A\in\mathcal A}\frac1{\binom n{|A|}}\leq1
+\]</span></p>
+<p>が成り立ちます．</p>
+<p>証明では，空集合から <span class="math inline">\([n]\)</span> まで1要素ずつ加える極大鎖を数えます．極大鎖は要素を加える順序と一対一に対応するので全部で <span class="math inline">\(n!\)</span> 本です．固定した <span class="math inline">\(k\)</span> 要素集合 <span class="math inline">\(A\)</span> を通る極大鎖は，<span class="math inline">\(A\)</span> の要素を先に並べ，残りを後に並べるため <span class="math inline">\(k!(n-k)!\)</span> 本です．反鎖は1本の極大鎖と高々1点で交わるので，</p>
+<p><span class="math display">\[
+\sum_{A\in\mathcal A}|A|!(n-|A|)!\leq n!
+\]</span></p>
+<p>です．両辺を <span class="math inline">\(n!\)</span> で割るとLYM不等式を得ます．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p><span class="math inline">\([5]\)</span> の部分集合からなる反鎖が，1要素集合を2個含むとします．残りに3要素集合を何個まで含められるかをLYM不等式で評価します．</p>
+<p>3要素集合の個数を <span class="math inline">\(r\)</span> とすると，</p>
+<p><span class="math display">\[
+\frac2{\binom51}+\frac r{\binom53}\leq1
+\]</span></p>
+<p>より，</p>
+<p><span class="math display">\[
+\frac25+\frac r{10}\leq1,\qquad r\leq6
+\]</span></p>
+<p>です．これは上界であり，実際に達成できるかどうかは，選んだ1要素集合との包含関係をさらに調べて判断します．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

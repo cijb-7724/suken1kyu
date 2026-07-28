@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "secondary",
-  "count": 26,
+  "count": 55,
   "root_ids": [
     "number-theory",
     "analysis",
@@ -19,7 +19,23 @@
         {
           "id": "integers",
           "label": "整数",
-          "children": []
+          "children": [
+            {
+              "id": "quadratic-residue",
+              "label": "二次剰余",
+              "children": []
+            },
+            {
+              "id": "modular-construction",
+              "label": "合同式の構成",
+              "children": []
+            },
+            {
+              "id": "descent-parity",
+              "label": "降下法と偶奇",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -31,6 +47,11 @@
           "id": "series",
           "label": "級数",
           "children": [
+            {
+              "id": "series-convergence",
+              "label": "級数の収束判定",
+              "children": []
+            },
             {
               "id": "poisson-summation-formula",
               "label": "ポアソンの和公式",
@@ -45,6 +66,11 @@
             {
               "id": "fourier-transform",
               "label": "フーリエ変換",
+              "children": []
+            },
+            {
+              "id": "fourier-series",
+              "label": "フーリエ級数",
               "children": []
             }
           ]
@@ -62,6 +88,38 @@
               "id": "integrating-factor",
               "label": "積分因子",
               "children": []
+            },
+            {
+              "id": "euler-differential-equation",
+              "label": "オイラー型微分方程式",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "multivariable-calculus",
+          "label": "多変数解析",
+          "children": [
+            {
+              "id": "change-of-variables",
+              "label": "変数変換と重積分",
+              "children": []
+            },
+            {
+              "id": "multivariable-extrema",
+              "label": "多変数関数の極値",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "special-functions",
+          "label": "特殊関数",
+          "children": [
+            {
+              "id": "lambert-w-function",
+              "label": "Lambert W関数",
+              "children": []
             }
           ]
         }
@@ -70,7 +128,38 @@
     {
       "id": "geometry",
       "label": "幾何",
-      "children": []
+      "children": [
+        {
+          "id": "vector-geometry",
+          "label": "ベクトル幾何",
+          "children": []
+        },
+        {
+          "id": "simplex-gram-matrix",
+          "label": "単体とGram行列",
+          "children": []
+        },
+        {
+          "id": "parametric-curve-area",
+          "label": "媒介変数表示と面積",
+          "children": []
+        },
+        {
+          "id": "complex-plane-geometry",
+          "label": "複素平面の幾何",
+          "children": []
+        },
+        {
+          "id": "geometric-inversion",
+          "label": "反転",
+          "children": []
+        },
+        {
+          "id": "projective-collinearity",
+          "label": "射影幾何と共線性",
+          "children": []
+        }
+      ]
     },
     {
       "id": "probability-statistics",
@@ -89,8 +178,33 @@
               "id": "maximum-likelihood",
               "label": "最尤法",
               "children": []
+            },
+            {
+              "id": "variance-inference",
+              "label": "分散の推測",
+              "children": []
+            },
+            {
+              "id": "mean-inference",
+              "label": "平均の推測",
+              "children": []
+            },
+            {
+              "id": "chi-square-goodness-of-fit",
+              "label": "適合度検定",
+              "children": []
             }
           ]
+        },
+        {
+          "id": "poisson-distribution",
+          "label": "ポアソン分布",
+          "children": []
+        },
+        {
+          "id": "least-squares-regression",
+          "label": "最小二乗法",
+          "children": []
         }
       ]
     },
@@ -98,6 +212,21 @@
       "id": "combinatorics",
       "label": "組合せ論",
       "children": [
+        {
+          "id": "counting-maps",
+          "label": "写像の個数",
+          "children": []
+        },
+        {
+          "id": "tiling-invariant",
+          "label": "敷き詰めと不変量",
+          "children": []
+        },
+        {
+          "id": "combinatorial-construction",
+          "label": "組合せ的構成",
+          "children": []
+        },
         {
           "id": "partially-ordered-set",
           "label": "半順序集合",
@@ -121,6 +250,26 @@
       "id": "linear-algebra",
       "label": "線形代数",
       "children": [
+        {
+          "id": "jordan-normal-form",
+          "label": "Jordan標準形",
+          "children": []
+        },
+        {
+          "id": "linear-map-matrix",
+          "label": "線形写像の表現行列",
+          "children": []
+        },
+        {
+          "id": "structured-determinant",
+          "label": "構造をもつ行列式",
+          "children": []
+        },
+        {
+          "id": "generalized-eigenvalue",
+          "label": "一般化固有値問題",
+          "children": []
+        },
         {
           "id": "orthogonal-transformation",
           "label": "直交変換",
@@ -168,14 +317,22 @@
       ],
       "ancestors": [],
       "descendants": [
-        "integers"
+        "integers",
+        "quadratic-residue",
+        "modular-construction",
+        "descent-parity"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000001"
+        "sec-problem-000001",
+        "sec-problem-000008",
+        "sec-problem-000015",
+        "sec-problem-000019",
+        "sec-problem-000022",
+        "sec-problem-000029"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 6,
       "knowledge_path": "knowledge/secondary/number-theory.html"
     },
     "integers": {
@@ -183,20 +340,100 @@
       "label": "整数",
       "parent_id": "number-theory",
       "depth": 1,
-      "children": [],
+      "children": [
+        "quadratic-residue",
+        "modular-construction",
+        "descent-parity"
+      ],
       "ancestors": [
         "number-theory"
       ],
+      "descendants": [
+        "quadratic-residue",
+        "modular-construction",
+        "descent-parity"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000001",
+        "sec-problem-000008",
+        "sec-problem-000015",
+        "sec-problem-000019",
+        "sec-problem-000022",
+        "sec-problem-000029"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 6,
+      "knowledge_path": "knowledge/secondary/integers.html"
+    },
+    "quadratic-residue": {
+      "id": "quadratic-residue",
+      "label": "二次剰余",
+      "parent_id": "integers",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "integers"
+      ],
       "descendants": [],
       "direct_problem_ids": [
-        "sec-problem-000001"
+        "sec-problem-000001",
+        "sec-problem-000022",
+        "sec-problem-000029"
       ],
       "problem_ids": [
-        "sec-problem-000001"
+        "sec-problem-000001",
+        "sec-problem-000022",
+        "sec-problem-000029"
+      ],
+      "direct_problem_count": 3,
+      "problem_count": 3,
+      "knowledge_path": "knowledge/secondary/quadratic-residue.html"
+    },
+    "modular-construction": {
+      "id": "modular-construction",
+      "label": "合同式の構成",
+      "parent_id": "integers",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "integers"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000015"
+      ],
+      "problem_ids": [
+        "sec-problem-000015"
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/secondary/integers.html"
+      "knowledge_path": "knowledge/secondary/modular-construction.html"
+    },
+    "descent-parity": {
+      "id": "descent-parity",
+      "label": "降下法と偶奇",
+      "parent_id": "integers",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "integers"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000008",
+        "sec-problem-000019"
+      ],
+      "problem_ids": [
+        "sec-problem-000008",
+        "sec-problem-000019"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/descent-parity.html"
     },
     "analysis": {
       "id": "analysis",
@@ -206,25 +443,43 @@
       "children": [
         "series",
         "fourier-analysis",
-        "differential-equation"
+        "differential-equation",
+        "multivariable-calculus",
+        "special-functions"
       ],
       "ancestors": [],
       "descendants": [
         "series",
+        "series-convergence",
         "poisson-summation-formula",
         "fourier-analysis",
         "fourier-transform",
+        "fourier-series",
         "differential-equation",
         "exact-differential-equation",
-        "integrating-factor"
+        "integrating-factor",
+        "euler-differential-equation",
+        "multivariable-calculus",
+        "change-of-variables",
+        "multivariable-extrema",
+        "special-functions",
+        "lambert-w-function"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "sec-problem-000002",
-        "sec-problem-000007"
+        "sec-problem-000007",
+        "sec-problem-000009",
+        "sec-problem-000014",
+        "sec-problem-000021",
+        "sec-problem-000023",
+        "sec-problem-000028",
+        "sec-problem-000030",
+        "sec-problem-000033",
+        "sec-problem-000035"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 10,
       "knowledge_path": "knowledge/secondary/analysis.html"
     },
     "series": {
@@ -233,23 +488,47 @@
       "parent_id": "analysis",
       "depth": 1,
       "children": [
+        "series-convergence",
         "poisson-summation-formula"
       ],
       "ancestors": [
         "analysis"
       ],
       "descendants": [
+        "series-convergence",
         "poisson-summation-formula"
       ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000009",
+        "sec-problem-000023"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/series.html"
+    },
+    "series-convergence": {
+      "id": "series-convergence",
+      "label": "級数の収束判定",
+      "parent_id": "series",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "series"
+      ],
+      "descendants": [],
       "direct_problem_ids": [
-        "sec-problem-000002"
+        "sec-problem-000009",
+        "sec-problem-000023"
       ],
       "problem_ids": [
-        "sec-problem-000002"
+        "sec-problem-000009",
+        "sec-problem-000023"
       ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
-      "knowledge_path": "knowledge/secondary/series.html"
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/series-convergence.html"
     },
     "poisson-summation-formula": {
       "id": "poisson-summation-formula",
@@ -274,20 +553,23 @@
       "parent_id": "analysis",
       "depth": 1,
       "children": [
-        "fourier-transform"
+        "fourier-transform",
+        "fourier-series"
       ],
       "ancestors": [
         "analysis"
       ],
       "descendants": [
-        "fourier-transform"
+        "fourier-transform",
+        "fourier-series"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000002"
+        "sec-problem-000002",
+        "sec-problem-000030"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 2,
       "knowledge_path": "knowledge/secondary/fourier-analysis.html"
     },
     "fourier-transform": {
@@ -311,6 +593,27 @@
       "problem_count": 1,
       "knowledge_path": "knowledge/secondary/fourier-transform.html"
     },
+    "fourier-series": {
+      "id": "fourier-series",
+      "label": "フーリエ級数",
+      "parent_id": "fourier-analysis",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "fourier-analysis"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000030"
+      ],
+      "problem_ids": [
+        "sec-problem-000030"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/fourier-series.html"
+    },
     "differential-equation": {
       "id": "differential-equation",
       "label": "微分方程式",
@@ -318,22 +621,22 @@
       "depth": 1,
       "children": [
         "exact-differential-equation",
-        "integrating-factor"
+        "integrating-factor",
+        "euler-differential-equation"
       ],
       "ancestors": [
         "analysis"
       ],
       "descendants": [
         "exact-differential-equation",
-        "integrating-factor"
+        "integrating-factor",
+        "euler-differential-equation"
       ],
-      "direct_problem_ids": [
-        "sec-problem-000007"
-      ],
+      "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000007"
+        "sec-problem-000021"
       ],
-      "direct_problem_count": 1,
+      "direct_problem_count": 0,
       "problem_count": 1,
       "knowledge_path": "knowledge/secondary/differential-equation.html"
     },
@@ -371,13 +674,187 @@
       "problem_count": 0,
       "knowledge_path": "knowledge/secondary/integrating-factor.html"
     },
+    "euler-differential-equation": {
+      "id": "euler-differential-equation",
+      "label": "オイラー型微分方程式",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000021"
+      ],
+      "problem_ids": [
+        "sec-problem-000021"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/euler-differential-equation.html"
+    },
+    "multivariable-calculus": {
+      "id": "multivariable-calculus",
+      "label": "多変数解析",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "change-of-variables",
+        "multivariable-extrema"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "change-of-variables",
+        "multivariable-extrema"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000007",
+        "sec-problem-000014",
+        "sec-problem-000028",
+        "sec-problem-000035"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 4,
+      "knowledge_path": "knowledge/secondary/multivariable-calculus.html"
+    },
+    "change-of-variables": {
+      "id": "change-of-variables",
+      "label": "変数変換と重積分",
+      "parent_id": "multivariable-calculus",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "multivariable-calculus"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000007",
+        "sec-problem-000035"
+      ],
+      "problem_ids": [
+        "sec-problem-000007",
+        "sec-problem-000035"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/change-of-variables.html"
+    },
+    "multivariable-extrema": {
+      "id": "multivariable-extrema",
+      "label": "多変数関数の極値",
+      "parent_id": "multivariable-calculus",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "multivariable-calculus"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000014",
+        "sec-problem-000028"
+      ],
+      "problem_ids": [
+        "sec-problem-000014",
+        "sec-problem-000028"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/multivariable-extrema.html"
+    },
+    "special-functions": {
+      "id": "special-functions",
+      "label": "特殊関数",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [
+        "lambert-w-function"
+      ],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [
+        "lambert-w-function"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000033"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/special-functions.html"
+    },
+    "lambert-w-function": {
+      "id": "lambert-w-function",
+      "label": "Lambert W関数",
+      "parent_id": "special-functions",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "special-functions"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000033"
+      ],
+      "problem_ids": [
+        "sec-problem-000033"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/lambert-w-function.html"
+    },
     "geometry": {
       "id": "geometry",
       "label": "幾何",
       "parent_id": null,
       "depth": 0,
-      "children": [],
+      "children": [
+        "vector-geometry",
+        "simplex-gram-matrix",
+        "parametric-curve-area",
+        "complex-plane-geometry",
+        "geometric-inversion",
+        "projective-collinearity"
+      ],
       "ancestors": [],
+      "descendants": [
+        "vector-geometry",
+        "simplex-gram-matrix",
+        "parametric-curve-area",
+        "complex-plane-geometry",
+        "geometric-inversion",
+        "projective-collinearity"
+      ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000003",
+        "sec-problem-000010",
+        "sec-problem-000016",
+        "sec-problem-000017",
+        "sec-problem-000024",
+        "sec-problem-000031"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 6,
+      "knowledge_path": "knowledge/secondary/geometry.html"
+    },
+    "vector-geometry": {
+      "id": "vector-geometry",
+      "label": "ベクトル幾何",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
       "descendants": [],
       "direct_problem_ids": [
         "sec-problem-000003"
@@ -387,7 +864,107 @@
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/secondary/geometry.html"
+      "knowledge_path": "knowledge/secondary/vector-geometry.html"
+    },
+    "simplex-gram-matrix": {
+      "id": "simplex-gram-matrix",
+      "label": "単体とGram行列",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000010"
+      ],
+      "problem_ids": [
+        "sec-problem-000010"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/simplex-gram-matrix.html"
+    },
+    "parametric-curve-area": {
+      "id": "parametric-curve-area",
+      "label": "媒介変数表示と面積",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000016"
+      ],
+      "problem_ids": [
+        "sec-problem-000016"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/parametric-curve-area.html"
+    },
+    "complex-plane-geometry": {
+      "id": "complex-plane-geometry",
+      "label": "複素平面の幾何",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000017"
+      ],
+      "problem_ids": [
+        "sec-problem-000017"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/complex-plane-geometry.html"
+    },
+    "geometric-inversion": {
+      "id": "geometric-inversion",
+      "label": "反転",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000024"
+      ],
+      "problem_ids": [
+        "sec-problem-000024"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/geometric-inversion.html"
+    },
+    "projective-collinearity": {
+      "id": "projective-collinearity",
+      "label": "射影幾何と共線性",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000031"
+      ],
+      "problem_ids": [
+        "sec-problem-000031"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/projective-collinearity.html"
     },
     "probability-statistics": {
       "id": "probability-statistics",
@@ -396,20 +973,31 @@
       "depth": 0,
       "children": [
         "probability-density-function",
-        "statistical-inference"
+        "statistical-inference",
+        "poisson-distribution",
+        "least-squares-regression"
       ],
       "ancestors": [],
       "descendants": [
         "probability-density-function",
         "statistical-inference",
-        "maximum-likelihood"
+        "maximum-likelihood",
+        "variance-inference",
+        "mean-inference",
+        "chi-square-goodness-of-fit",
+        "poisson-distribution",
+        "least-squares-regression"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000004"
+        "sec-problem-000004",
+        "sec-problem-000011",
+        "sec-problem-000018",
+        "sec-problem-000025",
+        "sec-problem-000032"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 5,
       "knowledge_path": "knowledge/secondary/probability-statistics.html"
     },
     "probability-density-function": {
@@ -422,14 +1010,10 @@
         "probability-statistics"
       ],
       "descendants": [],
-      "direct_problem_ids": [
-        "sec-problem-000004"
-      ],
-      "problem_ids": [
-        "sec-problem-000004"
-      ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
       "knowledge_path": "knowledge/secondary/probability-density-function.html"
     },
     "statistical-inference": {
@@ -438,25 +1022,51 @@
       "parent_id": "probability-statistics",
       "depth": 1,
       "children": [
-        "maximum-likelihood"
+        "maximum-likelihood",
+        "variance-inference",
+        "mean-inference",
+        "chi-square-goodness-of-fit"
       ],
       "ancestors": [
         "probability-statistics"
       ],
       "descendants": [
-        "maximum-likelihood"
+        "maximum-likelihood",
+        "variance-inference",
+        "mean-inference",
+        "chi-square-goodness-of-fit"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000004"
+        "sec-problem-000004",
+        "sec-problem-000011",
+        "sec-problem-000018",
+        "sec-problem-000025"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 4,
       "knowledge_path": "knowledge/secondary/statistical-inference.html"
     },
     "maximum-likelihood": {
       "id": "maximum-likelihood",
       "label": "最尤法",
+      "parent_id": "statistical-inference",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "statistical-inference"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/secondary/maximum-likelihood.html"
+    },
+    "variance-inference": {
+      "id": "variance-inference",
+      "label": "分散の推測",
       "parent_id": "statistical-inference",
       "depth": 2,
       "children": [],
@@ -473,7 +1083,91 @@
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/secondary/maximum-likelihood.html"
+      "knowledge_path": "knowledge/secondary/variance-inference.html"
+    },
+    "mean-inference": {
+      "id": "mean-inference",
+      "label": "平均の推測",
+      "parent_id": "statistical-inference",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "statistical-inference"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000011",
+        "sec-problem-000018"
+      ],
+      "problem_ids": [
+        "sec-problem-000011",
+        "sec-problem-000018"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/mean-inference.html"
+    },
+    "chi-square-goodness-of-fit": {
+      "id": "chi-square-goodness-of-fit",
+      "label": "適合度検定",
+      "parent_id": "statistical-inference",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "statistical-inference"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000025"
+      ],
+      "problem_ids": [
+        "sec-problem-000025"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/chi-square-goodness-of-fit.html"
+    },
+    "poisson-distribution": {
+      "id": "poisson-distribution",
+      "label": "ポアソン分布",
+      "parent_id": "probability-statistics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "probability-statistics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000025"
+      ],
+      "problem_ids": [
+        "sec-problem-000025"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/poisson-distribution.html"
+    },
+    "least-squares-regression": {
+      "id": "least-squares-regression",
+      "label": "最小二乗法",
+      "parent_id": "probability-statistics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "probability-statistics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000032"
+      ],
+      "problem_ids": [
+        "sec-problem-000032"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/least-squares-regression.html"
     },
     "combinatorics": {
       "id": "combinatorics",
@@ -481,21 +1175,89 @@
       "parent_id": null,
       "depth": 0,
       "children": [
+        "counting-maps",
+        "tiling-invariant",
+        "combinatorial-construction",
         "partially-ordered-set"
       ],
       "ancestors": [],
       "descendants": [
+        "counting-maps",
+        "tiling-invariant",
+        "combinatorial-construction",
         "partially-ordered-set",
         "antichain",
         "lym-inequality"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000005"
+        "sec-problem-000005",
+        "sec-problem-000012",
+        "sec-problem-000026"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 3,
       "knowledge_path": "knowledge/secondary/combinatorics.html"
+    },
+    "counting-maps": {
+      "id": "counting-maps",
+      "label": "写像の個数",
+      "parent_id": "combinatorics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "combinatorics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000005"
+      ],
+      "problem_ids": [
+        "sec-problem-000005"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/counting-maps.html"
+    },
+    "tiling-invariant": {
+      "id": "tiling-invariant",
+      "label": "敷き詰めと不変量",
+      "parent_id": "combinatorics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "combinatorics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000012"
+      ],
+      "problem_ids": [
+        "sec-problem-000012"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/tiling-invariant.html"
+    },
+    "combinatorial-construction": {
+      "id": "combinatorial-construction",
+      "label": "組合せ的構成",
+      "parent_id": "combinatorics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "combinatorics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000026"
+      ],
+      "problem_ids": [
+        "sec-problem-000026"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/combinatorial-construction.html"
     },
     "partially-ordered-set": {
       "id": "partially-ordered-set",
@@ -513,11 +1275,9 @@
         "lym-inequality"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [
-        "sec-problem-000005"
-      ],
+      "problem_ids": [],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 0,
       "knowledge_path": "knowledge/secondary/partially-ordered-set.html"
     },
     "antichain": {
@@ -535,14 +1295,10 @@
       "descendants": [
         "lym-inequality"
       ],
-      "direct_problem_ids": [
-        "sec-problem-000005"
-      ],
-      "problem_ids": [
-        "sec-problem-000005"
-      ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
       "knowledge_path": "knowledge/secondary/antichain.html"
     },
     "lym-inequality": {
@@ -569,16 +1325,46 @@
       "parent_id": null,
       "depth": 0,
       "children": [
+        "jordan-normal-form",
+        "linear-map-matrix",
+        "structured-determinant",
+        "generalized-eigenvalue",
         "orthogonal-transformation",
         "matrix-reduction"
       ],
       "ancestors": [],
       "descendants": [
+        "jordan-normal-form",
+        "linear-map-matrix",
+        "structured-determinant",
+        "generalized-eigenvalue",
         "orthogonal-transformation",
         "householder-transformation",
         "matrix-reduction",
         "symmetric-tridiagonalization"
       ],
+      "direct_problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000006",
+        "sec-problem-000013",
+        "sec-problem-000020",
+        "sec-problem-000027",
+        "sec-problem-000034"
+      ],
+      "direct_problem_count": 0,
+      "problem_count": 5,
+      "knowledge_path": "knowledge/secondary/linear-algebra.html"
+    },
+    "jordan-normal-form": {
+      "id": "jordan-normal-form",
+      "label": "Jordan標準形",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
       "direct_problem_ids": [
         "sec-problem-000006"
       ],
@@ -587,7 +1373,69 @@
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/secondary/linear-algebra.html"
+      "knowledge_path": "knowledge/secondary/jordan-normal-form.html"
+    },
+    "linear-map-matrix": {
+      "id": "linear-map-matrix",
+      "label": "線形写像の表現行列",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000020"
+      ],
+      "problem_ids": [
+        "sec-problem-000020"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/linear-map-matrix.html"
+    },
+    "structured-determinant": {
+      "id": "structured-determinant",
+      "label": "構造をもつ行列式",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000013",
+        "sec-problem-000027"
+      ],
+      "problem_ids": [
+        "sec-problem-000013",
+        "sec-problem-000027"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/structured-determinant.html"
+    },
+    "generalized-eigenvalue": {
+      "id": "generalized-eigenvalue",
+      "label": "一般化固有値問題",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000034"
+      ],
+      "problem_ids": [
+        "sec-problem-000034"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/generalized-eigenvalue.html"
     },
     "orthogonal-transformation": {
       "id": "orthogonal-transformation",
@@ -676,11 +1524,9 @@
         "algebraic-manipulation"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [
-        "sec-problem-000005"
-      ],
+      "problem_ids": [],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 0,
       "knowledge_path": "knowledge/secondary/mathematical-techniques.html"
     },
     "algebraic-manipulation": {
@@ -693,14 +1539,10 @@
         "mathematical-techniques"
       ],
       "descendants": [],
-      "direct_problem_ids": [
-        "sec-problem-000005"
-      ],
-      "problem_ids": [
-        "sec-problem-000005"
-      ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
       "knowledge_path": "knowledge/secondary/algebraic-manipulation.html"
     }
   }

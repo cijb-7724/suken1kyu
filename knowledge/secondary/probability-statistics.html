@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「確率・統計」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>確率論は不確実な現象のモデルを，統計学は標本から母集団について推測する方法を扱う．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>確率変数 <span class="math inline">\(X\)</span> の期待値と分散は</p>
+<p><span class="math display">\[
+E[X],\qquad
+\operatorname{Var}(X)=E[(X-E[X])^2]
+=E[X^2]-E[X]^2
+\]</span></p>
+<p>である．統計的検定では，帰無仮説，対立仮説，有意水準，検定統計量，棄却域を明示する．信頼区間は，同じ標本抽出を繰り返したときに所定の割合で母数を含むように作られた区間である．</p>
+<p>2変数では</p>
+<p><span class="math display">\[
+\operatorname{Cov}(X,Y)
+=E[(X-E[X])(Y-E[Y])]
+\]</span></p>
+<p>と定め，</p>
+<p><span class="math display">\[
+\operatorname{Var}(X+Y)
+=\operatorname{Var}(X)+\operatorname{Var}(Y)
++2\operatorname{Cov}(X,Y)
+\]</span></p>
+<p>が成り立つ．独立なら共分散は <span class="math inline">\(0\)</span> である．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>独立な公平なさいころ2個の目を <span class="math inline">\(X,Y\)</span>，和を <span class="math inline">\(S=X+Y\)</span> とする．1個について，</p>
+<p><span class="math display">\[
+E[X]=\frac{1+\cdots+6}{6}=\frac72
+\]</span></p>
+<p>である．また</p>
+<p><span class="math display">\[
+E[X^2]=\frac{1^2+\cdots+6^2}{6}=\frac{91}{6}
+\]</span></p>
+<p>だから，</p>
+<p><span class="math display">\[
+\operatorname{Var}(X)=\frac{91}{6}-\frac{49}{4}=\frac{35}{12}
+\]</span></p>
+<p>となる．独立性から <span class="math inline">\(\operatorname{Cov}(X,Y)=0\)</span> なので，</p>
+<p><span class="math display">\[
+E[S]=7,\qquad
+\operatorname{Var}(S)
+=\frac{35}{12}+\frac{35}{12}
+=\boxed{\frac{35}{6}}.
+\]</span></p>
+<p>36通りを列挙せず，期待値の線形性と独立性を使って計算できる．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

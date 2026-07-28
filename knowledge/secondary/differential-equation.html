@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#型を判別する" id="toc-型を判別する" class="nav-link" data-scroll-target="#型を判別する">型を判別する</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「微分方程式」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>微分方程式は未知関数とその導関数の関係を表す．解法では，方程式の型を判別し，変数分離，積分因子，特性方程式，変数変換などを選ぶ．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(n\)</span> 階微分方程式の一般解には，通常 <span class="math inline">\(n\)</span> 個の独立な任意定数が現れる．線形方程式</p>
+<p><span class="math display">\[
+L[y]=g(x)
+\]</span></p>
+<p>では，一般解は同次方程式 <span class="math inline">\(L[y]=0\)</span> の一般解 <span class="math inline">\(y_h\)</span> と，非同次方程式の特解 <span class="math inline">\(y_p\)</span> の和</p>
+<p><span class="math display">\[
+y=y_h+y_p
+\]</span></p>
+<p>である．解を得た後，元の方程式へ代入して確認できる．</p>
+<section id="型を判別する" class="level3">
+<h3 class="anchored" data-anchor-id="型を判別する">型を判別する</h3>
+<ul>
+<li><span class="math inline">\(y'=f(x)g(y)\)</span> なら変数分離を試す．</li>
+<li><span class="math inline">\(y'+P(x)y=Q(x)\)</span> なら積分因子を使う．</li>
+<li>定数係数線形方程式なら特性方程式を使う．</li>
+<li><span class="math inline">\(x^2y''+\alpha xy'+\beta y=g(x)\)</span> ならEuler型として <span class="math inline">\(x=e^t\)</span> を考える．</li>
+</ul>
+<p>非同次項が同次解と重なるときは，特性根との重複回数だけ <span class="math inline">\(x\)</span> を掛けて独立な特解を作る．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>非同次方程式</p>
+<p><span class="math display">\[
+y''-3y'+2y=e^x
+\]</span></p>
+<p>を解く．特性方程式は <span class="math inline">\((r-1)(r-2)=0\)</span> なので，</p>
+<p><span class="math display">\[
+y_h=C_1e^x+C_2e^{2x}.
+\]</span></p>
+<p>右辺が同次解と重なるため <span class="math inline">\(y_p=Axe^x\)</span> とおく．</p>
+<p><span class="math display">\[
+y_p'=A(1+x)e^x,\qquad y_p''=A(2+x)e^x
+\]</span></p>
+<p>を代入すると，</p>
+<p><span class="math display">\[
+y_p''-3y_p'+2y_p=-Ae^x.
+\]</span></p>
+<p>よって <span class="math inline">\(A=-1\)</span> で，</p>
+<p><span class="math display">\[
+\boxed{y=C_1e^x+C_2e^{2x}-xe^x}
+\]</span></p>
+<p>となる．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「積分因子」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>積分因子は，一階線形微分方程式を積の微分へまとめるために掛ける関数である．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p><span class="math display">\[
+y'+P(x)y=Q(x)
+\]</span></p>
+<p>に対して</p>
+<p><span class="math display">\[
+\mu(x)=e^{\int P(x)\,dx}
+\]</span></p>
+<p>とおくと，</p>
+<p><span class="math display">\[
+\mu y'+\mu Py=(\mu y)'
+\]</span></p>
+<p>なので，</p>
+<p><span class="math display">\[
+(\mu y)'=\mu Q
+\]</span></p>
+<p>となる．積分して</p>
+<p><span class="math display">\[
+y=\mu^{-1}\left(\int\mu Q\,dx+C\right)
+\]</span></p>
+<p>を得る．</p>
+<p>初期値 <span class="math inline">\(y(x_0)=y_0\)</span> があるときは，</p>
+<p><span class="math display">\[
+\mu(x)y(x)-\mu(x_0)y_0
+=\int_{x_0}^{x}\mu(t)Q(t)\,dt
+\]</span></p>
+<p>と定積分で書けば，積分定数を別に決める必要がない．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>初期値問題</p>
+<p><span class="math display">\[
+y'-2y=x,\qquad y(0)=1
+\]</span></p>
+<p>を解く．積分因子は <span class="math inline">\(\mu=e^{-2x}\)</span> なので，</p>
+<p><span class="math display">\[
+(e^{-2x}y)'=xe^{-2x}
+\]</span></p>
+<p>である．<span class="math inline">\(0\)</span> から <span class="math inline">\(x\)</span> まで積分すると，</p>
+<p><span class="math display">\[
+e^{-2x}y-1
+=\left[-\frac12te^{-2t}-\frac14e^{-2t}\right]_0^x
+=-\frac12xe^{-2x}-\frac14e^{-2x}+\frac14.
+\]</span></p>
+<p>したがって，</p>
+<p><span class="math display">\[
+\boxed{y=-\frac x2-\frac14+\frac54e^{2x}}
+\]</span></p>
+<p>となる．<span class="math inline">\(x=0\)</span> を代入すると初期条件も満たす．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

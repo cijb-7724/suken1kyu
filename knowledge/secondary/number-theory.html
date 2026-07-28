@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#法の選び方" id="toc-法の選び方" class="nav-link" data-scroll-target="#法の選び方">法の選び方</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「整数論」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>整数論は，整数の割り切れ方，素因数，合同式，平方剰余などを扱う分野である．2次試験では，単なる計算ではなく，「任意の整数について成り立つことの証明」や「すべての法で解を構成すること」が問われる．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>整数 <span class="math inline">\(a,b\)</span> と正整数 <span class="math inline">\(m\)</span> に対して，</p>
+<p><span class="math display">\[
+a\equiv b\pmod m
+\]</span></p>
+<p>は <span class="math inline">\(m\mid a-b\)</span> を意味する．合同式は加減乗を保つが，割り算には注意が必要である．</p>
+<p><span class="math display">\[
+ac\equiv bc\pmod m
+\]</span></p>
+<p>から <span class="math inline">\(a\equiv b\pmod m\)</span> を結論できるのは，たとえば <span class="math inline">\(\gcd(c,m)=1\)</span> のときである．この場合，<span class="math inline">\(c\)</span> は法 <span class="math inline">\(m\)</span> で逆元をもつ．</p>
+<p>証明では，法を素数冪へ分解する，中国剰余定理で統合する，平方数の取り得る余りを調べる，最小反例や無限降下を用いる，という方法が基本になる．</p>
+<section id="法の選び方" class="level3">
+<h3 class="anchored" data-anchor-id="法の選び方">法の選び方</h3>
+<p>合同式では，大きな法をそのまま扱うより，目的に合う小さな法を選ぶ．偶奇なら法 <span class="math inline">\(2\)</span>，平方数なら法 <span class="math inline">\(4,8\)</span>，立方数なら法 <span class="math inline">\(7,9\)</span> が候補になる．「積が割り切れる」ことを示す場合は，目標の法を互いに素な素数冪へ分け，各法で示してから中国剰余定理の考え方で戻す．</p>
+<p>素数 <span class="math inline">\(p\)</span> に対するFermatの小定理</p>
+<p><span class="math display">\[
+a^p\equiv a\pmod p
+\]</span></p>
+<p>は，<span class="math inline">\(p\mid a\)</span> の場合も含めて成り立つ形で覚えると便利である．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>任意の整数 <span class="math inline">\(n\)</span> に対し，</p>
+<p><span class="math display">\[
+n^5-n
+\]</span></p>
+<p>が <span class="math inline">\(30\)</span> で割り切れることを示す．<span class="math inline">\(30=2\cdot3\cdot5\)</span> で，3つの法は互いに素なので，それぞれで <span class="math inline">\(0\)</span> になることを示せばよい．</p>
+<p>法 <span class="math inline">\(2\)</span> ではFermatの小定理から <span class="math inline">\(n^2\equiv n\)</span> であり，</p>
+<p><span class="math display">\[
+n^5-n=n(n^4-1)\equiv n(n^2-1)\equiv0\pmod2.
+\]</span></p>
+<p>法 <span class="math inline">\(3\)</span> では <span class="math inline">\(n^3\equiv n\)</span> なので，</p>
+<p><span class="math display">\[
+n^5-n=n^2n^3-n\equiv n^3-n\equiv0\pmod3.
+\]</span></p>
+<p>法 <span class="math inline">\(5\)</span> では直接</p>
+<p><span class="math display">\[
+n^5\equiv n\pmod5
+\]</span></p>
+<p>である．したがって <span class="math inline">\(2,3,5\)</span> のすべてが <span class="math inline">\(n^5-n\)</span> を割る．これらは互いに素なので，</p>
+<p><span class="math display">\[
+\boxed{30\mid n^5-n}
+\]</span></p>
+<p>である．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

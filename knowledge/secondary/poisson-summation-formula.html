@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,7 +156,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
-  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a></li>
+  <li><a href="#基本事項" id="toc-基本事項" class="nav-link" data-scroll-target="#基本事項">基本事項</a>
+  <ul class="collapse">
+  <li><a href="#公式が現れる仕組み" id="toc-公式が現れる仕組み" class="nav-link" data-scroll-target="#公式が現れる仕組み">公式が現れる仕組み</a></li>
+  </ul></li>
   <li><a href="#例題" id="toc-例題" class="nav-link" data-scroll-target="#例題">例題</a></li>
   <li><a href="#関連問題" id="toc-関連問題" class="nav-link" data-scroll-target="#関連問題">関連問題</a></li>
   </ul>
@@ -155,18 +187,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2次試験における「ポアソンの和公式」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>ポアソンの和公式は，整数点上の関数値の和をFourier変換の整数点上の和へ結び付ける公式である．周期化とFourier級数の関係を表す．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>Fourier変換を</p>
+<p><span class="math display">\[
+\widehat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx
+\]</span></p>
+<p>と定める．<span class="math inline">\(f\)</span> と <span class="math inline">\(\widehat f\)</span> が十分速く減衰するなどの条件のもとで，</p>
+<p><span class="math display">\[
+\sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\widehat f(k)
+\]</span></p>
+<p>が成り立つ．適用時には，変換の <span class="math inline">\(2\pi\)</span> の規約と収束条件を確認する．</p>
+<section id="公式が現れる仕組み" class="level3">
+<h3 class="anchored" data-anchor-id="公式が現れる仕組み">公式が現れる仕組み</h3>
+<p><span class="math inline">\(f\)</span> を整数周期で重ね合わせた</p>
+<p><span class="math display">\[
+F(x)=\sum_{n\in\mathbb Z}f(x+n)
+\]</span></p>
+<p>は周期1である．その第 <span class="math inline">\(k\)</span> Fourier係数は，</p>
+<p><span class="math display">\[
+\begin{aligned}
+\int_0^1F(x)e^{-2\pi ikx}\,dx
+&amp;=\sum_{n\in\mathbb Z}
+\int_0^1f(x+n)e^{-2\pi ikx}\,dx\\
+&amp;=\int_{-\infty}^{\infty}f(u)e^{-2\pi iku}\,du\\
+&amp;=\widehat f(k)
+\end{aligned}
+\]</span></p>
+<p>となる．したがって <span class="math inline">\(F(x)=\sum_k\widehat f(k)e^{2\pi ikx}\)</span> であり，<span class="math inline">\(x=0\)</span> を代入すると公式を得る．この導出では和と積分の交換，Fourier級数の収束が正当化できるだけの減衰性が必要である．</p>
+</section>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p><span class="math inline">\(f(x)=e^{-\pi t x^2}\)</span>（<span class="math inline">\(t&gt;0\)</span>）では</p>
+<p><span class="math display">\[
+\widehat f(\xi)=t^{-1/2}e^{-\pi\xi^2/t}
+\]</span></p>
+<p>だから，</p>
+<p><span class="math display">\[
+\sum_{n\in\mathbb Z}e^{-\pi t n^2}
+=t^{-1/2}\sum_{k\in\mathbb Z}e^{-\pi k^2/t}
+\]</span></p>
+<p>を得る．これはtheta関数の変換公式である．</p>
+<p><span class="math inline">\(t=4\)</span> とすれば</p>
+<p><span class="math display">\[
+\sum_{n\in\mathbb Z}e^{-4\pi n^2}
+=\frac12\sum_{k\in\mathbb Z}e^{-\pi k^2/4}
+\]</span></p>
+<p>となる．急速に減衰する側の級数を用いて，もう一方の格子和を評価できることがこの公式の実用上の利点である．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>
