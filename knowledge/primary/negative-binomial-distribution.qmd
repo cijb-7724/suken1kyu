@@ -1,0 +1,39 @@
+---
+title: "負の二項分布"
+id: negative-binomial-distribution
+---
+
+## 概要
+
+独立Bernoulli試行で，所定回数の成功に達するまでの失敗回数を表します．
+
+## 基本事項
+
+成功確率 $p$ の試行で $r$ 回目の成功までに生じる失敗回数を $X$ とすると，
+
+$$
+P(X=k)=\binom{k+r-1}{k}p^r(1-p)^k
+$$
+
+です．期待値と分散は
+
+$$
+E[X]=\frac{r(1-p)}p,\qquad
+V(X)=\frac{r(1-p)}{p^2}
+$$
+
+です．総試行回数を数えるなら $X+r$ になります．
+
+## 例題
+
+表の確率 $1/2$ のコインで3回表が出るまでの裏の回数は，期待値 $3$，分散 $6$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

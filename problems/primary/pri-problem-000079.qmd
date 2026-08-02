@@ -1,0 +1,54 @@
+---
+title: "第427回 1次 問2"
+id: pri-problem-000079
+paper_id: pri-paper-0427
+question_number: 2
+cell_label: 逆三角関数と正接
+tags:
+  - inverse-trigonometric-function
+---
+
+## 問題
+
+$$
+\tan\left(\arcsin\left(-\frac1{\sqrt5}\right)+\arccos\frac2{\sqrt{13}}\right)
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
+
+## 必要な発想
+
+各角の正接を直角三角形から求め，正接の加法定理を使う．
+
+## 解答
+
+$\alpha=\arcsin(-1/\sqrt5)$，$\beta=\arccos(2/\sqrt{13})$ とおく．主値の範囲から
+
+$$
+\tan\alpha=-\frac12,\qquad \tan\beta=\frac32
+$$
+
+である．したがって，
+
+$$
+\tan(\alpha+\beta)
+=\frac{-1/2+3/2}{1-(-1/2)(3/2)}
+=\frac1{7/4}
+=\boxed{\frac47}
+$$
+
+となる．
+
+## コメント
+
+正弦・余弦を別々に加法定理へ入れるより，正接まで先に作ると短くなります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

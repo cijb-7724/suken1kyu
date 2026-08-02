@@ -1,0 +1,107 @@
+---
+title: "第444回 2次 問5"
+id: sec-problem-000054
+paper_id: sec-paper-0444
+question_number: 5
+cell_label: 疎な指数の級数
+tags:
+  - lacunary-series
+---
+
+## 問題
+
+$$
+f(x)=\sum_{n=0}^{\infty}(-1)^nx^{9^n}\qquad(-1<x<1)
+$$
+
+とする．
+
+1. $f(x)+f(x^9)$ を求めなさい．
+2. $x\to1-0$ のとき $f(x)$ が有限値に収束するか調べなさい．
+
+## 必要な知識
+
+- [疎な指数をもつ級数](../../knowledge/secondary/lacunary-series.qmd)
+
+### この問題で使う一般形
+
+指数が $1,9,9^2,\ldots$ と移る級数では，$x\mapsto x^9$ が添字を1つずらします．極限の不存在は，極限値を直接推測するより，$1$ に近づく2つの部分列で異なる極限を作ると証明できます．
+
+## 必要な発想
+
+$f(x^9)$ で項を1つずらして関数方程式を作る．$0.9^{1/9^m}$ という列を選ぶと，その関数方程式が隣り合う項の漸化式になる．
+
+## 解答
+
+(1)
+
+$$
+f(x)=x-x^9+x^{81}-x^{729}+\cdots
+$$
+
+$$
+f(x^9)=x^9-x^{81}+x^{729}-\cdots
+$$
+
+だから，項がすべて打ち消されて
+
+$$
+\boxed{f(x)+f(x^9)=x}
+$$
+
+となる．
+
+(2) $x_m=0.9^{1/9^m}$ とおくと，$x_m\to1-0$ かつ $x_m^9=x_{m-1}$ である．
+
+$$
+d_m=f(x_m)-\frac12
+$$
+
+とおけば，(1)から
+
+$$
+d_m+d_{m-1}=x_m-1．
+$$
+
+さらに $e_m=(-1)^md_m$ とおくと，
+
+$$
+e_m=e_{m-1}+(-1)^m(x_m-1)
+$$
+
+なので，$e_m$ は
+
+$$
+C=d_0+\sum_{j=1}^{\infty}(-1)^j(x_j-1)
+$$
+
+へ収束する．ここで $a_j=1-x_j$ は正で単調減少するから，後半は $a_1-a_2+a_3-\cdots>0$ である．また交代級数の評価より
+
+$$
+f(0.9)>0.9-0.9^9>0.51
+$$
+
+なので $d_0>0.01$，従って $C>0$ である．
+
+したがって，偶数番目では $d_{2m}\to C$，奇数番目では $d_{2m+1}\to-C$ となる．ゆえに
+
+$$
+f(x_{2m})\to\frac12+C,\qquad
+f(x_{2m+1})\to\frac12-C
+$$
+
+という異なる2つの極限が存在する．よって，
+
+$$
+\boxed{x\to1-0\text{ で }f(x)\text{ は収束しない}}
+$$
+
+## コメント
+
+関数方程式だけから「極限が存在するなら $1/2$」とは言えますが，存在そのものは示せません．部分列で異なる極限を作ることが必要です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

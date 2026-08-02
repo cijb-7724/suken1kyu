@@ -1,0 +1,59 @@
+---
+title: "第406回 1次 問2"
+id: pri-problem-000065
+paper_id: pri-paper-0406
+question_number: 2
+cell_label: 複素対数
+tags:
+  - complex-logarithm
+---
+
+## 問題
+
+$$
+\log\frac{\sqrt3+5i}{-\sqrt3+2i}=\log_e x+iy,\qquad -\pi<y\le\pi
+$$
+
+と表すとき，$x,y$ を求めなさい．
+
+## 必要な知識
+
+- [複素対数](../../knowledge/primary/complex-logarithm.qmd)
+
+## 必要な発想
+
+まず複素数の商を実部・虚部の形に直し，絶対値と主偏角を読む．
+
+## 解答
+
+分母の共役を掛けると，
+
+$$
+\frac{\sqrt3+5i}{-\sqrt3+2i}
+=1-\sqrt3,i
+=2e^{-i\pi/3}．
+$$
+
+主値の対数は
+
+$$
+\log(2e^{-i\pi/3})=\log_e2-\frac{\pi}{3}i
+$$
+
+だから，
+
+$$
+\boxed{x=2,\qquad y=-\frac\pi3}
+$$
+
+である．
+
+## コメント
+
+偏角は $2\pi$ の整数倍だけ不定ですが，指定された範囲で主値を選びます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

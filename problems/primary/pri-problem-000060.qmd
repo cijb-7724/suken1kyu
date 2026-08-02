@@ -1,0 +1,62 @@
+---
+title: "第389回 1次 問4"
+id: pri-problem-000060
+paper_id: pri-paper-0389
+question_number: 4
+cell_label: 逆正弦の平方
+tags:
+  - inverse-trigonometric-function
+  - maclaurin-expansion
+---
+
+## 問題
+
+$f(x)=(\arcsin x)^2$ とする．
+
+1. $-xf'(x)+(1-x^2)f''(x)$ を求めなさい．
+2. $f^{(6)}(0)$ を求めなさい．
+
+## 必要な知識
+
+- [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
+- [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
+
+## 必要な発想
+
+(1)は $f'$ と $f''$ を代入して打ち消しを見る．(2)は $x^6$ の係数だけを求める．
+
+## 解答
+
+$u=\arcsin x$ とすると，$u'=1/\sqrt{1-x^2}$ である．$f=u^2$ を2回微分して整理すると，
+
+$$
+-xf'(x)+(1-x^2)f''(x)=\boxed{2}．
+$$
+
+また，
+
+$$
+\arcsin x=x+\frac{x^3}{6}+\frac{3x^5}{40}+O(x^7)
+$$
+
+だから，
+
+$$
+f(x)=x^2+\frac{x^4}{3}+\frac{8x^6}{45}+O(x^8)．
+$$
+
+よって，
+
+$$
+f^{(6)}(0)=6!\cdot\frac8{45}=\boxed{128}．
+$$
+
+## コメント
+
+$n$ 次導関数の値は，マクローリン展開の $x^n$ の係数に $n!$ を掛けたものです．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

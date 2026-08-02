@@ -1,0 +1,111 @@
+---
+title: "第461回 2次 問2"
+id: sec-problem-000058
+paper_id: sec-paper-0461
+question_number: 2
+cell_label: フーリエ変換とPoisson和公式
+tags:
+  - fourier-transform
+  - poisson-summation-formula
+---
+
+## 問題
+
+$$
+p(x)=\frac1{x^2+a^2}\qquad(a>0)
+$$
+
+とする．問題文のフーリエ変換の定義とPoissonの和公式を用いて，
+
+1. $\widehat p(t)$ を求めなさい．
+2. $\displaystyle\sum_{n=-\infty}^{\infty}\frac1{n^2+n+5/4}$ を求めなさい．
+
+## 必要な知識
+
+- [フーリエ変換](../../knowledge/secondary/fourier-transform.qmd)
+- [ポアソンの和公式](../../knowledge/secondary/poisson-summation-formula.qmd)
+
+### この問題で使う一般形
+
+本問の規約では
+
+$$
+\widehat f(t)=\int_{-\infty}^{\infty}f(x)e^{-2\pi ixt}dx．
+$$
+
+偶関数の変換は余弦積分に直せます．またPoissonの和公式は，平行移動 $b$ に対して
+
+$$
+\sum_{n\in\mathbb Z}f(n+b)
+=\sum_{k\in\mathbb Z}e^{2\pi ikb}\widehat f(k)
+$$
+
+という形です．
+
+## 必要な発想
+
+既知の二重フーリエ変換の関係から指数関数とCauchy型関数を対応させる．和では平方完成して $b=1/2$ と読み，位相因子を $(-1)^k$ にする．
+
+## 解答
+
+問題文の $q(x)=e^{-2\pi a|x|}$ のフーリエ変換を直接計算すると，偶関数なので
+
+$$
+r(t)=2\int_0^\infty e^{-2\pi ax}\cos(2\pi tx)dx
+=\frac{a}{\pi(a^2+t^2)}
+=\frac a\pi p(t)．
+$$
+
+さらに問題文より $\widehat r(t)=q(-t)=q(t)$ である．線形性から
+
+$$
+\frac a\pi\widehat p(t)=e^{-2\pi a|t|}
+$$
+
+だから，
+
+$$
+\boxed{\widehat p(t)=\frac\pi a e^{-2\pi a|t|}}．
+$$
+
+(2) 分母を平方完成すると，
+
+$$
+n^2+n+\frac54=\left(n+\frac12\right)^2+1．
+$$
+
+したがって $a=1$，$b=1/2$ としてPoissonの和公式を使う．
+
+$$
+\begin{aligned}
+\sum_{n\in\mathbb Z}\frac1{(n+1/2)^2+1}
+&=\sum_{k\in\mathbb Z}e^{\pi ik}\pi e^{-2\pi|k|}\\
+&=\pi\left(1+2\sum_{k=1}^{\infty}(-1)^ke^{-2\pi k}\right)．
+\end{aligned}
+$$
+
+後半は公比 $-e^{-2\pi}$ の等比級数だから，
+
+$$
+1+2\sum_{k=1}^{\infty}(-1)^ke^{-2\pi k}
+=\frac{1-e^{-2\pi}}{1+e^{-2\pi}}．
+$$
+
+よって，
+
+$$
+\boxed{\sum_{n=-\infty}^{\infty}\frac1{n^2+n+5/4}
+=\pi\frac{e^{2\pi}-1}{e^{2\pi}+1}}
+$$
+
+である．
+
+## コメント
+
+フーリエ変換の係数は規約によって変わります．指数が $e^{-2\pi ixt}$ であることを確認してから公式を使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

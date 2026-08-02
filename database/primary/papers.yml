@@ -22,3 +22,51 @@ papers:
     year: 2024
     round: 431
     sort_order: 20241027
+
+  - id: pri-paper-0427
+    label: "第427回（2024年7月21日）"
+    year: 2024
+    round: 427
+    sort_order: 20240721
+
+  - id: pri-paper-0414
+    label: "第414回（2023年10月29日）"
+    year: 2023
+    round: 414
+    sort_order: 20231029
+
+  - id: pri-paper-0406
+    label: "第406回（2023年4月16日）"
+    year: 2023
+    round: 406
+    sort_order: 20230416
+
+  - id: pri-paper-0389
+    label: "第389回（2022年4月10日）"
+    year: 2022
+    round: 389
+    sort_order: 20220410
+
+  - id: pri-paper-0380
+    label: "第380回（2021年10月31日）"
+    year: 2021
+    round: 380
+    sort_order: 20211031
+
+  - id: pri-paper-0372
+    label: "第372回（2021年4月11日）"
+    year: 2021
+    round: 372
+    sort_order: 20210411
+
+  - id: pri-paper-0363
+    label: "第363回（2020年10月25日）"
+    year: 2020
+    round: 363
+    sort_order: 20201025
+
+  - id: pri-paper-0358
+    label: "第358回（2020年7月18日）"
+    year: 2020
+    round: 358
+    sort_order: 20200718

@@ -1,0 +1,68 @@
+---
+title: "第414回 1次 問5"
+id: pri-problem-000075
+paper_id: pri-paper-0414
+question_number: 5
+cell_label: 同時密度と共分散
+tags:
+  - joint-probability-density-function
+  - covariance
+---
+
+## 問題
+
+$$
+f(x,y)=\begin{cases}10x^2y&(0<y<x<1),\\0&(\text{その他})\end{cases}
+$$
+
+を同時確率密度関数とする．$Z=XY$ の平均と，$X,Y$ の共分散を求めなさい．
+
+## 必要な知識
+
+- [同時確率密度関数](../../knowledge/primary/joint-probability-density-function.qmd)
+- [共分散](../../knowledge/primary/covariance.qmd)
+
+## 必要な発想
+
+領域を $0<x<1$，$0<y<x$ と読み，$E[XY]$，$E[X]$，$E[Y]$ を同じ累次積分で計算する．
+
+## 解答
+
+$$
+E[Z]=E[XY]
+=\int_0^1\int_0^xxy\cdot10x^2y\,dy\,dx
+=\frac{10}{21}．
+$$
+
+また，
+
+$$
+E[X]=\frac56,\qquad E[Y]=\frac59
+$$
+
+である．したがって，
+
+$$
+C(X,Y)=E[XY]-E[X]E[Y]
+=\frac{10}{21}-\frac56\cdot\frac59
+=\boxed{\frac5{378}}．
+$$
+
+よって，
+
+$$
+\boxed{E[Z]=\frac{10}{21}},\qquad
+\boxed{C(X,Y)=\frac5{378}}
+$$
+
+である．
+
+## コメント
+
+密度の因子 $y$ に，期待値の因子 $xy$ をさらに掛けます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

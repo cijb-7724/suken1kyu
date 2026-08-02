@@ -1,0 +1,43 @@
+---
+title: "微積分学の基本定理"
+id: fundamental-theorem-calculus
+---
+
+## 概要
+
+微分と積分を結ぶ基本定理と，短区間の積分平均の極限をまとめます．
+
+## 基本事項
+
+連続関数 $f$ に対し
+
+$$
+F(x)=\int_a^xf(t)dt
+$$
+
+とおけば $F'(x)=f(x)$ です．したがって，
+
+$$
+\lim_{h\to0}\frac1h\int_a^{a+h}f(x)dx
+=\lim_{h\to0}\frac{F(a+h)-F(a)}h=f(a)．
+$$
+
+これは短い区間上の平均値が端点での関数値へ近づくことを表します．
+
+## 例題
+
+$$
+\lim_{h\to0}\frac1h\int_1^{1+h}x^2dx=1^2=1
+$$
+
+です．原始関数を具体的に求めても同じ結果になります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

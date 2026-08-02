@@ -1,0 +1,60 @@
+---
+title: "第380回 1次 問4"
+id: pri-problem-000053
+paper_id: pri-paper-0380
+question_number: 4
+cell_label: 固有値の和と積
+tags:
+  - eigenvalue
+  - determinant
+---
+
+## 問題
+
+$$
+A=\begin{pmatrix}
+-2&1&1&1\\
+1&1&-1&1\\
+1&-1&1&1\\
+1&1&1&-2
+\end{pmatrix}
+$$
+
+の固有値を $\lambda_1,\ldots,\lambda_4$ とするとき，その和と積を求めなさい．
+
+## 必要な知識
+
+- [固有値](../../knowledge/primary/eigenvalue.qmd)
+- [行列式](../../knowledge/primary/determinant.qmd)
+
+## 必要な発想
+
+固有値を個別に求めず，和はトレース，積は行列式で求める．
+
+## 解答
+
+固有値の和はトレースに等しいので，
+
+$$
+\lambda_1+\lambda_2+\lambda_3+\lambda_4
+=\operatorname{tr}A=-2+1+1-2=\boxed{-2}．
+$$
+
+また，固有値の積は行列式に等しい．行基本変形により
+
+$$
+\lambda_1\lambda_2\lambda_3\lambda_4
+=\det A=\boxed{24}
+$$
+
+となる．
+
+## コメント
+
+「和と積」だけなら，特性方程式を最後まで解く必要はありません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

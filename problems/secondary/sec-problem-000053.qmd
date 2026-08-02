@@ -1,0 +1,115 @@
+---
+title: "第444回 2次 問4"
+id: sec-problem-000053
+paper_id: sec-paper-0444
+question_number: 4
+cell_label: 回帰直線と予測区間
+tags:
+  - least-squares-regression
+---
+
+## 問題
+
+データ $(X,Y)=(0,16),(10,25),(20,31),(30,42),(40,51)$ について，
+
+1. 最小二乗回帰直線 $Y=aX+b$ を求めなさい．
+2. 問題文の公式を用い，$X=25$ に対する平均応答の95%信頼区間を求めなさい．
+
+## 必要な知識
+
+- [最小二乗法](../../knowledge/secondary/least-squares-regression.qmd)
+
+### この問題で使う一般形
+
+$$
+a=\frac{s_{xy}}{s_{xx}},\qquad b=\bar y-a\bar x
+$$
+
+です．平均応答の区間では，残差標準偏差
+
+$$
+u=\sqrt{\frac{s_{yy}-as_{xy}}{n-2}}
+$$
+
+と，説明変数位置による係数
+
+$$
+v=\sqrt{\frac1n+\frac{(x_0-\bar x)^2}{s_{xx}}}
+$$
+
+を使います．
+
+## 必要な発想
+
+まず偏差平方和を表にして回帰係数を求める．区間では残差の大きさと，$x_0$ が平均から離れている程度を別々に計算する．
+
+## 解答
+
+平均は
+
+$$
+\bar x=20,\qquad\bar y=33
+$$
+
+であり，偏差平方和は
+
+$$
+s_{xx}=1000,\qquad s_{yy}=762,\qquad s_{xy}=870
+$$
+
+である．したがって，
+
+$$
+a=\frac{870}{1000}=0.87,\qquad
+b=33-0.87\cdot20=15.6．
+$$
+
+よって回帰直線は
+
+$$
+\boxed{Y=0.87X+15.6}．
+$$
+
+$x_0=25$ における予測値は
+
+$$
+\hat y_0=0.87\cdot25+15.6=37.35．
+$$
+
+また，
+
+$$
+u=\sqrt{\frac{762-0.87\cdot870}{3}}
+=\sqrt{1.7},\qquad
+v=\sqrt{\frac15+\frac{25}{1000}}=\sqrt{0.225}．
+$$
+
+自由度3の $t_{0.025}$ は $3.182$ なので，誤差幅は
+
+$$
+3.182uv\approx1.96796．
+$$
+
+したがって丸め前は
+
+$$
+35.38204\ldots\le Y_0\le39.31795\ldots
+$$
+
+であり，指定どおり外向きに丸めると
+
+$$
+\boxed{35.38\le Y_0\le39.32}
+$$
+
+となる．
+
+## コメント
+
+この問題の公式は個々の新しい観測値ではなく，$x_0$ における平均応答の区間です．そのため $v$ の中に追加の $1$ はありません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

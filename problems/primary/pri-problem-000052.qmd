@@ -1,0 +1,57 @@
+---
+title: "第380回 1次 問3"
+id: pri-problem-000052
+paper_id: pri-paper-0380
+question_number: 3
+cell_label: 線形写像の行列
+tags:
+  - linear-map-matrix
+---
+
+## 問題
+
+線形写像 $f:\mathbb R^2\to\mathbb R^3$ が
+
+$$
+f\binom12=\begin{pmatrix}3\\-1\\5\end{pmatrix},\qquad
+f\binom{-1}{1}=\begin{pmatrix}3\\1\\-2\end{pmatrix}
+$$
+
+を満たすとき，標準基底に関する表現行列を求めなさい．
+
+## 必要な知識
+
+- [線形写像の表現行列](../../knowledge/primary/linear-map-matrix.qmd)
+
+## 必要な発想
+
+与えられた2ベクトルを並べた基底行列 $P$ に対し，$AP$ が像を並べた行列になることを使う．
+
+## 解答
+
+表現行列を $A$ とすると，
+
+$$
+A\begin{pmatrix}1&-1\\2&1\end{pmatrix}
+=\begin{pmatrix}3&3\\-1&1\\5&-2\end{pmatrix}．
+$$
+
+したがって，右から基底行列の逆行列を掛けて
+
+$$
+A=\begin{pmatrix}3&3\\-1&1\\5&-2\end{pmatrix}
+\begin{pmatrix}1&-1\\2&1\end{pmatrix}^{-1}
+=\boxed{\begin{pmatrix}-1&2\\-1&0\\3&1\end{pmatrix}}
+$$
+
+となる．
+
+## コメント
+
+表現行列の各列は，標準基底ベクトルの像です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

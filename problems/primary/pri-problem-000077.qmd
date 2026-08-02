@@ -1,0 +1,57 @@
+---
+title: "第414回 1次 問7"
+id: pri-problem-000077
+paper_id: pri-paper-0414
+question_number: 7
+cell_label: 2階線形微分方程式
+tags:
+  - constant-coefficient-ode
+---
+
+## 問題
+
+$$
+y''-8y'+12y=0,\qquad y(0)=2,\quad y'(0)=-8
+$$
+
+を満たす $y$ を求めなさい．
+
+## 必要な知識
+
+- [定数係数線形微分方程式](../../knowledge/primary/constant-coefficient-ode.qmd)
+
+## 必要な発想
+
+特性方程式の2根から一般解を作り，初期条件で係数を決める．
+
+## 解答
+
+特性方程式は
+
+$$
+r^2-8r+12=(r-2)(r-6)=0
+$$
+
+だから，一般解は $y=C_1e^{2x}+C_2e^{6x}$ である．初期条件より
+
+$$
+C_1+C_2=2,\qquad2C_1+6C_2=-8．
+$$
+
+これを解くと $C_1=5$，$C_2=-3$ である．したがって，
+
+$$
+\boxed{y=5e^{2x}-3e^{6x}}
+$$
+
+となる．
+
+## コメント
+
+係数決定後に $y'(0)$ まで代入して確認します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

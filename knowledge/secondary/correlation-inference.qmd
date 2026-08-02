@@ -1,0 +1,67 @@
+---
+title: "相関係数の推測"
+id: correlation-inference
+---
+
+## 概要
+
+2変量正規分布の母相関係数 $\rho$ を，標本相関係数 $r$ から検定・区間推定する方法を扱います．$r$ の分布はそのままでは非対称なので，Fisherの $z$ 変換で正規分布に近づけます．
+
+## 基本事項
+
+Fisherの変換と逆変換は
+
+$$
+z(r)=\frac12\log\frac{1+r}{1-r}=\operatorname{arctanh}r,\qquad
+r=\tanh z=\frac{e^{2z}-1}{e^{2z}+1}
+$$
+
+です．標本数 $n$ が十分大きいとき，
+
+$$
+z(r)\approx N\left(z(\rho),\frac1{n-3}\right)．
+$$
+
+$H_0:\rho=\rho_0$ の検定では
+
+$$
+Z=\{z(r)-z(\rho_0)\}\sqrt{n-3}
+$$
+
+を標準正規分布と比較します．両側 $100(1-\alpha)$% 信頼区間は，まず
+
+$$
+z(r)\pm z_{\alpha/2}\frac1{\sqrt{n-3}}
+$$
+
+を作り，両端へ逆変換を施します．変換は単調増加なので端点の順序は変わりません．
+
+### 注意点
+
+片側検定と両側区間では使う臨界値が異なります．また「帰無仮説を棄却できない」は帰無仮説が正しいと証明したことではありません．
+
+## 例題
+
+$n=103$，$r=0.50$ とします．$z(r)=0.5493$，標準誤差は $1/10$ です．95%区間は $z$ 尺度で
+
+$$
+0.5493\pm1.96\cdot0.1=[0.3533,0.7453]
+$$
+
+です．逆変換すると，
+
+$$
+0.339\lesssim\rho\lesssim0.632
+$$
+
+となります．$r\pm1.96/\sqrt n$ と直接計算するのではありません．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

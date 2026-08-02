@@ -1,0 +1,42 @@
+---
+title: "連立線形微分方程式"
+id: linear-system-ode
+---
+
+## 概要
+
+定数係数の連立1階微分方程式を固有値・固有ベクトルで解きます．
+
+## 基本事項
+
+$$
+X'(t)=AX(t)
+$$
+
+で，$Av_j=\lambda_jv_j$ なら $e^{\lambda_jt}v_j$ は解です．独立な固有ベクトルがそろえば
+
+$$
+X(t)=\sum_jC_je^{\lambda_jt}v_j
+$$
+
+が一般解です．初期条件 $X(0)$ を固有ベクトルの一次結合に分解して係数を決めます．
+
+## 例題
+
+$A=\operatorname{diag}(2,-1)$ なら，$x'=2x,y'=-y$ なので
+
+$$
+x=C_1e^{2t},\qquad y=C_2e^{-t}
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

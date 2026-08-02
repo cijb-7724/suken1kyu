@@ -1,0 +1,70 @@
+---
+title: "Riccati型微分方程式"
+id: riccati-equation
+---
+
+## 概要
+
+未知関数の2乗を含む1階非線形方程式を，対数微分や既知の特殊解によって線形方程式へ変換します．特に $y'+y^2=q(x)$ の線形化を詳しく扱います．
+
+## 基本事項
+
+一般のRiccati方程式は
+
+$$
+y'=a(x)y^2+b(x)y+c(x)
+$$
+
+です．$y'+y^2=q(x)$ では
+
+$$
+y=\frac{u'}u
+$$
+
+とおくと，
+
+$$
+y'+y^2
+=\left(\frac{u'}u\right)'+\left(\frac{u'}u\right)^2
+=\frac{u''}{u}
+$$
+
+となります．従って非線形1階方程式は線形2階方程式
+
+$$
+u''=q(x)u
+$$
+
+へ変わります．$u$ の定数倍は $u'/u$ で消えるため，2個の積分定数の比だけが $y$ の1個の積分定数になります．
+
+別の方法として，既知の特殊解 $y_p$ がある一般Riccati方程式では $y=y_p+1/v$ とおくと $v$ の1階線形方程式になります．
+
+## 例題
+
+$$
+y'+y^2=1
+$$
+
+を $y=u'/u$ で解きます．$u''=u$ だから
+
+$$
+u=C_1e^x+C_2e^{-x}．
+$$
+
+従って
+
+$$
+y=\frac{C_1e^x-C_2e^{-x}}{C_1e^x+C_2e^{-x}}．
+$$
+
+$C_1C_2>0$ なら双曲線正接型，符号が異なれば双曲線余接型になります．分母が0になる点では解は定義されません．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

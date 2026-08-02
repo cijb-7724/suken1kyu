@@ -1,0 +1,104 @@
+---
+title: "第440回 2次 問1"
+id: sec-problem-000043
+paper_id: sec-paper-0440
+question_number: 1
+cell_label: 不定方程式と階乗の剰余
+tags:
+  - wilson-theorem
+---
+
+## 問題
+
+1. $97x+103y=1$，$0\le x\le102$ を満たす整数の組 $(x,y)$ を求めなさい．
+2. $95!$ を $9991$ で割った正の余りを求めなさい．ただし，$9991=97\cdot103$ です．
+
+## 必要な知識
+
+- [Wilsonの定理](../../knowledge/secondary/wilson-theorem.qmd)
+
+### この問題で使う一般形
+
+互いに素な $a,m$ に対する $ax+my=1$ は拡張Euclid互除法で求めます．また素数 $p$ に対し，Wilsonの定理
+
+$$
+(p-1)!\equiv-1\pmod p
+$$
+
+が成り立ちます．合成数を互いに素な因子へ分けて得た合同条件は，中国剰余定理で戻します．
+
+## 必要な発想
+
+(1)は逆元の計算である．(2)は $9991$ を $97$ と $103$ に分け，各法でWilsonの定理を使ってから合同条件を統合する．
+
+## 解答
+
+(1) Euclidの互除法を逆にたどると，
+
+$$
+103=97+6,\qquad97=16\cdot6+1
+$$
+
+より，
+
+$$
+1=97-16(103-97)=17\cdot97-16\cdot103．
+$$
+
+したがって，
+
+$$
+\boxed{(x,y)=(17,-16)}
+$$
+
+である．$x$ の一般解は $17+103k$ なので，指定範囲ではこれだけである．
+
+(2) 法 $97$ では，Wilsonの定理より
+
+$$
+96!\equiv-1\pmod{97}．
+$$
+
+$96!\equiv-95!$ だから，$95!\equiv1\pmod{97}$ である．
+
+法 $103$ では，
+
+$$
+102!=95!\cdot96\cdot97\cdots102．
+$$
+
+後半は
+
+$$
+(-7)(-6)\cdots(-1)=-7!\equiv7\pmod{103}
+$$
+
+であるから，$7\cdot95!\equiv-1\pmod{103}$ となる．$7^{-1}\equiv59\pmod{103}$ より，
+
+$$
+95!\equiv44\pmod{103}．
+$$
+
+そこで余りを $r=1+97k$ とおくと，
+
+$$
+1+97k\equiv1-6k\equiv44\pmod{103}
+$$
+
+だから $k\equiv10\pmod{103}$ である．$0<r<9991$ を満たす値は
+
+$$
+\boxed{r=1+97\cdot10=971}
+$$
+
+である．
+
+## コメント
+
+Wilsonの定理は法が素数のときに使います．法 $9991$ に直接使わず，素因数ごとに適用します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

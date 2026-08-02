@@ -1,0 +1,95 @@
+---
+title: "第444回 2次 問2"
+id: sec-problem-000051
+paper_id: sec-paper-0444
+question_number: 2
+cell_label: Riccati型微分方程式
+tags:
+  - riccati-equation
+---
+
+## 問題
+
+$$
+\frac{dy}{dx}+y^2-4x^{-4}=0,\qquad y(4)=\frac12
+$$
+
+を満たす $y$ を求めなさい．
+
+## 必要な知識
+
+- [Riccati型微分方程式](../../knowledge/secondary/riccati-equation.qmd)
+
+### この問題で使う一般形
+
+$y'+y^2=q(x)$ では $y=u'/u$ とおくと
+
+$$
+y'+y^2=\frac{u''}{u}
+$$
+
+となり，2階線形方程式 $u''=q(x)u$ へ変換できます．$x^{-4}$ があるときは，さらに $t=1/x$ が指数関数型の方程式を作ります．
+
+## 必要な発想
+
+Riccati型を $y=u'/u$ で線形化し，$u''=4x^{-4}u$ を $t=1/x$ で解く．最後に初期条件で2解の比を決める．
+
+## 解答
+
+$y=u'/u$ とおくと，
+
+$$
+y'+y^2=\frac{u''}{u}
+$$
+
+だから，$u$ は
+
+$$
+u''-4x^{-4}u=0
+$$
+
+を満たす．$t=1/x$ とし，$u(x)=U(t)$ と書くと，
+
+$$
+\frac{du}{dx}=-t^2U_t,\qquad
+\frac{d^2u}{dx^2}=t^4U_{tt}+2t^3U_t．
+$$
+
+これを代入し $t^4$ で割ると，
+
+$$
+U_{tt}+\frac2tU_t-4U=0．
+$$
+
+$V=tU$ とおけば $V_{tt}-4V=0$ となるため，
+
+$$
+V=C_1e^{2t}+C_2e^{-2t},\qquad
+u=x\left(C_1e^{2/x}+C_2e^{-2/x}\right)．
+$$
+
+$y=u'/u$ なので，定数の共通倍は消える．初期条件 $y(4)=1/2$ を代入すると $C_2=-3eC_1$ が得られる．$C_1=1$ と選べば，
+
+$$
+u=x\left(e^{2/x}-3e^{1-2/x}\right)．
+$$
+
+対数微分を取って，
+
+$$
+\boxed{
+y=\frac1x-rac2{x^2}
+\frac{e^{4/x}+3e}{e^{4/x}-3e}}
+$$
+
+となる．分母が0でない，$x=4$ を含む区間でこの解を考える．
+
+## コメント
+
+$y=u'/u$ は形を複雑にする置換に見えますが，$y'+y^2$ の2項が正確に $u''/u$ へまとまるために選びます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

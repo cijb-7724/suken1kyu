@@ -1,0 +1,38 @@
+---
+title: "離散同時分布"
+id: discrete-joint-distribution
+---
+
+## 概要
+
+2つの離散確率変数を同時に扱い，期待値・分散・共分散を求める方法です．
+
+## 基本事項
+
+同時確率 $p_{ij}=P(X=x_i,Y=y_j)$ に対し，
+
+$$
+E[g(X,Y)]=\sum_i\sum_jg(x_i,y_j)p_{ij}
+$$
+
+です．特に
+
+$$
+\operatorname{Cov}(X,Y)=E[XY]-E[X]E[Y]
+$$
+
+です．有限個の等確率な標本点なら，値を表に並べて個数を数えるのが安全です．
+
+## 例題
+
+公平なコイン2枚の表の枚数を $X$，同じ面なら $Y=1$，異なれば $Y=0$ とします．4標本点を数えると $E[X]=1$，$E[Y]=1/2$，$E[XY]=1/2$ なので，共分散は $0$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

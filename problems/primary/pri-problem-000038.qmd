@@ -1,0 +1,59 @@
+---
+title: "第363回 1次 問3"
+id: pri-problem-000038
+paper_id: pri-paper-0363
+question_number: 3
+cell_label: 直線を含む平面
+tags:
+  - analytic-geometry
+---
+
+## 問題
+
+2平面
+
+$$
+3x-y-2z=6,\qquad x+2y-3z=4
+$$
+
+の交線と，点 $(1,-1,-2)$ を含む平面の方程式を求めなさい．
+
+## 必要な知識
+
+- [空間の直線と平面](../../knowledge/primary/analytic-geometry.qmd)
+
+## 必要な発想
+
+2平面の交線を含む平面は，両方の平面方程式の一次結合で表せる．点の座標を代入して係数比を決める．
+
+## 解答
+
+交線を含む平面は，定数 $\lambda$ を用いて
+
+$$
+(3x-y-2z-6)+\lambda(x+2y-3z-4)=0
+$$
+
+と表せる．点 $(1,-1,-2)$ を代入すると，第1式の左辺は $2$，第2式の左辺は $1$ だから，$2+\lambda=0$，すなわち $\lambda=-2$ である．よって，
+
+$$
+(3x-y-2z-6)-2(x+2y-3z-4)=0
+$$
+
+を整理して
+
+$$
+\boxed{x-5y+4z+2=0}
+$$
+
+を得る．
+
+## コメント
+
+交線そのものを媒介変数表示する必要はありません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

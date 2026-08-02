@@ -1,0 +1,55 @@
+---
+title: "第372回 1次 問2"
+id: pri-problem-000044
+paper_id: pri-paper-0372
+question_number: 2
+cell_label: 逆三角関数の加法
+tags:
+  - inverse-trigonometric-function
+---
+
+## 問題
+
+$$
+\sin\left(\arcsin\left(-\frac5{13}\right)+\arccos\frac45\right)
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
+
+## 必要な発想
+
+逆三角関数の値そのものを求めず，直角三角形から残りの三角比を復元して加法定理へ代入する．
+
+## 解答
+
+$\alpha=\arcsin(-5/13)$，$\beta=\arccos(4/5)$ とおく．主値の範囲から
+
+$$
+\sin\alpha=-\frac5{13},\quad \cos\alpha=\frac{12}{13},
+\quad \cos\beta=\frac45,\quad \sin\beta=\frac35
+$$
+
+である．したがって，
+
+$$
+\sin(\alpha+\beta)
+=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+=-\frac4{13}+\frac{36}{65}
+=\boxed{\frac{16}{65}}
+$$
+
+となる．
+
+## コメント
+
+$\arcsin$ と $\arccos$ の主値の範囲から，平方根の符号を決めます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

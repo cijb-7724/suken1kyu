@@ -1,0 +1,95 @@
+---
+title: "第440回 2次 問3"
+id: sec-problem-000045
+paper_id: sec-paper-0440
+question_number: 3
+cell_label: 三角形から生じる2次形式
+tags:
+  - quadratic-form
+---
+
+## 問題
+
+三角形の辺長を $a,b,c$ とし，
+
+$$
+p=-a+b+c,\quad q=a-b+c,\quad r=a+b-c
+$$
+
+とおく．任意の実数 $x,y,z$ に対し，
+
+$$
+pbcx^2+qcay^2+rabz^2-aqryz-brpzx-cpqxy\ge0
+$$
+
+を証明しなさい．
+
+## 必要な知識
+
+- [2次形式と半正定値性](../../knowledge/secondary/quadratic-form.qmd)
+
+### この問題で使う一般形
+
+実対称行列 $M$ に対する2次形式 $X^{\mathsf T}MX$ は，$M$ が半正定値なら常に非負です．$3\times3$ 対称行列では，すべての主小行列式が非負であることが半正定値性の判定に使えます．
+
+## 必要な発想
+
+各2次項で変数を規格化すると，非対角成分が三角形の半角の正弦になる．対応する対称行列が半正定値であることを示す．
+
+## 解答
+
+三角不等式より $p,q,r>0$ である．
+
+$$
+X=\sqrt{pbc},x,\quad Y=\sqrt{qca},y,\quad Z=\sqrt{rab},z
+$$
+
+とおく．半角公式
+
+$$
+\sin^2\frac C2=\frac{(s-a)(s-b)}{ab}=\frac{pq}{4ab}
+$$
+
+などを使うと，元の左辺は
+
+$$
+X^2+Y^2+Z^2
+-2\sin\frac C2XY
+-2\sin\frac B2ZX
+-2\sin\frac A2YZ
+$$
+
+となる．対応する対称行列は
+
+$$
+M=\begin{pmatrix}
+1&-\sin(C/2)&-\sin(B/2)\\
+-\sin(C/2)&1&-\sin(A/2)\\
+-\sin(B/2)&-\sin(A/2)&1
+\end{pmatrix}．
+$$
+
+1次主小行列式は $1$，2次主小行列式は例えば
+
+$$
+1-\sin^2\frac C2=\cos^2\frac C2\ge0
+$$
+
+であり，他も同様である．また，$A+B+C=\pi$ から得られる恒等式
+
+$$
+\sin^2\frac A2+\sin^2\frac B2+\sin^2\frac C2
++2\sin\frac A2\sin\frac B2\sin\frac C2=1
+$$
+
+により $\det M=0$ である．したがってすべての主小行列式が非負で，$M$ は半正定値である．ゆえに任意の実数 $X,Y,Z$，したがって任意の $x,y,z$ に対して元の2次形式は非負である．
+
+## コメント
+
+係数 $p,q,r$ は半周長を用いると $2(s-a),2(s-b),2(s-c)$ です．この形が半角公式とのつながりを示します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

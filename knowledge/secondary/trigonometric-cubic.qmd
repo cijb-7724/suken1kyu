@@ -1,0 +1,62 @@
+---
+title: "3倍角と3次方程式"
+id: trigonometric-cubic
+---
+
+## 概要
+
+3個の実根をもつ3次方程式を，3倍角公式で虚数を経由せずに解く方法です．Cardano公式の既約な場合に対応する三角関数解法です．
+
+## 基本事項
+
+一般の3次方程式
+
+$$
+x^3+ax^2+bx+c=0
+$$
+
+では $x=u-a/3$ と置くと2次の項が消え，
+
+$$
+u^3+pu+q=0
+$$
+
+となります．$p<0$ のとき
+
+$$
+u=2\sqrt{-\frac p3}\cos\theta
+$$
+
+とおけば，
+
+$$
+4\cos^3\theta-3\cos\theta=\cos3\theta
+$$
+
+により $\cos3\theta=$ 定数という方程式になります．
+
+判別式が3実根を示す場合，$3\theta$ の解から $2\pi/3$ ずつずれた3つの角を選ぶと，相異なる3根を得られます．角の選び方が違っても根の集合は同じです．
+
+## 例題
+
+$$
+u^3-3u=0
+$$
+
+を $u=2\cos\theta$ とおくと $2\cos3\theta=0$ です．例えば
+
+$$
+\theta=\frac\pi6,\frac\pi2,\frac{5\pi}6
+$$
+
+を選ぶと，$u=\sqrt3,0,-\sqrt3$ を得ます．これは $u(u^2-3)=0$ の3根と一致します．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -33,3 +33,31 @@ papers:
     round: 427
     date: "2024-07-21"
     sort_order: 427
+
+  - id: sec-paper-0431
+    label: "第431回"
+    year: 2024
+    round: 431
+    date: "2024-10-27"
+    sort_order: 431
+
+  - id: sec-paper-0440
+    label: "第440回"
+    year: 2025
+    round: 440
+    date: "2025-04-13"
+    sort_order: 440
+
+  - id: sec-paper-0444
+    label: "第444回"
+    year: 2025
+    round: 444
+    date: "2025-07-27"
+    sort_order: 444
+
+  - id: sec-paper-0461
+    label: "第461回"
+    year: 2026
+    round: 461
+    date: "2026-07-25"
+    sort_order: 461

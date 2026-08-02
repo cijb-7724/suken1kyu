@@ -1,0 +1,61 @@
+---
+title: "第380回 1次 問6"
+id: pri-problem-000055
+paper_id: pri-paper-0380
+question_number: 6
+cell_label: 収束半径
+tags:
+  - radius-of-convergence
+---
+
+## 問題
+
+べき級数
+
+$$
+\sum_{n=1}^{\infty}\left(\frac{n+3}{n+2}\right)^{n^2}x^n
+$$
+
+の収束半径を求めなさい．
+
+## 必要な知識
+
+- [収束半径](../../knowledge/primary/radius-of-convergence.qmd)
+
+## 必要な発想
+
+Cauchy–Hadamardの公式で係数の $n$ 乗根を取り，$(1+1/(n+2))^n\to e$ を使う．
+
+## 解答
+
+係数を $a_n$ とすると，
+
+$$
+\sqrt[n]{|a_n|}
+=\left(\frac{n+3}{n+2}\right)^n
+=\left(1+\frac1{n+2}\right)^n\longrightarrow e．
+$$
+
+したがって，収束半径 $R$ は
+
+$$
+\frac1R=e
+$$
+
+を満たし，
+
+$$
+\boxed{R=\frac1e}
+$$
+
+である．
+
+## コメント
+
+係数そのものではなく，係数の $n$ 乗根を見る問題です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

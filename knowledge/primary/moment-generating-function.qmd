@@ -1,0 +1,44 @@
+---
+title: "モーメント母関数"
+id: moment-generating-function
+---
+
+## 概要
+
+確率分布の各次モーメントを，1つの関数の微分から取り出します．
+
+## 基本事項
+
+モーメント母関数は
+
+$$
+M_X(t)=E[e^{tX}]
+$$
+
+です．$t=0$ の近くで存在すれば，微分と期待値を交換して
+
+$$
+M_X^{(n)}(0)=E[X^n]
+$$
+
+となります．独立な確率変数の和では母関数が積になるため，和の分布やモーメントの計算にも使えます．
+
+## 例題
+
+平均 $\mu$，分散 $\sigma^2$ の正規分布では
+
+$$
+M_X(t)=\exp\left(\mu t+\frac{\sigma^2t^2}{2}\right)
+$$
+
+です．1回・2回微分して $E[X]=\mu$，$E[X^2]=\mu^2+\sigma^2$ を得ます．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

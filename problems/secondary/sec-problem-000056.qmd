@@ -1,0 +1,76 @@
+---
+title: "第444回 2次 問7"
+id: sec-problem-000056
+paper_id: sec-paper-0444
+question_number: 7
+cell_label: 2変数関数の極値
+tags:
+  - multivariable-extrema
+---
+
+## 問題
+
+$$
+f(x,y)=y^4+x^3-2y^2-3x
+$$
+
+の極値と，それを与える $(x,y)$ を求めなさい．
+
+## 必要な知識
+
+- [多変数関数の極値](../../knowledge/secondary/multivariable-extrema.qmd)
+
+### この問題で使う一般形
+
+停留点では $f_x=f_y=0$ です．Hessianが正定値なら極小，負定値なら極大，不定なら鞍点です．この問題は $x$ の関数と $y$ の関数の和なので，2方向を別々に判定できます．
+
+## 必要な発想
+
+偏微分方程式を解いて6個の停留点を列挙し，$f_{xx}$ と $f_{yy}$ の符号の組合せで極値点だけを残す．
+
+## 解答
+
+$$
+f_x=3x^2-3=3(x-1)(x+1),\qquad
+f_y=4y^3-4y=4y(y-1)(y+1)．
+$$
+
+したがって停留点は $x=\pm1$，$y=0,\pm1$ の6点である．Hessianは
+
+$$
+H=\begin{pmatrix}6x&0\\0&12y^2-4\end{pmatrix}．
+$$
+
+$(1,\pm1)$ では対角成分がともに正なので極小であり，
+
+$$
+f(1,\pm1)=1+1-2-3=-3．
+$$
+
+$(-1,0)$ では対角成分がともに負なので極大であり，
+
+$$
+f(-1,0)=-1+3=2．
+$$
+
+残る3点ではHessianの対角成分の符号が異なるため鞍点である．よって，
+
+$$
+\boxed{(x,y)=(-1,0)\text{ で極大値 }2}
+$$
+
+$$
+\boxed{(x,y)=(1,1),(1,-1)\text{ で極小値 }-3}
+$$
+
+である．
+
+## コメント
+
+この関数は無限遠で上にも下にも発散するため，ここでいう極大・極小は局所的な極値です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

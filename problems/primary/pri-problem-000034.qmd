@@ -1,0 +1,60 @@
+---
+title: "第358回 1次 問6"
+id: pri-problem-000034
+paper_id: pri-paper-0358
+question_number: 6
+cell_label: Bernoulli数
+tags:
+  - bernoulli-numbers
+---
+
+## 問題
+
+$$
+\frac{xe^x}{e^x-1}=\sum_{n=0}^{\infty}\frac{B_n}{n!}x^n
+$$
+
+で定められる $B_n$ について，$B_2$ を求めなさい．
+
+## 必要な知識
+
+- [Bernoulli数](../../knowledge/primary/bernoulli-numbers.qmd)
+- [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
+
+## 必要な発想
+
+分母・分子をそれぞれ2次まで展開し，必要な係数だけ比較する．
+
+## 解答
+
+$e^x=1+x+x^2/2+x^3/6+\cdots$ より，
+
+$$
+\frac{xe^x}{e^x-1}
+=\frac{1+x+x^2/2+\cdots}{1+x/2+x^2/6+\cdots}
+=1+\frac{x}{2}+\frac{x^2}{12}+\cdots．
+$$
+
+一方，右辺の $x^2$ の係数は $B_2/2!$ である．したがって，
+
+$$
+\frac{B_2}{2}=\frac1{12}
+$$
+
+より，
+
+$$
+\boxed{B_2=\frac16}
+$$
+
+である．
+
+## コメント
+
+$B_2$ と $x^2$ の係数を取り違えず，$2!$ を忘れないようにします．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

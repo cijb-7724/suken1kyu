@@ -1,0 +1,65 @@
+---
+title: "第389回 1次 問5"
+id: pri-problem-000061
+paper_id: pri-paper-0389
+question_number: 5
+cell_label: 分布関数から期待値
+tags:
+  - distribution-function
+  - expected-value
+---
+
+## 問題
+
+確率変数 $X$ の分布関数が
+
+$$
+F(x)=\begin{cases}
+0&(x<2),\\
+\dfrac a2-\dfrac2{x^2}-\dfrac8{x^4}&(x\ge2)
+\end{cases}
+$$
+
+である．$a$ と $E[X]$ を求めなさい．
+
+## 必要な知識
+
+- [分布関数](../../knowledge/primary/distribution-function.qmd)
+- [期待値](../../knowledge/primary/expected-value.qmd)
+
+## 必要な発想
+
+$F(\infty)=1$ から $a$ を決め，$F$ を微分して密度関数を得る．
+
+## 解答
+
+$x\to\infty$ で $F(x)\to1$ だから $a/2=1$，したがって
+
+$$
+\boxed{a=2}．
+$$
+
+$x>2$ で密度関数は
+
+$$
+f(x)=F'(x)=\frac4{x^3}+\frac{32}{x^5}
+$$
+
+である．よって，
+
+$$
+E[X]=\int_2^\infty x f(x)\,dx
+=\int_2^\infty\left(\frac4{x^2}+\frac{32}{x^4}\right)dx
+=2+\frac43
+=\boxed{\frac{10}{3}}．
+$$
+
+## コメント
+
+分布関数は右端で $1$ に近づくことが，未知定数を決めます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

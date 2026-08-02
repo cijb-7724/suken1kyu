@@ -1,0 +1,59 @@
+---
+title: "第406回 1次 問1"
+id: pri-problem-000064
+paper_id: pri-paper-0406
+question_number: 1
+cell_label: 多項式の剰余
+tags:
+  - polynomial-value-and-roots
+---
+
+## 問題
+
+$(x-1)^{406}$ を $x^2-3x+3$ で割った余りを求めなさい．
+
+## 必要な知識
+
+- [多項式の値と根](../../knowledge/primary/polynomial-value-and-roots.qmd)
+
+## 必要な発想
+
+$y=x-1$ とおくと除式が $y^2-y+1$ になり，$y^3+1$ の因子として周期を作れる．
+
+## 解答
+
+$y=x-1$ とおくと，
+
+$$
+x^2-3x+3=y^2-y+1
+$$
+
+である．また，
+
+$$
+y^3+1=(y+1)(y^2-y+1)
+$$
+
+だから，法 $y^2-y+1$ で $y^3\equiv-1$ である．$406=3\cdot135+1$ より，
+
+$$
+y^{406}\equiv(-1)^{135}y=-y=1-x．
+$$
+
+したがって余りは
+
+$$
+\boxed{1-x}
+$$
+
+である．
+
+## コメント
+
+次数406まで展開せず，除式が生む3乗の関係を利用します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

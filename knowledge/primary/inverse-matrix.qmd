@@ -1,0 +1,38 @@
+---
+title: "逆行列"
+id: inverse-matrix
+---
+
+## 概要
+
+正方行列の逆行列を余因子またはGauss–Jordan法で求めます．
+
+## 基本事項
+
+$A^{-1}$ は $AA^{-1}=A^{-1}A=I$ を満たす行列です．存在条件は $\det A\ne0$ です．余因子行列を用いると
+
+$$
+A^{-1}=\frac1{\det A}\operatorname{adj}A
+$$
+
+です．計算量が多い場合は拡大行列 $[A\mid I]$ を行基本変形して $[I\mid A^{-1}]$ にします．
+
+## 例題
+
+$A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ では $\det A=-2$ なので，
+
+$$
+A^{-1}=\frac1{-2}\begin{pmatrix}4&-2\\-3&1\end{pmatrix}
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

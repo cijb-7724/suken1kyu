@@ -1,0 +1,64 @@
+---
+title: "2平方和"
+id: sum-of-two-squares
+---
+
+## 概要
+
+整数の2平方和 $x^2+y^2$ を，複素整数のノルムまたは平方和恒等式として扱います．積・商の構成と，表現する2整数の互いに素性を確認します．
+
+## 基本事項
+
+Gaussian整数 $x+iy$ のノルムは
+
+$$
+N(x+iy)=x^2+y^2
+$$
+
+で，$N(zw)=N(z)N(w)$ です．実数の式ではBrahmagupta–Fibonacci恒等式
+
+$$
+(a^2+b^2)(u^2+v^2)
+=(au-bv)^2+(av+bu)^2
+$$
+
+となります．符号を変えた
+
+$$
+(au+bv)^2+(av-bu)^2
+$$
+
+も同じ積です．
+
+商を2平方和にするには，分子となる2つの一次式が割る数でともに割り切れることを先に示します．また
+
+$$
+au-bv=x,\qquad bu+av=y
+$$
+
+のような逆向きの一次結合を作れれば，$u,v$ の公約数が $x,y$ の公約数も割ることから互いに素性を示せます．
+
+## 例題
+
+$$
+65=1^2+8^2=4^2+7^2
+$$
+
+です．恒等式で積を作ると
+
+$$
+65^2=(1\cdot4-8\cdot7)^2+(1\cdot7+8\cdot4)^2
+=(-52)^2+39^2．
+$$
+
+右辺の2整数には共通因子13があります．恒等式は表現を与えますが，互いに素な表現を保証しないため，問題ごとに最大公約数を別途確認します．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

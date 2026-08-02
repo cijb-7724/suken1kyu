@@ -1,0 +1,58 @@
+---
+title: "第389回 1次 問6"
+id: pri-problem-000062
+paper_id: pri-paper-0389
+question_number: 6
+cell_label: 構造をもつ行列式
+tags:
+  - determinant
+---
+
+## 問題
+
+$$
+\begin{vmatrix}
+0&a&c&b\\
+-a&0&b&c\\
+-c&-b&0&a\\
+-b&c&-a&0
+\end{vmatrix}
+$$
+
+を因数分解した形で求めなさい．
+
+## 必要な知識
+
+- [行列式](../../knowledge/primary/determinant.qmd)
+
+## 必要な発想
+
+行列式を展開して4次の同次式にし，平方差としてまとめる．
+
+## 解答
+
+第1行で展開し，各3次行列式を整理すると，
+
+$$
+\det A=a^4+2a^2b^2+b^4-c^4
+$$
+
+となる．前半は $(a^2+b^2)^2$ だから，平方差により
+
+$$
+\det A
+=(a^2+b^2)^2-c^4
+=\boxed{(a^2+b^2-c^2)(a^2+b^2+c^2)}
+$$
+
+である．
+
+## コメント
+
+展開後に $a^4+2a^2b^2+b^4$ を見つけることが因数分解の鍵です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

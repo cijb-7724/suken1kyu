@@ -1,0 +1,47 @@
+---
+title: "第427回 1次 問6"
+id: pri-problem-000083
+paper_id: pri-paper-0427
+question_number: 6
+cell_label: 対数級数の係数
+tags:
+  - maclaurin-expansion
+---
+
+## 問題
+
+$[\log(1-x)]^2$ のマクローリン展開における $x^5$ の係数を求めなさい．
+
+## 必要な知識
+
+- [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
+
+## 必要な発想
+
+$\log(1-x)=-\sum x^n/n$ を2乗し，添字の和が5になる組だけを足す．
+
+## 解答
+
+$$
+\log(1-x)=-\sum_{n=1}^{\infty}\frac{x^n}{n}
+$$
+
+だから，2乗の $x^5$ の係数は
+
+$$
+\sum_{k=1}^{4}\frac1{k(5-k)}
+=\frac14+\frac16+\frac16+\frac14
+=\boxed{\frac56}
+$$
+
+である．
+
+## コメント
+
+2つの負号は掛け合わせると正になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

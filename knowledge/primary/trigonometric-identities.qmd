@@ -1,0 +1,43 @@
+---
+title: "三角関数の恒等式"
+id: trigonometric-identities
+---
+
+## 概要
+
+加法定理，倍角公式，等分角に関する和と積を扱います．
+
+## 基本事項
+
+$$
+\sin2x=2\sin x\cos x,\qquad
+\cos2x=2\cos^2x-1
+$$
+
+です．さらに
+
+$$
+\sin4x=4\sin x\cos x\cos2x
+$$
+
+のように繰り返せます．$n$ 等分角の和では，$n$ 乗根
+
+$$
+1+\zeta+\cdots+\zeta^{n-1}=0
+$$
+
+の実部・虚部を取る方法が有効です．
+
+## 例題
+
+$1+i+i^2+i^3=0$ の実部を取れば $1-1=0$，虚部を取れば $1-1=0$ です．同じ考えで正多角形に対応する三角関数の和を求められます．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

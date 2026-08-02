@@ -1,0 +1,60 @@
+---
+title: "高階線形微分方程式"
+id: higher-order-linear-ode
+---
+
+## 概要
+
+3階以上を含む定数係数線形微分方程式を，特性多項式と未定係数法で解きます．重根の場合の解の形も扱います．
+
+## 基本事項
+
+$$
+a_m y^{(m)}+\cdots+a_1y'+a_0y=0
+$$
+
+へ $y=e^{rx}$ を代入すると特性多項式
+
+$$
+a_mr^m+\cdots+a_1r+a_0=0
+$$
+
+を得ます．実根 $r$ が重複度 $q$ をもつとき，対応する解は
+
+$$
+e^{rx},xe^{rx},\ldots,x^{q-1}e^{rx}
+$$
+
+です．複素根 $\alpha\pm i\beta$ なら $e^{\alpha x}\cos\beta x$ と $e^{\alpha x}\sin\beta x$ を使います．
+
+非斉次方程式では一般解は $y=y_h+y_p$ です．右辺が多項式なら同次数の多項式，指数関数なら同じ指数関数を特殊解として仮定します．仮定した形が斉次解と重なる場合は，重複度だけ $x$ を掛けます．
+
+## 例題
+
+$$
+y'''-3y''+3y'-y=1
+$$
+
+では左辺は $(D-1)^3y$ です．斉次解は
+
+$$
+y_h=(C_1+C_2x+C_3x^2)e^x．
+$$
+
+定数特殊解 $y_p=A$ を代入すると $-A=1$ なので $A=-1$ です．したがって
+
+$$
+y=(C_1+C_2x+C_3x^2)e^x-1
+$$
+
+となります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

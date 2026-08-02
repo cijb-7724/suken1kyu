@@ -1,0 +1,65 @@
+---
+title: "三角形の量の評価"
+id: triangle-extrema
+---
+
+## 概要
+
+三角形の辺長，面積，内接円・外接円半径の間の式を，正数の不等式へ変換して最大・最小を求めます．$s-a,s-b,s-c$ の置換が中心です．
+
+## 基本事項
+
+辺長を $a,b,c$，半周長を $s$，面積を $S$，内接円半径を $r$，外接円半径を $R$ とすると，
+
+$$
+S=rs,\qquad S=\frac{abc}{4R},\qquad
+S^2=s(s-a)(s-b)(s-c)
+$$
+
+です．
+
+$$
+x=s-a,\qquad y=s-b,\qquad z=s-c
+$$
+
+とおけば三角不等式により $x,y,z>0$ で，
+
+$$
+a=y+z,\quad b=z+x,\quad c=x+y,\quad s=x+y+z
+$$
+
+です．Heronの公式は $S^2=sxyz$ となり，相加相乗平均
+
+$$
+xyz\le\left(\frac{x+y+z}{3}\right)^3
+$$
+
+を直接使えます．
+
+### 代表的な評価
+
+$$
+\frac rR=\frac{4xyz}{(x+y)(y+z)(z+x)}\le\frac12
+$$
+
+は $(x+y)(y+z)(z+x)\ge8xyz$ から得られます．また $S\le s^2/(3\sqrt3)$ は固定周長で正三角形の面積が最大であることを表します．
+
+## 例題
+
+周長が $6$ の三角形の面積の最大値を求めます．$s=3$ なので
+
+$$
+S\le\frac{s^2}{3\sqrt3}=\sqrt3．
+$$
+
+等号は $x=y=z=1$，すなわち辺長 $2,2,2$ の正三角形で成り立ちます．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -1,0 +1,44 @@
+---
+title: "Pascalの定理と接線作図"
+id: pascal-theorem
+---
+
+## 概要
+
+円錐曲線に内接する六角形の共線性を述べるPascalの定理と，頂点を一致させた退化形を用いる接線作図を扱います．角度や距離を使わない射影幾何の定理です．
+
+## 基本事項
+
+円錐曲線上の6点を順に $A,B,C,D,E,F$ とします．3組の対辺
+
+$$
+AB\text{ と }DE,\qquad BC\text{ と }EF,\qquad CD\text{ と }FA
+$$
+
+の交点は一直線上にあります．この直線をPascal線といいます．
+
+隣接する2点を一致させる極限，例えば $F\to A$ を考えると，辺 $FA$ は点 $A$ における接線へ近づきます．従って，接線と既知の弦の交点を，ほか2組の対辺の交点を結ぶ直線から作図できます．
+
+### 作図時の注意
+
+平行線や3点の一致で交点が定まらない配置を避け，補助点は一般的な位置に取ります．ものさしだけで許される操作は，2点を結ぶ直線と2直線の交点を作ることです．
+
+## 例題
+
+円周上の点 $P$ の接線を作るため，ほかに $A,B,C,D$ を取ります．
+
+$$
+X=PA\cap CD,\qquad Y=AB\cap DP
+$$
+
+を作り，$XY$ と $BC$ の交点を $Z$ とします．退化六角形 $P,A,B,C,D,P$ へPascalの定理を使うと，$Z$ は $P$ における接線上にあります．従って $PZ$ が求める接線です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

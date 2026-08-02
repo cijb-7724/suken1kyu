@@ -1,0 +1,40 @@
+---
+title: "空間の直線と平面"
+id: analytic-geometry
+---
+
+## 概要
+
+空間内の直線・平面を，方向ベクトルと法線ベクトルで扱う方法をまとめます．
+
+## 基本事項
+
+平面 $ax+by+cz+d=0$ の法線ベクトルは $(a,b,c)$ です．平面上の2方向 $u,v$ が分かれば $u\times v$ が法線になります．2平面 $F=0,G=0$ の交線を含む平面は $F+\lambda G=0$ と表せます．
+
+点 $(x_0,y_0,z_0)$ と平面の距離は
+
+$$
+\frac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}
+$$
+
+です．方向ベクトル $d$ の直線と法線 $n$ の平面のなす角 $\theta$ は $\sin\theta=|d\cdot n|/(|d||n|)$ を満たします．
+
+## 例題
+
+点 $(1,0,0)$ を通り，$u=(1,1,0)$，$v=(0,1,1)$ に平行な平面を求めます．$u\times v=(1,-1,1)$ だから，
+
+$$
+(x-1)-y+z=0
+$$
+
+すなわち $x-y+z-1=0$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

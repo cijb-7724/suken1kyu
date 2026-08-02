@@ -1,0 +1,38 @@
+---
+title: "高階導関数"
+id: higher-derivative
+---
+
+## 概要
+
+積の高階微分を一般式で処理し，多数回の逐次微分を避けます．
+
+## 基本事項
+
+Leibnizの公式は
+
+$$
+(fg)^{(n)}=\sum_{k=0}^n\binom nk f^{(k)}g^{(n-k)}
+$$
+
+です．$f$ が低次多項式なら，高い導関数が0になるため和の項数が少なくなります．$e^{ax}$ は何回微分しても $a^ne^{ax}$ なので特に相性がよいです．
+
+## 例題
+
+$h(x)=xe^x$ では，$x$ の2次以上の導関数が0なので
+
+$$
+h^{(n)}(x)=xe^x+ne^x=(x+n)e^x
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

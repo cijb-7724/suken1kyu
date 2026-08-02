@@ -1,0 +1,32 @@
+---
+title: "一次合同式"
+id: linear-congruence
+---
+
+## 概要
+
+$ax\equiv b\pmod m$ を解くための最大公約数と逆元の使い方です．
+
+## 基本事項
+
+$d=\gcd(a,m)$ とすると，解が存在する必要十分条件は $d\mid b$ です．存在するときは式全体を $d$ で割り，互いに素な係数へ直します．$\gcd(a,m)=1$ なら拡張Euclid互除法で
+
+$$
+au+mv=1
+$$
+
+を作り，$u$ を $a^{-1}\pmod m$ として $x\equiv ub\pmod m$ を得ます．
+
+## 例題
+
+$6x\equiv9\pmod{15}$ では最大公約数3で割り，$2x\equiv3\pmod5$ とします．$2^{-1}\equiv3$ なので $x\equiv4\pmod5$ です．法15では $x\equiv4,9,14$ の3解があります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

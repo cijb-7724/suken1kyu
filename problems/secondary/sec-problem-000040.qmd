@@ -1,0 +1,110 @@
+---
+title: "第431回 2次 問5"
+id: sec-problem-000040
+paper_id: sec-paper-0431
+question_number: 5
+cell_label: 因数分解と素数
+tags:
+  - prime-factorization-identity
+---
+
+## 問題
+
+$a^3+b^3+1-3ab$ が500以下の素数 $p$ となる整数 $a,b,p$ の組をすべて求めなさい．
+
+## 必要な知識
+
+- [因数分解と素数](../../knowledge/secondary/prime-factorization-identity.qmd)
+
+### この問題で使う一般形
+
+$$
+x^3+y^3+z^3-3xyz
+=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)
+$$
+
+であり，第2因子は
+
+$$
+\frac12\{(x-y)^2+(y-z)^2+(z-x)^2\}\ge0
+$$
+
+です．積が正の素数なら，正の整数因子の一方は $1$ です．
+
+## 必要な発想
+
+3変数の立方和の恒等式で2因子に分ける．積が素数であることから，どちらかの因子を1に限定して整数解を調べる．
+
+## 解答
+
+$z=1$ として恒等式を使うと，
+
+$$
+p=(a+b+1)Q,\qquad
+Q=a^2+b^2+1-ab-a-b．
+$$
+
+$Q$ は平方和の半分なので $Q\ge0$ である．積が正の素数だから，
+
+$$
+(a+b+1,Q)=(1,p)\quad\text{または}\quad(p,1)
+$$
+
+のどちらかである．
+
+まず $a+b+1=1$，すなわち $b=-a$ のとき，
+
+$$
+p=Q=3a^2+1\le500．
+$$
+
+$a$ が奇数なら $p$ は2より大きい偶数になるため素数ではない．$|a|\le12$ の偶数を調べると，素数になるのは
+
+$$
+a=\pm2,\ \pm6,\ \pm8,\ \pm12
+$$
+
+であり，対応する $p$ はそれぞれ $13,109,193,433$ である．
+
+次に $Q=1$ のとき，
+
+$$
+a^2+b^2-ab-a-b=0．
+$$
+
+$b$ の2次方程式と見ると判別式は
+
+$$
+\Delta=(a+1)^2-4(a^2-a)=4-3(a-1)^2
+$$
+
+だから，$a=0,1,2$ に限られる．代入して $p=a+b+1$ が素数となるものを残すと，
+
+$$
+(a,b,p)=(0,1,2),(1,0,2),(2,2,5)
+$$
+
+を得る．以上より全解は
+
+$$
+\boxed{(a,b,p)=(\pm2,\mp2,13),(\pm6,\mp6,109),
+(\pm8,\mp8,193),(\pm12,\mp12,433)}
+$$
+
+および
+
+$$
+\boxed{(0,1,2),(1,0,2),(2,2,5)}
+$$
+
+である．
+
+## コメント
+
+因数分解後に第2因子が非負であることを確認することで，負の因子どうしの積という場合を除外できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

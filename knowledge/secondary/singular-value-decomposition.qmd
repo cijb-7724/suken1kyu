@@ -1,0 +1,57 @@
+---
+title: "特異値分解"
+id: singular-value-decomposition
+---
+
+## 概要
+
+正方行列に限らず任意の実行列を，2つの直交行列と非負対角行列の積へ分解します．$A^{\mathsf T}A$ の固有値問題との関係を中心に説明します．
+
+## 基本事項
+
+$A$ が $m\times n$ 実行列なら，
+
+$$
+A=U\Sigma V^{\mathsf T}
+$$
+
+と分解できます．$U,V$ は直交行列，$\Sigma$ は対角成分が非負の長方形対角行列です．対角成分 $\sigma_1\ge\sigma_2\ge\cdots\ge0$ を特異値といいます．
+
+$A^{\mathsf T}A$ は対称半正定値で，
+
+$$
+v^{\mathsf T}A^{\mathsf T}Av=\|Av\|^2\ge0
+$$
+
+です．従って固有値は非負です．$A^{\mathsf T}Av_i=\lambda_iv_i$，$\lambda_i>0$ なら
+
+$$
+\sigma_i=\sqrt{\lambda_i},\qquad
+u_i=\frac{Av_i}{\sigma_i}
+$$
+
+です．異なる固有値に属する $v_i$ は直交し，$u_i$ も正規直交します．固有値0の固有ベクトルは $A$ の零空間を張ります．
+
+## 例題
+
+$$
+A=\begin{pmatrix}3&0\\0&4\\0&0\end{pmatrix}
+$$
+
+では
+
+$$
+A^{\mathsf T}A=\begin{pmatrix}9&0\\0&16\end{pmatrix}．
+$$
+
+固有値は $16,9$ なので特異値は $4,3$ です．最大特異値4は，$\|v\|=1$ のときの $\|Av\|$ の最大値でもあります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

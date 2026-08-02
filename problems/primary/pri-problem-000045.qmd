@@ -1,0 +1,72 @@
+---
+title: "第372回 1次 問3"
+id: pri-problem-000045
+paper_id: pri-paper-0372
+question_number: 3
+cell_label: 外積の積
+tags:
+  - cross-product
+---
+
+## 問題
+
+$$
+a=\begin{pmatrix}1\\-2\\-1\end{pmatrix},\quad
+b=\begin{pmatrix}2\\3\\-5\end{pmatrix},\quad
+c=\begin{pmatrix}-3\\1\\-2\end{pmatrix}
+$$
+
+に対し，$(a\times b)\cdot\{(b\times c)\times(c\times a)\}$ を求めなさい．
+
+## 必要な知識
+
+- [外積・スカラー三重積](../../knowledge/primary/cross-product.qmd)
+
+## 必要な発想
+
+外積を3回計算せず，ベクトル三重積で式全体をスカラー三重積の平方へ変える．
+
+## 解答
+
+$X\times(Y\times Z)=Y(X\cdot Z)-Z(X\cdot Y)$ を使うと，
+
+$$
+(b\times c)\times(c\times a)
+=c\{(b\times c)\cdot a\}
+$$
+
+である．したがって，求める値は
+
+$$
+\{(a\times b)\cdot c\}^2
+$$
+
+となる．ここで
+
+$$
+a\times b=\begin{pmatrix}13\\3\\7\end{pmatrix}
+$$
+
+だから，
+
+$$
+(a\times b)\cdot c=-39+3-14=-50．
+$$
+
+よって答えは
+
+$$
+\boxed{2500}
+$$
+
+である．
+
+## コメント
+
+構造を先に整理すると，外積は1回だけで済みます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

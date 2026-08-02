@@ -1,0 +1,38 @@
+---
+title: "多変数関数の微分"
+id: multivariable-differentiation
+---
+
+## 概要
+
+偏微分と，曲面の接平面の求め方をまとめます．
+
+## 基本事項
+
+$f_x$ では $y$ を定数，$f_y$ では $x$ を定数として微分します．曲面 $z=f(x,y)$ の点 $(a,b,f(a,b))$ における接平面は
+
+$$
+z-f(a,b)=f_x(a,b)(x-a)+f_y(a,b)(y-b)
+$$
+
+です．商や合成関数では1変数と同じ微分法則を使います．
+
+## 例題
+
+$f=x^2+xy+y^2$ の $(1,1)$ における偏微分は $f_x=2x+y=3$，$f_y=x+2y=3$ です．$f(1,1)=3$ なので接平面は
+
+$$
+z-3=3(x-1)+3(y-1)
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

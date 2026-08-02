@@ -1,0 +1,58 @@
+---
+title: "第440回 2次 問5"
+id: sec-problem-000047
+paper_id: sec-paper-0440
+question_number: 5
+cell_label: ものさしだけの接線作図
+tags:
+  - pascal-theorem
+---
+
+## 問題
+
+円 $C$ とその周上の点 $P$ が与えられている．ものさしだけを用いて，$P$ を接点とする接線を作図し，手順を説明しなさい．
+
+## 必要な知識
+
+- [Pascalの定理と接線作図](../../knowledge/secondary/pascal-theorem.qmd)
+
+### この問題で使う一般形
+
+円錐曲線に内接する六角形では，3組の対辺の交点が一直線上に並ぶというPascalの定理が成り立ちます．隣接する2頂点を一致させた退化形では，その辺は一致点における接線になります．
+
+## 必要な発想
+
+六角形 $P,A,B,C,D,P$ にPascalの定理を使う．未知の接線と既知の直線 $BC$ の交点を，残り2組の対辺の交点から復元する．
+
+## 解答
+
+円周上に $P$ と異なる4点 $A,B,C,D$ を，以下の交点が有限に定まる一般的な位置に取る．
+
+1. 直線 $PA$ と $CD$ の交点を $X$ とする．
+2. 直線 $AB$ と $DP$ の交点を $Y$ とする．
+3. 直線 $XY$ を引き，直線 $BC$ との交点を $Z$ とする．
+4. 直線 $PZ$ を引く．これが求める接線である．
+
+理由を説明する．円に内接する退化六角形
+
+$$
+P,A,B,C,D,P
+$$
+
+を考える．Pascalの定理によれば，対辺の交点
+
+$$
+PA\cap CD=X,\qquad AB\cap DP=Y,\qquad BC\cap \ell=Z
+$$
+
+は一直線上にある．ここで最後の辺 $PP$ は，2頂点が一致した極限では点 $P$ における接線 $\ell$ を表す．したがって，先に作った $X,Y$ を結ぶ直線と $BC$ の交点 $Z$ は接線上にあり，$PZ=\ell$ である．
+
+## コメント
+
+円の中心を作図する必要はありません．円を円錐曲線として扱う射影幾何の性質が，ものさしだけの作図を可能にします．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

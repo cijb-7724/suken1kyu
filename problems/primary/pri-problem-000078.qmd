@@ -1,0 +1,53 @@
+---
+title: "第427回 1次 問1"
+id: pri-problem-000078
+paper_id: pri-paper-0427
+question_number: 1
+cell_label: 最大の合同解
+tags:
+  - chinese-remainder-theorem
+---
+
+## 問題
+
+$x\equiv4\pmod7$，$x\equiv7\pmod{17}$ を満たす $5000$ 未満の最大の正の整数 $x$ を求めなさい．
+
+## 必要な知識
+
+- [中国剰余定理](../../knowledge/primary/chinese-remainder-theorem.qmd)
+
+## 必要な発想
+
+まず法 $119$ で1つの解を求め，そこから $119$ ずつ増える数列の最大項を選ぶ．
+
+## 解答
+
+$x=4+7k$ とおくと，法 $17$ で
+
+$$
+4+7k\equiv7
+$$
+
+だから，$7k\equiv3\pmod{17}$ である．$7^{-1}\equiv5\pmod{17}$ より $k\equiv15\pmod{17}$ なので，
+
+$$
+x\equiv109\pmod{119}．
+$$
+
+したがって $x=109+119m$ であり，$x<5000$ を満たす最大の $m$ は $41$ である．よって，
+
+$$
+\boxed{x=109+119\cdot41=4988}
+$$
+
+となる．
+
+## コメント
+
+最小解を求めて終わらず，解全体の周期 $7\cdot17=119$ を使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

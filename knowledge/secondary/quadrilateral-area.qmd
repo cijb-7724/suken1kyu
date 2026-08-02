@@ -1,0 +1,66 @@
+---
+title: "凸四角形の面積公式"
+id: quadrilateral-area
+---
+
+## 概要
+
+4辺と対角の和から凸四角形の面積を表すBretschneiderの公式と，そこから得られるBrahmagupta型の上界を扱います．長い辺長式を平方差へまとめる方法も説明します．
+
+## 基本事項
+
+辺長を $a,b,c,d$，半周長を $s$，向かい合う角を $\theta,\phi$，面積を $S$ とすると，
+
+$$
+S^2=(s-a)(s-b)(s-c)(s-d)-abcd\cos^2\frac{\theta+\phi}{2}
+$$
+
+です．第2項は非負なので，
+
+$$
+S^2\le(s-a)(s-b)(s-c)(s-d)．
+$$
+
+右辺には恒等式
+
+$$
+16(s-a)(s-b)(s-c)(s-d)
+=4(ad+bc)^2-(a^2-b^2-c^2+d^2)^2
+$$
+
+があります．従って
+
+$$
+16S^2\le X^2-u^2,\quad
+X=2(ad+bc),\quad u=a^2-b^2-c^2+d^2
+$$
+
+と双曲線型の平方差へ表せます．円に内接する四角形では $\theta+\phi=\pi$ なので余弦項が0となり等号です．
+
+## 例題
+
+長方形の辺を $a,b,a,b$ とします．$s=a+b$ だから上界は
+
+$$
+(s-a)(s-b)(s-a)(s-b)=a^2b^2
+$$
+
+で，実際の面積は $ab$ なので等号です．長方形は円に内接するため，Bretschneiderの余弦項が0になることとも一致します．
+
+2つの四角形を比較する問題では，$XX'-uu'$ と $\sqrt{X^2-u^2}\sqrt{X'^2-u'^2}$ の差を平方して
+
+$$
+(Xu'-X'u)^2
+$$
+
+へ帰着させるのが基本です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

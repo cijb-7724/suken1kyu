@@ -1,0 +1,59 @@
+---
+title: "第380回 1次 問1"
+id: pri-problem-000050
+paper_id: pri-paper-0380
+question_number: 1
+cell_label: 分数方程式
+tags:
+  - equation
+---
+
+## 問題
+
+方程式
+
+$$
+\frac2{x-1}+\frac4{x-3}+\frac6{x-5}+\frac8{x-7}=x^2-3x-8
+$$
+
+を満たす整数 $x$ を求めなさい．
+
+## 必要な知識
+
+- [方程式](../../knowledge/primary/equation.qmd)
+
+## 必要な発想
+
+定義できない値を除外してから通分し，分子の多項式を因数分解する．
+
+## 解答
+
+$x\ne1,3,5,7$ である．両辺を移項して通分すると，
+
+$$
+\frac{-(x+1)(x-4)Q(x)}{(x-1)(x-3)(x-5)(x-7)}=0
+$$
+
+となる．ただし，
+
+$$
+Q(x)=x^4-16x^3+82x^2-144x+61
+$$
+
+である．$Q(x)$ が整数根をもつなら，整数根定理から候補は $\pm1,\pm61$ に限られるが，いずれも根ではない．したがって，整数解は
+
+$$
+\boxed{x=-1,\ 4}
+$$
+
+である．いずれも除外した4値には含まれず，元の式を満たす．
+
+## コメント
+
+分母を払った後も，最初に除外した値を解へ戻してはいけません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,58 @@
+---
+title: "第406回 1次 問7"
+id: pri-problem-000070
+paper_id: pri-paper-0406
+question_number: 7
+cell_label: 平行四辺形上の積分
+tags:
+  - change-of-variables
+---
+
+## 問題
+
+$O(0,0)$，$P(2,1)$，$Q(3,4)$，$R(1,3)$ を頂点とする四角形 $D$ に対し，
+
+$$
+\iint_D(x+y)\,dx\,dy
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [変数変換](../../knowledge/primary/change-of-variables.qmd)
+
+## 必要な発想
+
+$Q=P+R$ なので領域は平行四辺形である．2本の辺を基底にして単位正方形から写す．
+
+## 解答
+
+$$
+(x,y)=u(2,1)+v(1,3),\qquad0\le u,v\le1
+$$
+
+とおく．Jacobianの絶対値は
+
+$$
+\left|\begin{vmatrix}2&1\\1&3\end{vmatrix}\right|=5
+$$
+
+であり，$x+y=3u+4v$ である．したがって，
+
+$$
+\iint_D(x+y)dxdy
+=5\int_0^1\int_0^1(3u+4v)dudv
+=5\left(\frac32+2\right)
+=\boxed{\frac{35}{2}}．
+$$
+
+## コメント
+
+頂点の関係 $Q=P+R$ に気づくと，領域の記述が一気に簡単になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

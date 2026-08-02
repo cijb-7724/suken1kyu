@@ -1,0 +1,34 @@
+---
+title: "定数係数線形微分方程式"
+id: constant-coefficient-ode
+---
+
+## 概要
+
+定数係数の線形微分方程式を，特性方程式と特殊解で解く方法です．
+
+## 基本事項
+
+$y''+ay'+by=0$ に $y=e^{rx}$ を代入すると，特性方程式 $r^2+ar+b=0$ を得ます．相異なる実根 $r_1,r_2$ なら $C_1e^{r_1x}+C_2e^{r_2x}$，重根 $r$ なら $(C_1+C_2x)e^{rx}$ が一般解です．非斉次方程式では斉次解に特殊解を加えます．
+
+右辺が $e^{rx}$ で，$r$ が特性根と一致するときは，仮定する特殊解に $x$ を掛けるか，$y=e^{rx}u$ と置換します．
+
+## 例題
+
+$y''-2y'+y=0$ の特性方程式は $(r-1)^2=0$ なので，
+
+$$
+y=(C_1+C_2x)e^x
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

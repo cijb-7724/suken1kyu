@@ -1,0 +1,45 @@
+---
+title: "固有値"
+id: eigenvalue
+---
+
+## 概要
+
+行列の固有値の求め方と，トレース・行列式との関係をまとめます．
+
+## 基本事項
+
+$Av=\lambda v$ を満たす非零ベクトル $v$ があるとき，$\lambda$ は固有値です．固有値は
+
+$$
+\det(\lambda I-A)=0
+$$
+
+の根です．$n$ 次行列の固有値を重複度込みで $\lambda_i$ とすると，
+
+$$
+\sum_i\lambda_i=\operatorname{tr}A,\qquad
+\prod_i\lambda_i=\det A
+$$
+
+です．
+
+## 例題
+
+$A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$ では，
+
+$$
+\det(\lambda I-A)=(\lambda-3)(\lambda-1)
+$$
+
+だから固有値は $3,1$ です．和はトレース $4$，積は行列式 $3$ と一致します．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

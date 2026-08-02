@@ -1,0 +1,54 @@
+---
+title: "第389回 1次 問3"
+id: pri-problem-000059
+paper_id: pri-paper-0389
+question_number: 3
+cell_label: 点と平面の距離
+tags:
+  - analytic-geometry
+---
+
+## 問題
+
+3点 $(0,-1,1)$，$(3,-2,-3)$，$(6,3,5)$ を通る平面と，点 $(-2,5,6)$ との距離を求めなさい．
+
+## 必要な知識
+
+- [空間の直線と平面](../../knowledge/primary/analytic-geometry.qmd)
+
+## 必要な発想
+
+平面上の2方向ベクトルの外積から法線ベクトルを作り，点と平面の距離公式を使う．
+
+## 解答
+
+平面上の2方向ベクトルを
+
+$$
+u=(3,-1,-4),\qquad v=(6,4,4)
+$$
+
+とすると，$u\times v=6(2,-6,3)$ である．したがって平面は
+
+$$
+2x-6y+3z-9=0
+$$
+
+と表せる．点 $(-2,5,6)$ からの距離は
+
+$$
+\frac{|2(-2)-6\cdot5+3\cdot6-9|}{\sqrt{2^2+(-6)^2+3^2}}
+=\frac{25}{7}．
+$$
+
+よって，答えは $\boxed{25/7}$ である．
+
+## コメント
+
+法線ベクトルは定数倍しても同じ平面を表すので，成分を約分して使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

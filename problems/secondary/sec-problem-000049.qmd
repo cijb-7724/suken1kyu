@@ -1,0 +1,86 @@
+---
+title: "第440回 2次 問7"
+id: sec-problem-000049
+paper_id: sec-paper-0440
+question_number: 7
+cell_label: 3階線形微分方程式
+tags:
+  - higher-order-linear-ode
+---
+
+## 問題
+
+$$
+y'''-6y''+12y'-8y=8x^2,\qquad
+y(0)=2, y'(0)=1, y''(0)=0
+$$
+
+を満たす $y$ を求めなさい．
+
+## 必要な知識
+
+- [高階線形微分方程式](../../knowledge/secondary/higher-order-linear-ode.qmd)
+
+### この問題で使う一般形
+
+定数係数線形方程式では，斉次部分の特性多項式から斉次解を作ります．右辺が多項式なら同次数の多項式を特殊解として仮定できます．重根 $r$ が3重なら，斉次解は $(C_1+C_2x+C_3x^2)e^{rx}$ です．
+
+## 必要な発想
+
+左辺の演算子は $(D-2)^3$ である．斉次解を作り，右辺 $8x^2$ に対して2次多項式の特殊解を求める．
+
+## 解答
+
+特性方程式は
+
+$$
+r^3-6r^2+12r-8=(r-2)^3=0
+$$
+
+だから，斉次解は
+
+$$
+y_h=(C_1+C_2x+C_3x^2)e^{2x}
+$$
+
+である．特殊解を $y_p=Ax^2+Bx+C$ とおく．$y_p'''=0$ を含めて元の式へ代入すると，
+
+$$
+-8Ax^2+(24A-8B)x+(-12A+12B-8C)=8x^2．
+$$
+
+係数比較から
+
+$$
+A=-1,\qquad B=-3,\qquad C=-3
+$$
+
+を得る．よって，
+
+$$
+y=(C_1+C_2x+C_3x^2)e^{2x}-x^2-3x-3．
+$$
+
+初期条件を順に代入すると，
+
+$$
+C_1=5,\qquad C_2=-6,\qquad C_3=3．
+$$
+
+したがって，
+
+$$
+\boxed{y=(5-6x+3x^2)e^{2x}-x^2-3x-3}
+$$
+
+である．
+
+## コメント
+
+斉次解の多項式因子と特殊解の多項式は役割が異なります．両方を混同せず，最後に初期条件を適用します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

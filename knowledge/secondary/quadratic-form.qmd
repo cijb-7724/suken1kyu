@@ -1,0 +1,46 @@
+---
+title: "2次形式と半正定値性"
+id: quadratic-form
+---
+
+## 概要
+
+2次式を対称行列 $x^{\mathsf T}Ax$ として表し，すべての実ベクトルで非負になる条件を行列の半正定値性として判定します．不等式の証明を線形代数へ変換する方法です．
+
+## 基本事項
+
+実対称行列 $A$ に対し，
+
+$$
+q(x)=x^{\mathsf T}Ax
+$$
+
+を2次形式といいます．すべての $x$ で $q(x)\ge0$ なら $A$ は半正定値です．これは全固有値が非負であることと同値です．
+
+Sylvesterの判定法の半正定値版では，実対称行列のすべての主小行列式が非負であることが必要十分です．$3\times3$ なら，3個の対角成分，3個の2次主小行列式，全行列式を確認します．正定値なら左上からの首座小行列式だけで判定できますが，半正定値ではすべての主小行列式が必要です．
+
+変数を $X_i=c_ix_i$ と規格化し，対角係数を1にすると，非対角成分を三角関数などの既知量として読めることがあります．
+
+## 例題
+
+$$
+q(x,y)=x^2+2axy+y^2
+$$
+
+の行列は $A=\begin{pmatrix}1&a\\a&1\end{pmatrix}$ です．主小行列式は $1,1,1-a^2$ なので，すべての $x,y$ で $q\ge0$ となる条件は
+
+$$
+|a|\le1
+$$
+
+です．実際，$q=(x+ay)^2+(1-a^2)y^2$ と平方完成しても同じ条件を得ます．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

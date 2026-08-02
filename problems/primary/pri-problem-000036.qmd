@@ -1,0 +1,59 @@
+---
+title: "第363回 1次 問1"
+id: pri-problem-000036
+paper_id: pri-paper-0363
+question_number: 1
+cell_label: 4次方程式の根
+tags:
+  - polynomial-value-and-roots
+---
+
+## 問題
+
+4次方程式
+
+$$
+x^4+x^3+kx^2+8x+6720=0
+$$
+
+は相異なる4実根をもち，そのうち2根の積が $80$ である．$k$ を求めなさい．
+
+## 必要な知識
+
+- [多項式の値と根](../../knowledge/primary/polynomial-value-and-roots.qmd)
+
+## 必要な発想
+
+残り2根の積は定数項から $84$ と分かる．各組の和を未知数にして，根と係数の関係を使う．
+
+## 解答
+
+積が $80$ の2根の和を $s$，残り2根の和を $t$ とする．4根の積は $6720$ だから，残り2根の積は $6720/80=84$ である．根と係数の関係より
+
+$$
+s+t=-1,\qquad 80t+84s=-8．
+$$
+
+これを解くと $s=18$，$t=-19$ である．したがって4根は，
+
+$$
+u^2-18u+80=0,\qquad u^2+19u+84=0
+$$
+
+の根，すなわち $8,10,-7,-12$ である．$x^2$ の係数は2根ずつの積の総和なので，
+
+$$
+k=80+84+st=164-342=\boxed{-178}
+$$
+
+となる．
+
+## コメント
+
+4根を最初から置くより，積が分かっている2組の「和」だけを置くと整理できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,53 @@
+---
+title: "第414回 1次 問1"
+id: pri-problem-000071
+paper_id: pri-paper-0414
+question_number: 1
+cell_label: 一次合同式
+tags:
+  - linear-congruence
+---
+
+## 問題
+
+$2023n\equiv51\pmod{221}$ を満たす最小の正の整数 $n$ を求めなさい．
+
+## 必要な知識
+
+- [一次合同式](../../knowledge/primary/linear-congruence.qmd)
+
+## 必要な発想
+
+係数を法 $221$ で小さくしてから逆元を求める．
+
+## 解答
+
+$2023\equiv34\pmod{221}$ だから，
+
+$$
+34n\equiv51\pmod{221}．
+$$
+
+$\gcd(34,221)=17$ で，$51$ も17の倍数だから，合同式全体を17で割る．実際，
+
+$$
+2n\equiv3\pmod{13}．
+$$
+
+$2^{-1}\equiv7\pmod{13}$ より $n\equiv21\equiv8\pmod{13}$ である．したがって，最小の正の整数は
+
+$$
+\boxed{8}
+$$
+
+である．
+
+## コメント
+
+係数と法が互いに素でないとき，逆元は存在しません．まず最大公約数で割ります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,58 @@
+---
+title: "Wilsonの定理"
+id: wilson-theorem
+---
+
+## 概要
+
+素数を法とする階乗の合同式を与えるWilsonの定理と，大きな階乗の剰余を末尾の因子だけで処理する方法を扱います．
+
+## 基本事項
+
+$p>1$ に対し，
+
+$$
+p\text{ が素数}\iff(p-1)!\equiv-1\pmod p
+$$
+
+です．素数 $p$ の法では，$1,2,\ldots,p-1$ の各元は逆元をもちます．自己逆元 $1,-1$ 以外は逆元と対にして積が1となるため，全積が $-1$ になります．
+
+$(p-k)!$ の剰余を求めるときは
+
+$$
+(p-1)!=(p-k)!\,(p-k+1)\cdots(p-1)
+$$
+
+とし，後半を $-(k-1),\ldots,-1$ に置き換えます．従って
+
+$$
+(p-k)!\cdot(-1)^{k-1}(k-1)!\equiv-1\pmod p
+$$
+
+です．最後に小さい階乗の逆元を掛けます．
+
+合成数の法に対してWilsonの定理を直接使うことはできません．互いに素な素因数へ分けて各法で計算し，中国剰余定理で戻します．
+
+## 例題
+
+$10!$ を13で割った余りを求めます．Wilsonの定理より
+
+$$
+12!=10!\cdot11\cdot12\equiv-1\pmod{13}．
+$$
+
+$11\cdot12\equiv(-2)(-1)=2$ だから，$2\cdot10!\equiv-1\equiv12$ です．$2^{-1}\equiv7$ より
+
+$$
+10!\equiv12\cdot7\equiv6\pmod{13}．
+$$
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

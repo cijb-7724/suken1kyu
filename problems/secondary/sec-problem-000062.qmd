@@ -1,0 +1,118 @@
+---
+title: "第461回 2次 問6"
+id: sec-problem-000062
+paper_id: sec-paper-0461
+question_number: 6
+cell_label: Householder三重対角化
+tags:
+  - householder-transformation
+  - symmetric-tridiagonalization
+---
+
+## 問題
+
+$$
+A=\begin{pmatrix}
+1&2&2&1\\
+2&3&1&1\\
+2&1&2&0\\
+1&1&0&1
+\end{pmatrix}
+$$
+
+について，指定されたHouseholder変換を求め，さらに第1標準基底を固定する直交行列 $Q$ により $Q^{\mathsf T}AQ$ を非対角成分が正の三重対角行列にしなさい．
+
+## 必要な知識
+
+- [Householder変換](../../knowledge/secondary/householder-transformation.qmd)
+- [対称行列の三重対角化](../../knowledge/secondary/symmetric-tridiagonalization.qmd)
+
+### この問題で使う一般形
+
+同じ長さのベクトル $x,y$ に対し，
+
+$$
+u=\frac{x-y}{\|x-y\|},\qquad H=I-2uu^{\mathsf T}
+$$
+
+とおけば $Hx=y$ となります．対称行列には左右から同じ直交行列を掛ける相似変換を行い，対称性と固有値を保ったまま不要な成分を0にします．
+
+## 必要な発想
+
+最初の列の下3成分 $(2,2,1)$ を $(3,0,0)$ へ反射する．次に残る2成分 $(2/3,1/3)$ を $(\sqrt5/3,0)$ へ反射し，2段階の直交変換を合成する．
+
+## 解答
+
+(1) $x=(2,2,1)^{\mathsf T}$，$y=(s,0,0)^{\mathsf T}$ で $\|x\|=\|y\|$ だから，$s=3$ である．
+
+$$
+u=\frac{x-y}{\|x-y\|}
+=\frac1{\sqrt6}\begin{pmatrix}-1\\2\\1\end{pmatrix}
+$$
+
+より，
+
+$$
+\boxed{
+H=I-2uu^{\mathsf T}
+=\begin{pmatrix}
+2/3&2/3&1/3\\
+2/3&-1/3&-2/3\\
+1/3&-2/3&2/3
+\end{pmatrix}}．
+$$
+
+$Q_1=\operatorname{diag}(1,H)$ とすると，
+
+$$
+Q_1^{\mathsf T}AQ_1=
+\begin{pmatrix}
+1&3&0&0\\
+3&11/3&2/3&1/3\\
+0&2/3&2/3&1/3\\
+0&1/3&1/3&5/3
+\end{pmatrix}．
+$$
+
+(2) 次に $(2/3,1/3)^{\mathsf T}$ を $(\sqrt5/3,0)^{\mathsf T}$ へ移す2次直交行列として
+
+$$
+K=\frac1{\sqrt5}\begin{pmatrix}2&1\\1&-2\end{pmatrix}
+$$
+
+を取る．符号を調整して最後の非対角成分も正にした合成行列は，例えば
+
+$$
+\boxed{
+Q=\begin{pmatrix}
+1&0&0&0\\
+0&2/3&\sqrt5/3&0\\
+0&2/3&-4\sqrt5/15&-\sqrt5/5\\
+0&1/3&-2\sqrt5/15&2\sqrt5/5
+\end{pmatrix}}
+$$
+
+である．各列は正規直交し，第1列は $e_1$ である．実際に左右から掛けると，
+
+$$
+\boxed{
+Q^{\mathsf T}AQ=
+\begin{pmatrix}
+1&3&0&0\\
+3&11/3&\sqrt5/3&0\\
+0&\sqrt5/3&17/15&3/5\\
+0&0&3/5&6/5
+\end{pmatrix}}
+$$
+
+となり，三重対角成分 $3,\sqrt5/3,3/5$ はすべて正である．
+
+## コメント
+
+1回目の変換で第1列を整えた後，2回目は右下の部分空間だけに作用させます．前に作った0を壊さないことが三重対角化の基本です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

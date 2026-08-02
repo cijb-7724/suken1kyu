@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "secondary",
-  "count": 55,
+  "count": 76,
   "root_ids": [
     "number-theory",
     "analysis",
@@ -34,6 +34,21 @@
               "id": "descent-parity",
               "label": "降下法と偶奇",
               "children": []
+            },
+            {
+              "id": "p-adic-valuation",
+              "label": "素数の指数とLTE",
+              "children": []
+            },
+            {
+              "id": "wilson-theorem",
+              "label": "Wilsonの定理",
+              "children": []
+            },
+            {
+              "id": "sum-of-two-squares",
+              "label": "2平方和",
+              "children": []
             }
           ]
         }
@@ -50,6 +65,11 @@
             {
               "id": "series-convergence",
               "label": "級数の収束判定",
+              "children": []
+            },
+            {
+              "id": "lacunary-series",
+              "label": "疎な指数をもつ級数",
               "children": []
             },
             {
@@ -93,6 +113,21 @@
               "id": "euler-differential-equation",
               "label": "オイラー型微分方程式",
               "children": []
+            },
+            {
+              "id": "riccati-equation",
+              "label": "Riccati型微分方程式",
+              "children": []
+            },
+            {
+              "id": "ode-substitution",
+              "label": "微分方程式の置換",
+              "children": []
+            },
+            {
+              "id": "higher-order-linear-ode",
+              "label": "高階線形微分方程式",
+              "children": []
             }
           ]
         },
@@ -111,6 +146,16 @@
               "children": []
             }
           ]
+        },
+        {
+          "id": "improper-integral-convergence",
+          "label": "広義積分の収束判定",
+          "children": []
+        },
+        {
+          "id": "logarithmic-integral",
+          "label": "対数を含む定積分",
+          "children": []
         },
         {
           "id": "special-functions",
@@ -158,6 +203,26 @@
           "id": "projective-collinearity",
           "label": "射影幾何と共線性",
           "children": []
+        },
+        {
+          "id": "pascal-theorem",
+          "label": "Pascalの定理と接線作図",
+          "children": []
+        },
+        {
+          "id": "triangle-formulas",
+          "label": "三角形の半角公式",
+          "children": []
+        },
+        {
+          "id": "triangle-extrema",
+          "label": "三角形の量の評価",
+          "children": []
+        },
+        {
+          "id": "quadrilateral-area",
+          "label": "凸四角形の面積公式",
+          "children": []
         }
       ]
     },
@@ -190,6 +255,16 @@
               "children": []
             },
             {
+              "id": "two-sample-t-test",
+              "label": "2標本t検定",
+              "children": []
+            },
+            {
+              "id": "correlation-inference",
+              "label": "相関係数の推測",
+              "children": []
+            },
+            {
               "id": "chi-square-goodness-of-fit",
               "label": "適合度検定",
               "children": []
@@ -204,6 +279,11 @@
         {
           "id": "least-squares-regression",
           "label": "最小二乗法",
+          "children": []
+        },
+        {
+          "id": "gamma-distribution",
+          "label": "ガンマ分布",
           "children": []
         }
       ]
@@ -225,6 +305,11 @@
         {
           "id": "combinatorial-construction",
           "label": "組合せ的構成",
+          "children": []
+        },
+        {
+          "id": "prime-factorization-identity",
+          "label": "因数分解と素数",
           "children": []
         },
         {
@@ -253,6 +338,21 @@
         {
           "id": "jordan-normal-form",
           "label": "Jordan標準形",
+          "children": []
+        },
+        {
+          "id": "lu-decomposition",
+          "label": "LU分解",
+          "children": []
+        },
+        {
+          "id": "singular-value-decomposition",
+          "label": "特異値分解",
+          "children": []
+        },
+        {
+          "id": "quadratic-form",
+          "label": "2次形式と半正定値性",
           "children": []
         },
         {
@@ -302,6 +402,11 @@
           "id": "algebraic-manipulation",
           "label": "整理技能",
           "children": []
+        },
+        {
+          "id": "trigonometric-cubic",
+          "label": "3倍角と3次方程式",
+          "children": []
         }
       ]
     }
@@ -320,7 +425,10 @@
         "integers",
         "quadratic-residue",
         "modular-construction",
-        "descent-parity"
+        "descent-parity",
+        "p-adic-valuation",
+        "wilson-theorem",
+        "sum-of-two-squares"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
@@ -329,10 +437,13 @@
         "sec-problem-000015",
         "sec-problem-000019",
         "sec-problem-000022",
-        "sec-problem-000029"
+        "sec-problem-000029",
+        "sec-problem-000043",
+        "sec-problem-000050",
+        "sec-problem-000057"
       ],
       "direct_problem_count": 0,
-      "problem_count": 6,
+      "problem_count": 9,
       "knowledge_path": "knowledge/secondary/number-theory.html"
     },
     "integers": {
@@ -343,7 +454,10 @@
       "children": [
         "quadratic-residue",
         "modular-construction",
-        "descent-parity"
+        "descent-parity",
+        "p-adic-valuation",
+        "wilson-theorem",
+        "sum-of-two-squares"
       ],
       "ancestors": [
         "number-theory"
@@ -351,7 +465,10 @@
       "descendants": [
         "quadratic-residue",
         "modular-construction",
-        "descent-parity"
+        "descent-parity",
+        "p-adic-valuation",
+        "wilson-theorem",
+        "sum-of-two-squares"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
@@ -360,10 +477,13 @@
         "sec-problem-000015",
         "sec-problem-000019",
         "sec-problem-000022",
-        "sec-problem-000029"
+        "sec-problem-000029",
+        "sec-problem-000043",
+        "sec-problem-000050",
+        "sec-problem-000057"
       ],
       "direct_problem_count": 0,
-      "problem_count": 6,
+      "problem_count": 9,
       "knowledge_path": "knowledge/secondary/integers.html"
     },
     "quadratic-residue": {
@@ -435,6 +555,69 @@
       "problem_count": 2,
       "knowledge_path": "knowledge/secondary/descent-parity.html"
     },
+    "p-adic-valuation": {
+      "id": "p-adic-valuation",
+      "label": "素数の指数とLTE",
+      "parent_id": "integers",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "integers"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000057"
+      ],
+      "problem_ids": [
+        "sec-problem-000057"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/p-adic-valuation.html"
+    },
+    "wilson-theorem": {
+      "id": "wilson-theorem",
+      "label": "Wilsonの定理",
+      "parent_id": "integers",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "integers"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000043"
+      ],
+      "problem_ids": [
+        "sec-problem-000043"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/wilson-theorem.html"
+    },
+    "sum-of-two-squares": {
+      "id": "sum-of-two-squares",
+      "label": "2平方和",
+      "parent_id": "integers",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "number-theory",
+        "integers"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000050"
+      ],
+      "problem_ids": [
+        "sec-problem-000050"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/sum-of-two-squares.html"
+    },
     "analysis": {
       "id": "analysis",
       "label": "解析",
@@ -445,12 +628,15 @@
         "fourier-analysis",
         "differential-equation",
         "multivariable-calculus",
+        "improper-integral-convergence",
+        "logarithmic-integral",
         "special-functions"
       ],
       "ancestors": [],
       "descendants": [
         "series",
         "series-convergence",
+        "lacunary-series",
         "poisson-summation-formula",
         "fourier-analysis",
         "fourier-transform",
@@ -459,9 +645,14 @@
         "exact-differential-equation",
         "integrating-factor",
         "euler-differential-equation",
+        "riccati-equation",
+        "ode-substitution",
+        "higher-order-linear-ode",
         "multivariable-calculus",
         "change-of-variables",
         "multivariable-extrema",
+        "improper-integral-convergence",
+        "logarithmic-integral",
         "special-functions",
         "lambert-w-function"
       ],
@@ -476,10 +667,19 @@
         "sec-problem-000028",
         "sec-problem-000030",
         "sec-problem-000033",
-        "sec-problem-000035"
+        "sec-problem-000035",
+        "sec-problem-000037",
+        "sec-problem-000042",
+        "sec-problem-000044",
+        "sec-problem-000049",
+        "sec-problem-000051",
+        "sec-problem-000054",
+        "sec-problem-000056",
+        "sec-problem-000058",
+        "sec-problem-000063"
       ],
       "direct_problem_count": 0,
-      "problem_count": 10,
+      "problem_count": 19,
       "knowledge_path": "knowledge/secondary/analysis.html"
     },
     "series": {
@@ -489,6 +689,7 @@
       "depth": 1,
       "children": [
         "series-convergence",
+        "lacunary-series",
         "poisson-summation-formula"
       ],
       "ancestors": [
@@ -496,15 +697,18 @@
       ],
       "descendants": [
         "series-convergence",
+        "lacunary-series",
         "poisson-summation-formula"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
         "sec-problem-000009",
-        "sec-problem-000023"
+        "sec-problem-000023",
+        "sec-problem-000054",
+        "sec-problem-000058"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 4,
       "knowledge_path": "knowledge/secondary/series.html"
     },
     "series-convergence": {
@@ -530,6 +734,27 @@
       "problem_count": 2,
       "knowledge_path": "knowledge/secondary/series-convergence.html"
     },
+    "lacunary-series": {
+      "id": "lacunary-series",
+      "label": "疎な指数をもつ級数",
+      "parent_id": "series",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "series"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000054"
+      ],
+      "problem_ids": [
+        "sec-problem-000054"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/lacunary-series.html"
+    },
     "poisson-summation-formula": {
       "id": "poisson-summation-formula",
       "label": "ポアソンの和公式",
@@ -541,10 +766,14 @@
         "series"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000058"
+      ],
+      "problem_ids": [
+        "sec-problem-000058"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/poisson-summation-formula.html"
     },
     "fourier-analysis": {
@@ -566,10 +795,11 @@
       "direct_problem_ids": [],
       "problem_ids": [
         "sec-problem-000002",
-        "sec-problem-000030"
+        "sec-problem-000030",
+        "sec-problem-000058"
       ],
       "direct_problem_count": 0,
-      "problem_count": 2,
+      "problem_count": 3,
       "knowledge_path": "knowledge/secondary/fourier-analysis.html"
     },
     "fourier-transform": {
@@ -584,13 +814,15 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "sec-problem-000002"
+        "sec-problem-000002",
+        "sec-problem-000058"
       ],
       "problem_ids": [
-        "sec-problem-000002"
+        "sec-problem-000002",
+        "sec-problem-000058"
       ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_count": 2,
+      "problem_count": 2,
       "knowledge_path": "knowledge/secondary/fourier-transform.html"
     },
     "fourier-series": {
@@ -622,7 +854,10 @@
       "children": [
         "exact-differential-equation",
         "integrating-factor",
-        "euler-differential-equation"
+        "euler-differential-equation",
+        "riccati-equation",
+        "ode-substitution",
+        "higher-order-linear-ode"
       ],
       "ancestors": [
         "analysis"
@@ -630,14 +865,21 @@
       "descendants": [
         "exact-differential-equation",
         "integrating-factor",
-        "euler-differential-equation"
+        "euler-differential-equation",
+        "riccati-equation",
+        "ode-substitution",
+        "higher-order-linear-ode"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
-        "sec-problem-000021"
+        "sec-problem-000021",
+        "sec-problem-000042",
+        "sec-problem-000049",
+        "sec-problem-000051",
+        "sec-problem-000063"
       ],
       "direct_problem_count": 0,
-      "problem_count": 1,
+      "problem_count": 5,
       "knowledge_path": "knowledge/secondary/differential-equation.html"
     },
     "exact-differential-equation": {
@@ -651,10 +893,14 @@
         "differential-equation"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000063"
+      ],
+      "problem_ids": [
+        "sec-problem-000063"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/exact-differential-equation.html"
     },
     "integrating-factor": {
@@ -668,10 +914,14 @@
         "differential-equation"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000063"
+      ],
+      "problem_ids": [
+        "sec-problem-000063"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/integrating-factor.html"
     },
     "euler-differential-equation": {
@@ -695,6 +945,69 @@
       "problem_count": 1,
       "knowledge_path": "knowledge/secondary/euler-differential-equation.html"
     },
+    "riccati-equation": {
+      "id": "riccati-equation",
+      "label": "Riccati型微分方程式",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000051"
+      ],
+      "problem_ids": [
+        "sec-problem-000051"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/riccati-equation.html"
+    },
+    "ode-substitution": {
+      "id": "ode-substitution",
+      "label": "微分方程式の置換",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000042"
+      ],
+      "problem_ids": [
+        "sec-problem-000042"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/ode-substitution.html"
+    },
+    "higher-order-linear-ode": {
+      "id": "higher-order-linear-ode",
+      "label": "高階線形微分方程式",
+      "parent_id": "differential-equation",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "differential-equation"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000049"
+      ],
+      "problem_ids": [
+        "sec-problem-000049"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/higher-order-linear-ode.html"
+    },
     "multivariable-calculus": {
       "id": "multivariable-calculus",
       "label": "多変数解析",
@@ -716,10 +1029,11 @@
         "sec-problem-000007",
         "sec-problem-000014",
         "sec-problem-000028",
-        "sec-problem-000035"
+        "sec-problem-000035",
+        "sec-problem-000056"
       ],
       "direct_problem_count": 0,
-      "problem_count": 4,
+      "problem_count": 5,
       "knowledge_path": "knowledge/secondary/multivariable-calculus.html"
     },
     "change-of-variables": {
@@ -758,15 +1072,57 @@
       "descendants": [],
       "direct_problem_ids": [
         "sec-problem-000014",
-        "sec-problem-000028"
+        "sec-problem-000028",
+        "sec-problem-000056"
       ],
       "problem_ids": [
         "sec-problem-000014",
-        "sec-problem-000028"
+        "sec-problem-000028",
+        "sec-problem-000056"
       ],
-      "direct_problem_count": 2,
-      "problem_count": 2,
+      "direct_problem_count": 3,
+      "problem_count": 3,
       "knowledge_path": "knowledge/secondary/multivariable-extrema.html"
+    },
+    "improper-integral-convergence": {
+      "id": "improper-integral-convergence",
+      "label": "広義積分の収束判定",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000044"
+      ],
+      "problem_ids": [
+        "sec-problem-000044"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/improper-integral-convergence.html"
+    },
+    "logarithmic-integral": {
+      "id": "logarithmic-integral",
+      "label": "対数を含む定積分",
+      "parent_id": "analysis",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "analysis"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000037"
+      ],
+      "problem_ids": [
+        "sec-problem-000037"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/logarithmic-integral.html"
     },
     "special-functions": {
       "id": "special-functions",
@@ -822,7 +1178,11 @@
         "parametric-curve-area",
         "complex-plane-geometry",
         "geometric-inversion",
-        "projective-collinearity"
+        "projective-collinearity",
+        "pascal-theorem",
+        "triangle-formulas",
+        "triangle-extrema",
+        "quadrilateral-area"
       ],
       "ancestors": [],
       "descendants": [
@@ -831,7 +1191,11 @@
         "parametric-curve-area",
         "complex-plane-geometry",
         "geometric-inversion",
-        "projective-collinearity"
+        "projective-collinearity",
+        "pascal-theorem",
+        "triangle-formulas",
+        "triangle-extrema",
+        "quadrilateral-area"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
@@ -840,10 +1204,14 @@
         "sec-problem-000016",
         "sec-problem-000017",
         "sec-problem-000024",
-        "sec-problem-000031"
+        "sec-problem-000031",
+        "sec-problem-000038",
+        "sec-problem-000047",
+        "sec-problem-000052",
+        "sec-problem-000059"
       ],
       "direct_problem_count": 0,
-      "problem_count": 6,
+      "problem_count": 10,
       "knowledge_path": "knowledge/secondary/geometry.html"
     },
     "vector-geometry": {
@@ -966,6 +1334,86 @@
       "problem_count": 1,
       "knowledge_path": "knowledge/secondary/projective-collinearity.html"
     },
+    "pascal-theorem": {
+      "id": "pascal-theorem",
+      "label": "Pascalの定理と接線作図",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000047"
+      ],
+      "problem_ids": [
+        "sec-problem-000047"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/pascal-theorem.html"
+    },
+    "triangle-formulas": {
+      "id": "triangle-formulas",
+      "label": "三角形の半角公式",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000059"
+      ],
+      "problem_ids": [
+        "sec-problem-000059"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/triangle-formulas.html"
+    },
+    "triangle-extrema": {
+      "id": "triangle-extrema",
+      "label": "三角形の量の評価",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000038"
+      ],
+      "problem_ids": [
+        "sec-problem-000038"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/triangle-extrema.html"
+    },
+    "quadrilateral-area": {
+      "id": "quadrilateral-area",
+      "label": "凸四角形の面積公式",
+      "parent_id": "geometry",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "geometry"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000052"
+      ],
+      "problem_ids": [
+        "sec-problem-000052"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/quadrilateral-area.html"
+    },
     "probability-statistics": {
       "id": "probability-statistics",
       "label": "確率・統計",
@@ -975,7 +1423,8 @@
         "probability-density-function",
         "statistical-inference",
         "poisson-distribution",
-        "least-squares-regression"
+        "least-squares-regression",
+        "gamma-distribution"
       ],
       "ancestors": [],
       "descendants": [
@@ -984,9 +1433,12 @@
         "maximum-likelihood",
         "variance-inference",
         "mean-inference",
+        "two-sample-t-test",
+        "correlation-inference",
         "chi-square-goodness-of-fit",
         "poisson-distribution",
-        "least-squares-regression"
+        "least-squares-regression",
+        "gamma-distribution"
       ],
       "direct_problem_ids": [],
       "problem_ids": [
@@ -994,10 +1446,14 @@
         "sec-problem-000011",
         "sec-problem-000018",
         "sec-problem-000025",
-        "sec-problem-000032"
+        "sec-problem-000032",
+        "sec-problem-000039",
+        "sec-problem-000046",
+        "sec-problem-000053",
+        "sec-problem-000060"
       ],
       "direct_problem_count": 0,
-      "problem_count": 5,
+      "problem_count": 9,
       "knowledge_path": "knowledge/secondary/probability-statistics.html"
     },
     "probability-density-function": {
@@ -1025,6 +1481,8 @@
         "maximum-likelihood",
         "variance-inference",
         "mean-inference",
+        "two-sample-t-test",
+        "correlation-inference",
         "chi-square-goodness-of-fit"
       ],
       "ancestors": [
@@ -1034,6 +1492,8 @@
         "maximum-likelihood",
         "variance-inference",
         "mean-inference",
+        "two-sample-t-test",
+        "correlation-inference",
         "chi-square-goodness-of-fit"
       ],
       "direct_problem_ids": [],
@@ -1041,10 +1501,13 @@
         "sec-problem-000004",
         "sec-problem-000011",
         "sec-problem-000018",
-        "sec-problem-000025"
+        "sec-problem-000025",
+        "sec-problem-000039",
+        "sec-problem-000046",
+        "sec-problem-000060"
       ],
       "direct_problem_count": 0,
-      "problem_count": 4,
+      "problem_count": 7,
       "knowledge_path": "knowledge/secondary/statistical-inference.html"
     },
     "maximum-likelihood": {
@@ -1058,10 +1521,14 @@
         "statistical-inference"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000060"
+      ],
+      "problem_ids": [
+        "sec-problem-000060"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/maximum-likelihood.html"
     },
     "variance-inference": {
@@ -1098,15 +1565,59 @@
       "descendants": [],
       "direct_problem_ids": [
         "sec-problem-000011",
-        "sec-problem-000018"
+        "sec-problem-000018",
+        "sec-problem-000046"
       ],
       "problem_ids": [
         "sec-problem-000011",
-        "sec-problem-000018"
+        "sec-problem-000018",
+        "sec-problem-000046"
       ],
-      "direct_problem_count": 2,
-      "problem_count": 2,
+      "direct_problem_count": 3,
+      "problem_count": 3,
       "knowledge_path": "knowledge/secondary/mean-inference.html"
+    },
+    "two-sample-t-test": {
+      "id": "two-sample-t-test",
+      "label": "2標本t検定",
+      "parent_id": "statistical-inference",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "statistical-inference"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000046"
+      ],
+      "problem_ids": [
+        "sec-problem-000046"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/two-sample-t-test.html"
+    },
+    "correlation-inference": {
+      "id": "correlation-inference",
+      "label": "相関係数の推測",
+      "parent_id": "statistical-inference",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "probability-statistics",
+        "statistical-inference"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000039"
+      ],
+      "problem_ids": [
+        "sec-problem-000039"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/correlation-inference.html"
     },
     "chi-square-goodness-of-fit": {
       "id": "chi-square-goodness-of-fit",
@@ -1160,14 +1671,36 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "sec-problem-000032"
+        "sec-problem-000032",
+        "sec-problem-000053"
       ],
       "problem_ids": [
-        "sec-problem-000032"
+        "sec-problem-000032",
+        "sec-problem-000053"
+      ],
+      "direct_problem_count": 2,
+      "problem_count": 2,
+      "knowledge_path": "knowledge/secondary/least-squares-regression.html"
+    },
+    "gamma-distribution": {
+      "id": "gamma-distribution",
+      "label": "ガンマ分布",
+      "parent_id": "probability-statistics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "probability-statistics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000060"
+      ],
+      "problem_ids": [
+        "sec-problem-000060"
       ],
       "direct_problem_count": 1,
       "problem_count": 1,
-      "knowledge_path": "knowledge/secondary/least-squares-regression.html"
+      "knowledge_path": "knowledge/secondary/gamma-distribution.html"
     },
     "combinatorics": {
       "id": "combinatorics",
@@ -1178,6 +1711,7 @@
         "counting-maps",
         "tiling-invariant",
         "combinatorial-construction",
+        "prime-factorization-identity",
         "partially-ordered-set"
       ],
       "ancestors": [],
@@ -1185,6 +1719,7 @@
         "counting-maps",
         "tiling-invariant",
         "combinatorial-construction",
+        "prime-factorization-identity",
         "partially-ordered-set",
         "antichain",
         "lym-inequality"
@@ -1193,10 +1728,12 @@
       "problem_ids": [
         "sec-problem-000005",
         "sec-problem-000012",
-        "sec-problem-000026"
+        "sec-problem-000026",
+        "sec-problem-000040",
+        "sec-problem-000061"
       ],
       "direct_problem_count": 0,
-      "problem_count": 3,
+      "problem_count": 5,
       "knowledge_path": "knowledge/secondary/combinatorics.html"
     },
     "counting-maps": {
@@ -1259,6 +1796,26 @@
       "problem_count": 1,
       "knowledge_path": "knowledge/secondary/combinatorial-construction.html"
     },
+    "prime-factorization-identity": {
+      "id": "prime-factorization-identity",
+      "label": "因数分解と素数",
+      "parent_id": "combinatorics",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "combinatorics"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000040"
+      ],
+      "problem_ids": [
+        "sec-problem-000040"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/prime-factorization-identity.html"
+    },
     "partially-ordered-set": {
       "id": "partially-ordered-set",
       "label": "半順序集合",
@@ -1275,9 +1832,11 @@
         "lym-inequality"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000061"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/partially-ordered-set.html"
     },
     "antichain": {
@@ -1296,9 +1855,11 @@
         "lym-inequality"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000061"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/antichain.html"
     },
     "lym-inequality": {
@@ -1313,10 +1874,14 @@
         "antichain"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000061"
+      ],
+      "problem_ids": [
+        "sec-problem-000061"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/lym-inequality.html"
     },
     "linear-algebra": {
@@ -1326,6 +1891,9 @@
       "depth": 0,
       "children": [
         "jordan-normal-form",
+        "lu-decomposition",
+        "singular-value-decomposition",
+        "quadratic-form",
         "linear-map-matrix",
         "structured-determinant",
         "generalized-eigenvalue",
@@ -1335,6 +1903,9 @@
       "ancestors": [],
       "descendants": [
         "jordan-normal-form",
+        "lu-decomposition",
+        "singular-value-decomposition",
+        "quadratic-form",
         "linear-map-matrix",
         "structured-determinant",
         "generalized-eigenvalue",
@@ -1349,10 +1920,15 @@
         "sec-problem-000013",
         "sec-problem-000020",
         "sec-problem-000027",
-        "sec-problem-000034"
+        "sec-problem-000034",
+        "sec-problem-000041",
+        "sec-problem-000045",
+        "sec-problem-000048",
+        "sec-problem-000055",
+        "sec-problem-000062"
       ],
       "direct_problem_count": 0,
-      "problem_count": 5,
+      "problem_count": 10,
       "knowledge_path": "knowledge/secondary/linear-algebra.html"
     },
     "jordan-normal-form": {
@@ -1375,6 +1951,66 @@
       "problem_count": 1,
       "knowledge_path": "knowledge/secondary/jordan-normal-form.html"
     },
+    "lu-decomposition": {
+      "id": "lu-decomposition",
+      "label": "LU分解",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000041"
+      ],
+      "problem_ids": [
+        "sec-problem-000041"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/lu-decomposition.html"
+    },
+    "singular-value-decomposition": {
+      "id": "singular-value-decomposition",
+      "label": "特異値分解",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000055"
+      ],
+      "problem_ids": [
+        "sec-problem-000055"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/singular-value-decomposition.html"
+    },
+    "quadratic-form": {
+      "id": "quadratic-form",
+      "label": "2次形式と半正定値性",
+      "parent_id": "linear-algebra",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "linear-algebra"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000045"
+      ],
+      "problem_ids": [
+        "sec-problem-000045"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/quadratic-form.html"
+    },
     "linear-map-matrix": {
       "id": "linear-map-matrix",
       "label": "線形写像の表現行列",
@@ -1386,13 +2022,15 @@
       ],
       "descendants": [],
       "direct_problem_ids": [
-        "sec-problem-000020"
+        "sec-problem-000020",
+        "sec-problem-000048"
       ],
       "problem_ids": [
-        "sec-problem-000020"
+        "sec-problem-000020",
+        "sec-problem-000048"
       ],
-      "direct_problem_count": 1,
-      "problem_count": 1,
+      "direct_problem_count": 2,
+      "problem_count": 2,
       "knowledge_path": "knowledge/secondary/linear-map-matrix.html"
     },
     "structured-determinant": {
@@ -1452,9 +2090,11 @@
         "householder-transformation"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000062"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/orthogonal-transformation.html"
     },
     "householder-transformation": {
@@ -1468,10 +2108,14 @@
         "orthogonal-transformation"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000062"
+      ],
+      "problem_ids": [
+        "sec-problem-000062"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/householder-transformation.html"
     },
     "matrix-reduction": {
@@ -1489,9 +2133,11 @@
         "symmetric-tridiagonalization"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000062"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/matrix-reduction.html"
     },
     "symmetric-tridiagonalization": {
@@ -1505,10 +2151,14 @@
         "matrix-reduction"
       ],
       "descendants": [],
-      "direct_problem_ids": [],
-      "problem_ids": [],
-      "direct_problem_count": 0,
-      "problem_count": 0,
+      "direct_problem_ids": [
+        "sec-problem-000062"
+      ],
+      "problem_ids": [
+        "sec-problem-000062"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/symmetric-tridiagonalization.html"
     },
     "mathematical-techniques": {
@@ -1517,16 +2167,20 @@
       "parent_id": null,
       "depth": 0,
       "children": [
-        "algebraic-manipulation"
+        "algebraic-manipulation",
+        "trigonometric-cubic"
       ],
       "ancestors": [],
       "descendants": [
-        "algebraic-manipulation"
+        "algebraic-manipulation",
+        "trigonometric-cubic"
       ],
       "direct_problem_ids": [],
-      "problem_ids": [],
+      "problem_ids": [
+        "sec-problem-000036"
+      ],
       "direct_problem_count": 0,
-      "problem_count": 0,
+      "problem_count": 1,
       "knowledge_path": "knowledge/secondary/mathematical-techniques.html"
     },
     "algebraic-manipulation": {
@@ -1544,6 +2198,26 @@
       "direct_problem_count": 0,
       "problem_count": 0,
       "knowledge_path": "knowledge/secondary/algebraic-manipulation.html"
+    },
+    "trigonometric-cubic": {
+      "id": "trigonometric-cubic",
+      "label": "3倍角と3次方程式",
+      "parent_id": "mathematical-techniques",
+      "depth": 1,
+      "children": [],
+      "ancestors": [
+        "mathematical-techniques"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [
+        "sec-problem-000036"
+      ],
+      "problem_ids": [
+        "sec-problem-000036"
+      ],
+      "direct_problem_count": 1,
+      "problem_count": 1,
+      "knowledge_path": "knowledge/secondary/trigonometric-cubic.html"
     }
   }
 }

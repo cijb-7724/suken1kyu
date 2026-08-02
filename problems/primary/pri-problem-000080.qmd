@@ -1,0 +1,61 @@
+---
+title: "第427回 1次 問3"
+id: pri-problem-000080
+paper_id: pri-paper-0427
+question_number: 3
+cell_label: ベクトル三重積
+tags:
+  - cross-product
+---
+
+## 問題
+
+$$
+a=(-1,1,1),\quad b=(-1,-2,1),\quad c=(3,1,2)
+$$
+
+について，$a\times(b\times c)$ と $(a\times b)\times c$ を求めなさい．
+
+## 必要な知識
+
+- [外積・スカラー三重積](../../knowledge/primary/cross-product.qmd)
+
+## 必要な発想
+
+BAC–CAB公式を使い，外積を直接2回計算するのを避ける．
+
+## 解答
+
+$$
+a\times(b\times c)=b(a\cdot c)-c(a\cdot b)
+$$
+
+である．$a\cdot c=0$，$a\cdot b=0$ なので，
+
+$$
+\boxed{a\times(b\times c)=0}．
+$$
+
+一方，
+
+$$
+(a\times b)\times c=b(a\cdot c)-a(b\cdot c)．
+$$
+
+$b\cdot c=-3$ だから，
+
+$$
+\boxed{(a\times b)\times c=3a=(-3,3,3)}
+$$
+
+となる．
+
+## コメント
+
+外積には結合則がないため，括弧の位置で答えが変わります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,94 @@
+---
+title: "第461回 2次 問7"
+id: sec-problem-000063
+paper_id: sec-paper-0461
+question_number: 7
+cell_label: 積分因子で完全微分化
+tags:
+  - exact-differential-equation
+  - integrating-factor
+---
+
+## 問題
+
+$$
+(3x^2y^3+2xy)dx+(2x^3y^2+x^2)dy=0,\qquad y(1)=1
+$$
+
+を満たす解を $f(x,y)=0$ の形で求めなさい．
+
+## 必要な知識
+
+- [完全微分方程式](../../knowledge/secondary/exact-differential-equation.qmd)
+- [積分因子](../../knowledge/secondary/integrating-factor.qmd)
+
+### この問題で使う一般形
+
+$Mdx+Ndy=0$ が完全微分形でなければ，$x^ay^b$ 型の積分因子を試せます．各単項式について
+
+$$
+\frac{\partial}{\partial y}(x^ay^bM)
+=\frac{\partial}{\partial x}(x^ay^bN)
+$$
+
+となるように指数 $a,b$ を係数比較で決めます．
+
+## 必要な発想
+
+元の式は完全微分形ではない．単項式の積分因子 $x^ay^b$ を掛け，2種類の次数ごとに完全微分条件を合わせる．
+
+## 解答
+
+$$
+M=3x^2y^3+2xy,\qquad N=2x^3y^2+x^2
+$$
+
+とする．$M_y=9x^2y^2+2x$，$N_x=6x^2y^2+2x$ なので，そのままでは完全微分形でない．
+
+$\mu=x^ay^b$ とおくと，完全微分条件の2種類の単項式から
+
+$$
+3(b+3)=2(a+3),\qquad2(b+1)=a+2
+$$
+
+を得る．これを解くと $a=6,b=3$ である．したがって積分因子は
+
+$$
+\mu=x^6y^3
+$$
+
+と取れる．初期点 $(1,1)$ の近くでは $xy\ne0$ なので，この積分因子を使ってよい．掛けた式は
+
+$$
+(3x^8y^6+2x^7y^4)dx+(2x^9y^5+x^8y^3)dy=0．
+$$
+
+第1成分を $x$ で積分すると，ポテンシャル関数は
+
+$$
+F(x,y)=\frac13x^9y^6+\frac14x^8y^4+g(y)．
+$$
+
+$F_y$ を第2成分と比較すると $g'(y)=0$ だから，$F=C$ である．初期条件 $(1,1)$ から
+
+$$
+C=\frac13+\frac14=\frac7{12}．
+$$
+
+両辺を12倍して，求める解は
+
+$$
+\boxed{4x^9y^6+3x^8y^4-7=0}
+$$
+
+である．
+
+## コメント
+
+積分因子を推測するだけでなく，掛けた後に $F_x$ と $F_y$ の両方が一致することを確認します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

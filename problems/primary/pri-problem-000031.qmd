@@ -1,0 +1,69 @@
+---
+title: "第358回 1次 問3"
+id: pri-problem-000031
+paper_id: pri-paper-0358
+question_number: 3
+cell_label: 逆行列
+tags:
+  - inverse-matrix
+---
+
+## 問題
+
+行列
+
+$$
+A=\begin{pmatrix}0&1&2\\1&0&1\\2&1&0\end{pmatrix}
+$$
+
+の逆行列を求めなさい．
+
+## 必要な知識
+
+- [逆行列](../../knowledge/primary/inverse-matrix.qmd)
+
+## 必要な発想
+
+$3\times3$ 行列なので，余因子行列を使う．最後に $AA^{-1}=I$ を1行だけでも確認する．
+
+## 解答
+
+行列式は
+
+$$
+\det A=4
+$$
+
+であり，余因子行列を転置した随伴行列は
+
+$$
+\operatorname{adj}A=
+\begin{pmatrix}
+-1&2&1\\
+2&-4&2\\
+1&2&-1
+\end{pmatrix}
+$$
+
+である．したがって，
+
+$$
+A^{-1}=\boxed{\frac14
+\begin{pmatrix}
+-1&2&1\\
+2&-4&2\\
+1&2&-1
+\end{pmatrix}}
+$$
+
+となる．
+
+## コメント
+
+対称行列の逆行列も対称になります．計算結果の形を確認する手掛かりです．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

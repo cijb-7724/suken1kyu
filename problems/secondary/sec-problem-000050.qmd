@@ -1,0 +1,96 @@
+---
+title: "第444回 2次 問1"
+id: sec-problem-000050
+paper_id: sec-paper-0444
+question_number: 1
+cell_label: 2平方和の商
+tags:
+  - sum-of-two-squares
+---
+
+## 問題
+
+$x,y$ は互いに素な整数，$a,b$ も互いに素な整数で，$N=x^2+y^2$，$p=a^2+b^2$ とする．$p$ が素数かつ $p\mid N$ のとき，$N/p$ が互いに素な2整数の平方和で表されることを証明しなさい．
+
+## 必要な知識
+
+- [2平方和](../../knowledge/secondary/sum-of-two-squares.qmd)
+
+### この問題で使う一般形
+
+Brahmagupta–Fibonacciの恒等式
+
+$$
+(a^2+b^2)(u^2+v^2)=(au-bv)^2+(av+bu)^2
+$$
+
+は2平方和の積を2平方和にします．今回は逆向きに，$p$ で割った商を作るため，$ax+by$ と $ay-bx$ が $p$ で割り切れる符号を選びます．
+
+## 必要な発想
+
+$p=a^2+b^2$ と $p\mid x^2+y^2$ を合同式で組み合わせ，$ay\pm bx$ の一方を $p$ の倍数にする．その符号に合わせて平方和恒等式を割り算へ使う．
+
+## 解答
+
+まず $p$ が奇素数の場合を考える．$p=a^2+b^2$ だから
+
+$$
+b^2\equiv-a^2\pmod p．
+$$
+
+また $x^2+y^2\equiv0\pmod p$ なので，
+
+$$
+(ay-bx)(ay+bx)
+=a^2y^2-b^2x^2
+\equiv a^2(x^2+y^2)\equiv0\pmod p．
+$$
+
+$p$ は素数だから，$ay-bx$ と $ay+bx$ の少なくとも一方が $p$ の倍数である．必要なら $b$ の符号を変え，
+
+$$
+p\mid ay-bx
+$$
+
+としてよい．さらに
+
+$$
+a(ax+by)=a^2x+aby\equiv-b^2x+aby=b(ay-bx)\equiv0\pmod p．
+$$
+
+$a$ は法 $p$ で逆元をもつので，$p\mid ax+by$ でもある．そこで
+
+$$
+u=\frac{ax+by}{p},\qquad v=\frac{ay-bx}{p}
+$$
+
+とおけば，$u,v$ は整数であり，
+
+$$
+u^2+v^2
+=\frac{(ax+by)^2+(ay-bx)^2}{p^2}
+=\frac{(a^2+b^2)(x^2+y^2)}{p^2}
+=\frac Np．
+$$
+
+さらに
+
+$$
+au-bv=x,\qquad bu+av=y
+$$
+
+だから，$u,v$ の公約数は $x,y$ の公約数でもある．$\gcd(x,y)=1$ より $\gcd(u,v)=1$ である．
+
+$p=2$ の場合は $a,b$ がともに奇数であり，$2\mid x^2+y^2$ と $\gcd(x,y)=1$ から $x,y$ もともに奇数である．したがって上の2つの分子は適切な符号で偶数になり，同じ恒等式と公約数の議論がそのまま成り立つ．
+
+以上より，$N/p$ は互いに素な2整数 $u,v$ の平方和で表される．
+
+## コメント
+
+平方和恒等式だけでは「商」が整数になることは分かりません．先に2つの分子が $p$ で割り切れることを合同式で保証する必要があります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

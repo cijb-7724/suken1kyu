@@ -1,0 +1,99 @@
+---
+title: "第444回 2次 問3"
+id: sec-problem-000052
+paper_id: sec-paper-0444
+question_number: 3
+cell_label: 2つの凸四角形の面積
+tags:
+  - quadrilateral-area
+---
+
+## 問題
+
+辺長が $a,b,c,d$，面積が $S$ の凸四角形と，辺長が $a',b',c',d'$，面積が $S'$ の凸四角形がある．
+
+$$
+T=4(ad+bc)(a'd'+b'c')-(a^2-b^2-c^2+d^2)(a'^2-b'^2-c'^2+d'^2)
+$$
+
+とするとき，$T\ge16SS'$ を証明しなさい．
+
+## 必要な知識
+
+- [凸四角形の面積公式](../../knowledge/secondary/quadrilateral-area.qmd)
+
+### この問題で使う一般形
+
+Bretschneiderの公式から，辺長 $a,b,c,d$ の凸四角形について
+
+$$
+16S^2\le4(ad+bc)^2-(a^2-b^2-c^2+d^2)^2
+$$
+
+が得られます．また $X>|u|$，$X'>|u'|$ なら
+
+$$
+XX'-uu'\ge\sqrt{X^2-u^2}\sqrt{X'^2-u'^2}
+$$
+
+であり，これは両辺を平方すると平方差1つに帰着します．
+
+## 必要な発想
+
+各四角形の面積を「$X^2-u^2$ 型」で上から評価し，2組の量を逆Cauchy型の恒等式で結ぶ．
+
+## 解答
+
+$$
+X=2(ad+bc),\qquad u=a^2-b^2-c^2+d^2
+$$
+
+とおき，$X',u'$ も同様に定める．与えられた四角形の面積公式から，余弦を含む非負項を落とすと
+
+$$
+16S^2\le X^2-u^2,\qquad
+16S'^2\le X'^2-u'^2
+$$
+
+を得る．一方，
+
+$$
+T=XX'-uu'．
+$$
+
+ここで
+
+$$
+(XX'-uu')^2-(X^2-u^2)(X'^2-u'^2)
+=(Xu'-X'u)^2\ge0．
+$$
+
+凸四角形の辺長から $X>|u|$，$X'>|u'|$ であり $T>0$ だから，平方根を取って
+
+$$
+T\ge\sqrt{X^2-u^2}\sqrt{X'^2-u'^2}．
+$$
+
+さらに面積の評価を用いると，
+
+$$
+T\ge(4S)(4S')=16SS'．
+$$
+
+したがって，
+
+$$
+\boxed{T\ge16SS'}
+$$
+
+が証明された．
+
+## コメント
+
+式の中心は $(XX'-uu')^2-(X^2-u^2)(X'^2-u'^2)$ が完全平方になることです．先に記号を置くと長い辺長式の構造が見えます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

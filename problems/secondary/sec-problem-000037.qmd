@@ -1,0 +1,86 @@
+---
+title: "第431回 2次 問2"
+id: sec-problem-000037
+paper_id: sec-paper-0431
+question_number: 2
+cell_label: 対称性と対数積分
+tags:
+  - logarithmic-integral
+---
+
+## 問題
+
+次の積分を求めなさい．
+
+1. $\displaystyle\int_0^{\pi/2}\frac{\sin x}{\sin x+\cos x}\,dx$
+2. $\displaystyle I_1=\int_0^{\pi/2}\log\frac{\sin2x}{2}\,dx$，$\displaystyle I_2=\int_0^{\pi/2}\log(\sin x)\,dx$
+
+## 必要な知識
+
+- [対数を含む定積分](../../knowledge/secondary/logarithmic-integral.qmd)
+
+### この問題で使う一般形
+
+$[0,a]$ 上の積分で $x\mapsto a-x$ と置換すると，関数の対称な相手を作れます．また，対数では $\log(uv)=\log u+\log v$ を用いて積を和へ分けます．
+
+## 必要な発想
+
+(1)は $x\mapsto\pi/2-x$ で分子の正弦と余弦を交換する．(2)も同じ対称性と2倍角公式で，未知の積分自身を含む等式を作る．
+
+## 解答
+
+(1)の積分を $I$ とおく．$x=\pi/2-t$ と置換すると，
+
+$$
+I=\int_0^{\pi/2}\frac{\cos t}{\cos t+\sin t}\,dt．
+$$
+
+元の式と加えると，被積分関数の和が $1$ になるから，
+
+$$
+2I=\int_0^{\pi/2}1\,dx=\frac\pi2．
+$$
+
+したがって，
+
+$$
+\boxed{I=\frac\pi4}．
+$$
+
+(2)では $\sin2x/2=\sin x\cos x$ なので，
+
+$$
+I_1=\int_0^{\pi/2}\log(\sin x)dx+
+\int_0^{\pi/2}\log(\cos x)dx．
+$$
+
+第2積分は $x\mapsto\pi/2-x$ により $I_2$ に等しいから，$I_1=2I_2$ である．一方，$t=2x$ とおくと
+
+$$
+I_1=\frac12\int_0^\pi\log(\sin t)dt-\frac\pi2\log2．
+$$
+
+$\sin(\pi-t)=\sin t$ より $\int_0^\pi\log(\sin t)dt=2I_2$ だから，
+
+$$
+I_1=I_2-\frac\pi2\log2．
+$$
+
+これと $I_1=2I_2$ を連立して，
+
+$$
+\boxed{I_2=-\frac\pi2\log2},\qquad
+\boxed{I_1=-\pi\log2}
+$$
+
+を得る．
+
+## コメント
+
+端点で $\log(\sin x)$ は発散しますが，対数型の特異点なので広義積分は収束します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

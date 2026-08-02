@@ -1,0 +1,66 @@
+---
+title: "第358回 1次 問4"
+id: pri-problem-000032
+paper_id: pri-paper-0358
+question_number: 4
+cell_label: 1の3乗根と行列式
+tags:
+  - roots-of-unity
+  - determinant
+---
+
+## 問題
+
+$\omega^3=1$，$\omega\ne1$ とするとき，
+
+$$
+\begin{vmatrix}
+1&\omega&\omega&\omega^2\\
+\omega&1&\omega^2&\omega\\
+\omega^2&\omega&\omega&1\\
+\omega&\omega^2&1&\omega
+\end{vmatrix}
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [1の累乗根](../../knowledge/primary/roots-of-unity.qmd)
+- [行列式](../../knowledge/primary/determinant.qmd)
+
+## 必要な発想
+
+$\omega^2+\omega+1=0$ を使い，行列式の計算途中から次数を2未満へ落とす．
+
+## 解答
+
+$\omega^3=1$，$\omega\ne1$ より
+
+$$
+1+\omega+\omega^2=0
+$$
+
+である．行列式を展開して $\omega^2=-\omega-1$，$\omega^3=1$ を用いて整理すると，
+
+$$
+\det A=-9\omega
+$$
+
+となる．したがって答えは
+
+$$
+\boxed{-9\omega}
+$$
+
+である．
+
+## コメント
+
+$\omega$ の高い次数を残したまま展開すると計算量が増えます．$\omega^2=-\omega-1$ を随時使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

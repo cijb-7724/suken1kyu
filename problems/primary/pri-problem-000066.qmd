@@ -1,0 +1,49 @@
+---
+title: "第406回 1次 問3"
+id: pri-problem-000066
+paper_id: pri-paper-0406
+question_number: 3
+cell_label: 直線と平面の角
+tags:
+  - analytic-geometry
+---
+
+## 問題
+
+2点 $(3,-6,2)$，$(-11,-4,6)$ を通る直線と，平面 $5x-3y+4z-11=0$ のなす鋭角 $\theta$ について，$\cos\theta$ を求めなさい．
+
+## 必要な知識
+
+- [空間の直線と平面](../../knowledge/primary/analytic-geometry.qmd)
+
+## 必要な発想
+
+方向ベクトルと法線ベクトルの角を先に求め，直線と平面の角がその余角であることを使う．
+
+## 解答
+
+直線の方向ベクトルとして $d=(-7,1,2)$，平面の法線ベクトルとして $n=(5,-3,4)$ を取る．直線と平面の角を $\theta$ とすると，
+
+$$
+\sin\theta=\frac{|d\cdot n|}{|d||n|}
+=\frac{30}{\sqrt{54}\sqrt{50}}
+=\frac1{\sqrt3}．
+$$
+
+$\theta$ は鋭角だから，
+
+$$
+\cos\theta=\sqrt{1-\frac13}=\boxed{\frac{\sqrt6}{3}}
+$$
+
+である．
+
+## コメント
+
+法線との角そのものではなく，その余角が直線と平面の角です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

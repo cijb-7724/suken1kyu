@@ -1,0 +1,58 @@
+---
+title: "第414回 1次 問2"
+id: pri-problem-000072
+paper_id: pri-paper-0414
+question_number: 2
+cell_label: 複素正弦方程式
+tags:
+  - complex-number
+  - hyperbolic-function
+---
+
+## 問題
+
+$\sin z=2i$ を満たす $z$ について，次を求めなさい．
+
+1. 純虚数である解
+2. $0<\operatorname{Re}z<2\pi$ を満たす解
+
+## 必要な知識
+
+- [複素数](../../knowledge/primary/complex-number.qmd)
+- [双曲線関数](../../knowledge/primary/hyperbolic-function.qmd)
+
+## 必要な発想
+
+$z=iy$ または $z=\pi-iy$ とおき，$\sin(iy)=i\sinh y$ を使う．
+
+## 解答
+
+$z=iy$ とすると $\sin z=i\sinh y$ だから，$\sinh y=2$ である．
+
+$$
+y=\log(2+\sqrt5)
+$$
+
+より，純虚数解は
+
+$$
+\boxed{z=i\log(2+\sqrt5)}．
+$$
+
+また，$\sin(\pi-iy)=\sin(iy)=i\sinh y$ なので，実部が $(0,2\pi)$ にある解として
+
+$$
+\boxed{z=\pi-i\log(2+\sqrt5)}
+$$
+
+を得る．
+
+## コメント
+
+複素数では正弦が実数範囲 $[-1,1]$ を超える値も取ります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

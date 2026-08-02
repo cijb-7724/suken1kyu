@@ -1,0 +1,67 @@
+---
+title: "三角形の半角公式"
+id: triangle-formulas
+---
+
+## 概要
+
+三角形の半角の正弦・余弦・正接を，辺長，半周長，内接円・外接円半径で表します．対称式の不等式へ三角形の量を代入する際に使います．
+
+## 基本事項
+
+角 $A,B,C$，半周長 $s$ に対し，
+
+$$
+\sin\frac A2=\sqrt{\frac{(s-b)(s-c)}{bc}},\qquad
+\cos\frac A2=\sqrt{\frac{s(s-a)}{bc}}
+$$
+
+です．従って
+
+$$
+\tan\frac A2=\sqrt{\frac{(s-b)(s-c)}{s(s-a)}}
+=\frac r{s-a}
+$$
+
+となります．
+
+$x=\tan(A/2)$，$y=\tan(B/2)$，$z=\tan(C/2)$ とすると，$A/2+B/2+C/2=\pi/2$ から
+
+$$
+xy+yz+zx=1．
+$$
+
+さらに
+
+$$
+xyz=\frac rs,\qquad
+x+y+z=\frac{4R+r}{s}
+$$
+
+です．後者は $xy+yz+zx=1$ と半角公式，$abc=4RS$ などから導けます．
+
+## 例題
+
+3辺が $3,4,5$ の直角三角形では $s=6$，$r=1$ です．$A$ を辺3の対角とすると，
+
+$$
+\tan\frac A2=\frac r{s-a}=\frac13．
+$$
+
+実際，$\sin A=3/5$，$\cos A=4/5$ から
+
+$$
+\tan\frac A2=\frac{\sin A}{1+\cos A}=\frac{3/5}{9/5}=\frac13
+$$
+
+と一致します．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

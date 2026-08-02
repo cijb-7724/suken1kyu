@@ -1,0 +1,34 @@
+---
+title: "一様分布"
+id: uniform-distribution
+---
+
+## 概要
+
+区間上で密度が一定の連続一様分布と，2変数での面積比を扱います．
+
+## 基本事項
+
+$X\sim U[a,b]$ なら，
+
+$$
+f(x)=\frac1{b-a},\qquad
+E[X]=\frac{a+b}{2},\qquad
+V(X)=\frac{(b-a)^2}{12}．
+$$
+
+独立な $X,Y$ がそれぞれ一様分布に従うとき，$(X,Y)$ は対応する長方形上で一様です．確率は条件を満たす領域の面積を長方形の面積で割って求められます．
+
+## 例題
+
+$X,Y\sim U[0,1]$ が独立なら，$P(X<Y)$ は単位正方形の対角線上側の面積なので $1/2$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

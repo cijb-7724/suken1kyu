@@ -1,0 +1,117 @@
+---
+title: "第461回 2次 問3"
+id: sec-problem-000059
+paper_id: sec-paper-0461
+question_number: 3
+cell_label: Kooijの不等式
+tags:
+  - triangle-formulas
+---
+
+## 問題
+
+三角形の角を $A,B,C$，半周長を $s$，内接円半径を $r$，外接円半径を $R$ とする．
+
+1. $\tan(A/2)\tan(B/2)+\tan(B/2)\tan(C/2)+\tan(C/2)\tan(A/2)$ を求めなさい．
+2. 問題文で与えられた対称式の不等式を用いて，
+
+$$
+s^2\le\frac{R(4R+r)^2}{2(2R-r)}
+$$
+
+を証明しなさい．
+
+## 必要な知識
+
+- [三角形の半角公式](../../knowledge/secondary/triangle-formulas.qmd)
+
+### この問題で使う一般形
+
+$x=\tan(A/2)$，$y=\tan(B/2)$，$z=\tan(C/2)$ とすると，$A/2+B/2+C/2=\pi/2$ から
+
+$$
+xy+yz+zx=1．
+$$
+
+また三角形の標準公式として
+
+$$
+x+y+z=\frac{4R+r}{s},\qquad xyz=\frac rs
+$$
+
+が成り立ちます．
+
+## 必要な発想
+
+与えられた3変数不等式へ半角の正接を代入する．その基本対称式を $s,r,R$ で表せば，目標の不等式がそのまま現れる．
+
+## 解答
+
+(1) $x=\tan(A/2)$，$y=\tan(B/2)$，$z=\tan(C/2)$ とおく．正接の加法定理で
+
+$$
+\tan\left(\frac A2+\frac B2+\frac C2\right)
+=\tan\frac\pi2
+$$
+
+が発散するため，分母 $1-xy-yz-zx$ が0になる．したがって，
+
+$$
+\boxed{xy+yz+zx=1}．
+$$
+
+(2) 問題文の記号
+
+$$
+e_1=x+y+z,\qquad e_2=xy+yz+zx,\qquad e_3=xyz
+$$
+
+を用いる．上の半角公式から
+
+$$
+e_1=\frac{4R+r}{s},\qquad e_2=1,\qquad e_3=\frac rs．
+$$
+
+よって，
+
+$$
+e_1e_2-e_3=\frac{4R}{s},\qquad
+e_1e_2-3e_3=\frac{2(2R-r)}{s}．
+$$
+
+これらを与えられた不等式
+
+$$
+4e_2(e_1e_2-3e_3)\le e_1^2(e_1e_2-e_3)
+$$
+
+へ代入すると，
+
+$$
+\frac{8(2R-r)}s
+\le\frac{(4R+r)^2}{s^2}\frac{4R}{s}．
+$$
+
+$s>0$ を掛けて整理すれば，
+
+$$
+2(2R-r)s^2\le R(4R+r)^2．
+$$
+
+Eulerの不等式 $R\ge2r$ より $2R-r>0$ なので割ることができ，
+
+$$
+\boxed{s^2\le\frac{R(4R+r)^2}{2(2R-r)}}
+$$
+
+を得る．
+
+## コメント
+
+与えられた抽象的な $e_1,e_2,e_3$ の不等式は，半角の正接を代入するために用意されています．まず何を $x,y,z$ に入れるかを見抜く問題です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,59 @@
+---
+title: "第372回 1次 問7"
+id: pri-problem-000049
+paper_id: pri-paper-0372
+question_number: 7
+cell_label: 連立微分方程式
+tags:
+  - linear-system-ode
+---
+
+## 問題
+
+$$
+\frac{dx}{dt}=2x+4y,\qquad \frac{dy}{dt}=x-y,\qquad x(0)=3, y(0)=-1
+$$
+
+を満たす $x(t),y(t)$ を求めなさい．
+
+## 必要な知識
+
+- [連立線形微分方程式](../../knowledge/primary/linear-system-ode.qmd)
+
+## 必要な発想
+
+係数行列の固有値・固有ベクトルを求め，解を固有方向の指数関数の和で表す．
+
+## 解答
+
+係数行列
+
+$$
+A=\begin{pmatrix}2&4\\1&-1\end{pmatrix}
+$$
+
+の固有値は $3,-2$ であり，対応する固有ベクトルとして $(4,1)^{\mathsf T}$，$(-1,1)^{\mathsf T}$ を取れる．したがって，
+
+$$
+\binom{x}{y}
+=C_1e^{3t}\binom41+C_2e^{-2t}\binom{-1}{1}．
+$$
+
+初期条件から $4C_1-C_2=3$，$C_1+C_2=-1$ なので，$C_1=2/5$，$C_2=-7/5$ である．よって，
+
+$$
+\boxed{x=\frac85e^{3t}+\frac75e^{-2t}},\qquad
+\boxed{y=\frac25e^{3t}-\frac75e^{-2t}}
+$$
+
+となる．
+
+## コメント
+
+得られた式へ $t=0$ を代入し，初期値を必ず確認します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

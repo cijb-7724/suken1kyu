@@ -1,0 +1,50 @@
+---
+title: "第372回 1次 問5"
+id: pri-problem-000047
+paper_id: pri-paper-0372
+question_number: 5
+cell_label: 一様分布
+tags:
+  - uniform-distribution
+  - variance
+---
+
+## 問題
+
+$X,Y$ は独立に区間 $[0,60]$ の一様分布に従う．$V(X)$ と $P(|X-Y|\le20)$ を求めなさい．
+
+## 必要な知識
+
+- [一様分布](../../knowledge/primary/uniform-distribution.qmd)
+- [分散](../../knowledge/primary/variance.qmd)
+
+## 必要な発想
+
+分散は一様分布の公式を使い，確率は $xy$ 平面の正方形内の面積比として求める．
+
+## 解答
+
+区間 $[a,b]$ の一様分布の分散は $(b-a)^2/12$ だから，
+
+$$
+V(X)=\frac{60^2}{12}=\boxed{300}．
+$$
+
+また，$(X,Y)$ は一辺 $60$ の正方形上で一様である．$|X-Y|>20$ の領域は，脚の長さ $40$ の直角三角形2個なので，
+
+$$
+P(|X-Y|\le20)
+=1-\frac{2\cdot(40^2/2)}{60^2}
+=1-\frac49
+=\boxed{\frac59}．
+$$
+
+## コメント
+
+独立な一様分布の確率は，長方形内の面積比に置き換えられます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

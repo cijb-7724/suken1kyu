@@ -1,0 +1,44 @@
+---
+title: "複素対数"
+id: complex-logarithm
+---
+
+## 概要
+
+複素数の対数は絶対値の対数と偏角に分けて表します．
+
+## 基本事項
+
+$z=re^{i\theta}$，$r>0$ に対し，多価対数は
+
+$$
+\log z=\log r+i(\theta+2k\pi)\qquad(k\in\mathbb Z)
+$$
+
+です．主値では偏角を通常 $-\pi<\operatorname{Arg}z\le\pi$ に選び，
+
+$$
+\operatorname{Log}z=\log|z|+i\operatorname{Arg}z
+$$
+
+とします．商は先に $a+bi$ の形へ直すと絶対値と偏角を読みやすくなります．
+
+## 例題
+
+$1-i=\sqrt2e^{-i\pi/4}$ なので，主値は
+
+$$
+\operatorname{Log}(1-i)=\frac12\log2-\frac\pi4i
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

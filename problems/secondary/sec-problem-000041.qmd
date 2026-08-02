@@ -1,0 +1,96 @@
+---
+title: "第431回 2次 問6"
+id: sec-problem-000041
+paper_id: sec-paper-0431
+question_number: 6
+cell_label: LU分解
+tags:
+  - lu-decomposition
+---
+
+## 問題
+
+$$
+A=\begin{pmatrix}
+4&2&-7&0\\
+-12&-5&30&-1\\
+8&9&34&-4\\
+24&7&-63&16
+\end{pmatrix}
+$$
+
+について，$A=LU$ を求め，$\det A$ と $Ax=(3,-7,12,-18)^{\mathsf T}$ の解を求めなさい．ただし，$L$ の対角成分はすべて1とします．
+
+## 必要な知識
+
+- [LU分解](../../knowledge/secondary/lu-decomposition.qmd)
+
+### この問題で使う一般形
+
+Gauss消去で第 $j$ 列を消去するときの倍率を $L$ の第 $j$ 列へ保存すると，消去後の上三角行列が $U$ となり $A=LU$ が得られます．連立方程式は $Ly=b$ を前進代入し，続いて $Ux=y$ を後退代入します．
+
+## 必要な発想
+
+行基本変形の結果だけでなく，消去倍率を $L$ に記録する．同じ分解を行列式と連立方程式の両方に使う．
+
+## 解答
+
+第1列を消去する倍率は $-3,2,6$，第2列では $5,-5$，第3列では $8$ である．したがって，
+
+$$
+L=\begin{pmatrix}
+1&0&0&0\\
+-3&1&0&0\\
+2&5&1&0\\
+6&-5&8&1
+\end{pmatrix},\qquad
+U=\begin{pmatrix}
+4&2&-7&0\\
+0&1&9&-1\\
+0&0&3&1\\
+0&0&0&3
+\end{pmatrix}．
+$$
+
+$L$ の対角成分はすべて1だから，$\det L=1$ である．よって，
+
+$$
+\det A=\det L\det U=4\cdot1\cdot3\cdot3=\boxed{36}．
+$$
+
+次に $b=(3,-7,12,-18)^{\mathsf T}$ とし，$Ly=b$ を上から順に解く．
+
+$$
+y_1=3,\quad -3y_1+y_2=-7,\quad
+2y_1+5y_2+y_3=12
+$$
+
+より $y_1=3,y_2=2,y_3=-4$ である．第4式から $y_4=6$ となるので，
+
+$$
+y=(3,2,-4,6)^{\mathsf T}．
+$$
+
+続いて $Ux=y$ を下から解くと，
+
+$$
+x_4=2,\quad x_3=-2,\quad x_2=22,\quad x_1=-\frac{55}{4}．
+$$
+
+したがって，
+
+$$
+\boxed{x=\begin{pmatrix}-55/4\\22\\-2\\2\end{pmatrix}}
+$$
+
+である．
+
+## コメント
+
+LU分解の利点は，同じ係数行列に対して右辺だけが変わる場合にも，前進代入と後退代入だけを繰り返せることです．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,38 @@
+---
+title: "幾何分布"
+id: geometric-distribution
+---
+
+## 概要
+
+独立試行で初めて成功するまでの回数を表す分布です．
+
+## 基本事項
+
+各試行の成功確率を $p$ とし，初成功までの試行回数を $X$ とすると，
+
+$$
+P(X=k)=p(1-p)^{k-1}\qquad(k=1,2,\ldots)
+$$
+
+です．期待値と分散は
+
+$$
+E[X]=\frac1p,\qquad V(X)=\frac{1-p}{p^2}
+$$
+
+です．失敗回数を数える規約では値が0から始まり，期待値は $(1-p)/p$ になります．
+
+## 例題
+
+成功確率 $1/4$ なら，初成功までの試行回数の期待値は $4$，分散は $12$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

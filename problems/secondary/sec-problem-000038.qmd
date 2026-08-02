@@ -1,0 +1,95 @@
+---
+title: "第431回 2次 問3"
+id: sec-problem-000038
+paper_id: sec-paper-0431
+question_number: 3
+cell_label: 三角形の内外接円
+tags:
+  - triangle-extrema
+---
+
+## 問題
+
+三角形の辺長を $a,b,c$，外接円半径を $R$，内接円半径を $r$，面積を $S$ とする．
+
+1. $r/R$ を $a,b,c$ の有理式で表し，その最大値を求めなさい．
+2. $(a+b+c)^2/S$ の最小値を求めなさい．
+
+## 必要な知識
+
+- [三角形の量の評価](../../knowledge/secondary/triangle-extrema.qmd)
+
+### この問題で使う一般形
+
+半周長を $s=(a+b+c)/2$ とすると，
+
+$$
+S=rs,\qquad S=\frac{abc}{4R},\qquad
+S^2=s(s-a)(s-b)(s-c)
+$$
+
+が成り立ちます．$x=s-a$，$y=s-b$，$z=s-c$ とおけば，$a=y+z$，$b=z+x$，$c=x+y$ となり，三角不等式を正数 $x,y,z$ の問題へ変えられます．
+
+## 必要な発想
+
+内接円・外接円・面積を結ぶ公式を組み合わせ，最後は $x=s-a$ などの正数に置き換えて相加相乗平均を使う．
+
+## 解答
+
+(1) $r=S/s$，$R=abc/(4S)$ だから，
+
+$$
+\frac rR=\frac{4S^2}{sabc}
+=\frac{4(s-a)(s-b)(s-c)}{abc}．
+$$
+
+$x=s-a$，$y=s-b$，$z=s-c$ とおくと，
+
+$$
+\frac rR=\frac{4xyz}{(x+y)(y+z)(z+x)}．
+$$
+
+各因子に相加相乗平均を使えば
+
+$$
+(x+y)(y+z)(z+x)\ge8xyz
+$$
+
+だから，$r/R\le1/2$ である．$x=y=z$，すなわち正三角形で等号が成り立つ．よって，
+
+$$
+\boxed{\frac rR=
+\frac{(b+c-a)(c+a-b)(a+b-c)}{2abc}},\qquad
+\boxed{\max\frac rR=\frac12}．
+$$
+
+(2) 周長は $2s$ なので，求める量は $4s^2/S$ である．固定した $s=x+y+z$ に対し，Heronの公式から
+
+$$
+S^2=sxyz\le s\left(\frac{x+y+z}{3}\right)^3
+=\frac{s^4}{27}．
+$$
+
+したがって $S\le s^2/(3\sqrt3)$ であり，
+
+$$
+\frac{(a+b+c)^2}{S}=\frac{4s^2}{S}\ge12\sqrt3．
+$$
+
+正三角形で等号が成り立つので，最小値は
+
+$$
+\boxed{12\sqrt3}
+$$
+
+である．
+
+## コメント
+
+$s-a,s-b,s-c$ は三角不等式によりすべて正です．この置換はHeronの公式を相加相乗平均へつなぐために行います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

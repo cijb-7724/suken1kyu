@@ -1,0 +1,67 @@
+---
+title: "第358回 1次 問5"
+id: pri-problem-000033
+paper_id: pri-paper-0358
+question_number: 5
+cell_label: 正規分布の積率
+tags:
+  - normal-distribution
+  - moment-generating-function
+---
+
+## 問題
+
+$X$ が標準正規分布に従うとき，次の値を求めなさい．
+
+1. $E[e^{tX}]\quad(-1<t<1)$
+2. $E[X^4]$
+
+## 必要な知識
+
+- [正規分布](../../knowledge/primary/normal-distribution.qmd)
+- [モーメント母関数](../../knowledge/primary/moment-generating-function.qmd)
+
+## 必要な発想
+
+指数の中を平方完成して正規分布の積分へ戻す．$4$ 次モーメントは母関数を4回微分する．
+
+## 解答
+
+標準正規分布の密度を用いると，
+
+$$
+E[e^{tX}]
+=\frac1{\sqrt{2\pi}}\int_{-\infty}^{\infty}
+e^{tx-x^2/2}\,dx．
+$$
+
+指数を平方完成すると
+
+$$
+tx-\frac{x^2}{2}
+=-\frac{(x-t)^2}{2}+\frac{t^2}{2}
+$$
+
+だから，積分値は
+
+$$
+\boxed{e^{t^2/2}}
+$$
+
+である．これを $M(t)$ とすると $E[X^4]=M^{(4)}(0)$ であり，微分して
+
+$$
+M^{(4)}(0)=\boxed{3}
+$$
+
+を得る．
+
+## コメント
+
+標準正規分布の偶数次モーメント $E[X^{2m}]=(2m-1)!!$ も覚えておくと便利です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

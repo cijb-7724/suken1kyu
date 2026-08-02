@@ -1,0 +1,42 @@
+---
+title: "ユニタリ行列"
+id: unitary-matrix
+---
+
+## 概要
+
+複素ベクトル空間で内積を保つ行列と，列ベクトルの直交条件をまとめます．
+
+## 基本事項
+
+複素行列 $U$ がユニタリであるとは
+
+$$
+U^*U=UU^*=I
+$$
+
+を満たすことです．$U^*=\bar U^{\mathsf T}$ は共役転置です．これは $U$ の列ベクトルがHermite内積
+
+$$
+\langle v,w\rangle=\sum_j\overline{v_j}w_j
+$$
+
+に関して正規直交することと同値です．
+
+## 例題
+
+$$
+U=\frac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}
+$$
+
+では，各列のノルムは1で，列どうしの内積は $i/2-i/2=0$ なのでユニタリです．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

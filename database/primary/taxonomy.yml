@@ -5,6 +5,9 @@ tags:
       - id: prime-factorization
         label: 素因数分解
 
+      - id: linear-congruence
+        label: 一次合同式
+
       - id: modular-arithmetic
         label: 合同式・剰余
         children:
@@ -25,6 +28,21 @@ tags:
 
       - id: radical-expression
         label: 根号式
+
+      - id: complex-number
+        label: 複素数
+        children:
+          - id: roots-of-unity
+            label: 1の累乗根
+
+          - id: complex-logarithm
+            label: 複素対数
+
+      - id: trigonometric-identities
+        label: 三角関数の恒等式
+
+      - id: bernoulli-numbers
+        label: Bernoulli数
 
       - id: function
         label: 関数
@@ -77,6 +95,24 @@ tags:
           - id: first-order-nonhomogeneous-ode
             label: 1階線形非斉次微分方程式
 
+          - id: separable-ode
+            label: 変数分離形微分方程式
+
+          - id: constant-coefficient-ode
+            label: 定数係数線形微分方程式
+
+          - id: linear-system-ode
+            label: 連立線形微分方程式
+
+      - id: higher-derivative
+        label: 高階導関数
+
+      - id: multivariable-differentiation
+        label: 多変数関数の微分
+
+      - id: fundamental-theorem-calculus
+        label: 微積分学の基本定理
+
   - id: probability-statistics
     label: 確率・統計
     children:
@@ -97,6 +133,27 @@ tags:
 
           - id: covariance
             label: 共分散
+
+          - id: normal-distribution
+            label: 正規分布
+
+          - id: moment-generating-function
+            label: モーメント母関数
+
+          - id: negative-binomial-distribution
+            label: 負の二項分布
+
+          - id: uniform-distribution
+            label: 一様分布
+
+          - id: geometric-distribution
+            label: 幾何分布
+
+          - id: distribution-function
+            label: 分布関数
+
+          - id: discrete-joint-distribution
+            label: 離散同時分布
 
   - id: linear-algebra
     label: 線形代数
@@ -121,3 +178,18 @@ tags:
             children:
               - id: block-determinant
                 label: ブロック行列式
+
+          - id: inverse-matrix
+            label: 逆行列
+
+          - id: eigenvalue
+            label: 固有値
+
+          - id: linear-map-matrix
+            label: 線形写像の表現行列
+
+          - id: unitary-matrix
+            label: ユニタリ行列
+
+      - id: analytic-geometry
+        label: 空間の直線と平面

@@ -1,0 +1,56 @@
+---
+title: "第363回 1次 問4"
+id: pri-problem-000039
+paper_id: pri-paper-0363
+question_number: 4
+cell_label: 高階導関数
+tags:
+  - higher-derivative
+---
+
+## 問題
+
+$f(x)=x^2e^{-x}$ について，$f^{(5)}(-1)$ と $f^{(10)}(-1)$ を求めなさい．
+
+## 必要な知識
+
+- [高階導関数](../../knowledge/primary/higher-derivative.qmd)
+
+## 必要な発想
+
+10回逐次微分せず，Leibnizの公式で一般の $n$ 次導関数を先に作る．
+
+## 解答
+
+$x^2$ は3回微分すると $0$ になるので，Leibnizの公式より
+
+$$
+f^{(n)}(x)
+=(-1)^ne^{-x}\{x^2-2nx+n(n-1)\}
+$$
+
+である．したがって，
+
+$$
+f^{(5)}(-1)
+=-e\{1+10+20\}
+=\boxed{-31e}
+$$
+
+$$
+f^{(10)}(-1)
+=e\{1+20+90\}
+=\boxed{111e}
+$$
+
+となる．
+
+## コメント
+
+一般式を作れば，次数が10でも代入だけで済みます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

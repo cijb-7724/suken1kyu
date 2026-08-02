@@ -1,0 +1,42 @@
+---
+title: "変数分離形微分方程式"
+id: separable-ode
+---
+
+## 概要
+
+$x$ と $y$ の項を両辺へ分けて積分する1階微分方程式と，階数を下げる置換を扱います．
+
+## 基本事項
+
+$$
+\frac{dy}{dx}=f(x)g(y)
+$$
+
+なら，$g(y)\ne0$ の範囲で
+
+$$
+\frac{dy}{g(y)}=f(x)dx
+$$
+
+として積分します．$x$ が陽に現れない2階方程式では $p(y)=dy/dx$ とおくと，連鎖律から
+
+$$
+y''=p\frac{dp}{dy}
+$$
+
+となり，1階へ下げられます．途中で $p$ や $g(y)$ で割る場合は，0となる解を別に確認します．
+
+## 例題
+
+$y'=xy$ では $dy/y=x,dx$ より $\log|y|=x^2/2+C$，従って $y=Ce^{x^2/2}$ です．$C=0$ も含まれます．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

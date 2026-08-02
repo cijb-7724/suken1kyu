@@ -1,0 +1,74 @@
+---
+title: "第440回 2次 問2"
+id: sec-problem-000044
+paper_id: sec-paper-0440
+question_number: 2
+cell_label: 広義積分の収束範囲
+tags:
+  - improper-integral-convergence
+---
+
+## 問題
+
+実数 $\alpha$ に対し，
+
+$$
+I=\int_0^\infty\frac{x^\alpha}{\sqrt{x^4+x^9}}\,dx
+$$
+
+が収束するか発散するか判定しなさい．
+
+## 必要な知識
+
+- [広義積分の収束判定](../../knowledge/secondary/improper-integral-convergence.qmd)
+
+### この問題で使う一般形
+
+$$
+\int_0^1x^pdx
+$$
+
+は $p>-1$ のとき，$\int_1^\infty x^pdx$ は $p<-1$ のときに限り収束します．両端に特異性がある積分では，$0$ 付近と $\infty$ 付近を別々に判定します．
+
+## 必要な発想
+
+分母で支配的な項は，$x\to0$ では $x^4$，$x\to\infty$ では $x^9$ である．両端の収束条件を同時に満たす $\alpha$ を求める．
+
+## 解答
+
+$x>0$ で
+
+$$
+\frac{x^\alpha}{\sqrt{x^4+x^9}}
+=\frac{x^{\alpha-2}}{\sqrt{1+x^5}}
+$$
+
+と書ける．$x\to0+$ では $\sqrt{1+x^5}\to1$ なので，被積分関数は $x^{\alpha-2}$ と同程度である．したがって $0$ 付近で収束する条件は
+
+$$
+\alpha-2>-1,\qquad \alpha>1．
+$$
+
+一方，$x\to\infty$ では $\sqrt{1+x^5}\sim x^{5/2}$ だから，被積分関数は $x^{\alpha-9/2}$ と同程度である．無限遠で収束する条件は
+
+$$
+\alpha-\frac92<-1,\qquad \alpha<\frac72．
+$$
+
+両方を合わせると，
+
+$$
+\boxed{1<\alpha<\frac72\text{ のとき収束}}
+$$
+
+であり，$\alpha\le1$ または $\alpha\ge7/2$ では発散する．境界では $x^{-1}$ 型になり，対数発散する．
+
+## コメント
+
+広義積分では，一方の端で収束しても他方で発散すれば全体は発散です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,38 @@
+---
+title: "Bernoulli数"
+id: bernoulli-numbers
+---
+
+## 概要
+
+Bernoulli数は指数関数を含む母関数の係数として定義され，べき和やEuler–Maclaurin公式に現れます．
+
+## 基本事項
+
+本サイトでは
+
+$$
+\frac{xe^x}{e^x-1}=\sum_{n=0}^{\infty}\frac{B_n}{n!}x^n
+$$
+
+という規約を使います．母関数を必要な次数まで展開し，係数を比較すれば $B_n$ を求められます．規約によって $B_1$ の符号が変わるため，必ず定義を確認します．
+
+## 例題
+
+$e^x-1=x+x^2/2+x^3/6+\cdots$ を代入すると，
+
+$$
+\frac{xe^x}{e^x-1}=1+\frac x2+\frac{x^2}{12}+\cdots．
+$$
+
+したがって $B_0=1$，$B_1=1/2$，$B_2=1/6$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -1,0 +1,56 @@
+---
+title: "広義積分の収束判定"
+id: improper-integral-convergence
+---
+
+## 概要
+
+端点や無限遠で被積分関数が非有界になる積分について，値を求める前に収束・発散を判定します．基本はべき関数との比較です．
+
+## 基本事項
+
+基準となる $p$ 積分は
+
+$$
+\int_0^1x^pdx<\infty\iff p>-1,
+$$
+
+$$
+\int_1^\infty x^pdx<\infty\iff p<-1
+$$
+
+です．$p=-1$ はどちらも対数発散します．
+
+非負関数 $f,g$ について，端点付近で $f(x)/g(x)\to c$，$0<c<\infty$ なら，$f$ と $g$ は同時に収束または発散します．また $f\le Cg$ と収束する $g$ で上から抑える比較判定，発散する $g\le Cf$ で下から抑える判定も使えます．
+
+両端に問題がある積分は，例えば
+
+$$
+\int_0^\infty f(x)dx=\int_0^1f(x)dx+\int_1^\infty f(x)dx
+$$
+
+と分け，両方の収束が必要です．
+
+## 例題
+
+$$
+\int_0^\infty\frac{x^\alpha}{1+x^3}dx
+$$
+
+を考えます．$0$ 付近では $x^\alpha$ と同程度なので $\alpha>-1$ が必要です．無限遠では $x^{\alpha-3}$ と同程度なので $\alpha-3<-1$，すなわち $\alpha<2$ が必要です．従って収束範囲は
+
+$$
+-1<\alpha<2
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

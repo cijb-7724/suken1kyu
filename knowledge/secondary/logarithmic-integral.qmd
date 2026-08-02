@@ -1,0 +1,53 @@
+---
+title: "対数を含む定積分"
+id: logarithmic-integral
+---
+
+## 概要
+
+$\log(\sin x)$ や $\log(\cos x)$ を含む定積分を，対称性・倍角公式・置換で計算します．端点の対数特異点の扱いも確認します．
+
+## 基本事項
+
+$[0,\pi/2]$ で $x\mapsto\pi/2-x$ と置換すると，
+
+$$
+\int_0^{\pi/2}\log(\sin x)dx
+=\int_0^{\pi/2}\log(\cos x)dx
+$$
+
+です．また
+
+$$
+\sin2x=2\sin x\cos x
+$$
+
+の対数を取れば，積が和へ分かれます．
+
+$x\to0+$ で $\sin x\sim x$ なので $\log(\sin x)\sim\log x$ です．$\int_0^\varepsilon|\log x|dx$ は有限だから，端点で関数値は発散しても広義積分は収束します．
+
+## 例題
+
+$I=\int_0^{\pi/2}\log(\sin x)dx$ とします．対称性から $I=\int\log(\cos x)dx$ なので，
+
+$$
+2I=\int_0^{\pi/2}\log\left(\frac{\sin2x}{2}\right)dx+\frac\pi2\log2．
+$$
+
+$t=2x$ と置き，$[0,\pi]$ の対称性を使うと右辺の第1積分は $I-(\pi/2)\log2$ です．従って
+
+$$
+I=-\frac\pi2\log2
+$$
+
+を得ます．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

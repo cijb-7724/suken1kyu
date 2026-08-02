@@ -1,0 +1,59 @@
+---
+title: "第380回 1次 問2"
+id: pri-problem-000051
+paper_id: pri-paper-0380
+question_number: 2
+cell_label: 複素数の平方根
+tags:
+  - complex-number
+---
+
+## 問題
+
+実部が正である $\sqrt{-4-2\sqrt{2021},i}$ を求めなさい．
+
+## 必要な知識
+
+- [複素数](../../knowledge/primary/complex-number.qmd)
+
+## 必要な発想
+
+平方根を $a+bi$ とおき，実部・虚部と絶対値を比較する．
+
+## 解答
+
+$(a+bi)^2=-4-2\sqrt{2021},i$ とおくと，
+
+$$
+a^2-b^2=-4,\qquad ab=-\sqrt{2021}．
+$$
+
+また，元の複素数の絶対値は
+
+$$
+\sqrt{(-4)^2+(2\sqrt{2021})^2}=90
+$$
+
+だから，$a^2+b^2=90$ である．これと $a^2-b^2=-4$ から
+
+$$
+a^2=43,\qquad b^2=47．
+$$
+
+実部が正で $ab<0$ なので，
+
+$$
+\boxed{\sqrt{43}-\sqrt{47},i}
+$$
+
+である．
+
+## コメント
+
+実部の符号条件が，2つある平方根のどちらを選ぶか決めています．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

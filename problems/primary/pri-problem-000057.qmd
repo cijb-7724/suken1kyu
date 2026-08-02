@@ -1,0 +1,47 @@
+---
+title: "第389回 1次 問1"
+id: pri-problem-000057
+paper_id: pri-paper-0389
+question_number: 1
+cell_label: 2つの合同条件
+tags:
+  - chinese-remainder-theorem
+---
+
+## 問題
+
+$x\equiv6\pmod{13}$，$x\equiv7\pmod{11}$ を満たす最小の正の整数 $x$ を求めなさい．
+
+## 必要な知識
+
+- [中国剰余定理](../../knowledge/primary/chinese-remainder-theorem.qmd)
+
+## 必要な発想
+
+一方の合同式から $x=6+13k$ とおき，もう一方へ代入して $k$ を決める．
+
+## 解答
+
+$x=6+13k$ とおく．法 $11$ では
+
+$$
+6+13k\equiv6+2k\equiv7\pmod{11}
+$$
+
+だから，$2k\equiv1\pmod{11}$，すなわち $k\equiv6\pmod{11}$ である．最小の非負の $k$ は $6$ なので，
+
+$$
+x=6+13\cdot6=\boxed{84}
+$$
+
+となる．
+
+## コメント
+
+$84$ は法 $13$ で $6$，法 $11$ で $7$ になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

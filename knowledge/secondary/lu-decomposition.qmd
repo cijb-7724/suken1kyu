@@ -1,0 +1,61 @@
+---
+title: "LU分解"
+id: lu-decomposition
+---
+
+## 概要
+
+正方行列を下三角行列 $L$ と上三角行列 $U$ の積に分解し，連立方程式・行列式・逆行列の計算へ利用します．Gauss消去の過程を行列として保存したものです．
+
+## 基本事項
+
+行交換なしでGauss消去できる行列について，対角成分を1とする下三角行列 $L$ と上三角行列 $U$ に
+
+$$
+A=LU
+$$
+
+と分解できます．第 $j$ 列を消去するとき，$R_i\leftarrow R_i-m_{ij}R_j$ とした倍率 $m_{ij}$ を $L$ の $(i,j)$ 成分へ記録します．
+
+$Ax=b$ は
+
+$$
+Ly=b,\qquad Ux=y
+$$
+
+の2段階に分けます．$Ly=b$ は上から前進代入，$Ux=y$ は下から後退代入します．また
+
+$$
+\det A=\det L\det U
+$$
+
+で，$L$ の対角がすべて1なら $\det A$ は $U$ の対角成分の積です．
+
+### 行交換が必要な場合
+
+途中の主成分が0なら，実用上は置換行列 $P$ を含む $PA=LU$ を使います．このとき行列式の符号に置換の影響を入れます．
+
+## 例題
+
+$$
+A=\begin{pmatrix}2&1\\4&3\end{pmatrix}
+$$
+
+では，第1行の2倍を第2行から引くので，
+
+$$
+L=\begin{pmatrix}1&0\\2&1\end{pmatrix},\qquad
+U=\begin{pmatrix}2&1\\0&1\end{pmatrix}．
+$$
+
+実際に $LU=A$ で，$\det A=2\cdot1=2$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

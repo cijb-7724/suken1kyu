@@ -1,0 +1,61 @@
+---
+title: "第414回 1次 問4"
+id: pri-problem-000074
+paper_id: pri-paper-0414
+question_number: 4
+cell_label: ユニタリ行列
+tags:
+  - unitary-matrix
+---
+
+## 問題
+
+行列
+
+$$
+\begin{pmatrix}
+1/\sqrt2&1/\sqrt3&1/\sqrt6\\
+(1+i)/(2\sqrt2)&a&-(3-i)/(2\sqrt6)\\
+(1-i)/(2\sqrt2)&b&-(3+i)/(2\sqrt6)
+\end{pmatrix}
+$$
+
+がユニタリ行列であるとき，$a,b$ を求めなさい．
+
+## 必要な知識
+
+- [ユニタリ行列](../../knowledge/primary/unitary-matrix.qmd)
+
+## 必要な発想
+
+列ベクトルどうしのHermite内積が0になる条件を2本立てて，$a,b$ を解く．
+
+## 解答
+
+第2列が第1列，第3列に直交する条件を整理すると，
+
+$$
+(1-i)a+(1+i)b=-\frac2{\sqrt3},
+$$
+
+$$
+(3+i)a+(3-i)b=\frac2{\sqrt3}．
+$$
+
+この連立方程式を解くと，
+
+$$
+\boxed{a=-\frac{i}{\sqrt3},\qquad b=\frac{i}{\sqrt3}}
+$$
+
+となる．このとき第2列のノルムも $1$ である．
+
+## コメント
+
+複素内積では左側のベクトルの成分を共役にする点が重要です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

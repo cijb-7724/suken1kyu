@@ -1,0 +1,49 @@
+---
+title: "第363回 1次 問7"
+id: pri-problem-000042
+paper_id: pri-paper-0363
+question_number: 7
+cell_label: 順序領域の三重積分
+tags:
+  - double-integral
+---
+
+## 問題
+
+$V=\{(x,y,z)\mid0\le x\le y\le z\le1\}$ とするとき，
+
+$$
+\iiint_Vx^3y^2z\,dx\,dy\,dz
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [重積分](../../knowledge/primary/double-integral.qmd)
+
+## 必要な発想
+
+不等式の並びをそのまま $0\le x\le y$，$0\le y\le z$，$0\le z\le1$ という累次積分へ読む．
+
+## 解答
+
+$$
+\begin{aligned}
+\iiint_Vx^3y^2z\,dx\,dy\,dz
+&=\int_0^1\int_0^z\int_0^yx^3y^2z\,dx\,dy\,dz\\
+&=\int_0^1\int_0^z\frac{y^6z}{4}\,dy\,dz\\
+&=\int_0^1\frac{z^8}{28}\,dz\\
+&=\boxed{\frac1{252}}．
+\end{aligned}
+$$
+
+## コメント
+
+内側から積分するたびに，上端が次の変数であることを忘れないようにします．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

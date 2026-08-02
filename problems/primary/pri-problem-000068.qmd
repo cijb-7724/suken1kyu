@@ -1,0 +1,56 @@
+---
+title: "第406回 1次 問5"
+id: pri-problem-000068
+paper_id: pri-paper-0406
+question_number: 5
+cell_label: 幾何分布
+tags:
+  - geometric-distribution
+  - expected-value
+  - variance
+---
+
+## 問題
+
+$$
+P(X=k)=\frac5{11}\left(1-\frac5{11}\right)^{k-1}\qquad(k=1,2,\ldots)
+$$
+
+で定められる $X$ の期待値と分散を求めなさい．
+
+## 必要な知識
+
+- [幾何分布](../../knowledge/primary/geometric-distribution.qmd)
+- [期待値](../../knowledge/primary/expected-value.qmd)
+- [分散](../../knowledge/primary/variance.qmd)
+
+## 必要な発想
+
+成功までの試行回数を数える幾何分布と見抜き，標準公式を用いる．
+
+## 解答
+
+成功確率 $p=5/11$ の幾何分布であり，
+
+$$
+E[X]=\frac1p,\qquad V(X)=\frac{1-p}{p^2}
+$$
+
+だから，
+
+$$
+\boxed{E[X]=\frac{11}{5}},\qquad
+\boxed{V(X)=\frac{66}{25}}
+$$
+
+である．
+
+## コメント
+
+値が $1$ から始まるため，失敗回数ではなく試行回数を表しています．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

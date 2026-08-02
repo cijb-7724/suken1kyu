@@ -1,0 +1,57 @@
+---
+title: "第372回 1次 問4"
+id: pri-problem-000046
+paper_id: pri-paper-0372
+question_number: 4
+cell_label: 接平面
+tags:
+  - multivariable-differentiation
+---
+
+## 問題
+
+$$
+f(x,y)=\frac{\sqrt{3x+2y}}{x^2+y^2}
+$$
+
+について，$f_x(1,-1)$ と，曲面 $z=f(x,y)$ 上の点 $(1,-1,1/2)$ における接平面を求めなさい．
+
+## 必要な知識
+
+- [多変数関数の微分](../../knowledge/primary/multivariable-differentiation.qmd)
+
+## 必要な発想
+
+偏微分では他方の変数を定数として扱い，接平面の公式へ $f_x,f_y$ を代入する．
+
+## 解答
+
+積・商の微分から
+
+$$
+f_x(1,-1)=\frac34-\frac12=\boxed{\frac14}
+$$
+
+である．同様に $f_y(1,-1)=1$ を得る．接平面は
+
+$$
+z-\frac12=\frac14(x-1)+(y+1)
+$$
+
+だから，整理して
+
+$$
+\boxed{x+4y-4z+5=0}
+$$
+
+となる．
+
+## コメント
+
+点が曲面上にあることも $f(1,-1)=1/2$ で確認できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

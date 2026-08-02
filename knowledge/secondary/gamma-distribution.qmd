@@ -1,0 +1,55 @@
+---
+title: "ガンマ分布"
+id: gamma-distribution
+---
+
+## 概要
+
+ガンマ分布は，独立な指数分布の待ち時間の和を表す連続分布です．密度の形と，指数分布からの畳み込みを理解します．
+
+## 基本事項
+
+形状 $k>0$，率 $\alpha>0$ のガンマ分布の密度は
+
+$$
+f(s)=\frac{\alpha^k}{\Gamma(k)}s^{k-1}e^{-\alpha s}\qquad(s\ge0)
+$$
+
+です．期待値と分散は
+
+$$
+E[S]=\frac{k}{\alpha},\qquad V(S)=\frac{k}{\alpha^2}．
+$$
+
+$k=m$ が正の整数なら $\Gamma(m)=(m-1)!$ です．率 $\alpha$ の独立な指数分布 $Y_1,ldots,Y_m$ の和は，形状 $m$，率 $\alpha$ のガンマ分布に従います．
+
+### 畳み込みによる確認
+
+$m=2$ では
+
+$$
+f_{Y_1+Y_2}(s)=\int_0^s\alpha e^{-\alpha t}\alpha e^{-\alpha(s-t)}dt
+=\alpha^2se^{-\alpha s}．
+$$
+
+もう1個足すと $\alpha^3s^2e^{-\alpha s}/2$ になります．
+
+## 例題
+
+率2の指数分布3個の和 $S$ の密度は
+
+$$
+f_S(s)=\frac{2^3}{2!}s^2e^{-2s}=4s^2e^{-2s}\qquad(s\ge0)
+$$
+
+です．期待値は $3/2$，分散は $3/4$ です．密度の積分は1になります．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

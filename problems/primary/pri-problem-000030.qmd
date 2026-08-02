@@ -1,0 +1,66 @@
+---
+title: "第358回 1次 問2"
+id: pri-problem-000030
+paper_id: pri-paper-0358
+question_number: 2
+cell_label: 7等分角の三角比
+tags:
+  - trigonometric-identities
+---
+
+## 問題
+
+次の値を求めなさい．
+
+1. $\cos\dfrac{2\pi}{7}+\cos\dfrac{4\pi}{7}+\cos\dfrac{8\pi}{7}$
+2. $\cos\dfrac{\pi}{7}\cos\dfrac{2\pi}{7}\cos\dfrac{3\pi}{7}$
+
+## 必要な知識
+
+- [三角関数の恒等式](../../knowledge/primary/trigonometric-identities.qmd)
+
+## 必要な発想
+
+7乗根の実部，または $\sin 7x$ の積表示を使い，7等分角をまとめて扱う．
+
+## 解答
+
+$\zeta=e^{2\pi i/7}$ とすると，$1+\zeta+\cdots+\zeta^6=0$ である．実部を取れば，
+
+$$
+1+2\left(\cos\frac{2\pi}{7}+\cos\frac{4\pi}{7}+\cos\frac{6\pi}{7}\right)=0
+$$
+
+となる．$\cos(8\pi/7)=\cos(6\pi/7)$ なので，(1)は
+
+$$
+\boxed{-\frac12}
+$$
+
+である．
+
+また，$\sin 4x=4\sin x\cos x\cos2x$ に $x=\pi/7$ を用いると，
+
+$$
+\cos\frac{\pi}{7}\cos\frac{2\pi}{7}
+=\frac{\sin(4\pi/7)}{4\sin(\pi/7)}
+=\frac{\sin(3\pi/7)}{4\sin(\pi/7)}．
+$$
+
+さらに $\sin(2\pi/7)=2\sin(\pi/7)\cos(\pi/7)$ などを組み合わせる標準的な7等分角の積公式
+
+$$
+\cos\frac{\pi}{7}\cos\frac{2\pi}{7}\cos\frac{3\pi}{7}=\frac18
+$$
+
+より，(2)は $\boxed{1/8}$ である．
+
+## コメント
+
+個別に近似値を出す問題ではなく，角が $\pi/7$ の整数倍でそろっていることを使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

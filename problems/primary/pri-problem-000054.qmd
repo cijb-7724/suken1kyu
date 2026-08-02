@@ -1,0 +1,62 @@
+---
+title: "第380回 1次 問5"
+id: pri-problem-000054
+paper_id: pri-paper-0380
+question_number: 5
+cell_label: 2個のさいころ
+tags:
+  - discrete-joint-distribution
+  - covariance
+---
+
+## 問題
+
+1から4の目を等確率で出す正四面体のさいころを2個振る．大きい方の目を $X$，2つの目の差の絶対値を $Y$ とするとき，$V(Y)$ と $C(X,Y)$ を求めなさい．
+
+## 必要な知識
+
+- [離散同時分布](../../knowledge/primary/discrete-joint-distribution.qmd)
+- [共分散](../../knowledge/primary/covariance.qmd)
+
+## 必要な発想
+
+順序つきの16通りを表にし，$E[Y]$，$E[Y^2]$，$E[X]$，$E[XY]$ を数える．
+
+## 解答
+
+$Y=0,1,2,3$ となる組の個数はそれぞれ $4,6,4,2$ である．したがって，
+
+$$
+E[Y]=\frac{6+8+6}{16}=\frac54,\qquad
+E[Y^2]=\frac{6+16+18}{16}=\frac52．
+$$
+
+よって，
+
+$$
+V(Y)=\frac52-\left(\frac54\right)^2=\boxed{\frac{15}{16}}．
+$$
+
+同じ16通りを数えると
+
+$$
+E[X]=\frac{25}{8},\qquad E[XY]=\frac{35}{8}．
+$$
+
+したがって，
+
+$$
+C(X,Y)=E[XY]-E[X]E[Y]
+=\frac{35}{8}-\frac{25}{8}\cdot\frac54
+=\boxed{\frac{15}{32}}．
+$$
+
+## コメント
+
+同じ目のときも標本点は4通りあり，$Y=0$ として数えます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

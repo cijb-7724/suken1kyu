@@ -1,0 +1,57 @@
+---
+title: "第372回 1次 問1"
+id: pri-problem-000043
+paper_id: pri-paper-0372
+question_number: 1
+cell_label: 一次合同式
+tags:
+  - linear-congruence
+---
+
+## 問題
+
+$65x\equiv3\pmod{79}$，$0\le x<79$ を満たす整数 $x$ を求めなさい．
+
+## 必要な知識
+
+- [一次合同式](../../knowledge/primary/linear-congruence.qmd)
+
+## 必要な発想
+
+Euclidの互除法で $65$ の法 $79$ における逆元を求める．
+
+## 解答
+
+Euclidの互除法を逆にたどると，
+
+$$
+79=5\cdot14+9,\quad14=9+5,\quad9=5+4,\quad5=4+1
+$$
+
+$$
+1=17\cdot14-3\cdot79
+$$
+
+したがって $14^{-1}\equiv17\pmod{79}$ である．$65\equiv-14\pmod{79}$ だから，
+
+$$
+x\equiv-3\cdot17=-51\equiv28\pmod{79}
+$$
+
+となる．よって，
+
+$$
+\boxed{x=28}
+$$
+
+である．
+
+## コメント
+
+最後に $65\cdot28=1820\equiv3\pmod{79}$ と確認できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,48 @@
+---
+title: "第363回 1次 問2"
+id: pri-problem-000037
+paper_id: pri-paper-0363
+question_number: 2
+cell_label: 複素三角関数
+tags:
+  - hyperbolic-function
+---
+
+## 問題
+
+$\cos 6i-i\sin 6i$ を求めなさい．
+
+## 必要な知識
+
+- [双曲線関数](../../knowledge/primary/hyperbolic-function.qmd)
+
+## 必要な発想
+
+$\cos(ix)=\cosh x$，$\sin(ix)=i\sinh x$ を使い，指数関数へ戻す．
+
+## 解答
+
+$$
+\cos6i=\cosh6,\qquad \sin6i=i\sinh6
+$$
+
+だから，
+
+$$
+\cos6i-i\sin6i
+=\cosh6+\sinh6
+=\frac{e^6+e^{-6}}2+\frac{e^6-e^{-6}}2
+=\boxed{e^6}
+$$
+
+である．
+
+## コメント
+
+$-i\cdot i=1$ の符号に注意します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

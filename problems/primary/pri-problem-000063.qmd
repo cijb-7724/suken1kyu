@@ -1,0 +1,57 @@
+---
+title: "第389回 1次 問7"
+id: pri-problem-000063
+paper_id: pri-paper-0389
+question_number: 7
+cell_label: 重解をもつ微分方程式
+tags:
+  - constant-coefficient-ode
+---
+
+## 問題
+
+$$
+y''-6y'+9y=6e^{3x},\qquad y(0)=1,\quad y'(0)=5
+$$
+
+を満たす $y$ を求めなさい．
+
+## 必要な知識
+
+- [定数係数線形微分方程式](../../knowledge/primary/constant-coefficient-ode.qmd)
+
+## 必要な発想
+
+左辺が $(D-3)^2y$ なので，$y=e^{3x}u$ とおくと $u''$ だけになる．
+
+## 解答
+
+$y=e^{3x}u$ とおくと，
+
+$$
+y''-6y'+9y=e^{3x}u''
+$$
+
+だから，$u''=6$ である．したがって，
+
+$$
+u=3x^2+C_1x+C_2．
+$$
+
+$y(0)=1$ から $C_2=1$，また $y'(0)=3C_2+C_1=5$ から $C_1=2$ である．よって，
+
+$$
+\boxed{y=(3x^2+2x+1)e^{3x}}
+$$
+
+となる．
+
+## コメント
+
+右辺の指数 $e^{3x}$ が特性根 $3$ と一致しているため，置換が特によく効きます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

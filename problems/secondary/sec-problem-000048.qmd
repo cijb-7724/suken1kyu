@@ -1,0 +1,100 @@
+---
+title: "第440回 2次 問6"
+id: sec-problem-000048
+paper_id: sec-paper-0440
+question_number: 6
+cell_label: 基底を変えた表現行列
+tags:
+  - linear-map-matrix
+---
+
+## 問題
+
+標準基底に関する線形写像の行列を
+
+$$
+M=\begin{pmatrix}2&3&-1\\-5&4&3\\1&-1&4\end{pmatrix}
+$$
+
+とする．定義域の基底
+
+$$
+v_1=(-1,1,2),\ v_2=(1,-2,-1),\ v_3=(-2,1,-1)
+$$
+
+と，値域の基底
+
+$$
+w_1=(1,-3,-2),\ w_2=(-2,9,6),\ w_3=(1,-5,-3)
+$$
+
+に関する表現行列を求めなさい．
+
+## 必要な知識
+
+- [線形写像の表現行列](../../knowledge/secondary/linear-map-matrix.qmd)
+
+### この問題で使う一般形
+
+基底ベクトルを列に並べた行列を $V,W$ とし，新しい表現行列を $B$ とすると，
+
+$$
+MV=WB,\qquad B=W^{-1}MV
+$$
+
+です．$B$ の第 $j$ 列は，$f(v_j)$ を $w_1,w_2,w_3$ の一次結合で表した係数です．
+
+## 必要な発想
+
+各 $v_j$ の像を標準座標で計算し，それを $w$ 基底の座標へ変換する．
+
+## 解答
+
+基底行列を
+
+$$
+V=\begin{pmatrix}-1&1&-2\\1&-2&1\\2&-1&-1\end{pmatrix},\qquad
+W=\begin{pmatrix}1&-2&1\\-3&9&-5\\-2&6&-3\end{pmatrix}
+$$
+
+とする．まず
+
+$$
+MV=
+\begin{pmatrix}
+-1&-3&0\\
+15&-16&11\\
+6&-1&-7
+\end{pmatrix}．
+$$
+
+各列について $Wb_j=Mv_j$ を解くと，
+
+$$
+b_1=\begin{pmatrix}3\\-4\\-12\end{pmatrix},\quad
+b_2=\begin{pmatrix}-10\\11\\29\end{pmatrix},\quad
+b_3=\begin{pmatrix}-7\\-25\\-43\end{pmatrix}．
+$$
+
+したがって求める表現行列は
+
+$$
+\boxed{B=
+\begin{pmatrix}
+3&-10&-7\\
+-4&11&-25\\
+-12&29&-43
+\end{pmatrix}}
+$$
+
+である．
+
+## コメント
+
+$M$ は標準座標から標準座標への行列です．新しい基底へ移るには，左から $W^{-1}$ を掛ける必要があります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

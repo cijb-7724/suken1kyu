@@ -1,0 +1,91 @@
+---
+title: "第444回 2次 問6"
+id: sec-problem-000055
+paper_id: sec-paper-0444
+question_number: 6
+cell_label: 特異値分解
+tags:
+  - singular-value-decomposition
+---
+
+## 問題
+
+$$
+A=\begin{pmatrix}1&1&0\\0&1&1\end{pmatrix},\qquad M=A^{\mathsf T}A
+$$
+
+とする．$M$ の固有値と，それを直交対角化する行列 $Q$ を1つ求め，対応する $A$ の正の特異値を求めなさい．
+
+## 必要な知識
+
+- [特異値分解](../../knowledge/secondary/singular-value-decomposition.qmd)
+
+### この問題で使う一般形
+
+$A^{\mathsf T}A$ は実対称半正定値行列です．その正規直交固有ベクトルを列に並べた $Q$ により $Q^{\mathsf T}A^{\mathsf T}AQ$ は対角化され，正の固有値の平方根が $A$ の特異値になります．
+
+## 必要な発想
+
+長方形行列 $A$ を直接対角化せず，対称行列 $A^{\mathsf T}A$ の固有値問題へ移す．
+
+## 解答
+
+まず，
+
+$$
+M=A^{\mathsf T}A=
+\begin{pmatrix}
+1&1&0\\
+1&2&1\\
+0&1&1
+\end{pmatrix}．
+$$
+
+特性多項式は
+
+$$
+\det(\lambda I-M)=\lambda(\lambda-1)(\lambda-3)
+$$
+
+だから，固有値は大きい順に
+
+$$
+\boxed{\lambda_1=3,\quad\lambda_2=1,\quad\lambda_3=0}．
+$$
+
+対応する互いに直交する固有ベクトルとして
+
+$$
+(1,2,1)^{\mathsf T},\quad(1,0,-1)^{\mathsf T},\quad(1,-1,1)^{\mathsf T}
+$$
+
+を取れる．正規化して列に並べると，例えば
+
+$$
+\boxed{
+Q=\begin{pmatrix}
+1/\sqrt6&1/\sqrt2&1/\sqrt3\\
+2/\sqrt6&0&-1/\sqrt3\\
+1/\sqrt6&-1/\sqrt2&1/\sqrt3
+\end{pmatrix}}
+$$
+
+であり，$Q^{\mathsf T}MQ=\operatorname{diag}(3,1,0)$ を満たす．
+
+特異値は正の固有値の平方根なので，
+
+$$
+\boxed{\sigma_1=\sqrt3,\qquad\sigma_2=1}
+$$
+
+である．
+
+## コメント
+
+$A$ は $2\times3$ 行列なので正の特異値は高々2個です．固有値0は零空間に対応し，正の特異値には数えません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

@@ -1,0 +1,53 @@
+---
+title: "素数の指数とLTE"
+id: p-adic-valuation
+---
+
+## 概要
+
+整数に素数 $p$ が何個含まれるかを $p$ 進付値 $v_p$ で表し，累乗和・累乗差の指数をLTEで数えます．整除条件を不等式へ変えるのが中心です．
+
+## 基本事項
+
+$m\ne0$ に対し，$v_p(m)$ は $p^e\mid m$ を満たす最大の $e$ です．
+
+$$
+v_p(ab)=v_p(a)+v_p(b),\qquad
+v_p(a/b)=v_p(a)-v_p(b)
+$$
+
+であり，$p^k\mid m$ は $v_p(m)\ge k$ と同値です．
+
+奇素数 $p$ について，$p\mid x-y$，$p\nmid xy$ なら
+
+$$
+v_p(x^n-y^n)=v_p(x-y)+v_p(n)．
+$$
+
+$n$ が奇数で $p\mid x+y$ なら
+
+$$
+v_p(x^n+y^n)=v_p(x+y)+v_p(n)
+$$
+
+です．これらがLTE（Lifting The Exponent）です．仮定，特に $p$ が奇素数か，指数が奇数かを確認して使います．
+
+## 例題
+
+$v_3(10^{27}-1)$ を求めます．$3\mid10-1$ なので，
+
+$$
+v_3(10^{27}-1)=v_3(9)+v_3(27)=2+3=5．
+$$
+
+したがって $10^{27}-1$ は $3^5$ で割り切れ，$3^6$ では割り切れません．巨大な数を展開する必要はありません．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

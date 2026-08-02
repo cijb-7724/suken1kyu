@@ -1,0 +1,44 @@
+---
+title: "複素数"
+id: complex-number
+---
+
+## 概要
+
+複素数の直交形式・極形式と，平方根や累乗の基本計算をまとめます．
+
+## 基本事項
+
+$z=a+bi$ の絶対値は $|z|=\sqrt{a^2+b^2}$，共役は $\bar z=a-bi$ です．$z=re^{i\theta}$ と書けば，De Moivreの公式
+
+$$
+z^n=r^ne^{in\theta}
+$$
+
+が使えます．$(u+vi)^2=z$ では
+
+$$
+u^2-v^2=a,\qquad2uv=b,\qquad u^2+v^2=|z|
+$$
+
+を連立すると平方根を求められます．
+
+## 例題
+
+$z=3+4i$ の平方根で実部が正のものを求めます．$u^2+v^2=5$，$u^2-v^2=3$ から $u^2=4,v^2=1$，$2uv=4$ より
+
+$$
+\sqrt{3+4i}=2+i
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

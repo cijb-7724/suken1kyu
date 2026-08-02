@@ -1,0 +1,53 @@
+---
+title: "第414回 1次 問6"
+id: pri-problem-000076
+paper_id: pri-paper-0414
+question_number: 6
+cell_label: 短区間積分の極限
+tags:
+  - fundamental-theorem-calculus
+---
+
+## 問題
+
+$$
+\lim_{h\to0}\frac1h\int_{1/2}^{1/2+h}
+\left(\frac\pi2-\arcsin x\right)^5dx
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [微積分学の基本定理](../../knowledge/primary/fundamental-theorem-calculus.qmd)
+
+## 必要な発想
+
+短い区間上の平均値の極限は，被積分関数の左端での値になる．
+
+## 解答
+
+連続関数 $g$ に対して
+
+$$
+\lim_{h\to0}\frac1h\int_a^{a+h}g(x)dx=g(a)
+$$
+
+である．ここで $a=1/2$，$\arcsin(1/2)=\pi/6$ だから，
+
+$$
+\left(\frac\pi2-\frac\pi6\right)^5
+=\boxed{\left(\frac\pi3\right)^5}
+$$
+
+となる．
+
+## コメント
+
+積分を実際に計算する必要はなく，微分積分学の基本定理の形です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

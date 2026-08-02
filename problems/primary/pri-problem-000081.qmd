@@ -1,0 +1,59 @@
+---
+title: "第427回 1次 問4"
+id: pri-problem-000081
+paper_id: pri-paper-0427
+question_number: 4
+cell_label: 固有値
+tags:
+  - eigenvalue
+---
+
+## 問題
+
+$$
+A=\begin{pmatrix}3&5&2\\4&-4&6\\2&-3&5\end{pmatrix}
+$$
+
+の固有値を求めなさい．
+
+## 必要な知識
+
+- [固有値](../../knowledge/primary/eigenvalue.qmd)
+
+## 必要な発想
+
+特性多項式から整数根を1つ見つけ，残りを2次方程式にする．
+
+## 解答
+
+特性多項式は
+
+$$
+\det(\lambda I-A)
+=(\lambda-2)(\lambda^2-2\lambda-27)
+$$
+
+と因数分解できる．したがって，
+
+$$
+\lambda=2,\qquad
+\lambda=\frac{2\pm\sqrt{4+108}}2=1\pm2\sqrt7．
+$$
+
+よって固有値は
+
+$$
+\boxed{2, 1+2\sqrt7, 1-2\sqrt7}
+$$
+
+である．
+
+## コメント
+
+和がトレース $4$，積が行列式 $-54$ になることで確認できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

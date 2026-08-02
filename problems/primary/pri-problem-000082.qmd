@@ -1,0 +1,65 @@
+---
+title: "第427回 1次 問5"
+id: pri-problem-000082
+paper_id: pri-paper-0427
+question_number: 5
+cell_label: 分布関数と分散
+tags:
+  - distribution-function
+  - variance
+---
+
+## 問題
+
+分布関数
+
+$$
+F(x)=\begin{cases}
+0&(x<0),\\
+kx^3&(0\le x\le3),\\
+1&(x>3)
+\end{cases}
+$$
+
+について，$k$ と確率変数の分散を求めなさい．
+
+## 必要な知識
+
+- [分布関数](../../knowledge/primary/distribution-function.qmd)
+- [分散](../../knowledge/primary/variance.qmd)
+
+## 必要な発想
+
+$F(3)=1$ で $k$ を決め，微分した密度から1次・2次モーメントを計算する．
+
+## 解答
+
+$27k=1$ より，
+
+$$
+\boxed{k=\frac1{27}}．
+$$
+
+$0<x<3$ における密度は $f(x)=x^2/9$ である．したがって，
+
+$$
+E[X]=\int_0^3\frac{x^3}{9}dx=\frac94,\qquad
+E[X^2]=\int_0^3\frac{x^4}{9}dx=\frac{27}{5}．
+$$
+
+よって，
+
+$$
+V(X)=\frac{27}{5}-\left(\frac94\right)^2
+=\boxed{\frac{27}{80}}．
+$$
+
+## コメント
+
+分散は $E[X^2]-E[X]^2$ であり，$E[X^2]-E[X]$ ではありません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

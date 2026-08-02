@@ -1,0 +1,62 @@
+---
+title: "第363回 1次 問5"
+id: pri-problem-000040
+paper_id: pri-paper-0363
+question_number: 5
+cell_label: 負の二項分布
+tags:
+  - negative-binomial-distribution
+  - expected-value
+  - variance
+---
+
+## 問題
+
+$k=0,1,2,\ldots$ に対し，
+
+$$
+P(X=k)=\binom{k+2}{k}\left(\frac1{10}\right)^2
+\left(\frac9{10}\right)^k\frac1{10}
+$$
+
+で定められる確率変数 $X$ の期待値と分散を求めなさい．
+
+## 必要な知識
+
+- [負の二項分布](../../knowledge/primary/negative-binomial-distribution.qmd)
+- [期待値](../../knowledge/primary/expected-value.qmd)
+- [分散](../../knowledge/primary/variance.qmd)
+
+## 必要な発想
+
+式を直接総和せず，「成功確率 $1/10$ の試行で3回成功するまでの失敗回数」という負の二項分布と読む．
+
+## 解答
+
+これは成功確率 $p=1/10$，必要な成功回数 $r=3$ の負の二項分布である．失敗回数を数える型では
+
+$$
+E[X]=\frac{r(1-p)}p,\qquad V(X)=\frac{r(1-p)}{p^2}
+$$
+
+だから，
+
+$$
+E[X]=\frac{3(9/10)}{1/10}=\boxed{27}
+$$
+
+$$
+V(X)=\frac{3(9/10)}{(1/10)^2}=\boxed{270}
+$$
+
+である．
+
+## コメント
+
+確率変数が「試行回数」か「失敗回数」かで期待値が $r$ だけ変わるため，定義を確認します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

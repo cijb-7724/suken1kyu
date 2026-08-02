@@ -1,0 +1,95 @@
+---
+title: "第440回 2次 問4"
+id: sec-problem-000046
+paper_id: sec-paper-0440
+question_number: 4
+cell_label: 平均の区間推定と2標本検定
+tags:
+  - mean-inference
+  - two-sample-t-test
+---
+
+## 問題
+
+試料Aは $n_A=17$，標本平均 $153.0$，不偏標準偏差 $24.00$，試料Bは $n_B=10$，標本平均 $136.2$，不偏標準偏差 $18.00$ である．正規分布と共通の未知分散を仮定する．
+
+1. $\mu_A$ の95%信頼区間を求めなさい．
+2. $H_0:\mu_A=\mu_B$，$H_1:\mu_A>\mu_B$ を有意水準 $0.05$ で検定しなさい．
+
+## 必要な知識
+
+- [平均の推測](../../knowledge/secondary/mean-inference.qmd)
+- [2標本t検定](../../knowledge/secondary/two-sample-t-test.qmd)
+
+### この問題で使う一般形
+
+母分散未知の1標本平均では
+
+$$
+\bar X\pm t_{\alpha/2}(n-1)\frac{s}{\sqrt n}
+$$
+
+を用います．等分散を仮定する2標本では，プールした不偏分散
+
+$$
+s_p^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}
+$$
+
+を用いて平均差を標準化します．
+
+## 必要な発想
+
+(1)は自由度16の1標本t区間，(2)は2つの不偏分散をプールした自由度25の片側t検定として扱う．
+
+## 解答
+
+(1) 表から $t_{0.025}(16)=2.120$ である．したがって誤差幅は
+
+$$
+2.120\frac{24.00}{\sqrt{17}}\approx12.3402
+$$
+
+であり，丸め前の区間は
+
+$$
+140.6597\ldots\le\mu_A\le165.3402\ldots
+$$
+
+となる．指定された外向きの丸めにより，
+
+$$
+\boxed{140.6\le\mu_A\le165.4}
+$$
+
+である．
+
+(2) プールした不偏分散は
+
+$$
+s_p^2=\frac{16\cdot24^2+9\cdot18^2}{25}=485.28．
+$$
+
+検定統計量は
+
+$$
+t=\frac{153.0-136.2}{\sqrt{485.28}\sqrt{1/17+1/10}}
+\approx1.914．
+$$
+
+自由度25の上側5%点は $t_{0.05}(25)=1.708$ であり，$1.914>1.708$ だから棄却域に入る．したがって，
+
+$$
+\boxed{H_0\text{ を棄却し，}\mu_A>\mu_B\text{ と判断する}}
+$$
+
+となる．
+
+## コメント
+
+信頼区間は両側なので $0.025$ 点，検定は上側片側なので $0.05$ 点を使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

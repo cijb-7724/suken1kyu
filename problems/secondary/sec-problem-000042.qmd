@@ -1,0 +1,102 @@
+---
+title: "第431回 2次 問7"
+id: sec-problem-000042
+paper_id: sec-paper-0431
+question_number: 7
+cell_label: 微分方程式の置換
+tags:
+  - ode-substitution
+---
+
+## 問題
+
+次の微分方程式を解きなさい．
+
+1. $\displaystyle\frac{dy}{dx}=(x+y)^2$
+2. $\displaystyle\frac{dy}{dx}=\frac{y(1-xy-\log x-\log y)}{x(xy+\log x+\log y)}$
+
+## 必要な知識
+
+- [微分方程式の置換](../../knowledge/secondary/ode-substitution.qmd)
+
+### この問題で使う一般形
+
+右辺が $x+y$ だけの関数なら $t=x+y$，$xy$ と $\log x+\log y$ が同時に現れるなら $u=xy$ を候補にします．後者では $\log x+\log y=\log(xy)$ が置換を裏づけます．
+
+## 必要な発想
+
+式に繰り返し現れる組を新変数にする．置換後の導関数には，$x$ 自身の微分から生じる項も含める．
+
+## 解答
+
+(1) $t=x+y$ とおくと，
+
+$$
+\frac{dt}{dx}=1+\frac{dy}{dx}=1+t^2．
+$$
+
+したがって，
+
+$$
+\frac{dt}{1+t^2}=dx
+$$
+
+を積分して $\arctan t=x+C$ を得る．よって，
+
+$$
+\boxed{y=\tan(x+C)-x}
+$$
+
+である．正接が定義される各区間で解を考える．
+
+(2) 対数があるため $x>0,y>0$ の範囲で考える．$u=xy$ とおけば $y=u/x$ であり，
+
+$$
+\frac{dy}{dx}=\frac1x\frac{du}{dx}-\frac{u}{x^2},\qquad
+\log x+\log y=\log u．
+$$
+
+これを元の式へ代入すると，
+
+$$
+\frac1x\frac{du}{dx}-\frac{u}{x^2}
+=\frac{u(1-u-\log u)}{x^2(u+\log u)}．
+$$
+
+両辺に $x^2$ を掛けて整理すると，
+
+$$
+x\frac{du}{dx}
+=u+\frac{u(1-u-\log u)}{u+\log u}
+=\frac{u}{u+\log u}．
+$$
+
+したがって，
+
+$$
+\left(1+\frac{\log u}{u}\right)du=\frac{dx}{x}．
+$$
+
+積分して
+
+$$
+u+\frac12(\log u)^2=\log x+C
+$$
+
+を得る．$u=xy$ を戻せば，
+
+$$
+\boxed{xy+\frac12\{\log(xy)\}^2-\log x=C}
+$$
+
+である．
+
+## コメント
+
+$u=xy$ とおいた後，$dy/dx=u'/x-u/x^2$ の第2項を落とすと式が合いません．置換は微分まで丁寧に書きます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

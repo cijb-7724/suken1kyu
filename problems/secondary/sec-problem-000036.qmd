@@ -1,0 +1,91 @@
+---
+title: "第431回 2次 問1"
+id: sec-problem-000036
+paper_id: sec-paper-0431
+question_number: 1
+cell_label: 3倍角で解く3次方程式
+tags:
+  - trigonometric-cubic
+---
+
+## 問題
+
+3次方程式
+
+$$
+x^3+6x^2+9x+3=0
+$$
+
+の相異なる3実根を，虚数単位を用いずに求めなさい．
+
+## 必要な知識
+
+- [3倍角と3次方程式](../../knowledge/secondary/trigonometric-cubic.qmd)
+
+### この問題で使う一般形
+
+3次方程式の2次の項は $x=u-a/3$ という平行移動で消せます．また，
+
+$$
+4\cos^3\theta-3\cos\theta=\cos3\theta
+$$
+
+より，$u^3-3u$ が現れたときは $u=2\cos\theta$ とおくと1つの三角関数へまとまります．
+
+## 必要な発想
+
+$x=u-2$ で2次の項を消すと，3倍角公式と同じ係数の $u^3-3u$ が現れる．
+
+## 解答
+
+$x=u-2$ とおく．各項を展開すると，
+
+$$
+(u-2)^3+6(u-2)^2+9(u-2)+3=u^3-3u+1
+$$
+
+だから，方程式は
+
+$$
+u^3-3u+1=0
+$$
+
+となる．ここで $u=2\cos\theta$ とおけば，
+
+$$
+u^3-3u
+=8\cos^3\theta-6\cos\theta
+=2\cos3\theta．
+$$
+
+したがって，
+
+$$
+2\cos3\theta+1=0,\qquad \cos3\theta=-\frac12．
+$$
+
+相異なる $u$ を与える角として
+
+$$
+\theta=\frac{2\pi}{9},\quad\frac{4\pi}{9},\quad\frac{8\pi}{9}
+$$
+
+を選べる．元の変数は $x=u-2$ なので，3実根は
+
+$$
+\boxed{2\cos\frac{2\pi}{9}-2,\quad
+2\cos\frac{4\pi}{9}-2,\quad
+2\cos\frac{8\pi}{9}-2}
+$$
+
+である．
+
+## コメント
+
+Cardanoの公式を機械的に使うと途中に複素数が現れます．「3実根」と「虚数を使わない」という条件が，3倍角による解法を示唆しています．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

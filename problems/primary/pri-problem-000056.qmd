@@ -1,0 +1,55 @@
+---
+title: "第380回 1次 問7"
+id: pri-problem-000056
+paper_id: pri-paper-0380
+question_number: 7
+cell_label: 積分順序の交換
+tags:
+  - double-integral
+---
+
+## 問題
+
+$$
+\int_0^2\!dy\int_y^2x\sqrt{x^3+1}\,dx
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [重積分](../../knowledge/primary/double-integral.qmd)
+
+## 必要な発想
+
+そのまま $x$ で積分しにくいので，領域 $0\le y\le x\le2$ を読み，積分順序を交換する．
+
+## 解答
+
+領域は $0\le x\le2$，$0\le y\le x$ と書き直せる．したがって，
+
+$$
+\begin{aligned}
+\int_0^2dy\int_y^2x\sqrt{x^3+1}\,dx
+&=\int_0^2dx\int_0^x x\sqrt{x^3+1}\,dy\\
+&=\int_0^2x^2\sqrt{x^3+1}\,dx．
+\end{aligned}
+$$
+
+$u=x^3+1$ とおけば，
+
+$$
+\frac13\int_1^9u^{1/2}\,du
+=\frac29\left(9^{3/2}-1\right)
+=\boxed{\frac{52}{9}}．
+$$
+
+## コメント
+
+積分順序を交換すると，置換積分に必要な $x^2dx$ が現れます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

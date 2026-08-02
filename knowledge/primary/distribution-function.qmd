@@ -1,0 +1,38 @@
+---
+title: "分布関数"
+id: distribution-function
+---
+
+## 概要
+
+分布関数から確率密度やモーメントを取り出す方法です．
+
+## 基本事項
+
+分布関数は $F(x)=P(X\le x)$ で，単調非減少，右連続，$F(-\infty)=0$，$F(\infty)=1$ を満たします．絶対連続な区間では密度は
+
+$$
+f(x)=F'(x)
+$$
+
+です．端点で跳びがあれば，その大きさが点確率になります．期待値は $\int xf(x)dx$ で計算します．
+
+## 例題
+
+$F(x)=0$ $(x<0)$，$F(x)=x^2$ $(0\le x\le1)$，$F(x)=1$ $(x>1)$ なら，密度は $f(x)=2x$ です．したがって
+
+$$
+E[X]=\int_0^1 2x^2dx=\frac23
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

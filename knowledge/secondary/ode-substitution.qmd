@@ -1,0 +1,53 @@
+---
+title: "微分方程式の置換"
+id: ode-substitution
+---
+
+## 概要
+
+微分方程式に繰り返し現れる $x+y$，$xy$，$y/x$ などを新変数にし，変数分離形や線形方程式へ変換する方法です．置換は式の見た目ではなく，置換後の導関数まで簡単になるかで選びます．
+
+## 基本事項
+
+右辺が $F(x+y)$ なら $u=x+y$ とおき，
+
+$$
+u'=1+y'
+$$
+
+を使います．同次形 $y'=F(y/x)$ なら $y=ux$ とおき，$y'=u+xu'$ です．積 $xy$ が現れるなら $u=xy$ とおき，
+
+$$
+y=\frac ux,\qquad y'=\frac{u'}x-\frac{u}{x^2}
+$$
+
+です．対数について $\log x+\log y=\log(xy)$ が同時に現れれば，$u=xy$ の強い手掛かりになります．
+
+### 解の脱落
+
+置換後に $u$ や $1+u^2$ などで割る場合は，割った量が0になる定数解を別に確認します．また対数・平方根がある場合は定義域を明記します．
+
+## 例題
+
+$$
+y'=1+\frac yx
+$$
+
+を解きます．$y=ux$ とおくと $u+xu'=1+u$ だから $xu'=1$ です．従って
+
+$$
+u=\log|x|+C,\qquad
+y=x\log|x|+Cx
+$$
+
+となります．$y/x$ が繰り返し現れるためにこの置換を選びました．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

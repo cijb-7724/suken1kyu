@@ -1,0 +1,53 @@
+---
+title: "第389回 1次 問2"
+id: pri-problem-000058
+paper_id: pri-paper-0389
+question_number: 2
+cell_label: 双曲線関数の恒等式
+tags:
+  - hyperbolic-function
+---
+
+## 問題
+
+$$
+\cosh^2\frac{\pi i}{8}+\sinh^2\frac{\pi i}{8}
+$$
+
+を求めなさい．
+
+## 必要な知識
+
+- [双曲線関数](../../knowledge/primary/hyperbolic-function.qmd)
+
+## 必要な発想
+
+純虚数を引数にもつ双曲線関数を三角関数へ変換する．
+
+## 解答
+
+$\cosh(it)=\cos t$，$\sinh(it)=i\sin t$ より，
+
+$$
+\cosh^2(it)+\sinh^2(it)
+=\cos^2t-\sin^2t
+=\cos2t．
+$$
+
+$t=\pi/8$ を代入して，
+
+$$
+\boxed{\cos\frac\pi4=\frac{\sqrt2}{2}}
+$$
+
+である．
+
+## コメント
+
+実数に対する $\cosh^2t-\sinh^2t=1$ をそのまま使う式ではありません．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

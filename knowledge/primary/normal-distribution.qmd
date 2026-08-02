@@ -1,0 +1,39 @@
+---
+title: "正規分布"
+id: normal-distribution
+---
+
+## 概要
+
+正規分布の密度，標準化，基本的なモーメントをまとめます．
+
+## 基本事項
+
+$X\sim N(\mu,\sigma^2)$ の密度は
+
+$$
+f(x)=\frac1{\sqrt{2\pi}\sigma}
+\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+$$
+
+です．$Z=(X-\mu)/\sigma$ は標準正規分布に従います．標準正規分布は原点対称なので奇数次モーメントは0で，偶数次は
+
+$$
+E[Z^{2m}]=(2m-1)!!
+$$
+
+です．
+
+## 例題
+
+標準正規分布では $E[Z^2]=1$，$E[Z^4]=3$，$E[Z^6]=15$ です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

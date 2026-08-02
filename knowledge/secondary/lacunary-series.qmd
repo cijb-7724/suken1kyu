@@ -1,0 +1,48 @@
+---
+title: "疎な指数をもつ級数"
+id: lacunary-series
+---
+
+## 概要
+
+指数が等比的に飛ぶ級数を扱います．通常のべき級数のような隣接係数の議論より，変数のべき乗による自己相似性と関数方程式が重要です．
+
+## 基本事項
+
+$$
+f(x)=\sum_{n=0}^{\infty}c_nx^{q^n}\qquad(q\ge2)
+$$
+
+では，
+
+$$
+f(x^q)=\sum_{n=0}^{\infty}c_nx^{q^{n+1}}
+$$
+
+となり，添字を1つずらせます．$c_{n+1}$ と $c_n$ に簡単な関係があれば，$f(x)$ と $f(x^q)$ の関数方程式が得られます．
+
+境界 $x\to1-$ の挙動では，関数方程式から「極限が存在すると仮定した場合の候補」は求まっても，存在は保証されません．極限の不存在を示すには，$x_m=a^{1/q^m}$ のように $x_m^q=x_{m-1}$ を満たす列を選び，偶数・奇数の部分列を比較します．
+
+## 例題
+
+$$
+f(x)=x-x^2+x^4-x^8+\cdots
+$$
+
+では
+
+$$
+f(x^2)=x^2-x^4+x^8-\cdots
+$$
+
+なので $f(x)+f(x^2)=x$ です．もし $x\to1-$ で極限 $L$ が存在するなら $2L=1$，従って $L=1/2$ です．ただし，これは存在を証明していないため，別に部分列や一様評価が必要です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

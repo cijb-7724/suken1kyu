@@ -1,0 +1,93 @@
+---
+title: "第431回 2次 問4"
+id: sec-problem-000039
+paper_id: sec-paper-0431
+question_number: 4
+cell_label: 相関係数の検定
+tags:
+  - correlation-inference
+---
+
+## 問題
+
+約2000人の母集団から199人を無作為抽出し，標本相関係数 $r=0.68$ を得た．2変量正規分布を仮定する．
+
+1. $H_0:\rho=0.75$，$H_1:\rho<0.75$ を有意水準 $0.01$ で検定しなさい．
+2. $\rho$ の95%信頼区間を，指定された丸め方で求めなさい．
+
+## 必要な知識
+
+- [相関係数の推測](../../knowledge/secondary/correlation-inference.qmd)
+
+### この問題で使う一般形
+
+Fisherの $z$ 変換
+
+$$
+z(r)=\frac12\log\frac{1+r}{1-r}
+$$
+
+を行うと，標本数 $n$ が十分大きいとき，$z(r)$ は平均 $z(\rho)$，標準偏差 $1/\sqrt{n-3}$ の正規分布で近似できます．
+
+## 必要な発想
+
+相関係数をそのまま正規近似せず，Fisherの $z$ 尺度へ変換して検定と区間推定を行い，最後に逆変換する．
+
+## 解答
+
+表から
+
+$$
+z(0.68)=0.829,\qquad z(0.75)=0.973
+$$
+
+である．また，$n=199$ なので
+
+$$
+\frac1{\sqrt{n-3}}=\frac1{14}．
+$$
+
+(1) 帰無仮説の下での標準化統計量は
+
+$$
+Z=\frac{0.829-0.973}{1/14}=-2.016．
+$$
+
+左片側1%点は $-2.326$ であり，$-2.016>-2.326$ だから棄却域には入らない．したがって，
+
+$$
+\boxed{H_0\text{ は棄却できない}}
+$$
+
+と判断する．
+
+(2) $z$ 尺度での95%信頼区間は
+
+$$
+0.829\pm1.960\cdot\frac1{14}
+=0.829\pm0.140
+$$
+
+だから，およそ $0.689\le z(\rho)\le0.969$ である．逆変換
+
+$$
+\rho=\frac{e^{2z}-1}{e^{2z}+1}
+$$
+
+を用いると，およそ $0.597\le\rho\le0.748$ となる．指定どおり下端を小数第3位で切り捨て，上端を切り上げると，
+
+$$
+\boxed{0.59\le\rho\le0.75}
+$$
+
+である．
+
+## コメント
+
+「棄却できない」は「$\rho=0.75$ と証明された」という意味ではありません．標本から1%水準で反証できなかったという結論です．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

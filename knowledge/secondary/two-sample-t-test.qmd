@@ -1,0 +1,47 @@
+---
+title: "2標本t検定"
+id: two-sample-t-test
+---
+
+## 概要
+
+独立な2つの正規母集団の平均差を検定します．母分散が等しいと仮定するプール型と，等分散を仮定しないWelch型を区別します．
+
+## 基本事項
+
+2標本の大きさを $n_1,n_2$，標本平均を $\bar X_1,\bar X_2$，不偏分散を $s_1^2,s_2^2$ とします．共通の未知分散を仮定する場合，プール分散は
+
+$$
+s_p^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}
+$$
+
+です．$H_0:\mu_1-\mu_2=\Delta_0$ の下で
+
+$$
+t=\frac{(\bar X_1-\bar X_2)-\Delta_0}
+{s_p\sqrt{1/n_1+1/n_2}}
+$$
+
+は自由度 $n_1+n_2-2$ のt分布に従います．上側片側なら $t>t_\alpha$，両側なら $|t|>t_{\alpha/2}$ が棄却域です．
+
+等分散を仮定しない場合は分母を $\sqrt{s_1^2/n_1+s_2^2/n_2}$ とするWelch検定を使い，自由度も近似式で求めます．問題文の仮定を確認して選びます．
+
+## 例題
+
+$n_1=n_2=10$，$\bar X_1=12$，$\bar X_2=10$，$s_1=s_2=2$ とします．等分散型では $s_p=2$ で，
+
+$$
+t=\frac2{2\sqrt{1/10+1/10}}=\sqrt5\approx2.236．
+$$
+
+自由度18の両側5%点は約2.101なので，平均が等しいという帰無仮説を5%水準で棄却します．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

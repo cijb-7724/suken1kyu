@@ -1,0 +1,50 @@
+---
+title: "第406回 1次 問4"
+id: pri-problem-000067
+paper_id: pri-paper-0406
+question_number: 4
+cell_label: 展開係数
+tags:
+  - maclaurin-expansion
+---
+
+## 問題
+
+$\dfrac{\sin6x}{(1-x)^4}$ と $\dfrac{\cos6x}{(1-x)^4}$ のマクローリン展開における $x^4$ の係数を求めなさい．
+
+## 必要な知識
+
+- [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
+
+## 必要な発想
+
+各因子を必要な次数まで展開し，次数の和が4になる組だけを拾う．
+
+## 解答
+
+$$
+(1-x)^{-4}=\sum_{n=0}^{\infty}\binom{n+3}{3}x^n
+$$
+
+である．$\sin6x=6x-36x^3+O(x^5)$ だから，$x^4$ の係数は
+
+$$
+6\binom63-36\binom43=120-144=\boxed{-24}．
+$$
+
+また，$\cos6x=1-18x^2+54x^4+O(x^6)$ だから，
+
+$$
+\binom73-18\binom53+54
+=35-180+54=\boxed{-91}．
+$$
+
+## コメント
+
+級数全体を掛けず，目的の次数に寄与する項だけを書き出します．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

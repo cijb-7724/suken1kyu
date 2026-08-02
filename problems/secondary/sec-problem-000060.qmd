@@ -1,0 +1,101 @@
+---
+title: "第461回 2次 問4"
+id: sec-problem-000060
+paper_id: sec-paper-0461
+question_number: 4
+cell_label: 最尤推定とガンマ分布
+tags:
+  - maximum-likelihood
+  - gamma-distribution
+---
+
+## 問題
+
+$\alpha>0$ とし，
+
+$$
+f_\alpha(x)=\begin{cases}
+\dfrac{\alpha}{(1+x)^{\alpha+1}}&(x\ge0),\\
+0&(x<0)
+\end{cases}
+$$
+
+とする．独立標本 $X_1,X_2,X_3$ について，
+
+1. $\alpha$ の最尤推定値を求めなさい．
+2. $S=\sum_{j=1}^3\log(1+X_j)$ の確率密度関数を求めなさい．
+
+## 必要な知識
+
+- [最尤法](../../knowledge/secondary/maximum-likelihood.qmd)
+- [ガンマ分布](../../knowledge/secondary/gamma-distribution.qmd)
+
+### この問題で使う一般形
+
+尤度の積は対数尤度にすると和になり，微分しやすくなります．また単調変換 $Y=g(X)$ の密度は
+
+$$
+f_Y(y)=f_X(g^{-1}(y))\left|\frac{d}{dy}g^{-1}(y)\right|
+$$
+
+です．同じ率 $\alpha$ の独立な指数分布3個の和は，形状3のガンマ分布になります．
+
+## 必要な発想
+
+尤度では $\log(1+x_i)$ の和をまとめる．分布では $Y_i=\log(1+X_i)$ と変換すると指数分布になり，$S$ はその3個の和になる．
+
+## 解答
+
+(1) 観測値を $x_1,x_2,x_3$ とすると，尤度は
+
+$$
+L(\alpha)=\alpha^3\prod_{j=1}^3(1+x_j)^{-(\alpha+1)}．
+$$
+
+対数尤度は
+
+$$
+\ell(\alpha)=3\log\alpha-(\alpha+1)\sum_{j=1}^3\log(1+x_j)．
+$$
+
+したがって，
+
+$$
+\ell'(\alpha)=\frac3\alpha-\sum_{j=1}^3\log(1+x_j)．
+$$
+
+$\ell''(\alpha)=-3/\alpha^2<0$ なので，停留点が一意な最大点である．よって，
+
+$$
+\boxed{\widehat\alpha=
+\frac3{\log(1+x_1)+\log(1+x_2)+\log(1+x_3)}}．
+$$
+
+(2) $Y=\log(1+X)$ とおくと，$x=e^y-1$，$dx/dy=e^y$ である．$y\ge0$ に対し
+
+$$
+f_Y(y)=\frac\alpha{(e^y)^{\alpha+1}}e^y
+=\alpha e^{-\alpha y}．
+$$
+
+したがって各 $Y_j$ は率 $\alpha$ の指数分布に従い，$S=Y_1+Y_2+Y_3$ は形状3，率 $\alpha$ のガンマ分布に従う．密度は
+
+$$
+\boxed{
+g_\alpha(s)=\begin{cases}
+\dfrac{\alpha^3}{2}s^2e^{-\alpha s}&(s\ge0),\\
+0&(s<0)
+\end{cases}}
+$$
+
+である．
+
+## コメント
+
+$X$ の重い裾は，対数変換によって指数分布の単純な形へ変わります．変換後の支持範囲 $s\ge0$ も忘れずに書きます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

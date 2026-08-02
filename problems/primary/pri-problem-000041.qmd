@@ -1,0 +1,61 @@
+---
+title: "第363回 1次 問6"
+id: pri-problem-000041
+paper_id: pri-paper-0363
+question_number: 6
+cell_label: 3次行列の固有値
+tags:
+  - eigenvalue
+---
+
+## 問題
+
+行列
+
+$$
+A=\begin{pmatrix}3&-1&2\\-2&5&-3\\1&-3&2\end{pmatrix}
+$$
+
+の固有値を求めなさい．
+
+## 必要な知識
+
+- [固有値](../../knowledge/primary/eigenvalue.qmd)
+
+## 必要な発想
+
+特性多項式を作り，まず整数根を1つ探して2次式へ落とす．
+
+## 解答
+
+特性多項式は
+
+$$
+\det(\lambda I-A)
+=\lambda^3-10\lambda^2+18\lambda-4
+$$
+
+である．$\lambda=2$ を代入すると $0$ になるので，
+
+$$
+\lambda^3-10\lambda^2+18\lambda-4
+=(\lambda-2)(\lambda^2-8\lambda+2)
+$$
+
+と因数分解できる．したがって，固有値は
+
+$$
+\boxed{2, 4+\sqrt{14}, 4-\sqrt{14}}
+$$
+
+である．
+
+## コメント
+
+特性多項式の係数は，固有値の和が $\operatorname{tr}A=10$ になることでも確認できます．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

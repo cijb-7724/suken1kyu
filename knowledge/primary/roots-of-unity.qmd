@@ -1,0 +1,42 @@
+---
+title: "1の累乗根"
+id: roots-of-unity
+---
+
+## 概要
+
+$z^n=1$ の解と，その代数的な関係を扱います．
+
+## 基本事項
+
+$n$ 乗根は
+
+$$
+e^{2\pi ik/n}\qquad(k=0,1,\ldots,n-1)
+$$
+
+です．1でない3乗根を $\omega$ とすると，
+
+$$
+\omega^3=1,\qquad1+\omega+\omega^2=0,\qquad\bar\omega=\omega^2
+$$
+
+が成り立ちます．多項式や行列式の計算では，$\omega^2=-\omega-1$ を使って次数を下げます．
+
+## 例題
+
+$$
+(1-\omega)(1-\omega^2)=1-(\omega+\omega^2)+\omega^3=3
+$$
+
+です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

@@ -1,0 +1,93 @@
+---
+title: "第461回 2次 問1"
+id: sec-problem-000057
+paper_id: sec-paper-0461
+question_number: 1
+cell_label: LTEと素数の指数
+tags:
+  - p-adic-valuation
+---
+
+## 問題
+
+$p$ を素数，$i$ を正の整数，$n=p^i$ とする．
+
+$$
+\frac{24^n+1}{n^2}
+$$
+
+が整数となる $n$ をすべて求めなさい．問題文で与えられたLTEの公式を用いてよいものとします．
+
+## 必要な知識
+
+- [素数の指数とLTE](../../knowledge/secondary/p-adic-valuation.qmd)
+
+### この問題で使う一般形
+
+$v_p(m)$ は $m$ を割り切る $p$ の最高べきの指数です．$n=p^i$ に対し $n^2\mid M$ は $v_p(M)\ge2i$ と同値です．奇素数 $p$，奇数 $k$ で $p\mid x+y$，$p\nmid xy$ なら，
+
+$$
+v_p(x^k+y^k)=v_p(x+y)+v_p(k)
+$$
+
+というLTEが使えます．
+
+## 必要な発想
+
+まず法 $p$ で $24^{p^i}$ を簡単にして，候補となる素数 $p$ を1つに絞る．その後LTEで分子に含まれる $p$ の指数を正確に数える．
+
+## 解答
+
+整数条件は
+
+$$
+p^{2i}\mid24^{p^i}+1
+$$
+
+である．$p=2,3$ では $24^{p^i}+1\equiv1\pmod p$ だから不可能である．以下，$p$ は $24$ と互いに素な奇素数とする．
+
+Fermatの小定理を繰り返し用いると，
+
+$$
+24^{p^i}\equiv24\pmod p
+$$
+
+である．したがって $p\mid24^{p^i}+1$ なら
+
+$$
+p\mid25
+$$
+
+であり，素数 $p$ は $5$ に限られる．
+
+そこで $n=5^i$ とする．$5^i$ は奇数であり，$5\mid24+1$，$5\nmid24$ だから，LTEより
+
+$$
+v_5(24^{5^i}+1)
+=v_5(24+1)+v_5(5^i)
+=2+i．
+$$
+
+分母 $n^2=5^{2i}$ で割り切れるための条件は
+
+$$
+2+i\ge2i,\qquad i\le2．
+$$
+
+$i$ は正の整数なので $i=1,2$ である．したがって，
+
+$$
+\boxed{n=5, 25}
+$$
+
+である．
+
+## コメント
+
+LTEは候補を探す道具ではなく，候補 $p=5$ に対して分子に5が何個含まれるかを正確に数える段階で使います．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->

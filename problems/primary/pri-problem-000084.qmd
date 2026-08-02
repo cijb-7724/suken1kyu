@@ -1,0 +1,57 @@
+---
+title: "第427回 1次 問7"
+id: pri-problem-000084
+paper_id: pri-paper-0427
+question_number: 7
+cell_label: 1階線形微分方程式
+tags:
+  - first-order-nonhomogeneous-ode
+---
+
+## 問題
+
+$$
+y'-2y=\sin x,\qquad y(0)=1
+$$
+
+を満たす $y$ を求めなさい．
+
+## 必要な知識
+
+- [1階線形非斉次微分方程式](../../knowledge/primary/first-order-nonhomogeneous-ode.qmd)
+
+## 必要な発想
+
+同次解 $Ce^{2x}$ と，$a\sin x+b\cos x$ 型の特殊解を組み合わせる．
+
+## 解答
+
+特殊解を $y_p=a\sin x+b\cos x$ とおく．代入すると
+
+$$
+(-b-2a)\sin x+(a-2b)\cos x=\sin x
+$$
+
+だから，$-b-2a=1$，$a-2b=0$ である．これを解くと $a=-2/5$，$b=-1/5$ となる．したがって，
+
+$$
+y=Ce^{2x}-\frac25\sin x-\frac15\cos x．
+$$
+
+$y(0)=1$ から $C=6/5$ なので，
+
+$$
+\boxed{y=\frac65e^{2x}-\frac25\sin x-\frac15\cos x}
+$$
+
+である．
+
+## コメント
+
+積分因子を用いても同じ結果になります．
+
+<!-- AUTO:PROBLEM-UI:START -->
+<div class="problem-meta-app" data-problem-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/problem-page-meta.js"></script>
+<!-- AUTO:PROBLEM-UI:END -->
