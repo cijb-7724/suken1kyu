@@ -1,8 +1,982 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 28,
+  "count": 84,
   "problems": [
+    {
+      "id": "pri-problem-000029",
+      "title": "第358回 1次 問1",
+      "paper_id": "pri-paper-0358",
+      "question_number": 1,
+      "cell_label": "3乗根の簡単化",
+      "direct_tags": [
+        "radical-expression"
+      ],
+      "all_tags": [
+        "algebra",
+        "radical-expression"
+      ],
+      "path": "problems/primary/pri-problem-000029.html",
+      "source_path": "problems/primary/pri-problem-000029.qmd"
+    },
+    {
+      "id": "pri-problem-000030",
+      "title": "第358回 1次 問2",
+      "paper_id": "pri-paper-0358",
+      "question_number": 2,
+      "cell_label": "7等分角の三角比",
+      "direct_tags": [
+        "trigonometric-identities"
+      ],
+      "all_tags": [
+        "algebra",
+        "trigonometric-identities"
+      ],
+      "path": "problems/primary/pri-problem-000030.html",
+      "source_path": "problems/primary/pri-problem-000030.qmd"
+    },
+    {
+      "id": "pri-problem-000031",
+      "title": "第358回 1次 問3",
+      "paper_id": "pri-paper-0358",
+      "question_number": 3,
+      "cell_label": "逆行列",
+      "direct_tags": [
+        "inverse-matrix"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "inverse-matrix"
+      ],
+      "path": "problems/primary/pri-problem-000031.html",
+      "source_path": "problems/primary/pri-problem-000031.qmd"
+    },
+    {
+      "id": "pri-problem-000032",
+      "title": "第358回 1次 問4",
+      "paper_id": "pri-paper-0358",
+      "question_number": 4,
+      "cell_label": "1の3乗根と行列式",
+      "direct_tags": [
+        "roots-of-unity",
+        "determinant"
+      ],
+      "all_tags": [
+        "algebra",
+        "complex-number",
+        "roots-of-unity",
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000032.html",
+      "source_path": "problems/primary/pri-problem-000032.qmd"
+    },
+    {
+      "id": "pri-problem-000033",
+      "title": "第358回 1次 問5",
+      "paper_id": "pri-paper-0358",
+      "question_number": 5,
+      "cell_label": "正規分布の積率",
+      "direct_tags": [
+        "normal-distribution",
+        "moment-generating-function"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "normal-distribution",
+        "moment-generating-function"
+      ],
+      "path": "problems/primary/pri-problem-000033.html",
+      "source_path": "problems/primary/pri-problem-000033.qmd"
+    },
+    {
+      "id": "pri-problem-000034",
+      "title": "第358回 1次 問6",
+      "paper_id": "pri-paper-0358",
+      "question_number": 6,
+      "cell_label": "Bernoulli数",
+      "direct_tags": [
+        "bernoulli-numbers"
+      ],
+      "all_tags": [
+        "algebra",
+        "bernoulli-numbers"
+      ],
+      "path": "problems/primary/pri-problem-000034.html",
+      "source_path": "problems/primary/pri-problem-000034.qmd"
+    },
+    {
+      "id": "pri-problem-000035",
+      "title": "第358回 1次 問7",
+      "paper_id": "pri-paper-0358",
+      "question_number": 7,
+      "cell_label": "非線形微分方程式",
+      "direct_tags": [
+        "separable-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "separable-ode"
+      ],
+      "path": "problems/primary/pri-problem-000035.html",
+      "source_path": "problems/primary/pri-problem-000035.qmd"
+    },
+    {
+      "id": "pri-problem-000036",
+      "title": "第363回 1次 問1",
+      "paper_id": "pri-paper-0363",
+      "question_number": 1,
+      "cell_label": "4次方程式の根",
+      "direct_tags": [
+        "polynomial-value-and-roots"
+      ],
+      "all_tags": [
+        "algebra",
+        "polynomial-value-and-roots"
+      ],
+      "path": "problems/primary/pri-problem-000036.html",
+      "source_path": "problems/primary/pri-problem-000036.qmd"
+    },
+    {
+      "id": "pri-problem-000037",
+      "title": "第363回 1次 問2",
+      "paper_id": "pri-paper-0363",
+      "question_number": 2,
+      "cell_label": "複素三角関数",
+      "direct_tags": [
+        "hyperbolic-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "hyperbolic-function"
+      ],
+      "path": "problems/primary/pri-problem-000037.html",
+      "source_path": "problems/primary/pri-problem-000037.qmd"
+    },
+    {
+      "id": "pri-problem-000038",
+      "title": "第363回 1次 問3",
+      "paper_id": "pri-paper-0363",
+      "question_number": 3,
+      "cell_label": "直線を含む平面",
+      "direct_tags": [
+        "analytic-geometry"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "analytic-geometry"
+      ],
+      "path": "problems/primary/pri-problem-000038.html",
+      "source_path": "problems/primary/pri-problem-000038.qmd"
+    },
+    {
+      "id": "pri-problem-000039",
+      "title": "第363回 1次 問4",
+      "paper_id": "pri-paper-0363",
+      "question_number": 4,
+      "cell_label": "高階導関数",
+      "direct_tags": [
+        "higher-derivative"
+      ],
+      "all_tags": [
+        "analysis",
+        "higher-derivative"
+      ],
+      "path": "problems/primary/pri-problem-000039.html",
+      "source_path": "problems/primary/pri-problem-000039.qmd"
+    },
+    {
+      "id": "pri-problem-000040",
+      "title": "第363回 1次 問5",
+      "paper_id": "pri-paper-0363",
+      "question_number": 5,
+      "cell_label": "負の二項分布",
+      "direct_tags": [
+        "negative-binomial-distribution",
+        "expected-value",
+        "variance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "expected-value",
+        "variance",
+        "negative-binomial-distribution"
+      ],
+      "path": "problems/primary/pri-problem-000040.html",
+      "source_path": "problems/primary/pri-problem-000040.qmd"
+    },
+    {
+      "id": "pri-problem-000041",
+      "title": "第363回 1次 問6",
+      "paper_id": "pri-paper-0363",
+      "question_number": 6,
+      "cell_label": "3次行列の固有値",
+      "direct_tags": [
+        "eigenvalue"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "eigenvalue"
+      ],
+      "path": "problems/primary/pri-problem-000041.html",
+      "source_path": "problems/primary/pri-problem-000041.qmd"
+    },
+    {
+      "id": "pri-problem-000042",
+      "title": "第363回 1次 問7",
+      "paper_id": "pri-paper-0363",
+      "question_number": 7,
+      "cell_label": "順序領域の三重積分",
+      "direct_tags": [
+        "double-integral"
+      ],
+      "all_tags": [
+        "analysis",
+        "integration",
+        "double-integral"
+      ],
+      "path": "problems/primary/pri-problem-000042.html",
+      "source_path": "problems/primary/pri-problem-000042.qmd"
+    },
+    {
+      "id": "pri-problem-000043",
+      "title": "第372回 1次 問1",
+      "paper_id": "pri-paper-0372",
+      "question_number": 1,
+      "cell_label": "一次合同式",
+      "direct_tags": [
+        "linear-congruence"
+      ],
+      "all_tags": [
+        "number-theory",
+        "linear-congruence"
+      ],
+      "path": "problems/primary/pri-problem-000043.html",
+      "source_path": "problems/primary/pri-problem-000043.qmd"
+    },
+    {
+      "id": "pri-problem-000044",
+      "title": "第372回 1次 問2",
+      "paper_id": "pri-paper-0372",
+      "question_number": 2,
+      "cell_label": "逆三角関数の加法",
+      "direct_tags": [
+        "inverse-trigonometric-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "inverse-function",
+        "inverse-trigonometric-function"
+      ],
+      "path": "problems/primary/pri-problem-000044.html",
+      "source_path": "problems/primary/pri-problem-000044.qmd"
+    },
+    {
+      "id": "pri-problem-000045",
+      "title": "第372回 1次 問3",
+      "paper_id": "pri-paper-0372",
+      "question_number": 3,
+      "cell_label": "外積の積",
+      "direct_tags": [
+        "cross-product"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "vector",
+        "cross-product"
+      ],
+      "path": "problems/primary/pri-problem-000045.html",
+      "source_path": "problems/primary/pri-problem-000045.qmd"
+    },
+    {
+      "id": "pri-problem-000046",
+      "title": "第372回 1次 問4",
+      "paper_id": "pri-paper-0372",
+      "question_number": 4,
+      "cell_label": "接平面",
+      "direct_tags": [
+        "multivariable-differentiation"
+      ],
+      "all_tags": [
+        "analysis",
+        "multivariable-differentiation"
+      ],
+      "path": "problems/primary/pri-problem-000046.html",
+      "source_path": "problems/primary/pri-problem-000046.qmd"
+    },
+    {
+      "id": "pri-problem-000047",
+      "title": "第372回 1次 問5",
+      "paper_id": "pri-paper-0372",
+      "question_number": 5,
+      "cell_label": "一様分布",
+      "direct_tags": [
+        "uniform-distribution",
+        "variance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "variance",
+        "uniform-distribution"
+      ],
+      "path": "problems/primary/pri-problem-000047.html",
+      "source_path": "problems/primary/pri-problem-000047.qmd"
+    },
+    {
+      "id": "pri-problem-000048",
+      "title": "第372回 1次 問6",
+      "paper_id": "pri-paper-0372",
+      "question_number": 6,
+      "cell_label": "4次行列式",
+      "direct_tags": [
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000048.html",
+      "source_path": "problems/primary/pri-problem-000048.qmd"
+    },
+    {
+      "id": "pri-problem-000049",
+      "title": "第372回 1次 問7",
+      "paper_id": "pri-paper-0372",
+      "question_number": 7,
+      "cell_label": "連立微分方程式",
+      "direct_tags": [
+        "linear-system-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "linear-system-ode"
+      ],
+      "path": "problems/primary/pri-problem-000049.html",
+      "source_path": "problems/primary/pri-problem-000049.qmd"
+    },
+    {
+      "id": "pri-problem-000050",
+      "title": "第380回 1次 問1",
+      "paper_id": "pri-paper-0380",
+      "question_number": 1,
+      "cell_label": "分数方程式",
+      "direct_tags": [
+        "equation"
+      ],
+      "all_tags": [
+        "algebra",
+        "equation"
+      ],
+      "path": "problems/primary/pri-problem-000050.html",
+      "source_path": "problems/primary/pri-problem-000050.qmd"
+    },
+    {
+      "id": "pri-problem-000051",
+      "title": "第380回 1次 問2",
+      "paper_id": "pri-paper-0380",
+      "question_number": 2,
+      "cell_label": "複素数の平方根",
+      "direct_tags": [
+        "complex-number"
+      ],
+      "all_tags": [
+        "algebra",
+        "complex-number"
+      ],
+      "path": "problems/primary/pri-problem-000051.html",
+      "source_path": "problems/primary/pri-problem-000051.qmd"
+    },
+    {
+      "id": "pri-problem-000052",
+      "title": "第380回 1次 問3",
+      "paper_id": "pri-paper-0380",
+      "question_number": 3,
+      "cell_label": "線形写像の行列",
+      "direct_tags": [
+        "linear-map-matrix"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "linear-map-matrix"
+      ],
+      "path": "problems/primary/pri-problem-000052.html",
+      "source_path": "problems/primary/pri-problem-000052.qmd"
+    },
+    {
+      "id": "pri-problem-000053",
+      "title": "第380回 1次 問4",
+      "paper_id": "pri-paper-0380",
+      "question_number": 4,
+      "cell_label": "固有値の和と積",
+      "direct_tags": [
+        "eigenvalue",
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant",
+        "eigenvalue"
+      ],
+      "path": "problems/primary/pri-problem-000053.html",
+      "source_path": "problems/primary/pri-problem-000053.qmd"
+    },
+    {
+      "id": "pri-problem-000054",
+      "title": "第380回 1次 問5",
+      "paper_id": "pri-paper-0380",
+      "question_number": 5,
+      "cell_label": "2個のさいころ",
+      "direct_tags": [
+        "discrete-joint-distribution",
+        "covariance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "covariance",
+        "discrete-joint-distribution"
+      ],
+      "path": "problems/primary/pri-problem-000054.html",
+      "source_path": "problems/primary/pri-problem-000054.qmd"
+    },
+    {
+      "id": "pri-problem-000055",
+      "title": "第380回 1次 問6",
+      "paper_id": "pri-paper-0380",
+      "question_number": 6,
+      "cell_label": "収束半径",
+      "direct_tags": [
+        "radius-of-convergence"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "radius-of-convergence"
+      ],
+      "path": "problems/primary/pri-problem-000055.html",
+      "source_path": "problems/primary/pri-problem-000055.qmd"
+    },
+    {
+      "id": "pri-problem-000056",
+      "title": "第380回 1次 問7",
+      "paper_id": "pri-paper-0380",
+      "question_number": 7,
+      "cell_label": "積分順序の交換",
+      "direct_tags": [
+        "double-integral"
+      ],
+      "all_tags": [
+        "analysis",
+        "integration",
+        "double-integral"
+      ],
+      "path": "problems/primary/pri-problem-000056.html",
+      "source_path": "problems/primary/pri-problem-000056.qmd"
+    },
+    {
+      "id": "pri-problem-000057",
+      "title": "第389回 1次 問1",
+      "paper_id": "pri-paper-0389",
+      "question_number": 1,
+      "cell_label": "2つの合同条件",
+      "direct_tags": [
+        "chinese-remainder-theorem"
+      ],
+      "all_tags": [
+        "number-theory",
+        "modular-arithmetic",
+        "chinese-remainder-theorem"
+      ],
+      "path": "problems/primary/pri-problem-000057.html",
+      "source_path": "problems/primary/pri-problem-000057.qmd"
+    },
+    {
+      "id": "pri-problem-000058",
+      "title": "第389回 1次 問2",
+      "paper_id": "pri-paper-0389",
+      "question_number": 2,
+      "cell_label": "双曲線関数の恒等式",
+      "direct_tags": [
+        "hyperbolic-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "hyperbolic-function"
+      ],
+      "path": "problems/primary/pri-problem-000058.html",
+      "source_path": "problems/primary/pri-problem-000058.qmd"
+    },
+    {
+      "id": "pri-problem-000059",
+      "title": "第389回 1次 問3",
+      "paper_id": "pri-paper-0389",
+      "question_number": 3,
+      "cell_label": "点と平面の距離",
+      "direct_tags": [
+        "analytic-geometry"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "analytic-geometry"
+      ],
+      "path": "problems/primary/pri-problem-000059.html",
+      "source_path": "problems/primary/pri-problem-000059.qmd"
+    },
+    {
+      "id": "pri-problem-000060",
+      "title": "第389回 1次 問4",
+      "paper_id": "pri-paper-0389",
+      "question_number": 4,
+      "cell_label": "逆正弦の平方",
+      "direct_tags": [
+        "inverse-trigonometric-function",
+        "maclaurin-expansion"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "inverse-function",
+        "inverse-trigonometric-function",
+        "analysis",
+        "power-series",
+        "maclaurin-expansion"
+      ],
+      "path": "problems/primary/pri-problem-000060.html",
+      "source_path": "problems/primary/pri-problem-000060.qmd"
+    },
+    {
+      "id": "pri-problem-000061",
+      "title": "第389回 1次 問5",
+      "paper_id": "pri-paper-0389",
+      "question_number": 5,
+      "cell_label": "分布関数から期待値",
+      "direct_tags": [
+        "distribution-function",
+        "expected-value"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "expected-value",
+        "distribution-function"
+      ],
+      "path": "problems/primary/pri-problem-000061.html",
+      "source_path": "problems/primary/pri-problem-000061.qmd"
+    },
+    {
+      "id": "pri-problem-000062",
+      "title": "第389回 1次 問6",
+      "paper_id": "pri-paper-0389",
+      "question_number": 6,
+      "cell_label": "構造をもつ行列式",
+      "direct_tags": [
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000062.html",
+      "source_path": "problems/primary/pri-problem-000062.qmd"
+    },
+    {
+      "id": "pri-problem-000063",
+      "title": "第389回 1次 問7",
+      "paper_id": "pri-paper-0389",
+      "question_number": 7,
+      "cell_label": "重解をもつ微分方程式",
+      "direct_tags": [
+        "constant-coefficient-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "constant-coefficient-ode"
+      ],
+      "path": "problems/primary/pri-problem-000063.html",
+      "source_path": "problems/primary/pri-problem-000063.qmd"
+    },
+    {
+      "id": "pri-problem-000064",
+      "title": "第406回 1次 問1",
+      "paper_id": "pri-paper-0406",
+      "question_number": 1,
+      "cell_label": "多項式の剰余",
+      "direct_tags": [
+        "polynomial-value-and-roots"
+      ],
+      "all_tags": [
+        "algebra",
+        "polynomial-value-and-roots"
+      ],
+      "path": "problems/primary/pri-problem-000064.html",
+      "source_path": "problems/primary/pri-problem-000064.qmd"
+    },
+    {
+      "id": "pri-problem-000065",
+      "title": "第406回 1次 問2",
+      "paper_id": "pri-paper-0406",
+      "question_number": 2,
+      "cell_label": "複素対数",
+      "direct_tags": [
+        "complex-logarithm"
+      ],
+      "all_tags": [
+        "algebra",
+        "complex-number",
+        "complex-logarithm"
+      ],
+      "path": "problems/primary/pri-problem-000065.html",
+      "source_path": "problems/primary/pri-problem-000065.qmd"
+    },
+    {
+      "id": "pri-problem-000066",
+      "title": "第406回 1次 問3",
+      "paper_id": "pri-paper-0406",
+      "question_number": 3,
+      "cell_label": "直線と平面の角",
+      "direct_tags": [
+        "analytic-geometry"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "analytic-geometry"
+      ],
+      "path": "problems/primary/pri-problem-000066.html",
+      "source_path": "problems/primary/pri-problem-000066.qmd"
+    },
+    {
+      "id": "pri-problem-000067",
+      "title": "第406回 1次 問4",
+      "paper_id": "pri-paper-0406",
+      "question_number": 4,
+      "cell_label": "展開係数",
+      "direct_tags": [
+        "maclaurin-expansion"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "maclaurin-expansion"
+      ],
+      "path": "problems/primary/pri-problem-000067.html",
+      "source_path": "problems/primary/pri-problem-000067.qmd"
+    },
+    {
+      "id": "pri-problem-000068",
+      "title": "第406回 1次 問5",
+      "paper_id": "pri-paper-0406",
+      "question_number": 5,
+      "cell_label": "幾何分布",
+      "direct_tags": [
+        "geometric-distribution",
+        "expected-value",
+        "variance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "expected-value",
+        "variance",
+        "geometric-distribution"
+      ],
+      "path": "problems/primary/pri-problem-000068.html",
+      "source_path": "problems/primary/pri-problem-000068.qmd"
+    },
+    {
+      "id": "pri-problem-000069",
+      "title": "第406回 1次 問6",
+      "paper_id": "pri-paper-0406",
+      "question_number": 6,
+      "cell_label": "分数成分の行列式",
+      "direct_tags": [
+        "determinant"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "determinant"
+      ],
+      "path": "problems/primary/pri-problem-000069.html",
+      "source_path": "problems/primary/pri-problem-000069.qmd"
+    },
+    {
+      "id": "pri-problem-000070",
+      "title": "第406回 1次 問7",
+      "paper_id": "pri-paper-0406",
+      "question_number": 7,
+      "cell_label": "平行四辺形上の積分",
+      "direct_tags": [
+        "change-of-variables"
+      ],
+      "all_tags": [
+        "analysis",
+        "integration",
+        "double-integral",
+        "change-of-variables"
+      ],
+      "path": "problems/primary/pri-problem-000070.html",
+      "source_path": "problems/primary/pri-problem-000070.qmd"
+    },
+    {
+      "id": "pri-problem-000071",
+      "title": "第414回 1次 問1",
+      "paper_id": "pri-paper-0414",
+      "question_number": 1,
+      "cell_label": "一次合同式",
+      "direct_tags": [
+        "linear-congruence"
+      ],
+      "all_tags": [
+        "number-theory",
+        "linear-congruence"
+      ],
+      "path": "problems/primary/pri-problem-000071.html",
+      "source_path": "problems/primary/pri-problem-000071.qmd"
+    },
+    {
+      "id": "pri-problem-000072",
+      "title": "第414回 1次 問2",
+      "paper_id": "pri-paper-0414",
+      "question_number": 2,
+      "cell_label": "複素正弦方程式",
+      "direct_tags": [
+        "complex-number",
+        "hyperbolic-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "complex-number",
+        "function",
+        "hyperbolic-function"
+      ],
+      "path": "problems/primary/pri-problem-000072.html",
+      "source_path": "problems/primary/pri-problem-000072.qmd"
+    },
+    {
+      "id": "pri-problem-000073",
+      "title": "第414回 1次 問3",
+      "paper_id": "pri-paper-0414",
+      "question_number": 3,
+      "cell_label": "逆行列",
+      "direct_tags": [
+        "inverse-matrix"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "inverse-matrix"
+      ],
+      "path": "problems/primary/pri-problem-000073.html",
+      "source_path": "problems/primary/pri-problem-000073.qmd"
+    },
+    {
+      "id": "pri-problem-000074",
+      "title": "第414回 1次 問4",
+      "paper_id": "pri-paper-0414",
+      "question_number": 4,
+      "cell_label": "ユニタリ行列",
+      "direct_tags": [
+        "unitary-matrix"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "unitary-matrix"
+      ],
+      "path": "problems/primary/pri-problem-000074.html",
+      "source_path": "problems/primary/pri-problem-000074.qmd"
+    },
+    {
+      "id": "pri-problem-000075",
+      "title": "第414回 1次 問5",
+      "paper_id": "pri-paper-0414",
+      "question_number": 5,
+      "cell_label": "同時密度と共分散",
+      "direct_tags": [
+        "joint-probability-density-function",
+        "covariance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "continuous-random-variable",
+        "joint-probability-density-function",
+        "covariance"
+      ],
+      "path": "problems/primary/pri-problem-000075.html",
+      "source_path": "problems/primary/pri-problem-000075.qmd"
+    },
+    {
+      "id": "pri-problem-000076",
+      "title": "第414回 1次 問6",
+      "paper_id": "pri-paper-0414",
+      "question_number": 6,
+      "cell_label": "短区間積分の極限",
+      "direct_tags": [
+        "fundamental-theorem-calculus"
+      ],
+      "all_tags": [
+        "analysis",
+        "fundamental-theorem-calculus"
+      ],
+      "path": "problems/primary/pri-problem-000076.html",
+      "source_path": "problems/primary/pri-problem-000076.qmd"
+    },
+    {
+      "id": "pri-problem-000077",
+      "title": "第414回 1次 問7",
+      "paper_id": "pri-paper-0414",
+      "question_number": 7,
+      "cell_label": "2階線形微分方程式",
+      "direct_tags": [
+        "constant-coefficient-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "constant-coefficient-ode"
+      ],
+      "path": "problems/primary/pri-problem-000077.html",
+      "source_path": "problems/primary/pri-problem-000077.qmd"
+    },
+    {
+      "id": "pri-problem-000078",
+      "title": "第427回 1次 問1",
+      "paper_id": "pri-paper-0427",
+      "question_number": 1,
+      "cell_label": "最大の合同解",
+      "direct_tags": [
+        "chinese-remainder-theorem"
+      ],
+      "all_tags": [
+        "number-theory",
+        "modular-arithmetic",
+        "chinese-remainder-theorem"
+      ],
+      "path": "problems/primary/pri-problem-000078.html",
+      "source_path": "problems/primary/pri-problem-000078.qmd"
+    },
+    {
+      "id": "pri-problem-000079",
+      "title": "第427回 1次 問2",
+      "paper_id": "pri-paper-0427",
+      "question_number": 2,
+      "cell_label": "逆三角関数と正接",
+      "direct_tags": [
+        "inverse-trigonometric-function"
+      ],
+      "all_tags": [
+        "algebra",
+        "function",
+        "inverse-function",
+        "inverse-trigonometric-function"
+      ],
+      "path": "problems/primary/pri-problem-000079.html",
+      "source_path": "problems/primary/pri-problem-000079.qmd"
+    },
+    {
+      "id": "pri-problem-000080",
+      "title": "第427回 1次 問3",
+      "paper_id": "pri-paper-0427",
+      "question_number": 3,
+      "cell_label": "ベクトル三重積",
+      "direct_tags": [
+        "cross-product"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "vector",
+        "cross-product"
+      ],
+      "path": "problems/primary/pri-problem-000080.html",
+      "source_path": "problems/primary/pri-problem-000080.qmd"
+    },
+    {
+      "id": "pri-problem-000081",
+      "title": "第427回 1次 問4",
+      "paper_id": "pri-paper-0427",
+      "question_number": 4,
+      "cell_label": "固有値",
+      "direct_tags": [
+        "eigenvalue"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "matrix",
+        "eigenvalue"
+      ],
+      "path": "problems/primary/pri-problem-000081.html",
+      "source_path": "problems/primary/pri-problem-000081.qmd"
+    },
+    {
+      "id": "pri-problem-000082",
+      "title": "第427回 1次 問5",
+      "paper_id": "pri-paper-0427",
+      "question_number": 5,
+      "cell_label": "分布関数と分散",
+      "direct_tags": [
+        "distribution-function",
+        "variance"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "random-variable",
+        "variance",
+        "distribution-function"
+      ],
+      "path": "problems/primary/pri-problem-000082.html",
+      "source_path": "problems/primary/pri-problem-000082.qmd"
+    },
+    {
+      "id": "pri-problem-000083",
+      "title": "第427回 1次 問6",
+      "paper_id": "pri-paper-0427",
+      "question_number": 6,
+      "cell_label": "対数級数の係数",
+      "direct_tags": [
+        "maclaurin-expansion"
+      ],
+      "all_tags": [
+        "analysis",
+        "power-series",
+        "maclaurin-expansion"
+      ],
+      "path": "problems/primary/pri-problem-000083.html",
+      "source_path": "problems/primary/pri-problem-000083.qmd"
+    },
+    {
+      "id": "pri-problem-000084",
+      "title": "第427回 1次 問7",
+      "paper_id": "pri-paper-0427",
+      "question_number": 7,
+      "cell_label": "1階線形微分方程式",
+      "direct_tags": [
+        "first-order-nonhomogeneous-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "first-order-nonhomogeneous-ode"
+      ],
+      "path": "problems/primary/pri-problem-000084.html",
+      "source_path": "problems/primary/pri-problem-000084.qmd"
+    },
     {
       "id": "pri-problem-000015",
       "title": "第431回 1次 問1",

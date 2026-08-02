@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "secondary",
-  "count": 5,
+  "count": 9,
   "max_question_number": 7,
   "papers": [
     {
@@ -376,6 +376,311 @@
           "path": "problems/secondary/sec-problem-000035.html",
           "direct_tags": [
             "change-of-variables"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0431",
+      "label": "第431回",
+      "year": 2024,
+      "round": 431,
+      "sort_order": 431,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000036",
+          "cell_label": "3倍角で解く3次方程式",
+          "path": "problems/secondary/sec-problem-000036.html",
+          "direct_tags": [
+            "trigonometric-cubic"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000037",
+          "cell_label": "対称性と対数積分",
+          "path": "problems/secondary/sec-problem-000037.html",
+          "direct_tags": [
+            "logarithmic-integral"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000038",
+          "cell_label": "三角形の内外接円",
+          "path": "problems/secondary/sec-problem-000038.html",
+          "direct_tags": [
+            "triangle-extrema"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000039",
+          "cell_label": "相関係数の検定",
+          "path": "problems/secondary/sec-problem-000039.html",
+          "direct_tags": [
+            "correlation-inference"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000040",
+          "cell_label": "因数分解と素数",
+          "path": "problems/secondary/sec-problem-000040.html",
+          "direct_tags": [
+            "prime-factorization-identity"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000041",
+          "cell_label": "LU分解",
+          "path": "problems/secondary/sec-problem-000041.html",
+          "direct_tags": [
+            "lu-decomposition"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000042",
+          "cell_label": "微分方程式の置換",
+          "path": "problems/secondary/sec-problem-000042.html",
+          "direct_tags": [
+            "ode-substitution"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0440",
+      "label": "第440回",
+      "year": 2025,
+      "round": 440,
+      "sort_order": 440,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000043",
+          "cell_label": "不定方程式と階乗の剰余",
+          "path": "problems/secondary/sec-problem-000043.html",
+          "direct_tags": [
+            "wilson-theorem"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000044",
+          "cell_label": "広義積分の収束範囲",
+          "path": "problems/secondary/sec-problem-000044.html",
+          "direct_tags": [
+            "improper-integral-convergence"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000045",
+          "cell_label": "三角形から生じる2次形式",
+          "path": "problems/secondary/sec-problem-000045.html",
+          "direct_tags": [
+            "quadratic-form"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000046",
+          "cell_label": "平均の区間推定と2標本検定",
+          "path": "problems/secondary/sec-problem-000046.html",
+          "direct_tags": [
+            "mean-inference",
+            "two-sample-t-test"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000047",
+          "cell_label": "ものさしだけの接線作図",
+          "path": "problems/secondary/sec-problem-000047.html",
+          "direct_tags": [
+            "pascal-theorem"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000048",
+          "cell_label": "基底を変えた表現行列",
+          "path": "problems/secondary/sec-problem-000048.html",
+          "direct_tags": [
+            "linear-map-matrix"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000049",
+          "cell_label": "3階線形微分方程式",
+          "path": "problems/secondary/sec-problem-000049.html",
+          "direct_tags": [
+            "higher-order-linear-ode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0444",
+      "label": "第444回",
+      "year": 2025,
+      "round": 444,
+      "sort_order": 444,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000050",
+          "cell_label": "2平方和の商",
+          "path": "problems/secondary/sec-problem-000050.html",
+          "direct_tags": [
+            "sum-of-two-squares"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000051",
+          "cell_label": "Riccati型微分方程式",
+          "path": "problems/secondary/sec-problem-000051.html",
+          "direct_tags": [
+            "riccati-equation"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000052",
+          "cell_label": "2つの凸四角形の面積",
+          "path": "problems/secondary/sec-problem-000052.html",
+          "direct_tags": [
+            "quadrilateral-area"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000053",
+          "cell_label": "回帰直線と予測区間",
+          "path": "problems/secondary/sec-problem-000053.html",
+          "direct_tags": [
+            "least-squares-regression"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000054",
+          "cell_label": "疎な指数の級数",
+          "path": "problems/secondary/sec-problem-000054.html",
+          "direct_tags": [
+            "lacunary-series"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000055",
+          "cell_label": "特異値分解",
+          "path": "problems/secondary/sec-problem-000055.html",
+          "direct_tags": [
+            "singular-value-decomposition"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000056",
+          "cell_label": "2変数関数の極値",
+          "path": "problems/secondary/sec-problem-000056.html",
+          "direct_tags": [
+            "multivariable-extrema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sec-paper-0461",
+      "label": "第461回",
+      "year": 2026,
+      "round": 461,
+      "sort_order": 461,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "sec-problem-000057",
+          "cell_label": "LTEと素数の指数",
+          "path": "problems/secondary/sec-problem-000057.html",
+          "direct_tags": [
+            "p-adic-valuation"
+          ]
+        },
+        "2": {
+          "problem_id": "sec-problem-000058",
+          "cell_label": "フーリエ変換とPoisson和公式",
+          "path": "problems/secondary/sec-problem-000058.html",
+          "direct_tags": [
+            "fourier-transform",
+            "poisson-summation-formula"
+          ]
+        },
+        "3": {
+          "problem_id": "sec-problem-000059",
+          "cell_label": "Kooijの不等式",
+          "path": "problems/secondary/sec-problem-000059.html",
+          "direct_tags": [
+            "triangle-formulas"
+          ]
+        },
+        "4": {
+          "problem_id": "sec-problem-000060",
+          "cell_label": "最尤推定とガンマ分布",
+          "path": "problems/secondary/sec-problem-000060.html",
+          "direct_tags": [
+            "maximum-likelihood",
+            "gamma-distribution"
+          ]
+        },
+        "5": {
+          "problem_id": "sec-problem-000061",
+          "cell_label": "反鎖とLYM不等式",
+          "path": "problems/secondary/sec-problem-000061.html",
+          "direct_tags": [
+            "lym-inequality"
+          ]
+        },
+        "6": {
+          "problem_id": "sec-problem-000062",
+          "cell_label": "Householder三重対角化",
+          "path": "problems/secondary/sec-problem-000062.html",
+          "direct_tags": [
+            "householder-transformation",
+            "symmetric-tridiagonalization"
+          ]
+        },
+        "7": {
+          "problem_id": "sec-problem-000063",
+          "cell_label": "積分因子で完全微分化",
+          "path": "problems/secondary/sec-problem-000063.html",
+          "direct_tags": [
+            "exact-differential-equation",
+            "integrating-factor"
           ]
         }
       }

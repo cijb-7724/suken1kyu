@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "secondary",
-  "count": 35,
+  "count": 63,
   "problems": [
     {
       "id": "sec-problem-000001",
@@ -584,6 +584,482 @@
       ],
       "path": "problems/secondary/sec-problem-000035.html",
       "source_path": "problems/secondary/sec-problem-000035.qmd"
+    },
+    {
+      "id": "sec-problem-000036",
+      "title": "第431回 2次 問1",
+      "paper_id": "sec-paper-0431",
+      "question_number": 1,
+      "cell_label": "3倍角で解く3次方程式",
+      "direct_tags": [
+        "trigonometric-cubic"
+      ],
+      "all_tags": [
+        "mathematical-techniques",
+        "trigonometric-cubic"
+      ],
+      "path": "problems/secondary/sec-problem-000036.html",
+      "source_path": "problems/secondary/sec-problem-000036.qmd"
+    },
+    {
+      "id": "sec-problem-000037",
+      "title": "第431回 2次 問2",
+      "paper_id": "sec-paper-0431",
+      "question_number": 2,
+      "cell_label": "対称性と対数積分",
+      "direct_tags": [
+        "logarithmic-integral"
+      ],
+      "all_tags": [
+        "analysis",
+        "logarithmic-integral"
+      ],
+      "path": "problems/secondary/sec-problem-000037.html",
+      "source_path": "problems/secondary/sec-problem-000037.qmd"
+    },
+    {
+      "id": "sec-problem-000038",
+      "title": "第431回 2次 問3",
+      "paper_id": "sec-paper-0431",
+      "question_number": 3,
+      "cell_label": "三角形の内外接円",
+      "direct_tags": [
+        "triangle-extrema"
+      ],
+      "all_tags": [
+        "geometry",
+        "triangle-extrema"
+      ],
+      "path": "problems/secondary/sec-problem-000038.html",
+      "source_path": "problems/secondary/sec-problem-000038.qmd"
+    },
+    {
+      "id": "sec-problem-000039",
+      "title": "第431回 2次 問4",
+      "paper_id": "sec-paper-0431",
+      "question_number": 4,
+      "cell_label": "相関係数の検定",
+      "direct_tags": [
+        "correlation-inference"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "statistical-inference",
+        "correlation-inference"
+      ],
+      "path": "problems/secondary/sec-problem-000039.html",
+      "source_path": "problems/secondary/sec-problem-000039.qmd"
+    },
+    {
+      "id": "sec-problem-000040",
+      "title": "第431回 2次 問5",
+      "paper_id": "sec-paper-0431",
+      "question_number": 5,
+      "cell_label": "因数分解と素数",
+      "direct_tags": [
+        "prime-factorization-identity"
+      ],
+      "all_tags": [
+        "combinatorics",
+        "prime-factorization-identity"
+      ],
+      "path": "problems/secondary/sec-problem-000040.html",
+      "source_path": "problems/secondary/sec-problem-000040.qmd"
+    },
+    {
+      "id": "sec-problem-000041",
+      "title": "第431回 2次 問6",
+      "paper_id": "sec-paper-0431",
+      "question_number": 6,
+      "cell_label": "LU分解",
+      "direct_tags": [
+        "lu-decomposition"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "lu-decomposition"
+      ],
+      "path": "problems/secondary/sec-problem-000041.html",
+      "source_path": "problems/secondary/sec-problem-000041.qmd"
+    },
+    {
+      "id": "sec-problem-000042",
+      "title": "第431回 2次 問7",
+      "paper_id": "sec-paper-0431",
+      "question_number": 7,
+      "cell_label": "微分方程式の置換",
+      "direct_tags": [
+        "ode-substitution"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "ode-substitution"
+      ],
+      "path": "problems/secondary/sec-problem-000042.html",
+      "source_path": "problems/secondary/sec-problem-000042.qmd"
+    },
+    {
+      "id": "sec-problem-000043",
+      "title": "第440回 2次 問1",
+      "paper_id": "sec-paper-0440",
+      "question_number": 1,
+      "cell_label": "不定方程式と階乗の剰余",
+      "direct_tags": [
+        "wilson-theorem"
+      ],
+      "all_tags": [
+        "number-theory",
+        "integers",
+        "wilson-theorem"
+      ],
+      "path": "problems/secondary/sec-problem-000043.html",
+      "source_path": "problems/secondary/sec-problem-000043.qmd"
+    },
+    {
+      "id": "sec-problem-000044",
+      "title": "第440回 2次 問2",
+      "paper_id": "sec-paper-0440",
+      "question_number": 2,
+      "cell_label": "広義積分の収束範囲",
+      "direct_tags": [
+        "improper-integral-convergence"
+      ],
+      "all_tags": [
+        "analysis",
+        "improper-integral-convergence"
+      ],
+      "path": "problems/secondary/sec-problem-000044.html",
+      "source_path": "problems/secondary/sec-problem-000044.qmd"
+    },
+    {
+      "id": "sec-problem-000045",
+      "title": "第440回 2次 問3",
+      "paper_id": "sec-paper-0440",
+      "question_number": 3,
+      "cell_label": "三角形から生じる2次形式",
+      "direct_tags": [
+        "quadratic-form"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "quadratic-form"
+      ],
+      "path": "problems/secondary/sec-problem-000045.html",
+      "source_path": "problems/secondary/sec-problem-000045.qmd"
+    },
+    {
+      "id": "sec-problem-000046",
+      "title": "第440回 2次 問4",
+      "paper_id": "sec-paper-0440",
+      "question_number": 4,
+      "cell_label": "平均の区間推定と2標本検定",
+      "direct_tags": [
+        "mean-inference",
+        "two-sample-t-test"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "statistical-inference",
+        "mean-inference",
+        "two-sample-t-test"
+      ],
+      "path": "problems/secondary/sec-problem-000046.html",
+      "source_path": "problems/secondary/sec-problem-000046.qmd"
+    },
+    {
+      "id": "sec-problem-000047",
+      "title": "第440回 2次 問5",
+      "paper_id": "sec-paper-0440",
+      "question_number": 5,
+      "cell_label": "ものさしだけの接線作図",
+      "direct_tags": [
+        "pascal-theorem"
+      ],
+      "all_tags": [
+        "geometry",
+        "pascal-theorem"
+      ],
+      "path": "problems/secondary/sec-problem-000047.html",
+      "source_path": "problems/secondary/sec-problem-000047.qmd"
+    },
+    {
+      "id": "sec-problem-000048",
+      "title": "第440回 2次 問6",
+      "paper_id": "sec-paper-0440",
+      "question_number": 6,
+      "cell_label": "基底を変えた表現行列",
+      "direct_tags": [
+        "linear-map-matrix"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "linear-map-matrix"
+      ],
+      "path": "problems/secondary/sec-problem-000048.html",
+      "source_path": "problems/secondary/sec-problem-000048.qmd"
+    },
+    {
+      "id": "sec-problem-000049",
+      "title": "第440回 2次 問7",
+      "paper_id": "sec-paper-0440",
+      "question_number": 7,
+      "cell_label": "3階線形微分方程式",
+      "direct_tags": [
+        "higher-order-linear-ode"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "higher-order-linear-ode"
+      ],
+      "path": "problems/secondary/sec-problem-000049.html",
+      "source_path": "problems/secondary/sec-problem-000049.qmd"
+    },
+    {
+      "id": "sec-problem-000050",
+      "title": "第444回 2次 問1",
+      "paper_id": "sec-paper-0444",
+      "question_number": 1,
+      "cell_label": "2平方和の商",
+      "direct_tags": [
+        "sum-of-two-squares"
+      ],
+      "all_tags": [
+        "number-theory",
+        "integers",
+        "sum-of-two-squares"
+      ],
+      "path": "problems/secondary/sec-problem-000050.html",
+      "source_path": "problems/secondary/sec-problem-000050.qmd"
+    },
+    {
+      "id": "sec-problem-000051",
+      "title": "第444回 2次 問2",
+      "paper_id": "sec-paper-0444",
+      "question_number": 2,
+      "cell_label": "Riccati型微分方程式",
+      "direct_tags": [
+        "riccati-equation"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "riccati-equation"
+      ],
+      "path": "problems/secondary/sec-problem-000051.html",
+      "source_path": "problems/secondary/sec-problem-000051.qmd"
+    },
+    {
+      "id": "sec-problem-000052",
+      "title": "第444回 2次 問3",
+      "paper_id": "sec-paper-0444",
+      "question_number": 3,
+      "cell_label": "2つの凸四角形の面積",
+      "direct_tags": [
+        "quadrilateral-area"
+      ],
+      "all_tags": [
+        "geometry",
+        "quadrilateral-area"
+      ],
+      "path": "problems/secondary/sec-problem-000052.html",
+      "source_path": "problems/secondary/sec-problem-000052.qmd"
+    },
+    {
+      "id": "sec-problem-000053",
+      "title": "第444回 2次 問4",
+      "paper_id": "sec-paper-0444",
+      "question_number": 4,
+      "cell_label": "回帰直線と予測区間",
+      "direct_tags": [
+        "least-squares-regression"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "least-squares-regression"
+      ],
+      "path": "problems/secondary/sec-problem-000053.html",
+      "source_path": "problems/secondary/sec-problem-000053.qmd"
+    },
+    {
+      "id": "sec-problem-000054",
+      "title": "第444回 2次 問5",
+      "paper_id": "sec-paper-0444",
+      "question_number": 5,
+      "cell_label": "疎な指数の級数",
+      "direct_tags": [
+        "lacunary-series"
+      ],
+      "all_tags": [
+        "analysis",
+        "series",
+        "lacunary-series"
+      ],
+      "path": "problems/secondary/sec-problem-000054.html",
+      "source_path": "problems/secondary/sec-problem-000054.qmd"
+    },
+    {
+      "id": "sec-problem-000055",
+      "title": "第444回 2次 問6",
+      "paper_id": "sec-paper-0444",
+      "question_number": 6,
+      "cell_label": "特異値分解",
+      "direct_tags": [
+        "singular-value-decomposition"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "singular-value-decomposition"
+      ],
+      "path": "problems/secondary/sec-problem-000055.html",
+      "source_path": "problems/secondary/sec-problem-000055.qmd"
+    },
+    {
+      "id": "sec-problem-000056",
+      "title": "第444回 2次 問7",
+      "paper_id": "sec-paper-0444",
+      "question_number": 7,
+      "cell_label": "2変数関数の極値",
+      "direct_tags": [
+        "multivariable-extrema"
+      ],
+      "all_tags": [
+        "analysis",
+        "multivariable-calculus",
+        "multivariable-extrema"
+      ],
+      "path": "problems/secondary/sec-problem-000056.html",
+      "source_path": "problems/secondary/sec-problem-000056.qmd"
+    },
+    {
+      "id": "sec-problem-000057",
+      "title": "第461回 2次 問1",
+      "paper_id": "sec-paper-0461",
+      "question_number": 1,
+      "cell_label": "LTEと素数の指数",
+      "direct_tags": [
+        "p-adic-valuation"
+      ],
+      "all_tags": [
+        "number-theory",
+        "integers",
+        "p-adic-valuation"
+      ],
+      "path": "problems/secondary/sec-problem-000057.html",
+      "source_path": "problems/secondary/sec-problem-000057.qmd"
+    },
+    {
+      "id": "sec-problem-000058",
+      "title": "第461回 2次 問2",
+      "paper_id": "sec-paper-0461",
+      "question_number": 2,
+      "cell_label": "フーリエ変換とPoisson和公式",
+      "direct_tags": [
+        "fourier-transform",
+        "poisson-summation-formula"
+      ],
+      "all_tags": [
+        "analysis",
+        "series",
+        "poisson-summation-formula",
+        "fourier-analysis",
+        "fourier-transform"
+      ],
+      "path": "problems/secondary/sec-problem-000058.html",
+      "source_path": "problems/secondary/sec-problem-000058.qmd"
+    },
+    {
+      "id": "sec-problem-000059",
+      "title": "第461回 2次 問3",
+      "paper_id": "sec-paper-0461",
+      "question_number": 3,
+      "cell_label": "Kooijの不等式",
+      "direct_tags": [
+        "triangle-formulas"
+      ],
+      "all_tags": [
+        "geometry",
+        "triangle-formulas"
+      ],
+      "path": "problems/secondary/sec-problem-000059.html",
+      "source_path": "problems/secondary/sec-problem-000059.qmd"
+    },
+    {
+      "id": "sec-problem-000060",
+      "title": "第461回 2次 問4",
+      "paper_id": "sec-paper-0461",
+      "question_number": 4,
+      "cell_label": "最尤推定とガンマ分布",
+      "direct_tags": [
+        "maximum-likelihood",
+        "gamma-distribution"
+      ],
+      "all_tags": [
+        "probability-statistics",
+        "statistical-inference",
+        "maximum-likelihood",
+        "gamma-distribution"
+      ],
+      "path": "problems/secondary/sec-problem-000060.html",
+      "source_path": "problems/secondary/sec-problem-000060.qmd"
+    },
+    {
+      "id": "sec-problem-000061",
+      "title": "第461回 2次 問5",
+      "paper_id": "sec-paper-0461",
+      "question_number": 5,
+      "cell_label": "反鎖とLYM不等式",
+      "direct_tags": [
+        "lym-inequality"
+      ],
+      "all_tags": [
+        "combinatorics",
+        "partially-ordered-set",
+        "antichain",
+        "lym-inequality"
+      ],
+      "path": "problems/secondary/sec-problem-000061.html",
+      "source_path": "problems/secondary/sec-problem-000061.qmd"
+    },
+    {
+      "id": "sec-problem-000062",
+      "title": "第461回 2次 問6",
+      "paper_id": "sec-paper-0461",
+      "question_number": 6,
+      "cell_label": "Householder三重対角化",
+      "direct_tags": [
+        "householder-transformation",
+        "symmetric-tridiagonalization"
+      ],
+      "all_tags": [
+        "linear-algebra",
+        "orthogonal-transformation",
+        "householder-transformation",
+        "matrix-reduction",
+        "symmetric-tridiagonalization"
+      ],
+      "path": "problems/secondary/sec-problem-000062.html",
+      "source_path": "problems/secondary/sec-problem-000062.qmd"
+    },
+    {
+      "id": "sec-problem-000063",
+      "title": "第461回 2次 問7",
+      "paper_id": "sec-paper-0461",
+      "question_number": 7,
+      "cell_label": "積分因子で完全微分化",
+      "direct_tags": [
+        "exact-differential-equation",
+        "integrating-factor"
+      ],
+      "all_tags": [
+        "analysis",
+        "differential-equation",
+        "exact-differential-equation",
+        "integrating-factor"
+      ],
+      "path": "problems/secondary/sec-problem-000063.html",
+      "source_path": "problems/secondary/sec-problem-000063.qmd"
     }
   ]
 }

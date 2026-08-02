@@ -1,9 +1,623 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 4,
+  "count": 12,
   "max_question_number": 7,
   "papers": [
+    {
+      "id": "pri-paper-0358",
+      "label": "第358回（2020年7月18日）",
+      "year": 2020,
+      "round": 358,
+      "sort_order": 20200718,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000029",
+          "cell_label": "3乗根の簡単化",
+          "path": "problems/primary/pri-problem-000029.html",
+          "direct_tags": [
+            "radical-expression"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000030",
+          "cell_label": "7等分角の三角比",
+          "path": "problems/primary/pri-problem-000030.html",
+          "direct_tags": [
+            "trigonometric-identities"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000031",
+          "cell_label": "逆行列",
+          "path": "problems/primary/pri-problem-000031.html",
+          "direct_tags": [
+            "inverse-matrix"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000032",
+          "cell_label": "1の3乗根と行列式",
+          "path": "problems/primary/pri-problem-000032.html",
+          "direct_tags": [
+            "roots-of-unity",
+            "determinant"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000033",
+          "cell_label": "正規分布の積率",
+          "path": "problems/primary/pri-problem-000033.html",
+          "direct_tags": [
+            "normal-distribution",
+            "moment-generating-function"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000034",
+          "cell_label": "Bernoulli数",
+          "path": "problems/primary/pri-problem-000034.html",
+          "direct_tags": [
+            "bernoulli-numbers"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000035",
+          "cell_label": "非線形微分方程式",
+          "path": "problems/primary/pri-problem-000035.html",
+          "direct_tags": [
+            "separable-ode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0363",
+      "label": "第363回（2020年10月25日）",
+      "year": 2020,
+      "round": 363,
+      "sort_order": 20201025,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000036",
+          "cell_label": "4次方程式の根",
+          "path": "problems/primary/pri-problem-000036.html",
+          "direct_tags": [
+            "polynomial-value-and-roots"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000037",
+          "cell_label": "複素三角関数",
+          "path": "problems/primary/pri-problem-000037.html",
+          "direct_tags": [
+            "hyperbolic-function"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000038",
+          "cell_label": "直線を含む平面",
+          "path": "problems/primary/pri-problem-000038.html",
+          "direct_tags": [
+            "analytic-geometry"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000039",
+          "cell_label": "高階導関数",
+          "path": "problems/primary/pri-problem-000039.html",
+          "direct_tags": [
+            "higher-derivative"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000040",
+          "cell_label": "負の二項分布",
+          "path": "problems/primary/pri-problem-000040.html",
+          "direct_tags": [
+            "negative-binomial-distribution",
+            "expected-value",
+            "variance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000041",
+          "cell_label": "3次行列の固有値",
+          "path": "problems/primary/pri-problem-000041.html",
+          "direct_tags": [
+            "eigenvalue"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000042",
+          "cell_label": "順序領域の三重積分",
+          "path": "problems/primary/pri-problem-000042.html",
+          "direct_tags": [
+            "double-integral"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0372",
+      "label": "第372回（2021年4月11日）",
+      "year": 2021,
+      "round": 372,
+      "sort_order": 20210411,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000043",
+          "cell_label": "一次合同式",
+          "path": "problems/primary/pri-problem-000043.html",
+          "direct_tags": [
+            "linear-congruence"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000044",
+          "cell_label": "逆三角関数の加法",
+          "path": "problems/primary/pri-problem-000044.html",
+          "direct_tags": [
+            "inverse-trigonometric-function"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000045",
+          "cell_label": "外積の積",
+          "path": "problems/primary/pri-problem-000045.html",
+          "direct_tags": [
+            "cross-product"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000046",
+          "cell_label": "接平面",
+          "path": "problems/primary/pri-problem-000046.html",
+          "direct_tags": [
+            "multivariable-differentiation"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000047",
+          "cell_label": "一様分布",
+          "path": "problems/primary/pri-problem-000047.html",
+          "direct_tags": [
+            "uniform-distribution",
+            "variance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000048",
+          "cell_label": "4次行列式",
+          "path": "problems/primary/pri-problem-000048.html",
+          "direct_tags": [
+            "determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000049",
+          "cell_label": "連立微分方程式",
+          "path": "problems/primary/pri-problem-000049.html",
+          "direct_tags": [
+            "linear-system-ode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0380",
+      "label": "第380回（2021年10月31日）",
+      "year": 2021,
+      "round": 380,
+      "sort_order": 20211031,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000050",
+          "cell_label": "分数方程式",
+          "path": "problems/primary/pri-problem-000050.html",
+          "direct_tags": [
+            "equation"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000051",
+          "cell_label": "複素数の平方根",
+          "path": "problems/primary/pri-problem-000051.html",
+          "direct_tags": [
+            "complex-number"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000052",
+          "cell_label": "線形写像の行列",
+          "path": "problems/primary/pri-problem-000052.html",
+          "direct_tags": [
+            "linear-map-matrix"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000053",
+          "cell_label": "固有値の和と積",
+          "path": "problems/primary/pri-problem-000053.html",
+          "direct_tags": [
+            "eigenvalue",
+            "determinant"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000054",
+          "cell_label": "2個のさいころ",
+          "path": "problems/primary/pri-problem-000054.html",
+          "direct_tags": [
+            "discrete-joint-distribution",
+            "covariance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000055",
+          "cell_label": "収束半径",
+          "path": "problems/primary/pri-problem-000055.html",
+          "direct_tags": [
+            "radius-of-convergence"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000056",
+          "cell_label": "積分順序の交換",
+          "path": "problems/primary/pri-problem-000056.html",
+          "direct_tags": [
+            "double-integral"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0389",
+      "label": "第389回（2022年4月10日）",
+      "year": 2022,
+      "round": 389,
+      "sort_order": 20220410,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000057",
+          "cell_label": "2つの合同条件",
+          "path": "problems/primary/pri-problem-000057.html",
+          "direct_tags": [
+            "chinese-remainder-theorem"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000058",
+          "cell_label": "双曲線関数の恒等式",
+          "path": "problems/primary/pri-problem-000058.html",
+          "direct_tags": [
+            "hyperbolic-function"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000059",
+          "cell_label": "点と平面の距離",
+          "path": "problems/primary/pri-problem-000059.html",
+          "direct_tags": [
+            "analytic-geometry"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000060",
+          "cell_label": "逆正弦の平方",
+          "path": "problems/primary/pri-problem-000060.html",
+          "direct_tags": [
+            "inverse-trigonometric-function",
+            "maclaurin-expansion"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000061",
+          "cell_label": "分布関数から期待値",
+          "path": "problems/primary/pri-problem-000061.html",
+          "direct_tags": [
+            "distribution-function",
+            "expected-value"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000062",
+          "cell_label": "構造をもつ行列式",
+          "path": "problems/primary/pri-problem-000062.html",
+          "direct_tags": [
+            "determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000063",
+          "cell_label": "重解をもつ微分方程式",
+          "path": "problems/primary/pri-problem-000063.html",
+          "direct_tags": [
+            "constant-coefficient-ode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0406",
+      "label": "第406回（2023年4月16日）",
+      "year": 2023,
+      "round": 406,
+      "sort_order": 20230416,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000064",
+          "cell_label": "多項式の剰余",
+          "path": "problems/primary/pri-problem-000064.html",
+          "direct_tags": [
+            "polynomial-value-and-roots"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000065",
+          "cell_label": "複素対数",
+          "path": "problems/primary/pri-problem-000065.html",
+          "direct_tags": [
+            "complex-logarithm"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000066",
+          "cell_label": "直線と平面の角",
+          "path": "problems/primary/pri-problem-000066.html",
+          "direct_tags": [
+            "analytic-geometry"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000067",
+          "cell_label": "展開係数",
+          "path": "problems/primary/pri-problem-000067.html",
+          "direct_tags": [
+            "maclaurin-expansion"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000068",
+          "cell_label": "幾何分布",
+          "path": "problems/primary/pri-problem-000068.html",
+          "direct_tags": [
+            "geometric-distribution",
+            "expected-value",
+            "variance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000069",
+          "cell_label": "分数成分の行列式",
+          "path": "problems/primary/pri-problem-000069.html",
+          "direct_tags": [
+            "determinant"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000070",
+          "cell_label": "平行四辺形上の積分",
+          "path": "problems/primary/pri-problem-000070.html",
+          "direct_tags": [
+            "change-of-variables"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0414",
+      "label": "第414回（2023年10月29日）",
+      "year": 2023,
+      "round": 414,
+      "sort_order": 20231029,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000071",
+          "cell_label": "一次合同式",
+          "path": "problems/primary/pri-problem-000071.html",
+          "direct_tags": [
+            "linear-congruence"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000072",
+          "cell_label": "複素正弦方程式",
+          "path": "problems/primary/pri-problem-000072.html",
+          "direct_tags": [
+            "complex-number",
+            "hyperbolic-function"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000073",
+          "cell_label": "逆行列",
+          "path": "problems/primary/pri-problem-000073.html",
+          "direct_tags": [
+            "inverse-matrix"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000074",
+          "cell_label": "ユニタリ行列",
+          "path": "problems/primary/pri-problem-000074.html",
+          "direct_tags": [
+            "unitary-matrix"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000075",
+          "cell_label": "同時密度と共分散",
+          "path": "problems/primary/pri-problem-000075.html",
+          "direct_tags": [
+            "joint-probability-density-function",
+            "covariance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000076",
+          "cell_label": "短区間積分の極限",
+          "path": "problems/primary/pri-problem-000076.html",
+          "direct_tags": [
+            "fundamental-theorem-calculus"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000077",
+          "cell_label": "2階線形微分方程式",
+          "path": "problems/primary/pri-problem-000077.html",
+          "direct_tags": [
+            "constant-coefficient-ode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pri-paper-0427",
+      "label": "第427回（2024年7月21日）",
+      "year": 2024,
+      "round": 427,
+      "sort_order": 20240721,
+      "problem_count": 7,
+      "question_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": {
+        "1": {
+          "problem_id": "pri-problem-000078",
+          "cell_label": "最大の合同解",
+          "path": "problems/primary/pri-problem-000078.html",
+          "direct_tags": [
+            "chinese-remainder-theorem"
+          ]
+        },
+        "2": {
+          "problem_id": "pri-problem-000079",
+          "cell_label": "逆三角関数と正接",
+          "path": "problems/primary/pri-problem-000079.html",
+          "direct_tags": [
+            "inverse-trigonometric-function"
+          ]
+        },
+        "3": {
+          "problem_id": "pri-problem-000080",
+          "cell_label": "ベクトル三重積",
+          "path": "problems/primary/pri-problem-000080.html",
+          "direct_tags": [
+            "cross-product"
+          ]
+        },
+        "4": {
+          "problem_id": "pri-problem-000081",
+          "cell_label": "固有値",
+          "path": "problems/primary/pri-problem-000081.html",
+          "direct_tags": [
+            "eigenvalue"
+          ]
+        },
+        "5": {
+          "problem_id": "pri-problem-000082",
+          "cell_label": "分布関数と分散",
+          "path": "problems/primary/pri-problem-000082.html",
+          "direct_tags": [
+            "distribution-function",
+            "variance"
+          ]
+        },
+        "6": {
+          "problem_id": "pri-problem-000083",
+          "cell_label": "対数級数の係数",
+          "path": "problems/primary/pri-problem-000083.html",
+          "direct_tags": [
+            "maclaurin-expansion"
+          ]
+        },
+        "7": {
+          "problem_id": "pri-problem-000084",
+          "cell_label": "1階線形微分方程式",
+          "path": "problems/primary/pri-problem-000084.html",
+          "direct_tags": [
+            "first-order-nonhomogeneous-ode"
+          ]
+        }
+      }
+    },
     {
       "id": "pri-paper-0431",
       "label": "第431回（2024年10月27日）",
