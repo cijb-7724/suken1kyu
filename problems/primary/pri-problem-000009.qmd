@@ -33,9 +33,8 @@ $$
 
 ## 必要な知識
 
-- [逆三角関数](../../knowledge/primary/inverse-trigonometric-function.qmd)
 - [望遠和](../../knowledge/primary/telescoping-series.qmd)
-- 正接の差の公式
+- arctanの加法定理
 
 ## 必要な発想
 
@@ -120,7 +119,7 @@ $$
 
 ## コメント
 
-逆正接の差を扱うときは，正接を取った後に角度の範囲を確認する必要があります．公式だけでなく主値の範囲まで確認して，初めて逆正接の等式が確定します．
+$\arctan$の加法定理は数検ではよく出るので押さえておきましょう．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

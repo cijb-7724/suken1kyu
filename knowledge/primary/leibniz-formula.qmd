@@ -1,0 +1,107 @@
+---
+title: "Leibnizの公式（積の高階微分）"
+id: leibniz-formula
+---
+
+## 概要
+
+Leibnizの公式は，2つの関数の積を $n$ 回微分するための公式です．積の微分を何度も繰り返す代わりに，二項係数を使って $n$ 階導関数を一度に表せます．
+
+## 基本事項
+
+$f(x)$ と $g(x)$ が $n$ 回微分可能なとき，
+
+$$
+\boxed{
+(fg)^{(n)}(x)
+=\sum_{k=0}^{n}\binom{n}{k}
+f^{(k)}(x)g^{(n-k)}(x)
+}
+$$
+
+が成り立ちます．これをLeibnizの公式といいます．$f$ を $k$ 回，$g$ を $n-k$ 回微分した項が，二項係数 $\binom nk$ 個分現れると考えます．
+
+$n=1$ の場合は，通常の積の微分公式
+
+$$
+(fg)'=f'g+fg'
+$$
+
+です．$n=2$ の場合は
+
+$$
+(fg)''=f''g+2f'g'+fg''
+$$
+
+となります．係数が二項展開と同じ
+
+$$
+1，2，1
+$$
+
+になることが分かります．
+
+### 多項式との積
+
+$f(x)$ が $m$ 次多項式なら，$k>m$ で $f^{(k)}(x)=0$ です．したがって，$n$ が大きくても和は
+
+$$
+(fg)^{(n)}(x)
+=\sum_{k=0}^{m}\binom{n}{k}
+f^{(k)}(x)g^{(n-k)}(x)
+$$
+
+までで止まります．特に，$g(x)=e^{ax}$ なら
+
+$$
+g^{(r)}(x)=a^re^{ax}
+$$
+
+なので，多項式と指数関数の積の高階導関数を整理しやすくなります．
+
+## 例題
+
+関数
+
+$$
+h(x)=x^3e^{2x}
+$$
+
+について，$h^{(n)}(x)$ を求め，$h^{(7)}(0)$ を計算します．$x^3$ は4回微分すると0になるため，Leibnizの公式のうち $k=0,1,2,3$ の項だけを残せばよく，
+
+$$
+\begin{aligned}
+h^{(n)}(x)
+&=\sum_{k=0}^{3}\binom nk
+(x^3)^{(k)}2^{n-k}e^{2x}\\
+&=e^{2x}\bigl\{
+2^nx^3
++3n\cdot2^{n-1}x^2
++3n(n-1)\cdot2^{n-2}x\\
+&\qquad\qquad
++n(n-1)(n-2)\cdot2^{n-3}
+\bigr\}
+\end{aligned}
+$$
+
+となります．$x=0$ では最後の項だけが残るので，
+
+$$
+\begin{aligned}
+h^{(7)}(0)
+&=7\cdot6\cdot5\cdot2^4\\
+&=\boxed{3360}
+\end{aligned}
+$$
+
+です．7回逐次微分する必要はなく，多項式の導関数が途中で0になることを利用するのが要点です．
+
+## 関連問題
+
+後で自動表示します．
+
+<!-- AUTO:KNOWLEDGE-UI:START -->
+<div class="knowledge-detail-app" data-knowledge-page></div>
+<link rel="stylesheet" href="../../assets/css/knowledge-catalog.css">
+<script type="module" src="../../assets/js/knowledge-page.js"></script>
+<!-- AUTO:KNOWLEDGE-UI:END -->

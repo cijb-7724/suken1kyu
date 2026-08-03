@@ -9,7 +9,7 @@ id: higher-derivative
 
 ## 基本事項
 
-Leibnizの公式は
+[Leibnizの公式](leibniz-formula.qmd)は
 
 $$
 (fg)^{(n)}=\sum_{k=0}^n\binom nk f^{(k)}g^{(n-k)}

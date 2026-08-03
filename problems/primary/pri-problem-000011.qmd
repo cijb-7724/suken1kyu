@@ -17,12 +17,8 @@ tags:
 ## 必要な知識
 
 - [マクローリン展開](../../knowledge/primary/maclaurin-expansion.qmd)
-- 半角の公式
 
 ## 必要な発想
-
-$\cos^2x$ は半角の公式で $\frac{1+\cos2x}{2}$ に直す．
-$x^4$ を作る項だけが分かるように，二つの関数を必要な次数まで展開する．
 
 ## 解答
 
@@ -60,11 +56,9 @@ $$
 \boxed{-\frac18}
 $$
 
-である．
-
 ## コメント
 
-積の展開では，すべての項を計算する必要はありません．求める次数を作る項の組合せを先に確認すると，計算量とミスを減らせます．
+次数が4の項を漏れなく数えましょう．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>
