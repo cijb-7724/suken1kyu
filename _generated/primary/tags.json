@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "exam": "primary",
-  "count": 65,
+  "count": 66,
   "root_ids": [
     "number-theory",
     "algebra",
@@ -199,7 +199,13 @@
         {
           "id": "higher-derivative",
           "label": "高階導関数",
-          "children": []
+          "children": [
+            {
+              "id": "leibniz-formula",
+              "label": "Leibnizの公式（積の高階微分）",
+              "children": []
+            }
+          ]
         },
         {
           "id": "multivariable-differentiation",
@@ -937,6 +943,7 @@
         "constant-coefficient-ode",
         "linear-system-ode",
         "higher-derivative",
+        "leibniz-formula",
         "multivariable-differentiation",
         "fundamental-theorem-calculus"
       ],
@@ -1310,11 +1317,15 @@
       "label": "高階導関数",
       "parent_id": "analysis",
       "depth": 1,
-      "children": [],
+      "children": [
+        "leibniz-formula"
+      ],
       "ancestors": [
         "analysis"
       ],
-      "descendants": [],
+      "descendants": [
+        "leibniz-formula"
+      ],
       "direct_problem_ids": [
         "pri-problem-000039"
       ],
@@ -1324,6 +1335,23 @@
       "direct_problem_count": 1,
       "problem_count": 1,
       "knowledge_path": "knowledge/primary/higher-derivative.html"
+    },
+    "leibniz-formula": {
+      "id": "leibniz-formula",
+      "label": "Leibnizの公式（積の高階微分）",
+      "parent_id": "higher-derivative",
+      "depth": 2,
+      "children": [],
+      "ancestors": [
+        "analysis",
+        "higher-derivative"
+      ],
+      "descendants": [],
+      "direct_problem_ids": [],
+      "problem_ids": [],
+      "direct_problem_count": 0,
+      "problem_count": 0,
+      "knowledge_path": "knowledge/primary/leibniz-formula.html"
     },
     "multivariable-differentiation": {
       "id": "multivariable-differentiation",

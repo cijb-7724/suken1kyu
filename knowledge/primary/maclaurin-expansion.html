@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -155,18 +184,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>1次試験における「マクローリン展開」についてまとめます．</p>
 <section id="概要" class="level2">
 <h2 class="anchored" data-anchor-id="概要">概要</h2>
-<p>未記入．</p>
+<p>関数のマクローリン展開における <span class="math inline">\(x^n\)</span> の係数は，<span class="math inline">\(x=0\)</span> での <span class="math inline">\(n\)</span> 階導関数から求められます．展開全体ではなく特定の次数の係数だけを問われたときに，特に有効な考え方です．</p>
 </section>
 <section id="基本事項" class="level2">
 <h2 class="anchored" data-anchor-id="基本事項">基本事項</h2>
-<p>未記入．</p>
+<p>関数 <span class="math inline">\(f(x)\)</span> のマクローリン展開は</p>
+<p><span class="math display">\[
+f(x)=f(0)+f'(0)x+\frac{f''(0)}{2!}x^2
++\cdots+\frac{f^{(n)}(0)}{n!}x^n+\cdots
+\]</span></p>
+<p>です．したがって，<span class="math inline">\(x^n\)</span> の係数は</p>
+<p><span class="math display">\[
+\boxed{\frac{f^{(n)}(0)}{n!}}
+\]</span></p>
+<p>となります．係数を求める基本的な手順は次のとおりです．</p>
+<ol type="1">
+<li>求める項の次数 <span class="math inline">\(n\)</span> を確認する．</li>
+<li><span class="math inline">\(f^{(n)}(x)\)</span> を求めるか，<span class="math inline">\(f^{(n)}(0)\)</span> を直接計算できる関係式を作る．</li>
+<li><span class="math inline">\(x=0\)</span> を代入して <span class="math inline">\(f^{(n)}(0)\)</span> を求める．</li>
+<li>最後に <span class="math inline">\(n!\)</span> で割る．</li>
+</ol>
+<p><span class="math inline">\(f^{(n)}(0)\)</span> は導関数の値であり，係数そのものではありません．特に，最後の <span class="math inline">\(n!\)</span> を割り忘れないように注意します．</p>
+<p>何度も微分すると式が長くなる場合は，導関数に現れる関数を短い文字で置いたり，微分による係数の変化を漸化式にしたりすると計算を整理できます．一方，既知の展開を掛け合わせる方が短い場合は，必要な次数まで展開する方法を選びます．</p>
 </section>
 <section id="例題" class="level2">
 <h2 class="anchored" data-anchor-id="例題">例題</h2>
-<p>未記入．</p>
+<p>関数</p>
+<p><span class="math display">\[
+f(x)=(1+x)e^{2x}
+\]</span></p>
+<p>のマクローリン展開における <span class="math inline">\(x^4\)</span> の係数を求めます．<a href="../../knowledge/primary/leibniz-formula.html">Leibnizの公式</a>を用いると，<span class="math inline">\(1+x\)</span> の2階以上の導関数は0なので，</p>
+<p><span class="math display">\[
+f^{(n)}(x)
+=(1+x)2^ne^{2x}+n\cdot2^{n-1}e^{2x}
+\]</span></p>
+<p>です．したがって，</p>
+<p><span class="math display">\[
+f^{(4)}(0)=2^4+4\cdot2^3=48
+\]</span></p>
+<p>となります．よって，<span class="math inline">\(x^4\)</span> の係数は</p>
+<p><span class="math display">\[
+\frac{f^{(4)}(0)}{4!}
+=\frac{48}{24}
+=\boxed{2}
+\]</span></p>
+<p>です．必要なのは <span class="math inline">\(x^4\)</span> の係数だけなので，マクローリン展開のほかの係数をすべて計算する必要はありません．</p>
 </section>
 <section id="関連問題" class="level2">
 <h2 class="anchored" data-anchor-id="関連問題">関連問題</h2>

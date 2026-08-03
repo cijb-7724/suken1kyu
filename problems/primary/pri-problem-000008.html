@@ -192,50 +192,36 @@ window.Quarto = {
 </section>
 <section id="必要な知識" class="level2">
 <h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
-<ul>
-<li><a href="../../knowledge/primary/prime-factorization.html">素因数分解</a></li>
-<li>和の立方の因数分解</li>
-</ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
-<p><span class="math inline">\(1728=12^3\)</span> という情報から，<span class="math inline">\(1728000001=1200^3+1\)</span> と見る． まず和の立方を因数分解し，残った整数を小さい素数から調べる．</p>
+<p><span class="math inline">\(1200=3\cdot20^2\)</span></p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
 <p><span class="math display">\[
-1728000001=1200^3+1
-\]</span></p>
-<p>である．和の立方の公式</p>
-<p><span class="math display">\[
-a^3+1=(a+1)(a^2-a+1)
-\]</span></p>
-<p>を使うと，</p>
-<p><span class="math display">\[
 \begin{aligned}
 1728000001
 &amp;=(1200+1)(1200^2-1200+1)\\
-&amp;=1201\cdot1438801
+&amp;=(1200+1)((3\cdot20^2)^2-3\cdot20^2+1)\\
+&amp;=(1200+1)((3\cdot20^2+1)^2-(3\cdot20)^2)\\
+&amp;=(1200+1)(3\cdot20^2-3\cdot20+1)
+  (3\cdot20^2+3\cdot20+1)\\
+&amp;=1201\cdot1141\cdot1261
 \end{aligned}
 \]</span></p>
-<p>となる．次に，</p>
-<p><span class="math display">\[
-\begin{aligned}
-1438801
-&amp;=7\cdot205543\\
-&amp;=7\cdot13\cdot15811\\
-&amp;=7\cdot13\cdot97\cdot163
-\end{aligned}
-\]</span></p>
-<p>である．<span class="math inline">\(7,13,97,163,1201\)</span> はいずれも素数だから，</p>
-<p><span class="math display">\[
-\boxed{1728000001=7\cdot13\cdot97\cdot163\cdot1201}
+<p>である．<span class="math inline">\(\sqrt{1261}&lt;36\)</span> だから<span class="math inline">\(31\)</span>以下の素数で割れるか調べればよい．実際， <span class="math display">\[
+1141=7\cdot163，\qquad
+1261=13\cdot97
 \]</span></p>
 <p>となる．</p>
+<p><span class="math display">\[
+\boxed{7\cdot13\cdot97\cdot163\cdot1201}
+\]</span></p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>問題文の <span class="math inline">\(1728=12^3\)</span> は，最初の因数分解に気づくための明確な手掛かりです．3桁と4桁の素因数があるという条件は，途中で得た因数分解が十分かを判断する助けになります．</p>
+<p><span class="math inline">\(1200=3\cdot20^2\)</span> とみて，平方の差の因数分解に持ち込めるかがきもですね．筆者は捨て問の予感がしたので後回しにしました．</p>
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page="">
 
