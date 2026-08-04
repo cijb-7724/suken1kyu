@@ -200,10 +200,6 @@ window.Quarto = {
 </section>
 <section id="必要な知識" class="level2">
 <h2 class="anchored" data-anchor-id="必要な知識">必要な知識</h2>
-<ul>
-<li><a href="../../knowledge/primary/determinant.html">行列式</a></li>
-<li>行列式の行基本変形と余因子展開</li>
-</ul>
 </section>
 <section id="必要な発想" class="level2">
 <h2 class="anchored" data-anchor-id="必要な発想">必要な発想</h2>
@@ -211,75 +207,82 @@ window.Quarto = {
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-<p>もとの行列式を <span class="math inline">\(D\)</span> とする．第5行から第1行の2倍を引くと，</p>
 <p><span class="math display">\[
-D=
+\begin{aligned}
 \begin{vmatrix}
 -1&amp;0&amp;0&amp;1&amp;0\\
 2&amp;0&amp;-1&amp;0&amp;0\\
 -2&amp;-2&amp;-2&amp;0&amp;-2\\
 -2&amp;2&amp;-2&amp;0&amp;2\\
-1&amp;-2&amp;2&amp;0&amp;-1
+-1&amp;-2&amp;2&amp;2&amp;-1
 \end{vmatrix}
-\]</span></p>
-<p>となる．第4列で余因子展開すると，</p>
-<p><span class="math display">\[
-D=
--
+&amp;=
+\begin{vmatrix}
+0&amp;0&amp;0&amp;1&amp;0\\
+2&amp;0&amp;-1&amp;0&amp;0\\
+-2&amp;-2&amp;-2&amp;0&amp;-2\\
+-2&amp;2&amp;-2&amp;0&amp;2\\
+1&amp;-2&amp;2&amp;2&amp;-1
+\end{vmatrix}
+&amp;&amp;\text{第1列に第4列を加算．}
+\\
+&amp;=
+(-1)
 \begin{vmatrix}
 2&amp;0&amp;-1&amp;0\\
 -2&amp;-2&amp;-2&amp;-2\\
 -2&amp;2&amp;-2&amp;2\\
 1&amp;-2&amp;2&amp;-1
 \end{vmatrix}
-\]</span></p>
-<p>である．この4次行列式の第1行と第4行を入れ替えると，外側のマイナスと入れ替えによるマイナスが打ち消し合うので，</p>
-<p><span class="math display">\[
-D=
+&amp;&amp;\text{第4列で余因子展開．}
+\\
+&amp;=
+(-1)
 \begin{vmatrix}
-1&amp;-2&amp;2&amp;-1\\
--2&amp;-2&amp;-2&amp;-2\\
--2&amp;2&amp;-2&amp;2\\
-2&amp;0&amp;-1&amp;0
+0&amp;0&amp;-1&amp;0\\
+-6&amp;-2&amp;-2&amp;-2\\
+-6&amp;2&amp;-2&amp;2\\
+5&amp;-2&amp;2&amp;-1
 \end{vmatrix}
-\]</span></p>
-<p>となる．ここで，第2行，第3行，第4行にそれぞれ第1行の <span class="math inline">\(2\)</span> 倍，<span class="math inline">\(2\)</span> 倍，<span class="math inline">\(-2\)</span> 倍を加えると，</p>
-<p><span class="math display">\[
-D=
+&amp;&amp;\text{第1列に第3列の２倍を加算．}
+\\
+&amp;=
+(-1)^2
 \begin{vmatrix}
-1&amp;-2&amp;2&amp;-1\\
-0&amp;-6&amp;2&amp;-4\\
-0&amp;-2&amp;2&amp;0\\
-0&amp;4&amp;-5&amp;2
+-6&amp;-2&amp;-2\\
+-6&amp;2&amp;2\\
+5&amp;-2&amp;-1
 \end{vmatrix}
-=
+&amp;&amp;\text{第3列で余因子展開．}
+\\
+&amp;=
 \begin{vmatrix}
--6&amp;2&amp;-4\\
--2&amp;2&amp;0\\
-4&amp;-5&amp;2
+-6&amp;-2&amp;0\\
+-6&amp;2&amp;0\\
+5&amp;-2&amp;1
 \end{vmatrix}
-\]</span></p>
-<p>である．最後に第1行で余因子展開すると，</p>
-<p><span class="math display">\[
-\begin{aligned}
-D
-&amp;=-6(2\cdot2-0\cdot(-5))
--2((-2)\cdot2-0\cdot4)\\
-&amp;\qquad
-+(-4)((-2)(-5)-2\cdot4)\\
-&amp;=-24+8-8\\
+&amp;&amp;\text{第2列の-1倍を第3列に加算．}
+\\
+&amp;=
+\begin{vmatrix}
+-6&amp;-2&amp;0\\
+0&amp;4&amp;0\\
+5&amp;-2&amp;1
+\end{vmatrix}
+&amp;&amp;\text{第1行の-1倍を第2行に加算．}
+\\
 &amp;=-24
+&amp;&amp;\text{第1行の-1倍を第2行に加算．}
+\\
 \end{aligned}
 \]</span></p>
-<p>となる．よって，</p>
 <p><span class="math display">\[
 \boxed{-24}
 \]</span></p>
-<p>である．</p>
 </section>
 <section id="コメント" class="level2">
 <h2 class="anchored" data-anchor-id="コメント">コメント</h2>
-<p>高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探すのが基本です．</p>
+<p>高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探しましょう．</p>
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page="">
 

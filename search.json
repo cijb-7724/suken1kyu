@@ -5324,7 +5324,7 @@
     "href": "problems/primary/pri-problem-000012.html#コメント",
     "title": "第444回 1次 問5",
     "section": "コメント",
-    "text": "コメント\n\\(V(X^2)\\) と \\(\\{V(X)\\}^2\\) は別物です．「どの確率変数の分散か」を最初に確認すると，必要な期待値を取り違えません．"
+    "text": "コメント\n\\(V(X^2)\\) と \\(\\{V(X)\\}^2\\) は別物です．「どの確率変数の分散か」を確認しましょう．"
   },
   {
     "objectID": "problems/primary/pri-problem-000002.html",
@@ -5520,28 +5520,28 @@
     "href": "problems/primary/pri-problem-000014.html#必要な知識",
     "title": "第444回 1次 問7",
     "section": "必要な知識",
-    "text": "必要な知識\n\n重積分"
+    "text": "必要な知識"
   },
   {
     "objectID": "problems/primary/pri-problem-000014.html#必要な発想",
     "href": "problems/primary/pri-problem-000014.html#必要な発想",
     "title": "第444回 1次 問7",
     "section": "必要な発想",
-    "text": "必要な発想\n領域の条件が \\(0\\leq y\\leq3\\)，\\(0\\leq x\\leq\\sqrt y\\) と積分順序に合わせて与えられている． そのまま \\(x\\) を先に，\\(y\\) を後に積分する．"
+    "text": "必要な発想"
   },
   {
     "objectID": "problems/primary/pri-problem-000014.html#解答",
     "href": "problems/primary/pri-problem-000014.html#解答",
     "title": "第444回 1次 問7",
     "section": "解答",
-    "text": "解答\n領域の条件から，重積分を累次積分で表すと，\n\\[\n\\iint_Dx^3y\\,dx\\,dy\n=\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\n\\]\nとなる．まず \\(x\\) について積分すると，\n\\[\n\\begin{aligned}\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\n&=\\int_0^3\ny\\left[\\frac{x^4}{4}\\right]_{0}^{\\sqrt y}\n\\,dy\\\\\n&=\\frac14\\int_0^3y^3\\,dy\\\\\n&=\\frac14\\left[\\frac{y^4}{4}\\right]_0^3\\\\\n&=\\frac{81}{16}\n\\end{aligned}\n\\]\nである．よって，\n\\[\n\\boxed{\\frac{81}{16}}\n\\]\nとなる．"
+    "text": "解答\n領域の条件から，重積分を累次積分を行う． \\[\n\\begin{aligned}\n\\iint_Dx^3y\\,dx\\,dy\n&=\n\\int_0^3\\int_0^{\\sqrt y}x^3y\\,dx\\,dy\\\\\n&=\\int_0^3\ny\\left[\\frac{x^4}{4}\\right]_{0}^{\\sqrt y}\n\\,dy\\\\\n&=\\frac14\\int_0^3y^3\\,dy\\\\\n&=\\frac14\\left[\\frac{y^4}{4}\\right]_0^3\\\\\n&=\\frac{81}{16}\n\\end{aligned}\n\\]\n\\[\n\\boxed{\\frac{81}{16}}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000014.html#コメント",
     "href": "problems/primary/pri-problem-000014.html#コメント",
     "title": "第444回 1次 問7",
     "section": "コメント",
-    "text": "コメント\n積分領域を書き換える必要がない問題です．上端に \\(\\sqrt y\\) を代入するとき，\\((\\sqrt y)^4=y^2\\) となる点だけ丁寧に処理しましょう．"
+    "text": "コメント\n全体を通して計算量が多かったり，問1が難しかったりと難しい回だったように思います．"
   },
   {
     "objectID": "problems/primary/pri-problem-000029.html",
@@ -5772,7 +5772,7 @@
     "href": "problems/primary/pri-problem-000013.html#必要な知識",
     "title": "第444回 1次 問6",
     "section": "必要な知識",
-    "text": "必要な知識\n\n行列式\n行列式の行基本変形と余因子展開"
+    "text": "必要な知識"
   },
   {
     "objectID": "problems/primary/pri-problem-000013.html#必要な発想",
@@ -5786,14 +5786,14 @@
     "href": "problems/primary/pri-problem-000013.html#解答",
     "title": "第444回 1次 問6",
     "section": "解答",
-    "text": "解答\nもとの行列式を \\(D\\) とする．第5行から第1行の2倍を引くと，\n\\[\nD=\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n1&-2&2&0&-1\n\\end{vmatrix}\n\\]\nとなる．第4列で余因子展開すると，\n\\[\nD=\n-\n\\begin{vmatrix}\n2&0&-1&0\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n1&-2&2&-1\n\\end{vmatrix}\n\\]\nである．この4次行列式の第1行と第4行を入れ替えると，外側のマイナスと入れ替えによるマイナスが打ち消し合うので，\n\\[\nD=\n\\begin{vmatrix}\n1&-2&2&-1\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n2&0&-1&0\n\\end{vmatrix}\n\\]\nとなる．ここで，第2行，第3行，第4行にそれぞれ第1行の \\(2\\) 倍，\\(2\\) 倍，\\(-2\\) 倍を加えると，\n\\[\nD=\n\\begin{vmatrix}\n1&-2&2&-1\\\\\n0&-6&2&-4\\\\\n0&-2&2&0\\\\\n0&4&-5&2\n\\end{vmatrix}\n=\n\\begin{vmatrix}\n-6&2&-4\\\\\n-2&2&0\\\\\n4&-5&2\n\\end{vmatrix}\n\\]\nである．最後に第1行で余因子展開すると，\n\\[\n\\begin{aligned}\nD\n&=-6(2\\cdot2-0\\cdot(-5))\n-2((-2)\\cdot2-0\\cdot4)\\\\\n&\\qquad\n+(-4)((-2)(-5)-2\\cdot4)\\\\\n&=-24+8-8\\\\\n&=-24\n\\end{aligned}\n\\]\nとなる．よって，\n\\[\n\\boxed{-24}\n\\]\nである．"
+    "text": "解答\n\\[\n\\begin{aligned}\n\\begin{vmatrix}\n-1&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n-1&-2&2&2&-1\n\\end{vmatrix}\n&=\n\\begin{vmatrix}\n0&0&0&1&0\\\\\n2&0&-1&0&0\\\\\n-2&-2&-2&0&-2\\\\\n-2&2&-2&0&2\\\\\n1&-2&2&2&-1\n\\end{vmatrix}\n&&\\text{第1列に第4列を加算．}\n\\\\\n&=\n(-1)\n\\begin{vmatrix}\n2&0&-1&0\\\\\n-2&-2&-2&-2\\\\\n-2&2&-2&2\\\\\n1&-2&2&-1\n\\end{vmatrix}\n&&\\text{第4列で余因子展開．}\n\\\\\n&=\n(-1)\n\\begin{vmatrix}\n0&0&-1&0\\\\\n-6&-2&-2&-2\\\\\n-6&2&-2&2\\\\\n5&-2&2&-1\n\\end{vmatrix}\n&&\\text{第1列に第3列の２倍を加算．}\n\\\\\n&=\n(-1)^2\n\\begin{vmatrix}\n-6&-2&-2\\\\\n-6&2&2\\\\\n5&-2&-1\n\\end{vmatrix}\n&&\\text{第3列で余因子展開．}\n\\\\\n&=\n\\begin{vmatrix}\n-6&-2&0\\\\\n-6&2&0\\\\\n5&-2&1\n\\end{vmatrix}\n&&\\text{第2列の-1倍を第3列に加算．}\n\\\\\n&=\n\\begin{vmatrix}\n-6&-2&0\\\\\n0&4&0\\\\\n5&-2&1\n\\end{vmatrix}\n&&\\text{第1行の-1倍を第2行に加算．}\n\\\\\n&=-24\n&&\\text{第1行の-1倍を第2行に加算．}\n\\\\\n\\end{aligned}\n\\]\n\\[\n\\boxed{-24}\n\\]"
   },
   {
     "objectID": "problems/primary/pri-problem-000013.html#コメント",
     "href": "problems/primary/pri-problem-000013.html#コメント",
     "title": "第444回 1次 問6",
     "section": "コメント",
-    "text": "コメント\n高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探すのが基本です．"
+    "text": "コメント\n高次の行列式では，すぐに余因子展開するのではなく，まず非零成分が一つだけの行や列を作れないか探しましょう．"
   },
   {
     "objectID": "problems/primary/pri-problem-000005.html",
