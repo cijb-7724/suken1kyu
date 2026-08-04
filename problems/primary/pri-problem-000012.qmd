@@ -99,7 +99,7 @@ $$
 
 ## コメント
 
-$V(X^2)$ と $\{V(X)\}^2$ は別物です．「どの確率変数の分散か」を最初に確認すると，必要な期待値を取り違えません．
+$V(X^2)$ と $\{V(X)\}^2$ は別物です．「どの確率変数の分散か」を確認しましょう．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>

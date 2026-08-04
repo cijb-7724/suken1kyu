@@ -24,28 +24,16 @@ $$
 
 ## 必要な知識
 
-- [重積分](../../knowledge/primary/double-integral.qmd)
-
 ## 必要な発想
-
-領域の条件が $0\leq y\leq3$，$0\leq x\leq\sqrt y$ と積分順序に合わせて与えられている．
-そのまま $x$ を先に，$y$ を後に積分する．
 
 ## 解答
 
-領域の条件から，重積分を累次積分で表すと，
-
-$$
-\iint_Dx^3y\,dx\,dy
-=
-\int_0^3\int_0^{\sqrt y}x^3y\,dx\,dy
-$$
-
-となる．まず $x$ について積分すると，
-
+領域の条件から，重積分を累次積分を行う．
 $$
 \begin{aligned}
-\int_0^3\int_0^{\sqrt y}x^3y\,dx\,dy
+\iint_Dx^3y\,dx\,dy
+&=
+\int_0^3\int_0^{\sqrt y}x^3y\,dx\,dy\\
 &=\int_0^3
 y\left[\frac{x^4}{4}\right]_{0}^{\sqrt y}
 \,dy\\
@@ -55,17 +43,13 @@ y\left[\frac{x^4}{4}\right]_{0}^{\sqrt y}
 \end{aligned}
 $$
 
-である．よって，
-
 $$
 \boxed{\frac{81}{16}}
 $$
 
-となる．
-
 ## コメント
 
-積分領域を書き換える必要がない問題です．上端に $\sqrt y$ を代入するとき，$(\sqrt y)^4=y^2$ となる点だけ丁寧に処理しましょう．
+全体を通して計算量が多かったり，問1が難しかったりと難しい回だったように思います．
 
 <!-- AUTO:PROBLEM-UI:START -->
 <div class="problem-meta-app" data-problem-page></div>
